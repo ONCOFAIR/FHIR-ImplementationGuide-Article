@@ -1,7 +1,4 @@
-<div style="display: flex; justify-content: center;">
-    <img src="input/images/logo_ltsi.png" alt="Logo LTSI" title="Logo LTSI" style="margin-right: 10px;">
-    <img src="input/images/Logo_Kereval.png" alt="Logo Kereval" title="Logo Kereval">
-</div>
+<div style="display: flex;"><img src="input/images/logo_ltsi.png" alt="Image 1" style="width: 60%;"><img src="input/images/Logo_Kereval.png" alt="Image 2" style="width: 35%;"></div>
 
 
 # Contexte
