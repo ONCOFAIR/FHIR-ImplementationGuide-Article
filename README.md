@@ -1,16 +1,12 @@
-# CECI EST UN TEST
-Cet exemple d'Implementation Guide (IG) très simplifié sert de base pour le développement de nouveaux guides d'implémentation. La démarche d'élaboration d'un nouvel IG est expliquée dans le [wiki de ce repo](https://github.com/ansforge/IG-modele/wiki).
-Le README ci-dessous constitue un template à adapter et compléter pour chaque projet.
-
 # Contexte
 
 ## Contexte métier du projet
 
-[A COMPLETER : doit contenir la description fonctionnelle du projet destinée à un profil non technique]
+Ce projet a pour ambition de développer un cadre d’interopérabilité autour des entrepôts de données de santé, en particulier les données de chimiothérapies, utilisées à usage secondaire, tout en suivant le principe FAIR (Findable, Accessible, Interoperable, Reusable).
 
 ## Contexte technique du projet
 
-[A COMPLETER : doit expliquer brièvement quelles ressources / profils sont utilisés, exemple implémentation où IG est utilisé]
+Les ressources FHIR utilisées dans cet IG sont : Patient, Observation, Practitioner, Encounter, Location, Organization, Medication, DeviceDefinition, PlanDefinition, Careplan, MedicationRequest, MedicationAdministration.
 
 # CI/CD
 
@@ -32,5 +28,3 @@ Un commentaire ? Une remarque ? Utilisez les GitHub [issues](https://docs.github
 * IG : Implementation Guide
 * FHIR : Fast Healthcare Interoperability Resources
 * HL7 : Health Level Seven
-
-[A COMPLETER : acronymes utilisés dans le cadre de ce projet]
