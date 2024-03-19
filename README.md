@@ -4,7 +4,7 @@
 
 ## Contexte métier du projet
 
-Ce projet a pour ambition de développer un cadre d’interopérabilité autour des entrepôts de données de santé, en particulier les données de chimiothérapies, utilisées à usage secondaire, tout en suivant le principe FAIR (Findable, Accessible, Interoperable, Reusable).
+Ce projet a pour ambition de développer un cadre d’interopérabilité autour des entrepôts de données de santé, en particulier les données de chimiothérapies, utilisées à usage secondaire, tout en suivant le principe FAIR.
 
 ## Contexte technique du projet
 
