@@ -1,3 +1,5 @@
+![Logo_LTSI](input/images/logo_ltsi.png "Logo LTSI")
+
 # Contexte
 
 ## Contexte métier du projet
@@ -14,13 +16,11 @@ Les workflows associés à ce repository (.github/workflows) permettent :
 
 * D'executer Sushi pour vérifier la grammaire
 * De faire les tests avec le validator_cli
-* De publier les pages : https://ansforge.github.io/{nom du repo}/ig/{nom de la branche}
 
 # Notes
 
-Ce repo "IG-modele" a été créé à partir du repo [sample-ig](https://github.com/FHIR/sample-ig) de l'organisation GitHub FHIR.
+Ce repo "IG-ONCOFAIR" a été créé à partir du repo [sample-ig](https://github.com/FHIR/sample-ig) de l'organisation GitHub FHIR.
 
-[A COMPLETER: notes supplémentaires pour le lecteur de la spec]
 Un commentaire ? Une remarque ? Utilisez les GitHub [issues](https://docs.github.com/fr/issues) pour indiquer vos propositions d'amélioration et de correction.
 
 ## Acronymes
@@ -28,3 +28,4 @@ Un commentaire ? Une remarque ? Utilisez les GitHub [issues](https://docs.github
 * IG : Implementation Guide
 * FHIR : Fast Healthcare Interoperability Resources
 * HL7 : Health Level Seven
+* FAIR : Findable Accessible Interoperable Reusable
