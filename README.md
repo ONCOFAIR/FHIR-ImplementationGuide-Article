@@ -1,4 +1,8 @@
-![Logo_LTSI](input/images/logo_ltsi.png "Logo LTSI") ![Logo_Kereval](input/images/Logo_Kereval.png "Logo Kereval")
+<div style="display: flex; justify-content: center;">
+    <img src="input/images/logo_ltsi.png" alt="Logo LTSI" title="Logo LTSI" style="margin-right: 10px;">
+    <img src="input/images/Logo_Kereval.png" alt="Logo Kereval" title="Logo Kereval">
+</div>
+
 
 # Contexte
 
