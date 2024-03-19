@@ -1,4 +1,4 @@
-![Logo_LTSI](input/images/logo_ltsi.png "Logo LTSI")
+![Logo_LTSI](input/images/logo_ltsi.png "Logo LTSI") ![Logo_Kereval](input/images/Logo_Kereval.png "Logo Kereval")
 
 # Contexte
 
