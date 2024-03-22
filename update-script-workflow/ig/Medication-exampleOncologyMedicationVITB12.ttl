@@ -1,0 +1,33 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/Medication/exampleOncologyMedicationVITB12> a fhir:Medication ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "exampleOncologyMedicationVITB12"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/OncologyMedication"^^xsd:anyURI ;
+       fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/OncologyMedication>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"exampleOncologyMedicationVITB12\"> </a><a name=\"hcexampleOncologyMedicationVITB12\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;exampleOncologyMedicationVITB12&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-oncology-medication.html\">Oncology Medication</a></p></div><p><b>identifier</b>: VIT B12 DEL 1MG/2ML INJ BUV AMP</p><p><b>code</b>: VIT B12 DEL 1MG/2ML INJ BUV AMP <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSMedications.html\">Medications</a>#9100298)</span></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "VIT B12 DEL 1MG/2ML INJ BUV AMP" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/CSMedications"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "9100298" ] ;
+       fhir:display [ fhir:v "VIT B12 DEL 1MG/2ML INJ BUV AMP" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
