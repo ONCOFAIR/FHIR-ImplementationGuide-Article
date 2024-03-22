@@ -1,6 +1,6 @@
 <div style="display: flex;">
-    <img src="input/images/logo_ltsi.png" alt="Image 1" style="width: 55%; margin-right: 30px;">
-    <img src="input/images/Logo_Kereval.png" alt="Image 2" style="width: 30%; margin-left: 30px;">
+    <img src="input/images/logo_ltsi.png" alt="Image 1" style="width: 55%; margin-right: 30px; height: 60px;">
+    <img src="input/images/Logo_Kereval.png" alt="Image 2" style="width: 30%; margin-left: 30px; height: 55px;">
 </div>
 
 
