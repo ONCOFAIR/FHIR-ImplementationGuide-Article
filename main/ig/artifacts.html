@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifacts Summary - Onco-FAIR v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Onco-FAIR</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Accueil</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Onco-FAIR - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://ltsi.univ-rennes.fr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#2">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#3">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#5">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-accomodation-unit.html"
+                  title="StructureDefinition/accomodation-unit">Accomodation Unit</a>
+            </td>
+            <td>
+<p>Accomodation unit.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-additional-information.html"
+                  title="StructureDefinition/additional-information">Additional Information</a>
+            </td>
+            <td>
+<p>Additional information, such as height or weight.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-administration-report.html"
+                  title="StructureDefinition/administration-report">Administration Report</a>
+            </td>
+            <td>
+<p>Prescribed medication administration report.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-associated-device.html"
+                  title="StructureDefinition/associated-device">Associated Device</a>
+            </td>
+            <td>
+<p>A device associated with a medication for its administration.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Medical-liability-unit.html"
+                  title="StructureDefinition/Medical-liability-unit">Medical Liability Unit</a>
+            </td>
+            <td>
+<p>Medical liability unit.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-oncology-medication.html"
+                  title="StructureDefinition/oncology-medication">Oncology Medication</a>
+            </td>
+            <td>
+<p>Medication used in oncology.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-oncology-patient.html"
+                  title="StructureDefinition/oncology-patient">Oncology Patient</a>
+            </td>
+            <td>
+<p>Patient receiving medical treatment in oncology.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-oncology-practitioner.html"
+                  title="StructureDefinition/oncology-practitioner">Oncology Practitioner</a>
+            </td>
+            <td>
+<p>Oncology practitioner.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-prescription.html"
+                  title="StructureDefinition/prescription">Prescription</a>
+            </td>
+            <td>
+<p>Medication prescription.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-prescription-item.html"
+                  title="StructureDefinition/prescription-item">Prescription Item</a>
+            </td>
+            <td>
+<p>Prescription item.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-protocol.html"
+                  title="StructureDefinition/protocol">Protocol</a>
+            </td>
+            <td>
+<p>Protocol.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Stay.html" title="StructureDefinition/Stay">Stay</a>
+            </td>
+            <td>
+<p>Stay.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-cure-cycle-number.html"
+                  title="StructureDefinition/cure-cycle-number">Cure cycle number</a>
+            </td>
+            <td>
+<p>Cure cycle number.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-day-number.html"
+                  title="StructureDefinition/day-number">Day number</a>
+            </td>
+            <td>
+<p>Treatment day number.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vsLOINC.html" title="ValueSet/vsLOINC">Codes LOINC</a>
+            </td>
+            <td>
+<p>ValueSet of LOINC codes.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vsCommunicationModes.html"
+                  title="ValueSet/vsCommunicationModes">Communication modes</a>
+            </td>
+            <td>
+<p>ValueSet for communication modes (incremental, summary).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vsMedicalUnits.html" title="ValueSet/vsMedicalUnits">Medical units</a>
+            </td>
+            <td>
+<p>ValueSet for medical units (accommodation, medical liability unit).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vsMedications.html" title="ValueSet/vsMedications">Medications</a>
+            </td>
+            <td>
+<p>ValueSet for medications.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vsPrescriptionStatus.html"
+                  title="ValueSet/vsPrescriptionStatus">Prescription status</a>
+            </td>
+            <td>
+<p>ValueSet for PlanDefinition types, extended to include creation, stop, modification and validation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vsSCT.html" title="ValueSet/vsSCT">SNOMED CT codes</a>
+            </td>
+            <td>
+<p>ValueSet of SNOMED CT codes.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vsMedicationTypes.html"
+                  title="ValueSet/vsMedicationTypes">Types of medication</a>
+            </td>
+            <td>
+<p>ValueSet for medication types.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-CSCommunicationModes.html"
+                  title="CodeSystem/CSCommunicationModes">Communication modes</a>
+            </td>
+            <td>
+<p>CodeSystem for french communication modes (incremental, summary).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-CSLOINC.html" title="CodeSystem/CSLOINC">LOINC codes</a>
+            </td>
+            <td>
+<p>LOINC CodeSystem.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-CSMedicalUnits.html" title="CodeSystem/CSMedicalUnits">Medical units</a>
+            </td>
+            <td>
+<p>CodeSystem for french medical units (accommodation, medical liability unit).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-CSMedicationTypes.html"
+                  title="CodeSystem/CSMedicationTypes">Medication types</a>
+            </td>
+            <td>
+<p>CodeSystem for french medication types.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-CSMedications.html" title="CodeSystem/CSMedications">Medications</a>
+            </td>
+            <td>
+<p>CodeSystem for french medications.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-CSPrescriptionStatus.html"
+                  title="CodeSystem/CSPrescriptionStatus">Prescription status</a>
+            </td>
+            <td>
+<p>CodeSystem for french prescription status (creation, stop, modification, validation).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-CSSCT.html" title="CodeSystem/CSSCT">SNOMED CT Codes</a>
+            </td>
+            <td>
+<p>SNOMED CT code system.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PlanDefinition-exampleProtocol.html"
+                  title="PlanDefinition/exampleProtocol">Protocol - FOLFOX 4</a>
+            </td>
+            <td>
+<p>Prescribed protocol.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-exampleAccomodationUnit.html"
+                  title="Location/exampleAccomodationUnit">exampleAccomodationUnit</a>
+            </td>
+            <td>
+<p>SAB accomodation unit.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-exampleAdditionalInformationHeight.html"
+                  title="Observation/exampleAdditionalInformationHeight">exampleAdditionalInformationHeight</a>
+            </td>
+            <td>
+<p>Additional information about height.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-exampleAdditionalInformationWeight.html"
+                  title="Observation/exampleAdditionalInformationWeight">exampleAdditionalInformationWeight</a>
+            </td>
+            <td>
+<p>Additional information about weight.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationAdministration-exampleAdministrationReportBACTRIMFORTE.html"
+                  title="MedicationAdministration/exampleAdministrationReportBACTRIMFORTE">exampleAdministrationReportBACTRIMFORTE</a>
+            </td>
+            <td>
+<p>BACTRIMFORTE medication administration report.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DeviceDefinition-exampleAssociatedDeviceNEBUL.html"
+                  title="DeviceDefinition/exampleAssociatedDeviceNEBUL">exampleAssociatedDeviceNEBUL</a>
+            </td>
+            <td>
+<p>Associated device: NEBUL.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-exampleMedicalLiabilityUnit.html"
+                  title="Organization/exampleMedicalLiabilityUnit">exampleMedicalLiabilityUnit</a>
+            </td>
+            <td>
+<p>HCMED Medical liability unit.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Medication-exampleOncologyMedicationBACTRIMFORTE.html"
+                  title="Medication/exampleOncologyMedicationBACTRIMFORTE">exampleOncologyMedicationBACTRIMFORTE</a>
+            </td>
+            <td>
+<p>Medication: BACTRIM FORTE 800MG/160MG CPR.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Medication-exampleOncologyMedicationDOLIPRANE.html"
+                  title="Medication/exampleOncologyMedicationDOLIPRANE">exampleOncologyMedicationDOLIPRANE</a>
+            </td>
+            <td>
+<p>Medication: DOLIPRANE 2,4% BUV SS SUCRE FL 100ML.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Medication-exampleOncologyMedicationOXALIPLATINE200mg.html"
+                  title="Medication/exampleOncologyMedicationOXALIPLATINE200mg">exampleOncologyMedicationOXALIPLATINE200mg</a>
+            </td>
+            <td>
+<p>Medication: OXALIPLATINE 200 mg.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Medication-exampleOncologyMedicationOXYCODONELP10MGVIATRIS.html"
+                  title="Medication/exampleOncologyMedicationOXYCODONELP10MGVIATRIS">exampleOncologyMedicationOXYCODONELP10MGVIATRIS</a>
+            </td>
+            <td>
+<p>Medication: OXYCODONE LP 10 MG VIATRIS, CPR À LIBÉRATION PROLONGÉE.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Medication-exampleOncologyMedicationPENTACARINAT300MG.html"
+                  title="Medication/exampleOncologyMedicationPENTACARINAT300MG">exampleOncologyMedicationPENTACARINAT300MG</a>
+            </td>
+            <td>
+<p>Medication: PENTACARINAT 300MG PDR INJ.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Medication-exampleOncologyMedicationPROFENID50MG.html"
+                  title="Medication/exampleOncologyMedicationPROFENID50MG">exampleOncologyMedicationPROFENID50MG</a>
+            </td>
+            <td>
+<p>Medication: PROFENID 50 MG, GÉLULE.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Medication-exampleOncologyMedicationVITB12.html"
+                  title="Medication/exampleOncologyMedicationVITB12">exampleOncologyMedicationVITB12</a>
+            </td>
+            <td>
+<p>Medication: VIT B12 DEL 1MG/2ML INJ BUV AMP.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-exampleOncologyPatient.html"
+                  title="Patient/exampleOncologyPatient">exampleOncologyPatient</a>
+            </td>
+            <td>
+<p>Patient of IPP 99999.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-exampleOncologyPractitioner.html"
+                  title="Practitioner/exampleOncologyPractitioner">exampleOncologyPractitioner</a>
+            </td>
+            <td>
+<p>Administration report prescriber.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CarePlan-examplePrescription.html"
+                  title="CarePlan/examplePrescription">examplePrescription</a>
+            </td>
+            <td>
+<p>Medication prescription.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationRequest-examplePrescriptionItemBACTRIMFORTE.html"
+                  title="MedicationRequest/examplePrescriptionItemBACTRIMFORTE">examplePrescriptionItemBACTRIMFORTE</a>
+            </td>
+            <td>
+<p>Prescription item related to the medication BACTRIM FORTE 800MG/160MG CPR.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationRequest-examplePrescriptionItemDOLIPRANE.html"
+                  title="MedicationRequest/examplePrescriptionItemDOLIPRANE">examplePrescriptionItemDOLIPRANE</a>
+            </td>
+            <td>
+<p>Prescription item related to the medication DOLIPRANE 2.4% BUV SS SUGAR FL 100ML.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationRequest-examplePrescriptionItemOXALIPLATINE200mg.html"
+                  title="MedicationRequest/examplePrescriptionItemOXALIPLATINE200mg">examplePrescriptionItemOXALIPLATINE200mg</a>
+            </td>
+            <td>
+<p>Prescription item related to the medication OXALIPLATINE 200 mg.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationRequest-examplePrescriptionItemOXYCODONELP10MGVIATRIS.html"
+                  title="MedicationRequest/examplePrescriptionItemOXYCODONELP10MGVIATRIS">examplePrescriptionItemOXYCODONELP10MGVIATRIS</a>
+            </td>
+            <td>
+<p>Prescription item related to the medication OXYCODONE LP 10 MG VIATRIS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationRequest-examplePrescriptionItemPENTACARINAT300MG.html"
+                  title="MedicationRequest/examplePrescriptionItemPENTACARINAT300MG">examplePrescriptionItemPENTACARINAT300MG</a>
+            </td>
+            <td>
+<p>Prescription item related to the medication PENTACARINAT 300MG PDR INJ.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationRequest-examplePrescriptionItemPROFENID50MG.html"
+                  title="MedicationRequest/examplePrescriptionItemPROFENID50MG">examplePrescriptionItemPROFENID50MG</a>
+            </td>
+            <td>
+<p>Prescription item related to the medication PROFENID 50 MG.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationRequest-examplePrescriptionItemVITB12.html"
+                  title="MedicationRequest/examplePrescriptionItemVITB12">examplePrescriptionItemVITB12</a>
+            </td>
+            <td>
+<p>Prescription item related to the medication VIT B12 DEL 1MG/2ML INJ BUV AMP.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-exampleStay.html" title="Encounter/exampleStay">exampleStay</a>
+            </td>
+            <td>
+<p>Stay of ID 111111.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI)</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, Mar 22, 2024 14:46+0000">2024-03-22</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

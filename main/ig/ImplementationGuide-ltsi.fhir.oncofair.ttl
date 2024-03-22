@@ -1,0 +1,1056 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/ImplementationGuide/ltsi.fhir.oncofair> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ltsi.fhir.oncofair"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>OncoFAIR</h2><p>The official URL for this implementation guide is: </p><pre>http://ltsi.univ-rennes.fr/ImplementationGuide/ltsi.fhir.oncofair</pre><div><p>The Onco-FAIR implementation guide reports on the implementation of prescribing and medication administration in oncology.</p>\n</div></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/ImplementationGuide/ltsi.fhir.oncofair"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "OncoFAIR"] ; # 
+  fhir:title [ fhir:v "Onco-FAIR"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2024-03-22T14:46:13+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI)"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI)" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://ltsi.univ-rennes.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The Onco-FAIR implementation guide reports on the implementation of prescribing and medication administration in oncology."] ; # 
+  fhir:packageId [ fhir:v "ltsi.fhir.oncofair"] ; # 
+  fhir:license [ fhir:v "CC0-1.0"] ; # 
+  fhir:fhirVersion ( [ fhir:v "5.0.0"] ) ; # 
+  fhir:dependsOn ( [
+     fhir:id [ fhir:v "hl7tx" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on HL7 Terminology" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://terminology.hl7.org/ImplementationGuide/hl7.terminology"^^xsd:anyURI ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.terminology.r5" ] ;
+     fhir:version [ fhir:v "5.3.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7ext" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r5" ] ;
+     fhir:version [ fhir:v "1.0.0" ]
+  ] ) ; # 
+  fhir:definition [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#0.1.0" ]
+     ] ) ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/accomodation-unit> ;
+         fhir:reference [ fhir:v "StructureDefinition/accomodation-unit" ]
+       ] ;
+       fhir:name [ fhir:v "Accomodation Unit" ] ;
+       fhir:description [ fhir:v "Accomodation unit." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/additional-information> ;
+         fhir:reference [ fhir:v "StructureDefinition/additional-information" ]
+       ] ;
+       fhir:name [ fhir:v "Additional Information" ] ;
+       fhir:description [ fhir:v "Additional information, such as height or weight." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/administration-report> ;
+         fhir:reference [ fhir:v "StructureDefinition/administration-report" ]
+       ] ;
+       fhir:name [ fhir:v "Administration Report" ] ;
+       fhir:description [ fhir:v "Prescribed medication administration report." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/associated-device> ;
+         fhir:reference [ fhir:v "StructureDefinition/associated-device" ]
+       ] ;
+       fhir:name [ fhir:v "Associated Device" ] ;
+       fhir:description [ fhir:v "A device associated with a medication for its administration." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/ValueSet/vsLOINC> ;
+         fhir:reference [ fhir:v "ValueSet/vsLOINC" ]
+       ] ;
+       fhir:name [ fhir:v "Codes LOINC" ] ;
+       fhir:description [ fhir:v "ValueSet of LOINC codes." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/ValueSet/vsCommunicationModes> ;
+         fhir:reference [ fhir:v "ValueSet/vsCommunicationModes" ]
+       ] ;
+       fhir:name [ fhir:v "Communication modes" ] ;
+       fhir:description [ fhir:v "ValueSet for communication modes (incremental, summary)." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/CodeSystem/CSCommunicationModes> ;
+         fhir:reference [ fhir:v "CodeSystem/CSCommunicationModes" ]
+       ] ;
+       fhir:name [ fhir:v "Communication modes" ] ;
+       fhir:description [ fhir:v "CodeSystem for french communication modes (incremental, summary)." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/cure-cycle-number> ;
+         fhir:reference [ fhir:v "StructureDefinition/cure-cycle-number" ]
+       ] ;
+       fhir:name [ fhir:v "Cure cycle number" ] ;
+       fhir:description [ fhir:v "Cure cycle number." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/day-number> ;
+         fhir:reference [ fhir:v "StructureDefinition/day-number" ]
+       ] ;
+       fhir:name [ fhir:v "Day number" ] ;
+       fhir:description [ fhir:v "Treatment day number." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Location" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/Location/exampleAccomodationUnit> ;
+         fhir:reference [ fhir:v "Location/exampleAccomodationUnit" ]
+       ] ;
+       fhir:name [ fhir:v "exampleAccomodationUnit" ] ;
+       fhir:description [ fhir:v "SAB accomodation unit." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/AccomodationUnit"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/AccomodationUnit>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/Observation/exampleAdditionalInformationHeight> ;
+         fhir:reference [ fhir:v "Observation/exampleAdditionalInformationHeight" ]
+       ] ;
+       fhir:name [ fhir:v "exampleAdditionalInformationHeight" ] ;
+       fhir:description [ fhir:v "Additional information about height." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/AdditionalInformation"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/AdditionalInformation>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/Observation/exampleAdditionalInformationWeight> ;
+         fhir:reference [ fhir:v "Observation/exampleAdditionalInformationWeight" ]
+       ] ;
+       fhir:name [ fhir:v "exampleAdditionalInformationWeight" ] ;
+       fhir:description [ fhir:v "Additional information about weight." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/AdditionalInformation"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/AdditionalInformation>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationAdministration" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/MedicationAdministration/exampleAdministrationReportBACTRIMFORTE> ;
+         fhir:reference [ fhir:v "MedicationAdministration/exampleAdministrationReportBACTRIMFORTE" ]
+       ] ;
+       fhir:name [ fhir:v "exampleAdministrationReportBACTRIMFORTE" ] ;
+       fhir:description [ fhir:v "BACTRIMFORTE medication administration report." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/AdministrationReport"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/AdministrationReport>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "DeviceDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/DeviceDefinition/exampleAssociatedDeviceNEBUL> ;
+         fhir:reference [ fhir:v "DeviceDefinition/exampleAssociatedDeviceNEBUL" ]
+       ] ;
+       fhir:name [ fhir:v "exampleAssociatedDeviceNEBUL" ] ;
+       fhir:description [ fhir:v "Associated device: NEBUL." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/AssociatedDevice"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/AssociatedDevice>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/Organization/exampleMedicalLiabilityUnit> ;
+         fhir:reference [ fhir:v "Organization/exampleMedicalLiabilityUnit" ]
+       ] ;
+       fhir:name [ fhir:v "exampleMedicalLiabilityUnit" ] ;
+       fhir:description [ fhir:v "HCMED Medical liability unit." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/MedicalLiabilityUnit"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/MedicalLiabilityUnit>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Medication" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/Medication/exampleOncologyMedicationBACTRIMFORTE> ;
+         fhir:reference [ fhir:v "Medication/exampleOncologyMedicationBACTRIMFORTE" ]
+       ] ;
+       fhir:name [ fhir:v "exampleOncologyMedicationBACTRIMFORTE" ] ;
+       fhir:description [ fhir:v "Medication: BACTRIM FORTE 800MG/160MG CPR." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/OncologyMedication"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/OncologyMedication>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Medication" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/Medication/exampleOncologyMedicationDOLIPRANE> ;
+         fhir:reference [ fhir:v "Medication/exampleOncologyMedicationDOLIPRANE" ]
+       ] ;
+       fhir:name [ fhir:v "exampleOncologyMedicationDOLIPRANE" ] ;
+       fhir:description [ fhir:v "Medication: DOLIPRANE 2,4% BUV SS SUCRE FL 100ML." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/OncologyMedication"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/OncologyMedication>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Medication" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/Medication/exampleOncologyMedicationOXALIPLATINE200mg> ;
+         fhir:reference [ fhir:v "Medication/exampleOncologyMedicationOXALIPLATINE200mg" ]
+       ] ;
+       fhir:name [ fhir:v "exampleOncologyMedicationOXALIPLATINE200mg" ] ;
+       fhir:description [ fhir:v "Medication: OXALIPLATINE 200 mg." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/OncologyMedication"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/OncologyMedication>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Medication" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/Medication/exampleOncologyMedicationOXYCODONELP10MGVIATRIS> ;
+         fhir:reference [ fhir:v "Medication/exampleOncologyMedicationOXYCODONELP10MGVIATRIS" ]
+       ] ;
+       fhir:name [ fhir:v "exampleOncologyMedicationOXYCODONELP10MGVIATRIS" ] ;
+       fhir:description [ fhir:v "Medication: OXYCODONE LP 10 MG VIATRIS, CPR À LIBÉRATION PROLONGÉE." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/OncologyMedication"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/OncologyMedication>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Medication" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/Medication/exampleOncologyMedicationPENTACARINAT300MG> ;
+         fhir:reference [ fhir:v "Medication/exampleOncologyMedicationPENTACARINAT300MG" ]
+       ] ;
+       fhir:name [ fhir:v "exampleOncologyMedicationPENTACARINAT300MG" ] ;
+       fhir:description [ fhir:v "Medication: PENTACARINAT 300MG PDR INJ." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/OncologyMedication"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/OncologyMedication>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Medication" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/Medication/exampleOncologyMedicationPROFENID50MG> ;
+         fhir:reference [ fhir:v "Medication/exampleOncologyMedicationPROFENID50MG" ]
+       ] ;
+       fhir:name [ fhir:v "exampleOncologyMedicationPROFENID50MG" ] ;
+       fhir:description [ fhir:v "Medication: PROFENID 50 MG, GÉLULE." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/OncologyMedication"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/OncologyMedication>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Medication" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/Medication/exampleOncologyMedicationVITB12> ;
+         fhir:reference [ fhir:v "Medication/exampleOncologyMedicationVITB12" ]
+       ] ;
+       fhir:name [ fhir:v "exampleOncologyMedicationVITB12" ] ;
+       fhir:description [ fhir:v "Medication: VIT B12 DEL 1MG/2ML INJ BUV AMP." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/OncologyMedication"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/OncologyMedication>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/Patient/exampleOncologyPatient> ;
+         fhir:reference [ fhir:v "Patient/exampleOncologyPatient" ]
+       ] ;
+       fhir:name [ fhir:v "exampleOncologyPatient" ] ;
+       fhir:description [ fhir:v "Patient of IPP 99999." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/OncologyPatient"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/OncologyPatient>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/Practitioner/exampleOncologyPractitioner> ;
+         fhir:reference [ fhir:v "Practitioner/exampleOncologyPractitioner" ]
+       ] ;
+       fhir:name [ fhir:v "exampleOncologyPractitioner" ] ;
+       fhir:description [ fhir:v "Administration report prescriber." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/OncologyPractitioner"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/OncologyPractitioner>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CarePlan" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/CarePlan/examplePrescription> ;
+         fhir:reference [ fhir:v "CarePlan/examplePrescription" ]
+       ] ;
+       fhir:name [ fhir:v "examplePrescription" ] ;
+       fhir:description [ fhir:v "Medication prescription." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/Prescription"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/Prescription>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/examplePrescriptionItemBACTRIMFORTE> ;
+         fhir:reference [ fhir:v "MedicationRequest/examplePrescriptionItemBACTRIMFORTE" ]
+       ] ;
+       fhir:name [ fhir:v "examplePrescriptionItemBACTRIMFORTE" ] ;
+       fhir:description [ fhir:v "Prescription item related to the medication BACTRIM FORTE 800MG/160MG CPR." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/PrescriptionItem"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/PrescriptionItem>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/examplePrescriptionItemDOLIPRANE> ;
+         fhir:reference [ fhir:v "MedicationRequest/examplePrescriptionItemDOLIPRANE" ]
+       ] ;
+       fhir:name [ fhir:v "examplePrescriptionItemDOLIPRANE" ] ;
+       fhir:description [ fhir:v "Prescription item related to the medication DOLIPRANE 2.4% BUV SS SUGAR FL 100ML." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/PrescriptionItem"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/PrescriptionItem>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/examplePrescriptionItemOXALIPLATINE200mg> ;
+         fhir:reference [ fhir:v "MedicationRequest/examplePrescriptionItemOXALIPLATINE200mg" ]
+       ] ;
+       fhir:name [ fhir:v "examplePrescriptionItemOXALIPLATINE200mg" ] ;
+       fhir:description [ fhir:v "Prescription item related to the medication OXALIPLATINE 200 mg." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/PrescriptionItem"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/PrescriptionItem>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/examplePrescriptionItemOXYCODONELP10MGVIATRIS> ;
+         fhir:reference [ fhir:v "MedicationRequest/examplePrescriptionItemOXYCODONELP10MGVIATRIS" ]
+       ] ;
+       fhir:name [ fhir:v "examplePrescriptionItemOXYCODONELP10MGVIATRIS" ] ;
+       fhir:description [ fhir:v "Prescription item related to the medication OXYCODONE LP 10 MG VIATRIS." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/PrescriptionItem"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/PrescriptionItem>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/examplePrescriptionItemPENTACARINAT300MG> ;
+         fhir:reference [ fhir:v "MedicationRequest/examplePrescriptionItemPENTACARINAT300MG" ]
+       ] ;
+       fhir:name [ fhir:v "examplePrescriptionItemPENTACARINAT300MG" ] ;
+       fhir:description [ fhir:v "Prescription item related to the medication PENTACARINAT 300MG PDR INJ." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/PrescriptionItem"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/PrescriptionItem>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/examplePrescriptionItemPROFENID50MG> ;
+         fhir:reference [ fhir:v "MedicationRequest/examplePrescriptionItemPROFENID50MG" ]
+       ] ;
+       fhir:name [ fhir:v "examplePrescriptionItemPROFENID50MG" ] ;
+       fhir:description [ fhir:v "Prescription item related to the medication PROFENID 50 MG." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/PrescriptionItem"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/PrescriptionItem>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/examplePrescriptionItemVITB12> ;
+         fhir:reference [ fhir:v "MedicationRequest/examplePrescriptionItemVITB12" ]
+       ] ;
+       fhir:name [ fhir:v "examplePrescriptionItemVITB12" ] ;
+       fhir:description [ fhir:v "Prescription item related to the medication VIT B12 DEL 1MG/2ML INJ BUV AMP." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/PrescriptionItem"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/PrescriptionItem>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Encounter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/Encounter/exampleStay> ;
+         fhir:reference [ fhir:v "Encounter/exampleStay" ]
+       ] ;
+       fhir:name [ fhir:v "exampleStay" ] ;
+       fhir:description [ fhir:v "Stay of ID 111111." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/Stay"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/Stay>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/CodeSystem/CSLOINC> ;
+         fhir:reference [ fhir:v "CodeSystem/CSLOINC" ]
+       ] ;
+       fhir:name [ fhir:v "LOINC codes" ] ;
+       fhir:description [ fhir:v "LOINC CodeSystem." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/Medical-liability-unit> ;
+         fhir:reference [ fhir:v "StructureDefinition/Medical-liability-unit" ]
+       ] ;
+       fhir:name [ fhir:v "Medical Liability Unit" ] ;
+       fhir:description [ fhir:v "Medical liability unit." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/ValueSet/vsMedicalUnits> ;
+         fhir:reference [ fhir:v "ValueSet/vsMedicalUnits" ]
+       ] ;
+       fhir:name [ fhir:v "Medical units" ] ;
+       fhir:description [ fhir:v "ValueSet for medical units (accommodation, medical liability unit)." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/CodeSystem/CSMedicalUnits> ;
+         fhir:reference [ fhir:v "CodeSystem/CSMedicalUnits" ]
+       ] ;
+       fhir:name [ fhir:v "Medical units" ] ;
+       fhir:description [ fhir:v "CodeSystem for french medical units (accommodation, medical liability unit)." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes> ;
+         fhir:reference [ fhir:v "CodeSystem/CSMedicationTypes" ]
+       ] ;
+       fhir:name [ fhir:v "Medication types" ] ;
+       fhir:description [ fhir:v "CodeSystem for french medication types." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/ValueSet/vsMedications> ;
+         fhir:reference [ fhir:v "ValueSet/vsMedications" ]
+       ] ;
+       fhir:name [ fhir:v "Medications" ] ;
+       fhir:description [ fhir:v "ValueSet for medications." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/CodeSystem/CSMedications> ;
+         fhir:reference [ fhir:v "CodeSystem/CSMedications" ]
+       ] ;
+       fhir:name [ fhir:v "Medications" ] ;
+       fhir:description [ fhir:v "CodeSystem for french medications." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication> ;
+         fhir:reference [ fhir:v "StructureDefinition/oncology-medication" ]
+       ] ;
+       fhir:name [ fhir:v "Oncology Medication" ] ;
+       fhir:description [ fhir:v "Medication used in oncology." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncology-patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/oncology-patient" ]
+       ] ;
+       fhir:name [ fhir:v "Oncology Patient" ] ;
+       fhir:description [ fhir:v "Patient receiving medical treatment in oncology." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncology-practitioner> ;
+         fhir:reference [ fhir:v "StructureDefinition/oncology-practitioner" ]
+       ] ;
+       fhir:name [ fhir:v "Oncology Practitioner" ] ;
+       fhir:description [ fhir:v "Oncology practitioner." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/prescription> ;
+         fhir:reference [ fhir:v "StructureDefinition/prescription" ]
+       ] ;
+       fhir:name [ fhir:v "Prescription" ] ;
+       fhir:description [ fhir:v "Medication prescription." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item> ;
+         fhir:reference [ fhir:v "StructureDefinition/prescription-item" ]
+       ] ;
+       fhir:name [ fhir:v "Prescription Item" ] ;
+       fhir:description [ fhir:v "Prescription item." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/ValueSet/vsPrescriptionStatus> ;
+         fhir:reference [ fhir:v "ValueSet/vsPrescriptionStatus" ]
+       ] ;
+       fhir:name [ fhir:v "Prescription status" ] ;
+       fhir:description [ fhir:v "ValueSet for PlanDefinition types, extended to include creation, stop, modification and validation." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/CodeSystem/CSPrescriptionStatus> ;
+         fhir:reference [ fhir:v "CodeSystem/CSPrescriptionStatus" ]
+       ] ;
+       fhir:name [ fhir:v "Prescription status" ] ;
+       fhir:description [ fhir:v "CodeSystem for french prescription status (creation, stop, modification, validation)." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/protocol> ;
+         fhir:reference [ fhir:v "StructureDefinition/protocol" ]
+       ] ;
+       fhir:name [ fhir:v "Protocol" ] ;
+       fhir:description [ fhir:v "Protocol." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/PlanDefinition/exampleProtocol> ;
+         fhir:reference [ fhir:v "PlanDefinition/exampleProtocol" ]
+       ] ;
+       fhir:name [ fhir:v "Protocol - FOLFOX 4" ] ;
+       fhir:description [ fhir:v "Prescribed protocol." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/Protocol"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/Protocol>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/ValueSet/vsSCT> ;
+         fhir:reference [ fhir:v "ValueSet/vsSCT" ]
+       ] ;
+       fhir:name [ fhir:v "SNOMED CT codes" ] ;
+       fhir:description [ fhir:v "ValueSet of SNOMED CT codes." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/CodeSystem/CSSCT> ;
+         fhir:reference [ fhir:v "CodeSystem/CSSCT" ]
+       ] ;
+       fhir:name [ fhir:v "SNOMED CT Codes" ] ;
+       fhir:description [ fhir:v "SNOMED CT code system." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/Stay> ;
+         fhir:reference [ fhir:v "StructureDefinition/Stay" ]
+       ] ;
+       fhir:name [ fhir:v "Stay" ] ;
+       fhir:description [ fhir:v "Stay." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/ValueSet/vsMedicationTypes> ;
+         fhir:reference [ fhir:v "ValueSet/vsMedicationTypes" ]
+       ] ;
+       fhir:name [ fhir:v "Types of medication" ] ;
+       fhir:description [ fhir:v "ValueSet for medication types." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:page [
+       fhir:source [ fhir:v "toc.html"^^xsd:anyURI ] ;
+       fhir:name [ fhir:v "toc.html"^^xsd:anyURI ] ;
+       fhir:title [ fhir:v "Table of Contents" ] ;
+       fhir:generation [ fhir:v "html" ] ;
+       fhir:page ( [
+         fhir:source [ fhir:v "index.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Home" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] )
+     ] ;
+     fhir:parameter ( [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "copyrightyear" ]
+       ] ;
+       fhir:value [ fhir:v "2023+" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "releaselabel" ]
+       ] ;
+       fhir:value [ fhir:v "ci-build" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "autoload-resources" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/capabilities" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/examples" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/extensions" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/models" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/operations" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/profiles" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/resources" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/vocabulary" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/maps" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/testing" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/history" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "fsh-generated/resources" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-pages" ]
+       ] ;
+       fhir:value [ fhir:v "template/config" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-pages" ]
+       ] ;
+       fhir:value [ fhir:v "input/images" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-liquid" ]
+       ] ;
+       fhir:value [ fhir:v "template/liquid" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-liquid" ]
+       ] ;
+       fhir:value [ fhir:v "input/liquid" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-qa" ]
+       ] ;
+       fhir:value [ fhir:v "temp/qa" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-temp" ]
+       ] ;
+       fhir:value [ fhir:v "temp/pages" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-output" ]
+       ] ;
+       fhir:value [ fhir:v "output" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-tx-cache" ]
+       ] ;
+       fhir:value [ fhir:v "input-cache/txcache" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-suppressed-warnings" ]
+       ] ;
+       fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-history" ]
+       ] ;
+       fhir:value [ fhir:v "http://ltsi.univ-rennes.fr/history.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "template-html" ]
+       ] ;
+       fhir:value [ fhir:v "template-page.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "template-md" ]
+       ] ;
+       fhir:value [ fhir:v "template-page-md.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-contact" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-context" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-copyright" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-jurisdiction" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-license" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-publisher" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-version" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-wg" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "active-tables" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "fmm-definition" ]
+       ] ;
+       fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "propagate-status" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludelogbinaryformat" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "tabbed-snapshots" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
