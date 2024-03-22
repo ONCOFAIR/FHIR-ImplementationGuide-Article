@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vsMedications"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-CSMedications.html"><code>http://ltsi.univ-rennes.fr/CodeSystem/CSMedications</code></a></li></ul></div>
+  </text>
+  <url value="http://ltsi.univ-rennes.fr/ValueSet/vsMedications"/>
+  <version value="0.1.0"/>
+  <name value="VSMedications"/>
+  <title value="Medications"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2024-03-22T09:38:52+00:00"/>
+  <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI)"/>
+  <contact>
+    <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://ltsi.univ-rennes.fr"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet for medications."/>
+  <compose>
+    <include>
+      <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedications"/>
+    </include>
+  </compose>
+</ValueSet>

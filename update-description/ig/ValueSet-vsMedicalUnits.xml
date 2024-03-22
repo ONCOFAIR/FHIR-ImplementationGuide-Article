@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vsMedicalUnits"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-CSMedicalUnits.html"><code>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicalUnits</code></a></li></ul></div>
+  </text>
+  <url value="http://ltsi.univ-rennes.fr/ValueSet/vsMedicalUnits"/>
+  <version value="0.1.0"/>
+  <name value="VSMedicalUnits"/>
+  <title value="Medical units"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2024-03-22T09:38:52+00:00"/>
+  <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI)"/>
+  <contact>
+    <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://ltsi.univ-rennes.fr"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet for medical units (accommodation, medical liability unit)."/>
+  <compose>
+    <include>
+      <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedicalUnits"/>
+    </include>
+  </compose>
+</ValueSet>

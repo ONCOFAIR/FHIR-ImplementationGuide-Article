@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="exampleAdditionalInformationWeight"/>
+  <meta>
+    <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/AdditionalInformation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="exampleAdditionalInformationWeight"> </a><a name="hcexampleAdditionalInformationWeight"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;exampleAdditionalInformationWeight&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-additional-information.html">Additional Information</a></p></div><p><b>status</b>: registered</p><p><b>code</b>: Weight <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSLOINC.html">LOINC codes</a>#29463-7)</span></p><p><b>subject</b>: <a href="Patient-exampleOncologyPatient.html">Patient/exampleOncologyPatient</a> &quot; DOE&quot;</p><p><b>effective</b>: 2023-01-01 00:00:00+0000</p><p><b>value</b>: 80 kg</p></div>
+  </text>
+  <status value="registered"/>
+  <code>
+    <coding>
+      <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSLOINC"/>
+      <code value="29463-7"/>
+      <display value="Weight"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/exampleOncologyPatient"/>
+  </subject>
+  <effectiveDateTime value="2023-01-01T00:00:00.0000Z"/>
+  <valueQuantity>
+    <value value="80"/>
+    <unit value="kg"/>
+  </valueQuantity>
+</Observation>

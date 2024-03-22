@@ -1,0 +1,231 @@
+@startuml
+set namespaceSeparator ?
+hide circle
+hide class fields
+
+package IG #DDDDDD{
+
+     package Profiles #DDDDDD{
+
+        class MedicalLiabilityUnit{
+
+             Organization.name => [1..None]
+        } 
+
+        class Stay{
+
+             Encounter.identifier.value => [1..None]
+             Encounter.status => [None..None]
+             Encounter.subject => [1..None]
+             Encounter.location => [1..None]
+             Encounter.location.location => [None..None]
+        } 
+
+        class AccomodationUnit{
+
+             Location.name => [1..None]
+             Location.managingOrganization => [1..None]
+        } 
+
+        class AdditionalInformation{
+
+             Observation.code => [None..None]
+             Observation.subject => [1..None]
+             Observation.effective[x] => [None..None]
+             Observation.effective[x]:effectiveDateTime => [0..1]
+             Observation.issued => [None..None]
+             Observation.value[x] => [1..None]
+             Observation.value[x]:valueQuantity => [0..1]
+             Observation.value[x]:valueQuantity.value => [1..None]
+             Observation.value[x]:valueQuantity.unit => [1..None]
+        } 
+
+        class AdministrationReport{
+
+             MedicationAdministration.identifier.value => [None..None]
+             MedicationAdministration.basedOn => [1..1]
+             MedicationAdministration.medication => [None..None]
+             MedicationAdministration.encounter => [1..None]
+             MedicationAdministration.occurence[x] => [None..None]
+             MedicationAdministration.occurence[x]:occurencePeriod => [0..1]
+             MedicationAdministration.request => [None..None]
+             MedicationAdministration.note => [None..None]
+             MedicationAdministration.dosage => [None..None]
+        } 
+
+        class AssociatedDevice{
+
+             DeviceDefinition.deviceName => [1..1]
+        } 
+
+        class OncologyMedication{
+
+             Medication.identifier.value => [1..None]
+             Medication.code.coding => [1..1]
+        } 
+
+        class OncologyPatient{
+
+             Patient.identifier => [1..None]
+             Patient.identifier:IPP => [1..1]
+             Patient.identifier:IPP.use => [None..None]
+             Patient.identifier:IPP.type.text => [None..None]
+             Patient.identifier:IPP.system => [1..None]
+             Patient.identifier:IPP.value => [1..None]
+             Patient.name.use => [1..None]
+             Patient.name.family => [1..None]
+             Patient.name.given => [1..None]
+             Patient.gender => [1..None]
+             Patient.birthDate => [1..None]
+             Patient.deceased[x] => [None..None]
+        } 
+
+        class OncologyPractitioner{
+
+             Practitioner.identifier.value => [1..None]
+        } 
+
+        class PrescriptionItem{
+
+             MedicationRequest.identifier.value => [1..None]
+             MedicationRequest.basedOn => [None..None]
+             MedicationRequest.groupIdentifier.value => [1..None]
+             MedicationRequest.category.coding => [1..1]
+             MedicationRequest.medication => [None..None]
+             MedicationRequest.subject => [None..None]
+             MedicationRequest.supportingInformation => [None..None]
+             MedicationRequest.requester => [None..None]
+             MedicationRequest.requester.identifier.value => [1..None]
+             MedicationRequest.device => [None..None]
+             MedicationRequest.note => [None..None]
+             MedicationRequest.effectiveDosePeriod.start => [1..None]
+             MedicationRequest.effectiveDosePeriod.end => [None..None]
+             MedicationRequest.dosageInstruction => [1..None]
+             MedicationRequest.dosageInstruction.sequence => [None..None]
+             MedicationRequest.dosageInstruction.text => [1..None]
+             MedicationRequest.dosageInstruction.timing => [None..None]
+             MedicationRequest.dosageInstruction.timing.repeat.bounds[x] => [None..None]
+             MedicationRequest.dosageInstruction.timing.repeat.bounds[x]:boundsPeriod => [0..1]
+             MedicationRequest.dosageInstruction.timing.repeat.bounds[x]:boundsPeriod.start => [None..None]
+             MedicationRequest.dosageInstruction.timing.repeat.frequency => [None..None]
+             MedicationRequest.dosageInstruction.timing.repeat.period => [None..None]
+             MedicationRequest.dosageInstruction.timing.repeat.periodUnit => [None..None]
+             MedicationRequest.dosageInstruction.route.coding => [1..1]
+             MedicationRequest.dosageInstruction.doseAndRate => [None..None]
+             MedicationRequest.dosageInstruction.doseAndRate.dose[x] => [None..None]
+             MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseQuantity => [0..1]
+             MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseQuantity.value => [1..None]
+             MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseQuantity.unit => [1..None]
+             MedicationRequest.dosageInstruction.doseAndRate.rate[x] => [None..None]
+             MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateRatio => [0..1]
+             MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateRatio.numerator.value => [None..None]
+             MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateRatio.numerator.unit => [None..None]
+             MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateRatio.denominator.value => [None..None]
+             MedicationRequest.dispenseRequest.initialFill.quantity.value => [None..None]
+             MedicationRequest.dispenseRequest.quantity => [None..None]
+        } 
+
+        class Prescription{
+
+             CarePlan.identifier => [None..None]
+             CarePlan.instantiatesCanonical => [1..1]
+             CarePlan.category => [1..1]
+             CarePlan.subject => [None..None]
+             CarePlan.encounter => [1..None]
+             CarePlan.created => [1..None]
+             CarePlan.supportingInfo => [1..None]
+             CarePlan.activity => [1..None]
+             CarePlan.activity.plannedActivityReference => [1..None]
+        } 
+
+        class Protocol{
+
+             PlanDefinition.extension => [2..None]
+             PlanDefinition.extension:numeroCure => <&plus>[1..1]
+             PlanDefinition.extension:numeroJour => <&plus>[1..1]
+             PlanDefinition.identifier => [1..1]
+             PlanDefinition.name => [1..None]
+             PlanDefinition.title => [1..None]
+             PlanDefinition.type => [None..None]
+             PlanDefinition.date => [1..None]
+         }
+
+     }
+     package extension #paleturquoise {
+
+     Protocol -[#black,dashed,thickness=2]-> CureCycleNumber
+     Protocol -[#black,dashed,thickness=2]-> DayNumber
+
+        class CureCycleNumber{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [1..None]
+          Extension.value[x]:valueInteger => [1..1]
+        } 
+        class DayNumber{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [1..None]
+          Extension.value[x]:valueInteger => [1..1]
+         }
+     }
+     package valueset #PaleVioletRed{
+
+        class VSPrescriptionStatus  
+
+     Protocol -[#black,dotted,thickness=2]-> VSPrescriptionStatus
+       }
+
+package "Ressources de base" #palegreen {
+
+ class "Organization" as  classd6b258792ff06f82933c74eeb8aef591 
+
+    classd6b258792ff06f82933c74eeb8aef591 --> MedicalLiabilityUnit
+
+ class "Encounter" as  classd1e9f9f891de8f9a655739a01fbf68f0 
+
+    classd1e9f9f891de8f9a655739a01fbf68f0 --> Stay
+
+ class "Location" as  classce5bf551379459c1c61d2a204061c455 
+
+    classce5bf551379459c1c61d2a204061c455 --> AccomodationUnit
+
+ class "Observation" as  classc680d437163cc6bab4f9bdb35c3073d0 
+
+    classc680d437163cc6bab4f9bdb35c3073d0 --> AdditionalInformation
+
+ class "MedicationAdministration" as  classcb08d1580a4f19d9fc3a0c98169f1144 
+
+    classcb08d1580a4f19d9fc3a0c98169f1144 --> AdministrationReport
+
+ class "DeviceDefinition" as  classa6797321593ef085d950f590f4014cfa 
+
+    classa6797321593ef085d950f590f4014cfa --> AssociatedDevice
+
+ class "Medication" as  class353bd6f65060d17097c3b03141e79cce 
+
+    class353bd6f65060d17097c3b03141e79cce --> OncologyMedication
+
+ class "Patient" as  class01122a97dca927210827560cb7d76af8 
+
+    class01122a97dca927210827560cb7d76af8 --> OncologyPatient
+
+ class "Practitioner" as  classe1fdce734a2fd9596ad930bdb139ca06 
+
+    classe1fdce734a2fd9596ad930bdb139ca06 --> OncologyPractitioner
+
+ class "MedicationRequest" as  class2071abb7e1482ea8731af3cdcaed7225 
+
+    class2071abb7e1482ea8731af3cdcaed7225 --> PrescriptionItem
+
+ class "CarePlan" as  classc1c8e4b50c739ddc150dd233aa035d7a 
+
+    classc1c8e4b50c739ddc150dd233aa035d7a --> Prescription
+
+ class "PlanDefinition" as  class0375201638a0df09e5ecd3c0b36df917 
+
+    class0375201638a0df09e5ecd3c0b36df917 --> Protocol
+}
+@enduml
