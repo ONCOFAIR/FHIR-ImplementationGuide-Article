@@ -1,4 +1,4 @@
-![Banniere](input/images/banniere1.png)
+![Banniere](input/pagecontent/images/banniere1.png)
 
 
 
