@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vsLOINC",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-CSLOINC.html\"><code>http://ltsi.univ-rennes.fr/CodeSystem/CSLOINC</code></a></li></ul></div>"
+  },
+  "url" : "http://ltsi.univ-rennes.fr/ValueSet/vsLOINC",
+  "version" : "0.1.0",
+  "name" : "VSLOINC",
+  "title" : "Codes LOINC",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-03-25T09:47:39+00:00",
+  "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI)",
+  "contact" : [{
+    "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://ltsi.univ-rennes.fr"
+    }]
+  }],
+  "description" : "ValueSet of LOINC codes.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://ltsi.univ-rennes.fr/CodeSystem/CSLOINC"
+    }]
+  }
+}

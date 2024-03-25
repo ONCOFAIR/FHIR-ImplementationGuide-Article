@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/PlanDefinition/exampleProtocol> a fhir:PlanDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "exampleProtocol"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/Protocol"^^xsd:anyURI ;
+       fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/Protocol>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PlanDefinition</b><a name=\"exampleProtocol\"> </a><a name=\"hcexampleProtocol\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PlanDefinition &quot;exampleProtocol&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-protocol.html\">Protocol</a></p></div><p><b>Treatment cycle number</b>: 1</p><p><b>Treatment day number</b>: 1</p><p><b>url</b>: <code>http://ltsi.univ-rennes.fr/PlanDefinition/exampleProtocol</code></p><p><b>identifier</b>: 5</p><p><b>version</b>: 0.1.0</p><p><b>name</b>: FOLFOX 4</p><p><b>title</b>: Protocol - FOLFOX 4</p><p><b>status</b>: active</p><p><b>date</b>: 2023-01-01 09:00:00+0000</p><p><b>publisher</b>: DOMASIA team of the Signal and Image Processing Laboratory (LTSI)</p><p><b>contact</b>: DOMASIA team of the Signal and Image Processing Laboratory (LTSI): <a href=\"https://ltsi.univ-rennes.fr\">https://ltsi.univ-rennes.fr</a></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/treatment-cycle-number"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1"^^xsd:integer ]
+  ] [
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/treatment-day-number"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1"^^xsd:integer ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/PlanDefinition/exampleProtocol"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "5" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "FOLFOX 4"] ; # 
+  fhir:title [ fhir:v "Protocol - FOLFOX 4"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-01-01T09:00:00.0000Z"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI)"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI)" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://ltsi.univ-rennes.fr" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
