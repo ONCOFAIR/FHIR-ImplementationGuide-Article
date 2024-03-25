@@ -3,7 +3,9 @@ Parent: Encounter
 Id: Stay
 Title: "Stay"
 Description : "Stay."
-* identifier.value 1..1 MS
+* ^url = "http://ltsi.univ-rennes.fr/StructureDefinition/Stay"
+* identifier 1..* MS
+* identifier.value 1..1 
 * identifier.value ^short = "The stay's identifier"
 * status MS
 * status ^short = "The stay's status"

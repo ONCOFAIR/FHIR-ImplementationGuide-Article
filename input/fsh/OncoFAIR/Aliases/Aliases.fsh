@@ -1,5 +1,5 @@
 Alias: $CommunicationModes = http://ltsi.univ-rennes.fr/CodeSystem/CSCommunicationModes
-Alias: $PrescriptionStatus = http://ltsi.univ-rennes.fr/CodeSystem/CSPrescriptionStatus
+Alias: $PrescriptionCategory = http://ltsi.univ-rennes.fr/CodeSystem/CSPrescriptionCategory
 Alias: $MedicalUnits = http://ltsi.univ-rennes.fr/CodeSystem/CSMedicalUnits
 Alias: $LOINC = http://ltsi.univ-rennes.fr/CodeSystem/CSLOINC //https://loinc.org
 Alias: $MedicationTypes = http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes

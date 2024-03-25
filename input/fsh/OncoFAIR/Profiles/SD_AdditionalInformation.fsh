@@ -3,11 +3,12 @@ Parent: Observation
 Id: additional-information
 Title: "Additional Information"
 Description: "Additional information, such as height or weight."
+* ^url = "http://ltsi.univ-rennes.fr/StructureDefinition/AdditionalInformation"
 * subject 1..1 MS
 * subject ^short = "The subject of the additional information"
-* code 1..1 MS 
+* code MS 
 * code ^short = "LOINC code representing the additional information"
-* effectiveDateTime MS
+* effectiveDateTime 1..1 MS
 * effectiveDateTime ^short = "Date and time of recording of the additional information"
 * issued MS 
 * issued ^short = "Date and time this version was made available"

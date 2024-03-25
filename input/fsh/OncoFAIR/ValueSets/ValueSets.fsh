@@ -5,13 +5,13 @@ Description: "ValueSet for medical units (accommodation, medical liability unit)
 * ^experimental = true
 * codes from system CSMedicalUnits
 
-ValueSet: VSPrescriptionStatus
-Id: vsPrescriptionStatus
+ValueSet: VSPrescriptionCategory
+Id: vsPrescriptionCategory
 Title: "Prescription status"
 Description: "ValueSet for PlanDefinition types, extended to include creation, stop, modification and validation."
 * ^experimental = true
 * include codes from system http://hl7.org/fhir/ValueSet/plan-definition-type
-* codes from system CSPrescriptionStatus
+* codes from system CSPrescriptionCategory
 
 ValueSet: VSCommunicationModes
 Id: vsCommunicationModes
