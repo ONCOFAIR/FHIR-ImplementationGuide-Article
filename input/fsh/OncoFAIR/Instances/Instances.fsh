@@ -97,8 +97,8 @@ Description: "Prescribed protocol."
 * name = "FOLFOX 4"
 * title = "Protocol - FOLFOX 4"
 * date = "2023-01-01T09:00:00.0000Z"
-* extension[numeroCure].valueInteger = 1
-* extension[numeroJour].valueInteger = 1
+* extension[treatmentCycleNumber].valueInteger = 1
+* extension[treatmentDayNumber].valueInteger = 1
 
 
 //Prescription Items 
@@ -109,11 +109,12 @@ Description: "Prescription item related to the medication OXALIPLATINE 200 mg."
 * status = #completed 
 * intent = #order
 * groupIdentifier.value = "12345"
+* basedOn = Reference(examplePrescription)
 * identifier.value = "589127"
-* category.coding = $PrescriptionStatus#C "Creation"
+* category.coding = $PrescriptionCategory#C "Creation"
 * subject = Reference(exampleOncologyPatient)
 * dispenseRequest.initialFill.quantity.value = 1 
-* requester.identifier.value = "6789"
+* requester = Reference(exampleOncologyPractitioner)
 * effectiveDosePeriod.start = "2023-01-01T09:00:00.0000Z" //égale à DH début administration 1ère dose
 * effectiveDosePeriod.end = "2023-01-01T11:35:00.0000Z" //égale à DH fin administration dernière dose
 * dosageInstruction.route.coding = $SCT#47625008 "Intravenous route"
@@ -140,11 +141,12 @@ Description: "Prescription item related to the medication OXYCODONE LP 10 MG VIA
 * status = #completed 
 * intent = #order
 * groupIdentifier.value = "12345"
+* basedOn = Reference(examplePrescription)
 * identifier.value = "9403863"
-* category.coding = $PrescriptionStatus#S "Stop"
+* category.coding = $PrescriptionCategory#S "Stop"
 * subject = Reference(exampleOncologyPatient)
 * dispenseRequest.initialFill.quantity.value = 1 
-* requester.identifier.value = "MG0177"
+* requester = Reference(exampleOncologyPractitioner)
 * effectiveDosePeriod.start = "2023-10-16T20:00:00.0000Z" 
 * effectiveDosePeriod.end = "2023-10-19T14:32:00.0000Z" 
 * dosageInstruction.route.coding = $SCT#26643006 "Oral route"
@@ -165,11 +167,12 @@ Description: "Prescription item related to the medication PROFENID 50 MG."
 * status = #completed 
 * intent = #order
 * groupIdentifier.value = "12345"
+* basedOn = Reference(examplePrescription)
 * identifier.value = "33939465"
-* category.coding = $PrescriptionStatus#S "Stop"
+* category.coding = $PrescriptionCategory#S "Stop"
 * subject = Reference(exampleOncologyPatient)
 * dispenseRequest.initialFill.quantity.value = 1 
-* requester.identifier.value = "CR0328"
+* requester = Reference(exampleOncologyPractitioner)
 * effectiveDosePeriod.start = "2023-10-17T09:00:00.0000Z"  
 * effectiveDosePeriod.end = "2023-10-19T14:32:00.0000Z" 
 * note.time = "2023-10-17T09:33:00.0000Z"
@@ -199,11 +202,12 @@ Description: "Prescription item related to the medication DOLIPRANE 2.4% BUV SS 
 * status = #completed 
 * intent = #order
 * groupIdentifier.value = "12345"
+* basedOn = Reference(examplePrescription)
 * identifier.value = "6546546465456"
-* category.coding = $PrescriptionStatus#S "Stop"
+* category.coding = $PrescriptionCategory#S "Stop"
 * subject = Reference(exampleOncologyPatient)
 * dispenseRequest.initialFill.quantity.value = 1 
-* requester.identifier.value = "0444497"
+* requester = Reference(exampleOncologyPractitioner)
 * effectiveDosePeriod.start = "2020-06-13T07:00:00+00:00"
 * note.text = "If EDIN score > 3"
 * dosageInstruction.route.coding = $SCT#26643006 "Oral route"
@@ -227,11 +231,12 @@ Description: "Prescription item related to the medication VIT B12 DEL 1MG/2ML IN
 * status = #completed 
 * intent = #order
 * groupIdentifier.value = "12345"
+* basedOn = Reference(examplePrescription)
 * identifier.value = "22327328"
-* category.coding = $PrescriptionStatus#S "Stop"
+* category.coding = $PrescriptionCategory#S "Stop"
 * subject = Reference(exampleOncologyPatient)
 * dispenseRequest.initialFill.quantity.value = 1 
-* requester.identifier.value = "PP0045"
+* requester = Reference(exampleOncologyPractitioner)
 * effectiveDosePeriod.start = "2020-07-01T08:00:00+00:00"
 * effectiveDosePeriod.end = "2020-07-17T14:34:00+00:00"
 * note.text = "If EDIN score > 3"
@@ -245,7 +250,6 @@ Description: "Prescription item related to the medication VIT B12 DEL 1MG/2ML IN
 * dosageInstruction[0].timing.repeat.dayOfWeek[0] = #mon //les lundis 
 * dosageInstruction[0].timing.repeat.dayOfWeek[1] = #wed //les mercredis
 * dosageInstruction[0].timing.repeat.dayOfWeek[2] = #fri //les vendredis
-
 * dosageInstruction[0].doseAndRate[0].doseQuantity.value = 1
 * dosageInstruction[0].doseAndRate[0].doseQuantity.unit = "ampoule(s)"
 
@@ -256,11 +260,12 @@ Description: "Prescription item related to the medication BACTRIM FORTE 800MG/16
 * status = #completed 
 * intent = #order
 * groupIdentifier.value = "12345"
+* basedOn = Reference(examplePrescription)
 * identifier.value = "22327328"
-* category.coding = $PrescriptionStatus#S "Stop"
+* category.coding = $PrescriptionCategory#S "Stop"
 * subject = Reference(exampleOncologyPatient)
 * dispenseRequest.initialFill.quantity.value = 1 
-* requester.identifier.value = "MU0003"
+* requester = Reference(exampleOncologyPractitioner)
 * effectiveDosePeriod.start = "2020-07-18T08:00:00+00:00"
 * effectiveDosePeriod.end = "2020-07-18T08:34:00+00:00"
 * note.time = "2020-07-18T03:13:00.0000Z"
@@ -287,17 +292,18 @@ Description: "Prescription item related to the medication PENTACARINAT 300MG PDR
 * status = #completed 
 * intent = #order
 * groupIdentifier.value = "12345"
+* basedOn = Reference(examplePrescription)
 * identifier.value = "22434229"
-* category.coding = $PrescriptionStatus#S "Stop"
+* category.coding = $PrescriptionCategory#S "Stop"
 * subject = Reference(exampleOncologyPatient)
 * device.reference = Reference(exampleAssociatedDeviceNEBUL)
 * dispenseRequest.initialFill.quantity.value = 1 
-* requester.identifier.value = "CCCCCCC"
+* requester = Reference(exampleOncologyPractitioner)
 * effectiveDosePeriod.start = "2020-06-18T07:00:00+00:00"
 * effectiveDosePeriod.end = "2020-06-18T07:00:00+00:00"
 * note.time = "2020-07-17T14:58:00.0000Z"
-* note.text = "ok feu vert pour admin."
-* note.authorString = "[CCCCCCC]"
+* note.text = "ok green light for admin."  
+* note.authorString = "[SR156518]"
 * dosageInstruction.route.coding = $SCT#46713006 "Nasal route"
 * medication.reference = Reference(exampleOncologyMedicationPENTACARINAT300MG)
 * dosageInstruction[0].text = "Administer 300mg of PENTACARINAT in 6 mL of EAU PPI PROAMP SOL INJ AMP 10ML for 20min at a flow rate of 8L/min every 30 days."

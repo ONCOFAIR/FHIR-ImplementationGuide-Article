@@ -3,12 +3,13 @@ Parent: CarePlan
 Id: prescription
 Title: "Prescription"
 Description : "Medication prescription."
+* ^url = "http://ltsi.univ-rennes.fr/StructureDefinition/Prescription"
 * identifier MS 
 * identifier ^short = "The prescription's identifier"
 * category 1..1 MS
 * category ^short = "The communication mode"
 * category ^definition = "The communication mode (incremental or summary)"
-* subject 1..1 MS
+* subject MS
 * subject only Reference(OncologyPatient)
 * subject ^short = "The patient covered by the prescription"
 * encounter 1..1 MS
@@ -24,4 +25,3 @@ Description : "Medication prescription."
 * activity.plannedActivityReference ^short = "The prescription element(s) contained in the prescription"
 * instantiatesCanonical 1..1 MS
 * instantiatesCanonical ^short = "The protocol linked to the prescription"
-
