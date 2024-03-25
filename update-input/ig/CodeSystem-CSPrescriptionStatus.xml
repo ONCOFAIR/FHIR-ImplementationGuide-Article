@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="CSPrescriptionStatus"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>http://ltsi.univ-rennes.fr/CodeSystem/CSPrescriptionStatus</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">C<a name="CSPrescriptionStatus-C"> </a></td><td>Creation</td></tr><tr><td style="white-space:nowrap">S<a name="CSPrescriptionStatus-S"> </a></td><td>Stop</td></tr><tr><td style="white-space:nowrap">M<a name="CSPrescriptionStatus-M"> </a></td><td>Modification</td></tr><tr><td style="white-space:nowrap">V<a name="CSPrescriptionStatus-V"> </a></td><td>Validation</td></tr></table></div>
+  </text>
+  <url value="http://ltsi.univ-rennes.fr/CodeSystem/CSPrescriptionStatus"/>
+  <version value="0.1.0"/>
+  <name value="CSPrescriptionStatus"/>
+  <title value="Prescription status"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2024-03-25T09:27:05+00:00"/>
+  <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI)"/>
+  <contact>
+    <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://ltsi.univ-rennes.fr"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem for french prescription status (creation, stop, modification, validation)."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="C"/>
+    <display value="Creation"/>
+  </concept>
+  <concept>
+    <code value="S"/>
+    <display value="Stop"/>
+  </concept>
+  <concept>
+    <code value="M"/>
+    <display value="Modification"/>
+  </concept>
+  <concept>
+    <code value="V"/>
+    <display value="Validation"/>
+  </concept>
+</CodeSystem>
