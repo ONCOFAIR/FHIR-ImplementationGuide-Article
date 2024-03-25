@@ -12,15 +12,28 @@
   <sch:pattern>
     <sch:title>f:PlanDefinition</sch:title>
     <sch:rule context="f:PlanDefinition">
-      <sch:assert test="count(f:extension[@url = 'http://ltsi.univ-rennes.fr/StructureDefinition/cure-cycle-number']) &gt;= 1">extension with URL = 'http://ltsi.univ-rennes.fr/StructureDefinition/cure-cycle-number': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://ltsi.univ-rennes.fr/StructureDefinition/cure-cycle-number']) &lt;= 1">extension with URL = 'http://ltsi.univ-rennes.fr/StructureDefinition/cure-cycle-number': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://ltsi.univ-rennes.fr/StructureDefinition/day-number']) &gt;= 1">extension with URL = 'http://ltsi.univ-rennes.fr/StructureDefinition/day-number': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://ltsi.univ-rennes.fr/StructureDefinition/day-number']) &lt;= 1">extension with URL = 'http://ltsi.univ-rennes.fr/StructureDefinition/day-number': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://ltsi.univ-rennes.fr/StructureDefinition/treatment-cycle-number']) &gt;= 1">extension with URL = 'http://ltsi.univ-rennes.fr/StructureDefinition/treatment-cycle-number': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://ltsi.univ-rennes.fr/StructureDefinition/treatment-cycle-number']) &lt;= 1">extension with URL = 'http://ltsi.univ-rennes.fr/StructureDefinition/treatment-cycle-number': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://ltsi.univ-rennes.fr/StructureDefinition/treatment-day-number']) &gt;= 1">extension with URL = 'http://ltsi.univ-rennes.fr/StructureDefinition/treatment-day-number': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://ltsi.univ-rennes.fr/StructureDefinition/treatment-day-number']) &lt;= 1">extension with URL = 'http://ltsi.univ-rennes.fr/StructureDefinition/treatment-day-number': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:identifier) &gt;= 1">identifier: minimum cardinality of 'identifier' is 1</sch:assert>
       <sch:assert test="count(f:identifier) &lt;= 1">identifier: maximum cardinality of 'identifier' is 1</sch:assert>
       <sch:assert test="count(f:name) &gt;= 1">name: minimum cardinality of 'name' is 1</sch:assert>
       <sch:assert test="count(f:title) &gt;= 1">title: minimum cardinality of 'title' is 1</sch:assert>
       <sch:assert test="count(f:date) &gt;= 1">date: minimum cardinality of 'date' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:PlanDefinition/f:identifier</sch:title>
+    <sch:rule context="f:PlanDefinition/f:identifier">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:use) &lt;= 1">use: maximum cardinality of 'use' is 1</sch:assert>
+      <sch:assert test="count(f:type) &lt;= 1">type: maximum cardinality of 'type' is 1</sch:assert>
+      <sch:assert test="count(f:system) &lt;= 1">system: maximum cardinality of 'system' is 1</sch:assert>
+      <sch:assert test="count(f:value) &gt;= 1">value: minimum cardinality of 'value' is 1</sch:assert>
+      <sch:assert test="count(f:value) &lt;= 1">value: maximum cardinality of 'value' is 1</sch:assert>
+      <sch:assert test="count(f:period) &lt;= 1">period: maximum cardinality of 'period' is 1</sch:assert>
+      <sch:assert test="count(f:assigner) &lt;= 1">assigner: maximum cardinality of 'assigner' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

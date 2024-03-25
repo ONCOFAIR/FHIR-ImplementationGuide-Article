@@ -46,19 +46,16 @@
       "systems" : ["http://ltsi.univ-rennes.fr/CodeSystem/CSMedications"]
     },
     {
-      "url" : "http://ltsi.univ-rennes.fr/ValueSet/vsPrescriptionStatus",
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/vsPrescriptionCategory",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "VSPrescriptionStatus",
+      "name" : "VSPrescriptionCategory",
       "title" : "Prescription status",
       "description" : "ValueSet for PlanDefinition types, extended to include creation, stop, modification and validation.",
       "systems" : [
         "http://hl7.org/fhir/ValueSet/plan-definition-type",
-        "http://ltsi.univ-rennes.fr/CodeSystem/CSPrescriptionStatus"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-protocol.html" : "Protocol"
+        "http://ltsi.univ-rennes.fr/CodeSystem/CSPrescriptionCategory"
+      ]
     },
     {
       "url" : "http://ltsi.univ-rennes.fr/ValueSet/vsSCT",

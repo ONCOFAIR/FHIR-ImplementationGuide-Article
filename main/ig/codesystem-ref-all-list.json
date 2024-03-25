@@ -428,8 +428,7 @@
       "oids" : ["2.16.840.1.113883.4.642.4.1802"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R5/valueset-participant-resource-types.html" : "Participant Resource Types",
-      "http://hl7.org/fhir/R5/valueset-resource-types.html" : "Resource Types"
+      "http://hl7.org/fhir/R5/valueset-participant-resource-types.html" : "Participant Resource Types"
     },
     {
       "url" : "http://hl7.org/fhir/identifier-use",
@@ -695,15 +694,15 @@
       "ValueSet-vsMedications.html" : "Medications"
     },
     {
-      "url" : "http://ltsi.univ-rennes.fr/CodeSystem/CSPrescriptionStatus",
+      "url" : "http://ltsi.univ-rennes.fr/CodeSystem/CSPrescriptionCategory",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "CSPrescriptionStatus",
-      "title" : "Prescription status",
-      "description" : "CodeSystem for french prescription status (creation, stop, modification, validation).",
+      "name" : "CSPrescriptionCategory",
+      "title" : "Prescription category",
+      "description" : "CodeSystem for french prescription category (creation, stop, modification, validation).",
       "uses" : {
       },
-      "ValueSet-vsPrescriptionStatus.html" : "Prescription status"
+      "ValueSet-vsPrescriptionCategory.html" : "Prescription status"
     },
     {
       "url" : "http://ltsi.univ-rennes.fr/CodeSystem/CSSCT",
@@ -969,6 +968,18 @@
       "http://hl7.org/fhir/R5/valueset-encounter-participant-type.html" : "Participant Type"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PlanDefinitionType",
+      "title" : "PlanDefinitionType",
+      "description" : "The type of PlanDefinition.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1245"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-plan-definition-type.html" : "Plan Definition Type"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/reason-medication-given",
       "version" : "0.1.0",
       "status" : "draft",
@@ -1157,8 +1168,8 @@
       "oids" : ["2.16.840.1.113883.5.1008"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R5/valueset-encounter-special-courtesy.html" : "Special Courtesy",
-      "http://hl7.org/fhir/R5/valueset-marital-status.html" : "Marital Status Codes"
+      "http://hl7.org/fhir/R5/valueset-marital-status.html" : "Marital Status Codes",
+      "http://hl7.org/fhir/R5/valueset-encounter-special-courtesy.html" : "Special Courtesy"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",

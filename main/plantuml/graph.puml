@@ -14,6 +14,7 @@ package IG #DDDDDD{
 
         class Stay{
 
+             Encounter.identifier => [1..None]
              Encounter.identifier.value => [1..None]
              Encounter.status => [None..None]
              Encounter.subject => [1..None]
@@ -31,8 +32,8 @@ package IG #DDDDDD{
 
              Observation.code => [None..None]
              Observation.subject => [1..None]
-             Observation.effective[x] => [None..None]
-             Observation.effective[x]:effectiveDateTime => [0..1]
+             Observation.effective[x] => [1..None]
+             Observation.effective[x]:effectiveDateTime => [1..1]
              Observation.issued => [None..None]
              Observation.value[x] => [1..None]
              Observation.value[x]:valueQuantity => [0..1]
@@ -45,12 +46,18 @@ package IG #DDDDDD{
              MedicationAdministration.identifier.value => [None..None]
              MedicationAdministration.basedOn => [1..1]
              MedicationAdministration.medication => [None..None]
+             MedicationAdministration.subject => [None..None]
              MedicationAdministration.encounter => [1..None]
              MedicationAdministration.occurence[x] => [None..None]
-             MedicationAdministration.occurence[x]:occurencePeriod => [0..1]
-             MedicationAdministration.request => [None..None]
+             MedicationAdministration.occurence[x]:occurencePeriod => [1..1]
+             MedicationAdministration.performer => [1..None]
+             MedicationAdministration.performer.actor => [None..None]
+             MedicationAdministration.request => [1..None]
              MedicationAdministration.note => [None..None]
-             MedicationAdministration.dosage => [None..None]
+             MedicationAdministration.dosage => [1..None]
+             MedicationAdministration.dosage.text => [1..None]
+             MedicationAdministration.dosage.dose.value => [1..None]
+             MedicationAdministration.dosage.dose.unit => [1..None]
         } 
 
         class AssociatedDevice{
@@ -60,7 +67,9 @@ package IG #DDDDDD{
 
         class OncologyMedication{
 
+             Medication.identifier => [1..None]
              Medication.identifier.value => [1..None]
+             Medication.code => [1..None]
              Medication.code.coding => [1..1]
         } 
 
@@ -72,6 +81,7 @@ package IG #DDDDDD{
              Patient.identifier:IPP.type.text => [None..None]
              Patient.identifier:IPP.system => [1..None]
              Patient.identifier:IPP.value => [1..None]
+             Patient.name => [1..None]
              Patient.name.use => [1..None]
              Patient.name.family => [1..None]
              Patient.name.given => [1..None]
@@ -82,20 +92,23 @@ package IG #DDDDDD{
 
         class OncologyPractitioner{
 
+             Practitioner.identifier => [1..None]
              Practitioner.identifier.value => [1..None]
         } 
 
         class PrescriptionItem{
 
+             MedicationRequest.identifier => [1..None]
              MedicationRequest.identifier.value => [1..None]
              MedicationRequest.basedOn => [None..None]
+             MedicationRequest.groupIdentifier => [1..None]
              MedicationRequest.groupIdentifier.value => [1..None]
+             MedicationRequest.category => [1..1]
              MedicationRequest.category.coding => [1..1]
              MedicationRequest.medication => [None..None]
              MedicationRequest.subject => [None..None]
              MedicationRequest.supportingInformation => [None..None]
              MedicationRequest.requester => [None..None]
-             MedicationRequest.requester.identifier.value => [1..None]
              MedicationRequest.device => [None..None]
              MedicationRequest.note => [None..None]
              MedicationRequest.effectiveDosePeriod.start => [1..None]
@@ -121,8 +134,7 @@ package IG #DDDDDD{
              MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateRatio.numerator.value => [None..None]
              MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateRatio.numerator.unit => [None..None]
              MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateRatio.denominator.value => [None..None]
-             MedicationRequest.dispenseRequest.initialFill.quantity.value => [None..None]
-             MedicationRequest.dispenseRequest.quantity => [None..None]
+             MedicationRequest.dispenseRequest.initialFill.quantity.value => [1..None]
         } 
 
         class Prescription{
@@ -141,29 +153,29 @@ package IG #DDDDDD{
         class Protocol{
 
              PlanDefinition.extension => [2..None]
-             PlanDefinition.extension:numeroCure => <&plus>[1..1]
-             PlanDefinition.extension:numeroJour => <&plus>[1..1]
+             PlanDefinition.extension:treatmentCycleNumber => <&plus>[1..1]
+             PlanDefinition.extension:treatmentDayNumber => <&plus>[1..1]
              PlanDefinition.identifier => [1..1]
+             PlanDefinition.identifier.value => [1..None]
              PlanDefinition.name => [1..None]
              PlanDefinition.title => [1..None]
-             PlanDefinition.type => [None..None]
              PlanDefinition.date => [1..None]
          }
 
      }
      package extension #paleturquoise {
 
-     Protocol -[#black,dashed,thickness=2]-> CureCycleNumber
-     Protocol -[#black,dashed,thickness=2]-> DayNumber
+     Protocol -[#black,dashed,thickness=2]-> TreatmentCycleNumber
+     Protocol -[#black,dashed,thickness=2]-> TreatmentDayNumber
 
-        class CureCycleNumber{
+        class TreatmentCycleNumber{
 
           Extension.extension => [None..0]
           Extension.url => [None..None]
           Extension.value[x] => [1..None]
           Extension.value[x]:valueInteger => [1..1]
         } 
-        class DayNumber{
+        class TreatmentDayNumber{
 
           Extension.extension => [None..0]
           Extension.url => [None..None]
@@ -172,10 +184,6 @@ package IG #DDDDDD{
          }
      }
      package valueset #PaleVioletRed{
-
-        class VSPrescriptionStatus  
-
-     Protocol -[#black,dotted,thickness=2]-> VSPrescriptionStatus
        }
 
 package "Ressources de base" #palegreen {
