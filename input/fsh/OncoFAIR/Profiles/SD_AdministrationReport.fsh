@@ -3,7 +3,6 @@ Parent: MedicationAdministration
 Id: administration-report
 Title: "Administration Report"
 Description: "Prescribed medication administration report."
-* ^url = "http://ltsi.univ-rennes.fr/StructureDefinition/AdministrationReport"
 * identifier.value MS 
 * identifier.value ^short = "Identifier of the administration report"
 * basedOn 1..1 MS 

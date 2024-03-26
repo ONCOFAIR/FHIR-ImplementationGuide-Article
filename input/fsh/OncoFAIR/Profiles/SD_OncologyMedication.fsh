@@ -3,7 +3,6 @@ Parent: Medication
 Id: oncology-medication
 Title: "Oncology Medication"
 Description : "Medication used in oncology."
-* ^url = "http://ltsi.univ-rennes.fr/StructureDefinition/OncologyMedication"
 * identifier 1..* MS
 * identifier.value 1..1 
 * identifier.value ^short = "The medication's label"

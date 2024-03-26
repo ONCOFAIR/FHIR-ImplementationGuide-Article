@@ -3,7 +3,6 @@ Parent: PlanDefinition
 Id: protocol
 Title: "Protocol"
 Description : "Protocol."
-* ^url = "http://ltsi.univ-rennes.fr/StructureDefinition/Protocol"
 * identifier 1..1 MS 
 * identifier.value 1..1 
 * identifier ^short = "The protocol's identifier"

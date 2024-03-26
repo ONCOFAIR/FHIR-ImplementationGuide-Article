@@ -3,7 +3,6 @@ Parent: CarePlan
 Id: prescription
 Title: "Prescription"
 Description : "Medication prescription."
-* ^url = "http://ltsi.univ-rennes.fr/StructureDefinition/Prescription"
 * identifier MS 
 * identifier ^short = "The prescription's identifier"
 * category 1..1 MS

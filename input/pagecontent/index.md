@@ -23,6 +23,7 @@ This UML diagram provides an overview of the data structures, and is essential f
 <div style="text-align:center;"> 
 <img src="images/uml_oncofair_english.svg" alt="UML class diagram representing the FHIR R5 medication prescription and administration use case" width="100%"/>
 </div>
+<div style="text-align:center;"> {%uml_oncofair_english.svg%} </div>
 
 ### Profiled FHIR resources
 

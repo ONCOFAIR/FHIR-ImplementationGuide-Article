@@ -3,7 +3,6 @@ Parent: MedicationRequest
 Id: prescription-item
 Title: "Prescription Item"
 Description: "Prescription item."
-* ^url = "http://ltsi.univ-rennes.fr/StructureDefinition/PrescriptionItem"
 * groupIdentifier 1..1 MS
 * groupIdentifier.value 1..1 
 * groupIdentifier.value ^short = "Prescription item group identifier"
