@@ -20,10 +20,10 @@ This guide is intended for developers, healthcare professionals and researchers 
 
 This UML diagram provides an overview of the data structures, and is essential for understanding the relationships between the various FHIR resources used in the project.
 
-<div style="text-align:center;"> 
-<img src="images/uml_oncofair_english.svg" alt="UML class diagram representing the FHIR R5 medication prescription and administration use case" width="100%"/>
+<div align="center;"> 
+<img src="uml_oncofair_english.svg" alt="UML class diagram representing the FHIR R5 medication prescription and administration use case" width="100%"/>
+
 </div>
-<div style="text-align:center;"> {%uml_oncofair_english.svg%} </div>
 
 ### Profiled FHIR resources
 
