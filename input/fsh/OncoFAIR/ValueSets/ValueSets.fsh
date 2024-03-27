@@ -22,14 +22,14 @@ Description: "ValueSet for communication modes (incremental, summary)."
 
 ValueSet: VSLOINC
 Id: vsLOINC
-Title: "Codes LOINC"
+Title: "LOINC codes"
 Description: "ValueSet of LOINC codes."
 * ^experimental = true
 * codes from system CSLOINC
 
 ValueSet: VSMedicationTypes
 Id: vsMedicationTypes
-Title: "Types of medication"
+Title: "Medication types"
 Description: "ValueSet for medication types."
 * ^experimental = true
 * codes from system CSMedicationTypes
