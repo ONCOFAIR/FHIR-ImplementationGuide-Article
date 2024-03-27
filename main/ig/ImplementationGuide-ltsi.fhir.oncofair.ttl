@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIR"] ; # 
   fhir:title [ fhir:v "Onco-FAIR"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-03-25T10:35:41+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-03-27T13:32:11+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI)"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI)" ] ;
@@ -157,8 +157,8 @@
        fhir:description [ fhir:v "SAB accomodation unit." ] ;
        fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
        fhir:profile ( [
-         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/AccomodationUnit"^^xsd:anyURI ;
-         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/AccomodationUnit>
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/accomodation-unit"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/accomodation-unit>
        ] )
      ] [
        fhir:extension ( [
@@ -173,8 +173,8 @@
        fhir:description [ fhir:v "Additional information about height." ] ;
        fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
        fhir:profile ( [
-         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/AdditionalInformation"^^xsd:anyURI ;
-         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/AdditionalInformation>
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/additional-information"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/additional-information>
        ] )
      ] [
        fhir:extension ( [
@@ -189,8 +189,8 @@
        fhir:description [ fhir:v "Additional information about weight." ] ;
        fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
        fhir:profile ( [
-         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/AdditionalInformation"^^xsd:anyURI ;
-         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/AdditionalInformation>
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/additional-information"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/additional-information>
        ] )
      ] [
        fhir:extension ( [
@@ -205,8 +205,8 @@
        fhir:description [ fhir:v "BACTRIMFORTE medication administration report." ] ;
        fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
        fhir:profile ( [
-         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/AdministrationReport"^^xsd:anyURI ;
-         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/AdministrationReport>
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/administration-report"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/administration-report>
        ] )
      ] [
        fhir:extension ( [
@@ -221,8 +221,8 @@
        fhir:description [ fhir:v "Associated device: NEBUL." ] ;
        fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
        fhir:profile ( [
-         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/AssociatedDevice"^^xsd:anyURI ;
-         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/AssociatedDevice>
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/associated-device"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/associated-device>
        ] )
      ] [
        fhir:extension ( [
@@ -237,8 +237,8 @@
        fhir:description [ fhir:v "HCMED Medical liability unit." ] ;
        fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
        fhir:profile ( [
-         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/MedicalLiabilityUnit"^^xsd:anyURI ;
-         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/MedicalLiabilityUnit>
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/Medical-liability-unit"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/Medical-liability-unit>
        ] )
      ] [
        fhir:extension ( [
@@ -253,8 +253,8 @@
        fhir:description [ fhir:v "Medication: BACTRIM FORTE 800MG/160MG CPR." ] ;
        fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
        fhir:profile ( [
-         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/OncologyMedication"^^xsd:anyURI ;
-         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/OncologyMedication>
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication>
        ] )
      ] [
        fhir:extension ( [
@@ -269,8 +269,8 @@
        fhir:description [ fhir:v "Medication: DOLIPRANE 2,4% BUV SS SUCRE FL 100ML." ] ;
        fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
        fhir:profile ( [
-         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/OncologyMedication"^^xsd:anyURI ;
-         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/OncologyMedication>
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication>
        ] )
      ] [
        fhir:extension ( [
@@ -285,8 +285,8 @@
        fhir:description [ fhir:v "Medication: OXALIPLATINE 200 mg." ] ;
        fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
        fhir:profile ( [
-         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/OncologyMedication"^^xsd:anyURI ;
-         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/OncologyMedication>
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication>
        ] )
      ] [
        fhir:extension ( [
@@ -301,8 +301,8 @@
        fhir:description [ fhir:v "Medication: OXYCODONE LP 10 MG VIATRIS, CPR À LIBÉRATION PROLONGÉE." ] ;
        fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
        fhir:profile ( [
-         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/OncologyMedication"^^xsd:anyURI ;
-         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/OncologyMedication>
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication>
        ] )
      ] [
        fhir:extension ( [
@@ -317,8 +317,8 @@
        fhir:description [ fhir:v "Medication: PENTACARINAT 300MG PDR INJ." ] ;
        fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
        fhir:profile ( [
-         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/OncologyMedication"^^xsd:anyURI ;
-         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/OncologyMedication>
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication>
        ] )
      ] [
        fhir:extension ( [
@@ -333,8 +333,8 @@
        fhir:description [ fhir:v "Medication: PROFENID 50 MG, GÉLULE." ] ;
        fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
        fhir:profile ( [
-         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/OncologyMedication"^^xsd:anyURI ;
-         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/OncologyMedication>
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication>
        ] )
      ] [
        fhir:extension ( [
@@ -349,8 +349,8 @@
        fhir:description [ fhir:v "Medication: VIT B12 DEL 1MG/2ML INJ BUV AMP." ] ;
        fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
        fhir:profile ( [
-         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/OncologyMedication"^^xsd:anyURI ;
-         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/OncologyMedication>
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication>
        ] )
      ] [
        fhir:extension ( [
@@ -365,8 +365,8 @@
        fhir:description [ fhir:v "Patient of IPP 99999." ] ;
        fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
        fhir:profile ( [
-         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/OncologyPatient"^^xsd:anyURI ;
-         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/OncologyPatient>
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncology-patient"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncology-patient>
        ] )
      ] [
        fhir:extension ( [
@@ -381,8 +381,8 @@
        fhir:description [ fhir:v "Administration report prescriber." ] ;
        fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
        fhir:profile ( [
-         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/OncologyPractitioner"^^xsd:anyURI ;
-         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/OncologyPractitioner>
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncology-practitioner"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncology-practitioner>
        ] )
      ] [
        fhir:extension ( [
@@ -397,8 +397,8 @@
        fhir:description [ fhir:v "Medication prescription." ] ;
        fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
        fhir:profile ( [
-         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/Prescription"^^xsd:anyURI ;
-         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/Prescription>
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/prescription"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/prescription>
        ] )
      ] [
        fhir:extension ( [
@@ -413,8 +413,8 @@
        fhir:description [ fhir:v "Prescription item related to the medication BACTRIM FORTE 800MG/160MG CPR." ] ;
        fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
        fhir:profile ( [
-         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/PrescriptionItem"^^xsd:anyURI ;
-         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/PrescriptionItem>
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item>
        ] )
      ] [
        fhir:extension ( [
@@ -429,8 +429,8 @@
        fhir:description [ fhir:v "Prescription item related to the medication DOLIPRANE 2.4% BUV SS SUGAR FL 100ML." ] ;
        fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
        fhir:profile ( [
-         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/PrescriptionItem"^^xsd:anyURI ;
-         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/PrescriptionItem>
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item>
        ] )
      ] [
        fhir:extension ( [
@@ -445,8 +445,8 @@
        fhir:description [ fhir:v "Prescription item related to the medication OXALIPLATINE 200 mg." ] ;
        fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
        fhir:profile ( [
-         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/PrescriptionItem"^^xsd:anyURI ;
-         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/PrescriptionItem>
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item>
        ] )
      ] [
        fhir:extension ( [
@@ -461,8 +461,8 @@
        fhir:description [ fhir:v "Prescription item related to the medication OXYCODONE LP 10 MG VIATRIS." ] ;
        fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
        fhir:profile ( [
-         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/PrescriptionItem"^^xsd:anyURI ;
-         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/PrescriptionItem>
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item>
        ] )
      ] [
        fhir:extension ( [
@@ -477,8 +477,8 @@
        fhir:description [ fhir:v "Prescription item related to the medication PENTACARINAT 300MG PDR INJ." ] ;
        fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
        fhir:profile ( [
-         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/PrescriptionItem"^^xsd:anyURI ;
-         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/PrescriptionItem>
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item>
        ] )
      ] [
        fhir:extension ( [
@@ -493,8 +493,8 @@
        fhir:description [ fhir:v "Prescription item related to the medication PROFENID 50 MG." ] ;
        fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
        fhir:profile ( [
-         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/PrescriptionItem"^^xsd:anyURI ;
-         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/PrescriptionItem>
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item>
        ] )
      ] [
        fhir:extension ( [
@@ -509,8 +509,8 @@
        fhir:description [ fhir:v "Prescription item related to the medication VIT B12 DEL 1MG/2ML INJ BUV AMP." ] ;
        fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
        fhir:profile ( [
-         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/PrescriptionItem"^^xsd:anyURI ;
-         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/PrescriptionItem>
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item>
        ] )
      ] [
        fhir:extension ( [
@@ -721,8 +721,8 @@
        fhir:description [ fhir:v "Prescribed protocol." ] ;
        fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
        fhir:profile ( [
-         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/Protocol"^^xsd:anyURI ;
-         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/Protocol>
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/protocol"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/protocol>
        ] )
      ] [
        fhir:extension ( [
