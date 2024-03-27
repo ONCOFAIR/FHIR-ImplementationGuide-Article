@@ -3,8 +3,6 @@ Parent: Patient
 Id: oncology-patient
 Title: "Oncology Patient"
 Description : "Patient receiving medical treatment in oncology."
-* deceased[x] MS
-* deceased[x] ^short = "Indicates if the patient is deceased or not"
 * identifier 1..* MS 
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
