@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="exampleStayMISCELLANEOUS"/>
+  <meta>
+    <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/Stay"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Encounter</b><a name="exampleStayMISCELLANEOUS"> </a><a name="hcexampleStayMISCELLANEOUS"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Encounter &quot;exampleStayMISCELLANEOUS&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Stay.html">Stay</a></p></div><p><b>identifier</b>: 98456</p><p><b>status</b>: completed</p><p><b>subject</b>: <a href="Patient-exampleOncologyPatient.html">Patient/exampleOncologyPatient</a> &quot; DOE&quot;</p><h3>Locations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Location</b></td></tr><tr><td style="display: none">*</td><td><a href="Location-exampleAccomodationUnit.html">Location/exampleAccomodationUnit</a> &quot;SAB&quot;</td></tr></table></div>
+  </text>
+  <identifier>
+    <value value="98456"/>
+  </identifier>
+  <status value="completed"/>
+  <subject>
+    <reference value="Patient/exampleOncologyPatient"/>
+  </subject>
+  <location>
+    <location>
+      <reference value="Location/exampleAccomodationUnit"/>
+    </location>
+  </location>
+</Encounter>

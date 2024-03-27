@@ -32,9 +32,7 @@ package IG #DDDDDD{
 
              Observation.code => [None..None]
              Observation.subject => [1..None]
-             Observation.effective[x] => [1..None]
-             Observation.effective[x]:effectiveDateTime => [1..1]
-             Observation.issued => [None..None]
+             Observation.issued => [1..None]
              Observation.value[x] => [1..None]
              Observation.value[x]:valueQuantity => [0..1]
              Observation.value[x]:valueQuantity.value => [1..None]
@@ -53,7 +51,7 @@ package IG #DDDDDD{
              MedicationAdministration.performer => [1..None]
              MedicationAdministration.performer.actor => [None..None]
              MedicationAdministration.request => [1..None]
-             MedicationAdministration.note => [None..None]
+             MedicationAdministration.note => [1..None]
              MedicationAdministration.dosage => [1..None]
              MedicationAdministration.dosage.text => [1..None]
              MedicationAdministration.dosage.dose.value => [1..None]
@@ -87,7 +85,6 @@ package IG #DDDDDD{
              Patient.name.given => [1..None]
              Patient.gender => [1..None]
              Patient.birthDate => [1..None]
-             Patient.deceased[x] => [None..None]
         } 
 
         class OncologyPractitioner{
@@ -120,6 +117,7 @@ package IG #DDDDDD{
              MedicationRequest.dosageInstruction.timing.repeat.bounds[x] => [None..None]
              MedicationRequest.dosageInstruction.timing.repeat.bounds[x]:boundsPeriod => [0..1]
              MedicationRequest.dosageInstruction.timing.repeat.bounds[x]:boundsPeriod.start => [None..None]
+             MedicationRequest.dosageInstruction.timing.repeat.bounds[x]:boundsPeriod.end => [None..None]
              MedicationRequest.dosageInstruction.timing.repeat.frequency => [None..None]
              MedicationRequest.dosageInstruction.timing.repeat.period => [None..None]
              MedicationRequest.dosageInstruction.timing.repeat.periodUnit => [None..None]
@@ -144,6 +142,9 @@ package IG #DDDDDD{
              CarePlan.category => [1..1]
              CarePlan.subject => [None..None]
              CarePlan.encounter => [1..None]
+             CarePlan.period => [1..None]
+             CarePlan.period.start => [1..None]
+             CarePlan.period.end => [1..None]
              CarePlan.created => [1..None]
              CarePlan.supportingInfo => [1..None]
              CarePlan.activity => [1..None]

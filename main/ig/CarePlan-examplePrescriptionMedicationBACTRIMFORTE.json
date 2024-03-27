@@ -1,0 +1,45 @@
+{
+  "resourceType" : "CarePlan",
+  "id" : "examplePrescriptionMedicationBACTRIMFORTE",
+  "meta" : {
+    "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CarePlan</b><a name=\"examplePrescriptionMedicationBACTRIMFORTE\"> </a><a name=\"hcexamplePrescriptionMedicationBACTRIMFORTE\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CarePlan &quot;examplePrescriptionMedicationBACTRIMFORTE&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-prescription.html\">Prescription</a></p></div><p><b>instantiatesCanonical</b>: <a href=\"PlanDefinition-exampleProtocolMISCELLANEOUS.html\">Protocol - Miscellaneous protocol</a></p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>category</b>: Incremental <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSCommunicationModes.html\">Communication modes</a>#I)</span></p><p><b>subject</b>: <a href=\"Patient-exampleOncologyPatient.html\">Patient/exampleOncologyPatient</a> &quot; DOE&quot;</p><p><b>encounter</b>: <a href=\"Encounter-exampleStayMISCELLANEOUS.html\">Encounter/exampleStayMISCELLANEOUS</a></p><p><b>period</b>: 2023-01-01 09:00:00+0000 --&gt; 2023-01-01 11:35:00+0000</p><p><b>created</b>: 2023-01-01 00:00:00+0000</p><p><b>supportingInfo</b>: </p><ul><li><a href=\"Observation-exampleAdditionalInformationHeight.html\">Observation/exampleAdditionalInformationHeight: Height</a></li><li><a href=\"Observation-exampleAdditionalInformationWeight.html\">Observation/exampleAdditionalInformationWeight: Weight</a></li></ul><h3>Activities</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>PlannedActivityReference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"MedicationRequest-examplePrescriptionItemBACTRIMFORTE.html\">MedicationRequest/examplePrescriptionItemBACTRIMFORTE</a></td></tr></table></div>"
+  },
+  "instantiatesCanonical" : ["http://ltsi.univ-rennes.fr/PlanDefinition/exampleProtocolMISCELLANEOUS"],
+  "status" : "completed",
+  "intent" : "order",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://ltsi.univ-rennes.fr/CodeSystem/CSCommunicationModes",
+      "code" : "I",
+      "display" : "Incremental"
+    }]
+  }],
+  "subject" : {
+    "reference" : "Patient/exampleOncologyPatient"
+  },
+  "encounter" : {
+    "reference" : "Encounter/exampleStayMISCELLANEOUS"
+  },
+  "period" : {
+    "start" : "2023-01-01T09:00:00.0000Z",
+    "end" : "2023-01-01T11:35:00.0000Z"
+  },
+  "created" : "2023-01-01T00:00:00.0000Z",
+  "supportingInfo" : [{
+    "reference" : "Observation/exampleAdditionalInformationHeight",
+    "display" : "Height"
+  },
+  {
+    "reference" : "Observation/exampleAdditionalInformationWeight",
+    "display" : "Weight"
+  }],
+  "activity" : [{
+    "plannedActivityReference" : {
+      "reference" : "MedicationRequest/examplePrescriptionItemBACTRIMFORTE"
+    }
+  }]
+}

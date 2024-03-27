@@ -136,8 +136,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "MedicationAdministration.device","MedicationAdministration.device","","","",0,*,"","","","CodeableReference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Device]]}
 ","Device used to administer","The device that is to be used for the administration of the medication (for example, PCA Pump).","","","","","","","","","",,,,,"",,,,"MedicationAdministration.device",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","device->Access  OR device->AssignedDevice","PRT-10 Participation Device / RXR-3 Administrative Device"
-"MedicationAdministration.note","MedicationAdministration.note","","","",0,*,"Y","","","Annotation {[]} {[]}
-","Note","Extra information about the medication administration that is not conveyed by the other attributes.","","","","","","","","","",,,,,"",,,,"MedicationAdministration.note",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"MedicationAdministration.note","MedicationAdministration.note","","","",1,*,"Y","","","Annotation {[]} {[]}
+","The administration report label and other note(s)","Extra information about the medication administration that is not conveyed by the other attributes.","","","","","","","","","",,,,,"",,,,"MedicationAdministration.note",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.note",".inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=""annotation""].value"
 "MedicationAdministration.dosage","MedicationAdministration.dosage","","","",1,1,"Y","","","BackboneElement {[]} {[]}
 ","The intended dosage of the administered medication","Describes the medication dosage information details e.g. dose, rate, site, route, etc.","","","","","","","","","",,,,,"",,,,"MedicationAdministration.dosage",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
