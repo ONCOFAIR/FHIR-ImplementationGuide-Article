@@ -16,7 +16,13 @@ Description : "Medication prescription."
 * encounter ^short = "The encounter linked to the prescription"
 * created 1..1 MS 
 * created ^short = "The date on which the registration was first made"
-* supportingInfo 1..* MS // = rens. compl.
+* period 1..1 MS
+* period ^short = "Time period the prescription covers"
+* period.start 1..1
+* period.start ^short = "Date and time of prescription start"
+* period.end 1..1
+* period.end ^short = "Date and time of prescription end"
+* supportingInfo 1..* MS
 * supportingInfo ^short = "The additional information(s) related to the prescription"
 * activity 1..* MS
 * activity.plannedActivityReference 1..1

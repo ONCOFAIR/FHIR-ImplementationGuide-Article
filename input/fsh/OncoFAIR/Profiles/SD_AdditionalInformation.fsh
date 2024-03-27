@@ -7,10 +7,8 @@ Description: "Additional information, such as height or weight."
 * subject ^short = "The subject of the additional information"
 * code MS 
 * code ^short = "LOINC code representing the additional information"
-* effectiveDateTime 1..1 MS
-* effectiveDateTime ^short = "Date and time of recording of the additional information"
-* issued MS 
-* issued ^short = "Date and time this version was made available"
+* issued 1..1 MS 
+* issued ^short = "Date and time of registration of additional information"
 * value[x] 1..1 MS
 * valueQuantity.value 1..1
 * valueQuantity.value ^short = "Value of the the additional information"

@@ -20,8 +20,8 @@ Description: "Prescribed medication administration report."
 * request 1..1 MS
 * request only Reference(PrescriptionItem)
 * request ^short = "The prescription item at the origin of the administration report"
-* note MS
-* note ^short = "Note"
+* note 1..* MS
+* note ^short = "The administration report label and other note(s)"
 * medication MS
 * medication only CodeableReference(OncologyMedication)
 * medication ^short = "The administred medication"
@@ -33,4 +33,3 @@ Description: "Prescribed medication administration report."
 * dosage.dose.value ^short = "Value of the dose quantity"
 * dosage.dose.unit 1..1
 * dosage.dose.unit ^short = "Unit of the dose quantity"
-

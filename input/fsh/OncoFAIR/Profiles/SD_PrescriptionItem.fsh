@@ -45,7 +45,9 @@ Description: "Prescription item."
 * dosageInstruction.timing MS
 * dosageInstruction.timing ^short = "Timing for the dosage"
 * dosageInstruction.timing.repeat.boundsPeriod.start MS
-* dosageInstruction.timing.repeat.boundsPeriod.start ^short = "Start of the dosage period"
+* dosageInstruction.timing.repeat.boundsPeriod.start ^short = "Minimum start time for event"
+* dosageInstruction.timing.repeat.boundsPeriod.end MS
+* dosageInstruction.timing.repeat.boundsPeriod.end ^short = "Maximum start time for event"
 * dosageInstruction.timing.repeat.frequency MS // = number of time
 * dosageInstruction.timing.repeat.frequency ^short = "Frequency of dosage"
 * dosageInstruction.timing.repeat.period MS // = per
@@ -68,7 +70,7 @@ Description: "Prescription item."
 * dosageInstruction.doseAndRate.rateRatio.denominator.unit
 * dosageInstruction.doseAndRate.rateRatio.numerator.unit ^short = "Unit of the dose rate numerator"
 
-// ancienne version pour représenter la quantité de composant prescrite
+// old version to represent the prescribed component quantity
 /*
 * dispenseRequest.quantity MS 
 * dispenseRequest.quantity ^short = "Quantity prescribed"
