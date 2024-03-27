@@ -1,0 +1,92 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/MedicationRequest/examplePrescriptionItemOXYCODONELP10MGVIATRIS> a fhir:MedicationRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "examplePrescriptionItemOXYCODONELP10MGVIATRIS"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"^^xsd:anyURI ;
+       fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationRequest</b><a name=\"examplePrescriptionItemOXYCODONELP10MGVIATRIS\"> </a><a name=\"hcexamplePrescriptionItemOXYCODONELP10MGVIATRIS\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationRequest &quot;examplePrescriptionItemOXYCODONELP10MGVIATRIS&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-prescription-item.html\">Prescription Item</a></p></div><p><b>identifier</b>: 9403863</p><p><b>basedOn</b>: <a href=\"CarePlan-examplePrescription.html\">CarePlan/examplePrescription</a></p><p><b>groupIdentifier</b>: 12345</p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>category</b>: Stop <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSPrescriptionCategory.html\">Prescription category</a>#S)</span></p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Medication-exampleOncologyMedicationOXYCODONELP10MGVIATRIS.html\">Medication/exampleOncologyMedicationOXYCODONELP10MGVIATRIS</a></td></tr></table><p><b>subject</b>: <a href=\"Patient-exampleOncologyPatient.html\">Patient/exampleOncologyPatient</a> &quot; DOE&quot;</p><p><b>requester</b>: <a href=\"Practitioner-exampleOncologyPractitioner.html\">Practitioner/exampleOncologyPractitioner</a></p><p><b>effectiveDosePeriod</b>: 2023-10-16 20:00:00+0000 --&gt; 2023-10-19 14:32:00+0000</p><blockquote><p><b>dosageInstruction</b></p><p><b>text</b>: Administer 1 OXYCODONE LP 10 MG VIATRIS extended-release tablet, 2 times daily at 8am and 8pm.</p><p><b>timing</b>: 2 per 1 days</p><p><b>route</b>: Oral route <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSSCT.html\">SNOMED CT Codes</a>#26643006)</span></p><blockquote><p><b>doseAndRate</b></p></blockquote></blockquote><blockquote><p><b>dispenseRequest</b></p><h3>InitialFills</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Quantity</b></td></tr><tr><td style=\"display: none\">*</td><td>1</td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "9403863" ]
+  ] ) ; # 
+  fhir:basedOn ( [
+     fhir:link <http://ltsi.univ-rennes.fr/CarePlan/examplePrescription> ;
+     fhir:reference [ fhir:v "CarePlan/examplePrescription" ]
+  ] ) ; # 
+  fhir:groupIdentifier [
+     fhir:value [ fhir:v "12345" ]
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/CSPrescriptionCategory"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "S" ] ;
+       fhir:display [ fhir:v "Stop" ]
+     ] )
+  ] ) ; # 
+  fhir:medication [
+     fhir:reference [
+       fhir:link <http://ltsi.univ-rennes.fr/Medication/exampleOncologyMedicationOXYCODONELP10MGVIATRIS> ;
+       fhir:reference [ fhir:v "Medication/exampleOncologyMedicationOXYCODONELP10MGVIATRIS" ]
+     ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://ltsi.univ-rennes.fr/Patient/exampleOncologyPatient> ;
+     fhir:reference [ fhir:v "Patient/exampleOncologyPatient" ]
+  ] ; # 
+  fhir:requester [
+     fhir:link <http://ltsi.univ-rennes.fr/Practitioner/exampleOncologyPractitioner> ;
+     fhir:reference [ fhir:v "Practitioner/exampleOncologyPractitioner" ]
+  ] ; # 
+  fhir:effectiveDosePeriod [
+     fhir:start [ fhir:v "2023-10-16T20:00:00.0000Z"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2023-10-19T14:32:00.0000Z"^^xsd:dateTime ]
+  ] ; # 
+  fhir:dosageInstruction ( [
+     fhir:text [ fhir:v "Administer 1 OXYCODONE LP 10 MG VIATRIS extended-release tablet, 2 times daily at 8am and 8pm." ] ;
+     fhir:timing [
+       fhir:repeat [
+         fhir:frequency [ fhir:v "2"^^xsd:positiveInteger ] ;
+         fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:periodUnit [ fhir:v "d" ] ;
+         fhir:timeOfDay ( [ fhir:v "08:00:00"^^xsd:time ] [ fhir:v "20:00:00"^^xsd:time ] )
+       ]
+     ] ;
+     fhir:route [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/CSSCT"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "26643006" ] ;
+         fhir:display [ fhir:v "Oral route" ]
+       ] )
+     ] ;
+     fhir:doseAndRate ( [
+       fhir:dose [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "tablet(s)" ]
+       ]
+     ] )
+  ] ) ; # 
+  fhir:dispenseRequest [
+     fhir:initialFill [
+       fhir:quantity [
+         fhir:value [ fhir:v "1"^^xsd:decimal ]
+       ]
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

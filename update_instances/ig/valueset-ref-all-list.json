@@ -1,0 +1,2149 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-cardinality-behavior",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ActionCardinalityBehavior",
+      "title" : "Action Cardinality Behavior",
+      "description" : "Defines behavior for an action or a group for how many times that item may be repeated.",
+      "systems" : ["http://hl7.org/fhir/action-cardinality-behavior"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.807",
+        "2.16.840.1.113883.4.642.3.790"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.807",
+        "2.16.840.1.113883.4.642.3.790"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-protocol.html" : "Protocol"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-code",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ActionCode",
+      "title" : "Action Code",
+      "description" : "Provides examples of actions to be performed.",
+      "systems" : ["http://hl7.org/fhir/action-code"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3051"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3051"],
+      "uses" : {
+      },
+      "StructureDefinition-protocol.html" : "Protocol"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-condition-kind",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ActionConditionKind",
+      "title" : "Action Condition Kind",
+      "description" : "Defines the kinds of conditions that can appear on actions.",
+      "systems" : ["http://hl7.org/fhir/action-condition-kind"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.798",
+        "2.16.840.1.113883.4.642.3.815"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.798",
+        "2.16.840.1.113883.4.642.3.815"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-protocol.html" : "Protocol"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-grouping-behavior",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ActionGroupingBehavior",
+      "title" : "Action Grouping Behavior",
+      "description" : "Defines organization behavior of a group.",
+      "systems" : ["http://hl7.org/fhir/action-grouping-behavior"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.782",
+        "2.16.840.1.113883.4.642.3.799"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.782",
+        "2.16.840.1.113883.4.642.3.799"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-protocol.html" : "Protocol"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-participant-function",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ActionParticipantFunction",
+      "title" : "Action Participant Function",
+      "description" : "The function performed by the participant for the action.",
+      "systems" : ["http://hl7.org/fhir/action-participant-function"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3052"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3052"],
+      "uses" : {
+      },
+      "StructureDefinition-protocol.html" : "Protocol"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-participant-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ActionParticipantType",
+      "title" : "Action Participant Type",
+      "description" : "The type of participant for the action.",
+      "systems" : ["http://hl7.org/fhir/action-participant-type"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.794",
+        "2.16.840.1.113883.4.642.3.811"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.794",
+        "2.16.840.1.113883.4.642.3.811"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-protocol.html" : "Protocol"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-precheck-behavior",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ActionPrecheckBehavior",
+      "title" : "Action Precheck Behavior",
+      "description" : "Defines selection frequency behavior for an action or group.",
+      "systems" : ["http://hl7.org/fhir/action-precheck-behavior"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.788",
+        "2.16.840.1.113883.4.642.3.805"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.788",
+        "2.16.840.1.113883.4.642.3.805"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-protocol.html" : "Protocol"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-reason-code",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ActionReasonCode",
+      "title" : "Action Reason Code",
+      "description" : "Provides examples of reasons for actions to be performed.",
+      "systems" : ["http://hl7.org/fhir/action-reason-code"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3053"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3053"],
+      "uses" : {
+      },
+      "StructureDefinition-protocol.html" : "Protocol"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-relationship-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ActionRelationshipType",
+      "title" : "Action Relationship Type",
+      "description" : "Defines the types of relationships between actions.",
+      "systems" : ["http://hl7.org/fhir/action-relationship-type"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.796",
+        "2.16.840.1.113883.4.642.3.813"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.796",
+        "2.16.840.1.113883.4.642.3.813"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-protocol.html" : "Protocol"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-required-behavior",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ActionRequiredBehavior",
+      "title" : "Action Required Behavior",
+      "description" : "Defines expectations around whether an action or action group is required.",
+      "systems" : ["http://hl7.org/fhir/action-required-behavior"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.786",
+        "2.16.840.1.113883.4.642.3.803"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.786",
+        "2.16.840.1.113883.4.642.3.803"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-protocol.html" : "Protocol"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-selection-behavior",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ActionSelectionBehavior",
+      "title" : "Action Selection Behavior",
+      "description" : "Defines selection behavior of a group.",
+      "systems" : ["http://hl7.org/fhir/action-selection-behavior"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.784",
+        "2.16.840.1.113883.4.642.3.801"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.784",
+        "2.16.840.1.113883.4.642.3.801"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-protocol.html" : "Protocol"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ActionType",
+      "title" : "Action Type",
+      "description" : "The type of action to be performed.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/action-type"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.809",
+        "2.16.840.1.113883.4.642.3.792"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.809",
+        "2.16.840.1.113883.4.642.3.792"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-protocol.html" : "Protocol"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/additional-instruction-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTAdditionalDosageInstructions",
+      "title" : "SNOMED CT Additional Dosage Instructions",
+      "description" : "This value set includes all SNOMED CT Additional Dosage Instructions.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.95"],
+      "sources" : ["2.16.840.1.113883.4.642.3.95"],
+      "uses" : {
+      },
+      "StructureDefinition-prescription-item.html" : "Prescription Item"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administration-method-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTAdministrationMethodCodes",
+      "title" : "SNOMED CT Administration Method Codes",
+      "description" : "This value set includes some method codes from SNOMED CT - provided as an exemplar",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.90", "2.16.840.1.113883.4.642.3.97"],
+      "sources" : ["2.16.840.1.113883.4.642.3.90", "2.16.840.1.113883.4.642.3.97"],
+      "uses" : {
+      },
+      "StructureDefinition-prescription-item.html" : "Prescription Item",
+      "StructureDefinition-administration-report.html" : "Administration Report"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administration-subpotent-reason",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationAdministrationSubpotentReason",
+      "title" : "MedicationAdministration Subpotent Reason",
+      "description" : "MedicationAdministration Subpotent Reason",
+      "systems" : [
+        "http://hl7.org/fhir/CodeSystem/administration-subpotent-reason"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.3128"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3128"],
+      "uses" : {
+      },
+      "StructureDefinition-administration-report.html" : "Administration Report"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1"],
+      "uses" : {
+      },
+      "StructureDefinition-oncology-patient.html" : "Oncology Patient",
+      "StructureDefinition-oncology-practitioner.html" : "Oncology Practitioner"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/all-languages",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AllLanguages",
+      "title" : "All Languages",
+      "description" : "This value set includes all possible codes from BCP-47 (see http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.21"],
+      "sources" : ["2.16.840.1.113883.4.642.3.21"],
+      "uses" : {
+      },
+      "StructureDefinition-Medical-liability-unit.html" : "Medical Liability Unit",
+      "StructureDefinition-prescription-item.html" : "Prescription Item",
+      "StructureDefinition-additional-information.html" : "Additional Information",
+      "StructureDefinition-administration-report.html" : "Administration Report",
+      "StructureDefinition-Stay.html" : "Stay",
+      "StructureDefinition-associated-device.html" : "Associated Device",
+      "StructureDefinition-oncology-patient.html" : "Oncology Patient",
+      "StructureDefinition-prescription.html" : "Prescription",
+      "StructureDefinition-oncology-medication.html" : "Oncology Medication",
+      "StructureDefinition-oncology-practitioner.html" : "Oncology Practitioner",
+      "StructureDefinition-protocol.html" : "Protocol",
+      "StructureDefinition-accomodation-unit.html" : "Accomodation Unit"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/approach-site-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTAnatomicalStructureAdministrationSites",
+      "title" : "SNOMED CT Anatomical Structure for Administration Site Codes",
+      "description" : "This value set includes Anatomical Structure codes from SNOMED CT - provided as an exemplar.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.346"],
+      "sources" : ["2.16.840.1.113883.4.642.3.346"],
+      "uses" : {
+      },
+      "StructureDefinition-prescription-item.html" : "Prescription Item",
+      "StructureDefinition-administration-report.html" : "Administration Report"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/body-site",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTBodyStructures",
+      "title" : "SNOMED CT Body Structures",
+      "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.653",
+        "2.16.840.1.113883.4.642.2.78",
+        "2.16.840.1.113883.4.642.3.141"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.653",
+        "2.16.840.1.113883.4.642.2.78",
+        "2.16.840.1.113883.4.642.3.141"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-additional-information.html" : "Additional Information"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-performed",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "CarePlanActivityPerformed",
+      "title" : "Care Plan Activity Performed",
+      "description" : "Example codes indicating the care plan activity that was performed. Note that these are in no way complete and might not even be appropriate for some uses.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3000"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3000"],
+      "uses" : {
+      },
+      "StructureDefinition-prescription.html" : "Prescription"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-category",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "CarePlanCategory",
+      "title" : "Care Plan Category",
+      "description" : "Example codes indicating the category a care plan falls within.  Note that these are in no way complete and might not even be appropriate for some uses.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.136",
+        "2.16.840.1.113883.4.642.2.67",
+        "2.16.840.1.113883.4.642.3.148"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.136",
+        "2.16.840.1.113883.4.642.2.67",
+        "2.16.840.1.113883.4.642.3.148"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-prescription.html" : "Prescription"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-intent",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "CarePlanIntent",
+      "title" : "Care Plan Intent",
+      "description" : "Codes indicating the degree of authority/intentionality associated with a care plan.",
+      "systems" : ["http://hl7.org/fhir/request-intent"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.150",
+        "2.16.840.1.113883.4.642.3.141"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.150",
+        "2.16.840.1.113883.4.642.3.141"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-prescription.html" : "Prescription"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTClinicalFindings",
+      "title" : "SNOMED CT Clinical Findings",
+      "description" : "This value set includes all the \"Clinical finding\" [SNOMED CT](http://snomed.info/sct) codes - concepts where concept is-a 404684003 (Clinical finding (finding)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.232",
+        "2.16.840.1.113883.4.642.3.227",
+        "2.16.840.1.113883.4.642.2.115"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.232",
+        "2.16.840.1.113883.4.642.3.227",
+        "2.16.840.1.113883.4.642.2.115"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-prescription.html" : "Prescription",
+      "StructureDefinition-protocol.html" : "Protocol"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-code",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ConditionProblemDiagnosisCodes",
+      "title" : "Condition/Problem/Diagnosis Codes",
+      "description" : "Example value set for Condition/Problem/Diagnosis codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.161",
+        "2.16.840.1.113883.4.642.2.72",
+        "2.16.840.1.113883.4.642.3.152"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.161",
+        "2.16.840.1.113883.4.642.2.72",
+        "2.16.840.1.113883.4.642.3.152"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-prescription-item.html" : "Prescription Item",
+      "StructureDefinition-Stay.html" : "Stay",
+      "StructureDefinition-protocol.html" : "Protocol"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "DataAbsentReason",
+      "title" : "Data Absent Reason",
+      "description" : "Used to specify why the normally expected content of the data element is missing.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/data-absent-reason"],
+      "oids" : ["2.16.840.1.113883.4.642.3.5"],
+      "sources" : ["2.16.840.1.113883.4.642.3.5"],
+      "uses" : {
+      },
+      "StructureDefinition-additional-information.html" : "Additional Information"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "DaysOfWeek",
+      "title" : "Days Of Week",
+      "description" : "The days of the week.",
+      "systems" : ["http://hl7.org/fhir/days-of-week"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.512",
+        "2.16.840.1.113883.4.642.2.302",
+        "2.16.840.1.113883.4.642.3.506"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.512",
+        "2.16.840.1.113883.4.642.2.302",
+        "2.16.840.1.113883.4.642.3.506"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-prescription-item.html" : "Prescription Item"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/definition-topic",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "DefinitionTopic",
+      "title" : "Definition Topic",
+      "description" : "High-level categorization of the definition, used for searching, sorting, and filtering.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/definition-use",
+        "http://terminology.hl7.org/CodeSystem/definition-topic"
+      ],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.794",
+        "2.16.840.1.113883.4.642.3.777"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.794",
+        "2.16.840.1.113883.4.642.3.777"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-protocol.html" : "Protocol"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/device-correctiveactionscope",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "DeviceCorrectiveActionScope",
+      "title" : "Device Corrective Action Scope",
+      "description" : "Device - Corrective action scope",
+      "systems" : ["http://hl7.org/fhir/device-correctiveactionscope"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3041"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3041"],
+      "uses" : {
+      },
+      "StructureDefinition-associated-device.html" : "Associated Device"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/device-nametype",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "DeviceNameType",
+      "title" : "Device Name Type",
+      "description" : "The type of name the device is referred by.",
+      "systems" : ["http://hl7.org/fhir/device-nametype"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1083"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1083"],
+      "uses" : {
+      },
+      "StructureDefinition-associated-device.html" : "Associated Device"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/device-productidentifierinudi",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "DeviceProductionIdentifierInUDI",
+      "title" : "Device Production Identifier In UDI",
+      "description" : "Device Production Identifier in UDI",
+      "systems" : ["http://hl7.org/fhir/device-productidentifierinudi"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3039"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3039"],
+      "uses" : {
+      },
+      "StructureDefinition-associated-device.html" : "Associated Device"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/device-property-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "DeviceType",
+      "title" : "Device Property Type",
+      "description" : "Codes used to identify medical devices. Includes concepts from SNOMED CT (http://www.snomed.org/) where concept is-a 49062001 (Device)  and is provided as a suggestive example.",
+      "systems" : [
+        "urn:iso:std:iso:11073:10101",
+        "urn:oid:2.16.840.1.113883.6.276",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.3195"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3195"],
+      "uses" : {
+      },
+      "StructureDefinition-associated-device.html" : "Associated Device"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/device-safety",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "DeviceSafety",
+      "title" : "Device Safety",
+      "description" : "Codes used to identify medical devices safety characteristics. These codes are taken from the [NCI Thesaurus](https://ncit.nci.nih.gov/ncitbrowser/pages/home.jsf) and are provided here as a suggestive example.",
+      "systems" : ["urn:oid:2.16.840.1.113883.3.26.1.1"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.213",
+        "2.16.840.1.113883.4.642.3.893"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.213",
+        "2.16.840.1.113883.4.642.3.893"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-associated-device.html" : "Associated Device"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/device-specification-category",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "DeviceSpecificationCategory",
+      "title" : "Device Specification Category",
+      "description" : "The kind of standards used by the device.",
+      "systems" : ["http://hl7.org/fhir/device-specification-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3197"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3197"],
+      "uses" : {
+      },
+      "StructureDefinition-associated-device.html" : "Associated Device"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/device-specification-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "DeviceSpecificationType",
+      "title" : "Device Specification Type",
+      "description" : "The type or specification of a standard that devices can adhere to",
+      "systems" : ["urn:iso:std:iso:11073:10101"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3204"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3204"],
+      "uses" : {
+      },
+      "StructureDefinition-associated-device.html" : "Associated Device"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/device-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "DeviceType",
+      "title" : "Device Type",
+      "description" : "Codes used to identify medical devices. Includes concepts from SNOMED CT (http://www.snomed.org/) where concept is-a 49062001 (Device)  and is provided as a suggestive example.",
+      "systems" : [
+        "urn:iso:std:iso:11073:10101",
+        "urn:oid:2.16.840.1.113883.6.276",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1376"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1376"],
+      "uses" : {
+      },
+      "StructureDefinition-associated-device.html" : "Associated Device"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/devicedefinition-regulatory-identifier-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "DeviceDefinitionRegulatoryIdentifierType",
+      "title" : "Device Definition Regulatory Identifier Type",
+      "description" : "Regulatory Identifier type",
+      "systems" : [
+        "http://hl7.org/fhir/devicedefinition-regulatory-identifier-type"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.3311"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3311"],
+      "uses" : {
+      },
+      "StructureDefinition-associated-device.html" : "Associated Device"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/devicedefinition-relationtype",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "DeviceDefinitionRelationType",
+      "title" : "Device Definition Relation Type",
+      "description" : "Description Needed Here",
+      "systems" : ["http://hl7.org/fhir/devicedefinition-relationtype"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3040"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3040"],
+      "uses" : {
+      },
+      "StructureDefinition-associated-device.html" : "Associated Device"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-admit-source",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "AdmitSource",
+      "title" : "Admit Source",
+      "description" : "This value set defines a set of codes that can be used to indicate from where the patient came in.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/admit-source"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.257",
+        "2.16.840.1.113883.4.642.2.144",
+        "2.16.840.1.113883.4.642.3.252"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.257",
+        "2.16.840.1.113883.4.642.2.144",
+        "2.16.840.1.113883.4.642.3.252"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Stay.html" : "Stay"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-diagnosis-use",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "EncounterDiagnosisUse",
+      "title" : "Encounter Diagnosis Use",
+      "description" : "What a specific Encounter/EpisodeOfCare `diagnosis.condition` is to be used for.",
+      "systems" : ["http://hl7.org/fhir/encounter-diagnosis-use"],
+      "oids" : ["2.16.840.1.113883.4.642.4.3321"],
+      "sources" : ["2.16.840.1.113883.4.642.4.3321"],
+      "uses" : {
+      },
+      "StructureDefinition-Stay.html" : "Stay"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-diet",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "EncounterDiet",
+      "title" : "Diet",
+      "description" : "This value set defines a set of codes that can be used to indicate dietary preferences or restrictions a patient may have.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/diet"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.255",
+        "2.16.840.1.113883.4.642.2.142",
+        "2.16.840.1.113883.4.642.3.250"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.255",
+        "2.16.840.1.113883.4.642.2.142",
+        "2.16.840.1.113883.4.642.3.250"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Stay.html" : "Stay"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-discharge-disposition",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "DischargeDisposition",
+      "title" : "Discharge Disposition",
+      "description" : "This value set defines a set of codes that can be used to where the patient left the hospital.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/discharge-disposition"
+      ],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.254",
+        "2.16.840.1.113883.4.642.2.145",
+        "2.16.840.1.113883.4.642.3.259"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.254",
+        "2.16.840.1.113883.4.642.2.145",
+        "2.16.840.1.113883.4.642.3.259"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Stay.html" : "Stay"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-location-status",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "EncounterLocationStatus",
+      "title" : "Encounter Location Status",
+      "description" : "The status of the location.",
+      "systems" : ["http://hl7.org/fhir/encounter-location-status"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.257",
+        "2.16.840.1.113883.4.642.2.147",
+        "2.16.840.1.113883.4.642.3.262"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.257",
+        "2.16.840.1.113883.4.642.2.147",
+        "2.16.840.1.113883.4.642.3.262"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Stay.html" : "Stay"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-participant-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ParticipantType",
+      "title" : "Participant Type",
+      "description" : "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/participant-type",
+        "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+      ],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.245",
+        "2.16.840.1.113883.4.642.2.139",
+        "2.16.840.1.113883.4.642.3.250"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.245",
+        "2.16.840.1.113883.4.642.2.139",
+        "2.16.840.1.113883.4.642.3.250"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Stay.html" : "Stay"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "EncounterReasonCodes",
+      "title" : "Encounter Reason Codes",
+      "description" : "This examples value set defines the set of codes that can be used to indicate reasons for an encounter.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.256",
+        "2.16.840.1.113883.4.642.2.146",
+        "2.16.840.1.113883.4.642.3.261"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.256",
+        "2.16.840.1.113883.4.642.2.146",
+        "2.16.840.1.113883.4.642.3.261"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Stay.html" : "Stay"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-reason-use",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "EncounterReasonUse",
+      "title" : "Encounter Reason Use",
+      "description" : "What a specific Encounter/EpisodeOfCare `reason.value` is to be used for.",
+      "systems" : ["http://hl7.org/fhir/encounter-reason-use"],
+      "oids" : ["2.16.840.1.113883.4.642.4.3320"],
+      "sources" : ["2.16.840.1.113883.4.642.4.3320"],
+      "uses" : {
+      },
+      "StructureDefinition-Stay.html" : "Stay"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-special-arrangements",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SpecialArrangements",
+      "title" : "Special Arrangements",
+      "description" : "This value set defines a set of codes that can be used to indicate the kinds of special arrangements in place for a patients visit.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/encounter-special-arrangements"
+      ],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.248",
+        "2.16.840.1.113883.4.642.2.141",
+        "2.16.840.1.113883.4.642.3.253"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.248",
+        "2.16.840.1.113883.4.642.2.141",
+        "2.16.840.1.113883.4.642.3.253"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Stay.html" : "Stay"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-special-courtesy",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SpecialCourtesy",
+      "title" : "Special Courtesy",
+      "description" : "This value set defines a set of codes that can be used to indicate special courtesies provided to the patient.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.247",
+        "2.16.840.1.113883.4.642.3.252",
+        "2.16.840.1.113883.4.642.2.140"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.247",
+        "2.16.840.1.113883.4.642.3.252",
+        "2.16.840.1.113883.4.642.2.140"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Stay.html" : "Stay"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-status",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "EncounterStatus",
+      "title" : "Encounter Status",
+      "description" : "Current state of the encounter.",
+      "systems" : ["http://hl7.org/fhir/encounter-status"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.246",
+        "2.16.840.1.113883.4.642.3.241"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.246",
+        "2.16.840.1.113883.4.642.3.241"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Stay.html" : "Stay"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-subject-status",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "EncounterSubjectStatus",
+      "title" : "Encounter Subject Status",
+      "description" : "This example value set defines a set of codes that can be used to indicate the status of the subject within the encounter",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/encounter-subject-status"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.3159"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3159"],
+      "uses" : {
+      },
+      "StructureDefinition-Stay.html" : "Stay"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "EncounterType",
+      "title" : "Encounter Type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the type of encounter: a specific code indicating type of service provided.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/encounter-type"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.243",
+        "2.16.840.1.113883.4.642.3.248",
+        "2.16.840.1.113883.4.642.2.137"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.243",
+        "2.16.840.1.113883.4.642.3.248",
+        "2.16.840.1.113883.4.642.2.137"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Stay.html" : "Stay"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/event-timing",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "EventTiming",
+      "title" : "EventTiming",
+      "description" : "Real-world event relating to the schedule.",
+      "systems" : [
+        "http://hl7.org/fhir/event-timing",
+        "http://terminology.hl7.org/CodeSystem/v3-TimingEvent"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.75"],
+      "sources" : ["2.16.840.1.113883.4.642.3.75"],
+      "uses" : {
+      },
+      "StructureDefinition-prescription-item.html" : "Prescription Item"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/goal-category",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "GoalCategory",
+      "title" : "Goal Category",
+      "description" : "Example codes for grouping goals to use for filtering or presentation.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/goal-category"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.2.411",
+        "2.16.840.1.113883.4.642.3.270",
+        "2.16.840.1.113883.4.642.3.275"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.2.411",
+        "2.16.840.1.113883.4.642.3.270",
+        "2.16.840.1.113883.4.642.3.275"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-protocol.html" : "Protocol"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/goal-priority",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "GoalPriority",
+      "title" : "Goal Priority",
+      "description" : "Indicates the level of importance associated with reaching or sustaining a goal.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/goal-priority"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.268",
+        "2.16.840.1.113883.4.642.3.273",
+        "2.16.840.1.113883.4.642.2.151"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.268",
+        "2.16.840.1.113883.4.642.3.273",
+        "2.16.840.1.113883.4.642.2.151"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-protocol.html" : "Protocol"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/goal-start-event",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "GoalStartEvent",
+      "title" : "Goal Start Event",
+      "description" : "Identifies types of events that might trigger the start of a goal.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.2.413",
+        "2.16.840.1.113883.4.642.3.279",
+        "2.16.840.1.113883.4.642.3.274"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.2.413",
+        "2.16.840.1.113883.4.642.3.279",
+        "2.16.840.1.113883.4.642.3.274"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-protocol.html" : "Protocol"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "IdentifierTypeCodes",
+      "title" : "Identifier Type Codes",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.4.642.3.45"],
+      "sources" : ["2.16.840.1.113883.4.642.3.45"],
+      "uses" : {
+      },
+      "StructureDefinition-prescription-item.html" : "Prescription Item",
+      "StructureDefinition-administration-report.html" : "Administration Report",
+      "StructureDefinition-Stay.html" : "Stay",
+      "StructureDefinition-oncology-patient.html" : "Oncology Patient",
+      "StructureDefinition-oncology-medication.html" : "Oncology Medication",
+      "StructureDefinition-oncology-practitioner.html" : "Oncology Practitioner",
+      "StructureDefinition-protocol.html" : "Protocol"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "systems" : ["http://hl7.org/fhir/identifier-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.57"],
+      "sources" : ["2.16.840.1.113883.4.642.3.57"],
+      "uses" : {
+      },
+      "StructureDefinition-prescription-item.html" : "Prescription Item",
+      "StructureDefinition-administration-report.html" : "Administration Report",
+      "StructureDefinition-Stay.html" : "Stay",
+      "StructureDefinition-oncology-patient.html" : "Oncology Patient",
+      "StructureDefinition-oncology-medication.html" : "Oncology Medication",
+      "StructureDefinition-oncology-practitioner.html" : "Oncology Practitioner",
+      "StructureDefinition-protocol.html" : "Protocol"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/jurisdiction",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "JurisdictionValueSet",
+      "title" : "Jurisdiction ValueSet",
+      "description" : "This value set defines a base set of codes for country, country subdivision and region    for indicating where a resource is intended to be used.   \r\n   \r\n   Note: The codes for countries and country subdivisions are taken from    [ISO 3166](https://www.iso.org/iso-3166-country-codes.html)    while the codes for \"supra-national\" regions are from    [UN Standard country or area codes for statistical use (M49)](http://unstats.un.org/unsd/methods/m49/m49.htm).",
+      "systems" : [
+        "http://unstats.un.org/unsd/methods/m49/m49.htm",
+        "urn:iso:std:iso:3166",
+        "urn:iso:std:iso:3166:-2"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.48"],
+      "sources" : ["2.16.840.1.113883.4.642.3.48"],
+      "uses" : {
+      },
+      "StructureDefinition-protocol.html" : "Protocol"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (see http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.891",
+        "2.16.840.1.113883.4.642.3.20"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.891",
+        "2.16.840.1.113883.4.642.3.20"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Medical-liability-unit.html" : "Medical Liability Unit",
+      "StructureDefinition-prescription-item.html" : "Prescription Item",
+      "StructureDefinition-additional-information.html" : "Additional Information",
+      "StructureDefinition-administration-report.html" : "Administration Report",
+      "StructureDefinition-Stay.html" : "Stay",
+      "StructureDefinition-associated-device.html" : "Associated Device",
+      "StructureDefinition-oncology-patient.html" : "Oncology Patient",
+      "StructureDefinition-prescription.html" : "Prescription",
+      "StructureDefinition-oncology-medication.html" : "Oncology Medication",
+      "StructureDefinition-oncology-practitioner.html" : "Oncology Practitioner",
+      "StructureDefinition-protocol.html" : "Protocol",
+      "StructureDefinition-accomodation-unit.html" : "Accomodation Unit"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/link-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "Link Type",
+      "description" : "The type of link between this Patient resource and another Patient/RelatedPerson resource.",
+      "systems" : ["http://hl7.org/fhir/link-type"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.2.234",
+        "2.16.840.1.113883.4.642.3.423",
+        "2.16.840.1.113883.4.642.3.412"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.2.234",
+        "2.16.840.1.113883.4.642.3.423",
+        "2.16.840.1.113883.4.642.3.412"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncology-patient.html" : "Oncology Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/location-characteristic",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "LocationCharacteristic",
+      "title" : "Location Characteristic",
+      "description" : "Example Set of Location Characteristics",
+      "systems" : ["http://hl7.org/fhir/location-characteristic"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3079"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3079"],
+      "uses" : {
+      },
+      "StructureDefinition-accomodation-unit.html" : "Accomodation Unit"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/location-form",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "LocationForm",
+      "title" : "Location Form",
+      "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/location-physical-type"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.328"],
+      "sources" : ["2.16.840.1.113883.4.642.3.328"],
+      "uses" : {
+      },
+      "StructureDefinition-Stay.html" : "Stay",
+      "StructureDefinition-accomodation-unit.html" : "Accomodation Unit"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/location-mode",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "LocationMode",
+      "title" : "Location Mode",
+      "description" : "Indicates whether a resource instance represents a specific location or a class of locations.",
+      "systems" : ["http://hl7.org/fhir/location-mode"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.321",
+        "2.16.840.1.113883.4.642.2.181",
+        "2.16.840.1.113883.4.642.3.330"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.321",
+        "2.16.840.1.113883.4.642.2.181",
+        "2.16.840.1.113883.4.642.3.330"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-accomodation-unit.html" : "Accomodation Unit"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/location-status",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "LocationStatus",
+      "title" : "Location Status",
+      "description" : "Indicates whether the location is still in use.",
+      "systems" : ["http://hl7.org/fhir/location-status"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.323",
+        "2.16.840.1.113883.4.642.3.332",
+        "2.16.840.1.113883.4.642.2.182"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.323",
+        "2.16.840.1.113883.4.642.3.332",
+        "2.16.840.1.113883.4.642.2.182"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-accomodation-unit.html" : "Accomodation Unit"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/marital-status",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "MaritalStatusCodes",
+      "title" : "Marital Status Codes",
+      "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.29"],
+      "sources" : ["2.16.840.1.113883.4.642.3.29"],
+      "uses" : {
+      },
+      "StructureDefinition-oncology-patient.html" : "Oncology Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/med-admin-perform-function",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationAdministrationPerformerFunctionCodes",
+      "title" : "MedicationAdministration Performer Function Codes",
+      "description" : "MedicationAdministration Performer Function Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/med-admin-perform-function"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.349"],
+      "sources" : ["2.16.840.1.113883.4.642.3.349"],
+      "uses" : {
+      },
+      "StructureDefinition-administration-report.html" : "Administration Report"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-admin-location",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationAdministrationLocationCodes",
+      "title" : "MedicationAdministration Location Codes",
+      "description" : "MedicationAdministration Location Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medication-admin-location"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.3127"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3127"],
+      "uses" : {
+      },
+      "StructureDefinition-administration-report.html" : "Administration Report"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-admin-status",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationAdministrationStatusCodes",
+      "title" : "MedicationAdministration Status Codes",
+      "description" : "MedicationAdministration Status Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medication-admin-status"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.2.186",
+        "2.16.840.1.113883.4.642.3.340",
+        "2.16.840.1.113883.4.642.3.330"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.2.186",
+        "2.16.840.1.113883.4.642.3.340",
+        "2.16.840.1.113883.4.642.3.330"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-administration-report.html" : "Administration Report"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-as-needed-reason",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationAsNeededReasonCodes",
+      "title" : "SNOMED CT Medication As Needed Reason Codes",
+      "description" : "This value set includes all clinical findings from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.89", "2.16.840.1.113883.4.642.3.96"],
+      "sources" : ["2.16.840.1.113883.4.642.3.89", "2.16.840.1.113883.4.642.3.96"],
+      "uses" : {
+      },
+      "StructureDefinition-prescription-item.html" : "Prescription Item",
+      "StructureDefinition-protocol.html" : "Protocol"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationCodes",
+      "title" : "SNOMED CT Medication Codes",
+      "description" : "This value set includes all drug or medicament substance codes and all pharmaceutical/biologic products from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.375",
+        "2.16.840.1.113883.4.642.2.199",
+        "2.16.840.1.113883.4.642.3.360"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.375",
+        "2.16.840.1.113883.4.642.2.199",
+        "2.16.840.1.113883.4.642.3.360"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-prescription-item.html" : "Prescription Item",
+      "StructureDefinition-administration-report.html" : "Administration Report",
+      "StructureDefinition-oncology-medication.html" : "Oncology Medication"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-dose-aid",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationDoseAids",
+      "title" : "Medication Dose Aids",
+      "description" : "Medication Dose Aids",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medication-dose-aid"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3241"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3241"],
+      "uses" : {
+      },
+      "StructureDefinition-prescription-item.html" : "Prescription Item"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-form-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTFormCodes",
+      "title" : "SNOMED CT Form Codes",
+      "description" : "This value set includes all dose form codes from SNOMED CT - provided as an exemplar.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.359",
+        "2.16.840.1.113883.4.642.2.198",
+        "2.16.840.1.113883.4.642.3.374"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.359",
+        "2.16.840.1.113883.4.642.2.198",
+        "2.16.840.1.113883.4.642.3.374"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncology-medication.html" : "Oncology Medication"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-ingredientstrength",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationIngredientStrengthCodes",
+      "title" : "Medication Ingredient Strength Codes",
+      "description" : "Medication Ingredient Strength Codes",
+      "systems" : [
+        "http://hl7.org/fhir/CodeSystem/medication-ingredientstrength"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1953"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1953"],
+      "uses" : {
+      },
+      "StructureDefinition-oncology-medication.html" : "Oncology Medication"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-intended-performer-role",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationIntendedPerformerRole",
+      "title" : "Medication Intended Performer Role",
+      "description" : "Medication Intended Performer Role",
+      "systems" : [
+        "http://hl7.org/fhir/CodeSystem/medication-intended-performer-role"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1979"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1979"],
+      "uses" : {
+      },
+      "StructureDefinition-prescription-item.html" : "Prescription Item"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-status",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationStatusCodes",
+      "title" : "Medication Status Codes",
+      "description" : "Medication Status Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medication-status"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.376",
+        "2.16.840.1.113883.4.642.3.363"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.376",
+        "2.16.840.1.113883.4.642.3.363"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncology-medication.html" : "Oncology Medication"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-admin-location",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationRequestAdministrationLocationCodes",
+      "title" : "medicationRequest Administration Location Codes",
+      "description" : "MedicationRequest Administration Location Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-admin-location"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.3242"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3242"],
+      "uses" : {
+      },
+      "StructureDefinition-prescription-item.html" : "Prescription Item"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-course-of-therapy",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationRequestCourseOfTherapyCodes",
+      "title" : "medicationRequest Course of Therapy Codes",
+      "description" : "MedicationRequest Course of Therapy Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1326"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1326"],
+      "uses" : {
+      },
+      "StructureDefinition-prescription-item.html" : "Prescription Item"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-intent",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationRequestIntent",
+      "title" : "medicationRequest Intent",
+      "description" : "MedicationRequest Intent Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medicationrequest-intent"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1321"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1321"],
+      "uses" : {
+      },
+      "StructureDefinition-prescription-item.html" : "Prescription Item"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationrequestStatus",
+      "title" : "medicationrequest Status",
+      "description" : "MedicationRequest Status Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medicationrequest-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1320"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1320"],
+      "uses" : {
+      },
+      "StructureDefinition-prescription-item.html" : "Prescription Item"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status-reason",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationRequestStatusReasonCodes",
+      "title" : "medicationRequest Status Reason Codes",
+      "description" : "MedicationRequest Status Reason Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1324"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1324"],
+      "uses" : {
+      },
+      "StructureDefinition-prescription-item.html" : "Prescription Item"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/name-use",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "NameUse",
+      "title" : "NameUse",
+      "description" : "The use of a human name.",
+      "systems" : ["http://hl7.org/fhir/name-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.65"],
+      "sources" : ["2.16.840.1.113883.4.642.3.65"],
+      "uses" : {
+      },
+      "StructureDefinition-oncology-patient.html" : "Oncology Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-category",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ObservationCategoryCodes",
+      "title" : "Observation Category Codes",
+      "description" : "Observation Category codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/observation-category"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.403",
+        "2.16.840.1.113883.4.642.2.222",
+        "2.16.840.1.113883.4.642.3.392"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.403",
+        "2.16.840.1.113883.4.642.2.222",
+        "2.16.840.1.113883.4.642.3.392"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-additional-information.html" : "Additional Information"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "LOINCCodes",
+      "title" : "LOINC Codes",
+      "description" : "This value set includes all LOINC codes",
+      "systems" : ["http://loinc.org"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.2.216",
+        "2.16.840.1.113883.4.642.3.396",
+        "2.16.840.1.113883.4.642.3.383"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.2.216",
+        "2.16.840.1.113883.4.642.3.396",
+        "2.16.840.1.113883.4.642.3.383"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-additional-information.html" : "Additional Information",
+      "StructureDefinition-protocol.html" : "Protocol"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ObservationInterpretationCodes",
+      "title" : "Observation Interpretation Codes",
+      "description" : "A categorical assessment, providing a rough qualitative interpretation of the observation value,    such as “normal”/ “abnormal”,”low” / “high”, “better” / “worse”, “susceptible” / “resistant”, “expected”/ “not expected”.    The value set is intended to be for ANY use where coded representation of an interpretation is needed.   \r\n   \r\n   Notes:\r\n   \r\n   This is being communicated in v2.x in OBX-8 (Observation Interpretation), in v3 in ObservationInterpretation (CWE) in R1 (Representative Realm) and in FHIR in    Observation.interpretation. Historically these values come from the laboratory domain, and these codes are extensively    used. The value set binding is extensible, so codes outside the value set that are needed for interpretation concepts    (i.e. particular meanings) that are not included in the value set can be used, and these new codes may also be added to    the value set and published in a future version.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+      ],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.399",
+        "2.16.840.1.113883.4.642.3.386",
+        "2.16.840.1.113883.4.642.2.218"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.399",
+        "2.16.840.1.113883.4.642.3.386",
+        "2.16.840.1.113883.4.642.2.218"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-additional-information.html" : "Additional Information"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ObservationMethods",
+      "title" : "Observation Methods",
+      "description" : "Observation Method codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 272394005 (Technique (qualifier value)) or is-a 129264002 (Action (qualifier value)) or is-a 386053000 (Evaluation procedure(procedure))",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.2.215",
+        "2.16.840.1.113883.4.642.3.395",
+        "2.16.840.1.113883.4.642.3.382"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.2.215",
+        "2.16.840.1.113883.4.642.3.395",
+        "2.16.840.1.113883.4.642.3.382"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-additional-information.html" : "Additional Information"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-referencerange-normalvalue",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeNormalValueCodes",
+      "title" : "Observation Reference Range Normal Value Codes",
+      "description" : "Codes that describe the normal value in the reference range, such as “Negative” or “Absent”",
+      "systems" : ["http://hl7.org/fhir/observation-referencerange-normalvalue"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3264"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3264"],
+      "uses" : {
+      },
+      "StructureDefinition-additional-information.html" : "Additional Information"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-status",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ObservationStatus",
+      "title" : "Observation Status",
+      "description" : "Codes providing the status of an observation.",
+      "systems" : ["http://hl7.org/fhir/observation-status"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.400",
+        "2.16.840.1.113883.4.642.3.387",
+        "2.16.840.1.113883.4.642.2.219"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.400",
+        "2.16.840.1.113883.4.642.3.387",
+        "2.16.840.1.113883.4.642.2.219"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-additional-information.html" : "Additional Information"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-triggeredbytype",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "TriggeredBytype",
+      "title" : "triggered Bytype",
+      "description" : "Codes providing the type of triggeredBy observation.",
+      "systems" : ["http://hl7.org/fhir/observation-triggeredbytype"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3265"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3265"],
+      "uses" : {
+      },
+      "StructureDefinition-additional-information.html" : "Additional Information"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/organization-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "OrganizationType",
+      "title" : "Organization Type",
+      "description" : "This example value set defines a set of codes that can be used to indicate a type of organization.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/organization-type"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.2.228",
+        "2.16.840.1.113883.4.642.3.414",
+        "2.16.840.1.113883.4.642.3.403"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.2.228",
+        "2.16.840.1.113883.4.642.3.414",
+        "2.16.840.1.113883.4.642.3.403"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Medical-liability-unit.html" : "Medical Liability Unit"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/participant-resource-types",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ParticipantResourceTypes",
+      "title" : "Participant Resource Types",
+      "description" : "All Resource Types that represent participant resources",
+      "systems" : ["http://hl7.org/fhir/fhir-types"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3301"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3301"],
+      "uses" : {
+      },
+      "StructureDefinition-protocol.html" : "Protocol"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "PatientContactRelationship",
+      "title" : "Patient Contact Relationship ",
+      "description" : "The nature of the relationship between the patient and the contact person.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0131"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1130"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1130"],
+      "uses" : {
+      },
+      "StructureDefinition-oncology-patient.html" : "Oncology Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/plan-definition-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "PlanDefinitionType",
+      "title" : "Plan Definition Type",
+      "description" : "The type of PlanDefinition.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/plan-definition-type"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.797",
+        "2.16.840.1.113883.4.642.3.780"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.797",
+        "2.16.840.1.113883.4.642.3.780"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-protocol.html" : "Protocol"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/publication-status",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "PublicationStatus",
+      "title" : "PublicationStatus",
+      "description" : "The lifecycle status of an artifact.",
+      "systems" : ["http://hl7.org/fhir/publication-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3"],
+      "uses" : {
+      },
+      "StructureDefinition-protocol.html" : "Protocol"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/quantity-comparator",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "QuantityComparator",
+      "title" : "QuantityComparator",
+      "description" : "How the Quantity should be understood and represented.",
+      "systems" : ["http://hl7.org/fhir/quantity-comparator"],
+      "oids" : ["2.16.840.1.113883.4.642.3.59"],
+      "sources" : ["2.16.840.1.113883.4.642.3.59"],
+      "uses" : {
+      },
+      "StructureDefinition-prescription-item.html" : "Prescription Item",
+      "StructureDefinition-additional-information.html" : "Additional Information",
+      "StructureDefinition-administration-report.html" : "Administration Report"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/reason-medication-given-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ReasonMedicationGivenCodes",
+      "title" : "Reason Medication Given Codes",
+      "description" : "This value set is provided as an example. The value set to instantiate this attribute should be drawn from a robust terminology code system that consists of or contains concepts to support the medication process.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/reason-medication-given"
+      ],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.344",
+        "2.16.840.1.113883.4.642.3.334",
+        "2.16.840.1.113883.4.642.2.188"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.344",
+        "2.16.840.1.113883.4.642.3.334",
+        "2.16.840.1.113883.4.642.2.188"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-administration-report.html" : "Administration Report"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/reason-medication-not-given-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTReasonMedicationNotGivenCodes",
+      "title" : "SNOMED CT Reason Medication Not Given Codes",
+      "description" : "This value set includes all medication refused, medication not administered, and non-administration of necessary drug or medicine codes from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.342",
+        "2.16.840.1.113883.4.642.3.332",
+        "2.16.840.1.113883.4.642.2.187"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.342",
+        "2.16.840.1.113883.4.642.3.332",
+        "2.16.840.1.113883.4.642.2.187"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-administration-report.html" : "Administration Report"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeAppliesToCodes",
+      "title" : "Observation Reference Range Applies To Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the particular target population the reference range applies to.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-Race",
+        "http://snomed.info/sct"
+      ],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.407",
+        "2.16.840.1.113883.4.642.3.396"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.407",
+        "2.16.840.1.113883.4.642.3.396"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-additional-information.html" : "Additional Information"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeMeaningCodes",
+      "title" : "Observation Reference Range Meaning Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/referencerange-meaning"
+      ],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.397",
+        "2.16.840.1.113883.4.642.2.217",
+        "2.16.840.1.113883.4.642.3.384"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.397",
+        "2.16.840.1.113883.4.642.2.217",
+        "2.16.840.1.113883.4.642.3.384"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-additional-information.html" : "Additional Information"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-priority",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "RequestPriority",
+      "title" : "RequestPriority",
+      "description" : "Identifies the level of importance to be assigned to actioning the request.",
+      "systems" : ["http://hl7.org/fhir/request-priority"],
+      "oids" : ["2.16.840.1.113883.4.642.3.115"],
+      "sources" : ["2.16.840.1.113883.4.642.3.115"],
+      "uses" : {
+      },
+      "StructureDefinition-prescription-item.html" : "Prescription Item",
+      "StructureDefinition-protocol.html" : "Protocol"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-status",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "RequestStatus",
+      "title" : "RequestStatus",
+      "description" : "Codes identifying the lifecycle stage of a request.",
+      "systems" : ["http://hl7.org/fhir/request-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.111"],
+      "sources" : ["2.16.840.1.113883.4.642.3.111"],
+      "uses" : {
+      },
+      "StructureDefinition-prescription.html" : "Prescription"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/route-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTRouteCodes",
+      "title" : "SNOMED CT Route Codes",
+      "description" : "This value set includes all Route codes from SNOMED CT - provided as an exemplar.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.98"],
+      "sources" : ["2.16.840.1.113883.4.642.3.98"],
+      "uses" : {
+      },
+      "StructureDefinition-prescription-item.html" : "Prescription Item",
+      "StructureDefinition-administration-report.html" : "Administration Report"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/service-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ServiceType",
+      "title" : "Service Type",
+      "description" : "This value set defines an example set of codes of service-types.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/service-type"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.512",
+        "2.16.840.1.113883.4.642.3.518"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.512",
+        "2.16.840.1.113883.4.642.3.518"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Stay.html" : "Stay"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/timing-abbreviation",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "TimingAbbreviation",
+      "title" : "TimingAbbreviation",
+      "description" : "Code for a known / defined timing pattern.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation",
+        "http://terminology.hl7.org/CodeSystem/timing-abbreviation"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.78"],
+      "sources" : ["2.16.840.1.113883.4.642.3.78"],
+      "uses" : {
+      },
+      "StructureDefinition-prescription-item.html" : "Prescription Item"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/units-of-time",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "UnitsOfTime",
+      "title" : "UnitsOfTime",
+      "description" : "A unit of time (units from UCUM).",
+      "systems" : ["http://unitsofmeasure.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.77"],
+      "sources" : ["2.16.840.1.113883.4.642.3.77"],
+      "uses" : {
+      },
+      "StructureDefinition-prescription-item.html" : "Prescription Item"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/version-algorithm",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "VersionAlgorithm",
+      "title" : "Version Algorithm",
+      "description" : "Indicates the mechanism used to compare versions to determine which is more current.",
+      "systems" : ["http://hl7.org/fhir/version-algorithm"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3103"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3103"],
+      "uses" : {
+      },
+      "StructureDefinition-protocol.html" : "Protocol"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/vsCommunicationModes",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSCommunicationModes",
+      "title" : "Communication modes",
+      "description" : "ValueSet for communication modes (incremental, summary).",
+      "systems" : ["http://ltsi.univ-rennes.fr/CodeSystem/CSCommunicationModes"]
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/vsLOINC",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSLOINC",
+      "title" : "Codes LOINC",
+      "description" : "ValueSet of LOINC codes.",
+      "systems" : ["http://ltsi.univ-rennes.fr/CodeSystem/CSLOINC"]
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/vsMedicalUnits",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSMedicalUnits",
+      "title" : "Medical units",
+      "description" : "ValueSet for medical units (accommodation, medical liability unit).",
+      "systems" : ["http://ltsi.univ-rennes.fr/CodeSystem/CSMedicalUnits"]
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/vsMedicationTypes",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSMedicationTypes",
+      "title" : "Types of medication",
+      "description" : "ValueSet for medication types.",
+      "systems" : ["http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes"]
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/vsMedications",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSMedications",
+      "title" : "Medications",
+      "description" : "ValueSet for medications.",
+      "systems" : ["http://ltsi.univ-rennes.fr/CodeSystem/CSMedications"]
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/vsPrescriptionCategory",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSPrescriptionCategory",
+      "title" : "Prescription status",
+      "description" : "ValueSet for PlanDefinition types, extended to include creation, stop, modification and validation.",
+      "systems" : [
+        "http://hl7.org/fhir/ValueSet/plan-definition-type",
+        "http://ltsi.univ-rennes.fr/CodeSystem/CSPrescriptionCategory"
+      ]
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/vsSCT",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSSCT",
+      "title" : "SNOMED CT codes",
+      "description" : "ValueSet of SNOMED CT codes.",
+      "systems" : ["http://ltsi.univ-rennes.fr/CodeSystem/CSSCT"]
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/action-participant-role",
+      "version" : "0.2.0",
+      "status" : "draft",
+      "name" : "ActionParticipantRole",
+      "title" : "Action Participant Role",
+      "description" : "Either a practitioner role or a relationship type.  Note from UTG import - may have been a temporary entry that subsequently disappeared from the FHIR source; unable to locate.   Version set to 0.1.0",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+        "http://terminology.hl7.org/CodeSystem/v2-0131",
+        "http://terminology.hl7.org/CodeSystem/practitioner-role",
+        "http://snomed.info/sct",
+        "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-protocol.html" : "Protocol"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/dose-rate-type",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "DoseAndRateType",
+      "title" : "DoseAndRateType",
+      "description" : "The kind of dose or rate specified.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/dose-rate-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.981"],
+      "sources" : ["2.16.840.1.113883.4.642.3.981"],
+      "uses" : {
+      },
+      "StructureDefinition-prescription-item.html" : "Prescription Item"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/encounter-class",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EncounterClass",
+      "title" : "Encounter class",
+      "description" : "This value set defines a set of codes that can be used to indicate the class of encounter: a specific code indicating class of service provided.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "uses" : {
+      },
+      "StructureDefinition-Stay.html" : "Stay"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0092",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSReAdmissionIndicator",
+      "title" : "hl7VS-re-admissionIndicator",
+      "description" : "Value Set of codes which are used to specify that a patient is being re-admitted to a healthcare facility from which they were discharged, and indicates the circumstances around such re-admission.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0092"],
+      "oids" : ["2.16.840.1.113883.21.40"],
+      "sources" : ["2.16.840.1.113883.21.40"],
+      "uses" : {
+      },
+      "StructureDefinition-Stay.html" : "Stay"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0116",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSBedStatus",
+      "title" : "hl7VS-bedStatus",
+      "description" : "Value Set of codes that specify the state of a bed in an inpatient setting, and is used to determine if a patient may be assigned to it or not.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0116"],
+      "oids" : ["2.16.840.1.113883.21.51"],
+      "sources" : ["2.16.840.1.113883.21.51"],
+      "uses" : {
+      },
+      "StructureDefinition-accomodation-unit.html" : "Accomodation Unit"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0360",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSDegreeLicenseCertificate",
+      "title" : "hl7VS-degreeLicenseCertificate",
+      "description" : "Concepts specifying an educational degree (e.g., MD).  Used in the CNN datatype (names and identifiers of clinicians) in Version 2 messaging.  Used in Version 2 messaging; note that in releases of HL7 prior to 2.3.1, was also used in person names (XPN), but this use was deprecated, then withdrawn in 2.7.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0360"],
+      "oids" : ["2.16.840.1.113883.21.236"],
+      "sources" : ["2.16.840.1.113883.21.236"],
+      "uses" : {
+      },
+      "StructureDefinition-oncology-practitioner.html" : "Oncology Practitioner"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActPriority",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "ActPriority",
+      "title" : "ActPriority",
+      "description" : "A code or set of codes (e.g., for routine, emergency,) specifying the urgency under which the Act happened, can happen, is happening, is intended to happen, or is requested/demanded to happen.\r\n\r\n*Discussion:* This attribute is used in orders to indicate the ordered priority, and in event documentation it indicates the actual priority used to perform the act. In definition mood it indicates the available priorities.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActPriority"],
+      "oids" : ["2.16.840.1.113883.1.11.16866"],
+      "sources" : ["2.16.840.1.113883.1.11.16866"],
+      "uses" : {
+      },
+      "StructureDefinition-Stay.html" : "Stay"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "ActSubstanceAdminSubstitutionCode",
+      "title" : "ActSubstanceAdminSubstitutionCode",
+      "description" : "***No description***",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution"
+      ],
+      "oids" : ["2.16.840.1.113883.1.11.16621"],
+      "sources" : ["2.16.840.1.113883.1.11.16621"],
+      "uses" : {
+      },
+      "StructureDefinition-prescription-item.html" : "Prescription Item"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "ServiceDeliveryLocationRoleType",
+      "title" : "ServiceDeliveryLocationRoleType",
+      "description" : "A role of a place that further classifies the setting (e.g., accident site, road side, work site, community location) in which services are delivered.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleCode"],
+      "oids" : ["2.16.840.1.113883.1.11.17660"],
+      "sources" : ["2.16.840.1.113883.1.11.17660"],
+      "uses" : {
+      },
+      "StructureDefinition-accomodation-unit.html" : "Accomodation Unit"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-SubstanceAdminSubstitutionReason",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "SubstanceAdminSubstitutionReason",
+      "title" : "SubstanceAdminSubstitutionReason",
+      "description" : "***No description***",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActReason"],
+      "oids" : ["2.16.840.1.113883.1.11.19377"],
+      "sources" : ["2.16.840.1.113883.1.11.19377"],
+      "uses" : {
+      },
+      "StructureDefinition-prescription-item.html" : "Prescription Item"
+    }
+  ]
+}

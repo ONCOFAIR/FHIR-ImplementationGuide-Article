@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="exampleProtocol"/>
+  <meta>
+    <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/protocol"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: PlanDefinition</b><a name="exampleProtocol"> </a><a name="hcexampleProtocol"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource PlanDefinition &quot;exampleProtocol&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-protocol.html">Protocol</a></p></div><p><b>Treatment cycle number</b>: 1</p><p><b>Treatment day number</b>: 1</p><p><b>url</b>: <code>http://ltsi.univ-rennes.fr/PlanDefinition/exampleProtocol</code></p><p><b>identifier</b>: 5</p><p><b>version</b>: 0.1.0</p><p><b>name</b>: FOLFOX 4</p><p><b>title</b>: Protocol - FOLFOX 4</p><p><b>status</b>: active</p><p><b>date</b>: 2023-01-01 09:00:00+0000</p><p><b>publisher</b>: DOMASIA team of the Signal and Image Processing Laboratory (LTSI)</p><p><b>contact</b>: DOMASIA team of the Signal and Image Processing Laboratory (LTSI): <a href="https://ltsi.univ-rennes.fr">https://ltsi.univ-rennes.fr</a></p></div>
+  </text>
+  <extension url="http://ltsi.univ-rennes.fr/StructureDefinition/treatment-cycle-number">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://ltsi.univ-rennes.fr/StructureDefinition/treatment-day-number">
+    <valueInteger value="1"/>
+  </extension>
+  <url value="http://ltsi.univ-rennes.fr/PlanDefinition/exampleProtocol"/>
+  <identifier>
+    <value value="5"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="FOLFOX 4"/>
+  <title value="Protocol - FOLFOX 4"/>
+  <status value="active"/>
+  <date value="2023-01-01T09:00:00.0000Z"/>
+  <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI)"/>
+  <contact>
+    <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://ltsi.univ-rennes.fr"/>
+    </telecom>
+  </contact>
+</PlanDefinition>

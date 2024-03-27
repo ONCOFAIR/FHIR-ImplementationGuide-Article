@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vsPrescriptionCategory"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://hl7.org/fhir/ValueSet/plan-definition-type</code></li><li>Include all codes defined in <a href="CodeSystem-CSPrescriptionCategory.html"><code>http://ltsi.univ-rennes.fr/CodeSystem/CSPrescriptionCategory</code></a></li></ul></div>
+  </text>
+  <url value="http://ltsi.univ-rennes.fr/ValueSet/vsPrescriptionCategory"/>
+  <version value="0.1.0"/>
+  <name value="VSPrescriptionCategory"/>
+  <title value="Prescription status"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2024-03-27T14:24:55+00:00"/>
+  <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI)"/>
+  <contact>
+    <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://ltsi.univ-rennes.fr"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet for PlanDefinition types, extended to include creation, stop, modification and validation."/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/ValueSet/plan-definition-type"/>
+    </include>
+    <include>
+      <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSPrescriptionCategory"/>
+    </include>
+  </compose>
+</ValueSet>
