@@ -79,9 +79,25 @@ This element is expected to be immutable. E.g. A ""proposal"" instance should ne
 ","The encounter linked to the prescription","The Encounter during which this CarePlan was created or to which the creation of this record is tightly associated.","This will typically be the encounter the event occurred within, but some activities may be initiated prior to or after the official completion of an encounter but still be tied to the context of the encounter. CarePlan activities conducted as a result of the care plan may well occur as part of other encounters.","","","","","","","","",,,,,"",,,,"CarePlan.encounter",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.encounter","FiveWs.context",".","Associated PV1"
 "CarePlan.period","CarePlan.period","","timing
-","",0,1,"","","Y","Period {[]} {[]}
-","Time period plan covers","Indicates when the plan did (or is intended to) come into effect and end.","Any activities scheduled as part of the plan should be constrained to the specified period regardless of whether the activities are planned within a single encounter/episode or across multiple encounters/episodes (e.g. the longitudinal management of a chronic condition).","Allows tracking what plan(s) are in effect at a particular time.","","","","","","","",,,,,"",,,,"CarePlan.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","",1,1,"Y","","Y","Period {[]} {[]}
+","Time period the prescription covers","Indicates when the plan did (or is intended to) come into effect and end.","Any activities scheduled as part of the plan should be constrained to the specified period regardless of whether the activities are planned within a single encounter/episode or across multiple encounters/episodes (e.g. the longitudinal management of a chronic condition).","Allows tracking what plan(s) are in effect at a particular time.","","","","","","","",,,,,"",,,,"CarePlan.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.occurrence[x]","FiveWs.planned",".effectiveTime","GOL-7 / GOL-8"
+"CarePlan.period.id","CarePlan.period.id","","","",0,1,"","","","id {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
+","","n/a"
+"CarePlan.period.extension","CarePlan.period.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"CarePlan.period.start","CarePlan.period.start","","","",1,1,"","","Y","dateTime {[]} {[]}
+","Date and time of prescription start","The start of the period. The boundary is inclusive.","If the low element is missing, the meaning is that the low boundary is not known.","","","","","","","","",,,,,"",,,,"Period.start",0,1,"per-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./low","DR.1"
+"CarePlan.period.end","CarePlan.period.end","","","",1,1,"","","Y","dateTime {[]} {[]}
+","Date and time of prescription end","The end of the period. If the end of the period is missing, it means no end was known or planned at the time the instance was created. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.","The end value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has an end value of 2012-02-03.","","","If the end of the period is missing, it means that the period is ongoing","","","","","",,,,,"",,,,"Period.end",0,1,"per-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./high","DR.2"
 "CarePlan.created","CarePlan.created","","authoredOn
 ","",1,1,"Y","","Y","dateTime {[]} {[]}
 ","The date on which the registration was first made","Represents when this particular CarePlan record was created in the system, which is often a system-generated date.","","","","","","","","","",,,,,"",,,,"CarePlan.created",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

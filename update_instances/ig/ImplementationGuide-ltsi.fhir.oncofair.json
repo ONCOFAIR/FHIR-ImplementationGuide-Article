@@ -10,7 +10,7 @@
   "name" : "OncoFAIR",
   "title" : "Onco-FAIR",
   "status" : "draft",
-  "date" : "2024-03-27T14:24:55+00:00",
+  "date" : "2024-03-27T14:30:38+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI)",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI)",
@@ -94,18 +94,6 @@
       },
       "name" : "Associated Device",
       "description" : "A device associated with a medication for its administration.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vsLOINC"
-      },
-      "name" : "Codes LOINC",
-      "description" : "ValueSet of LOINC codes.",
       "isExample" : false
     },
     {
@@ -216,6 +204,19 @@
         "valueString" : "Medication"
       }],
       "reference" : {
+        "reference" : "Medication/exampleOncologyMedication5FLUOROURACILE5g"
+      },
+      "name" : "exampleOncologyMedication5FLUOROURACILE5g",
+      "description" : "Medication: 5-FLUOROURACILE 5 g.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
         "reference" : "Medication/exampleOncologyMedicationBACTRIMFORTE"
       },
       "name" : "exampleOncologyMedicationBACTRIMFORTE",
@@ -229,10 +230,49 @@
         "valueString" : "Medication"
       }],
       "reference" : {
-        "reference" : "Medication/exampleOncologyMedicationDOLIPRANE"
+        "reference" : "Medication/exampleOncologyMedicationG5pourcent100MLPOCHE"
       },
-      "name" : "exampleOncologyMedicationDOLIPRANE",
-      "description" : "Medication: DOLIPRANE 2,4% BUV SS SUCRE FL 100ML.",
+      "name" : "exampleOncologyMedicationG5pourcent100MLPOCHE",
+      "description" : "Medication: G5% 100ML POCHE.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/exampleOncologyMedicationLEVOFOLINATEDECALCIUM"
+      },
+      "name" : "exampleOncologyMedicationLEVOFOLINATEDECALCIUM",
+      "description" : "Medication: LEVOFOLINATE DE CALCIUM.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/exampleOncologyMedicationMETHYLPREDNISOLONE"
+      },
+      "name" : "exampleOncologyMedicationMETHYLPREDNISOLONE",
+      "description" : "Medication: METHYLPREDNISOLONE.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/exampleOncologyMedicationONDANSETRON"
+      },
+      "name" : "exampleOncologyMedicationONDANSETRON",
+      "description" : "Medication: ONDANSETRON.",
       "isExample" : true,
       "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"]
     },
@@ -278,39 +318,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Medication"
-      }],
-      "reference" : {
-        "reference" : "Medication/exampleOncologyMedicationPROFENID50MG"
-      },
-      "name" : "exampleOncologyMedicationPROFENID50MG",
-      "description" : "Medication: PROFENID 50 MG, GÉLULE.",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Medication"
-      }],
-      "reference" : {
-        "reference" : "Medication/exampleOncologyMedicationVITB12"
-      },
-      "name" : "exampleOncologyMedicationVITB12",
-      "description" : "Medication: VIT B12 DEL 1MG/2ML INJ BUV AMP.",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Patient"
       }],
       "reference" : {
         "reference" : "Patient/exampleOncologyPatient"
       },
       "name" : "exampleOncologyPatient",
-      "description" : "Patient of IPP 99999.",
+      "description" : "Patient of IPP 6564415.",
       "isExample" : true,
       "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-patient"]
     },
@@ -323,22 +337,9 @@
         "reference" : "Practitioner/exampleOncologyPractitioner"
       },
       "name" : "exampleOncologyPractitioner",
-      "description" : "Administration report prescriber.",
+      "description" : "The responsible practitioner.",
       "isExample" : true,
       "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-practitioner"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CarePlan"
-      }],
-      "reference" : {
-        "reference" : "CarePlan/examplePrescription"
-      },
-      "name" : "examplePrescription",
-      "description" : "Medication prescription.",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription"]
     },
     {
       "extension" : [{
@@ -359,10 +360,10 @@
         "valueString" : "MedicationRequest"
       }],
       "reference" : {
-        "reference" : "MedicationRequest/examplePrescriptionItemDOLIPRANE"
+        "reference" : "MedicationRequest/examplePrescriptionItemInfusion5FLUOROURACILE5g"
       },
-      "name" : "examplePrescriptionItemDOLIPRANE",
-      "description" : "Prescription item related to the medication DOLIPRANE 2.4% BUV SS SUGAR FL 100ML.",
+      "name" : "examplePrescriptionItemInfusion5FLUOROURACILE5g",
+      "description" : "Prescription item related to the medication 5-FLUOROURACILE 5 g.",
       "isExample" : true,
       "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"]
     },
@@ -372,9 +373,61 @@
         "valueString" : "MedicationRequest"
       }],
       "reference" : {
-        "reference" : "MedicationRequest/examplePrescriptionItemOXALIPLATINE200mg"
+        "reference" : "MedicationRequest/examplePrescriptionItemInfusionG5percent100MLPOCHE"
       },
-      "name" : "examplePrescriptionItemOXALIPLATINE200mg",
+      "name" : "examplePrescriptionItemInfusionG5percent100MLPOCHE",
+      "description" : "Prescription item related to the medication G5percent100MLPOCHE.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/examplePrescriptionItemInfusionLEVOFOLINATEDECALCIUM"
+      },
+      "name" : "examplePrescriptionItemInfusionLEVOFOLINATEDECALCIUM",
+      "description" : "Prescription item related to the medication LEVOFOLINATE DE CALCIUM.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/examplePrescriptionItemInfusionMETHYLPREDNISOLONE"
+      },
+      "name" : "examplePrescriptionItemInfusionMETHYLPREDNISOLONE",
+      "description" : "Prescription item related to the medication METHYLPREDNISOLONE.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/examplePrescriptionItemInfusionONDANSETRON"
+      },
+      "name" : "examplePrescriptionItemInfusionONDANSETRON",
+      "description" : "Prescription item related to the medication ONDANSETRON.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/examplePrescriptionItemInfusionOXALIPLATINE200mg"
+      },
+      "name" : "examplePrescriptionItemInfusionOXALIPLATINE200mg",
       "description" : "Prescription item related to the medication OXALIPLATINE 200 mg.",
       "isExample" : true,
       "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"]
@@ -408,28 +461,54 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationRequest"
+        "valueString" : "CarePlan"
       }],
       "reference" : {
-        "reference" : "MedicationRequest/examplePrescriptionItemPROFENID50MG"
+        "reference" : "CarePlan/examplePrescriptionMedicationBACTRIMFORTE"
       },
-      "name" : "examplePrescriptionItemPROFENID50MG",
-      "description" : "Prescription item related to the medication PROFENID 50 MG.",
+      "name" : "examplePrescriptionMedicationBACTRIMFORTE",
+      "description" : "BACTRIMFORTE medication prescription.",
       "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"]
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription"]
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationRequest"
+        "valueString" : "CarePlan"
       }],
       "reference" : {
-        "reference" : "MedicationRequest/examplePrescriptionItemVITB12"
+        "reference" : "CarePlan/examplePrescriptionMedicationINFUSION"
       },
-      "name" : "examplePrescriptionItemVITB12",
-      "description" : "Prescription item related to the medication VIT B12 DEL 1MG/2ML INJ BUV AMP.",
+      "name" : "examplePrescriptionMedicationINFUSION",
+      "description" : "Medications prescription (infusion).",
       "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"]
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CarePlan"
+      }],
+      "reference" : {
+        "reference" : "CarePlan/examplePrescriptionMedicationOXYCODONELP10MGVIATRIS"
+      },
+      "name" : "examplePrescriptionMedicationOXYCODONELP10MGVIATRIS",
+      "description" : "OXYCODONE medication prescription.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CarePlan"
+      }],
+      "reference" : {
+        "reference" : "CarePlan/examplePrescriptionMedicationPENTACARINAT300MG"
+      },
+      "name" : "examplePrescriptionMedicationPENTACARINAT300MG",
+      "description" : "PENTACARINAT medication prescription.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription"]
     },
     {
       "extension" : [{
@@ -437,12 +516,37 @@
         "valueString" : "Encounter"
       }],
       "reference" : {
-        "reference" : "Encounter/exampleStay"
+        "reference" : "Encounter/exampleStayFOLFOX4"
       },
-      "name" : "exampleStay",
-      "description" : "Stay of ID 111111.",
+      "name" : "exampleStayFOLFOX4",
+      "description" : "Stay of ID 15461.",
       "isExample" : true,
       "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/Stay"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/exampleStayMISCELLANEOUS"
+      },
+      "name" : "exampleStayMISCELLANEOUS",
+      "description" : "Stay of ID 98456.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/Stay"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vsLOINC"
+      },
+      "name" : "LOINC codes",
+      "description" : "ValueSet of LOINC codes.",
+      "isExample" : false
     },
     {
       "extension" : [{
@@ -490,6 +594,18 @@
       },
       "name" : "Medical units",
       "description" : "CodeSystem for french medical units (accommodation, medical liability unit).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vsMedicationTypes"
+      },
+      "name" : "Medication types",
+      "description" : "ValueSet for medication types.",
       "isExample" : false
     },
     {
@@ -630,9 +746,22 @@
         "valueString" : "PlanDefinition"
       }],
       "reference" : {
-        "reference" : "PlanDefinition/exampleProtocol"
+        "reference" : "PlanDefinition/exampleProtocolInfusionFOLFOX4"
       },
       "name" : "Protocol - FOLFOX 4",
+      "description" : "Prescribed protocol.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/protocol"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/exampleProtocolMISCELLANEOUS"
+      },
+      "name" : "Protocol - Miscellaneous protocol",
       "description" : "Prescribed protocol.",
       "isExample" : true,
       "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/protocol"]
@@ -695,18 +824,6 @@
       },
       "name" : "Treatment day number",
       "description" : "Treatment day number.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vsMedicationTypes"
-      },
-      "name" : "Types of medication",
-      "description" : "ValueSet for medication types.",
       "isExample" : false
     }],
     "page" : {

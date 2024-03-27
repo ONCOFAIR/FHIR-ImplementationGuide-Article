@@ -17,6 +17,7 @@
       <sch:assert test="count(f:encounter) &gt;= 1">encounter: minimum cardinality of 'encounter' is 1</sch:assert>
       <sch:assert test="count(f:performer) &gt;= 1">performer: minimum cardinality of 'performer' is 1</sch:assert>
       <sch:assert test="count(f:request) &gt;= 1">request: minimum cardinality of 'request' is 1</sch:assert>
+      <sch:assert test="count(f:note) &gt;= 1">note: minimum cardinality of 'note' is 1</sch:assert>
       <sch:assert test="count(f:dosage) &gt;= 1">dosage: minimum cardinality of 'dosage' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>

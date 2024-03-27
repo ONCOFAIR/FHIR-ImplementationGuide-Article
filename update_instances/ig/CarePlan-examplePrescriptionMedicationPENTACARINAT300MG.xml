@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CarePlan xmlns="http://hl7.org/fhir">
+  <id value="examplePrescriptionMedicationPENTACARINAT300MG"/>
+  <meta>
+    <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/prescription"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: CarePlan</b><a name="examplePrescriptionMedicationPENTACARINAT300MG"> </a><a name="hcexamplePrescriptionMedicationPENTACARINAT300MG"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource CarePlan &quot;examplePrescriptionMedicationPENTACARINAT300MG&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-prescription.html">Prescription</a></p></div><p><b>instantiatesCanonical</b>: <a href="PlanDefinition-exampleProtocolMISCELLANEOUS.html">Protocol - Miscellaneous protocol</a></p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>category</b>: Incremental <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSCommunicationModes.html">Communication modes</a>#I)</span></p><p><b>subject</b>: <a href="Patient-exampleOncologyPatient.html">Patient/exampleOncologyPatient</a> &quot; DOE&quot;</p><p><b>encounter</b>: <a href="Encounter-exampleStayMISCELLANEOUS.html">Encounter/exampleStayMISCELLANEOUS</a></p><p><b>period</b>: 2023-01-01 09:00:00+0000 --&gt; 2023-01-01 11:35:00+0000</p><p><b>created</b>: 2023-01-01 00:00:00+0000</p><p><b>supportingInfo</b>: </p><ul><li><a href="Observation-exampleAdditionalInformationHeight.html">Observation/exampleAdditionalInformationHeight: Height</a></li><li><a href="Observation-exampleAdditionalInformationWeight.html">Observation/exampleAdditionalInformationWeight: Weight</a></li></ul><h3>Activities</h3><table class="grid"><tr><td style="display: none">-</td><td><b>PlannedActivityReference</b></td></tr><tr><td style="display: none">*</td><td><a href="MedicationRequest-examplePrescriptionItemPENTACARINAT300MG.html">MedicationRequest/examplePrescriptionItemPENTACARINAT300MG</a></td></tr></table></div>
+  </text>
+  <instantiatesCanonical value="http://ltsi.univ-rennes.fr/PlanDefinition/exampleProtocolMISCELLANEOUS"/>
+  <status value="completed"/>
+  <intent value="order"/>
+  <category>
+    <coding>
+      <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSCommunicationModes"/>
+      <code value="I"/>
+      <display value="Incremental"/>
+    </coding>
+  </category>
+  <subject>
+    <reference value="Patient/exampleOncologyPatient"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/exampleStayMISCELLANEOUS"/>
+  </encounter>
+  <period>
+    <start value="2023-01-01T09:00:00.0000Z"/>
+    <end value="2023-01-01T11:35:00.0000Z"/>
+  </period>
+  <created value="2023-01-01T00:00:00.0000Z"/>
+  <supportingInfo>
+    <reference value="Observation/exampleAdditionalInformationHeight"/>
+    <display value="Height"/>
+  </supportingInfo>
+  <supportingInfo>
+    <reference value="Observation/exampleAdditionalInformationWeight"/>
+    <display value="Weight"/>
+  </supportingInfo>
+  <activity>
+    <plannedActivityReference>
+      <reference value="MedicationRequest/examplePrescriptionItemPENTACARINAT300MG"/>
+    </plannedActivityReference>
+  </activity>
+</CarePlan>

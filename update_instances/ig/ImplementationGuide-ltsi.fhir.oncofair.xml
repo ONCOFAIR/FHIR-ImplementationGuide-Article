@@ -11,7 +11,7 @@
   <name value="OncoFAIR"/>
   <title value="Onco-FAIR"/>
   <status value="draft"/>
-  <date value="2024-03-27T14:24:55+00:00"/>
+  <date value="2024-03-27T14:30:38+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI)"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI)"/>
@@ -86,17 +86,6 @@
       </reference>
       <name value="Associated Device"/>
       <description value="A device associated with a medication for its administration."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vsLOINC"/>
-      </reference>
-      <name value="Codes LOINC"/>
-      <description value="ValueSet of LOINC codes."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -198,6 +187,18 @@
         <valueString value="Medication"/>
       </extension>
       <reference>
+        <reference value="Medication/exampleOncologyMedication5FLUOROURACILE5g"/>
+      </reference>
+      <name value="exampleOncologyMedication5FLUOROURACILE5g"/>
+      <description value="Medication: 5-FLUOROURACILE 5 g."/>
+      <isExample value="true"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
         <reference value="Medication/exampleOncologyMedicationBACTRIMFORTE"/>
       </reference>
       <name value="exampleOncologyMedicationBACTRIMFORTE"/>
@@ -210,10 +211,46 @@
         <valueString value="Medication"/>
       </extension>
       <reference>
-        <reference value="Medication/exampleOncologyMedicationDOLIPRANE"/>
+        <reference value="Medication/exampleOncologyMedicationG5pourcent100MLPOCHE"/>
       </reference>
-      <name value="exampleOncologyMedicationDOLIPRANE"/>
-      <description value="Medication: DOLIPRANE 2,4% BUV SS SUCRE FL 100ML."/>
+      <name value="exampleOncologyMedicationG5pourcent100MLPOCHE"/>
+      <description value="Medication: G5% 100ML POCHE."/>
+      <isExample value="true"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/exampleOncologyMedicationLEVOFOLINATEDECALCIUM"/>
+      </reference>
+      <name value="exampleOncologyMedicationLEVOFOLINATEDECALCIUM"/>
+      <description value="Medication: LEVOFOLINATE DE CALCIUM."/>
+      <isExample value="true"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/exampleOncologyMedicationMETHYLPREDNISOLONE"/>
+      </reference>
+      <name value="exampleOncologyMedicationMETHYLPREDNISOLONE"/>
+      <description value="Medication: METHYLPREDNISOLONE."/>
+      <isExample value="true"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/exampleOncologyMedicationONDANSETRON"/>
+      </reference>
+      <name value="exampleOncologyMedicationONDANSETRON"/>
+      <description value="Medication: ONDANSETRON."/>
       <isExample value="true"/>
       <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"/>
     </resource>
@@ -255,37 +292,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Medication"/>
-      </extension>
-      <reference>
-        <reference value="Medication/exampleOncologyMedicationPROFENID50MG"/>
-      </reference>
-      <name value="exampleOncologyMedicationPROFENID50MG"/>
-      <description value="Medication: PROFENID 50 MG, GÉLULE."/>
-      <isExample value="true"/>
-      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Medication"/>
-      </extension>
-      <reference>
-        <reference value="Medication/exampleOncologyMedicationVITB12"/>
-      </reference>
-      <name value="exampleOncologyMedicationVITB12"/>
-      <description value="Medication: VIT B12 DEL 1MG/2ML INJ BUV AMP."/>
-      <isExample value="true"/>
-      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
         <reference value="Patient/exampleOncologyPatient"/>
       </reference>
       <name value="exampleOncologyPatient"/>
-      <description value="Patient of IPP 99999."/>
+      <description value="Patient of IPP 6564415."/>
       <isExample value="true"/>
       <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncology-patient"/>
     </resource>
@@ -297,21 +310,9 @@
         <reference value="Practitioner/exampleOncologyPractitioner"/>
       </reference>
       <name value="exampleOncologyPractitioner"/>
-      <description value="Administration report prescriber."/>
+      <description value="The responsible practitioner."/>
       <isExample value="true"/>
       <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncology-practitioner"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CarePlan"/>
-      </extension>
-      <reference>
-        <reference value="CarePlan/examplePrescription"/>
-      </reference>
-      <name value="examplePrescription"/>
-      <description value="Medication prescription."/>
-      <isExample value="true"/>
-      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/prescription"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -330,10 +331,10 @@
         <valueString value="MedicationRequest"/>
       </extension>
       <reference>
-        <reference value="MedicationRequest/examplePrescriptionItemDOLIPRANE"/>
+        <reference value="MedicationRequest/examplePrescriptionItemInfusion5FLUOROURACILE5g"/>
       </reference>
-      <name value="examplePrescriptionItemDOLIPRANE"/>
-      <description value="Prescription item related to the medication DOLIPRANE 2.4% BUV SS SUGAR FL 100ML."/>
+      <name value="examplePrescriptionItemInfusion5FLUOROURACILE5g"/>
+      <description value="Prescription item related to the medication 5-FLUOROURACILE 5 g."/>
       <isExample value="true"/>
       <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"/>
     </resource>
@@ -342,9 +343,57 @@
         <valueString value="MedicationRequest"/>
       </extension>
       <reference>
-        <reference value="MedicationRequest/examplePrescriptionItemOXALIPLATINE200mg"/>
+        <reference value="MedicationRequest/examplePrescriptionItemInfusionG5percent100MLPOCHE"/>
       </reference>
-      <name value="examplePrescriptionItemOXALIPLATINE200mg"/>
+      <name value="examplePrescriptionItemInfusionG5percent100MLPOCHE"/>
+      <description value="Prescription item related to the medication G5percent100MLPOCHE."/>
+      <isExample value="true"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/examplePrescriptionItemInfusionLEVOFOLINATEDECALCIUM"/>
+      </reference>
+      <name value="examplePrescriptionItemInfusionLEVOFOLINATEDECALCIUM"/>
+      <description value="Prescription item related to the medication LEVOFOLINATE DE CALCIUM."/>
+      <isExample value="true"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/examplePrescriptionItemInfusionMETHYLPREDNISOLONE"/>
+      </reference>
+      <name value="examplePrescriptionItemInfusionMETHYLPREDNISOLONE"/>
+      <description value="Prescription item related to the medication METHYLPREDNISOLONE."/>
+      <isExample value="true"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/examplePrescriptionItemInfusionONDANSETRON"/>
+      </reference>
+      <name value="examplePrescriptionItemInfusionONDANSETRON"/>
+      <description value="Prescription item related to the medication ONDANSETRON."/>
+      <isExample value="true"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/examplePrescriptionItemInfusionOXALIPLATINE200mg"/>
+      </reference>
+      <name value="examplePrescriptionItemInfusionOXALIPLATINE200mg"/>
       <description value="Prescription item related to the medication OXALIPLATINE 200 mg."/>
       <isExample value="true"/>
       <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"/>
@@ -375,39 +424,86 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MedicationRequest"/>
+        <valueString value="CarePlan"/>
       </extension>
       <reference>
-        <reference value="MedicationRequest/examplePrescriptionItemPROFENID50MG"/>
+        <reference value="CarePlan/examplePrescriptionMedicationBACTRIMFORTE"/>
       </reference>
-      <name value="examplePrescriptionItemPROFENID50MG"/>
-      <description value="Prescription item related to the medication PROFENID 50 MG."/>
+      <name value="examplePrescriptionMedicationBACTRIMFORTE"/>
+      <description value="BACTRIMFORTE medication prescription."/>
       <isExample value="true"/>
-      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/prescription"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MedicationRequest"/>
+        <valueString value="CarePlan"/>
       </extension>
       <reference>
-        <reference value="MedicationRequest/examplePrescriptionItemVITB12"/>
+        <reference value="CarePlan/examplePrescriptionMedicationINFUSION"/>
       </reference>
-      <name value="examplePrescriptionItemVITB12"/>
-      <description value="Prescription item related to the medication VIT B12 DEL 1MG/2ML INJ BUV AMP."/>
+      <name value="examplePrescriptionMedicationINFUSION"/>
+      <description value="Medications prescription (infusion)."/>
       <isExample value="true"/>
-      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/prescription"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/examplePrescriptionMedicationOXYCODONELP10MGVIATRIS"/>
+      </reference>
+      <name value="examplePrescriptionMedicationOXYCODONELP10MGVIATRIS"/>
+      <description value="OXYCODONE medication prescription."/>
+      <isExample value="true"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/prescription"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/examplePrescriptionMedicationPENTACARINAT300MG"/>
+      </reference>
+      <name value="examplePrescriptionMedicationPENTACARINAT300MG"/>
+      <description value="PENTACARINAT medication prescription."/>
+      <isExample value="true"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/prescription"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Encounter"/>
       </extension>
       <reference>
-        <reference value="Encounter/exampleStay"/>
+        <reference value="Encounter/exampleStayFOLFOX4"/>
       </reference>
-      <name value="exampleStay"/>
-      <description value="Stay of ID 111111."/>
+      <name value="exampleStayFOLFOX4"/>
+      <description value="Stay of ID 15461."/>
       <isExample value="true"/>
       <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/Stay"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/exampleStayMISCELLANEOUS"/>
+      </reference>
+      <name value="exampleStayMISCELLANEOUS"/>
+      <description value="Stay of ID 98456."/>
+      <isExample value="true"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/Stay"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vsLOINC"/>
+      </reference>
+      <name value="LOINC codes"/>
+      <description value="ValueSet of LOINC codes."/>
+      <isExample value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -451,6 +547,17 @@
       </reference>
       <name value="Medical units"/>
       <description value="CodeSystem for french medical units (accommodation, medical liability unit)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vsMedicationTypes"/>
+      </reference>
+      <name value="Medication types"/>
+      <description value="ValueSet for medication types."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -579,9 +686,21 @@
         <valueString value="PlanDefinition"/>
       </extension>
       <reference>
-        <reference value="PlanDefinition/exampleProtocol"/>
+        <reference value="PlanDefinition/exampleProtocolInfusionFOLFOX4"/>
       </reference>
       <name value="Protocol - FOLFOX 4"/>
+      <description value="Prescribed protocol."/>
+      <isExample value="true"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/protocol"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/exampleProtocolMISCELLANEOUS"/>
+      </reference>
+      <name value="Protocol - Miscellaneous protocol"/>
       <description value="Prescribed protocol."/>
       <isExample value="true"/>
       <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/protocol"/>
@@ -639,17 +758,6 @@
       </reference>
       <name value="Treatment day number"/>
       <description value="Treatment day number."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vsMedicationTypes"/>
-      </reference>
-      <name value="Types of medication"/>
-      <description value="ValueSet for medication types."/>
       <isExample value="false"/>
     </resource>
     <page>
