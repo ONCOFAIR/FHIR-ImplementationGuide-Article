@@ -3,7 +3,6 @@ Parent: Patient
 Id: oncology-patient
 Title: "Oncology Patient"
 Description : "Patient receiving medical treatment in oncology."
-* ^url = "http://ltsi.univ-rennes.fr/StructureDefinition/OncologyPatient"
 * deceased[x] MS
 * deceased[x] ^short = "Indicates if the patient is deceased or not"
 * identifier 1..* MS 
