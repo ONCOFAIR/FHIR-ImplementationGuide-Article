@@ -20,8 +20,9 @@ This guide is intended for developers, healthcare professionals and researchers 
 
 This UML diagram provides an overview of the data structures, and is essential for understanding the relationships between the various FHIR resources used in the project.
 
-<div style="text-align:center;"> 
+<div align="center;"> 
 <img src="uml_oncofair_english.svg" alt="UML class diagram representing the FHIR R5 medication prescription and administration use case" width="100%"/>
+
 </div>
 
 ### Profiled FHIR resources
@@ -96,7 +97,7 @@ Each FHIR resource has been tailored to meet the specific requirements of the On
                 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
                     <ul>
                         <li>Constraint on some cardinalities</li>
-                        <li>Constraint on subject</li>
+                        <li>Constraint reference on subject</li>
                         <li>Constraint on location</li>
                     </ul>
                 </div>
@@ -174,8 +175,8 @@ Each FHIR resource has been tailored to meet the specific requirements of the On
                 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
                     <ul>
                         <li>Constraint on some cardinalities</li>
-                        <li>Add extension CureCycleNumber</li>
-                        <li>Add extension dayNumber</li>
+                        <li>Add extension TreatmentCycleNumber</li>
+                        <li>Add extension TreatmentDayNumber</li>
                     </ul>
                 </div>
             </td>
@@ -193,7 +194,7 @@ Each FHIR resource has been tailored to meet the specific requirements of the On
                         <li>Constraint on some cardinalities</li>
                         <li>Constraint on subject</li>
                         <li>Constraint on encounter</li>
-                        <li>Constraint on plannedActivityReference</li>
+                        <li>Constraint on activity.plannedActivityReference</li>
                     </ul>
                 </div>
             </td>
@@ -228,6 +229,7 @@ Each FHIR resource has been tailored to meet the specific requirements of the On
                     <ul>
                         <li>Constraint on some cardinalities</li>
                         <li>Constraint on encounter</li>
+                        <li>Constraint on basedOn</li>
                         <li>Constraint on request</li>
                         <li>Constraint on medication</li>
                     </ul>
@@ -242,7 +244,7 @@ Each FHIR resource has been tailored to meet the specific requirements of the On
 
 #### Extensions 
 
-FHIR extensions such as `CureCycleNumber` and `DayNumber` are used for oncology treatment-specific information.
+FHIR extensions such as `TreatmentCycleNumber` and `TreatmentDayNumber` are used for oncology treatment-specific information.
 
 ### FHIR interaction
 
