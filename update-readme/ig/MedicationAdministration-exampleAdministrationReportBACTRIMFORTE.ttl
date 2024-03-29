@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/MedicationAdministration/exampleAdministrationReportBACTRIMFORTE> a fhir:MedicationAdministration ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "exampleAdministrationReportBACTRIMFORTE"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/administration-report"^^xsd:anyURI ;
+       fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/administration-report>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationAdministration</b><a name=\"exampleAdministrationReportBACTRIMFORTE\"> </a><a name=\"hcexampleAdministrationReportBACTRIMFORTE\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationAdministration &quot;exampleAdministrationReportBACTRIMFORTE&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-administration-report.html\">Administration Report</a></p></div><p><b>basedOn</b>: <a href=\"examplePrescriptionINFUSION\">examplePrescriptionINFUSION</a></p><p><b>status</b>: completed</p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Medication-exampleOncologyMedicationBACTRIMFORTE.html\">Medication/exampleOncologyMedicationBACTRIMFORTE</a></td></tr></table><p><b>subject</b>: <a href=\"Patient-exampleOncologyPatient.html\">Patient/exampleOncologyPatient</a> &quot; DOE&quot;</p><p><b>encounter</b>: <a href=\"Encounter-exampleStayFOLFOX4.html\">Encounter/exampleStayFOLFOX4</a></p><p><b>occurence</b>: 2020-06-18 08:00:00+0000 --&gt; 2020-06-18 08:34:00+0000</p><blockquote><p><b>performer</b></p><h3>Actors</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Practitioner-exampleOncologyPractitioner.html\">Practitioner/exampleOncologyPractitioner</a></td></tr></table></blockquote><p><b>request</b>: <a href=\"MedicationRequest-examplePrescriptionItemBACTRIMFORTE.html\">MedicationRequest/examplePrescriptionItemBACTRIMFORTE</a></p><p><b>note</b>: BACTRIM FORTE 800MG/160MG CPR, PO</p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Dose</b></td></tr><tr><td style=\"display: none\">*</td><td>Planned quantity: 2 tablet(s)</td><td>2 tablet(s)</td></tr></table></div>"
+  ] ; # 
+  fhir:basedOn ( [
+     fhir:reference [ fhir:v "examplePrescriptionINFUSION" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:medication [
+     fhir:reference [
+       fhir:link <http://ltsi.univ-rennes.fr/Medication/exampleOncologyMedicationBACTRIMFORTE> ;
+       fhir:reference [ fhir:v "Medication/exampleOncologyMedicationBACTRIMFORTE" ]
+     ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://ltsi.univ-rennes.fr/Patient/exampleOncologyPatient> ;
+     fhir:reference [ fhir:v "Patient/exampleOncologyPatient" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://ltsi.univ-rennes.fr/Encounter/exampleStayFOLFOX4> ;
+     fhir:reference [ fhir:v "Encounter/exampleStayFOLFOX4" ]
+  ] ; # 
+  fhir:occurence [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2020-06-18T08:00:00.0000Z"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2020-06-18T08:34:00.0000Z"^^xsd:dateTime ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:actor [
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/Practitioner/exampleOncologyPractitioner> ;
+         fhir:reference [ fhir:v "Practitioner/exampleOncologyPractitioner" ]
+       ]
+     ]
+  ] ) ; # 
+  fhir:request [
+     fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/examplePrescriptionItemBACTRIMFORTE> ;
+     fhir:reference [ fhir:v "MedicationRequest/examplePrescriptionItemBACTRIMFORTE" ]
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "BACTRIM FORTE 800MG/160MG CPR" ]
+  ] [
+     fhir:text [ fhir:v "PO" ]
+  ] ) ; # 
+  fhir:dosage [
+     fhir:text [ fhir:v "Planned quantity: 2 tablet(s)" ] ;
+     fhir:dose [
+       fhir:value [ fhir:v "2"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "tablet(s)" ]
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

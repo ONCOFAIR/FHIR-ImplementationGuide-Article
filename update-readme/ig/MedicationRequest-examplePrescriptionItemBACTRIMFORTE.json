@@ -1,0 +1,86 @@
+{
+  "resourceType" : "MedicationRequest",
+  "id" : "examplePrescriptionItemBACTRIMFORTE",
+  "meta" : {
+    "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationRequest</b><a name=\"examplePrescriptionItemBACTRIMFORTE\"> </a><a name=\"hcexamplePrescriptionItemBACTRIMFORTE\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationRequest &quot;examplePrescriptionItemBACTRIMFORTE&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-prescription-item.html\">Prescription Item</a></p></div><p><b>identifier</b>: 87823</p><p><b>basedOn</b>: <a href=\"examplePrescriptionBACTRIMFORTE\">examplePrescriptionBACTRIMFORTE</a></p><p><b>groupIdentifier</b>: 897867254</p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>category</b>: Stop <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSPrescriptionCategory.html\">Prescription category</a>#S)</span></p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Medication-exampleOncologyMedicationBACTRIMFORTE.html\">Medication/exampleOncologyMedicationBACTRIMFORTE</a></td></tr></table><p><b>subject</b>: <a href=\"Patient-exampleOncologyPatient.html\">Patient/exampleOncologyPatient</a> &quot; DOE&quot;</p><p><b>requester</b>: <a href=\"Practitioner-exampleOncologyPractitioner.html\">Practitioner/exampleOncologyPractitioner</a></p><p><b>note</b>: 2 cpr at 8am orally, for 2 days, 1 day / 2, Monday / Wednesday / Friday (By [SR156518] @Jul 18, 2020, 3:13:00 AM)</p><p><b>effectiveDosePeriod</b>: 2020-07-18 08:00:00+0000 --&gt; 2020-07-18 08:34:00+0000</p><blockquote><p><b>dosageInstruction</b></p><p><b>text</b>: Administer 2 tablets of BACTRIM FORTE 800MG/160MG, 1 time daily on Mondays, Wednesdays and Fridays.</p><p><b>timing</b>: Starting 2020-07-01 08:00:00+0000, Once per 2 days, Until 2020-07-20 08:00:00+0000</p><p><b>route</b>: Oral route <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSSCT.html\">SNOMED CT Codes</a>#26643006)</span></p><blockquote><p><b>doseAndRate</b></p></blockquote></blockquote><blockquote><p><b>dispenseRequest</b></p><h3>InitialFills</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Quantity</b></td></tr><tr><td style=\"display: none\">*</td><td>1</td></tr></table></blockquote></div>"
+  },
+  "identifier" : [{
+    "value" : "87823"
+  }],
+  "basedOn" : [{
+    "reference" : "examplePrescriptionBACTRIMFORTE"
+  }],
+  "groupIdentifier" : {
+    "value" : "897867254"
+  },
+  "status" : "completed",
+  "intent" : "order",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://ltsi.univ-rennes.fr/CodeSystem/CSPrescriptionCategory",
+      "code" : "S",
+      "display" : "Stop"
+    }]
+  }],
+  "medication" : {
+    "reference" : {
+      "reference" : "Medication/exampleOncologyMedicationBACTRIMFORTE"
+    }
+  },
+  "subject" : {
+    "reference" : "Patient/exampleOncologyPatient"
+  },
+  "requester" : {
+    "reference" : "Practitioner/exampleOncologyPractitioner"
+  },
+  "note" : [{
+    "authorString" : "[SR156518]",
+    "time" : "2020-07-18T03:13:00.0000Z",
+    "text" : "2 cpr at 8am orally, for 2 days, 1 day / 2, Monday / Wednesday / Friday"
+  }],
+  "effectiveDosePeriod" : {
+    "start" : "2020-07-18T08:00:00.0000Z",
+    "end" : "2020-07-18T08:34:00.0000Z"
+  },
+  "dosageInstruction" : [{
+    "text" : "Administer 2 tablets of BACTRIM FORTE 800MG/160MG, 1 time daily on Mondays, Wednesdays and Fridays.",
+    "timing" : {
+      "repeat" : {
+        "boundsPeriod" : {
+          "start" : "2020-07-01T08:00:00.0000Z",
+          "end" : "2020-07-20T08:00:00.0000Z"
+        },
+        "frequency" : 1,
+        "period" : 2,
+        "periodUnit" : "d",
+        "dayOfWeek" : ["mon",
+        "wed",
+        "fri"]
+      }
+    },
+    "route" : {
+      "coding" : [{
+        "system" : "http://ltsi.univ-rennes.fr/CodeSystem/CSSCT",
+        "code" : "26643006",
+        "display" : "Oral route"
+      }]
+    },
+    "doseAndRate" : [{
+      "doseQuantity" : {
+        "value" : 2,
+        "unit" : "tablet(s)"
+      }
+    }]
+  }],
+  "dispenseRequest" : {
+    "initialFill" : {
+      "quantity" : {
+        "value" : 1
+      }
+    }
+  }
+}

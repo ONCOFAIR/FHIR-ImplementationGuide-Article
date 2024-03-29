@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/CarePlan/examplePrescriptionMedicationBACTRIMFORTE> a fhir:CarePlan ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "examplePrescriptionMedicationBACTRIMFORTE"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/prescription"^^xsd:anyURI ;
+       fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/prescription>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CarePlan</b><a name=\"examplePrescriptionMedicationBACTRIMFORTE\"> </a><a name=\"hcexamplePrescriptionMedicationBACTRIMFORTE\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CarePlan &quot;examplePrescriptionMedicationBACTRIMFORTE&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-prescription.html\">Prescription</a></p></div><p><b>instantiatesCanonical</b>: <a href=\"PlanDefinition-exampleProtocolMISCELLANEOUS.html\">Protocol - Miscellaneous protocol</a></p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>category</b>: Incremental <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSCommunicationModes.html\">Communication modes</a>#I)</span></p><p><b>subject</b>: <a href=\"Patient-exampleOncologyPatient.html\">Patient/exampleOncologyPatient</a> &quot; DOE&quot;</p><p><b>encounter</b>: <a href=\"Encounter-exampleStayMISCELLANEOUS.html\">Encounter/exampleStayMISCELLANEOUS</a></p><p><b>period</b>: 2023-01-01 09:00:00+0000 --&gt; 2023-01-01 11:35:00+0000</p><p><b>created</b>: 2023-01-01 00:00:00+0000</p><p><b>supportingInfo</b>: </p><ul><li><a href=\"Observation-exampleAdditionalInformationHeight.html\">Observation/exampleAdditionalInformationHeight: Height</a></li><li><a href=\"Observation-exampleAdditionalInformationWeight.html\">Observation/exampleAdditionalInformationWeight: Weight</a></li></ul><h3>Activities</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>PlannedActivityReference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"MedicationRequest-examplePrescriptionItemBACTRIMFORTE.html\">MedicationRequest/examplePrescriptionItemBACTRIMFORTE</a></td></tr></table></div>"
+  ] ; # 
+  fhir:instantiatesCanonical ( [
+     fhir:v "http://ltsi.univ-rennes.fr/PlanDefinition/exampleProtocolMISCELLANEOUS"^^xsd:anyURI ;
+     fhir:link <http://ltsi.univ-rennes.fr/PlanDefinition/exampleProtocolMISCELLANEOUS>
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/CSCommunicationModes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "I" ] ;
+       fhir:display [ fhir:v "Incremental" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://ltsi.univ-rennes.fr/Patient/exampleOncologyPatient> ;
+     fhir:reference [ fhir:v "Patient/exampleOncologyPatient" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://ltsi.univ-rennes.fr/Encounter/exampleStayMISCELLANEOUS> ;
+     fhir:reference [ fhir:v "Encounter/exampleStayMISCELLANEOUS" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2023-01-01T09:00:00.0000Z"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2023-01-01T11:35:00.0000Z"^^xsd:dateTime ]
+  ] ; # 
+  fhir:created [ fhir:v "2023-01-01T00:00:00.0000Z"^^xsd:dateTime] ; # 
+  fhir:supportingInfo ( [
+     fhir:link <http://ltsi.univ-rennes.fr/Observation/exampleAdditionalInformationHeight> ;
+     fhir:reference [ fhir:v "Observation/exampleAdditionalInformationHeight" ] ;
+     fhir:display [ fhir:v "Height" ]
+  ] [
+     fhir:link <http://ltsi.univ-rennes.fr/Observation/exampleAdditionalInformationWeight> ;
+     fhir:reference [ fhir:v "Observation/exampleAdditionalInformationWeight" ] ;
+     fhir:display [ fhir:v "Weight" ]
+  ] ) ; # 
+  fhir:activity ( [
+     fhir:plannedActivityReference [
+       fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/examplePrescriptionItemBACTRIMFORTE> ;
+       fhir:reference [ fhir:v "MedicationRequest/examplePrescriptionItemBACTRIMFORTE" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
