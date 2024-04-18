@@ -1,6 +1,6 @@
 Profile: OncoFAIRMedicationRequestPrescription
 Parent: MedicationRequest
-Id: oncofaire-medicationrequest-prescription
+Id: oncofair-medicationrequest-prescription
 Title: "OncoFAIR MedicationRequest Prescription"
 Description : "OncoFAIR MedicationRequest Prescription" //TODO
 
@@ -13,6 +13,7 @@ Description : "OncoFAIR MedicationRequest Prescription" //TODO
 
 * basedOn MS
 * basedOn only Reference(OncoFAIRCarePlan)
+* basedOn ^short = "The protocol linked to the prescription"
 
 * supportingInformation MS
 * supportingInformation ^slicing.discriminator.type = #value
@@ -26,32 +27,29 @@ Description : "OncoFAIR MedicationRequest Prescription" //TODO
 * supportingInformation[medicalLiabiltyUnit].id = "medicalLiabiltyUnit"
 * supportingInformation[medicalLiabiltyUnit] only Reference(HealthcareService)
 
-/*
-* identifier MS 
+* identifier 1..1 MS
 * identifier ^short = "The prescription's identifier"
-* category 1..1 MS
-* category ^short = "The communication mode"
-* category ^definition = "The communication mode (incremental or summary)"
-* subject MS
-* subject only Reference(OncologyPatient)
-* subject ^short = "The patient covered by the prescription"
-* encounter 1..1 MS
-* encounter only Reference(Stay)
-* encounter ^short = "The encounter linked to the prescription"
-* created 1..1 MS 
-* created ^short = "The date on which the registration was first made"
-* period 1..1 MS
-* period ^short = "Time period the prescription covers"
-* period.start 1..1
-* period.start ^short = "Date and time of prescription start"
-* period.end 1..1
-* period.end ^short = "Date and time of prescription end"
-* supportingInfo 1..* MS
-* supportingInfo ^short = "The additional information(s) related to the prescription"
-* activity 1..* MS
-* activity.plannedActivityReference 1..1
-* activity.plannedActivityReference only Reference(PrescriptionItem)
-* activity.plannedActivityReference ^short = "The prescription element(s) contained in the prescription"
-* instantiatesCanonical 1..1 MS
-* instantiatesCanonical ^short = "The protocol linked to the prescription"
-*/
+
+* note MS
+
+* extension contains
+    OncoFAIRPrescriptionDateTime named oncofair-prescription-datetime 1..1 MS
+
+
+Mapping:  mapping_OncoFAIRMedicationRequestPrescription
+Source:   OncoFAIRMedicationRequestPrescription
+Id:       mapping-oncofair-medicationrequest-prescription
+Title:    "Mapping du profil OncoFAIR MedicationRequest Prescription"
+* -> "PRESCRIPTION"
+
+* encounter -> "Lien classe SEJOUR"
+* reason -> "Lien classe RENSEIGNEMENT COMPLEMENTAIRE"
+* basedOn -> "Lien classe PROTOCOLE"
+
+* supportingInformation[accomodationUnit] -> "Unité hébergement"
+* supportingInformation[medicalLiabiltyUnit] ->  "Unité responsabilité médicale"
+
+* identifier -> "Id prescription"
+* note -> "Commentaires"
+
+* extension[oncofair-prescription-datetime] -> "D/H precription"
