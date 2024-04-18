@@ -1,3 +1,5 @@
+/*
+
 //OncologyPatient
 Instance: exampleOncologyPatient
 InstanceOf: OncologyPatient
@@ -561,3 +563,5 @@ Description: "BACTRIMFORTE medication administration report."
 * dosage.text = "Planned quantity: 2 tablet(s)"
 * dosage.dose.value = 2
 * dosage.dose.unit = "tablet(s)"
+
+*/

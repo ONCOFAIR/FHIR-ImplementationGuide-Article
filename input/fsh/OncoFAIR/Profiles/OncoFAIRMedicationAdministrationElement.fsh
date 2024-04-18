@@ -1,8 +1,15 @@
-Profile: AdministrationReport
+Profile: OncoFAIRMedicationAdministrationElement
 Parent: MedicationAdministration
-Id: administration-report
-Title: "Administration Report"
-Description: "Prescribed medication administration report."
+Id: oncofair-medicationadministration-element
+Title: "OncoFAIR MedicationAdministration Element"
+Description: "OncoFAIR MedicationAdministration Element" //TODO
+
+* partOf 1..1 MS
+* partOf only Reference(OncoFAIRMedicationAdministrationReport)
+
+* device MS
+
+/*
 * identifier.value MS 
 * identifier.value ^short = "Identifier of the administration report"
 * basedOn 1..1 MS 
@@ -12,9 +19,6 @@ Description: "Prescribed medication administration report."
 * performer 1..* MS
 * performer.actor 1..1
 * performer.actor ^short = "Person who administered the medication"
-* encounter 1..1 MS
-* encounter only Reference(Stay)
-* encounter ^short = "The encounter linked to the administration report"
 * occurencePeriod 1..1 MS
 * occurencePeriod ^short = "Specific date/time or interval of time during which the administration took place (or did not take place)"
 * request 1..1 MS
@@ -33,3 +37,4 @@ Description: "Prescribed medication administration report."
 * dosage.dose.value ^short = "Value of the dose quantity"
 * dosage.dose.unit 1..1
 * dosage.dose.unit ^short = "Unit of the dose quantity"
+*/

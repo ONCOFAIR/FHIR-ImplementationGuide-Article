@@ -1,8 +1,15 @@
-Profile: PrescriptionItem
+Profile: OncoFAIRMedicationRequestElement
 Parent: MedicationRequest
-Id: prescription-item
-Title: "Prescription Item"
-Description: "Prescription item."
+Id: oncofaire-medicationrequest-element
+Title: "OncoFAIR MedicationRequest Element"
+Description : "OncoFAIR MedicationRequest Element" //TODO
+
+* basedOn 1..1 MS
+* basedOn only Reference(OncoFAIRMedicationRequestPrescription)
+
+* device MS
+
+/*
 * groupIdentifier 1..1 MS
 * groupIdentifier.value 1..1 
 * groupIdentifier.value ^short = "Prescription item group identifier"
@@ -69,6 +76,7 @@ Description: "Prescription item."
 * dosageInstruction.doseAndRate.rateRatio.denominator.value ^short = "Value of the dose rate denominator"
 * dosageInstruction.doseAndRate.rateRatio.denominator.unit
 * dosageInstruction.doseAndRate.rateRatio.numerator.unit ^short = "Unit of the dose rate numerator"
+*/
 
 // old version to represent the prescribed component quantity
 /*

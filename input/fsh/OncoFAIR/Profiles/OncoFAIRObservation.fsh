@@ -1,8 +1,10 @@
-Profile: AdditionalInformation
+Profile: OncoFAIRObservation
 Parent: Observation
-Id: additional-information
-Title: "Additional Information"
+Id: oncofair-observation
+Title: "OncoFAIR Observation"
 Description: "Additional information, such as height or weight."
+
+/*
 * subject 1..1 MS
 * subject ^short = "The subject of the additional information"
 * code MS 
@@ -14,3 +16,4 @@ Description: "Additional information, such as height or weight."
 * valueQuantity.value ^short = "Value of the the additional information"
 * valueQuantity.unit 1..1 
 * valueQuantity.unit ^short = "Unit of the the additional information"
+*/

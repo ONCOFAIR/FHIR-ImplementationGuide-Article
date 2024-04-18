@@ -1,8 +1,10 @@
-Profile: Protocol
-Parent: PlanDefinition
-Id: protocol
-Title: "Protocol"
-Description : "Protocol."
+Profile: OncoFAIRCarePlan
+Parent: CarePlan
+Id: oncofair-careplan
+Title: "OncoFAIR CarePlan" 
+Description : "OncoFAIR CarePlan" //TODO
+
+/*
 * identifier 1..1 MS 
 * identifier.value 1..1 
 * identifier ^short = "The protocol's identifier"
@@ -17,3 +19,4 @@ Description : "Protocol."
 * extension[treatmentDayNumber] MS
 * extension[treatmentCycleNumber] ^short = "The cycle number of the chemotherapy treatment"
 * extension[treatmentDayNumber] ^short = "The day number of the chemotherapy treatment"
+*/

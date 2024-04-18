@@ -1,8 +1,10 @@
-Profile: OncologyPatient
+Profile: OncoFAIRPatient
 Parent: Patient
-Id: oncology-patient
-Title: "Oncology Patient"
+Id: oncofair-patient
+Title: "OncoFAIR Patient"
 Description : "Patient receiving medical treatment in oncology."
+
+/*
 * identifier 1..* MS 
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
@@ -27,3 +29,4 @@ Description : "Patient receiving medical treatment in oncology."
 * birthDate ^short = "The patient's birth date"
 * gender 1..1 MS
 * gender ^short = "The patient's gender"
+*/
