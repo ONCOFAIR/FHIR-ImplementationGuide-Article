@@ -9,4 +9,3 @@ Description: "OncoFAIR MedicationAdministration Report" //TODO
 * encounter ^short = "The encounter linked to the administration report"
 
 * performer 1..1 MS
-* performer.actor only CodeableReference(Practitioner)

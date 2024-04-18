@@ -28,12 +28,13 @@ Description : "OncoFAIR MedicationRequest Prescription" //TODO
 * supportingInformation[medicalLiabiltyUnit] only Reference(HealthcareService)
 
 * identifier 1..1 MS
+* identifier.value 1..1
 * identifier ^short = "The prescription's identifier"
 
 * note MS
 
 * extension contains
-    OncoFAIRPrescriptionDateTime named oncofair-prescription-datetime 1..1 MS
+    OncoFAIRMRPrescriptionDateTime named oncofair-mr-prescription-datetime 1..1 MS
 
 
 Mapping:  mapping_OncoFAIRMedicationRequestPrescription
@@ -49,7 +50,8 @@ Title:    "Mapping du profil OncoFAIR MedicationRequest Prescription"
 * supportingInformation[accomodationUnit] -> "Unité hébergement"
 * supportingInformation[medicalLiabiltyUnit] ->  "Unité responsabilité médicale"
 
-* identifier -> "Id prescription"
+* identifier -> "Id. prescription"
+
 * note -> "Commentaires"
 
-* extension[oncofair-prescription-datetime] -> "D/H precription"
+* extension[oncofair-mr-prescription-datetime] -> "D/H precription"

@@ -6,82 +6,80 @@ Description : "OncoFAIR MedicationRequest Element" //TODO
 
 * basedOn 1..1 MS
 * basedOn only Reference(OncoFAIRMedicationRequestPrescription)
+* basedOn ^short = "The prescription linked to the prescription elemnt"
 
 * device MS
-
-/*
-* groupIdentifier 1..1 MS
-* groupIdentifier.value 1..1 
-* groupIdentifier.value ^short = "Prescription item group identifier"
-* identifier 1..* MS
-* identifier.value 1..1 
-* identifier.value ^short = "The prescription item's identifier"
-* basedOn only Reference(Prescription)
-* basedOn ^short = "The prescription linked to the prescription item"
-* category 1..1 MS
-* category.coding 1..1 
-* category.coding ^short = "The prescription category"
-* category.coding ^definition = "The prescription category. Could be: Creation, Stop, Modification, Validation"
-* subject MS
-* subject ^short = "The patient who will take the prescription item"
-* dispenseRequest.initialFill.quantity.value 1..1 MS 
-* dispenseRequest.initialFill.quantity.value ^short = "The first fill quantity of medication"
-* requester only Reference(OncologyPractitioner)
-* requester ^short = "The practitioner's identifier"
-* device MS 
 * device ^short = "The associated device"
-* effectiveDosePeriod.start 1..1 MS // PN13 = dh_debut_prescrite
-* effectiveDosePeriod.start ^short = "Beginning of the period over which the medication must be taken"
-* effectiveDosePeriod.end MS // PN13 = dh_fin_prescrite 
-* effectiveDosePeriod.end ^short = "End of the period over which the medication must be taken"
-* dosageInstruction.route.coding 1..1 MS 
-* dosageInstruction.route.coding ^short = "How the medication should enter the body"
-* note MS // = for notes & vehicle ?
-* note ^short = "Note"
-* supportingInformation MS // = for vehicle ?
-* supportingInformation ^short = "Additional information"
-* medication MS
-* medication only CodeableReference(OncologyMedication)
-* medication ^short = "The prescribed medication"
-* dosageInstruction 1..* MS
-* dosageInstruction ^short = "Instructions for medication dosage"
-* dosageInstruction.sequence //NB : not necessary if dosageInstruction 1..1 
-* dosageInstruction.sequence ^short = "Order of the dosage instructions"
-* dosageInstruction.text 1..1
-* dosageInstruction.text ^short = "Textual dosage instructions"
-* dosageInstruction.timing MS
-* dosageInstruction.timing ^short = "Timing for the dosage"
-* dosageInstruction.timing.repeat.boundsPeriod.start MS
-* dosageInstruction.timing.repeat.boundsPeriod.start ^short = "Minimum start time for event"
-* dosageInstruction.timing.repeat.boundsPeriod.end MS
-* dosageInstruction.timing.repeat.boundsPeriod.end ^short = "Maximum start time for event"
-* dosageInstruction.timing.repeat.frequency MS // = number of time
-* dosageInstruction.timing.repeat.frequency ^short = "Frequency of dosage"
-* dosageInstruction.timing.repeat.period MS // = per
-* dosageInstruction.timing.repeat.period ^short = "Interval of time between dosages"
-* dosageInstruction.timing.repeat.periodUnit // = temporal unit
-* dosageInstruction.timing.repeat.periodUnit ^short = "Unit of time for the dosage interval"
-* dosageInstruction.timing.repeat.timeOfDay 
-* dosageInstruction.timing.repeat.timeOfDay ^short = "Time of day for action"
-* dosageInstruction.doseAndRate MS 
-* dosageInstruction.doseAndRate ^short = "Dosage quantity and rate of administration"
-* dosageInstruction.doseAndRate.doseQuantity.value 1..1 // = number of doses
-* dosageInstruction.doseAndRate.doseQuantity.value ^short = "Value of the dose quantity"
-* dosageInstruction.doseAndRate.doseQuantity.unit 1..1
-* dosageInstruction.doseAndRate.doseQuantity.unit ^short = "Unit of the dose quantity"
-* dosageInstruction.doseAndRate.rateRatio.numerator.value // = dose rate
-* dosageInstruction.doseAndRate.rateRatio.numerator.value ^short = "Value of the dose rate numerator"
-* dosageInstruction.doseAndRate.rateRatio.numerator.unit
-* dosageInstruction.doseAndRate.rateRatio.denominator.value // = time rate
-* dosageInstruction.doseAndRate.rateRatio.denominator.value ^short = "Value of the dose rate denominator"
-* dosageInstruction.doseAndRate.rateRatio.denominator.unit
-* dosageInstruction.doseAndRate.rateRatio.numerator.unit ^short = "Unit of the dose rate numerator"
-*/
 
-// old version to represent the prescribed component quantity
-/*
-* dispenseRequest.quantity MS 
-* dispenseRequest.quantity ^short = "Quantity prescribed"
-* dispenseRequest.quantity.value //e.g. 142.5
-* dispenseRequest.quantity.unit //e.g. mg
-*/
+* requester MS
+
+* identifier 1..1 MS
+* identifier.value 1..1
+* identifier.value ^short = "The prescription item's identifier"
+* groupIdentifier 1..1 MS
+* groupIdentifier.value 1..1
+* groupIdentifier.value ^short = "Prescription item group identifier"
+
+* status MS
+* priority MS
+* substitution MS
+* dosageInstruction 1..1 MS
+* effectiveDosePeriod MS
+
+* note MS
+* note ^slicing.discriminator.type = #value
+* note ^slicing.discriminator.path = "id"
+* note ^slicing.rules = #open
+* note contains
+    description 0..1 and
+    indication 0..1 and
+    comment 0..1
+* note[description].id = "description"
+* note[indication].id = "indication"
+* note[comment].id = "comment"
+
+* extension contains
+    OncoFAIRMRElementForm named oncofair-mr-element-form 0..1 MS and
+    OncoFAIRMRElementSupply named oncofair-mr-element-supply 0..1 MS and
+    OncoFAIRMRElementRank named oncofair-mr-element-rank 0..1 MS and
+    OncoFAIRMRElementGoNogo named oncofair-mr-element-gonogo 0..1 MS
+
+
+Mapping:  mapping_OncoFAIRMedicationRequestElement
+Source:   OncoFAIRMedicationRequestElement
+Id:       mapping-oncofair-medicationrequest-element
+Title:    "Mapping du profil OncoFAIR MedicationRequest Element"
+* -> "ELEMENT DE PRESCRIPTION"
+
+* basedOn -> "Lien classe PRESCRIPTION"
+
+* device -> "Dispostifs associées"
+* requester -> "IdP. prescripteur"
+
+* identifier -> "Id élément prescription"
+* groupIdentifier -> "Id. groupe"
+
+* note.text -> "Libellé élément prescription"
+* status -> "Création/Arrêt/Modification/Validation"
+* priority -> "Urgent"
+* substitution -> "Proposition pharmaceutique"
+
+* dosageInstruction.method -> "Type élément prescription"
+* dosageInstruction.route -> "Voie administration"
+* dosageInstruction.site -> "Lieu administration"
+* dosageInstruction.text -> "Posologie"
+* dosageInstruction.timing.repeat.boundsPeriod.start -> "D/H début prescrite"
+* dosageInstruction.timing.repeat.boundsPeriod.end -> "D/H fin prescrite"
+* dosageInstruction.timing.repeat.offset -> "Delta D/H référence"
+* dosageInstruction.additionalInstruction -> "Conditions d'application"
+
+* effectiveDosePeriod.start -> "D/H début prescription"
+* effectiveDosePeriod.end -> "D/H fin prescription"
+
+* note[description] -> "description"
+* note[indication] -> "indication"
+* note[comment] -> "comment"
+
+* extension[oncofair-mr-element-form] -> "Forme"
+* extension[oncofair-mr-element-supply] -> "Fourniture"
+* extension[oncofair-mr-element-rank] -> "Rang élément prescription"
