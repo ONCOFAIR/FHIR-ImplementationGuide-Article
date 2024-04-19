@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/CodeSystem/CSLOINC> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CSLOINC"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://ltsi.univ-rennes.fr/CodeSystem/CSLOINC</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">29463-7<a name=\"CSLOINC-29463-7\"> </a></td><td>Weight</td></tr><tr><td style=\"white-space:nowrap\">8302-2<a name=\"CSLOINC-8302-2\"> </a></td><td>Height</td></tr><tr><td style=\"white-space:nowrap\">29274-8&quot;<a name=\"CSLOINC-29274-8.34\"> </a></td><td>Vital signs measurements</td></tr><tr><td style=\"white-space:nowrap\">44292-1<a name=\"CSLOINC-44292-1\"> </a></td><td>Dosage instructions</td></tr><tr><td style=\"white-space:nowrap\">36380-3<a name=\"CSLOINC-36380-3\"> </a></td><td>Duration of medication therapy</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/CSLOINC"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "CSLOINC"] ; # 
+  fhir:title [ fhir:v "LOINC codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-04-19T08:32:40+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://ltsi.univ-rennes.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "LOINC CodeSystem."] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "29463-7" ] ;
+     fhir:display [ fhir:v "Weight" ]
+  ] [
+     fhir:code [ fhir:v "8302-2" ] ;
+     fhir:display [ fhir:v "Height" ]
+  ] [
+     fhir:code [ fhir:v "29274-8\"" ] ;
+     fhir:display [ fhir:v "Vital signs measurements" ]
+  ] [
+     fhir:code [ fhir:v "44292-1" ] ;
+     fhir:display [ fhir:v "Dosage instructions" ]
+  ] [
+     fhir:code [ fhir:v "36380-3" ] ;
+     fhir:display [ fhir:v "Duration of medication therapy" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

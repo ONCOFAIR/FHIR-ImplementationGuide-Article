@@ -1,0 +1,223 @@
+@startuml
+set namespaceSeparator ?
+hide circle
+hide class fields
+
+package IG #DDDDDD{
+
+     package Profiles #DDDDDD{
+
+        class OncoFAIRCarePlan{
+
+        } 
+
+        class OncoFAIREncounter{
+
+             Encounter.subject => [1..None]
+        } 
+
+        class OncoFAIRMedication{
+
+        } 
+
+        class OncoFAIRMedicationAdministrationComponent{
+
+             MedicationAdministration.partOf => [1..1]
+             MedicationAdministration.medication => [None..None]
+        } 
+
+        class OncoFAIRMedicationAdministrationElement{
+
+             MedicationAdministration.partOf => [1..1]
+             MedicationAdministration.device => [None..None]
+        } 
+
+        class OncoFAIRMedicationAdministrationReport{
+
+             MedicationAdministration.encounter => [1..None]
+             MedicationAdministration.performer => [1..1]
+        } 
+
+        class OncoFAIRMedicationRequestPrescription{
+
+             MedicationRequest.extension => [1..None]
+             MedicationRequest.extension:oncofair-mr-prescription-datetime => <&plus>[1..1]
+             MedicationRequest.identifier => [1..1]
+             MedicationRequest.identifier.value => [1..None]
+             MedicationRequest.basedOn => [None..None]
+             MedicationRequest.encounter => [1..None]
+             MedicationRequest.supportingInformation => [None..None]
+             MedicationRequest.supportingInformation:accomodationUnit => [0..1]
+             MedicationRequest.supportingInformation:accomodationUnit.id => [1..None]
+             MedicationRequest.supportingInformation:medicalLiabiltyUnit => [0..1]
+             MedicationRequest.supportingInformation:medicalLiabiltyUnit.id => [1..None]
+             MedicationRequest.reason => [None..None]
+             MedicationRequest.note => [None..None]
+        } 
+
+        class OncoFAIRObservation{
+
+        } 
+
+        class OncoFAIRPatient{
+
+        } 
+
+        class OncoFAIRMedicationRequestComponent{
+
+             MedicationRequest.basedOn => [1..1]
+             MedicationRequest.medication => [None..None]
+        } 
+
+        class OncoFAIRMedicationRequestElement{
+
+             MedicationRequest.extension => [None..None]
+             MedicationRequest.extension:oncofair-mr-element-form => <&plus>[0..1]
+             MedicationRequest.extension:oncofair-mr-element-supply => <&plus>[0..1]
+             MedicationRequest.extension:oncofair-mr-element-rank => <&plus>[0..1]
+             MedicationRequest.extension:oncofair-mr-element-gonogo => <&plus>[0..1]
+             MedicationRequest.identifier => [1..1]
+             MedicationRequest.identifier.value => [1..None]
+             MedicationRequest.basedOn => [1..1]
+             MedicationRequest.groupIdentifier => [1..None]
+             MedicationRequest.groupIdentifier.value => [1..None]
+             MedicationRequest.status => [None..None]
+             MedicationRequest.priority => [None..None]
+             MedicationRequest.requester => [None..None]
+             MedicationRequest.device => [None..None]
+             MedicationRequest.note => [None..None]
+             MedicationRequest.note.text => [None..None]
+             MedicationRequest.note:description => [0..1]
+             MedicationRequest.note:description.id => [1..None]
+             MedicationRequest.note:indication => [0..1]
+             MedicationRequest.note:indication.id => [1..None]
+             MedicationRequest.note:comment => [0..1]
+             MedicationRequest.note:comment.id => [1..None]
+             MedicationRequest.effectiveDosePeriod => [None..None]
+             MedicationRequest.effectiveDosePeriod.start => [None..None]
+             MedicationRequest.effectiveDosePeriod.end => [None..None]
+             MedicationRequest.dosageInstruction => [1..1]
+             MedicationRequest.dosageInstruction.text => [None..None]
+             MedicationRequest.dosageInstruction.additionalInstruction => [None..None]
+             MedicationRequest.dosageInstruction.timing.repeat.bounds[x] => [None..None]
+             MedicationRequest.dosageInstruction.timing.repeat.bounds[x]:boundsPeriod => [0..1]
+             MedicationRequest.dosageInstruction.timing.repeat.bounds[x]:boundsPeriod.start => [None..None]
+             MedicationRequest.dosageInstruction.timing.repeat.bounds[x]:boundsPeriod.end => [None..None]
+             MedicationRequest.dosageInstruction.timing.repeat.offset => [None..None]
+             MedicationRequest.dosageInstruction.site => [None..None]
+             MedicationRequest.dosageInstruction.route => [None..None]
+             MedicationRequest.dosageInstruction.method => [None..None]
+             MedicationRequest.substitution => [None..None]
+         }
+
+     }
+     package extension #paleturquoise {
+
+     OncoFAIRMedicationRequestPrescription -[#black,dashed,thickness=2]-> OncoFAIRMRPrescriptionDateTime
+     OncoFAIRMedicationRequestElement -[#black,dashed,thickness=2]-> OncoFAIRMRElementForm
+     OncoFAIRMedicationRequestElement -[#black,dashed,thickness=2]-> OncoFAIRMRElementSupply
+     OncoFAIRMedicationRequestElement -[#black,dashed,thickness=2]-> OncoFAIRMRElementRank
+     OncoFAIRMedicationRequestElement -[#black,dashed,thickness=2]-> OncoFAIRMRElementGoNogo
+
+        class OncoFAIRMRElementForm{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class OncoFAIRMRElementGoNogo{
+
+          Extension.extension:GoNogoStatus => [0..1]
+          Extension.extension:GoNogoStatus.extension => [None..0]
+          Extension.extension:GoNogoStatus.url => [None..None]
+          Extension.extension:GoNogoStatus.value[x] => [None..None]
+          Extension.extension:GoNogoReasonWaiting => [0..1]
+          Extension.extension:GoNogoReasonWaiting.extension => [None..0]
+          Extension.extension:GoNogoReasonWaiting.url => [None..None]
+          Extension.extension:GoNogoReasonWaiting.value[x] => [None..None]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..0]
+        } 
+        class OncoFAIRMRElementRank{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class OncoFAIRMRElementSupply{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class OncoFAIRMRPrescriptionDateTime{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class TreatmentCycleNumber{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [1..None]
+          Extension.value[x]:valueInteger => [1..1]
+        } 
+        class TreatmentDayNumber{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [1..None]
+          Extension.value[x]:valueInteger => [1..1]
+         }
+     }
+     package valueset #PaleVioletRed{
+       }
+
+package "Ressources de base" #palegreen {
+
+ class "CarePlan" as  classc1c8e4b50c739ddc150dd233aa035d7a 
+
+    classc1c8e4b50c739ddc150dd233aa035d7a --> OncoFAIRCarePlan
+
+ class "Encounter" as  classd1e9f9f891de8f9a655739a01fbf68f0 
+
+    classd1e9f9f891de8f9a655739a01fbf68f0 --> OncoFAIREncounter
+
+ class "Medication" as  class353bd6f65060d17097c3b03141e79cce 
+
+    class353bd6f65060d17097c3b03141e79cce --> OncoFAIRMedication
+
+ class "MedicationAdministration" as  classcb08d1580a4f19d9fc3a0c98169f1144 
+
+    classcb08d1580a4f19d9fc3a0c98169f1144 --> OncoFAIRMedicationAdministrationComponent
+
+ class "MedicationAdministration" as  classcb08d1580a4f19d9fc3a0c98169f1144 
+
+    classcb08d1580a4f19d9fc3a0c98169f1144 --> OncoFAIRMedicationAdministrationElement
+
+ class "MedicationAdministration" as  classcb08d1580a4f19d9fc3a0c98169f1144 
+
+    classcb08d1580a4f19d9fc3a0c98169f1144 --> OncoFAIRMedicationAdministrationReport
+
+ class "MedicationRequest" as  class2071abb7e1482ea8731af3cdcaed7225 
+
+    class2071abb7e1482ea8731af3cdcaed7225 --> OncoFAIRMedicationRequestPrescription
+
+ class "Observation" as  classc680d437163cc6bab4f9bdb35c3073d0 
+
+    classc680d437163cc6bab4f9bdb35c3073d0 --> OncoFAIRObservation
+
+ class "Patient" as  class01122a97dca927210827560cb7d76af8 
+
+    class01122a97dca927210827560cb7d76af8 --> OncoFAIRPatient
+
+ class "MedicationRequest" as  class2071abb7e1482ea8731af3cdcaed7225 
+
+    class2071abb7e1482ea8731af3cdcaed7225 --> OncoFAIRMedicationRequestComponent
+
+ class "MedicationRequest" as  class2071abb7e1482ea8731af3cdcaed7225 
+
+    class2071abb7e1482ea8731af3cdcaed7225 --> OncoFAIRMedicationRequestElement
+}
+@enduml

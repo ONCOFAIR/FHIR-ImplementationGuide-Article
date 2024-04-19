@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vsPrescriptionCategory",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://hl7.org/fhir/ValueSet/plan-definition-type</code></li><li>Include all codes defined in <a href=\"CodeSystem-CSPrescriptionCategory.html\"><code>http://ltsi.univ-rennes.fr/CodeSystem/CSPrescriptionCategory</code></a></li></ul></div>"
+  },
+  "url" : "http://ltsi.univ-rennes.fr/ValueSet/vsPrescriptionCategory",
+  "version" : "0.1.0",
+  "name" : "VSPrescriptionCategory",
+  "title" : "Prescription status",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-04-19T08:32:40+00:00",
+  "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
+  "contact" : [{
+    "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://ltsi.univ-rennes.fr"
+    }]
+  }],
+  "description" : "ValueSet for PlanDefinition types, extended to include creation, stop, modification and validation.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/ValueSet/plan-definition-type"
+    },
+    {
+      "system" : "http://ltsi.univ-rennes.fr/CodeSystem/CSPrescriptionCategory"
+    }]
+  }
+}
