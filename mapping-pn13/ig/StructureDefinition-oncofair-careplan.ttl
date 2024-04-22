@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIRCarePlan"] ; # 
   fhir:title [ fhir:v "OncoFAIR CarePlan"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-04-22T14:39:57+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-04-22T15:15:59+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -413,11 +413,7 @@
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "mapping-oncofair-cp-treatment" ] ;
-         fhir:map [ fhir:v "PROTOCOLE PRESCRIT" ]
-       ] )
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "CarePlan.extension:oncofair-cp-pharmacist" ] ;
        fhir:path [ fhir:v "CarePlan.extension" ] ;
@@ -458,11 +454,7 @@
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "mapping-oncofair-cp-Pharmacist" ] ;
-         fhir:map [ fhir:v "PROTOCOLE PRESCRIT" ]
-       ] )
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "CarePlan.modifierExtension" ] ;
        fhir:path [ fhir:v "CarePlan.modifierExtension" ] ;

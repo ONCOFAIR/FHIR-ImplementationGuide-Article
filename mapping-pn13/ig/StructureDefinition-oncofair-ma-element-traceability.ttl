@@ -20,7 +20,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "OncoFAIRMAElementTraceability"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-04-22T14:39:57+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-04-22T15:15:59+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -83,11 +83,7 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "mapping-oncofair-ma-element-traceability" ] ;
-         fhir:map [ fhir:v "ELEMENT D'ADMINISTRATION" ]
-       ] )
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "Extension.id" ] ;
        fhir:path [ fhir:v "Extension.id" ] ;
@@ -681,11 +677,7 @@
      fhir:element ( [
        fhir:id [ fhir:v "Extension" ] ;
        fhir:path [ fhir:v "Extension" ] ;
-       fhir:definition [ fhir:v "Extension créée dans le cadre d'OncoFAIR" ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "mapping-oncofair-ma-element-traceability" ] ;
-         fhir:map [ fhir:v "ELEMENT D'ADMINISTRATION" ]
-       ] )
+       fhir:definition [ fhir:v "Extension créée dans le cadre d'OncoFAIR" ]
      ] [
        fhir:id [ fhir:v "Extension.extension:batchNumber" ] ;
        fhir:path [ fhir:v "Extension.extension" ] ;

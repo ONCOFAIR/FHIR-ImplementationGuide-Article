@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIRMedicationAdministrationElement"] ; # 
   fhir:title [ fhir:v "OncoFAIR MedicationAdministration Element"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-04-22T14:39:57+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-04-22T15:15:59+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -136,7 +136,7 @@
          fhir:map [ fhir:v "clinical.medication" ]
        ] [
          fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
-         fhir:map [ fhir:v "ELEMENT D'ADMINISTRATION'" ]
+         fhir:map [ fhir:v "ELEMENT ADMINISTRATION" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.id" ] ;
@@ -412,11 +412,7 @@
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "mapping-oncofair-ma-element-urgent" ] ;
-         fhir:map [ fhir:v "ELEMENT D'ADMINISTRATION" ]
-       ] )
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "MedicationAdministration.extension:oncofair-ma-element-expirationdate" ] ;
        fhir:path [ fhir:v "MedicationAdministration.extension" ] ;
@@ -457,11 +453,7 @@
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "mapping-oncofair-ma-element-expirationdate" ] ;
-         fhir:map [ fhir:v "ELEMENT D'ADMINISTRATION" ]
-       ] )
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "MedicationAdministration.extension:oncofair-ma-element-traceability" ] ;
        fhir:path [ fhir:v "MedicationAdministration.extension" ] ;
@@ -502,11 +494,7 @@
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "mapping-oncofair-ma-element-traceability" ] ;
-         fhir:map [ fhir:v "ELEMENT D'ADMINISTRATION" ]
-       ] )
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "MedicationAdministration.extension:oncofair-ma-plannedperiod" ] ;
        fhir:path [ fhir:v "MedicationAdministration.extension" ] ;
@@ -547,11 +535,7 @@
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "mapping-oncofair-ma-element-plannedperiod" ] ;
-         fhir:map [ fhir:v "ELEMENT D'ADMINISTRATION" ]
-       ] )
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "MedicationAdministration.modifierExtension" ] ;
        fhir:path [ fhir:v "MedicationAdministration.modifierExtension" ] ;
@@ -3293,7 +3277,7 @@
        fhir:path [ fhir:v "MedicationAdministration" ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
-         fhir:map [ fhir:v "ELEMENT D'ADMINISTRATION'" ]
+         fhir:map [ fhir:v "ELEMENT ADMINISTRATION" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.extension" ] ;

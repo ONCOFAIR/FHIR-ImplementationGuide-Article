@@ -51,7 +51,7 @@
   <name value="OncoFAIRMedicationRequestElement"/>
   <title value="OncoFAIR MedicationRequest Element"/>
   <status value="draft"/>
-  <date value="2024-04-22T14:39:57+00:00"/>
+  <date value="2024-04-22T15:15:59+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -172,7 +172,7 @@
       </mapping>
       <mapping>
         <identity value="mapping-oncofair-medicationrequest-element"/>
-        <map value="ELEMENT DE PRESCRIPTION"/>
+        <map value="ELEMENT PRESCRIPTION"/>
       </mapping>
     </element>
     <element id="MedicationRequest.id">
@@ -424,10 +424,6 @@
       </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
-      <mapping>
-        <identity value="mapping-oncofair-element-form"/>
-        <map value="ELEMENT D'ADMINISTRATION, ELEMENT DE PRESCRIPTION"/>
-      </mapping>
     </element>
     <element id="MedicationRequest.extension:oncofair-mr-element-supply">
       <path value="MedicationRequest.extension"/>
@@ -461,10 +457,6 @@
       </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
-      <mapping>
-        <identity value="mapping-oncofair-mr-element-supply"/>
-        <map value="ELEMENT DE PRESCRIPTION"/>
-      </mapping>
     </element>
     <element id="MedicationRequest.extension:oncofair-mr-element-rank">
       <path value="MedicationRequest.extension"/>
@@ -498,10 +490,6 @@
       </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
-      <mapping>
-        <identity value="mapping-oncofair-mr-element-rank"/>
-        <map value="ELEMENT DE PRESCRIPTION"/>
-      </mapping>
     </element>
     <element id="MedicationRequest.extension:oncofair-mr-element-gonogo">
       <path value="MedicationRequest.extension"/>
@@ -535,10 +523,6 @@
       </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
-      <mapping>
-        <identity value="mapping-oncofair-mr-element-gonogo"/>
-        <map value="ELEMENT DE PRESCRIPTION"/>
-      </mapping>
     </element>
     <element id="MedicationRequest.modifierExtension">
       <path value="MedicationRequest.modifierExtension"/>
@@ -6145,7 +6129,7 @@
       <path value="MedicationRequest"/>
       <mapping>
         <identity value="mapping-oncofair-medicationrequest-element"/>
-        <map value="ELEMENT DE PRESCRIPTION"/>
+        <map value="ELEMENT PRESCRIPTION"/>
       </mapping>
     </element>
     <element id="MedicationRequest.extension">

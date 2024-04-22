@@ -10,7 +10,7 @@
   "name" : "OncoFAIRMedicationAdministrationElement",
   "title" : "OncoFAIR MedicationAdministration Element",
   "status" : "draft",
-  "date" : "2024-04-22T14:39:57+00:00",
+  "date" : "2024-04-22T15:15:59+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -123,7 +123,7 @@
       },
       {
         "identity" : "mapping-oncofair-medicationradministration-element",
-        "map" : "ELEMENT D'ADMINISTRATION'"
+        "map" : "ELEMENT ADMINISTRATION"
       }]
     },
     {
@@ -384,11 +384,7 @@
         "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "mustSupport" : true,
-      "isModifier" : false,
-      "mapping" : [{
-        "identity" : "mapping-oncofair-ma-element-urgent",
-        "map" : "ELEMENT D'ADMINISTRATION"
-      }]
+      "isModifier" : false
     },
     {
       "id" : "MedicationAdministration.extension:oncofair-ma-element-expirationdate",
@@ -422,11 +418,7 @@
         "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "mustSupport" : false,
-      "isModifier" : false,
-      "mapping" : [{
-        "identity" : "mapping-oncofair-ma-element-expirationdate",
-        "map" : "ELEMENT D'ADMINISTRATION"
-      }]
+      "isModifier" : false
     },
     {
       "id" : "MedicationAdministration.extension:oncofair-ma-element-traceability",
@@ -460,11 +452,7 @@
         "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "mustSupport" : false,
-      "isModifier" : false,
-      "mapping" : [{
-        "identity" : "mapping-oncofair-ma-element-traceability",
-        "map" : "ELEMENT D'ADMINISTRATION"
-      }]
+      "isModifier" : false
     },
     {
       "id" : "MedicationAdministration.extension:oncofair-ma-plannedperiod",
@@ -498,11 +486,7 @@
         "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "mustSupport" : false,
-      "isModifier" : false,
-      "mapping" : [{
-        "identity" : "mapping-oncofair-ma-element-plannedperiod",
-        "map" : "ELEMENT D'ADMINISTRATION"
-      }]
+      "isModifier" : false
     },
     {
       "id" : "MedicationAdministration.modifierExtension",
@@ -3083,7 +3067,7 @@
       "path" : "MedicationAdministration",
       "mapping" : [{
         "identity" : "mapping-oncofair-medicationradministration-element",
-        "map" : "ELEMENT D'ADMINISTRATION'"
+        "map" : "ELEMENT ADMINISTRATION"
       }]
     },
     {

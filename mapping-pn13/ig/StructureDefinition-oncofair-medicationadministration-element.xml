@@ -38,7 +38,7 @@
   <name value="OncoFAIRMedicationAdministrationElement"/>
   <title value="OncoFAIR MedicationAdministration Element"/>
   <status value="draft"/>
-  <date value="2024-04-22T14:39:57+00:00"/>
+  <date value="2024-04-22T15:15:59+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -148,7 +148,7 @@
       </mapping>
       <mapping>
         <identity value="mapping-oncofair-medicationradministration-element"/>
-        <map value="ELEMENT D'ADMINISTRATION'"/>
+        <map value="ELEMENT ADMINISTRATION"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.id">
@@ -400,10 +400,6 @@
       </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
-      <mapping>
-        <identity value="mapping-oncofair-ma-element-urgent"/>
-        <map value="ELEMENT D'ADMINISTRATION"/>
-      </mapping>
     </element>
     <element id="MedicationAdministration.extension:oncofair-ma-element-expirationdate">
       <path value="MedicationAdministration.extension"/>
@@ -437,10 +433,6 @@
       </constraint>
       <mustSupport value="false"/>
       <isModifier value="false"/>
-      <mapping>
-        <identity value="mapping-oncofair-ma-element-expirationdate"/>
-        <map value="ELEMENT D'ADMINISTRATION"/>
-      </mapping>
     </element>
     <element id="MedicationAdministration.extension:oncofair-ma-element-traceability">
       <path value="MedicationAdministration.extension"/>
@@ -474,10 +466,6 @@
       </constraint>
       <mustSupport value="false"/>
       <isModifier value="false"/>
-      <mapping>
-        <identity value="mapping-oncofair-ma-element-traceability"/>
-        <map value="ELEMENT D'ADMINISTRATION"/>
-      </mapping>
     </element>
     <element id="MedicationAdministration.extension:oncofair-ma-plannedperiod">
       <path value="MedicationAdministration.extension"/>
@@ -511,10 +499,6 @@
       </constraint>
       <mustSupport value="false"/>
       <isModifier value="false"/>
-      <mapping>
-        <identity value="mapping-oncofair-ma-element-plannedperiod"/>
-        <map value="ELEMENT D'ADMINISTRATION"/>
-      </mapping>
     </element>
     <element id="MedicationAdministration.modifierExtension">
       <path value="MedicationAdministration.modifierExtension"/>
@@ -3008,7 +2992,7 @@
       <path value="MedicationAdministration"/>
       <mapping>
         <identity value="mapping-oncofair-medicationradministration-element"/>
-        <map value="ELEMENT D'ADMINISTRATION'"/>
+        <map value="ELEMENT ADMINISTRATION"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.extension">

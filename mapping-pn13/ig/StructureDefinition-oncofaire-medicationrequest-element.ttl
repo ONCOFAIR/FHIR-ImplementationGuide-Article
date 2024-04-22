@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIRMedicationRequestElement"] ; # 
   fhir:title [ fhir:v "OncoFAIR MedicationRequest Element"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-04-22T14:39:57+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-04-22T15:15:59+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -144,7 +144,7 @@
          fhir:map [ fhir:v "clinical.medication" ]
        ] [
          fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-element" ] ;
-         fhir:map [ fhir:v "ELEMENT DE PRESCRIPTION" ]
+         fhir:map [ fhir:v "ELEMENT PRESCRIPTION" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationRequest.id" ] ;
@@ -420,11 +420,7 @@
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "mapping-oncofair-element-form" ] ;
-         fhir:map [ fhir:v "ELEMENT D'ADMINISTRATION, ELEMENT DE PRESCRIPTION" ]
-       ] )
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "MedicationRequest.extension:oncofair-mr-element-supply" ] ;
        fhir:path [ fhir:v "MedicationRequest.extension" ] ;
@@ -465,11 +461,7 @@
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "mapping-oncofair-mr-element-supply" ] ;
-         fhir:map [ fhir:v "ELEMENT DE PRESCRIPTION" ]
-       ] )
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "MedicationRequest.extension:oncofair-mr-element-rank" ] ;
        fhir:path [ fhir:v "MedicationRequest.extension" ] ;
@@ -510,11 +502,7 @@
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "mapping-oncofair-mr-element-rank" ] ;
-         fhir:map [ fhir:v "ELEMENT DE PRESCRIPTION" ]
-       ] )
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "MedicationRequest.extension:oncofair-mr-element-gonogo" ] ;
        fhir:path [ fhir:v "MedicationRequest.extension" ] ;
@@ -555,11 +543,7 @@
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "mapping-oncofair-mr-element-gonogo" ] ;
-         fhir:map [ fhir:v "ELEMENT DE PRESCRIPTION" ]
-       ] )
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "MedicationRequest.modifierExtension" ] ;
        fhir:path [ fhir:v "MedicationRequest.modifierExtension" ] ;
@@ -6724,7 +6708,7 @@
        fhir:path [ fhir:v "MedicationRequest" ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-element" ] ;
-         fhir:map [ fhir:v "ELEMENT DE PRESCRIPTION" ]
+         fhir:map [ fhir:v "ELEMENT PRESCRIPTION" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationRequest.extension" ] ;

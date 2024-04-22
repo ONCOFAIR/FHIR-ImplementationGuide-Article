@@ -13,7 +13,7 @@
   "version" : "0.1.0",
   "name" : "OncoFAIRMAElementPlannedPeriod",
   "status" : "draft",
-  "date" : "2024-04-22T14:39:57+00:00",
+  "date" : "2024-04-22T15:15:59+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -69,11 +69,7 @@
         "expression" : "extension.exists() != value.exists()",
         "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
-      "isModifier" : false,
-      "mapping" : [{
-        "identity" : "mapping-oncofair-ma-element-plannedperiod",
-        "map" : "ELEMENT D'ADMINISTRATION"
-      }]
+      "isModifier" : false
     },
     {
       "id" : "Extension.id",
@@ -361,11 +357,7 @@
     "element" : [{
       "id" : "Extension",
       "path" : "Extension",
-      "definition" : "Extension créée dans le cadre d'OncoFAIR",
-      "mapping" : [{
-        "identity" : "mapping-oncofair-ma-element-plannedperiod",
-        "map" : "ELEMENT D'ADMINISTRATION"
-      }]
+      "definition" : "Extension créée dans le cadre d'OncoFAIR"
     },
     {
       "id" : "Extension.extension",
