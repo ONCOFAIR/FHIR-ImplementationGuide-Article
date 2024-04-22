@@ -14,5 +14,6 @@ Mapping:  mapping_OncoFAIRMedicationRequestComponent
 Source:   OncoFAIRMedicationRequestComponent
 Id:       mapping-oncofair-medicationrequest-component
 Title:    "Mapping du profil OncoFAIR MedicationRequest Component"
+
 * -> "COMPOSANT PRESCRIT"
 * basedOn -> "Lien classe ELEMENTPrescription"
