@@ -39,7 +39,7 @@ Description : "OncoFAIR MedicationRequest Element" //TODO
 * note[comment].id = "comment"
 
 * extension contains
-    OncoFAIRMRElementForm named oncofair-mr-element-form 0..1 MS and
+    OncoFAIRElementForm named oncofair-element-form 0..1 MS and
     OncoFAIRMRElementSupply named oncofair-mr-element-supply 0..1 MS and
     OncoFAIRMRElementRank named oncofair-mr-element-rank 0..1 MS and
     OncoFAIRMRElementGoNogo named oncofair-mr-element-gonogo 0..1 MS
@@ -76,10 +76,6 @@ Title:    "Mapping du profil OncoFAIR MedicationRequest Element"
 * effectiveDosePeriod.start -> "D/H début prescription"
 * effectiveDosePeriod.end -> "D/H fin prescription"
 
-* note[description] -> "Description"
+* note[description] -> "Libellé élément prescription"
 * note[indication] -> "Indication"
 * note[comment] -> "Commentaires"
-
-* extension[oncofair-mr-element-form] -> "Forme"
-* extension[oncofair-mr-element-supply] -> "Fourniture"
-* extension[oncofair-mr-element-rank] -> "Rang élément prescription"

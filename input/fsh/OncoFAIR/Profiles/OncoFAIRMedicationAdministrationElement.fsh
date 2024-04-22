@@ -8,33 +8,66 @@ Description: "OncoFAIR MedicationAdministration Element" //TODO
 * partOf only Reference(OncoFAIRMedicationAdministrationReport)
 
 * device MS
+* request MS
 
-/*
-* identifier.value MS 
+* identifier MS
 * identifier.value ^short = "Identifier of the administration report"
-* basedOn 1..1 MS 
-* basedOn ^short = "The prescription linked to the administration report"
-* basedOn only Reference(Prescription)
-* subject MS
-* performer 1..* MS
-* performer.actor 1..1
-* performer.actor ^short = "Person who administered the medication"
-* occurencePeriod 1..1 MS
+
+* dosage MS
+* occurencePeriod MS
+* occurencePeriod.start 1..1
 * occurencePeriod ^short = "Specific date/time or interval of time during which the administration took place (or did not take place)"
-* request 1..1 MS
-* request only Reference(PrescriptionItem)
-* request ^short = "The prescription item at the origin of the administration report"
-* note 1..* MS
-* note ^short = "The administration report label and other note(s)"
-* medication MS
-* medication only CodeableReference(OncologyMedication)
-* medication ^short = "The administred medication"
-* dosage 1..1 MS
-* dosage ^short = "The intended dosage of the administered medication"
-* dosage.text 1..1 
-* dosage.text ^short = "Textual dosage instructions"
-* dosage.dose.value 1..1
-* dosage.dose.value ^short = "Value of the dose quantity"
-* dosage.dose.unit 1..1
-* dosage.dose.unit ^short = "Unit of the dose quantity"
-*/
+
+* category MS
+* category ^slicing.discriminator.type = #value
+* category ^slicing.discriminator.path = "system"
+* category ^slicing.rules = #open
+* category contains
+    code 0..1 and
+    form 0..1 and
+    nature 0..1
+
+* note MS
+* note ^slicing.discriminator.type = #value
+* note ^slicing.discriminator.path = "id"
+* note ^slicing.rules = #open
+* note contains
+    description 1..1 and
+    comment 0..1
+* note[description].id = "description"
+* note[comment].id = "comment"
+
+* extension contains
+        OncoFAIRMAElementUrgent named oncofair-ma-element-urgent 0..1 MS and
+        OncoFAIRMAElementExpirationDate named oncofair-ma-element-expirationdate 0..1 and
+        OncoFAIRMAElementTraceability named oncofair-ma-element-traceability 0..1 and
+        OncoFAIRMAElementPlannedPeriod named oncofair-ma-plannedperiod 1..1
+
+
+Mapping:  mapping_OncoFAIRMedicationAdministrationElement
+Source:   OncoFAIRMedicationAdministrationElement
+Id:       mapping-oncofair-medicationradministration-element
+Title:    "Mapping du profil OncoFAIR MedicationAdministration Element"
+* -> "ELEMENT D'ADMINISTRATION'"
+
+* partOf -> "Lien classe COMPTE RENDU D'ADMINISTRATION"
+* device -> "Dispositifs associés"
+* request -> "Id. élément prescription"
+
+* identifier -> "Id. élément administration"
+
+* category -> "Code élément administration"
+
+* dosage.method -> "Type élément administration"
+* dosage.route -> "Voie administration"
+* dosage.site -> "Lieu administration"
+
+* occurencePeriod.start -> "D/H début effective"
+* occurencePeriod.end -> "D/H fin effective"
+
+* category[code] -> "Code élément administration"
+* category[form] -> "Forme"
+* category[nature] -> "Présentation"
+
+* note[description] -> "Libellé élément administration"
+* note[comment] -> "Commentaires"

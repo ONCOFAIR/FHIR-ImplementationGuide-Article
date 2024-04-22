@@ -53,5 +53,3 @@ Title:    "Mapping du profil OncoFAIR MedicationRequest Prescription"
 * identifier -> "Id. prescription"
 
 * note -> "Commentaires"
-
-* extension[oncofair-mr-prescription-datetime] -> "D/H precription"

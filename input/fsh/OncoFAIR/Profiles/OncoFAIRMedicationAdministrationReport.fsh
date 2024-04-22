@@ -9,3 +9,16 @@ Description: "OncoFAIR MedicationAdministration Report" //TODO
 * encounter ^short = "The encounter linked to the administration report"
 
 * performer 1..1 MS
+
+* identifier MS
+
+Mapping:  mapping_OncoFAIRMedicationAdministrationReport
+Source:   OncoFAIRMedicationAdministrationReport
+Id:       mapping-oncofair-medicationadministration-report
+Title:    "Mapping du profil OncoFAIR MedicationAdministration Report"
+* -> "COMPTE RENDU D'ADMINSITRATION"
+
+* encounter -> "Lien classe SEJOUR"
+* performer.actor -> "IdP. administrateur"
+
+* identifier -> "Id. compte rendu d'adminsitration"
