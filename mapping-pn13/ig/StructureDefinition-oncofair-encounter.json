@@ -10,7 +10,7 @@
   "name" : "OncoFAIREncounter",
   "title" : "ONCOFair Encounter",
   "status" : "draft",
-  "date" : "2024-04-22T13:59:04+00:00",
+  "date" : "2024-04-22T14:39:57+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -22,6 +22,10 @@
   "description" : "ONCOFair Encounter",
   "fhirVersion" : "5.0.0",
   "mapping" : [{
+    "identity" : "mapping-oncofair-encounter",
+    "name" : "Mapping du profil OncoFAIR Encounter"
+  },
+  {
     "identity" : "workflow",
     "uri" : "http://hl7.org/fhir/workflow",
     "name" : "Workflow Pattern"
@@ -117,6 +121,10 @@
       {
         "identity" : "w5",
         "map" : "workflow.encounter"
+      },
+      {
+        "identity" : "mapping-oncofair-encounter",
+        "map" : "SEJOUR"
       }]
     },
     {
@@ -3073,7 +3081,11 @@
   "differential" : {
     "element" : [{
       "id" : "Encounter",
-      "path" : "Encounter"
+      "path" : "Encounter",
+      "mapping" : [{
+        "identity" : "mapping-oncofair-encounter",
+        "map" : "SEJOUR"
+      }]
     },
     {
       "id" : "Encounter.identifier",

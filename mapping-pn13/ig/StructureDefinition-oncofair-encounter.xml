@@ -14,7 +14,7 @@
   <name value="OncoFAIREncounter"/>
   <title value="ONCOFair Encounter"/>
   <status value="draft"/>
-  <date value="2024-04-22T13:59:04+00:00"/>
+  <date value="2024-04-22T14:39:57+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -25,6 +25,10 @@
   </contact>
   <description value="ONCOFair Encounter"/>
   <fhirVersion value="5.0.0"/>
+  <mapping>
+    <identity value="mapping-oncofair-encounter"/>
+    <name value="Mapping du profil OncoFAIR Encounter"/>
+  </mapping>
   <mapping>
     <identity value="workflow"/>
     <uri value="http://hl7.org/fhir/workflow"/>
@@ -118,6 +122,10 @@
       <mapping>
         <identity value="w5"/>
         <map value="workflow.encounter"/>
+      </mapping>
+      <mapping>
+        <identity value="mapping-oncofair-encounter"/>
+        <map value="SEJOUR"/>
       </mapping>
     </element>
     <element id="Encounter.id">
@@ -2968,6 +2976,10 @@
   <differential>
     <element id="Encounter">
       <path value="Encounter"/>
+      <mapping>
+        <identity value="mapping-oncofair-encounter"/>
+        <map value="SEJOUR"/>
+      </mapping>
     </element>
     <element id="Encounter.identifier">
       <path value="Encounter.identifier"/>

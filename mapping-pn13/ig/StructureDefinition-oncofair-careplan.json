@@ -10,7 +10,7 @@
   "name" : "OncoFAIRCarePlan",
   "title" : "OncoFAIR CarePlan",
   "status" : "draft",
-  "date" : "2024-04-22T13:59:04+00:00",
+  "date" : "2024-04-22T14:39:57+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -22,7 +22,7 @@
   "description" : "OncoFAIR CarePlan",
   "fhirVersion" : "5.0.0",
   "mapping" : [{
-    "identity" : "mapping-oncofair-carePlan",
+    "identity" : "mapping-oncofair-careplan",
     "name" : "Mapping du profil OncoFAIR CarePlan"
   },
   {
@@ -123,7 +123,7 @@
         "map" : "clinical.careprovision"
       },
       {
-        "identity" : "mapping-oncofair-carePlan",
+        "identity" : "mapping-oncofair-careplan",
         "map" : "PROTOCOLE PRESCRIT"
       }]
     },
@@ -515,7 +515,7 @@
         "map" : ".id"
       },
       {
-        "identity" : "mapping-oncofair-carePlan",
+        "identity" : "mapping-oncofair-careplan",
         "map" : "Id. protocole prescrit"
       }]
     },
@@ -757,7 +757,7 @@
         "map" : ".statusCode planned = new active = active completed = completed"
       },
       {
-        "identity" : "mapping-oncofair-carePlan",
+        "identity" : "mapping-oncofair-careplan",
         "map" : "Création/Arrêt/Modification/Validation"
       }]
     },
@@ -870,7 +870,7 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
-        "identity" : "mapping-oncofair-carePlan",
+        "identity" : "mapping-oncofair-careplan",
         "map" : "Libellé protocole prescrit"
       }]
     },
@@ -1673,7 +1673,7 @@
         "map" : ".inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=\"annotation\"].value"
       },
       {
-        "identity" : "mapping-oncofair-carePlan",
+        "identity" : "mapping-oncofair-careplan",
         "map" : "Indication"
       }]
     },
@@ -1901,7 +1901,7 @@
         "map" : ".inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=\"annotation\"].value"
       },
       {
-        "identity" : "mapping-oncofair-carePlan",
+        "identity" : "mapping-oncofair-careplan",
         "map" : "Commentaires"
       }]
     },
@@ -2095,7 +2095,7 @@
       "id" : "CarePlan",
       "path" : "CarePlan",
       "mapping" : [{
-        "identity" : "mapping-oncofair-carePlan",
+        "identity" : "mapping-oncofair-careplan",
         "map" : "PROTOCOLE PRESCRIT"
       }]
     },
@@ -2144,7 +2144,7 @@
       "max" : "1",
       "mustSupport" : true,
       "mapping" : [{
-        "identity" : "mapping-oncofair-carePlan",
+        "identity" : "mapping-oncofair-careplan",
         "map" : "Id. protocole prescrit"
       }]
     },
@@ -2153,7 +2153,7 @@
       "path" : "CarePlan.status",
       "mustSupport" : true,
       "mapping" : [{
-        "identity" : "mapping-oncofair-carePlan",
+        "identity" : "mapping-oncofair-careplan",
         "map" : "Création/Arrêt/Modification/Validation"
       }]
     },
@@ -2164,7 +2164,7 @@
       "min" : 1,
       "mustSupport" : true,
       "mapping" : [{
-        "identity" : "mapping-oncofair-carePlan",
+        "identity" : "mapping-oncofair-careplan",
         "map" : "Libellé protocole prescrit"
       }]
     },
@@ -2187,7 +2187,7 @@
       "min" : 0,
       "max" : "1",
       "mapping" : [{
-        "identity" : "mapping-oncofair-carePlan",
+        "identity" : "mapping-oncofair-careplan",
         "map" : "Indication"
       }]
     },
@@ -2204,7 +2204,7 @@
       "min" : 0,
       "max" : "1",
       "mapping" : [{
-        "identity" : "mapping-oncofair-carePlan",
+        "identity" : "mapping-oncofair-careplan",
         "map" : "Commentaires"
       }]
     },

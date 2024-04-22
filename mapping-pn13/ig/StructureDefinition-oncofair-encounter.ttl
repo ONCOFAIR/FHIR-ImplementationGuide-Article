@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIREncounter"] ; # 
   fhir:title [ fhir:v "ONCOFair Encounter"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-04-22T13:59:04+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-04-22T14:39:57+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -29,6 +29,9 @@
   fhir:description [ fhir:v "ONCOFair Encounter"] ; # 
   fhir:fhirVersion [ fhir:v "5.0.0"] ; # 
   fhir:mapping ( [
+     fhir:identity [ fhir:v "mapping-oncofair-encounter" ] ;
+     fhir:name [ fhir:v "Mapping du profil OncoFAIR Encounter" ]
+  ] [
      fhir:identity [ fhir:v "workflow" ] ;
      fhir:uri [ fhir:v "http://hl7.org/fhir/workflow"^^xsd:anyURI ] ;
      fhir:name [ fhir:v "Workflow Pattern" ]
@@ -132,6 +135,9 @@
        ] [
          fhir:identity [ fhir:v "w5" ] ;
          fhir:map [ fhir:v "workflow.encounter" ]
+       ] [
+         fhir:identity [ fhir:v "mapping-oncofair-encounter" ] ;
+         fhir:map [ fhir:v "SEJOUR" ]
        ] )
      ] [
        fhir:id [ fhir:v "Encounter.id" ] ;
@@ -3295,7 +3301,11 @@
   fhir:differential [
      fhir:element ( [
        fhir:id [ fhir:v "Encounter" ] ;
-       fhir:path [ fhir:v "Encounter" ]
+       fhir:path [ fhir:v "Encounter" ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "mapping-oncofair-encounter" ] ;
+         fhir:map [ fhir:v "SEJOUR" ]
+       ] )
      ] [
        fhir:id [ fhir:v "Encounter.identifier" ] ;
        fhir:path [ fhir:v "Encounter.identifier" ] ;

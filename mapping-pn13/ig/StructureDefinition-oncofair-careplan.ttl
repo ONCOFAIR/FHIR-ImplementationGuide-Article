@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIRCarePlan"] ; # 
   fhir:title [ fhir:v "OncoFAIR CarePlan"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-04-22T13:59:04+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-04-22T14:39:57+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -29,7 +29,7 @@
   fhir:description [ fhir:v "OncoFAIR CarePlan"] ; # 
   fhir:fhirVersion [ fhir:v "5.0.0"] ; # 
   fhir:mapping ( [
-     fhir:identity [ fhir:v "mapping-oncofair-carePlan" ] ;
+     fhir:identity [ fhir:v "mapping-oncofair-careplan" ] ;
      fhir:name [ fhir:v "Mapping du profil OncoFAIR CarePlan" ]
   ] [
      fhir:identity [ fhir:v "workflow" ] ;
@@ -136,7 +136,7 @@
          fhir:identity [ fhir:v "w5" ] ;
          fhir:map [ fhir:v "clinical.careprovision" ]
        ] [
-         fhir:identity [ fhir:v "mapping-oncofair-carePlan" ] ;
+         fhir:identity [ fhir:v "mapping-oncofair-careplan" ] ;
          fhir:map [ fhir:v "PROTOCOLE PRESCRIT" ]
        ] )
      ] [
@@ -551,7 +551,7 @@
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".id" ]
        ] [
-         fhir:identity [ fhir:v "mapping-oncofair-carePlan" ] ;
+         fhir:identity [ fhir:v "mapping-oncofair-careplan" ] ;
          fhir:map [ fhir:v "Id. protocole prescrit" ]
        ] )
      ] [
@@ -828,7 +828,7 @@
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".statusCode planned = new active = active completed = completed" ]
        ] [
-         fhir:identity [ fhir:v "mapping-oncofair-carePlan" ] ;
+         fhir:identity [ fhir:v "mapping-oncofair-careplan" ] ;
          fhir:map [ fhir:v "Création/Arrêt/Modification/Validation" ]
        ] )
      ] [
@@ -953,7 +953,7 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "mapping-oncofair-carePlan" ] ;
+         fhir:identity [ fhir:v "mapping-oncofair-careplan" ] ;
          fhir:map [ fhir:v "Libellé protocole prescrit" ]
        ] )
      ] [
@@ -1850,7 +1850,7 @@
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=\"annotation\"].value" ]
        ] [
-         fhir:identity [ fhir:v "mapping-oncofair-carePlan" ] ;
+         fhir:identity [ fhir:v "mapping-oncofair-careplan" ] ;
          fhir:map [ fhir:v "Indication" ]
        ] )
      ] [
@@ -2092,7 +2092,7 @@
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=\"annotation\"].value" ]
        ] [
-         fhir:identity [ fhir:v "mapping-oncofair-carePlan" ] ;
+         fhir:identity [ fhir:v "mapping-oncofair-careplan" ] ;
          fhir:map [ fhir:v "Commentaires" ]
        ] )
      ] [
@@ -2301,7 +2301,7 @@
        fhir:id [ fhir:v "CarePlan" ] ;
        fhir:path [ fhir:v "CarePlan" ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "mapping-oncofair-carePlan" ] ;
+         fhir:identity [ fhir:v "mapping-oncofair-careplan" ] ;
          fhir:map [ fhir:v "PROTOCOLE PRESCRIT" ]
        ] )
      ] [
@@ -2352,7 +2352,7 @@
        fhir:max [ fhir:v "1" ] ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "mapping-oncofair-carePlan" ] ;
+         fhir:identity [ fhir:v "mapping-oncofair-careplan" ] ;
          fhir:map [ fhir:v "Id. protocole prescrit" ]
        ] )
      ] [
@@ -2360,7 +2360,7 @@
        fhir:path [ fhir:v "CarePlan.status" ] ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "mapping-oncofair-carePlan" ] ;
+         fhir:identity [ fhir:v "mapping-oncofair-careplan" ] ;
          fhir:map [ fhir:v "Création/Arrêt/Modification/Validation" ]
        ] )
      ] [
@@ -2370,7 +2370,7 @@
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "mapping-oncofair-carePlan" ] ;
+         fhir:identity [ fhir:v "mapping-oncofair-careplan" ] ;
          fhir:map [ fhir:v "Libellé protocole prescrit" ]
        ] )
      ] [
@@ -2391,7 +2391,7 @@
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "mapping-oncofair-carePlan" ] ;
+         fhir:identity [ fhir:v "mapping-oncofair-careplan" ] ;
          fhir:map [ fhir:v "Indication" ]
        ] )
      ] [
@@ -2406,7 +2406,7 @@
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "mapping-oncofair-carePlan" ] ;
+         fhir:identity [ fhir:v "mapping-oncofair-careplan" ] ;
          fhir:map [ fhir:v "Commentaires" ]
        ] )
      ] [

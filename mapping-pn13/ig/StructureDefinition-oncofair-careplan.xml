@@ -22,7 +22,7 @@
   <name value="OncoFAIRCarePlan"/>
   <title value="OncoFAIR CarePlan"/>
   <status value="draft"/>
-  <date value="2024-04-22T13:59:04+00:00"/>
+  <date value="2024-04-22T14:39:57+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -34,7 +34,7 @@
   <description value="OncoFAIR CarePlan"/>
   <fhirVersion value="5.0.0"/>
   <mapping>
-    <identity value="mapping-oncofair-carePlan"/>
+    <identity value="mapping-oncofair-careplan"/>
     <name value="Mapping du profil OncoFAIR CarePlan"/>
   </mapping>
   <mapping>
@@ -132,7 +132,7 @@
         <map value="clinical.careprovision"/>
       </mapping>
       <mapping>
-        <identity value="mapping-oncofair-carePlan"/>
+        <identity value="mapping-oncofair-careplan"/>
         <map value="PROTOCOLE PRESCRIT"/>
       </mapping>
     </element>
@@ -511,7 +511,7 @@
         <map value=".id"/>
       </mapping>
       <mapping>
-        <identity value="mapping-oncofair-carePlan"/>
+        <identity value="mapping-oncofair-careplan"/>
         <map value="Id. protocole prescrit"/>
       </mapping>
     </element>
@@ -743,7 +743,7 @@
         <map value=".statusCode planned = new active = active completed = completed"/>
       </mapping>
       <mapping>
-        <identity value="mapping-oncofair-carePlan"/>
+        <identity value="mapping-oncofair-careplan"/>
         <map value="Création/Arrêt/Modification/Validation"/>
       </mapping>
     </element>
@@ -851,7 +851,7 @@
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
-        <identity value="mapping-oncofair-carePlan"/>
+        <identity value="mapping-oncofair-careplan"/>
         <map value="Libellé protocole prescrit"/>
       </mapping>
     </element>
@@ -1631,7 +1631,7 @@
         <map value=".inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=&quot;annotation&quot;].value"/>
       </mapping>
       <mapping>
-        <identity value="mapping-oncofair-carePlan"/>
+        <identity value="mapping-oncofair-careplan"/>
         <map value="Indication"/>
       </mapping>
     </element>
@@ -1852,7 +1852,7 @@
         <map value=".inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=&quot;annotation&quot;].value"/>
       </mapping>
       <mapping>
-        <identity value="mapping-oncofair-carePlan"/>
+        <identity value="mapping-oncofair-careplan"/>
         <map value="Commentaires"/>
       </mapping>
     </element>
@@ -2039,7 +2039,7 @@
     <element id="CarePlan">
       <path value="CarePlan"/>
       <mapping>
-        <identity value="mapping-oncofair-carePlan"/>
+        <identity value="mapping-oncofair-careplan"/>
         <map value="PROTOCOLE PRESCRIT"/>
       </mapping>
     </element>
@@ -2084,7 +2084,7 @@
       <max value="1"/>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="mapping-oncofair-carePlan"/>
+        <identity value="mapping-oncofair-careplan"/>
         <map value="Id. protocole prescrit"/>
       </mapping>
     </element>
@@ -2092,7 +2092,7 @@
       <path value="CarePlan.status"/>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="mapping-oncofair-carePlan"/>
+        <identity value="mapping-oncofair-careplan"/>
         <map value="Création/Arrêt/Modification/Validation"/>
       </mapping>
     </element>
@@ -2102,7 +2102,7 @@
       <min value="1"/>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="mapping-oncofair-carePlan"/>
+        <identity value="mapping-oncofair-careplan"/>
         <map value="Libellé protocole prescrit"/>
       </mapping>
     </element>
@@ -2123,7 +2123,7 @@
       <min value="0"/>
       <max value="1"/>
       <mapping>
-        <identity value="mapping-oncofair-carePlan"/>
+        <identity value="mapping-oncofair-careplan"/>
         <map value="Indication"/>
       </mapping>
     </element>
@@ -2138,7 +2138,7 @@
       <min value="0"/>
       <max value="1"/>
       <mapping>
-        <identity value="mapping-oncofair-carePlan"/>
+        <identity value="mapping-oncofair-careplan"/>
         <map value="Commentaires"/>
       </mapping>
     </element>
