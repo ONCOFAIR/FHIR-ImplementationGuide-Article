@@ -27,7 +27,7 @@ Description : "OncoFAIR CarePlan" //TODO
 
 Mapping:  mapping_OncoFAIRCarePlan
 Source:   OncoFAIRCarePlan
-Id:       mapping-oncofair-carePlan
+Id:       mapping-oncofair-careplan
 Title:    "Mapping du profil OncoFAIR CarePlan"
 * -> "PROTOCOLE PRESCRIT"
 

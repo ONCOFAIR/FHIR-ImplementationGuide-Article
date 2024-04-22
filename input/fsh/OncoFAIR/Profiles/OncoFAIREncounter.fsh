@@ -16,3 +16,9 @@ Description : "ONCOFair Encounter" //TODO
 * status MS
 * status ^short = "The stay's status"
 */
+
+Mapping:  mapping_OncoFAIREncounter
+Source:   OncoFAIREncounter
+Id:       mapping-oncofair-encounter
+Title:    "Mapping du profil OncoFAIR Encounter"
+* -> "SEJOUR"

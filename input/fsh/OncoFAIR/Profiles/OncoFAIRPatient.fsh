@@ -30,3 +30,9 @@ Description : "Patient receiving medical treatment in oncology."
 * gender 1..1 MS
 * gender ^short = "The patient's gender"
 */
+
+Mapping:  mapping_OncoFAIRPatient
+Source:   OncoFAIRPatient
+Id:       mapping-oncofair-patient
+Title:    "Mapping du profil OncoFAIR Patient"
+* -> "PATIENT"
