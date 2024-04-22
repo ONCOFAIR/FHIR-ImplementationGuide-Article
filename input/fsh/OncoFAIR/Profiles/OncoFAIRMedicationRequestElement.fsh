@@ -76,9 +76,9 @@ Title:    "Mapping du profil OncoFAIR MedicationRequest Element"
 * effectiveDosePeriod.start -> "D/H début prescription"
 * effectiveDosePeriod.end -> "D/H fin prescription"
 
-* note[description] -> "description"
-* note[indication] -> "indication"
-* note[comment] -> "comment"
+* note[description] -> "Description"
+* note[indication] -> "Indication"
+* note[comment] -> "Commentaires"
 
 * extension[oncofair-mr-element-form] -> "Forme"
 * extension[oncofair-mr-element-supply] -> "Fourniture"
