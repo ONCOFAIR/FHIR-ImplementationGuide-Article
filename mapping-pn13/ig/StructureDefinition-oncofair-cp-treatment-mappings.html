@@ -7,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Treatment day number - Mappings - Onco-FAIR v0.1.0</title>
+    <title>OncoFAIRCPTreatment - Mappings - Onco-FAIR v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -43,8 +43,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2.18"}
-    h3,h4,h5,h6{--heading-prefix:"2.18"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.13"}
+    h3,h4,h5,h6{--heading-prefix:"2.13"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -98,7 +98,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Treatment day number</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>OncoFAIRCPTreatment</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -127,13 +127,13 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="StructureDefinition-treatment-day-number.html">Content</a>
+    <a href="StructureDefinition-oncofair-cp-treatment.html">Content</a>
   </li>
 
 
 
   <li>
-    <a href="StructureDefinition-treatment-day-number-definitions.html">Detailed Descriptions</a>
+    <a href="StructureDefinition-oncofair-cp-treatment-definitions.html">Detailed Descriptions</a>
   </li>
 
 
@@ -152,21 +152,21 @@
 
   
     <li>
-      <a href="StructureDefinition-treatment-day-number.profile.xml.html">XML</a>
+      <a href="StructureDefinition-oncofair-cp-treatment.profile.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="StructureDefinition-treatment-day-number.profile.json.html">JSON</a>
+      <a href="StructureDefinition-oncofair-cp-treatment.profile.json.html">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="StructureDefinition-treatment-day-number.profile.ttl.html">TTL</a>
+      <a href="StructureDefinition-oncofair-cp-treatment.profile.ttl.html">TTL</a>
     </li>
   
 
@@ -175,7 +175,7 @@
 
 
 <a name="root"> </a>
-<h2 id="root">Extension: TreatmentDayNumber - Mappings</h2>
+<h2 id="root">Extension: OncoFAIRCPTreatment - Mappings</h2>
 
   <table class="colsd">
     <tr>
@@ -193,20 +193,38 @@
   </table>
 
 
-<p>Mappings for the treatment-day-number extension.</p>
+<p>Mappings for the oncofair-cp-treatment extension.</p>
 
   <!-- insert intro if present -->
   
 
 
 
-  <a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>TreatmentDayNumber</b></td></tr>
+  <a name="mapping-oncofair-cp-treatment"> </a><h3>Mappings for Mapping de l'extension OncoFAIR CP Treatment ()</h3><table class="grid">
+ <tr><td colspan="3"><b>OncoFAIRCPTreatment</b></td></tr>
+ <tr><td>Extension</td><td>PROTOCOLE PRESCRIT</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension (treatmentRank)</td><td>Numéro cure</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension (dayRank)</td><td>Numéro jour</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension (dateTimeReference)</td><td>D/H référence</td> </tr>
+</table>
+<a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
+ <tr><td colspan="3"><b>OncoFAIRCPTreatment</b></td></tr>
  <tr><td>Extension</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension (treatmentRank)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value[x]</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension (dayRank)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value[x]</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension (dateTimeReference)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value[x]</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;url</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;value[x]</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;value[x] (valueInteger)</td><td>N/A</td> </tr>
 </table>
 
 
@@ -234,7 +252,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Apr 22, 2024 07:52+0000">2024-04-22</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Apr 22, 2024 09:18+0000">2024-04-22</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

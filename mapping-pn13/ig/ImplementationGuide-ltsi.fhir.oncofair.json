@@ -10,7 +10,7 @@
   "name" : "OncoFAIR",
   "title" : "Onco-FAIR",
   "status" : "draft",
-  "date" : "2024-04-22T07:52:09+00:00",
+  "date" : "2024-04-22T09:18:07+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -306,6 +306,30 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/oncofair-cp-Pharmacist"
+      },
+      "name" : "OncoFAIRCPPharmacist",
+      "description" : "Extension créée dans le cadre d'OncoFAIR",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-cp-treatment"
+      },
+      "name" : "OncoFAIRCPTreatment",
+      "description" : "Extension créée dans le cadre d'OncoFAIR",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/oncofair-mr-element-form"
       },
       "name" : "OncoFAIRMRElementForm",
@@ -406,30 +430,6 @@
       },
       "name" : "SNOMED CT Codes",
       "description" : "SNOMED CT code system.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/treatment-cycle-number"
-      },
-      "name" : "Treatment cycle number",
-      "description" : "Treatment cycle number.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/treatment-day-number"
-      },
-      "name" : "Treatment day number",
-      "description" : "Treatment day number.",
       "isExample" : false
     }],
     "page" : {

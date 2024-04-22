@@ -11,7 +11,7 @@
   <name value="OncoFAIR"/>
   <title value="Onco-FAIR"/>
   <status value="draft"/>
-  <date value="2024-04-22T07:52:09+00:00"/>
+  <date value="2024-04-22T09:18:07+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -280,6 +280,28 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/oncofair-cp-Pharmacist"/>
+      </reference>
+      <name value="OncoFAIRCPPharmacist"/>
+      <description value="Extension créée dans le cadre d'OncoFAIR"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/oncofair-cp-treatment"/>
+      </reference>
+      <name value="OncoFAIRCPTreatment"/>
+      <description value="Extension créée dans le cadre d'OncoFAIR"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/oncofair-mr-element-form"/>
       </reference>
       <name value="OncoFAIRMRElementForm"/>
@@ -372,28 +394,6 @@
       </reference>
       <name value="SNOMED CT Codes"/>
       <description value="SNOMED CT code system."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/treatment-cycle-number"/>
-      </reference>
-      <name value="Treatment cycle number"/>
-      <description value="Treatment cycle number."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/treatment-day-number"/>
-      </reference>
-      <name value="Treatment day number"/>
-      <description value="Treatment day number."/>
       <isExample value="false"/>
     </resource>
     <page>

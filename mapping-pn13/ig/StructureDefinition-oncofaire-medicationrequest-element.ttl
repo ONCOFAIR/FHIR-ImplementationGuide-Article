@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIRMedicationRequestElement"] ; # 
   fhir:title [ fhir:v "OncoFAIR MedicationRequest Element"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-04-22T07:52:09+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-04-22T09:18:07+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -2801,7 +2801,7 @@
          fhir:map [ fhir:v ".inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=\"annotation\"].value" ]
        ] [
          fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-element" ] ;
-         fhir:map [ fhir:v "description" ]
+         fhir:map [ fhir:v "Description" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationRequest.note:description.id" ] ;
@@ -3042,7 +3042,7 @@
          fhir:map [ fhir:v ".inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=\"annotation\"].value" ]
        ] [
          fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-element" ] ;
-         fhir:map [ fhir:v "indication" ]
+         fhir:map [ fhir:v "Indication" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationRequest.note:indication.id" ] ;
@@ -3283,7 +3283,7 @@
          fhir:map [ fhir:v ".inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=\"annotation\"].value" ]
        ] [
          fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-element" ] ;
-         fhir:map [ fhir:v "comment" ]
+         fhir:map [ fhir:v "Commentaires" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationRequest.note:comment.id" ] ;
@@ -6911,7 +6911,7 @@
        fhir:max [ fhir:v "1" ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-element" ] ;
-         fhir:map [ fhir:v "description" ]
+         fhir:map [ fhir:v "Description" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationRequest.note:description.id" ] ;
@@ -6926,7 +6926,7 @@
        fhir:max [ fhir:v "1" ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-element" ] ;
-         fhir:map [ fhir:v "indication" ]
+         fhir:map [ fhir:v "Indication" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationRequest.note:indication.id" ] ;
@@ -6941,7 +6941,7 @@
        fhir:max [ fhir:v "1" ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-element" ] ;
-         fhir:map [ fhir:v "comment" ]
+         fhir:map [ fhir:v "Commentaires" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationRequest.note:comment.id" ] ;

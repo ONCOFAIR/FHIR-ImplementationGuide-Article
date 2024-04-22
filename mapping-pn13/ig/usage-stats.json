@@ -4,6 +4,131 @@
   "fhirVersion": "5.0.0",
   "extensions": [
     {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-cp-Pharmacist",
+      "title": "OncoFAIRCPPharmacist",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "integer64",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "CodeableReference",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "RatioRange",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Availability",
+        "ExtendedContactDetail",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-cp-treatment",
+      "title": "OncoFAIRCPTreatment",
+      "types": [
+        "integer",
+        "integer",
+        "dateTime",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "integer64",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "CodeableReference",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "RatioRange",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Availability",
+        "ExtendedContactDetail",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
       "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-form",
       "title": "OncoFAIRMRElementForm",
       "types": [
@@ -91,22 +216,6 @@
       "title": "OncoFAIRMRPrescriptionDateTime",
       "types": [
         "dateTime"
-      ]
-    },
-    {
-      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/treatment-cycle-number",
-      "title": "Treatment cycle number",
-      "types": [
-        "integer",
-        "integer"
-      ]
-    },
-    {
-      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/treatment-day-number",
-      "title": "Treatment day number",
-      "types": [
-        "integer",
-        "integer"
       ]
     }
   ],
@@ -200,6 +309,12 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-cp-Pharmacist": [
+      "CarePlan"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-cp-treatment": [
+      "CarePlan"
     ],
     "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-form": [
       "MedicationRequest"

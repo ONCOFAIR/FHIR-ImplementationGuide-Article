@@ -9,6 +9,17 @@ package IG #DDDDDD{
 
         class OncoFAIRCarePlan{
 
+             CarePlan.extension => [1..None]
+             CarePlan.extension:oncofair-cp-treatment => <&plus>[1..1]
+             CarePlan.extension:oncofair-cp-pharmacist => <&plus>[0..1]
+             CarePlan.identifier => [1..1]
+             CarePlan.status => [None..None]
+             CarePlan.title => [1..None]
+             CarePlan.note => [None..None]
+             CarePlan.note:indication => [0..1]
+             CarePlan.note:indication.id => [1..None]
+             CarePlan.note:comment => [0..1]
+             CarePlan.note:comment.id => [1..None]
         } 
 
         class OncoFAIREncounter{
@@ -121,12 +132,45 @@ package IG #DDDDDD{
      }
      package extension #paleturquoise {
 
+     OncoFAIRCarePlan -[#black,dashed,thickness=2]-> OncoFAIRCPTreatment
+     OncoFAIRCarePlan -[#black,dashed,thickness=2]-> OncoFAIRCPPharmacist
      OncoFAIRMedicationRequestPrescription -[#black,dashed,thickness=2]-> OncoFAIRMRPrescriptionDateTime
      OncoFAIRMedicationRequestElement -[#black,dashed,thickness=2]-> OncoFAIRMRElementForm
      OncoFAIRMedicationRequestElement -[#black,dashed,thickness=2]-> OncoFAIRMRElementSupply
      OncoFAIRMedicationRequestElement -[#black,dashed,thickness=2]-> OncoFAIRMRElementRank
      OncoFAIRMedicationRequestElement -[#black,dashed,thickness=2]-> OncoFAIRMRElementGoNogo
 
+        class OncoFAIRCPPharmacist{
+
+          Extension.extension:pharmacistValidation => [0..1]
+          Extension.extension:pharmacistValidation.extension => [None..0]
+          Extension.extension:pharmacistValidation.url => [None..None]
+          Extension.extension:pharmacistValidation.value[x] => [None..None]
+          Extension.extension:pharmacistProposal => [0..1]
+          Extension.extension:pharmacistProposal.extension => [None..0]
+          Extension.extension:pharmacistProposal.url => [None..None]
+          Extension.extension:pharmacistProposal.value[x] => [None..None]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..0]
+        } 
+        class OncoFAIRCPTreatment{
+
+          Extension.extension => [1..None]
+          Extension.extension:treatmentRank => [0..1]
+          Extension.extension:treatmentRank.extension => [None..0]
+          Extension.extension:treatmentRank.url => [None..None]
+          Extension.extension:treatmentRank.value[x] => [None..None]
+          Extension.extension:dayRank => [0..1]
+          Extension.extension:dayRank.extension => [None..0]
+          Extension.extension:dayRank.url => [None..None]
+          Extension.extension:dayRank.value[x] => [None..None]
+          Extension.extension:dateTimeReference => [1..1]
+          Extension.extension:dateTimeReference.extension => [None..0]
+          Extension.extension:dateTimeReference.url => [None..None]
+          Extension.extension:dateTimeReference.value[x] => [None..None]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..0]
+        } 
         class OncoFAIRMRElementForm{
 
           Extension.extension => [None..0]
@@ -163,20 +207,6 @@ package IG #DDDDDD{
           Extension.extension => [None..0]
           Extension.url => [None..None]
           Extension.value[x] => [None..None]
-        } 
-        class TreatmentCycleNumber{
-
-          Extension.extension => [None..0]
-          Extension.url => [None..None]
-          Extension.value[x] => [1..None]
-          Extension.value[x]:valueInteger => [1..1]
-        } 
-        class TreatmentDayNumber{
-
-          Extension.extension => [None..0]
-          Extension.url => [None..None]
-          Extension.value[x] => [1..None]
-          Extension.value[x]:valueInteger => [1..1]
          }
      }
      package valueset #PaleVioletRed{
