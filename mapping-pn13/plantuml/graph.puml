@@ -13,6 +13,8 @@ package IG #DDDDDD{
 
         class OncoFAIREncounter{
 
+             Encounter.identifier => [1..None]
+             Encounter.identifier.value => [None..None]
              Encounter.subject => [1..None]
         } 
 
@@ -61,6 +63,7 @@ package IG #DDDDDD{
 
         class OncoFAIRPatient{
 
+             Patient.identifier => [1..None]
         } 
 
         class OncoFAIRMedicationRequestComponent{
