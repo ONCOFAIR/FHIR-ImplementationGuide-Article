@@ -20,7 +20,7 @@ Mapping:  mapping_OncoFAIRMedication
 Source:   OncoFAIRMedication
 Id:       mapping-oncofair-medication
 Title:    "Mapping du profil OncoFAIR Medication"
-* -> "COMPOSANT PRESCRIT, COMPOSANT ADMINISTRE"
+* -> "COMPOSANT"
 
 * code -> "Code composant"
 * batch.lotNumber -> "Lot"

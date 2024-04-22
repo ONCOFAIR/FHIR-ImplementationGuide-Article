@@ -48,7 +48,7 @@ Mapping:  mapping_OncoFAIRMedicationAdministrationElement
 Source:   OncoFAIRMedicationAdministrationElement
 Id:       mapping-oncofair-medicationradministration-element
 Title:    "Mapping du profil OncoFAIR MedicationAdministration Element"
-* -> "ELEMENT D'ADMINISTRATION'"
+* -> "ELEMENT ADMINISTRATION"
 
 * partOf -> "Lien classe COMPTE RENDU D'ADMINISTRATION"
 * device -> "Dispositifs associés"

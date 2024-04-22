@@ -16,7 +16,7 @@ Mapping:  mapping_OncoFAIRMedicationAdministrationReport
 Source:   OncoFAIRMedicationAdministrationReport
 Id:       mapping-oncofair-medicationadministration-report
 Title:    "Mapping du profil OncoFAIR MedicationAdministration Report"
-* -> "COMPTE RENDU D'ADMINSITRATION"
+* -> "COMPTE RENDU ADMINSITRATION"
 
 * encounter -> "Lien classe SEJOUR"
 * performer.actor -> "IdP. administrateur"

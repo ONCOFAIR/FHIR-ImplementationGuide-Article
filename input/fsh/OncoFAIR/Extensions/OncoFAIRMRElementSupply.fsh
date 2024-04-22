@@ -9,5 +9,4 @@ Mapping:  mapping_OncoFAIRMRElementSupply
 Source:   OncoFAIRMRElementSupply
 Id:       mapping-oncofair-mr-element-supply
 Title:    "Mapping de l'extension OncoFAIR MR Element Supply"
-* -> "ELEMENT DE PRESCRIPTION"
 * value[x] -> "Fourniture"

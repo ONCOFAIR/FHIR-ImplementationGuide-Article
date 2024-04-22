@@ -14,6 +14,5 @@ Mapping:  mapping_OncoFAIRMRElementGoNogo
 Source:   OncoFAIRMRElementGoNogo
 Id:       mapping-oncofair-mr-element-gonogo
 Title:    "Mapping de l'extension OncoFAIR MR Element GoNogo"
-* -> "ELEMENT DE PRESCRIPTION"
 * extension[GoNogoStatus] -> "GoNogo"
 * extension[GoNogoReasonWaiting] -> "Motif attente"

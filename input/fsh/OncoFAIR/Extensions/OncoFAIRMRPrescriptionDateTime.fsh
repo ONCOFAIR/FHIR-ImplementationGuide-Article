@@ -9,5 +9,4 @@ Mapping:  mapping_OncoFAIRMRPrescriptionDateTime
 Source:   OncoFAIRMRPrescriptionDateTime
 Id:       mapping-oncofair-mr-prescription-datetime
 Title:    "Mapping de l'extension OncoFAIR MR Element Rank"
-* -> "PRESCRIPTION"
 * value[x] -> "D/H prescription"

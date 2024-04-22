@@ -10,5 +10,4 @@ Mapping:  mapping_OncoFAIRMAElementExpirationDate
 Source:   OncoFAIRMAElementExpirationDate
 Id:       mapping-oncofair-ma-element-expirationdate
 Title:    "Mapping de l'extension OncoFAIR MA Element ExpirationDate"
-* -> "ELEMENT D'ADMINISTRATION"
 * value[x] -> "Date péremption"

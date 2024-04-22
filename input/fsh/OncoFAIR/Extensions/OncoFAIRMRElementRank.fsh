@@ -9,5 +9,4 @@ Mapping:  mapping_OncoFAIRMRElementRank
 Source:   OncoFAIRMRElementRank
 Id:       mapping-oncofair-mr-element-rank
 Title:    "Mapping de l'extension OncoFAIR MR Element Rank"
-* -> "ELEMENT DE PRESCRIPTION"
 * value[x] -> "Rang élément prescription"

@@ -19,7 +19,6 @@ Mapping:  mapping_OncoFAIRCPTreatment
 Source:   OncoFAIRCPTreatment
 Id:       mapping-oncofair-cp-treatment
 Title:    "Mapping de l'extension OncoFAIR CP Treatment"
-* -> "PROTOCOLE PRESCRIT"
 * extension[treatmentRank] -> "Numéro cure"
 * extension[dayRank] -> "Numéro jour"
 * extension[dateTimeReference] -> "D/H référence"

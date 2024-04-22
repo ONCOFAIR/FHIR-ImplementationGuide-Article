@@ -12,5 +12,4 @@ Mapping:  mapping_OncoFAIRElementForm
 Source:   OncoFAIRElementForm
 Id:       mapping-oncofair-element-form
 Title:    "Mapping de l'extension OncoFAIR Element Form"
-* -> "ELEMENT D'ADMINISTRATION, ELEMENT DE PRESCRIPTION"
 * value[x] -> "Forme"

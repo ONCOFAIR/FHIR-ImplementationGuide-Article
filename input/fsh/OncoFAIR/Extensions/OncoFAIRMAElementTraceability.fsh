@@ -15,6 +15,5 @@ Mapping:  mapping_OncoFAIRMAElementTraceability
 Source:   OncoFAIRMAElementTraceability
 Id:       mapping-oncofair-ma-element-traceability
 Title:    "Mapping de l'extension OncoFAIR MA Element Traceability"
-* -> "ELEMENT D'ADMINISTRATION"
 * extension[batchNumber] -> "Lot"
 * extension[serialNumber] -> "Série"

@@ -10,5 +10,4 @@ Mapping:  mapping_OncoFAIRMAElementUrgent
 Source:   OncoFAIRMAElementUrgent
 Id:       mapping-oncofair-ma-element-urgent
 Title:    "Mapping de l'extension OncoFAIR MA Element Urgent"
-* -> "ELEMENT D'ADMINISTRATION"
 * value[x] -> "Urgent"

@@ -49,7 +49,7 @@ Mapping:  mapping_OncoFAIRMedicationRequestElement
 Source:   OncoFAIRMedicationRequestElement
 Id:       mapping-oncofair-medicationrequest-element
 Title:    "Mapping du profil OncoFAIR MedicationRequest Element"
-* -> "ELEMENT DE PRESCRIPTION"
+* -> "ELEMENT PRESCRIPTION"
 
 * basedOn -> "Lien classe PRESCRIPTION"
 

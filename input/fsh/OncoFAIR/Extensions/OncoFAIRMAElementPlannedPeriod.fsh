@@ -11,6 +11,5 @@ Mapping:  mapping_OncoFAIRMAElementPlannedPeriod
 Source:   OncoFAIRMAElementPlannedPeriod
 Id:       mapping-oncofair-ma-element-plannedperiod
 Title:    "Mapping de l'extension OncoFAIR MA Element Planned DateTime"
-* -> "ELEMENT D'ADMINISTRATION"
 * value[x].start -> "D/H début prévue"
 * value[x].end -> "D/H fin prévue"
