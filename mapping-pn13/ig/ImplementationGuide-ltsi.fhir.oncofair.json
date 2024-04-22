@@ -10,7 +10,7 @@
   "name" : "OncoFAIR",
   "title" : "Onco-FAIR",
   "status" : "draft",
-  "date" : "2024-04-22T09:18:07+00:00",
+  "date" : "2024-04-22T13:59:04+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -330,9 +330,57 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/oncofair-mr-element-form"
+        "reference" : "StructureDefinition/oncofair-element-form"
       },
-      "name" : "OncoFAIRMRElementForm",
+      "name" : "OncoFAIRElementForm",
+      "description" : "Extension créée dans le cadre d'OncoFAIR",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-ma-element-expirationdate"
+      },
+      "name" : "OncoFAIRMAElementExpirationDate",
+      "description" : "Extension créée dans le cadre d'OncoFAIR",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-ma-element-plannedperiod"
+      },
+      "name" : "OncoFAIRMAElementPlannedPeriod",
+      "description" : "Extension créée dans le cadre d'OncoFAIR",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-ma-element-traceability"
+      },
+      "name" : "OncoFAIRMAElementTraceability",
+      "description" : "Extension créée dans le cadre d'OncoFAIR",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-ma-element-urgent"
+      },
+      "name" : "OncoFAIRMAElementUrgent",
       "description" : "Extension créée dans le cadre d'OncoFAIR",
       "isExample" : false
     },

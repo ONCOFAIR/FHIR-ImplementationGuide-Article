@@ -27,15 +27,15 @@ dom-4dom-3dom-5","","N/A"
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"MedicationRequest.extension:oncofair-mr-element-form","MedicationRequest.extension","oncofair-mr-element-form","","",0,1,"Y","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-form]]} {[]}
+"MedicationRequest.extension:oncofair-element-form","MedicationRequest.extension","oncofair-element-form","","",0,1,"Y","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-element-form]]} {[]}
 ","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","Forme"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "MedicationRequest.extension:oncofair-mr-element-supply","MedicationRequest.extension","oncofair-mr-element-supply","","",0,1,"Y","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-supply]]} {[]}
 ","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","Fourniture"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "MedicationRequest.extension:oncofair-mr-element-rank","MedicationRequest.extension","oncofair-mr-element-rank","","",0,1,"Y","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-rank]]} {[]}
 ","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","Rang élément prescription"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "MedicationRequest.extension:oncofair-mr-element-gonogo","MedicationRequest.extension","oncofair-mr-element-gonogo","","",0,1,"Y","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-gonogo]]} {[]}
 ","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -202,7 +202,7 @@ string {[]} {[]}","Individual responsible for the annotation","The individual re
 ","Libellé élément prescription","Act.text","N/A"
 "MedicationRequest.note:description","MedicationRequest.note","description","","",0,1,"","","","Annotation {[]} {[]}
 ","Information about the prescription","Extra information about the prescription that could not be conveyed by the other attributes.","","","","","","","","","",,,,,"",,,,"MedicationRequest.note",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","Description","Request.note","Message/Body/NewRx/MedicationPrescribed/Note",".inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=""annotation""].value"
+","Libellé élément prescription","Request.note","Message/Body/NewRx/MedicationPrescribed/Note",".inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=""annotation""].value"
 "MedicationRequest.note:description.id","MedicationRequest.note.id","","","",1,1,"","","","id {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","<valueId xmlns=""http://hl7.org/fhir"" value=""description""/>","","","",,,,,"",,,,"Element.id",0,1,"ele-1
 ","","n/a"

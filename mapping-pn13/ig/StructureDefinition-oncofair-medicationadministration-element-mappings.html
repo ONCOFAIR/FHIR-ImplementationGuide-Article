@@ -200,7 +200,29 @@
 
 
 
-  <a name="workflow"> </a><h3>Mappings for Workflow Pattern (<a href="http://hl7.org/fhir/workflow.html">http://hl7.org/fhir/workflow</a>)</h3><table class="grid">
+  <a name="mapping-oncofair-medicationradministration-element"> </a><h3>Mappings for Mapping du profil OncoFAIR MedicationAdministration Element ()</h3><table class="grid">
+ <tr><td colspan="3"><b>OncoFAIRMedicationAdministrationElement</b></td></tr>
+ <tr><td>MedicationAdministration</td><td>ELEMENT D'ADMINISTRATION'</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>Id. élément administration</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;partOf</td><td>Lien classe COMPTE RENDU D'ADMINISTRATION</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;category</td><td>Code élément administration</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;category (code)</td><td>Code élément administration</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;category (form)</td><td>Forme</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;category (nature)</td><td>Présentation</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;occurence[x]</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;occurence[x] (occurencePeriod)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;start</td><td>D/H début effective</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</td><td>D/H fin effective</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;request</td><td>Id. élément prescription</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;device</td><td>Dispositifs associés</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note (description)</td><td>Libellé élément administration</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note (comment)</td><td>Commentaires</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;dosage</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;site</td><td>Lieu administration</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;route</td><td>Voie administration</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;method</td><td>Type élément administration</td> </tr>
+</table>
+<a name="workflow"> </a><h3>Mappings for Workflow Pattern (<a href="http://hl7.org/fhir/workflow.html">http://hl7.org/fhir/workflow</a>)</h3><table class="grid">
  <tr><td colspan="3"><b>OncoFAIRMedicationAdministrationElement</b></td></tr>
  <tr><td>MedicationAdministration</td><td>Event</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>Event.identifier</td> </tr>
@@ -211,12 +233,15 @@
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>Event.subject</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;encounter</td><td>Event.encounter</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;occurence[x]</td><td>Event.occurrence[x]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;occurence[x] (occurencePeriod)</td><td>Event.occurrence[x]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;performer</td><td>Event.performer</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function</td><td>Event.performer.function</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;actor</td><td>Event.performer.actor</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reason</td><td>Event.reason</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;request</td><td>Event.basedOn</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>Event.note</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note (description)</td><td>Event.note</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note (comment)</td><td>Event.note</td> </tr>
 </table>
 <a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
  <tr><td colspan="3"><b>OncoFAIRMedicationAdministrationElement</b></td></tr>
@@ -228,6 +253,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;encounter</td><td>FiveWs.context</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;supportingInformation</td><td>FiveWs.context</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;occurence[x]</td><td>FiveWs.done[x]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;occurence[x] (occurencePeriod)</td><td>FiveWs.done[x]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;recorded</td><td>FiveWs.recorded</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;performer</td><td>FiveWs.actor</td> </tr>
 </table>
@@ -236,19 +262,34 @@
  <tr><td>MedicationAdministration</td><td>Entity, Role, or Act,SubstanceAdministration</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;text</td><td>Act.text?</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;extension</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>.id</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;use</td><td>Role.code or implied by context</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>Role.code or implied by context</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>II.root or Role.id.root</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value</td><td>II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period</td><td>Role.effectiveTime or implied by context</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assigner</td><td>II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;basedOn</td><td>.outboundRelationship[typeCode=FLFS].target</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;partOf</td><td>.outboundRelationship[typeCode=COMP]/target[classCode=SBADM or PROC,moodCode=EVN]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>.statusCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;statusReason</td><td>.outboundRelationship[typeCode=RSON]/target[classCode=OBS,moodCode=EVN, code=&quot;reason not given&quot;].value</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;category</td><td>.inboundRelationship[typeCode=COMP].source[classCode=OBS, moodCode=EVN, code=&quot;type of medication usage&quot;].value</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;category (code)</td><td>.inboundRelationship[typeCode=COMP].source[classCode=OBS, moodCode=EVN, code=&quot;type of medication usage&quot;].value</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;category (form)</td><td>.inboundRelationship[typeCode=COMP].source[classCode=OBS, moodCode=EVN, code=&quot;type of medication usage&quot;].value</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;category (nature)</td><td>.inboundRelationship[typeCode=COMP].source[classCode=OBS, moodCode=EVN, code=&quot;type of medication usage&quot;].value</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;medication</td><td>.participation[typeCode=CSM].role[classCode=ADMM]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>.participation[typeCode=SBJ].role[classCode=PAT]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;encounter</td><td>.inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN, code=&quot;type of encounter or episode&quot;]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;supportingInformation</td><td>.outboundRelationship[typeCode=PERT].target[A_SupportingClinicalStatement CMET minimal with many different choices of classCodes(ORG, ENC, PROC, SPLY, SBADM, OBS) and each of the act class codes draws from one or more of the following moodCodes (EVN, DEF, INT PRMS, RQO, PRP, APT, ARQ, GOL)]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;occurence[x]</td><td>.effectiveTime</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;occurence[x] (occurencePeriod)</td><td>.effectiveTime</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;start</td><td>./low</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</td><td>./high</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;recorded</td><td>.participation[typeCode=AUT].time</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;performer</td><td>.participation[typeCode=PRF]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
@@ -260,6 +301,18 @@
  <tr><td>&nbsp;&nbsp;&nbsp;request</td><td>InFullfillmentOf-&gt;SubstanceAdministration</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;device</td><td>device-&gt;Access  OR device-&gt;AssignedDevice</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>.inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=&quot;annotation&quot;].value</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note (description)</td><td>.inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=&quot;annotation&quot;].value</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;author[x]</td><td>Act.participant[typeCode=AUT].role</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;time</td><td>Act.effectiveTime</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>Act.text</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note (comment)</td><td>.inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=&quot;annotation&quot;].value</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;author[x]</td><td>Act.participant[typeCode=AUT].role</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;time</td><td>Act.effectiveTime</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>Act.text</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;dosage</td><td>component-&gt;SubstanceAdministrationEvent</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
@@ -275,16 +328,35 @@
 <a name="v2"> </a><h3>Mappings for HL7 V2 Mapping (<a href="http://hl7.org/comparison-v2.html">http://hl7.org/v2</a>)</h3><table class="grid">
  <tr><td colspan="3"><b>OncoFAIRMedicationAdministrationElement</b></td></tr>
  <tr><td>MedicationAdministration</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;use</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>CX.5</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>CX.4 / EI-2-4</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value</td><td>CX.1 / EI.1</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period</td><td>CX.7 + CX.8</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assigner</td><td>CX.4 / (CX.4,CX.9,CX.10)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>RXA-20 Completion Status</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;statusReason</td><td>RXA-9 Administration Notes / RXA-18 Substance/Treatment Refusal Reason</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;medication</td><td>RXA-5 Administered Code</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>PID-3 Patient ID List</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;encounter</td><td>PV1-19 Visit Number</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;occurence[x]</td><td>RXA-3 Date/Time Start of Administration / RXA-4 Date/Time End of Administration</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;occurence[x] (occurencePeriod)</td><td>RXA-3 Date/Time Start of Administration / RXA-4 Date/Time End of Administration</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;start</td><td>DR.1</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</td><td>DR.2</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;performer</td><td>RXA-10 Administering Provider / PRT-5 Participation Person: PRT-4 Participation='AP' (RXA-10 is deprecated)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reason</td><td>RXE-27 Give Indication</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;request</td><td>ORC-2 Placer Order Number / ORC-3 Filler Order Number</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;device</td><td>PRT-10 Participation Device / RXR-3 Administrative Device</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note (description)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;author[x]</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;time</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note (comment)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;author[x]</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;time</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;dosage</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;site</td><td>RXR-2 Administration Site / RXR-6 Administration Site Modifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;route</td><td>RXR-1 Route</td> </tr>
@@ -318,7 +390,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Apr 22, 2024 09:18+0000">2024-04-22</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Apr 22, 2024 13:59+0000">2024-04-22</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

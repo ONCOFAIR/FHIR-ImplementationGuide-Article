@@ -12,7 +12,7 @@
   <sch:pattern>
     <sch:title>f:MedicationRequest</sch:title>
     <sch:rule context="f:MedicationRequest">
-      <sch:assert test="count(f:extension[@url = 'http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-form']) &lt;= 1">extension with URL = 'http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-form': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-element-form']) &lt;= 1">extension with URL = 'http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-element-form': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-supply']) &lt;= 1">extension with URL = 'http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-supply': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-rank']) &lt;= 1">extension with URL = 'http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-rank': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-gonogo']) &lt;= 1">extension with URL = 'http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-gonogo': maximum cardinality of 'extension' is 1</sch:assert>

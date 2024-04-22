@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIRMedicationRequestPrescription"] ; # 
   fhir:title [ fhir:v "OncoFAIR MedicationRequest Prescription"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-04-22T09:18:07+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-04-22T13:59:04+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -422,8 +422,8 @@
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-prescription" ] ;
-         fhir:map [ fhir:v "D/H precription" ]
+         fhir:identity [ fhir:v "mapping-oncofair-mr-prescription-datetime" ] ;
+         fhir:map [ fhir:v "PRESCRIPTION" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationRequest.modifierExtension" ] ;
@@ -3713,11 +3713,7 @@
            fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-prescription-datetime>
          ] )
        ] ) ;
-       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-prescription" ] ;
-         fhir:map [ fhir:v "D/H precription" ]
-       ] )
+       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "MedicationRequest.identifier" ] ;
        fhir:path [ fhir:v "MedicationRequest.identifier" ] ;

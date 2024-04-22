@@ -16,7 +16,7 @@
   <version value="0.1.0"/>
   <name value="OncoFAIRMRElementRank"/>
   <status value="draft"/>
-  <date value="2024-04-22T09:18:07+00:00"/>
+  <date value="2024-04-22T13:59:04+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -27,6 +27,10 @@
   </contact>
   <description value="Extension créée dans le cadre d'OncoFAIR"/>
   <fhirVersion value="5.0.0"/>
+  <mapping>
+    <identity value="mapping-oncofair-mr-element-rank"/>
+    <name value="Mapping de l'extension OncoFAIR MR Element Rank"/>
+  </mapping>
   <mapping>
     <identity value="rim"/>
     <uri value="http://hl7.org/v3"/>
@@ -68,6 +72,10 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
       <isModifier value="false"/>
+      <mapping>
+        <identity value="mapping-oncofair-mr-element-rank"/>
+        <map value="ELEMENT DE PRESCRIPTION"/>
+      </mapping>
     </element>
     <element id="Extension.id">
       <path value="Extension.id"/>
@@ -189,12 +197,20 @@
         <identity value="rim"/>
         <map value="N/A"/>
       </mapping>
+      <mapping>
+        <identity value="mapping-oncofair-mr-element-rank"/>
+        <map value="Rang élément prescription"/>
+      </mapping>
     </element>
   </snapshot>
   <differential>
     <element id="Extension">
       <path value="Extension"/>
       <definition value="Extension créée dans le cadre d'OncoFAIR"/>
+      <mapping>
+        <identity value="mapping-oncofair-mr-element-rank"/>
+        <map value="ELEMENT DE PRESCRIPTION"/>
+      </mapping>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>
@@ -209,6 +225,10 @@
       <type>
         <code value="integer"/>
       </type>
+      <mapping>
+        <identity value="mapping-oncofair-mr-element-rank"/>
+        <map value="Rang élément prescription"/>
+      </mapping>
     </element>
   </differential>
 </StructureDefinition>

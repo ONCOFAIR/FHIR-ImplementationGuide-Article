@@ -13,7 +13,7 @@
   "version" : "0.1.0",
   "name" : "OncoFAIRMRElementRank",
   "status" : "draft",
-  "date" : "2024-04-22T09:18:07+00:00",
+  "date" : "2024-04-22T13:59:04+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -25,6 +25,10 @@
   "description" : "Extension créée dans le cadre d'OncoFAIR",
   "fhirVersion" : "5.0.0",
   "mapping" : [{
+    "identity" : "mapping-oncofair-mr-element-rank",
+    "name" : "Mapping de l'extension OncoFAIR MR Element Rank"
+  },
+  {
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",
     "name" : "RIM Mapping"
@@ -65,7 +69,11 @@
         "expression" : "extension.exists() != value.exists()",
         "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
-      "isModifier" : false
+      "isModifier" : false,
+      "mapping" : [{
+        "identity" : "mapping-oncofair-mr-element-rank",
+        "map" : "ELEMENT DE PRESCRIPTION"
+      }]
     },
     {
       "id" : "Extension.id",
@@ -192,6 +200,10 @@
       "mapping" : [{
         "identity" : "rim",
         "map" : "N/A"
+      },
+      {
+        "identity" : "mapping-oncofair-mr-element-rank",
+        "map" : "Rang élément prescription"
       }]
     }]
   },
@@ -199,7 +211,11 @@
     "element" : [{
       "id" : "Extension",
       "path" : "Extension",
-      "definition" : "Extension créée dans le cadre d'OncoFAIR"
+      "definition" : "Extension créée dans le cadre d'OncoFAIR",
+      "mapping" : [{
+        "identity" : "mapping-oncofair-mr-element-rank",
+        "map" : "ELEMENT DE PRESCRIPTION"
+      }]
     },
     {
       "id" : "Extension.extension",
@@ -216,6 +232,10 @@
       "path" : "Extension.value[x]",
       "type" : [{
         "code" : "integer"
+      }],
+      "mapping" : [{
+        "identity" : "mapping-oncofair-mr-element-rank",
+        "map" : "Rang élément prescription"
       }]
     }]
   }

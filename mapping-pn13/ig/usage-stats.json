@@ -129,10 +129,97 @@
       ]
     },
     {
-      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-form",
-      "title": "OncoFAIRMRElementForm",
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-element-form",
+      "title": "OncoFAIRElementForm",
       "types": [
         "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-expirationdate",
+      "title": "OncoFAIRMAElementExpirationDate",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-plannedperiod",
+      "title": "OncoFAIRMAElementPlannedPeriod",
+      "types": [
+        "Period",
+        "id",
+        "Extension",
+        "dateTime",
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-traceability",
+      "title": "OncoFAIRMAElementTraceability",
+      "types": [
+        "string",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "integer64",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "CodeableReference",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "RatioRange",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Availability",
+        "ExtendedContactDetail",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-urgent",
+      "title": "OncoFAIRMAElementUrgent",
+      "types": [
+        "boolean"
       ]
     },
     {
@@ -316,8 +403,20 @@
     "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-cp-treatment": [
       "CarePlan"
     ],
-    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-form": [
+    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-element-form": [
       "MedicationRequest"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-expirationdate": [
+      "MedicationAdministration"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-plannedperiod": [
+      "MedicationAdministration"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-traceability": [
+      "MedicationAdministration"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-urgent": [
+      "MedicationAdministration"
     ],
     "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-gonogo": [
       "MedicationRequest"

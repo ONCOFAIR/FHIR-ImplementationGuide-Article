@@ -10,7 +10,7 @@
   "name" : "OncoFAIRMedicationRequestPrescription",
   "title" : "OncoFAIR MedicationRequest Prescription",
   "status" : "draft",
-  "date" : "2024-04-22T09:18:07+00:00",
+  "date" : "2024-04-22T13:59:04+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -397,8 +397,8 @@
       "mustSupport" : true,
       "isModifier" : false,
       "mapping" : [{
-        "identity" : "mapping-oncofair-medicationrequest-prescription",
-        "map" : "D/H precription"
+        "identity" : "mapping-oncofair-mr-prescription-datetime",
+        "map" : "PRESCRIPTION"
       }]
     },
     {
@@ -3485,11 +3485,7 @@
         "code" : "Extension",
         "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-prescription-datetime"]
       }],
-      "mustSupport" : true,
-      "mapping" : [{
-        "identity" : "mapping-oncofair-medicationrequest-prescription",
-        "map" : "D/H precription"
-      }]
+      "mustSupport" : true
     },
     {
       "id" : "MedicationRequest.identifier",
