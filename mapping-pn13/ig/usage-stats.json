@@ -4,68 +4,6 @@
   "fhirVersion": "5.0.0",
   "extensions": [
     {
-      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-cp-Pharmacist",
-      "title": "OncoFAIRCPPharmacist",
-      "types": [
-        "CodeableConcept",
-        "CodeableConcept",
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "integer64",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "CodeableReference",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "RatioRange",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Availability",
-        "ExtendedContactDetail",
-        "Dosage",
-        "Meta"
-      ]
-    },
-    {
       "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-cp-treatment",
       "title": "OncoFAIRCPTreatment",
       "types": [
@@ -285,6 +223,13 @@
       ]
     },
     {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-linktype",
+      "title": "OncoFAIRMRElementLinkType",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
       "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-rank",
       "title": "OncoFAIRMRElementRank",
       "types": [
@@ -299,10 +244,72 @@
       ]
     },
     {
-      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-prescription-datetime",
-      "title": "OncoFAIRMRPrescriptionDateTime",
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-prescription-validationdate",
+      "title": "OncoFAIRMRPrescriptionValidationDate",
       "types": [
         "dateTime"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-pharmacist-advice",
+      "title": "OncoFAIRPharmacistAdvice",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "integer64",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "CodeableReference",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "RatioRange",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Availability",
+        "ExtendedContactDetail",
+        "Dosage",
+        "Meta"
       ]
     }
   ],
@@ -397,9 +404,6 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-cp-Pharmacist": [
-      "CarePlan"
-    ],
     "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-cp-treatment": [
       "CarePlan"
     ],
@@ -421,13 +425,20 @@
     "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-gonogo": [
       "MedicationRequest"
     ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-linktype": [
+      "MedicationRequest.basedOn"
+    ],
     "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-rank": [
       "MedicationRequest"
     ],
     "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-supply": [
       "MedicationRequest"
     ],
-    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-prescription-datetime": [
+    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-prescription-validationdate": [
+      "MedicationRequest"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-pharmacist-advice": [
+      "CarePlan",
       "MedicationRequest"
     ]
   }

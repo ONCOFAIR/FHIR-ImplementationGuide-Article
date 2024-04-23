@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIREncounter"] ; # 
   fhir:title [ fhir:v "ONCOFair Encounter"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-04-22T15:15:59+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-04-23T15:10:46+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -1105,6 +1105,9 @@
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".participation[typeCode=SBJ]/role[classCode=PAT]" ]
+       ] [
+         fhir:identity [ fhir:v "mapping-oncofair-encounter" ] ;
+         fhir:map [ fhir:v "PATIENT" ]
        ] )
      ] [
        fhir:id [ fhir:v "Encounter.subjectStatus" ] ;
@@ -3327,7 +3330,11 @@
            fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-patient>
          ] )
        ] ) ;
-       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ]
+       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "mapping-oncofair-encounter" ] ;
+         fhir:map [ fhir:v "PATIENT" ]
+       ] )
      ] )
   ] . # 
 

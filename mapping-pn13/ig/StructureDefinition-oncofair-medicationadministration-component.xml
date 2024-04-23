@@ -23,7 +23,7 @@
   <name value="OncoFAIRMedicationAdministrationComponent"/>
   <title value="OncoFAIR MedicationAdministration Component"/>
   <status value="draft"/>
-  <date value="2024-04-22T15:15:59+00:00"/>
+  <date value="2024-04-23T15:10:46+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -500,7 +500,7 @@
       </mapping>
       <mapping>
         <identity value="mapping-oncofair-medicationadministration-component"/>
-        <map value="Lien classe ELEMENT D'ADMINISTRATION"/>
+        <map value="ELEMENT ADMINISTRATION"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.status">
@@ -689,6 +689,10 @@
       <mapping>
         <identity value="rim"/>
         <map value=".participation[typeCode=CSM].role[classCode=ADMM]"/>
+      </mapping>
+      <mapping>
+        <identity value="mapping-oncofair-medicationadministration-component"/>
+        <map value="COMPOSANT"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.subject">
@@ -2406,7 +2410,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="mapping-oncofair-medicationadministration-component"/>
-        <map value="Lien classe ELEMENT D'ADMINISTRATION"/>
+        <map value="ELEMENT ADMINISTRATION"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.category">
@@ -2426,6 +2430,10 @@
         <targetProfile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication"/>
       </type>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="mapping-oncofair-medicationadministration-component"/>
+        <map value="COMPOSANT"/>
+      </mapping>
     </element>
     <element id="MedicationAdministration.note">
       <path value="MedicationAdministration.note"/>

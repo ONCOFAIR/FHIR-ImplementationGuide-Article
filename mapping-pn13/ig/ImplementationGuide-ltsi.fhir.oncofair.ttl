@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIR"] ; # 
   fhir:title [ fhir:v "Onco-FAIR"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-04-22T15:15:59+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-04-23T15:10:46+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -318,18 +318,6 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-cp-Pharmacist> ;
-         fhir:reference [ fhir:v "StructureDefinition/oncofair-cp-Pharmacist" ]
-       ] ;
-       fhir:name [ fhir:v "OncoFAIRCPPharmacist" ] ;
-       fhir:description [ fhir:v "Extension créée dans le cadre d'OncoFAIR" ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-cp-treatment> ;
          fhir:reference [ fhir:v "StructureDefinition/oncofair-cp-treatment" ]
        ] ;
@@ -414,6 +402,18 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-linktype> ;
+         fhir:reference [ fhir:v "StructureDefinition/oncofair-mr-element-linktype" ]
+       ] ;
+       fhir:name [ fhir:v "OncoFAIRMRElementLinkType" ] ;
+       fhir:description [ fhir:v "Extension créée dans le cadre d'OncoFAIR" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-rank> ;
          fhir:reference [ fhir:v "StructureDefinition/oncofair-mr-element-rank" ]
        ] ;
@@ -438,10 +438,22 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-prescription-datetime> ;
-         fhir:reference [ fhir:v "StructureDefinition/oncofair-mr-prescription-datetime" ]
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-prescription-validationdate> ;
+         fhir:reference [ fhir:v "StructureDefinition/oncofair-mr-prescription-validationdate" ]
        ] ;
-       fhir:name [ fhir:v "OncoFAIRMRPrescriptionDateTime" ] ;
+       fhir:name [ fhir:v "OncoFAIRMRPrescriptionValidationDate" ] ;
+       fhir:description [ fhir:v "Extension créée dans le cadre d'OncoFAIR" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-pharmacist-advice> ;
+         fhir:reference [ fhir:v "StructureDefinition/oncofair-pharmacist-advice" ]
+       ] ;
+       fhir:name [ fhir:v "OncoFAIRPharmacistAdvice" ] ;
        fhir:description [ fhir:v "Extension créée dans le cadre d'OncoFAIR" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [

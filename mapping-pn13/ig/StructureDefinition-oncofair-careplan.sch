@@ -14,7 +14,7 @@
     <sch:rule context="f:CarePlan">
       <sch:assert test="count(f:extension[@url = 'http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-cp-treatment']) &gt;= 1">extension with URL = 'http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-cp-treatment': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-cp-treatment']) &lt;= 1">extension with URL = 'http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-cp-treatment': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-cp-Pharmacist']) &lt;= 1">extension with URL = 'http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-cp-Pharmacist': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-pharmacist-advice']) &lt;= 1">extension with URL = 'http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-pharmacist-advice': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:identifier) &gt;= 1">identifier: minimum cardinality of 'identifier' is 1</sch:assert>
       <sch:assert test="count(f:identifier) &lt;= 1">identifier: maximum cardinality of 'identifier' is 1</sch:assert>
       <sch:assert test="count(f:title) &gt;= 1">title: minimum cardinality of 'title' is 1</sch:assert>

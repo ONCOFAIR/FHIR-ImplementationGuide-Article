@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIRMedicationAdministrationElement"] ; # 
   fhir:title [ fhir:v "OncoFAIR MedicationAdministration Element"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-04-22T15:15:59+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-04-23T15:10:46+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -1043,7 +1043,7 @@
          fhir:map [ fhir:v ".outboundRelationship[typeCode=COMP]/target[classCode=SBADM or PROC,moodCode=EVN]" ]
        ] [
          fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
-         fhir:map [ fhir:v "Lien classe COMPTE RENDU D'ADMINISTRATION" ]
+         fhir:map [ fhir:v "COMPTE RENDU D'ADMINISTRATION" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.status" ] ;
@@ -2247,7 +2247,7 @@
          fhir:map [ fhir:v "InFullfillmentOf->SubstanceAdministration" ]
        ] [
          fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
-         fhir:map [ fhir:v "Id. élément prescription" ]
+         fhir:map [ fhir:v "ELEMENT PRESCRIPTION" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.device" ] ;
@@ -3375,7 +3375,7 @@
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
-         fhir:map [ fhir:v "Lien classe COMPTE RENDU D'ADMINISTRATION" ]
+         fhir:map [ fhir:v "COMPTE RENDU D'ADMINISTRATION" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.category" ] ;
@@ -3464,7 +3464,7 @@
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
-         fhir:map [ fhir:v "Id. élément prescription" ]
+         fhir:map [ fhir:v "ELEMENT PRESCRIPTION" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.device" ] ;

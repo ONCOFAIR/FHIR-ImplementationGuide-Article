@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIRMedicationAdministrationReport"] ; # 
   fhir:title [ fhir:v "OncoFAIR MedicationAdministration Report"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-04-22T15:15:59+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-04-23T15:10:46+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -844,7 +844,7 @@
          fhir:map [ fhir:v ".inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN, code=\"type of encounter or episode\"]" ]
        ] [
          fhir:identity [ fhir:v "mapping-oncofair-medicationadministration-report" ] ;
-         fhir:map [ fhir:v "Lien classe SEJOUR" ]
+         fhir:map [ fhir:v "SEJOUR" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.supportingInformation" ] ;
@@ -1948,7 +1948,7 @@
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "mapping-oncofair-medicationadministration-report" ] ;
-         fhir:map [ fhir:v "Lien classe SEJOUR" ]
+         fhir:map [ fhir:v "SEJOUR" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.performer" ] ;

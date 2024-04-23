@@ -14,7 +14,7 @@
   <name value="OncoFAIREncounter"/>
   <title value="ONCOFair Encounter"/>
   <status value="draft"/>
-  <date value="2024-04-22T15:15:59+00:00"/>
+  <date value="2024-04-23T15:10:46+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -1020,6 +1020,10 @@
       <mapping>
         <identity value="rim"/>
         <map value=".participation[typeCode=SBJ]/role[classCode=PAT]"/>
+      </mapping>
+      <mapping>
+        <identity value="mapping-oncofair-encounter"/>
+        <map value="PATIENT"/>
       </mapping>
     </element>
     <element id="Encounter.subjectStatus">
@@ -2999,6 +3003,10 @@
         <targetProfile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-patient"/>
       </type>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="mapping-oncofair-encounter"/>
+        <map value="PATIENT"/>
+      </mapping>
     </element>
   </differential>
 </StructureDefinition>

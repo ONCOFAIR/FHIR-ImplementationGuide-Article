@@ -10,7 +10,7 @@
   "name" : "OncoFAIR",
   "title" : "Onco-FAIR",
   "status" : "draft",
-  "date" : "2024-04-22T15:15:59+00:00",
+  "date" : "2024-04-23T15:10:46+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -306,18 +306,6 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/oncofair-cp-Pharmacist"
-      },
-      "name" : "OncoFAIRCPPharmacist",
-      "description" : "Extension créée dans le cadre d'OncoFAIR",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/oncofair-cp-treatment"
       },
       "name" : "OncoFAIRCPTreatment",
@@ -402,6 +390,18 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/oncofair-mr-element-linktype"
+      },
+      "name" : "OncoFAIRMRElementLinkType",
+      "description" : "Extension créée dans le cadre d'OncoFAIR",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/oncofair-mr-element-rank"
       },
       "name" : "OncoFAIRMRElementRank",
@@ -426,9 +426,21 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/oncofair-mr-prescription-datetime"
+        "reference" : "StructureDefinition/oncofair-mr-prescription-validationdate"
       },
-      "name" : "OncoFAIRMRPrescriptionDateTime",
+      "name" : "OncoFAIRMRPrescriptionValidationDate",
+      "description" : "Extension créée dans le cadre d'OncoFAIR",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-pharmacist-advice"
+      },
+      "name" : "OncoFAIRPharmacistAdvice",
       "description" : "Extension créée dans le cadre d'OncoFAIR",
       "isExample" : false
     },
