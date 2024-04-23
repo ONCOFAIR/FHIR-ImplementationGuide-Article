@@ -32,7 +32,8 @@ Id:       mapping-oncofair-medicationadministration-component
 Title:    "Mapping du profil OncoFAIR MedicationAdministration Component"
 * -> "COMPOSANT ADMINISTRE"
 
-* partOf -> "Lien classe ELEMENT D'ADMINISTRATION"
+* partOf -> "ELEMENT ADMINISTRATION"
+* medication -> "COMPOSANT"
 
 * category -> "Type composant"
 * dosage.dose -> "Quantité prévue"

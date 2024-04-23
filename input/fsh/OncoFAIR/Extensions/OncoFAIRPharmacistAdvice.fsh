@@ -1,8 +1,10 @@
-Extension: OncoFAIRCPPharmacist
-Id: oncofair-cp-Pharmacist
+Extension: OncoFAIRPharmacistAdvice
+Id: oncofair-pharmacist-advice
 Description: "Extension créée dans le cadre d'OncoFAIR" //TODO
 * ^context[+].type = #element
 * ^context[=].expression = "OncoFAIRCarePlan"
+* ^context[+].type = #element
+* ^context[=].expression = "OncoFAIRMRElement"
 
 * extension contains
     pharmacistValidation 0..1 and
@@ -11,9 +13,9 @@ Description: "Extension créée dans le cadre d'OncoFAIR" //TODO
 * extension[pharmacistProposal].value[x] only CodeableConcept
 
 
-Mapping:  mapping_OncoFAIRCPPharmacist
-Source:   OncoFAIRCPPharmacist
-Id:       mapping-oncofair-cp-Pharmacist
-Title:    "Mapping de l'extension OncoFAIR CP Pharmacist"
+Mapping:  mapping_OncoFAIRPharmacistAdvice
+Source:   OncoFAIRPharmacistAdvice
+Id:       mapping-oncofair-pharmacist-advice
+Title:    "Mapping de l'extension OncoFAIR Pharmacist Advice"
 * extension[pharmacistValidation] -> "Validation pharmaceutique"
 * extension[pharmacistProposal] -> "Proposition pharmaceutique"

@@ -22,7 +22,7 @@ Description : "OncoFAIR CarePlan" //TODO
 
 * extension contains
     OncoFAIRCPTreatment named oncofair-cp-treatment 1..1 MS and
-    OncoFAIRCPPharmacist named oncofair-cp-pharmacist 0..1 MS
+    OncoFAIRPharmacistAdvice named oncofair-pharmacist-advice 0..1 MS
 
 
 Mapping:  mapping_OncoFAIRCarePlan

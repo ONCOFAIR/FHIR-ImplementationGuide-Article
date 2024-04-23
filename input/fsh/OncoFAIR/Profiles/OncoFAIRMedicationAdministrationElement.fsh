@@ -50,9 +50,9 @@ Id:       mapping-oncofair-medicationradministration-element
 Title:    "Mapping du profil OncoFAIR MedicationAdministration Element"
 * -> "ELEMENT ADMINISTRATION"
 
-* partOf -> "Lien classe COMPTE RENDU D'ADMINISTRATION"
+* partOf -> "COMPTE RENDU D'ADMINISTRATION"
 * device -> "Dispositifs associés"
-* request -> "Id. élément prescription"
+* request -> "ELEMENT PRESCRIPTION"
 
 * identifier -> "Id. élément administration"
 

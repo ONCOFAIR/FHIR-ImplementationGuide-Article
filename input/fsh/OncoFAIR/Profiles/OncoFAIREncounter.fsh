@@ -22,3 +22,5 @@ Source:   OncoFAIREncounter
 Id:       mapping-oncofair-encounter
 Title:    "Mapping du profil OncoFAIR Encounter"
 * -> "SEJOUR"
+
+* subject -> "PATIENT"

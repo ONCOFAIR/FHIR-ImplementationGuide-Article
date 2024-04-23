@@ -32,7 +32,8 @@ Id:       mapping-oncofair-medicationrequest-component
 Title:    "Mapping du profil OncoFAIR MedicationRequest Component"
 * -> "COMPOSANT PRESCRIT"
 
-* basedOn -> "Lien classe ELEMENTPrescription"
+* basedOn -> "ELEMENT PRESCRIPTION"
+* medication -> "COMPOSANT"
 
 * category -> "Type composant"
 * dosageInstruction.doseAndRate.doseQuantity -> "Quantité composant prescrit"
