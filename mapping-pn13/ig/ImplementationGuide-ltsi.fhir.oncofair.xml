@@ -11,7 +11,7 @@
   <name value="OncoFAIR"/>
   <title value="Onco-FAIR"/>
   <status value="draft"/>
-  <date value="2024-04-23T15:10:46+00:00"/>
+  <date value="2024-04-24T09:25:28+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -338,6 +338,39 @@
         <reference value="StructureDefinition/oncofair-ma-element-urgent"/>
       </reference>
       <name value="OncoFAIRMAElementUrgent"/>
+      <description value="Extension créée dans le cadre d'OncoFAIR"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/oncofair-medication-type"/>
+      </reference>
+      <name value="OncoFAIRMedicationType"/>
+      <description value="Extension créée dans le cadre d'OncoFAIR"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/oncofair-mr-component-exoneratingald"/>
+      </reference>
+      <name value="OncoFAIRMRComponentExoneratingALD"/>
+      <description value="Extension créée dans le cadre d'OncoFAIR"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/oncofair-mr-component-solute"/>
+      </reference>
+      <name value="OncoFAIRMRComponentSolute"/>
       <description value="Extension créée dans le cadre d'OncoFAIR"/>
       <isExample value="false"/>
     </resource>

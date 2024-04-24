@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIR"] ; # 
   fhir:title [ fhir:v "Onco-FAIR"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-04-23T15:10:46+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-04-24T09:25:28+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -382,6 +382,42 @@
          fhir:reference [ fhir:v "StructureDefinition/oncofair-ma-element-urgent" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIRMAElementUrgent" ] ;
+       fhir:description [ fhir:v "Extension créée dans le cadre d'OncoFAIR" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication-type> ;
+         fhir:reference [ fhir:v "StructureDefinition/oncofair-medication-type" ]
+       ] ;
+       fhir:name [ fhir:v "OncoFAIRMedicationType" ] ;
+       fhir:description [ fhir:v "Extension créée dans le cadre d'OncoFAIR" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-component-exoneratingald> ;
+         fhir:reference [ fhir:v "StructureDefinition/oncofair-mr-component-exoneratingald" ]
+       ] ;
+       fhir:name [ fhir:v "OncoFAIRMRComponentExoneratingALD" ] ;
+       fhir:description [ fhir:v "Extension créée dans le cadre d'OncoFAIR" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-component-solute> ;
+         fhir:reference [ fhir:v "StructureDefinition/oncofair-mr-component-solute" ]
+       ] ;
+       fhir:name [ fhir:v "OncoFAIRMRComponentSolute" ] ;
        fhir:description [ fhir:v "Extension créée dans le cadre d'OncoFAIR" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [

@@ -10,7 +10,7 @@
   "name" : "OncoFAIR",
   "title" : "Onco-FAIR",
   "status" : "draft",
-  "date" : "2024-04-23T15:10:46+00:00",
+  "date" : "2024-04-24T09:25:28+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -369,6 +369,42 @@
         "reference" : "StructureDefinition/oncofair-ma-element-urgent"
       },
       "name" : "OncoFAIRMAElementUrgent",
+      "description" : "Extension créée dans le cadre d'OncoFAIR",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-medication-type"
+      },
+      "name" : "OncoFAIRMedicationType",
+      "description" : "Extension créée dans le cadre d'OncoFAIR",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-mr-component-exoneratingald"
+      },
+      "name" : "OncoFAIRMRComponentExoneratingALD",
+      "description" : "Extension créée dans le cadre d'OncoFAIR",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-mr-component-solute"
+      },
+      "name" : "OncoFAIRMRComponentSolute",
       "description" : "Extension créée dans le cadre d'OncoFAIR",
       "isExample" : false
     },

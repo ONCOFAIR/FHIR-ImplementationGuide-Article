@@ -31,10 +31,9 @@ package IG #DDDDDD{
 
         class OncoFAIRMedication{
 
+             Medication.extension => [1..None]
+             Medication.extension:oncofair-medication-type => <&plus>[1..1]
              Medication.code => [1..None]
-             Medication.batch => [None..None]
-             Medication.batch.lotNumber => [None..None]
-             Medication.batch.expirationDate => [None..None]
         } 
 
         class OncoFAIRMedicationAdministrationComponent{
@@ -127,18 +126,22 @@ package IG #DDDDDD{
 
         class OncoFAIRMedicationRequestComponent{
 
+             MedicationRequest.extension => [None..None]
+             MedicationRequest.extension:oncofair-mr-component-exoneratingald => <&plus>[0..1]
+             MedicationRequest.extension:oncofair-mr-component-solute => <&plus>[0..1]
              MedicationRequest.basedOn => [1..1]
-             MedicationRequest.category => [1..1]
              MedicationRequest.medication => [None..None]
              MedicationRequest.note => [1..None]
              MedicationRequest.note:description => [1..1]
              MedicationRequest.note:description.id => [1..None]
              MedicationRequest.note:comment => [0..1]
              MedicationRequest.note:comment.id => [1..None]
+             MedicationRequest.note:indication => [0..1]
+             MedicationRequest.note:indication.id => [1..None]
              MedicationRequest.dosageInstruction => [None..1]
              MedicationRequest.dosageInstruction.doseAndRate => [None..1]
-             MedicationRequest.dosageInstruction.doseAndRate.dose[x] => [None..None]
-             MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseQuantity => [0..1]
+             MedicationRequest.dosageInstruction.doseAndRate.dose[x] => [1..None]
+             MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseQuantity => [1..1]
              MedicationRequest.substitution => [None..None]
              MedicationRequest.substitution.allowed[x] => [None..None]
              MedicationRequest.substitution.allowed[x]:allowedBoolean => [0..1]
@@ -201,11 +204,14 @@ package IG #DDDDDD{
 
      OncoFAIRCarePlan -[#black,dashed,thickness=2]-> OncoFAIRCPTreatment
      OncoFAIRCarePlan -[#black,dashed,thickness=2]-> OncoFAIRPharmacistAdvice
+     OncoFAIRMedication -[#black,dashed,thickness=2]-> OncoFAIRMedicationType
      OncoFAIRMedicationAdministrationElement -[#black,dashed,thickness=2]-> OncoFAIRMAElementUrgent
      OncoFAIRMedicationAdministrationElement -[#black,dashed,thickness=2]-> OncoFAIRMAElementExpirationDate
      OncoFAIRMedicationAdministrationElement -[#black,dashed,thickness=2]-> OncoFAIRMAElementTraceability
      OncoFAIRMedicationAdministrationElement -[#black,dashed,thickness=2]-> OncoFAIRMAElementPlannedPeriod
      OncoFAIRMedicationRequestPrescription -[#black,dashed,thickness=2]-> OncoFAIRMRPrescriptionValidationDate
+     OncoFAIRMedicationRequestComponent -[#black,dashed,thickness=2]-> OncoFAIRMRComponentExoneratingALD
+     OncoFAIRMedicationRequestComponent -[#black,dashed,thickness=2]-> OncoFAIRMRComponentSolute
      OncoFAIRMedicationRequestElement -[#black,dashed,thickness=2]-> OncoFAIRElementForm
      OncoFAIRMedicationRequestElement -[#black,dashed,thickness=2]-> OncoFAIRMRElementSupply
      OncoFAIRMedicationRequestElement -[#black,dashed,thickness=2]-> OncoFAIRMRElementRank
@@ -265,6 +271,24 @@ package IG #DDDDDD{
           Extension.value[x] => [None..0]
         } 
         class OncoFAIRMAElementUrgent{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class OncoFAIRMedicationType{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class OncoFAIRMRComponentExoneratingALD{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class OncoFAIRMRComponentSolute{
 
           Extension.extension => [None..0]
           Extension.url => [None..None]
