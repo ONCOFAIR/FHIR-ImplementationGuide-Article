@@ -10,9 +10,9 @@ Description : "OncoFAIR MedicationRequest Component" //TODO
 * medication MS
 * medication only CodeableReference(OncoFAIRMedication)
 
-* category 1..1 MS
 * dosageInstruction 0..1 MS
 * dosageInstruction.doseAndRate 0..1
+* dosageInstruction.doseAndRate.doseQuantity 1..1
 * substitution MS
 
 * note MS
@@ -21,9 +21,15 @@ Description : "OncoFAIR MedicationRequest Component" //TODO
 * note ^slicing.rules = #open
 * note contains
     description 1..1 and
-    comment 0..1
+    comment 0..1 and
+    indication 0..1
 * note[description].id = "description"
 * note[comment].id = "comment"
+* note[indication].id = "comment"
+
+* extension contains
+    OncoFAIRMRComponentExoneratingALD named oncofair-mr-component-exoneratingald 0..1 and
+    OncoFAIRMRComponentSolute named oncofair-mr-component-solute 0..1
 
 
 Mapping:  mapping_OncoFAIRMedicationRequestComponent
@@ -35,9 +41,9 @@ Title:    "Mapping du profil OncoFAIR MedicationRequest Component"
 * basedOn -> "ELEMENT PRESCRIPTION"
 * medication -> "COMPOSANT"
 
-* category -> "Type composant"
 * dosageInstruction.doseAndRate.doseQuantity -> "Quantité composant prescrit"
 * substitution.allowedBoolean -> "Non Subsituable"
 
 * note[description] -> "Libellé composant"
 * note[comment] -> "Commentaires"
+* note[indication] -> "Indication"
