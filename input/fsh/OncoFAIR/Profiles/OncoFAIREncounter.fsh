@@ -1,8 +1,8 @@
 Profile: OncoFAIREncounter
 Parent: Encounter
 Id: oncofair-encounter
-Title: "ONCOFair Encounter"
-Description : "ONCOFair Encounter" //TODO
+Title: "OncoFAIR Encounter"
+Description : "OncoFAIR Encounter" //TODO
 
 * subject 1..1 MS
 * subject only Reference(OncoFAIRPatient)
