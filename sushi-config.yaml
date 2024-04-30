@@ -20,6 +20,17 @@ publisher:
   url: https://ltsi.univ-rennes.fr
   # email: test@example.org
 
+pages:
+  index.md:
+    title: Accueil
+  mapping.md:
+    title: Mapping PN13/FHIR R5 
+
+menu:
+  Accueil: index.html
+  Mapping: mapping.html
+  Artifacts: artifacts.html
+
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for id, uri, and version.
@@ -43,14 +54,7 @@ publisher:
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 #
-# pages:
-#   index.md:
-#     title: Example Home
-#   implementation.xml:
-#   examples.xml:
-#     title: Examples Overview
-#     simpleExamples.xml:
-#     complexExamples.xml:
+
 #
 #
 # The parameters property represents IG.definition.parameter. Rather
@@ -74,9 +78,7 @@ publisher:
 # │ input/includes. To use a provided input/includes/menu.xml file, delete the "menu"              │
 # │ property below.                                                                                │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-menu:
-  Accueil: index.html
-  Artifacts: artifacts.html
+
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
