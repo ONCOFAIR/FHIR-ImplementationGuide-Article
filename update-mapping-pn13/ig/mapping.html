@@ -1,13 +1,9 @@
-<!-- layouts\layout-changehistory.html -->
-<!-- get modelType -->
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title> - Onco-FAIR v0.1.0</title>
+    <title>Mapping PN13/FHIR R5 - Onco-FAIR v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -43,8 +39,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:""}
-    h3,h4,h5,h6{--heading-prefix:""}</style>
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -101,7 +97,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Mapping PN13/FHIR R5</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -113,9 +109,16 @@
         <div class="row">
           <div class="inner-wrapper">
 
-
-<div style="counter-reset: section 10" class="col-12">
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Onco-FAIR - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://ltsi.univ-rennes.fr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Mapping PN13/FHIR R5</h2>
   
 
 
@@ -125,47 +128,52 @@
 
 
 
-<ul class="nav nav-tabs">
-
-  <li>
-    <a href="CodeSystem-CSMedicalUnits.html">Narrative Content</a>
-  </li>
 
 
 
-  
-    <li>
-      <a href="CodeSystem-CSMedicalUnits.xml.html">XML</a>
-    </li>
-  
 
-
-  
-    <li>
-      <a href="CodeSystem-CSMedicalUnits.json.html">JSON</a>
-    </li>
-  
-
-
-  
-    <li>
-      <a href="CodeSystem-CSMedicalUnits.ttl.html">TTL</a>
-    </li>
-  
-
-
-
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#mapping-global" id="markdown-toc-mapping-global">Mapping Global</a></li>
+  <li><a href="#mapping-medication" id="markdown-toc-mapping-medication">Mapping Medication</a></li>
+  <li><a href="#mapping-medicationrequest" id="markdown-toc-mapping-medicationrequest">Mapping MedicationRequest</a></li>
+  <li><a href="#mapping-medicationadministration" id="markdown-toc-mapping-medicationadministration">Mapping MedicationAdministration</a></li>
+  <li><a href="#mapping-careplan" id="markdown-toc-mapping-careplan">Mapping CarePlan</a></li>
+  <li><a href="#mapping-helathcareservice" id="markdown-toc-mapping-helathcareservice">Mapping HelathcareService</a></li>
+  <li><a href="#mapping-practitioner" id="markdown-toc-mapping-practitioner">Mapping Practitioner</a></li>
+  <li><a href="#mapping-devicedefinition" id="markdown-toc-mapping-devicedefinition">Mapping DeviceDefinition</a></li>
+  <li><a href="#mapping-patient" id="markdown-toc-mapping-patient">Mapping Patient</a></li>
+  <li><a href="#mapping-encounter" id="markdown-toc-mapping-encounter">Mapping Encounter</a></li>
+  <li><a href="#mapping-observation" id="markdown-toc-mapping-observation">Mapping Observation</a></li>
 </ul>
 
+</div>
+<h3 id="mapping-global">Mapping Global</h3>
 
-  <a name="root"> </a>
-  <h2 id="root">: CSMedicalUnits - Change History</h2>
-  <p>History of changes for CSMedicalUnits .</p>
+<h3 id="mapping-medication">Mapping Medication</h3>
 
-  
+<h3 id="mapping-medicationrequest">Mapping MedicationRequest</h3>
+
+<h3 id="mapping-medicationadministration">Mapping MedicationAdministration</h3>
+
+<h3 id="mapping-careplan">Mapping CarePlan</h3>
+
+<h3 id="mapping-helathcareservice">Mapping HelathcareService</h3>
+
+<h3 id="mapping-practitioner">Mapping Practitioner</h3>
+
+<h3 id="mapping-devicedefinition">Mapping DeviceDefinition</h3>
+
+<h3 id="mapping-patient">Mapping Patient</h3>
+
+<h3 id="mapping-encounter">Mapping Encounter</h3>
+
+<h3 id="mapping-observation">Mapping Observation</h3>
+
+
 
 </div>
-
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -173,8 +181,6 @@
 
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
-
-  <script type="text/javascript" src="assets/js/tabs.js"> </script>
 
   <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
