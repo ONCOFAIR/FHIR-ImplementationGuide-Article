@@ -8,11 +8,7 @@
 
 ### Mapping CarePlan
 
-### Mapping HelathcareService
-
-### Mapping Practitioner
-
-### Mapping DeviceDefinition
+### Mapping HelathcareService, Practitioner, DeviceDefinition
 
 ### Mapping Patient
 
