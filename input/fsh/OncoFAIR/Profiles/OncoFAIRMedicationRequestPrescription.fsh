@@ -2,7 +2,7 @@ Profile: OncoFAIRMedicationRequestPrescription
 Parent: MedicationRequest
 Id: oncofair-medicationrequest-prescription
 Title: "OncoFAIR MedicationRequest Prescription"
-Description : "OncoFAIR MedicationRequest Prescription" //TODO
+Description : "Groups together all the prescription elements validated simultaneously by the same prescriber" 
 
 * encounter 1..1 MS
 * encounter only Reference(OncoFAIREncounter)
@@ -10,6 +10,7 @@ Description : "OncoFAIR MedicationRequest Prescription" //TODO
 
 * reason MS
 * reason only CodeableReference(OncoFAIRObservation)
+* reason ^short = "The observation linked to the prescription"
 
 * basedOn MS
 * basedOn only Reference(OncoFAIRCarePlan)
@@ -24,20 +25,23 @@ Description : "OncoFAIR MedicationRequest Prescription" //TODO
     medicalLiabiltyUnit 0..1
 * supportingInformation[accomodationUnit].id = "accomodationUnit"
 * supportingInformation[accomodationUnit] only Reference(HealthcareService)
+* supportingInformation[accomodationUnit] ^short = "This is the unit that houses the patient"
 * supportingInformation[medicalLiabiltyUnit].id = "medicalLiabiltyUnit"
+* supportingInformation[medicalLiabiltyUnit] ^short = "This is the unit which assumes medical responsibility for the patient's care"
 * supportingInformation[medicalLiabiltyUnit] only Reference(HealthcareService)
 
 * identifier 1..1 MS
 * identifier.value 1..1
-* identifier ^short = "The prescription's identifier"
+* identifier ^short = "Unique prescription identifier"
 
 * medication MS
 * medication.concept.coding.code = #prescription
 
-* note MS
+* note 0..1 MS
+* note ^short = "Default comment on the prescription by the prescribing doctor"
 
 * extension contains
-    OncoFAIRMRPrescriptionValidationDate named oncofair-mr-prescription-validationdate 1..1 MS
+    OncoFAIRMRPrescriptionValidationDate named oncofair-mr-prescription-validation-date 1..1 MS
 
 
 Mapping:  mapping_OncoFAIRMedicationRequestPrescription
@@ -48,11 +52,12 @@ Title:    "Mapping du profil OncoFAIR MedicationRequest Prescription"
 
 * encounter -> "SEJOUR"
 * reason -> "RENSEIGNEMENT COMPLEMENTAIRE"
-* basedOn -> "PROTOCOLE"
+* basedOn -> "PROTOCOLE PRESCRIT"
 
-* supportingInformation[accomodationUnit] -> "Unité hébergement"
-* supportingInformation[medicalLiabiltyUnit] ->  "Unité responsabilité médicale"
+* supportingInformation[accomodationUnit] -> "uniteHebergement"
+* supportingInformation[medicalLiabiltyUnit] ->  "uniteResponsabiliteMedicale"
+* extension[oncofair-mr-prescription-validation-date] -> "dateHeurePrescription"
 
-* identifier -> "Id. prescription"
+* identifier -> "idPrescription"
 
-* note -> "Commentaires"
+* note -> "commentaires"
