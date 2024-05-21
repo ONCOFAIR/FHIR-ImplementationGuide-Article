@@ -11,7 +11,7 @@ Description: "Allows you to enter information about the patient in addition to t
 * issued 1..1 MS
 * issued ^short = "Date and time associated with the additional information"
 * value[x] 1..1 MS
-* value ^short = "Contains the value of the additional information"
+* value[x] ^short = "Contains the value of the additional information"
 
 
 
