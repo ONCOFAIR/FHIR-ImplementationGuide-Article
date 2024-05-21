@@ -2,14 +2,17 @@ Profile: OncoFAIRObservation
 Parent: Observation
 Id: oncofair-observation
 Title: "OncoFAIR Observation"
-Description: "Additional information, such as height or weight."
+Description: "Allows you to enter information about the patient in addition to that described in the prescription elements."
 
 * code MS
-* code ^short = "LOINC code representing the additional information"
-* effectiveDateTime MS 
+* code ^short = "Nature of additional information representing by LOINC code"
+* effectiveDateTime MS
+* effectiveDateTime ^short = "Date and time of registration of the additional information" 
 * issued 1..1 MS
-* issued ^short = "Date and time of registration of additional information"
+* issued ^short = "Date and time associated with the additional information"
 * value[x] 1..1 MS
+* value ^short = "Contains the value of the additional information"
+
 
 
 Mapping:  mapping_OncoFAIRObservation
@@ -18,7 +21,7 @@ Id:       mapping-oncofair-observation
 Title:    "Mapping du profil OncoFAIR Observation"
 * -> "RENSEIGNEMENT COMPLEMENTAIRE"
 
-* code -> "Code renseignement complémentaire"
-* effectiveDateTime -> "D/H renseignement complémentaire"
-* issued -> "D/H enregistrement renseignement complémenaire"
-* value[x] -> "Valeur renseignement complémentaire"
+* code -> "codeRenseignementComplementaire"
+* effectiveDateTime -> "dateHeureRenseignementComplementaire"
+* issued -> "dateHeureEnregistrementRenseignementComplementaire"
+* value[x] -> "valeurRenseignementComplementaire"
