@@ -57,4 +57,4 @@ Id:       mapping-oncofair-patient
 Title:    "Mapping du profil OncoFAIR Patient"
 * -> "PATIENT"
 
-* "identifier" -> "IPP" 
+* identifier-> "IPP" 
