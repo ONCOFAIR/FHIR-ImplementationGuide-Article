@@ -2,14 +2,15 @@ Profile: OncoFAIREncounter
 Parent: Encounter
 Id: oncofair-encounter
 Title: "OncoFAIR Encounter"
-Description : "OncoFAIR Encounter" //TODO
+Description : "Must be taken in the generic sense, i.e. it goes beyond hospital admissions, outpatient consultations, dialysis sessions, day hospitals, etc." 
 
 * subject 1..1 MS
 * subject only Reference(OncoFAIRPatient)
 * subject ^short = "The patient involved in the encounter"
 
-* identifier 1..* MS
-* identifier.value ^short = "The encounter identifier"
+* identifier 1..1 MS
+* identifier.value 1..1
+* identifier ^short = "Identifier for the patient's stay"
 
 /*
 * identifier.value 1..1 
@@ -24,3 +25,5 @@ Title:    "Mapping du profil OncoFAIR Encounter"
 * -> "SEJOUR"
 
 * subject -> "PATIENT"
+
+* identifier -> "idSejour"
