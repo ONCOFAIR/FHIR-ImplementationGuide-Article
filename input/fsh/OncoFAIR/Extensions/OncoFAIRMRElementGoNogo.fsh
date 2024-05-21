@@ -1,5 +1,5 @@
 Extension: OncoFAIRMRElementGoNogo
-Id: oncofair-mr-element-gonogo
+Id: oncofair-mr-element-go-nogo
 Description: "Extension créée dans le cadre d'OncoFAIR" //TODO
 * ^context[+].type = #element
 * ^context[=].expression = "OncoFAIRMedicationRequestElement"
@@ -12,7 +12,7 @@ Description: "Extension créée dans le cadre d'OncoFAIR" //TODO
 
 Mapping:  mapping_OncoFAIRMRElementGoNogo
 Source:   OncoFAIRMRElementGoNogo
-Id:       mapping-oncofair-mr-element-gonogo
+Id:       mapping-oncofair-mr-element-go-nogo
 Title:    "Mapping de l'extension OncoFAIR MR Element GoNogo"
 * extension[GoNogoStatus] -> "GoNogo"
 * extension[GoNogoReasonWaiting] -> "Motif attente"
