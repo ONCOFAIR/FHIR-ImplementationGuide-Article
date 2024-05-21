@@ -1,5 +1,5 @@
 Extension: OncoFAIRMRPrescriptionValidationDate
-Id: oncofair-mr-prescription-validationdate
+Id: oncofair-mr-prescription-validation-date
 Description: "Extension créée dans le cadre d'OncoFAIR" //TODO
 * ^context[+].type = #element
 * ^context[=].expression = "OncoFAIRMedicationRequestPrescription"
@@ -7,6 +7,6 @@ Description: "Extension créée dans le cadre d'OncoFAIR" //TODO
 
 Mapping:  mapping_OncoFAIRMRPrescriptionValidationDate
 Source:   OncoFAIRMRPrescriptionValidationDate
-Id:       mapping-oncofair-mr-prescription-validationdate
+Id:       mapping-oncofair-mr-prescription-validation-date
 Title:    "Mapping de l'extension OncoFAIR MR Prescription Date"
 * value[x] -> "D/H prescription"
