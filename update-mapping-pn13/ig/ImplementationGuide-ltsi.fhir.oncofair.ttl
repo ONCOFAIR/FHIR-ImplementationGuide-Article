@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIR"] ; # 
   fhir:title [ fhir:v "Onco-FAIR"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-04-30T13:09:54+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-21T14:49:50+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -202,7 +202,7 @@
          fhir:reference [ fhir:v "StructureDefinition/oncofair-encounter" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIR Encounter" ] ;
-       fhir:description [ fhir:v "OncoFAIR Encounter" ] ;
+       fhir:description [ fhir:v "Must be taken in the generic sense, i.e. it goes beyond hospital admissions, outpatient consultations, dialysis sessions, day hospitals, etc." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -274,7 +274,7 @@
          fhir:reference [ fhir:v "StructureDefinition/oncofaire-medicationrequest-element" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIR MedicationRequest Element" ] ;
-       fhir:description [ fhir:v "OncoFAIR MedicationRequest Element" ] ;
+       fhir:description [ fhir:v "Corresponds to a prescription line on a prescription. Each item contains one or more components (in the case of a magistral\npreparation or an infusion)." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -286,7 +286,7 @@
          fhir:reference [ fhir:v "StructureDefinition/oncofair-medicationrequest-prescription" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIR MedicationRequest Prescription" ] ;
-       fhir:description [ fhir:v "OncoFAIR MedicationRequest Prescription" ] ;
+       fhir:description [ fhir:v "Groups together all the prescription elements validated simultaneously by the same prescriber" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -298,7 +298,7 @@
          fhir:reference [ fhir:v "StructureDefinition/oncofair-observation" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIR Observation" ] ;
-       fhir:description [ fhir:v "Additional information, such as height or weight." ] ;
+       fhir:description [ fhir:v "Allows you to enter information about the patient in addition to that described in the prescription elements." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -310,7 +310,7 @@
          fhir:reference [ fhir:v "StructureDefinition/oncofair-patient" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIR Patient" ] ;
-       fhir:description [ fhir:v "Patient receiving medical treatment in oncology." ] ;
+       fhir:description [ fhir:v "Contains the patient's identity details needed to ensure that the prescription is properly taken into account." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -426,8 +426,8 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-gonogo> ;
-         fhir:reference [ fhir:v "StructureDefinition/oncofair-mr-element-gonogo" ]
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-go-nogo> ;
+         fhir:reference [ fhir:v "StructureDefinition/oncofair-mr-element-go-nogo" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIRMRElementGoNogo" ] ;
        fhir:description [ fhir:v "Extension créée dans le cadre d'OncoFAIR" ] ;
@@ -438,8 +438,8 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-linktype> ;
-         fhir:reference [ fhir:v "StructureDefinition/oncofair-mr-element-linktype" ]
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-link-type> ;
+         fhir:reference [ fhir:v "StructureDefinition/oncofair-mr-element-link-type" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIRMRElementLinkType" ] ;
        fhir:description [ fhir:v "Extension créée dans le cadre d'OncoFAIR" ] ;
@@ -474,8 +474,20 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-prescription-validationdate> ;
-         fhir:reference [ fhir:v "StructureDefinition/oncofair-mr-prescription-validationdate" ]
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-id-linked-item> ;
+         fhir:reference [ fhir:v "StructureDefinition/oncofair-mr-id-linked-item" ]
+       ] ;
+       fhir:name [ fhir:v "OncoFAIRMRIdLinkedItem" ] ;
+       fhir:description [ fhir:v "Extension créée dans le cadre d'OncoFAIR" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-prescription-validation-date> ;
+         fhir:reference [ fhir:v "StructureDefinition/oncofair-mr-prescription-validation-date" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIRMRPrescriptionValidationDate" ] ;
        fhir:description [ fhir:v "Extension créée dans le cadre d'OncoFAIR" ] ;

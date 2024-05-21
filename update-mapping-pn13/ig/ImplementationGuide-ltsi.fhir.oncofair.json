@@ -10,7 +10,7 @@
   "name" : "OncoFAIR",
   "title" : "Onco-FAIR",
   "status" : "draft",
-  "date" : "2024-04-30T13:09:54+00:00",
+  "date" : "2024-05-21T14:49:50+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -189,7 +189,7 @@
         "reference" : "StructureDefinition/oncofair-encounter"
       },
       "name" : "OncoFAIR Encounter",
-      "description" : "OncoFAIR Encounter",
+      "description" : "Must be taken in the generic sense, i.e. it goes beyond hospital admissions, outpatient consultations, dialysis sessions, day hospitals, etc.",
       "isExample" : false
     },
     {
@@ -261,7 +261,7 @@
         "reference" : "StructureDefinition/oncofaire-medicationrequest-element"
       },
       "name" : "OncoFAIR MedicationRequest Element",
-      "description" : "OncoFAIR MedicationRequest Element",
+      "description" : "Corresponds to a prescription line on a prescription. Each item contains one or more components (in the case of a magistral\npreparation or an infusion).",
       "isExample" : false
     },
     {
@@ -273,7 +273,7 @@
         "reference" : "StructureDefinition/oncofair-medicationrequest-prescription"
       },
       "name" : "OncoFAIR MedicationRequest Prescription",
-      "description" : "OncoFAIR MedicationRequest Prescription",
+      "description" : "Groups together all the prescription elements validated simultaneously by the same prescriber",
       "isExample" : false
     },
     {
@@ -285,7 +285,7 @@
         "reference" : "StructureDefinition/oncofair-observation"
       },
       "name" : "OncoFAIR Observation",
-      "description" : "Additional information, such as height or weight.",
+      "description" : "Allows you to enter information about the patient in addition to that described in the prescription elements.",
       "isExample" : false
     },
     {
@@ -297,7 +297,7 @@
         "reference" : "StructureDefinition/oncofair-patient"
       },
       "name" : "OncoFAIR Patient",
-      "description" : "Patient receiving medical treatment in oncology.",
+      "description" : "Contains the patient's identity details needed to ensure that the prescription is properly taken into account.",
       "isExample" : false
     },
     {
@@ -414,7 +414,7 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/oncofair-mr-element-gonogo"
+        "reference" : "StructureDefinition/oncofair-mr-element-go-nogo"
       },
       "name" : "OncoFAIRMRElementGoNogo",
       "description" : "Extension créée dans le cadre d'OncoFAIR",
@@ -426,7 +426,7 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/oncofair-mr-element-linktype"
+        "reference" : "StructureDefinition/oncofair-mr-element-link-type"
       },
       "name" : "OncoFAIRMRElementLinkType",
       "description" : "Extension créée dans le cadre d'OncoFAIR",
@@ -462,7 +462,19 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/oncofair-mr-prescription-validationdate"
+        "reference" : "StructureDefinition/oncofair-mr-id-linked-item"
+      },
+      "name" : "OncoFAIRMRIdLinkedItem",
+      "description" : "Extension créée dans le cadre d'OncoFAIR",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-mr-prescription-validation-date"
       },
       "name" : "OncoFAIRMRPrescriptionValidationDate",
       "description" : "Extension créée dans le cadre d'OncoFAIR",

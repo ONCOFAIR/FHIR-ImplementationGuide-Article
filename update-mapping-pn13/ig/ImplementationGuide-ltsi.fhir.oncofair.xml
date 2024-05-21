@@ -11,7 +11,7 @@
   <name value="OncoFAIR"/>
   <title value="Onco-FAIR"/>
   <status value="draft"/>
-  <date value="2024-04-30T13:09:54+00:00"/>
+  <date value="2024-05-21T14:49:50+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -173,7 +173,7 @@
         <reference value="StructureDefinition/oncofair-encounter"/>
       </reference>
       <name value="OncoFAIR Encounter"/>
-      <description value="OncoFAIR Encounter"/>
+      <description value="Must be taken in the generic sense, i.e. it goes beyond hospital admissions, outpatient consultations, dialysis sessions, day hospitals, etc."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -239,7 +239,7 @@
         <reference value="StructureDefinition/oncofaire-medicationrequest-element"/>
       </reference>
       <name value="OncoFAIR MedicationRequest Element"/>
-      <description value="OncoFAIR MedicationRequest Element"/>
+      <description value="Corresponds to a prescription line on a prescription. Each item contains one or more components (in the case of a magistral&#xA;preparation or an infusion)."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -250,7 +250,7 @@
         <reference value="StructureDefinition/oncofair-medicationrequest-prescription"/>
       </reference>
       <name value="OncoFAIR MedicationRequest Prescription"/>
-      <description value="OncoFAIR MedicationRequest Prescription"/>
+      <description value="Groups together all the prescription elements validated simultaneously by the same prescriber"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -261,7 +261,7 @@
         <reference value="StructureDefinition/oncofair-observation"/>
       </reference>
       <name value="OncoFAIR Observation"/>
-      <description value="Additional information, such as height or weight."/>
+      <description value="Allows you to enter information about the patient in addition to that described in the prescription elements."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -272,7 +272,7 @@
         <reference value="StructureDefinition/oncofair-patient"/>
       </reference>
       <name value="OncoFAIR Patient"/>
-      <description value="Patient receiving medical treatment in oncology."/>
+      <description value="Contains the patient's identity details needed to ensure that the prescription is properly taken into account."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -379,7 +379,7 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/oncofair-mr-element-gonogo"/>
+        <reference value="StructureDefinition/oncofair-mr-element-go-nogo"/>
       </reference>
       <name value="OncoFAIRMRElementGoNogo"/>
       <description value="Extension créée dans le cadre d'OncoFAIR"/>
@@ -390,7 +390,7 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/oncofair-mr-element-linktype"/>
+        <reference value="StructureDefinition/oncofair-mr-element-link-type"/>
       </reference>
       <name value="OncoFAIRMRElementLinkType"/>
       <description value="Extension créée dans le cadre d'OncoFAIR"/>
@@ -423,7 +423,18 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/oncofair-mr-prescription-validationdate"/>
+        <reference value="StructureDefinition/oncofair-mr-id-linked-item"/>
+      </reference>
+      <name value="OncoFAIRMRIdLinkedItem"/>
+      <description value="Extension créée dans le cadre d'OncoFAIR"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/oncofair-mr-prescription-validation-date"/>
       </reference>
       <name value="OncoFAIRMRPrescriptionValidationDate"/>
       <description value="Extension créée dans le cadre d'OncoFAIR"/>

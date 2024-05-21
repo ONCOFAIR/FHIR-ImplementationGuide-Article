@@ -187,7 +187,7 @@
         
           Draft
           
-            as of 2024-04-30
+            as of 2024-05-21
           
         
       </td>
@@ -206,36 +206,39 @@
   <a name="mapping-oncofair-medicationrequest-element"> </a><h3>Mappings for Mapping du profil OncoFAIR MedicationRequest Element ()</h3><table class="grid">
  <tr><td colspan="3"><b>OncoFAIRMedicationRequestElement</b></td></tr>
  <tr><td>MedicationRequest</td><td>ELEMENT PRESCRIPTION</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>Id élément prescription</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>idElementPrescription</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;basedOn</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;basedOn (prescription)</td><td>PRESCRIPTION</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;basedOn (element)</td><td>ELEMENT LIE</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension (oncofair-mr-element-linktype)</td><td>Type liason élément</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension (oncofair-mr-element-link-type)</td><td>typeLiaisonElement</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension (oncofair-mr-id-linked-item)</td><td>idElementLie</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;basedOn (protocol)</td><td>PROTOCOLE PRESCRIT</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>Création/Arrêt/Modification/Validation</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;priority</td><td>Urgent</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;requester</td><td>IdP. prescripteur</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;device</td><td>Dispostifs associés</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;note (description)</td><td>Libellé élément prescription</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;note (indication)</td><td>Indication</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;note (comment)</td><td>Commentaires</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;groupIdentifier</td><td>idGroupe</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>CreationArretModificationValidation</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;priority</td><td>urgent</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;requester</td><td>idpPrescripteur</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;device</td><td>dispostifsAssocies</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note (wording)</td><td>libelleElementPrescription</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note (indication)</td><td>indication</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note (comments)</td><td>commentaires</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;effectiveDosePeriod</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;start</td><td>D/H début prescription</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</td><td>D/H fin prescription</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;start</td><td>dateHeureDebutPrescription</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</td><td>dateHeureFinPrescription</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;dosageInstruction</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;dosageInstruction (element)</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>Posologie</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additionalInstruction</td><td>Conditions d'application</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>posologie</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additionalInstruction</td><td>conditionsApplication</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;timing</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;repeat</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bounds[x]</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bounds[x] (boundsPeriod)</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;start</td><td>D/H début prescrite</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</td><td>D/H fin prescrite</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;offset</td><td>Delta D/H référence</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;site</td><td>Lieu administration</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;route</td><td>Voie administration</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;method</td><td>Type élément prescription</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;start</td><td>dateHeureDebutPrescrite</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</td><td>dateHeureFinPrescrite</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;offset</td><td>deltaDateHeureReference</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;site</td><td>lieuAdministration</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;route</td><td>voieAdministration</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;method</td><td>typeElementPrescription</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;substitution</td><td>propostionPharmaceutique</td> </tr>
 </table>
 <a name="workflow"> </a><h3>Mappings for Workflow Pattern (<a href="http://hl7.org/fhir/workflow.html">http://hl7.org/fhir/workflow</a>)</h3><table class="grid">
  <tr><td colspan="3"><b>OncoFAIRMedicationRequestElement</b></td></tr>
@@ -262,9 +265,9 @@
  <tr><td>&nbsp;&nbsp;&nbsp;reason</td><td>Request.reason</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;insurance</td><td>Request.insurance</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>Request.note</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;note (description)</td><td>Request.note</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note (wording)</td><td>Request.note</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;note (indication)</td><td>Request.note</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;note (comment)</td><td>Request.note</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note (comments)</td><td>Request.note</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;eventHistory</td><td>Request.relevantHistory</td> </tr>
 </table>
 <a name="script10.6"> </a><h3>Mappings for Mapping to NCPDP SCRIPT 10.6 (http://ncpdp.org/SCRIPT10_6)</h3><table class="grid">
@@ -280,9 +283,9 @@
  <tr><td>&nbsp;&nbsp;&nbsp;authoredOn</td><td>Message/Body/NewRx/MedicationPrescribed/WrittenDate</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reason</td><td>Message/Body/NewRx/MedicationPrescribed/Diagnosis/Primary/Value</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>Message/Body/NewRx/MedicationPrescribed/Note</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;note (description)</td><td>Message/Body/NewRx/MedicationPrescribed/Note</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note (wording)</td><td>Message/Body/NewRx/MedicationPrescribed/Note</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;note (indication)</td><td>Message/Body/NewRx/MedicationPrescribed/Note</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;note (comment)</td><td>Message/Body/NewRx/MedicationPrescribed/Note</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note (comments)</td><td>Message/Body/NewRx/MedicationPrescribed/Note</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;dispenseRequest</td><td>Message/Body/NewRx/MedicationPrescribed/ExpirationDate</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;validityPeriod</td><td>Message/Body/NewRx/MedicationPrescribed/Refills</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numberOfRepeatsAllowed</td><td>Message/Body/NewRx/MedicationPrescribed/Quantity</td> </tr>
@@ -384,7 +387,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;courseOfTherapyType</td><td>Act.code where classCode = LIST and moodCode = EVN</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;insurance</td><td>.outboundRelationship[typeCode=COVBY].target</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>.inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=&quot;annotation&quot;].value</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;note (description)</td><td>.inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=&quot;annotation&quot;].value</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note (wording)</td><td>.inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=&quot;annotation&quot;].value</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;author[x]</td><td>Act.participant[typeCode=AUT].role</td> </tr>
@@ -396,7 +399,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;author[x]</td><td>Act.participant[typeCode=AUT].role</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;time</td><td>Act.effectiveTime</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>Act.text</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;note (comment)</td><td>.inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=&quot;annotation&quot;].value</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note (comments)</td><td>.inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=&quot;annotation&quot;].value</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;author[x]</td><td>Act.participant[typeCode=AUT].role</td> </tr>
@@ -538,7 +541,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;authoredOn</td><td>RXE-32 Original Order Date/Time / ORC-9-Date Time of Transaction</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reason</td><td>ORC-16 Order Control Code Reason /RXE-27 Give Indication/RXO-20-Indication / RXD-21 Indication / RXG-22 Indication / RXA-19 Indication</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;note</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;note (description)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note (wording)</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;author[x]</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;time</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>N/A</td> </tr>
@@ -546,7 +549,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;author[x]</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;time</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;note (comment)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note (comments)</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;author[x]</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;time</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>N/A</td> </tr>
@@ -623,7 +626,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Apr 30, 2024 13:09+0000">2024-04-30</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, May 21, 2024 14:49+0000">2024-05-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -24,8 +24,8 @@ package IG #DDDDDD{
 
         class OncoFAIREncounter{
 
-             Encounter.identifier => [1..None]
-             Encounter.identifier.value => [None..None]
+             Encounter.identifier => [1..1]
+             Encounter.identifier.value => [1..None]
              Encounter.subject => [1..None]
         } 
 
@@ -94,7 +94,7 @@ package IG #DDDDDD{
         class OncoFAIRMedicationRequestPrescription{
 
              MedicationRequest.extension => [1..None]
-             MedicationRequest.extension:oncofair-mr-prescription-validationdate => <&plus>[1..1]
+             MedicationRequest.extension:oncofair-mr-prescription-validation-date => <&plus>[1..1]
              MedicationRequest.identifier => [1..1]
              MedicationRequest.identifier.value => [1..None]
              MedicationRequest.basedOn => [None..None]
@@ -107,7 +107,7 @@ package IG #DDDDDD{
              MedicationRequest.supportingInformation:medicalLiabiltyUnit => [0..1]
              MedicationRequest.supportingInformation:medicalLiabiltyUnit.id => [1..None]
              MedicationRequest.reason => [None..None]
-             MedicationRequest.note => [None..None]
+             MedicationRequest.note => [None..1]
         } 
 
         class OncoFAIRObservation{
@@ -121,7 +121,7 @@ package IG #DDDDDD{
 
         class OncoFAIRPatient{
 
-             Patient.identifier => [1..None]
+             Patient.identifier => [1..1]
         } 
 
         class OncoFAIRMedicationRequestComponent{
@@ -153,15 +153,16 @@ package IG #DDDDDD{
              MedicationRequest.extension:oncofair-element-form => <&plus>[0..1]
              MedicationRequest.extension:oncofair-mr-element-supply => <&plus>[0..1]
              MedicationRequest.extension:oncofair-mr-element-rank => <&plus>[0..1]
-             MedicationRequest.extension:oncofair-mr-element-gonogo => <&plus>[0..1]
+             MedicationRequest.extension:oncofair-mr-element-go-nogo => <&plus>[0..1]
              MedicationRequest.extension:oncofair-pharmacist-advice => <&plus>[0..1]
              MedicationRequest.identifier => [1..1]
              MedicationRequest.identifier.value => [1..None]
              MedicationRequest.basedOn => [1..None]
              MedicationRequest.basedOn:prescription => [1..1]
              MedicationRequest.basedOn:element => [0..*]
-             MedicationRequest.basedOn:element.extension => [1..None]
-             MedicationRequest.basedOn:element.extension:oncofair-mr-element-linktype => <&plus>[1..1]
+             MedicationRequest.basedOn:element.extension => [2..None]
+             MedicationRequest.basedOn:element.extension:oncofair-mr-element-link-type => <&plus>[1..1]
+             MedicationRequest.basedOn:element.extension:oncofair-mr-id-linked-item => <&plus>[1..1]
              MedicationRequest.basedOn:protocol => [0..1]
              MedicationRequest.groupIdentifier => [1..None]
              MedicationRequest.groupIdentifier.value => [1..None]
@@ -172,12 +173,12 @@ package IG #DDDDDD{
              MedicationRequest.requester => [None..None]
              MedicationRequest.device => [None..None]
              MedicationRequest.note => [None..None]
-             MedicationRequest.note:description => [0..1]
-             MedicationRequest.note:description.id => [1..None]
+             MedicationRequest.note:wording => [0..1]
+             MedicationRequest.note:wording.id => [1..None]
              MedicationRequest.note:indication => [0..1]
              MedicationRequest.note:indication.id => [1..None]
-             MedicationRequest.note:comment => [0..1]
-             MedicationRequest.note:comment.id => [1..None]
+             MedicationRequest.note:comments => [0..1]
+             MedicationRequest.note:comments.id => [1..None]
              MedicationRequest.effectiveDosePeriod => [None..None]
              MedicationRequest.effectiveDosePeriod.start => [None..None]
              MedicationRequest.effectiveDosePeriod.end => [None..None]
@@ -185,7 +186,7 @@ package IG #DDDDDD{
              MedicationRequest.dosageInstruction:element => [0..1]
              MedicationRequest.dosageInstruction:element.id => [1..None]
              MedicationRequest.dosageInstruction:element.text => [None..None]
-             MedicationRequest.dosageInstruction:element.additionalInstruction => [1..1]
+             MedicationRequest.dosageInstruction:element.additionalInstruction => [None..1]
              MedicationRequest.dosageInstruction:element.timing.repeat.bounds[x] => [None..None]
              MedicationRequest.dosageInstruction:element.timing.repeat.bounds[x]:boundsPeriod => [0..1]
              MedicationRequest.dosageInstruction:element.timing.repeat.bounds[x]:boundsPeriod.start => [None..None]
@@ -218,6 +219,7 @@ package IG #DDDDDD{
      OncoFAIRMedicationRequestElement -[#black,dashed,thickness=2]-> OncoFAIRMRElementGoNogo
      OncoFAIRMedicationRequestElement -[#black,dashed,thickness=2]-> OncoFAIRPharmacistAdvice
      OncoFAIRMedicationRequestElement -[#black,dashed,thickness=2]-> OncoFAIRMRElementLinkType
+     OncoFAIRMedicationRequestElement -[#black,dashed,thickness=2]-> OncoFAIRMRIdLinkedItem
 
         class OncoFAIRCPTreatment{
 
@@ -320,6 +322,12 @@ package IG #DDDDDD{
           Extension.value[x] => [None..None]
         } 
         class OncoFAIRMRElementSupply{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class OncoFAIRMRIdLinkedItem{
 
           Extension.extension => [None..0]
           Extension.url => [None..None]
