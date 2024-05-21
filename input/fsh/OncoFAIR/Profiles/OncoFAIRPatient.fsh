@@ -2,10 +2,30 @@ Profile: OncoFAIRPatient
 Parent: Patient
 Id: oncofair-patient
 Title: "OncoFAIR Patient"
-Description : "Patient receiving medical treatment in oncology."
+Description : "Contains the patient's identity details needed to ensure that the prescription is properly taken into account."
 
-* identifier 1..* MS
-* identifier ^short = "The patient's identifier"
+* identifier 1..1 MS
+* identifier ^short = "Permanent Patient Identifier"
+
+/*
+* name ^slicing.discriminator.type = #value
+* name ^slicing.discriminator.path = "use"
+* name ^slicing.rules = #open
+
+* name contains
+    usualName 0..* and
+    officialName 0..*
+
+
+* name [usualName] ^short = "Patient's usual name"
+* name [usualName].use = #usual
+
+* name [officialName] ^short = "Patient's birth name"
+* name [officialName].use = #official
+* name [officialName].given ..1
+*/
+
+
 
 /*
 * identifier ^slicing.discriminator.type = #value
@@ -36,3 +56,5 @@ Source:   OncoFAIRPatient
 Id:       mapping-oncofair-patient
 Title:    "Mapping du profil OncoFAIR Patient"
 * -> "PATIENT"
+
+* "identifier" -> "IPP" 
