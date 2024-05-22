@@ -20,8 +20,7 @@ preparation or an infusion)."
 * basedOn[protocol] only Reference(OncoFAIRCarePlan)
 * basedOn[protocol] ^short = "The protocol linked to the element of prescription"
 * basedOn[element].extension contains
-    OncoFAIRMRElementLinkType named oncofair-mr-element-link-type 1..1 and
-    OncoFAIRMRIdLinkedItem named oncofair-mr-id-linked-item 1..1
+    OncoFAIRMRElementLinkType named oncofair-mr-element-link-type 1..1
 
 * device MS
 * device ^short = "Specifies, where applicable, the medical devices or equipment to be used to administer the product"
@@ -58,10 +57,27 @@ preparation or an infusion)."
 * dosageInstruction ^slicing.rules = #open
 * dosageInstruction contains
     element 0..1 and
-    posology 0..*
+    posology 0..* 
+
 * dosageInstruction[element].id = "element"
 * dosageInstruction[posology].id = "posology"
 * dosageInstruction[element].additionalInstruction ..1
+
+* dosageInstruction[posology].timing.event ^slicing.discriminator.type = #value
+* dosageInstruction[posology].timing.event ^slicing.discriminator.path = "id"
+* dosageInstruction[posology].timing.event ^slicing.rules = #open
+* dosageInstruction[posology].timing.event contains
+    startEvent 0..1 and
+    endEvent 0..1
+
+* dosageInstruction[posology].timing.event[startEvent].id = "startEvent"
+* dosageInstruction[posology].timing.event[endEvent].id = "endEvent"
+
+* dosageInstruction[posology].timing.event[startEvent] ^short = "Event triggering the start of a therapeutic phase"
+* dosageInstruction[posology].timing.event[endEvent] ^short = "Event triggering the end of a therapeutic phase"
+* dosageInstruction[posology].timing.repeat.duration ^short = "Duration of administration"
+* dosageInstruction[posology].doseAndRate.rateQuantity ^short = "Rate of administration in the case of injection"
+* dosageInstruction[posology].doseAndRate.doseQuantity ^short = "Quantity of the prescription element in the dosage"
 
 * dosageInstruction[element].method ^short = "Type of prescription element"
 * dosageInstruction[element].route ^short = "Specifies the route of administration of the product"
@@ -71,6 +87,8 @@ preparation or an infusion)."
 * dosageInstruction[element].timing.repeat.boundsPeriod.end ^short = "Prescribed end date and time of product prescription"
 * dosageInstruction[element].timing.repeat.offset ^short = "Decimal value, positive or negative, of the interval between the reference date/time of the prescribed protocol and that of this prescription item"
 * dosageInstruction[element].additionalInstruction ^short = "Free text describing the conditions of application of this prescription element"
+
+* dosageInstruction[posology].timing.repeat.frequency ^short = "Indicates the recurrence of the dosage. By default, every day"
 
 * note MS
 * note ^slicing.discriminator.type = #value
@@ -103,8 +121,7 @@ Title:    "Mapping du profil OncoFAIR MedicationRequest Element"
 
 * basedOn[prescription] -> "PRESCRIPTION" 
 * basedOn[element] -> "ELEMENT LIE"
-* basedOn[element].extension[oncofair-mr-element-link-type] -> "typeLiaisonElement"
-* basedOn[element].extension[oncofair-mr-id-linked-item] -> "idElementLie"
+/** basedOn[element].extension[oncofair-mr-element-link-type] -> "typeLiaisonElement"*/
 * basedOn[protocol] -> "PROTOCOLE PRESCRIT"
 
 * device -> "dispostifsAssocies"
