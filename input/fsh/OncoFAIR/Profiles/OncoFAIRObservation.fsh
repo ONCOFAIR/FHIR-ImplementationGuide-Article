@@ -6,9 +6,9 @@ Description: "Allows you to enter information about the patient in addition to t
 
 * code MS
 * code ^short = "Nature of additional information representing by LOINC code"
-* effectiveDateTime MS
+* effectiveDateTime 1..1 MS
 * effectiveDateTime ^short = "Date and time of registration of the additional information" 
-* issued 1..1 MS
+* issued MS
 * issued ^short = "Date and time associated with the additional information"
 * value[x] 1..1 MS
 * value[x] ^short = "Contains the value of the additional information"
@@ -22,6 +22,6 @@ Title:    "Mapping du profil OncoFAIR Observation"
 * -> "RENSEIGNEMENT COMPLEMENTAIRE"
 
 * code -> "codeRenseignementComplementaire"
-* effectiveDateTime -> "dateHeureRenseignementComplementaire"
-* issued -> "dateHeureEnregistrementRenseignementComplementaire"
+* effectiveDateTime -> "dateHeureEnregistrementRenseignementComplementaire"
+* issued -> "dateHeureRenseignementComplementaire"
 * value[x] -> "valeurRenseignementComplementaire"
