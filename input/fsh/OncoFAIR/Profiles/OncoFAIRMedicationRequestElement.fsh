@@ -32,7 +32,7 @@ preparation or an infusion)."
 
 * identifier 1..1 MS
 * identifier.value 1..1
-* identifier.value ^short = "Unique identifier of the prescription item by the prescriber"
+* identifier ^short = "Unique identifier of the prescription item by the prescriber"
 * groupIdentifier 1..1 MS
 * groupIdentifier.value 1..1
 * groupIdentifier ^short = "Identifier common to all components of the same prescription"
