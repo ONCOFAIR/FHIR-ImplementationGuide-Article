@@ -8,8 +8,6 @@ Description: "Regroups all the prescription elements received on which the pharm
 * encounter ^short = "The encounter linked to the administration report"
 
 * performer 1..1 MS
-
-* performer.actor only Reference(Practitioner)
 * performer.actor ^short = "Identification of the person who planned, administered or monitored the administration of the medicines represented by the administration elements"
 
 * identifier 1..1 MS
