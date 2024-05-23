@@ -36,8 +36,8 @@ Description : "Is a product that belongs to the nomenclature of medicines used. 
 
 * extension contains
     OncoFAIRMRExemptLTC named oncofair-mr-exempt-ltc 0..1 and
-    OncoFAIRMRComponentSolute named oncofair-mr-component-solute 0..1
-
+    OncoFAIRMRComponentSolute named oncofair-mr-component-solute 0..1 and
+    OncoFAIRMRIsDosageReferent named oncofair-mr-is-dosage-referent 0..1
 
 Mapping:  mapping_OncoFAIRMedicationRequestComponent
 Source:   OncoFAIRMedicationRequestComponent

@@ -3,6 +3,10 @@ Id: oncofair-ma-element-expirationdate
 Description: "Extension créée dans le cadre d'OncoFAIR" //TODO
 * ^context[+].type = #element
 * ^context[=].expression = "OncoFAIRMedicationAdministrationElement"
+
+* ^context[+].type = #element
+* ^context[=].expression = "OncoFAIRMedicationAdministrationComponent"
+
 * value[x] only dateTime
 
 

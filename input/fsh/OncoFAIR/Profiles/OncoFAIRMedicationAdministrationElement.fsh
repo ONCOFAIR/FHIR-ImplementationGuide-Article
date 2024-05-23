@@ -2,7 +2,7 @@ Profile: OncoFAIRMedicationAdministrationElement
 Parent: MedicationAdministration
 Id: oncofair-medicationadministration-element
 Title: "OncoFAIR MedicationAdministration Element"
-Description: "OncoFAIR MedicationAdministration Element" //TODO
+Description: "Corresponds to the activity induced by a prescription item and its dosage (structured or unstructured), and carried out at a given moment." 
 
 * partOf 1..1 MS
 * partOf only Reference(OncoFAIRMedicationAdministrationReport)
