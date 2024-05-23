@@ -10,7 +10,7 @@
   "name" : "OncoFAIR",
   "title" : "Onco-FAIR",
   "status" : "draft",
-  "date" : "2024-05-22T08:18:01+00:00",
+  "date" : "2024-05-23T12:26:46+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -177,7 +177,7 @@
         "reference" : "StructureDefinition/oncofair-careplan"
       },
       "name" : "OncoFAIR CarePlan",
-      "description" : "OncoFAIR CarePlan",
+      "description" : "This object describes the chaining of prescription elements attached to the prescribed protocol. Its structure enables the chaining of nested sub-protocols.",
       "isExample" : false
     },
     {
@@ -201,7 +201,6 @@
         "reference" : "StructureDefinition/oncofair-medication"
       },
       "name" : "OncoFAIR Medication",
-      "description" : "Medication used in oncology.",
       "isExample" : false
     },
     {
@@ -213,7 +212,7 @@
         "reference" : "StructureDefinition/oncofair-medicationadministration-component"
       },
       "name" : "OncoFAIR MedicationAdministration Component",
-      "description" : "OncoFAIR MedicationAdministration Component",
+      "description" : "This object corresponds to a product that belongs to the nomenclature of medicines used in the hospital.",
       "isExample" : false
     },
     {
@@ -225,7 +224,7 @@
         "reference" : "StructureDefinition/oncofair-medicationadministration-element"
       },
       "name" : "OncoFAIR MedicationAdministration Element",
-      "description" : "OncoFAIR MedicationAdministration Element",
+      "description" : "Corresponds to the activity induced by a prescription item and its dosage (structured or unstructured), and carried out at a given moment.",
       "isExample" : false
     },
     {
@@ -237,7 +236,7 @@
         "reference" : "StructureDefinition/oncofair-medicationadministration-report"
       },
       "name" : "OncoFAIR MedicationAdministration Report",
-      "description" : "OncoFAIR MedicationAdministration Report",
+      "description" : "Regroups all the prescription elements received on which the pharmacist expresses his validation. It also includes items suggested or resulting from a replacement proposed by the pharmacist.",
       "isExample" : false
     },
     {
@@ -249,7 +248,7 @@
         "reference" : "StructureDefinition/oncofaire-medicationrequest-component"
       },
       "name" : "OncoFAIR MedicationRequest Component",
-      "description" : "OncoFAIR MedicationRequest Component",
+      "description" : "Is a product that belongs to the nomenclature of medicines used. It may, for example, be a speciality, a product defined by its DC or a pharmacopoeial product.",
       "isExample" : false
     },
     {
@@ -330,6 +329,30 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/oncofair-ma-component-administration-status"
+      },
+      "name" : "OncoFAIRMAComponentAdministrationStatus",
+      "description" : "Extension créée dans le cadre d'OncoFAIR",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-ma-component-origin"
+      },
+      "name" : "OncoFAIRMAComponentOrigin",
+      "description" : "Extension créée dans le cadre d'OncoFAIR",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/oncofair-ma-element-expirationdate"
       },
       "name" : "OncoFAIRMAElementExpirationDate",
@@ -381,18 +404,6 @@
         "reference" : "StructureDefinition/oncofair-medication-type"
       },
       "name" : "OncoFAIRMedicationType",
-      "description" : "Extension créée dans le cadre d'OncoFAIR",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/oncofair-mr-component-exoneratingald"
-      },
-      "name" : "OncoFAIRMRComponentExoneratingALD",
       "description" : "Extension créée dans le cadre d'OncoFAIR",
       "isExample" : false
     },
@@ -462,9 +473,21 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/oncofair-mr-id-linked-item"
+        "reference" : "StructureDefinition/oncofair-mr-exempt-ltc"
       },
-      "name" : "OncoFAIRMRIdLinkedItem",
+      "name" : "OncoFAIRMRExemptLTC",
+      "description" : "Extension créée dans le cadre d'OncoFAIR",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-mr-is-dosage-referent"
+      },
+      "name" : "OncoFAIRMRIsDosageReferent",
       "description" : "Extension créée dans le cadre d'OncoFAIR",
       "isExample" : false
     },

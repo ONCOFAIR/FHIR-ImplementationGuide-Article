@@ -11,7 +11,7 @@
   <name value="OncoFAIR"/>
   <title value="Onco-FAIR"/>
   <status value="draft"/>
-  <date value="2024-05-22T08:18:01+00:00"/>
+  <date value="2024-05-23T12:26:46+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -162,7 +162,7 @@
         <reference value="StructureDefinition/oncofair-careplan"/>
       </reference>
       <name value="OncoFAIR CarePlan"/>
-      <description value="OncoFAIR CarePlan"/>
+      <description value="This object describes the chaining of prescription elements attached to the prescribed protocol. Its structure enables the chaining of nested sub-protocols."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -184,7 +184,6 @@
         <reference value="StructureDefinition/oncofair-medication"/>
       </reference>
       <name value="OncoFAIR Medication"/>
-      <description value="Medication used in oncology."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -195,7 +194,7 @@
         <reference value="StructureDefinition/oncofair-medicationadministration-component"/>
       </reference>
       <name value="OncoFAIR MedicationAdministration Component"/>
-      <description value="OncoFAIR MedicationAdministration Component"/>
+      <description value="This object corresponds to a product that belongs to the nomenclature of medicines used in the hospital."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -206,7 +205,7 @@
         <reference value="StructureDefinition/oncofair-medicationadministration-element"/>
       </reference>
       <name value="OncoFAIR MedicationAdministration Element"/>
-      <description value="OncoFAIR MedicationAdministration Element"/>
+      <description value="Corresponds to the activity induced by a prescription item and its dosage (structured or unstructured), and carried out at a given moment."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -217,7 +216,7 @@
         <reference value="StructureDefinition/oncofair-medicationadministration-report"/>
       </reference>
       <name value="OncoFAIR MedicationAdministration Report"/>
-      <description value="OncoFAIR MedicationAdministration Report"/>
+      <description value="Regroups all the prescription elements received on which the pharmacist expresses his validation. It also includes items suggested or resulting from a replacement proposed by the pharmacist."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -228,7 +227,7 @@
         <reference value="StructureDefinition/oncofaire-medicationrequest-component"/>
       </reference>
       <name value="OncoFAIR MedicationRequest Component"/>
-      <description value="OncoFAIR MedicationRequest Component"/>
+      <description value="Is a product that belongs to the nomenclature of medicines used. It may, for example, be a speciality, a product defined by its DC or a pharmacopoeial product."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -302,6 +301,28 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/oncofair-ma-component-administration-status"/>
+      </reference>
+      <name value="OncoFAIRMAComponentAdministrationStatus"/>
+      <description value="Extension créée dans le cadre d'OncoFAIR"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/oncofair-ma-component-origin"/>
+      </reference>
+      <name value="OncoFAIRMAComponentOrigin"/>
+      <description value="Extension créée dans le cadre d'OncoFAIR"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/oncofair-ma-element-expirationdate"/>
       </reference>
       <name value="OncoFAIRMAElementExpirationDate"/>
@@ -349,17 +370,6 @@
         <reference value="StructureDefinition/oncofair-medication-type"/>
       </reference>
       <name value="OncoFAIRMedicationType"/>
-      <description value="Extension créée dans le cadre d'OncoFAIR"/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/oncofair-mr-component-exoneratingald"/>
-      </reference>
-      <name value="OncoFAIRMRComponentExoneratingALD"/>
       <description value="Extension créée dans le cadre d'OncoFAIR"/>
       <isExample value="false"/>
     </resource>
@@ -423,9 +433,20 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/oncofair-mr-id-linked-item"/>
+        <reference value="StructureDefinition/oncofair-mr-exempt-ltc"/>
       </reference>
-      <name value="OncoFAIRMRIdLinkedItem"/>
+      <name value="OncoFAIRMRExemptLTC"/>
+      <description value="Extension créée dans le cadre d'OncoFAIR"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/oncofair-mr-is-dosage-referent"/>
+      </reference>
+      <name value="OncoFAIRMRIsDosageReferent"/>
       <description value="Extension créée dans le cadre d'OncoFAIR"/>
       <isExample value="false"/>
     </resource>

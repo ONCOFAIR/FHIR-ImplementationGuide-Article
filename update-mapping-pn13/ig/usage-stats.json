@@ -74,6 +74,20 @@
       ]
     },
     {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-component-administration-status",
+      "title": "OncoFAIRMAComponentAdministrationStatus",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-component-origin",
+      "title": "OncoFAIRMAComponentOrigin",
+      "types": [
+        "code"
+      ]
+    },
+    {
       "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-expirationdate",
       "title": "OncoFAIRMAElementExpirationDate",
       "types": [
@@ -163,13 +177,6 @@
     {
       "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication-type",
       "title": "OncoFAIRMedicationType",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-component-exoneratingald",
-      "title": "OncoFAIRMRComponentExoneratingALD",
       "types": [
         "CodeableConcept"
       ]
@@ -265,10 +272,17 @@
       ]
     },
     {
-      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-id-linked-item",
-      "title": "OncoFAIRMRIdLinkedItem",
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-exempt-ltc",
+      "title": "OncoFAIRMRExemptLTC",
       "types": [
         "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-is-dosage-referent",
+      "title": "OncoFAIRMRIsDosageReferent",
+      "types": [
+        "boolean"
       ]
     },
     {
@@ -410,6 +424,9 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
     ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
       "StructureDefinition.snapshot.element"
     ],
@@ -438,6 +455,12 @@
     "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-element-form": [
       "MedicationRequest"
     ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-component-administration-status": [
+      "MedicationAdministration"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-component-origin": [
+      "MedicationAdministration"
+    ],
     "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-expirationdate": [
       "MedicationAdministration"
     ],
@@ -452,9 +475,6 @@
     ],
     "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication-type": [
       "Medication"
-    ],
-    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-component-exoneratingald": [
-      "MedicationRequest"
     ],
     "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-component-solute": [
       "MedicationRequest"
@@ -471,8 +491,11 @@
     "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-supply": [
       "MedicationRequest"
     ],
-    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-id-linked-item": [
-      "MedicationRequest.basedOn"
+    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-exempt-ltc": [
+      "MedicationRequest"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-is-dosage-referent": [
+      "MedicationRequest"
     ],
     "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-prescription-validation-date": [
       "MedicationRequest"
