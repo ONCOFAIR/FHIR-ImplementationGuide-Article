@@ -28,10 +28,14 @@ dom-4dom-3dom-5","","N/A"
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "CarePlan.extension:oncofair-cp-treatment","CarePlan.extension","oncofair-cp-treatment","","",1,1,"Y","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-cp-treatment]]} {[]}
-","Extension","Extension created as part of OncoFAIR,Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Extension","Extension created as part of OncoFAIR grouping together the treatment number, the day number and the reference date and time of the prescribed protocol. 
+ 
+Extension créée dans le cadre d'OncoFAIR regroupant le numéro de cure, le numéro de jour ainsi que la date et heure de référence du protocole prescrit.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "CarePlan.extension:oncofair-pharmacist-advice","CarePlan.extension","oncofair-pharmacist-advice","","",0,1,"Y","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-pharmacist-advice]]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Extension","Extension created as part of OncoFAIR containing the validation and pharmaceutical proposal. 
+
+Extension créée dans le cadre d'OncoFAIR contenant la validation et proposition pharmaceutique.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "CarePlan.modifierExtension","CarePlan.modifierExtension","","extensions
 user content","",0,*,"","Y","Y","Extension {[]} {[]}

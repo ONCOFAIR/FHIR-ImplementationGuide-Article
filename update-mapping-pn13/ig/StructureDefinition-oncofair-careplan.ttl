@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIRCarePlan"] ; # 
   fhir:title [ fhir:v "OncoFAIR CarePlan"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-27T07:09:09+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-27T09:43:00+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -378,7 +378,7 @@
        fhir:path [ fhir:v "CarePlan.extension" ] ;
        fhir:sliceName [ fhir:v "oncofair-cp-treatment" ] ;
        fhir:short [ fhir:v "Extension" ] ;
-       fhir:definition [ fhir:v "Extension created as part of OncoFAIR,Extension créée dans le cadre d'OncoFAIR" ] ;
+       fhir:definition [ fhir:v "Extension created as part of OncoFAIR grouping together the treatment number, the day number and the reference date and time of the prescribed protocol. \r\n \nExtension créée dans le cadre d'OncoFAIR regroupant le numéro de cure, le numéro de jour ainsi que la date et heure de référence du protocole prescrit." ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -419,7 +419,7 @@
        fhir:path [ fhir:v "CarePlan.extension" ] ;
        fhir:sliceName [ fhir:v "oncofair-pharmacist-advice" ] ;
        fhir:short [ fhir:v "Extension" ] ;
-       fhir:definition [ fhir:v "Extension créée dans le cadre d'OncoFAIR" ] ;
+       fhir:definition [ fhir:v "Extension created as part of OncoFAIR containing the validation and pharmaceutical proposal. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant la validation et proposition pharmaceutique." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [

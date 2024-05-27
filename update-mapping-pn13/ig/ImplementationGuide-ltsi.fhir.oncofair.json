@@ -10,7 +10,7 @@
   "name" : "OncoFAIR",
   "title" : "Onco-FAIR",
   "status" : "draft",
-  "date" : "2024-05-27T07:09:09+00:00",
+  "date" : "2024-05-27T09:43:00+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -248,7 +248,7 @@
         "reference" : "StructureDefinition/oncofaire-medicationrequest-component"
       },
       "name" : "OncoFAIR MedicationRequest Component",
-      "description" : "Is a product that belongs to the nomenclature of medicines used. It may, for example, be a speciality, a product defined by its DC or a pharmacopoeial product.",
+      "description" : "Is a product that belongs to the nomenclature of medicines used. It may, for example, be a speciality, a product defined by its common name or a pharmacopoeial product.",
       "isExample" : false
     },
     {
@@ -308,7 +308,7 @@
         "reference" : "StructureDefinition/oncofair-cp-treatment"
       },
       "name" : "OncoFAIRCPTreatment",
-      "description" : "Extension created as part of OncoFAIR,Extension créée dans le cadre d'OncoFAIR",
+      "description" : "Extension created as part of OncoFAIR grouping together the treatment number, the day number and the reference date and time of the prescribed protocol. \r\n \nExtension créée dans le cadre d'OncoFAIR regroupant le numéro de cure, le numéro de jour ainsi que la date et heure de référence du protocole prescrit.",
       "isExample" : false
     },
     {
@@ -320,7 +320,7 @@
         "reference" : "StructureDefinition/oncofair-element-form"
       },
       "name" : "OncoFAIRElementForm",
-      "description" : "Extension créée dans le cadre d'OncoFAIR",
+      "description" : "Extension created as part of OncoFair containing the drug form. \r\n\nExtension créée dans le cadre d'OncoFair contenant la forme du médicament.",
       "isExample" : false
     },
     {
@@ -332,7 +332,7 @@
         "reference" : "StructureDefinition/oncofair-ma-component-administration-status"
       },
       "name" : "OncoFAIRMAComponentAdministrationStatus",
-      "description" : "Extension créée dans le cadre d'OncoFAIR",
+      "description" : "Extension created as part of OncoFAIR containing the administration status of the administered component. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant le statut d'administration du composant administré.",
       "isExample" : false
     },
     {
@@ -344,7 +344,7 @@
         "reference" : "StructureDefinition/oncofair-ma-component-origin"
       },
       "name" : "OncoFAIRMAComponentOrigin",
-      "description" : "Extension créée dans le cadre d'OncoFAIR",
+      "description" : "Extension created as part of OncoFAIR containing the origin of the administered component. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant la provenance du composant administré.",
       "isExample" : false
     },
     {
@@ -356,7 +356,7 @@
         "reference" : "StructureDefinition/oncofair-ma-element-expirationdate"
       },
       "name" : "OncoFAIRMAElementExpirationDate",
-      "description" : "Extension créée dans le cadre d'OncoFAIR",
+      "description" : "Extension created as part of OncoFAIR containing the expiry date of the component administered. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant la date de péremption du composant administré.",
       "isExample" : false
     },
     {
@@ -368,7 +368,7 @@
         "reference" : "StructureDefinition/oncofair-ma-element-plannedperiod"
       },
       "name" : "OncoFAIRMAElementPlannedPeriod",
-      "description" : "Extension créée dans le cadre d'OncoFAIR",
+      "description" : "Extension created as part of OncoFAIR containing the planned start and end date of administration. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant la date de début et de fin prévue de l'administration.",
       "isExample" : false
     },
     {
@@ -380,7 +380,7 @@
         "reference" : "StructureDefinition/oncofair-ma-element-traceability"
       },
       "name" : "OncoFAIRMAElementTraceability",
-      "description" : "Extension créée dans le cadre d'OncoFAIR",
+      "description" : "Extension created as part of OncoFAIR containing the batch and serial number of the administered component/administration element. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant le numéro de lot et de série du composant administré/élément d'administration.",
       "isExample" : false
     },
     {
@@ -392,7 +392,7 @@
         "reference" : "StructureDefinition/oncofair-ma-element-urgent"
       },
       "name" : "OncoFAIRMAElementUrgent",
-      "description" : "Extension créée dans le cadre d'OncoFAIR",
+      "description" : "Extension created as part of OncoFAIR containing the notion of emergency. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant la notion d'urgence.",
       "isExample" : false
     },
     {
@@ -404,7 +404,7 @@
         "reference" : "StructureDefinition/oncofair-medication-type"
       },
       "name" : "OncoFAIRMedicationType",
-      "description" : "Extension créée dans le cadre d'OncoFAIR",
+      "description" : "Extension created as part of OncoFAIR containing the type of component. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant le type de composant.",
       "isExample" : false
     },
     {
@@ -416,7 +416,7 @@
         "reference" : "StructureDefinition/oncofair-mr-component-solute"
       },
       "name" : "OncoFAIRMRComponentSolute",
-      "description" : "Extension créée dans le cadre d'OncoFAIR",
+      "description" : "Extension created as part of OncoFAIR containing the notion of solute. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant la notion de soluté.",
       "isExample" : false
     },
     {
@@ -428,7 +428,7 @@
         "reference" : "StructureDefinition/oncofair-mr-element-go-nogo"
       },
       "name" : "OncoFAIRMRElementGoNogo",
-      "description" : "Extension créée dans le cadre d'OncoFAIR",
+      "description" : "Extension created as part of OncoFAIR containing the concept of GoNogo. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant la notion de GoNogo.",
       "isExample" : false
     },
     {
@@ -440,7 +440,7 @@
         "reference" : "StructureDefinition/oncofair-mr-element-link-type"
       },
       "name" : "OncoFAIRMRElementLinkType",
-      "description" : "Extension créée dans le cadre d'OncoFAIR",
+      "description" : "Extension created as part of OncoFAIR containing the element's type of link. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant le type de liaison de l'élément.",
       "isExample" : false
     },
     {
@@ -452,7 +452,7 @@
         "reference" : "StructureDefinition/oncofair-mr-element-rank"
       },
       "name" : "OncoFAIRMRElementRank",
-      "description" : "Extension créée dans le cadre d'OncoFAIR",
+      "description" : "Extension created as part of OncoFAIR containing the prescription element rank. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant le rangd d'élement de la prescription.",
       "isExample" : false
     },
     {
@@ -464,7 +464,7 @@
         "reference" : "StructureDefinition/oncofair-mr-element-supply"
       },
       "name" : "OncoFAIRMRElementSupply",
-      "description" : "Extension créée dans le cadre d'OncoFAIR",
+      "description" : "Extension created as part of OncoFAIR containing the concept of supply. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant la notion de fourniture.",
       "isExample" : false
     },
     {
@@ -476,7 +476,7 @@
         "reference" : "StructureDefinition/oncofair-mr-exempt-ltc"
       },
       "name" : "OncoFAIRMRExemptLTC",
-      "description" : "Extension créée dans le cadre d'OncoFAIR",
+      "description" : "Extension created as part of OncoFAIR containing the notion of exemption. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant la notion d'exonération.",
       "isExample" : false
     },
     {
@@ -488,7 +488,7 @@
         "reference" : "StructureDefinition/oncofair-mr-is-dosage-referent"
       },
       "name" : "OncoFAIRMRIsDosageReferent",
-      "description" : "Extension créée dans le cadre d'OncoFAIR",
+      "description" : "Extension created as part of OncoFAIR containing the notion of a posology reference. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant la notion de référence posologie.",
       "isExample" : false
     },
     {
@@ -500,7 +500,7 @@
         "reference" : "StructureDefinition/oncofair-mr-prescription-validation-date"
       },
       "name" : "OncoFAIRMRPrescriptionValidationDate",
-      "description" : "Extension créée dans le cadre d'OncoFAIR",
+      "description" : "Extension créée dans le cadre d'OncoFAIR contenant la date et heure de la prescription",
       "isExample" : false
     },
     {
@@ -512,7 +512,7 @@
         "reference" : "StructureDefinition/oncofair-pharmacist-advice"
       },
       "name" : "OncoFAIRPharmacistAdvice",
-      "description" : "Extension créée dans le cadre d'OncoFAIR",
+      "description" : "Extension created as part of OncoFAIR containing the validation and pharmaceutical proposal. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant la validation et proposition pharmaceutique.",
       "isExample" : false
     },
     {

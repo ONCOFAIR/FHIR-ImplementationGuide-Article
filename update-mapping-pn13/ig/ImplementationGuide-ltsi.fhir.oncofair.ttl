@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIR"] ; # 
   fhir:title [ fhir:v "Onco-FAIR"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-27T07:09:09+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-27T09:43:00+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -261,7 +261,7 @@
          fhir:reference [ fhir:v "StructureDefinition/oncofaire-medicationrequest-component" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIR MedicationRequest Component" ] ;
-       fhir:description [ fhir:v "Is a product that belongs to the nomenclature of medicines used. It may, for example, be a speciality, a product defined by its DC or a pharmacopoeial product." ] ;
+       fhir:description [ fhir:v "Is a product that belongs to the nomenclature of medicines used. It may, for example, be a speciality, a product defined by its common name or a pharmacopoeial product." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -321,7 +321,7 @@
          fhir:reference [ fhir:v "StructureDefinition/oncofair-cp-treatment" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIRCPTreatment" ] ;
-       fhir:description [ fhir:v "Extension created as part of OncoFAIR,Extension créée dans le cadre d'OncoFAIR" ] ;
+       fhir:description [ fhir:v "Extension created as part of OncoFAIR grouping together the treatment number, the day number and the reference date and time of the prescribed protocol. \r\n \nExtension créée dans le cadre d'OncoFAIR regroupant le numéro de cure, le numéro de jour ainsi que la date et heure de référence du protocole prescrit." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -333,7 +333,7 @@
          fhir:reference [ fhir:v "StructureDefinition/oncofair-element-form" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIRElementForm" ] ;
-       fhir:description [ fhir:v "Extension créée dans le cadre d'OncoFAIR" ] ;
+       fhir:description [ fhir:v "Extension created as part of OncoFair containing the drug form. \r\n\nExtension créée dans le cadre d'OncoFair contenant la forme du médicament." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -345,7 +345,7 @@
          fhir:reference [ fhir:v "StructureDefinition/oncofair-ma-component-administration-status" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIRMAComponentAdministrationStatus" ] ;
-       fhir:description [ fhir:v "Extension créée dans le cadre d'OncoFAIR" ] ;
+       fhir:description [ fhir:v "Extension created as part of OncoFAIR containing the administration status of the administered component. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant le statut d'administration du composant administré." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -357,7 +357,7 @@
          fhir:reference [ fhir:v "StructureDefinition/oncofair-ma-component-origin" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIRMAComponentOrigin" ] ;
-       fhir:description [ fhir:v "Extension créée dans le cadre d'OncoFAIR" ] ;
+       fhir:description [ fhir:v "Extension created as part of OncoFAIR containing the origin of the administered component. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant la provenance du composant administré." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -369,7 +369,7 @@
          fhir:reference [ fhir:v "StructureDefinition/oncofair-ma-element-expirationdate" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIRMAElementExpirationDate" ] ;
-       fhir:description [ fhir:v "Extension créée dans le cadre d'OncoFAIR" ] ;
+       fhir:description [ fhir:v "Extension created as part of OncoFAIR containing the expiry date of the component administered. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant la date de péremption du composant administré." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -381,7 +381,7 @@
          fhir:reference [ fhir:v "StructureDefinition/oncofair-ma-element-plannedperiod" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIRMAElementPlannedPeriod" ] ;
-       fhir:description [ fhir:v "Extension créée dans le cadre d'OncoFAIR" ] ;
+       fhir:description [ fhir:v "Extension created as part of OncoFAIR containing the planned start and end date of administration. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant la date de début et de fin prévue de l'administration." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -393,7 +393,7 @@
          fhir:reference [ fhir:v "StructureDefinition/oncofair-ma-element-traceability" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIRMAElementTraceability" ] ;
-       fhir:description [ fhir:v "Extension créée dans le cadre d'OncoFAIR" ] ;
+       fhir:description [ fhir:v "Extension created as part of OncoFAIR containing the batch and serial number of the administered component/administration element. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant le numéro de lot et de série du composant administré/élément d'administration." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -405,7 +405,7 @@
          fhir:reference [ fhir:v "StructureDefinition/oncofair-ma-element-urgent" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIRMAElementUrgent" ] ;
-       fhir:description [ fhir:v "Extension créée dans le cadre d'OncoFAIR" ] ;
+       fhir:description [ fhir:v "Extension created as part of OncoFAIR containing the notion of emergency. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant la notion d'urgence." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -417,7 +417,7 @@
          fhir:reference [ fhir:v "StructureDefinition/oncofair-medication-type" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIRMedicationType" ] ;
-       fhir:description [ fhir:v "Extension créée dans le cadre d'OncoFAIR" ] ;
+       fhir:description [ fhir:v "Extension created as part of OncoFAIR containing the type of component. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant le type de composant." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -429,7 +429,7 @@
          fhir:reference [ fhir:v "StructureDefinition/oncofair-mr-component-solute" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIRMRComponentSolute" ] ;
-       fhir:description [ fhir:v "Extension créée dans le cadre d'OncoFAIR" ] ;
+       fhir:description [ fhir:v "Extension created as part of OncoFAIR containing the notion of solute. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant la notion de soluté." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -441,7 +441,7 @@
          fhir:reference [ fhir:v "StructureDefinition/oncofair-mr-element-go-nogo" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIRMRElementGoNogo" ] ;
-       fhir:description [ fhir:v "Extension créée dans le cadre d'OncoFAIR" ] ;
+       fhir:description [ fhir:v "Extension created as part of OncoFAIR containing the concept of GoNogo. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant la notion de GoNogo." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -453,7 +453,7 @@
          fhir:reference [ fhir:v "StructureDefinition/oncofair-mr-element-link-type" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIRMRElementLinkType" ] ;
-       fhir:description [ fhir:v "Extension créée dans le cadre d'OncoFAIR" ] ;
+       fhir:description [ fhir:v "Extension created as part of OncoFAIR containing the element's type of link. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant le type de liaison de l'élément." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -465,7 +465,7 @@
          fhir:reference [ fhir:v "StructureDefinition/oncofair-mr-element-rank" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIRMRElementRank" ] ;
-       fhir:description [ fhir:v "Extension créée dans le cadre d'OncoFAIR" ] ;
+       fhir:description [ fhir:v "Extension created as part of OncoFAIR containing the prescription element rank. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant le rangd d'élement de la prescription." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -477,7 +477,7 @@
          fhir:reference [ fhir:v "StructureDefinition/oncofair-mr-element-supply" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIRMRElementSupply" ] ;
-       fhir:description [ fhir:v "Extension créée dans le cadre d'OncoFAIR" ] ;
+       fhir:description [ fhir:v "Extension created as part of OncoFAIR containing the concept of supply. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant la notion de fourniture." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -489,7 +489,7 @@
          fhir:reference [ fhir:v "StructureDefinition/oncofair-mr-exempt-ltc" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIRMRExemptLTC" ] ;
-       fhir:description [ fhir:v "Extension créée dans le cadre d'OncoFAIR" ] ;
+       fhir:description [ fhir:v "Extension created as part of OncoFAIR containing the notion of exemption. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant la notion d'exonération." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -501,7 +501,7 @@
          fhir:reference [ fhir:v "StructureDefinition/oncofair-mr-is-dosage-referent" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIRMRIsDosageReferent" ] ;
-       fhir:description [ fhir:v "Extension créée dans le cadre d'OncoFAIR" ] ;
+       fhir:description [ fhir:v "Extension created as part of OncoFAIR containing the notion of a posology reference. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant la notion de référence posologie." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -513,7 +513,7 @@
          fhir:reference [ fhir:v "StructureDefinition/oncofair-mr-prescription-validation-date" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIRMRPrescriptionValidationDate" ] ;
-       fhir:description [ fhir:v "Extension créée dans le cadre d'OncoFAIR" ] ;
+       fhir:description [ fhir:v "Extension créée dans le cadre d'OncoFAIR contenant la date et heure de la prescription" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -525,7 +525,7 @@
          fhir:reference [ fhir:v "StructureDefinition/oncofair-pharmacist-advice" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIRPharmacistAdvice" ] ;
-       fhir:description [ fhir:v "Extension créée dans le cadre d'OncoFAIR" ] ;
+       fhir:description [ fhir:v "Extension created as part of OncoFAIR containing the validation and pharmaceutical proposal. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant la validation et proposition pharmaceutique." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

@@ -27,16 +27,24 @@ dom-4dom-3dom-5","","N/A"
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "MedicationAdministration.extension:oncofair-ma-element-traceability","MedicationAdministration.extension","oncofair-ma-element-traceability","","",0,1,"","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-traceability]]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Extension","Extension created as part of OncoFAIR containing the batch and serial number of the administered component/administration element. 
+
+Extension créée dans le cadre d'OncoFAIR contenant le numéro de lot et de série du composant administré/élément d'administration.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "MedicationAdministration.extension:oncofair-ma-element-expirationdate","MedicationAdministration.extension","oncofair-ma-element-expirationdate","","",0,1,"","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-expirationdate]]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Expiry date of administered component","Extension created as part of OncoFAIR containing the expiry date of the component administered. 
+
+Extension créée dans le cadre d'OncoFAIR contenant la date de péremption du composant administré.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "MedicationAdministration.extension:oncofair-ma-component-origin","MedicationAdministration.extension","oncofair-ma-component-origin","","",0,1,"","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-component-origin]]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Specifies the origin of the component administered","Extension created as part of OncoFAIR containing the origin of the administered component. 
+
+Extension créée dans le cadre d'OncoFAIR contenant la provenance du composant administré.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "MedicationAdministration.extension:oncofair-ma-component-administration-status","MedicationAdministration.extension","oncofair-ma-component-administration-status","","",1,1,"","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-component-administration-status]]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Specifies whether the component administered was actually administered to the patient or not.","Extension created as part of OncoFAIR containing the administration status of the administered component. 
+
+Extension créée dans le cadre d'OncoFAIR contenant le statut d'administration du composant administré.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "MedicationAdministration.modifierExtension","MedicationAdministration.modifierExtension","","extensions
 user content","",0,*,"","Y","Y","Extension {[]} {[]}

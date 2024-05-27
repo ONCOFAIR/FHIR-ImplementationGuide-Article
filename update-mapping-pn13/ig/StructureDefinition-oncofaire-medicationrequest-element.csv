@@ -28,19 +28,29 @@ dom-4dom-3dom-5","","N/A"
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "MedicationRequest.extension:oncofair-element-form","MedicationRequest.extension","oncofair-element-form","","",0,1,"Y","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-element-form]]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Pharmaceutical form of the prescription/administration item","Extension created as part of OncoFair containing the drug form. 
+
+Extension créée dans le cadre d'OncoFair contenant la forme du médicament.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "MedicationRequest.extension:oncofair-mr-element-supply","MedicationRequest.extension","oncofair-mr-element-supply","","",0,1,"Y","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-supply]]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Specifies whether the prescription item must be supplied by the pharmacy or not","Extension created as part of OncoFAIR containing the concept of supply. 
+
+Extension créée dans le cadre d'OncoFAIR contenant la notion de fourniture.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "MedicationRequest.extension:oncofair-mr-element-rank","MedicationRequest.extension","oncofair-mr-element-rank","","",0,1,"Y","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-rank]]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Gives the rank of the prescription element in the prescription according to a total order of prescription elements on the prescription object to which they are attached.","Extension created as part of OncoFAIR containing the prescription element rank. 
+
+Extension créée dans le cadre d'OncoFAIR contenant le rangd d'élement de la prescription.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "MedicationRequest.extension:oncofair-mr-element-go-nogo","MedicationRequest.extension","oncofair-mr-element-go-nogo","","",0,1,"Y","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-go-nogo]]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Extension","Extension created as part of OncoFAIR containing the concept of GoNogo. 
+
+Extension créée dans le cadre d'OncoFAIR contenant la notion de GoNogo.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "MedicationRequest.extension:oncofair-pharmacist-advice","MedicationRequest.extension","oncofair-pharmacist-advice","","",0,1,"Y","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-pharmacist-advice]]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Extension","Extension created as part of OncoFAIR containing the validation and pharmaceutical proposal. 
+
+Extension créée dans le cadre d'OncoFAIR contenant la validation et proposition pharmaceutique.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "MedicationRequest.modifierExtension","MedicationRequest.modifierExtension","","extensions
 user content","",0,*,"","Y","Y","Extension {[]} {[]}
@@ -96,7 +106,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "MedicationRequest.basedOn:element.extension:oncofair-mr-element-link-type","MedicationRequest.basedOn.extension","oncofair-mr-element-link-type","","",1,1,"","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-link-type]]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Type of link between the two prescription elements","Extension created as part of OncoFAIR containing the element's type of link. 
+
+Extension créée dans le cadre d'OncoFAIR contenant le type de liaison de l'élément.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "MedicationRequest.basedOn:element.reference","MedicationRequest.basedOn.reference","","","",0,1,"","","Y","string {[]} {[]}
 ","Literal reference, Relative, internal or absolute URL","A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.","Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure ""[type]/[id]"" then it should be assumed that the reference is to a FHIR RESTful server.","","","","","","","","",,,,,"",,,,"Reference.reference",0,1,"ref-2

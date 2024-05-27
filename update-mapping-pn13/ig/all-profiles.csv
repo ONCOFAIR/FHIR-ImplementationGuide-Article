@@ -28,10 +28,14 @@ dom-4dom-3dom-5",""
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-careplan","CarePlan.extension:oncofair-cp-treatment","CarePlan.extension","oncofair-cp-treatment","","",1,1,"Y","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-cp-treatment]]} {[]}
-","Extension","Extension created as part of OncoFAIR,Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Extension","Extension created as part of OncoFAIR grouping together the treatment number, the day number and the reference date and time of the prescribed protocol. 
+ 
+Extension créée dans le cadre d'OncoFAIR regroupant le numéro de cure, le numéro de jour ainsi que la date et heure de référence du protocole prescrit.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-careplan","CarePlan.extension:oncofair-pharmacist-advice","CarePlan.extension","oncofair-pharmacist-advice","","",0,1,"Y","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-pharmacist-advice]]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Extension","Extension created as part of OncoFAIR containing the validation and pharmaceutical proposal. 
+
+Extension créée dans le cadre d'OncoFAIR contenant la validation et proposition pharmaceutique.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-careplan","CarePlan.modifierExtension","CarePlan.modifierExtension","","extensions
 user content","",0,*,"","Y","Y","Extension {[]} {[]}
@@ -201,7 +205,9 @@ string {[]} {[]}","Individual responsible for the annotation","The individual re
 ","The annotation  - text content (as markdown)","The text of the annotation in markdown format.","","","","","","","","","",,,,,"",,,,"Annotation.text",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "oncofair-cp-treatment","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Extension","Extension created as part of OncoFAIR,Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"Extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Extension","Extension created as part of OncoFAIR grouping together the treatment number, the day number and the reference date and time of the prescribed protocol. 
+ 
+Extension créée dans le cadre d'OncoFAIR regroupant le numéro de cure, le numéro de jour ainsi que la date et heure de référence du protocole prescrit.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-cp-treatment","Extension.id","Extension.id","","","",0,1,"","","","id {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
@@ -265,7 +271,9 @@ boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "oncofair-element-form","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"Extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Pharmaceutical form of the prescription/administration item","Extension created as part of OncoFair containing the drug form. 
+
+Extension créée dans le cadre d'OncoFair contenant la forme du médicament.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-element-form","Extension.id","Extension.id","","","",0,1,"","","","id {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
@@ -550,7 +558,9 @@ There may be many levels in the hierachy, and this may only pic specific levels 
 ","Time period during which the patient was present at the location","Time period during which the patient was present at the location.","","","","","","","","","",,,,,"",,,,"Encounter.location.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "oncofair-ma-component-administration-status","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"Extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Specifies whether the component administered was actually administered to the patient or not.","Extension created as part of OncoFAIR containing the administration status of the administered component. 
+
+Extension créée dans le cadre d'OncoFAIR contenant le statut d'administration du composant administré.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-ma-component-administration-status","Extension.id","Extension.id","","","",0,1,"","","","id {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
@@ -566,7 +576,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "oncofair-ma-component-origin","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"Extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Specifies the origin of the component administered","Extension created as part of OncoFAIR containing the origin of the administered component. 
+
+Extension créée dans le cadre d'OncoFAIR contenant la provenance du composant administré.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-ma-component-origin","Extension.id","Extension.id","","","",0,1,"","","","id {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
@@ -582,7 +594,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "oncofair-ma-element-expirationdate","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"Extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Expiry date of administered component","Extension created as part of OncoFAIR containing the expiry date of the component administered. 
+
+Extension créée dans le cadre d'OncoFAIR contenant la date de péremption du composant administré.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-ma-element-expirationdate","Extension.id","Extension.id","","","",0,1,"","","","id {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
@@ -598,7 +612,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "oncofair-ma-element-plannedperiod","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"Extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Extension","Extension created as part of OncoFAIR containing the planned start and end date of administration. 
+
+Extension créée dans le cadre d'OncoFAIR contenant la date de début et de fin prévue de l'administration.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-ma-element-plannedperiod","Extension.id","Extension.id","","","",0,1,"","","","id {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
@@ -622,15 +638,17 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-ma-element-plannedperiod","Extension.value[x].start","Extension.value[x].start","","","",1,1,"","","Y","dateTime {[]} {[]}
-","Starting time with inclusive boundary","The start of the period. The boundary is inclusive.","If the low element is missing, the meaning is that the low boundary is not known.","","","","","","","","",,,,,"",,,,"Period.start",0,1,"per-1
+","Date and time scheduled for the start of administration of the administration element","The start of the period. The boundary is inclusive.","If the low element is missing, the meaning is that the low boundary is not known.","","","","","","","","",,,,,"",,,,"Period.start",0,1,"per-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "oncofair-ma-element-plannedperiod","Extension.value[x].end","Extension.value[x].end","","","",0,1,"","","Y","dateTime {[]} {[]}
-","End time with inclusive boundary, if not ongoing","The end of the period. If the end of the period is missing, it means no end was known or planned at the time the instance was created. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.","The end value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has an end value of 2012-02-03.","","","If the end of the period is missing, it means that the period is ongoing","","","","","",,,,,"",,,,"Period.end",0,1,"per-1
+","Date and time scheduled for the end of administration of the administration element","The end of the period. If the end of the period is missing, it means no end was known or planned at the time the instance was created. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.","The end value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has an end value of 2012-02-03.","","","If the end of the period is missing, it means that the period is ongoing","","","","","",,,,,"",,,,"Period.end",0,1,"per-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "oncofair-ma-element-traceability","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"Extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Extension","Extension created as part of OncoFAIR containing the batch and serial number of the administered component/administration element. 
+
+Extension créée dans le cadre d'OncoFAIR contenant le numéro de lot et de série du composant administré/élément d'administration.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-ma-element-traceability","Extension.id","Extension.id","","","",0,1,"","","","id {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
@@ -653,7 +671,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "oncofair-ma-element-traceability","Extension.extension:batchNumber.url","Extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""batchNumber""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "oncofair-ma-element-traceability","Extension.extension:batchNumber.value[x]","Extension.extension.value[x]","","","",0,1,"","","","string {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"ext-1
+","Identification of the batch number of the administered component/administration element to ensure product traceability.","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"ext-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "oncofair-ma-element-traceability","Extension.extension:serialNumber","Extension.extension","serialNumber","","",0,1,"","","","Extension {[]} {[]}
@@ -669,7 +687,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "oncofair-ma-element-traceability","Extension.extension:serialNumber.url","Extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""serialNumber""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "oncofair-ma-element-traceability","Extension.extension:serialNumber.value[x]","Extension.extension.value[x]","","","",0,1,"","","","string {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"ext-1
+","Identification of the serial number of the administered component/administration element to ensure product traceability.","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"ext-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "oncofair-ma-element-traceability","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
@@ -679,7 +697,9 @@ boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "oncofair-ma-element-urgent","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"Extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Boolean attribute indicating the notion of urgency in creating the administration element","Extension created as part of OncoFAIR containing the notion of emergency. 
+
+Extension créée dans le cadre d'OncoFAIR contenant la notion d'urgence.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-ma-element-urgent","Extension.id","Extension.id","","","",0,1,"","","","id {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
@@ -695,7 +715,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "oncofair-medication-type","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"Extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Specifies whether the component prescribed is a speciality, a common name or any other product (pharmacopoeia).","Extension created as part of OncoFAIR containing the type of component. 
+
+Extension créée dans le cadre d'OncoFAIR contenant le type de composant.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-medication-type","Extension.id","Extension.id","","","",0,1,"","","","id {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
@@ -738,7 +760,9 @@ dom-4dom-3dom-5",""
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-medication","Medication.extension:oncofair-medication-type","Medication.extension","oncofair-medication-type","","",1,1,"","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication-type]]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Specifies whether the component prescribed is a speciality, a common name or any other product (pharmacopoeia).","Extension created as part of OncoFAIR containing the type of component. 
+
+Extension créée dans le cadre d'OncoFAIR contenant le type de composant.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-medication","Medication.modifierExtension","Medication.modifierExtension","","extensions
 user content","",0,*,"","Y","Y","Extension {[]} {[]}
@@ -842,16 +866,24 @@ dom-4dom-3dom-5",""
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-medicationadministration-component","MedicationAdministration.extension:oncofair-ma-element-traceability","MedicationAdministration.extension","oncofair-ma-element-traceability","","",0,1,"","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-traceability]]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Extension","Extension created as part of OncoFAIR containing the batch and serial number of the administered component/administration element. 
+
+Extension créée dans le cadre d'OncoFAIR contenant le numéro de lot et de série du composant administré/élément d'administration.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-medicationadministration-component","MedicationAdministration.extension:oncofair-ma-element-expirationdate","MedicationAdministration.extension","oncofair-ma-element-expirationdate","","",0,1,"","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-expirationdate]]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Expiry date of administered component","Extension created as part of OncoFAIR containing the expiry date of the component administered. 
+
+Extension créée dans le cadre d'OncoFAIR contenant la date de péremption du composant administré.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-medicationadministration-component","MedicationAdministration.extension:oncofair-ma-component-origin","MedicationAdministration.extension","oncofair-ma-component-origin","","",0,1,"","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-component-origin]]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Specifies the origin of the component administered","Extension created as part of OncoFAIR containing the origin of the administered component. 
+
+Extension créée dans le cadre d'OncoFAIR contenant la provenance du composant administré.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-medicationadministration-component","MedicationAdministration.extension:oncofair-ma-component-administration-status","MedicationAdministration.extension","oncofair-ma-component-administration-status","","",1,1,"","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-component-administration-status]]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Specifies whether the component administered was actually administered to the patient or not.","Extension created as part of OncoFAIR containing the administration status of the administered component. 
+
+Extension créée dans le cadre d'OncoFAIR contenant le statut d'administration du composant administré.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-medicationadministration-component","MedicationAdministration.modifierExtension","MedicationAdministration.modifierExtension","","extensions
 user content","",0,*,"","Y","Y","Extension {[]} {[]}
@@ -1048,19 +1080,29 @@ dom-4dom-3dom-5",""
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-medicationadministration-element","MedicationAdministration.extension:oncofair-ma-element-urgent","MedicationAdministration.extension","oncofair-ma-element-urgent","","",0,1,"Y","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-urgent]]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Boolean attribute indicating the notion of urgency in creating the administration element","Extension created as part of OncoFAIR containing the notion of emergency. 
+
+Extension créée dans le cadre d'OncoFAIR contenant la notion d'urgence.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-medicationadministration-element","MedicationAdministration.extension:oncofair-ma-element-expirationdate","MedicationAdministration.extension","oncofair-ma-element-expirationdate","","",0,1,"","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-expirationdate]]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Expiry date of administered component","Extension created as part of OncoFAIR containing the expiry date of the component administered. 
+
+Extension créée dans le cadre d'OncoFAIR contenant la date de péremption du composant administré.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-medicationadministration-element","MedicationAdministration.extension:oncofair-ma-element-traceability","MedicationAdministration.extension","oncofair-ma-element-traceability","","",0,1,"","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-traceability]]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Extension","Extension created as part of OncoFAIR containing the batch and serial number of the administered component/administration element. 
+
+Extension créée dans le cadre d'OncoFAIR contenant le numéro de lot et de série du composant administré/élément d'administration.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-medicationadministration-element","MedicationAdministration.extension:oncofair-ma-plannedperiod","MedicationAdministration.extension","oncofair-ma-plannedperiod","","",1,1,"","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-plannedperiod]]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Extension","Extension created as part of OncoFAIR containing the planned start and end date of administration. 
+
+Extension créée dans le cadre d'OncoFAIR contenant la date de début et de fin prévue de l'administration.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-medicationadministration-element","MedicationAdministration.extension:oncofair-element-form","MedicationAdministration.extension","oncofair-element-form","","",0,1,"","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-element-form]]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Pharmaceutical form of the prescription/administration item","Extension created as part of OncoFair containing the drug form. 
+
+Extension créée dans le cadre d'OncoFair contenant la forme du médicament.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-medicationadministration-element","MedicationAdministration.modifierExtension","MedicationAdministration.modifierExtension","","extensions
 user content","",0,*,"","Y","Y","Extension {[]} {[]}
@@ -1463,7 +1505,7 @@ dom-4dom-3dom-5",""
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-medicationrequest-prescription","MedicationRequest.extension:oncofair-mr-prescription-validation-date","MedicationRequest.extension","oncofair-mr-prescription-validation-date","","",1,1,"Y","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-prescription-validation-date]]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Date and time at which the prescriber considered the prescription validated","Extension créée dans le cadre d'OncoFAIR contenant la date et heure de la prescription","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-medicationrequest-prescription","MedicationRequest.modifierExtension","MedicationRequest.modifierExtension","","extensions
 user content","",0,*,"","Y","Y","Extension {[]} {[]}
@@ -1813,7 +1855,9 @@ CodeableConcept {[]} {[]}","Whether substitution is allowed or not","True if the
 ","A list of events of interest in the lifecycle","Links to Provenance records for past versions of this resource or fulfilling request or event resources that identify key state transitions or updates that are likely to be relevant to a user looking at the current version of the resource.","This might not include provenances for all versions of the request – only those deemed ""relevant"" or important. This SHALL NOT include the provenance associated with this current version of the resource. (If that provenance is deemed to be a ""relevant"" change, it will need to be added as part of a later update. Until then, it can be queried directly as the provenance that points to this version using _revinclude All Provenances should have some historical version of this Request as their subject.).","","","","","","","","",,,,,"",,,,"MedicationRequest.eventHistory",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "oncofair-mr-component-solute","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"Extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","True if the component prescribed is solute in the prescription element","Extension created as part of OncoFAIR containing the notion of solute. 
+
+Extension créée dans le cadre d'OncoFAIR contenant la notion de soluté.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-mr-component-solute","Extension.id","Extension.id","","","",0,1,"","","","id {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
@@ -1829,7 +1873,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "oncofair-mr-element-go-nogo","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"Extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Extension","Extension created as part of OncoFAIR containing the concept of GoNogo. 
+
+Extension créée dans le cadre d'OncoFAIR contenant la notion de GoNogo.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-mr-element-go-nogo","Extension.id","Extension.id","","","",0,1,"","","","id {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
@@ -1852,7 +1898,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "oncofair-mr-element-go-nogo","Extension.extension:GoNogoStatus.url","Extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""GoNogoStatus""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "oncofair-mr-element-go-nogo","Extension.extension:GoNogoStatus.value[x]","Extension.extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"ext-1
+","Communicates the conditional state of implementation of the prescription element according to a list of coded values","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"ext-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "oncofair-mr-element-go-nogo","Extension.extension:GoNogoReasonWaiting","Extension.extension","GoNogoReasonWaiting","","",0,1,"","","","Extension {[]} {[]}
@@ -1868,7 +1914,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "oncofair-mr-element-go-nogo","Extension.extension:GoNogoReasonWaiting.url","Extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""GoNogoReasonWaiting""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "oncofair-mr-element-go-nogo","Extension.extension:GoNogoReasonWaiting.value[x]","Extension.extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"ext-1
+","Describes the reason for the goNogo implementation status of the prescription element if the management option via the goNogo attribute is enabled","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"ext-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "oncofair-mr-element-go-nogo","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
@@ -1878,7 +1924,9 @@ boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "oncofair-mr-element-link-type","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"Extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Type of link between the two prescription elements","Extension created as part of OncoFAIR containing the element's type of link. 
+
+Extension créée dans le cadre d'OncoFAIR contenant le type de liaison de l'élément.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-mr-element-link-type","Extension.id","Extension.id","","","",0,1,"","","","id {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
@@ -1894,7 +1942,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "oncofair-mr-element-rank","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"Extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Gives the rank of the prescription element in the prescription according to a total order of prescription elements on the prescription object to which they are attached.","Extension created as part of OncoFAIR containing the prescription element rank. 
+
+Extension créée dans le cadre d'OncoFAIR contenant le rangd d'élement de la prescription.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-mr-element-rank","Extension.id","Extension.id","","","",0,1,"","","","id {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
@@ -1910,7 +1960,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "oncofair-mr-element-supply","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"Extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Specifies whether the prescription item must be supplied by the pharmacy or not","Extension created as part of OncoFAIR containing the concept of supply. 
+
+Extension créée dans le cadre d'OncoFAIR contenant la notion de fourniture.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-mr-element-supply","Extension.id","Extension.id","","","",0,1,"","","","id {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
@@ -1926,7 +1978,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "oncofair-mr-exempt-ltc","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"Extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Identifier of the ALD for which the component prescribed is prescribed for one of the reasons for which the patient benefits from an exemption under article L324-1 of the CSS.","Extension created as part of OncoFAIR containing the notion of exemption. 
+
+Extension créée dans le cadre d'OncoFAIR contenant la notion d'exonération.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-mr-exempt-ltc","Extension.id","Extension.id","","","",0,1,"","","","id {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
@@ -1942,7 +1996,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "oncofair-mr-is-dosage-referent","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"Extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","True if the component prescribed is the component that refers to the quantity or flow rate expressed in the dosage element when these are gravimetric (for example, mg or mg/h).","Extension created as part of OncoFAIR containing the notion of a posology reference. 
+
+Extension créée dans le cadre d'OncoFAIR contenant la notion de référence posologie.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-mr-is-dosage-referent","Extension.id","Extension.id","","","",0,1,"","","","id {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
@@ -1958,7 +2014,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "oncofair-mr-prescription-validation-date","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"Extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Date and time at which the prescriber considered the prescription validated","Extension créée dans le cadre d'OncoFAIR contenant la date et heure de la prescription","","","","","","","","","",,,,,"",,,,"Extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-mr-prescription-validation-date","Extension.id","Extension.id","","","",0,1,"","","","id {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
@@ -2390,7 +2446,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","replaced-by | replaces | refer | seealso","The type of link between this patient resource and another patient resource.","","","","","","","","","",,"required","The type of link between this patient resource and another Patient resource, or Patient/RelatedPerson when using the `seealso` code","http://hl7.org/fhir/ValueSet/link-type|5.0.0","",,,,"Patient.link.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "oncofair-pharmacist-advice","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"Extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Extension","Extension created as part of OncoFAIR containing the validation and pharmaceutical proposal. 
+
+Extension créée dans le cadre d'OncoFAIR contenant la validation et proposition pharmaceutique.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofair-pharmacist-advice","Extension.id","Extension.id","","","",0,1,"","","","id {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
@@ -2413,7 +2471,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "oncofair-pharmacist-advice","Extension.extension:pharmacistValidation.url","Extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""pharmacistValidation""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "oncofair-pharmacist-advice","Extension.extension:pharmacistValidation.value[x]","Extension.extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"ext-1
+","Indicates the pharmacist's opinion on a prescription/prescribed protocol sent to him/her","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"ext-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "oncofair-pharmacist-advice","Extension.extension:pharmacistProposal","Extension.extension","pharmacistProposal","","",0,1,"","","","Extension {[]} {[]}
@@ -2429,7 +2487,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "oncofair-pharmacist-advice","Extension.extension:pharmacistProposal.url","Extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""pharmacistProposal""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "oncofair-pharmacist-advice","Extension.extension:pharmacistProposal.value[x]","Extension.extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"ext-1
+","Characterises a prescription/prescribed protocol added by the pharmacist, either as a proposed replacement or as a suggestion.","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"ext-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "oncofair-pharmacist-advice","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
@@ -2467,13 +2525,19 @@ dom-4dom-3dom-5",""
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofaire-medicationrequest-component","MedicationRequest.extension:oncofair-mr-exempt-ltc","MedicationRequest.extension","oncofair-mr-exempt-ltc","","",0,1,"","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-exempt-ltc]]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Identifier of the ALD for which the component prescribed is prescribed for one of the reasons for which the patient benefits from an exemption under article L324-1 of the CSS.","Extension created as part of OncoFAIR containing the notion of exemption. 
+
+Extension créée dans le cadre d'OncoFAIR contenant la notion d'exonération.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofaire-medicationrequest-component","MedicationRequest.extension:oncofair-mr-component-solute","MedicationRequest.extension","oncofair-mr-component-solute","","",0,1,"","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-component-solute]]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","True if the component prescribed is solute in the prescription element","Extension created as part of OncoFAIR containing the notion of solute. 
+
+Extension créée dans le cadre d'OncoFAIR contenant la notion de soluté.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofaire-medicationrequest-component","MedicationRequest.extension:oncofair-mr-is-dosage-referent","MedicationRequest.extension","oncofair-mr-is-dosage-referent","","",0,1,"","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-is-dosage-referent]]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","True if the component prescribed is the component that refers to the quantity or flow rate expressed in the dosage element when these are gravimetric (for example, mg or mg/h).","Extension created as part of OncoFAIR containing the notion of a posology reference. 
+
+Extension créée dans le cadre d'OncoFAIR contenant la notion de référence posologie.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofaire-medicationrequest-component","MedicationRequest.modifierExtension","MedicationRequest.modifierExtension","","extensions
 user content","",0,*,"","Y","Y","Extension {[]} {[]}
@@ -2842,19 +2906,29 @@ dom-4dom-3dom-5",""
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofaire-medicationrequest-element","MedicationRequest.extension:oncofair-element-form","MedicationRequest.extension","oncofair-element-form","","",0,1,"Y","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-element-form]]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Pharmaceutical form of the prescription/administration item","Extension created as part of OncoFair containing the drug form. 
+
+Extension créée dans le cadre d'OncoFair contenant la forme du médicament.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofaire-medicationrequest-element","MedicationRequest.extension:oncofair-mr-element-supply","MedicationRequest.extension","oncofair-mr-element-supply","","",0,1,"Y","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-supply]]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Specifies whether the prescription item must be supplied by the pharmacy or not","Extension created as part of OncoFAIR containing the concept of supply. 
+
+Extension créée dans le cadre d'OncoFAIR contenant la notion de fourniture.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofaire-medicationrequest-element","MedicationRequest.extension:oncofair-mr-element-rank","MedicationRequest.extension","oncofair-mr-element-rank","","",0,1,"Y","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-rank]]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Gives the rank of the prescription element in the prescription according to a total order of prescription elements on the prescription object to which they are attached.","Extension created as part of OncoFAIR containing the prescription element rank. 
+
+Extension créée dans le cadre d'OncoFAIR contenant le rangd d'élement de la prescription.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofaire-medicationrequest-element","MedicationRequest.extension:oncofair-mr-element-go-nogo","MedicationRequest.extension","oncofair-mr-element-go-nogo","","",0,1,"Y","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-go-nogo]]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Extension","Extension created as part of OncoFAIR containing the concept of GoNogo. 
+
+Extension créée dans le cadre d'OncoFAIR contenant la notion de GoNogo.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofaire-medicationrequest-element","MedicationRequest.extension:oncofair-pharmacist-advice","MedicationRequest.extension","oncofair-pharmacist-advice","","",0,1,"Y","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-pharmacist-advice]]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Extension","Extension created as part of OncoFAIR containing the validation and pharmaceutical proposal. 
+
+Extension créée dans le cadre d'OncoFAIR contenant la validation et proposition pharmaceutique.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofaire-medicationrequest-element","MedicationRequest.modifierExtension","MedicationRequest.modifierExtension","","extensions
 user content","",0,*,"","Y","Y","Extension {[]} {[]}
@@ -2910,7 +2984,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofaire-medicationrequest-element","MedicationRequest.basedOn:element.extension:oncofair-mr-element-link-type","MedicationRequest.basedOn.extension","oncofair-mr-element-link-type","","",1,1,"","","","Extension {[CanonicalType[http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-link-type]]} {[]}
-","Extension","Extension créée dans le cadre d'OncoFAIR","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Type of link between the two prescription elements","Extension created as part of OncoFAIR containing the element's type of link. 
+
+Extension créée dans le cadre d'OncoFAIR contenant le type de liaison de l'élément.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "oncofaire-medicationrequest-element","MedicationRequest.basedOn:element.reference","MedicationRequest.basedOn.reference","","","",0,1,"","","Y","string {[]} {[]}
 ","Literal reference, Relative, internal or absolute URL","A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.","Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure ""[type]/[id]"" then it should be assumed that the reference is to a FHIR RESTful server.","","","","","","","","",,,,,"",,,,"Reference.reference",0,1,"ref-2
