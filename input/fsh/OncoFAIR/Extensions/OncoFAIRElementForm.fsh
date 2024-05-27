@@ -8,6 +8,7 @@ Description: "Extension créée dans le cadre d'OncoFAIR" //TODO
 * value[x] only CodeableConcept
 
 
+
 Mapping:  mapping_OncoFAIRElementForm
 Source:   OncoFAIRElementForm
 Id:       mapping-oncofair-element-form

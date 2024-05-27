@@ -42,6 +42,7 @@ Id:       mapping-oncofair-careplan
 Title:    "Mapping du profil OncoFAIR CarePlan"
 * -> "PROTOCOLE PRESCRIT"
 
+* basedOn -> "PROTOCOLE PRESCRIT"
 * identifier -> "idProtocolePrescrit"
 * title -> "libelleProtocolePrescrit"
 * status -> "CreationArretModificationValidation"
