@@ -2,7 +2,7 @@ Profile: OncoFAIRMedicationRequestComponent
 Parent: MedicationRequest
 Id: oncofaire-medicationrequest-component
 Title: "OncoFAIR MedicationRequest Component"
-Description : "Is a product that belongs to the nomenclature of medicines used. It may, for example, be a speciality, a product defined by its DC or a pharmacopoeial product." 
+Description : "Is a product that belongs to the nomenclature of medicines used. It may, for example, be a speciality, a product defined by its common name or a pharmacopoeial product." 
 
 * basedOn 1..1 MS
 * basedOn ^short = "The element linked to the component prescribed"

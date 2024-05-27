@@ -1,16 +1,16 @@
 Extension: OncoFAIRElementForm
 Id: oncofair-element-form
-Description: "Extension créée dans le cadre d'OncoFAIR" //TODO
+Description: "Extension created as part of OncoFair containing the drug form. \r\n
+Extension créée dans le cadre d'OncoFair contenant la forme du médicament." 
 * ^context[+].type = #element
 * ^context[=].expression = "OncoFAIRMedicationRequestElement"
 * ^context[+].type = #element
 * ^context[=].expression = "OncoFAIRMedicationAdministrationElement"
 * value[x] only CodeableConcept
-
-
+* . ^short = "Pharmaceutical form of the prescription/administration item"
 
 Mapping:  mapping_OncoFAIRElementForm
 Source:   OncoFAIRElementForm
 Id:       mapping-oncofair-element-form
 Title:    "Mapping de l'extension OncoFAIR Element Form"
-* value[x] -> "Forme"
+* value[x] -> "forme"

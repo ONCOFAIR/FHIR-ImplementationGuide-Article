@@ -1,10 +1,12 @@
 Extension: OncoFAIRMRExemptLTC
 Id: oncofair-mr-exempt-ltc
-Description: "Extension créée dans le cadre d'OncoFAIR" //TODO
+Description: "Extension created as part of OncoFAIR containing the notion of exemption. \r\n
+Extension créée dans le cadre d'OncoFAIR contenant la notion d'exonération." 
 * ^context[+].type = #element
 * ^context[=].expression = "OncoFAIRMedicationRequestComponent"
 * value[x] only CodeableConcept
 
+* . ^short = "Identifier of the ALD for which the component prescribed is prescribed for one of the reasons for which the patient benefits from an exemption under article L324-1 of the CSS."
 
 Mapping:  mapping_OncoFAIRMRExemptLTC
 Source:   OncoFAIRMRExemptLTC

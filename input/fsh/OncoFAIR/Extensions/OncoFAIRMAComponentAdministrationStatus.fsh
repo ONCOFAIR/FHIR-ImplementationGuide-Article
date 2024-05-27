@@ -1,11 +1,12 @@
 Extension: OncoFAIRMAComponentAdministrationStatus
 Id: oncofair-ma-component-administration-status
-Description: "Extension créée dans le cadre d'OncoFAIR" //TODO
+Description: "Extension created as part of OncoFAIR containing the administration status of the administered component. \r\n
+Extension créée dans le cadre d'OncoFAIR contenant le statut d'administration du composant administré."
 
 * ^context[+].type = #element
 * ^context[=].expression = "OncoFAIRMedicationAdministrationComponent"
-
 * value[x] only code
+* . ^short = "Specifies whether the component administered was actually administered to the patient or not."
 
 Mapping:  mapping_OncoFAIRMAOncoFAIRMAComponentAdministrationStatus
 Source:   OncoFAIRMAComponentAdministrationStatus
