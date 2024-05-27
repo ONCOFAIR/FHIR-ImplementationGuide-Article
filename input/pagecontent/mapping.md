@@ -1,6 +1,6 @@
 ### Mapping Global
 
-<div>{%include mapping_global.svg%}</div>
+![mapping_global](input/pagecontent/images/mapping_global.svg)
 
 ### Mapping Medication
 
