@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIRObservation"] ; # 
   fhir:title [ fhir:v "OncoFAIR Observation"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-27T09:43:00+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-27T14:54:53+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -26,7 +26,7 @@
        fhir:value [ fhir:v "https://ltsi.univ-rennes.fr" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "Allows you to enter information about the patient in addition to that described in the prescription elements."] ; # 
+  fhir:description [ fhir:v "Allows you to enter information about the patient in addition to that described in the prescription elements. \r\n\nPermet d’indiquer les informations relatives au patient qui complètent celles décrites par les éléments de prescription"] ; # 
   fhir:fhirVersion [ fhir:v "5.0.0"] ; # 
   fhir:mapping ( [
      fhir:identity [ fhir:v "mapping-oncofair-observation" ] ;
@@ -179,7 +179,7 @@
          fhir:map [ fhir:v "OBX" ]
        ] [
          fhir:identity [ fhir:v "mapping-oncofair-observation" ] ;
-         fhir:map [ fhir:v "RENSEIGNEMENT COMPLEMENTAIRE" ]
+         fhir:map [ fhir:v "RenseignementComplementaire" ]
        ] )
      ] [
        fhir:id [ fhir:v "Observation.id" ] ;
@@ -2932,7 +2932,7 @@
        fhir:path [ fhir:v "Observation" ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "mapping-oncofair-observation" ] ;
-         fhir:map [ fhir:v "RENSEIGNEMENT COMPLEMENTAIRE" ]
+         fhir:map [ fhir:v "RenseignementComplementaire" ]
        ] )
      ] [
        fhir:id [ fhir:v "Observation.code" ] ;

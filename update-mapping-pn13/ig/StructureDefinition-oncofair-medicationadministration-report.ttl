@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIRMedicationAdministrationReport"] ; # 
   fhir:title [ fhir:v "OncoFAIR MedicationAdministration Report"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-27T09:43:00+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-27T14:54:53+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -26,7 +26,7 @@
        fhir:value [ fhir:v "https://ltsi.univ-rennes.fr" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "Regroups all the prescription elements received on which the pharmacist expresses his validation. It also includes items suggested or resulting from a replacement proposed by the pharmacist."] ; # 
+  fhir:description [ fhir:v "Regroups all the prescription elements received on which the pharmacist expresses his validation. It also includes items suggested or resulting from a replacement proposed by the pharmacist. \r\n\nRegroupe l’ensemble des éléments de prescription reçus sur lesquels le pharmacien exprime sa validation. S’y ajoutent les éléments suggérés ou issus d’un remplacement proposé par le pharmacien."] ; # 
   fhir:fhirVersion [ fhir:v "5.0.0"] ; # 
   fhir:mapping ( [
      fhir:identity [ fhir:v "mapping-oncofair-medicationadministration-report" ] ;
@@ -136,7 +136,7 @@
          fhir:map [ fhir:v "clinical.medication" ]
        ] [
          fhir:identity [ fhir:v "mapping-oncofair-medicationadministration-report" ] ;
-         fhir:map [ fhir:v "COMPTE RENDU ADMINISTRATION" ]
+         fhir:map [ fhir:v "CompteRenduAdministration" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.id" ] ;
@@ -844,7 +844,7 @@
          fhir:map [ fhir:v ".inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN, code=\"type of encounter or episode\"]" ]
        ] [
          fhir:identity [ fhir:v "mapping-oncofair-medicationadministration-report" ] ;
-         fhir:map [ fhir:v "SEJOUR" ]
+         fhir:map [ fhir:v "Sejour" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.supportingInformation" ] ;
@@ -1923,7 +1923,7 @@
        fhir:path [ fhir:v "MedicationAdministration" ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "mapping-oncofair-medicationadministration-report" ] ;
-         fhir:map [ fhir:v "COMPTE RENDU ADMINISTRATION" ]
+         fhir:map [ fhir:v "CompteRenduAdministration" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.identifier" ] ;
@@ -1951,7 +1951,7 @@
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "mapping-oncofair-medicationadministration-report" ] ;
-         fhir:map [ fhir:v "SEJOUR" ]
+         fhir:map [ fhir:v "Sejour" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.performer" ] ;

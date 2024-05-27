@@ -27,7 +27,7 @@
   <name value="OncoFAIRMedicationAdministrationComponent"/>
   <title value="OncoFAIR MedicationAdministration Component"/>
   <status value="draft"/>
-  <date value="2024-05-27T09:43:00+00:00"/>
+  <date value="2024-05-27T14:54:53+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -36,7 +36,7 @@
       <value value="https://ltsi.univ-rennes.fr"/>
     </telecom>
   </contact>
-  <description value="This object corresponds to a product that belongs to the nomenclature of medicines used in the hospital."/>
+  <description value="This object corresponds to a product that belongs to the nomenclature of medicines used in the hospital. &#xD;&#xA;&#xA;Cet objet correspond à un produit qui appartient à la nomenclature de médicaments utilisée dans l’hôpital."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="mapping-oncofair-medicationadministration-component"/>
@@ -137,7 +137,7 @@
       </mapping>
       <mapping>
         <identity value="mapping-oncofair-medicationadministration-component"/>
-        <map value="COMPOSANT ADMINISTRE"/>
+        <map value="ComposantAdministre"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.id">
@@ -637,7 +637,7 @@
       </mapping>
       <mapping>
         <identity value="mapping-oncofair-medicationadministration-component"/>
-        <map value="ELEMENT ADMINISTRATION"/>
+        <map value="ElementAdministration"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.status">
@@ -825,7 +825,7 @@
       </mapping>
       <mapping>
         <identity value="mapping-oncofair-medicationadministration-component"/>
-        <map value="COMPOSANT"/>
+        <map value="Composant"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.subject">
@@ -2372,7 +2372,7 @@
       <path value="MedicationAdministration"/>
       <mapping>
         <identity value="mapping-oncofair-medicationadministration-component"/>
-        <map value="COMPOSANT ADMINISTRE"/>
+        <map value="ComposantAdministre"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.extension">
@@ -2442,7 +2442,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="mapping-oncofair-medicationadministration-component"/>
-        <map value="ELEMENT ADMINISTRATION"/>
+        <map value="ElementAdministration"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.medication">
@@ -2455,7 +2455,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="mapping-oncofair-medicationadministration-component"/>
-        <map value="COMPOSANT"/>
+        <map value="Composant"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.note">

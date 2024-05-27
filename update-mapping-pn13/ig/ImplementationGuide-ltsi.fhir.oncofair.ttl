@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIR"] ; # 
   fhir:title [ fhir:v "Onco-FAIR"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-27T09:43:00+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-27T14:54:53+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -190,7 +190,7 @@
          fhir:reference [ fhir:v "StructureDefinition/oncofair-careplan" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIR CarePlan" ] ;
-       fhir:description [ fhir:v "This object describes the chaining of prescription elements attached to the prescribed protocol. Its structure enables the chaining of nested sub-protocols." ] ;
+       fhir:description [ fhir:v "This object describes the chaining of prescription elements attached to the prescribed protocol. Its structure enables the chaining of nested sub-protocols. \r\n\nCet objet décrit le chaînage des éléments de prescription rattachés au protocole prescrit. Sa structure permet le chaînage de sous-protocoles imbriqués." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -202,7 +202,7 @@
          fhir:reference [ fhir:v "StructureDefinition/oncofair-encounter" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIR Encounter" ] ;
-       fhir:description [ fhir:v "Must be taken in the generic sense, i.e. it goes beyond hospital admissions, outpatient consultations, dialysis sessions, day hospitals, etc." ] ;
+       fhir:description [ fhir:v "Must be taken in the generic sense, i.e. it goes beyond hospital admissions, outpatient consultations, dialysis sessions, day hospitals, etc. \r\n\nDoit être pris au sens générique, c’est-à-dire que cela dépasse les hospitalisations, consultations externes, séances de dialyse, hôpitaux de jour, etc …" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -225,7 +225,7 @@
          fhir:reference [ fhir:v "StructureDefinition/oncofair-medicationadministration-component" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIR MedicationAdministration Component" ] ;
-       fhir:description [ fhir:v "This object corresponds to a product that belongs to the nomenclature of medicines used in the hospital." ] ;
+       fhir:description [ fhir:v "This object corresponds to a product that belongs to the nomenclature of medicines used in the hospital. \r\n\nCet objet correspond à un produit qui appartient à la nomenclature de médicaments utilisée dans l’hôpital." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -237,7 +237,7 @@
          fhir:reference [ fhir:v "StructureDefinition/oncofair-medicationadministration-element" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIR MedicationAdministration Element" ] ;
-       fhir:description [ fhir:v "Corresponds to the activity induced by a prescription item and its dosage (structured or unstructured), and carried out at a given moment." ] ;
+       fhir:description [ fhir:v "Corresponds to the activity induced by a prescription item and its dosage (structured or unstructured), and carried out at a given moment. \r\n\nCorrespond à l’activité induite par un élément de prescription et sa posologie (structurée ou non), et réalisée à un instant donné." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -249,7 +249,7 @@
          fhir:reference [ fhir:v "StructureDefinition/oncofair-medicationadministration-report" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIR MedicationAdministration Report" ] ;
-       fhir:description [ fhir:v "Regroups all the prescription elements received on which the pharmacist expresses his validation. It also includes items suggested or resulting from a replacement proposed by the pharmacist." ] ;
+       fhir:description [ fhir:v "Regroups all the prescription elements received on which the pharmacist expresses his validation. It also includes items suggested or resulting from a replacement proposed by the pharmacist. \r\n\nRegroupe l’ensemble des éléments de prescription reçus sur lesquels le pharmacien exprime sa validation. S’y ajoutent les éléments suggérés ou issus d’un remplacement proposé par le pharmacien." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -257,11 +257,11 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofaire-medicationrequest-component> ;
-         fhir:reference [ fhir:v "StructureDefinition/oncofaire-medicationrequest-component" ]
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component> ;
+         fhir:reference [ fhir:v "StructureDefinition/oncofair-medicationrequest-component" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIR MedicationRequest Component" ] ;
-       fhir:description [ fhir:v "Is a product that belongs to the nomenclature of medicines used. It may, for example, be a speciality, a product defined by its common name or a pharmacopoeial product." ] ;
+       fhir:description [ fhir:v "Is a product that belongs to the nomenclature of medicines used. It may, for example, be a speciality, a product defined by its common name or a pharmacopoeial product. \r\n\nEst un produit qui appartient à la nomenclature de médicaments utilisée. Il peut s’agir par exemple d’une spécialité, d’un produit défini par sa DC ou d’un produit de la pharmacopée." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -269,11 +269,11 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofaire-medicationrequest-element> ;
-         fhir:reference [ fhir:v "StructureDefinition/oncofaire-medicationrequest-element" ]
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element> ;
+         fhir:reference [ fhir:v "StructureDefinition/oncofair-medicationrequest-element" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIR MedicationRequest Element" ] ;
-       fhir:description [ fhir:v "Corresponds to a prescription line on a prescription. Each item contains one or more components (in the case of a magistral\npreparation or an infusion)." ] ;
+       fhir:description [ fhir:v "Corresponds to a prescription line on a prescription. Each item contains one or more components (in the case of a magistral\npreparation or an infusion). \r\n\nCorrespond à une ligne de prescription d’une ordonnance. Chacune comporte un ou plusieurs composants (lorsqu’il s’agit d’une préparation magistrale ou d’une perfusion)." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -285,7 +285,7 @@
          fhir:reference [ fhir:v "StructureDefinition/oncofair-medicationrequest-prescription" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIR MedicationRequest Prescription" ] ;
-       fhir:description [ fhir:v "Groups together all the prescription elements validated simultaneously by the same prescriber" ] ;
+       fhir:description [ fhir:v "Groups together all the prescription elements validated simultaneously by the same prescriber. \r\n\nRegroupe l’ensemble des éléments de prescription validés simultanément par un même prescripteur." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -297,7 +297,7 @@
          fhir:reference [ fhir:v "StructureDefinition/oncofair-observation" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIR Observation" ] ;
-       fhir:description [ fhir:v "Allows you to enter information about the patient in addition to that described in the prescription elements." ] ;
+       fhir:description [ fhir:v "Allows you to enter information about the patient in addition to that described in the prescription elements. \r\n\nPermet d’indiquer les informations relatives au patient qui complètent celles décrites par les éléments de prescription" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -309,7 +309,7 @@
          fhir:reference [ fhir:v "StructureDefinition/oncofair-patient" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIR Patient" ] ;
-       fhir:description [ fhir:v "Contains the patient's identity details needed to ensure that the prescription is properly taken into account." ] ;
+       fhir:description [ fhir:v "Contains the patient's identity details needed to ensure that the prescription is properly taken into account. \r\n\nContient les informations d’identité du patient nécessaires à la bonne prise en compte de la prescription médicamenteuse." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

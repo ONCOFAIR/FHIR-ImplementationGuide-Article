@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIRMedicationAdministrationComponent"] ; # 
   fhir:title [ fhir:v "OncoFAIR MedicationAdministration Component"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-27T09:43:00+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-27T14:54:53+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -26,7 +26,7 @@
        fhir:value [ fhir:v "https://ltsi.univ-rennes.fr" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "This object corresponds to a product that belongs to the nomenclature of medicines used in the hospital."] ; # 
+  fhir:description [ fhir:v "This object corresponds to a product that belongs to the nomenclature of medicines used in the hospital. \r\n\nCet objet correspond à un produit qui appartient à la nomenclature de médicaments utilisée dans l’hôpital."] ; # 
   fhir:fhirVersion [ fhir:v "5.0.0"] ; # 
   fhir:mapping ( [
      fhir:identity [ fhir:v "mapping-oncofair-medicationadministration-component" ] ;
@@ -136,7 +136,7 @@
          fhir:map [ fhir:v "clinical.medication" ]
        ] [
          fhir:identity [ fhir:v "mapping-oncofair-medicationadministration-component" ] ;
-         fhir:map [ fhir:v "COMPOSANT ADMINISTRE" ]
+         fhir:map [ fhir:v "ComposantAdministre" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.id" ] ;
@@ -701,7 +701,7 @@
          fhir:map [ fhir:v ".outboundRelationship[typeCode=COMP]/target[classCode=SBADM or PROC,moodCode=EVN]" ]
        ] [
          fhir:identity [ fhir:v "mapping-oncofair-medicationadministration-component" ] ;
-         fhir:map [ fhir:v "ELEMENT ADMINISTRATION" ]
+         fhir:map [ fhir:v "ElementAdministration" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.status" ] ;
@@ -911,7 +911,7 @@
          fhir:map [ fhir:v ".participation[typeCode=CSM].role[classCode=ADMM]" ]
        ] [
          fhir:identity [ fhir:v "mapping-oncofair-medicationadministration-component" ] ;
-         fhir:map [ fhir:v "COMPOSANT" ]
+         fhir:map [ fhir:v "Composant" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.subject" ] ;
@@ -2633,7 +2633,7 @@
        fhir:path [ fhir:v "MedicationAdministration" ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "mapping-oncofair-medicationadministration-component" ] ;
-         fhir:map [ fhir:v "COMPOSANT ADMINISTRE" ]
+         fhir:map [ fhir:v "ComposantAdministre" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.extension" ] ;
@@ -2719,7 +2719,7 @@
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "mapping-oncofair-medicationadministration-component" ] ;
-         fhir:map [ fhir:v "ELEMENT ADMINISTRATION" ]
+         fhir:map [ fhir:v "ElementAdministration" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.medication" ] ;
@@ -2735,7 +2735,7 @@
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "mapping-oncofair-medicationadministration-component" ] ;
-         fhir:map [ fhir:v "COMPOSANT" ]
+         fhir:map [ fhir:v "Composant" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.note" ] ;

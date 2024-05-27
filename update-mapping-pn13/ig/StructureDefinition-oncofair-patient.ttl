@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIRPatient"] ; # 
   fhir:title [ fhir:v "OncoFAIR Patient"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-27T09:43:00+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-27T14:54:53+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -26,7 +26,7 @@
        fhir:value [ fhir:v "https://ltsi.univ-rennes.fr" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "Contains the patient's identity details needed to ensure that the prescription is properly taken into account."] ; # 
+  fhir:description [ fhir:v "Contains the patient's identity details needed to ensure that the prescription is properly taken into account. \r\n\nContient les informations d’identité du patient nécessaires à la bonne prise en compte de la prescription médicamenteuse."] ; # 
   fhir:fhirVersion [ fhir:v "5.0.0"] ; # 
   fhir:mapping ( [
      fhir:identity [ fhir:v "mapping-oncofair-patient" ] ;
@@ -148,7 +148,7 @@
          fhir:map [ fhir:v "ClinicalDocument.recordTarget.patientRole" ]
        ] [
          fhir:identity [ fhir:v "mapping-oncofair-patient" ] ;
-         fhir:map [ fhir:v "PATIENT" ]
+         fhir:map [ fhir:v "Patient" ]
        ] )
      ] [
        fhir:id [ fhir:v "Patient.id" ] ;
@@ -1989,7 +1989,7 @@
        fhir:path [ fhir:v "Patient" ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "mapping-oncofair-patient" ] ;
-         fhir:map [ fhir:v "PATIENT" ]
+         fhir:map [ fhir:v "Patient" ]
        ] )
      ] [
        fhir:id [ fhir:v "Patient.identifier" ] ;

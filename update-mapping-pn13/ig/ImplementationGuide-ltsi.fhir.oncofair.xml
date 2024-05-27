@@ -11,7 +11,7 @@
   <name value="OncoFAIR"/>
   <title value="Onco-FAIR"/>
   <status value="draft"/>
-  <date value="2024-05-27T09:43:00+00:00"/>
+  <date value="2024-05-27T14:54:53+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -162,7 +162,7 @@
         <reference value="StructureDefinition/oncofair-careplan"/>
       </reference>
       <name value="OncoFAIR CarePlan"/>
-      <description value="This object describes the chaining of prescription elements attached to the prescribed protocol. Its structure enables the chaining of nested sub-protocols."/>
+      <description value="This object describes the chaining of prescription elements attached to the prescribed protocol. Its structure enables the chaining of nested sub-protocols. &#xD;&#xA;&#xA;Cet objet décrit le chaînage des éléments de prescription rattachés au protocole prescrit. Sa structure permet le chaînage de sous-protocoles imbriqués."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -173,7 +173,7 @@
         <reference value="StructureDefinition/oncofair-encounter"/>
       </reference>
       <name value="OncoFAIR Encounter"/>
-      <description value="Must be taken in the generic sense, i.e. it goes beyond hospital admissions, outpatient consultations, dialysis sessions, day hospitals, etc."/>
+      <description value="Must be taken in the generic sense, i.e. it goes beyond hospital admissions, outpatient consultations, dialysis sessions, day hospitals, etc. &#xD;&#xA;&#xA;Doit être pris au sens générique, c’est-à-dire que cela dépasse les hospitalisations, consultations externes, séances de dialyse, hôpitaux de jour, etc …"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -194,7 +194,7 @@
         <reference value="StructureDefinition/oncofair-medicationadministration-component"/>
       </reference>
       <name value="OncoFAIR MedicationAdministration Component"/>
-      <description value="This object corresponds to a product that belongs to the nomenclature of medicines used in the hospital."/>
+      <description value="This object corresponds to a product that belongs to the nomenclature of medicines used in the hospital. &#xD;&#xA;&#xA;Cet objet correspond à un produit qui appartient à la nomenclature de médicaments utilisée dans l’hôpital."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -205,7 +205,7 @@
         <reference value="StructureDefinition/oncofair-medicationadministration-element"/>
       </reference>
       <name value="OncoFAIR MedicationAdministration Element"/>
-      <description value="Corresponds to the activity induced by a prescription item and its dosage (structured or unstructured), and carried out at a given moment."/>
+      <description value="Corresponds to the activity induced by a prescription item and its dosage (structured or unstructured), and carried out at a given moment. &#xD;&#xA;&#xA;Correspond à l’activité induite par un élément de prescription et sa posologie (structurée ou non), et réalisée à un instant donné."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -216,7 +216,7 @@
         <reference value="StructureDefinition/oncofair-medicationadministration-report"/>
       </reference>
       <name value="OncoFAIR MedicationAdministration Report"/>
-      <description value="Regroups all the prescription elements received on which the pharmacist expresses his validation. It also includes items suggested or resulting from a replacement proposed by the pharmacist."/>
+      <description value="Regroups all the prescription elements received on which the pharmacist expresses his validation. It also includes items suggested or resulting from a replacement proposed by the pharmacist. &#xD;&#xA;&#xA;Regroupe l’ensemble des éléments de prescription reçus sur lesquels le pharmacien exprime sa validation. S’y ajoutent les éléments suggérés ou issus d’un remplacement proposé par le pharmacien."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -224,10 +224,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/oncofaire-medicationrequest-component"/>
+        <reference value="StructureDefinition/oncofair-medicationrequest-component"/>
       </reference>
       <name value="OncoFAIR MedicationRequest Component"/>
-      <description value="Is a product that belongs to the nomenclature of medicines used. It may, for example, be a speciality, a product defined by its common name or a pharmacopoeial product."/>
+      <description value="Is a product that belongs to the nomenclature of medicines used. It may, for example, be a speciality, a product defined by its common name or a pharmacopoeial product. &#xD;&#xA;&#xA;Est un produit qui appartient à la nomenclature de médicaments utilisée. Il peut s’agir par exemple d’une spécialité, d’un produit défini par sa DC ou d’un produit de la pharmacopée."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -235,10 +235,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/oncofaire-medicationrequest-element"/>
+        <reference value="StructureDefinition/oncofair-medicationrequest-element"/>
       </reference>
       <name value="OncoFAIR MedicationRequest Element"/>
-      <description value="Corresponds to a prescription line on a prescription. Each item contains one or more components (in the case of a magistral&#xA;preparation or an infusion)."/>
+      <description value="Corresponds to a prescription line on a prescription. Each item contains one or more components (in the case of a magistral&#xA;preparation or an infusion). &#xD;&#xA;&#xA;Correspond à une ligne de prescription d’une ordonnance. Chacune comporte un ou plusieurs composants (lorsqu’il s’agit d’une préparation magistrale ou d’une perfusion)."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -249,7 +249,7 @@
         <reference value="StructureDefinition/oncofair-medicationrequest-prescription"/>
       </reference>
       <name value="OncoFAIR MedicationRequest Prescription"/>
-      <description value="Groups together all the prescription elements validated simultaneously by the same prescriber"/>
+      <description value="Groups together all the prescription elements validated simultaneously by the same prescriber. &#xD;&#xA;&#xA;Regroupe l’ensemble des éléments de prescription validés simultanément par un même prescripteur."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -260,7 +260,7 @@
         <reference value="StructureDefinition/oncofair-observation"/>
       </reference>
       <name value="OncoFAIR Observation"/>
-      <description value="Allows you to enter information about the patient in addition to that described in the prescription elements."/>
+      <description value="Allows you to enter information about the patient in addition to that described in the prescription elements. &#xD;&#xA;&#xA;Permet d’indiquer les informations relatives au patient qui complètent celles décrites par les éléments de prescription"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -271,7 +271,7 @@
         <reference value="StructureDefinition/oncofair-patient"/>
       </reference>
       <name value="OncoFAIR Patient"/>
-      <description value="Contains the patient's identity details needed to ensure that the prescription is properly taken into account."/>
+      <description value="Contains the patient's identity details needed to ensure that the prescription is properly taken into account. &#xD;&#xA;&#xA;Contient les informations d’identité du patient nécessaires à la bonne prise en compte de la prescription médicamenteuse."/>
       <isExample value="false"/>
     </resource>
     <resource>

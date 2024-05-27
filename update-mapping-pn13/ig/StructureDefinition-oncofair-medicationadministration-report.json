@@ -10,7 +10,7 @@
   "name" : "OncoFAIRMedicationAdministrationReport",
   "title" : "OncoFAIR MedicationAdministration Report",
   "status" : "draft",
-  "date" : "2024-05-27T09:43:00+00:00",
+  "date" : "2024-05-27T14:54:53+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -19,7 +19,7 @@
       "value" : "https://ltsi.univ-rennes.fr"
     }]
   }],
-  "description" : "Regroups all the prescription elements received on which the pharmacist expresses his validation. It also includes items suggested or resulting from a replacement proposed by the pharmacist.",
+  "description" : "Regroups all the prescription elements received on which the pharmacist expresses his validation. It also includes items suggested or resulting from a replacement proposed by the pharmacist. \r\n\nRegroupe l’ensemble des éléments de prescription reçus sur lesquels le pharmacien exprime sa validation. S’y ajoutent les éléments suggérés ou issus d’un remplacement proposé par le pharmacien.",
   "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "mapping-oncofair-medicationadministration-report",
@@ -123,7 +123,7 @@
       },
       {
         "identity" : "mapping-oncofair-medicationadministration-report",
-        "map" : "COMPTE RENDU ADMINISTRATION"
+        "map" : "CompteRenduAdministration"
       }]
     },
     {
@@ -789,7 +789,7 @@
       },
       {
         "identity" : "mapping-oncofair-medicationadministration-report",
-        "map" : "SEJOUR"
+        "map" : "Sejour"
       }]
     },
     {
@@ -1789,7 +1789,7 @@
       "path" : "MedicationAdministration",
       "mapping" : [{
         "identity" : "mapping-oncofair-medicationadministration-report",
-        "map" : "COMPTE RENDU ADMINISTRATION"
+        "map" : "CompteRenduAdministration"
       }]
     },
     {
@@ -1816,7 +1816,7 @@
       "mustSupport" : true,
       "mapping" : [{
         "identity" : "mapping-oncofair-medicationadministration-report",
-        "map" : "SEJOUR"
+        "map" : "Sejour"
       }]
     },
     {

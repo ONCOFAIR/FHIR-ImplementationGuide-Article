@@ -14,7 +14,7 @@
   <name value="OncoFAIREncounter"/>
   <title value="OncoFAIR Encounter"/>
   <status value="draft"/>
-  <date value="2024-05-27T09:43:00+00:00"/>
+  <date value="2024-05-27T14:54:53+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -23,7 +23,7 @@
       <value value="https://ltsi.univ-rennes.fr"/>
     </telecom>
   </contact>
-  <description value="Must be taken in the generic sense, i.e. it goes beyond hospital admissions, outpatient consultations, dialysis sessions, day hospitals, etc."/>
+  <description value="Must be taken in the generic sense, i.e. it goes beyond hospital admissions, outpatient consultations, dialysis sessions, day hospitals, etc. &#xD;&#xA;&#xA;Doit être pris au sens générique, c’est-à-dire que cela dépasse les hospitalisations, consultations externes, séances de dialyse, hôpitaux de jour, etc …"/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="mapping-oncofair-encounter"/>
@@ -125,7 +125,7 @@
       </mapping>
       <mapping>
         <identity value="mapping-oncofair-encounter"/>
-        <map value="SEJOUR"/>
+        <map value="Sejour"/>
       </mapping>
     </element>
     <element id="Encounter.id">
@@ -1027,7 +1027,7 @@
       </mapping>
       <mapping>
         <identity value="mapping-oncofair-encounter"/>
-        <map value="PATIENT"/>
+        <map value="Patient"/>
       </mapping>
     </element>
     <element id="Encounter.subjectStatus">
@@ -2986,7 +2986,7 @@
       <path value="Encounter"/>
       <mapping>
         <identity value="mapping-oncofair-encounter"/>
-        <map value="SEJOUR"/>
+        <map value="Sejour"/>
       </mapping>
     </element>
     <element id="Encounter.identifier">
@@ -3015,7 +3015,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="mapping-oncofair-encounter"/>
-        <map value="PATIENT"/>
+        <map value="Patient"/>
       </mapping>
     </element>
   </differential>

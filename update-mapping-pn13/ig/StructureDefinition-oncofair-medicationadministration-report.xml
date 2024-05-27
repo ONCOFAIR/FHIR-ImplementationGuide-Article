@@ -15,7 +15,7 @@
   <name value="OncoFAIRMedicationAdministrationReport"/>
   <title value="OncoFAIR MedicationAdministration Report"/>
   <status value="draft"/>
-  <date value="2024-05-27T09:43:00+00:00"/>
+  <date value="2024-05-27T14:54:53+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -24,7 +24,7 @@
       <value value="https://ltsi.univ-rennes.fr"/>
     </telecom>
   </contact>
-  <description value="Regroups all the prescription elements received on which the pharmacist expresses his validation. It also includes items suggested or resulting from a replacement proposed by the pharmacist."/>
+  <description value="Regroups all the prescription elements received on which the pharmacist expresses his validation. It also includes items suggested or resulting from a replacement proposed by the pharmacist. &#xD;&#xA;&#xA;Regroupe l’ensemble des éléments de prescription reçus sur lesquels le pharmacien exprime sa validation. S’y ajoutent les éléments suggérés ou issus d’un remplacement proposé par le pharmacien."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="mapping-oncofair-medicationadministration-report"/>
@@ -125,7 +125,7 @@
       </mapping>
       <mapping>
         <identity value="mapping-oncofair-medicationadministration-report"/>
-        <map value="COMPTE RENDU ADMINISTRATION"/>
+        <map value="CompteRenduAdministration"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.id">
@@ -767,7 +767,7 @@
       </mapping>
       <mapping>
         <identity value="mapping-oncofair-medicationadministration-report"/>
-        <map value="SEJOUR"/>
+        <map value="Sejour"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.supportingInformation">
@@ -1732,7 +1732,7 @@
       <path value="MedicationAdministration"/>
       <mapping>
         <identity value="mapping-oncofair-medicationadministration-report"/>
-        <map value="COMPTE RENDU ADMINISTRATION"/>
+        <map value="CompteRenduAdministration"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.identifier">
@@ -1757,7 +1757,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="mapping-oncofair-medicationadministration-report"/>
-        <map value="SEJOUR"/>
+        <map value="Sejour"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.performer">

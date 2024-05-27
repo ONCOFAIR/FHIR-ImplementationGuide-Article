@@ -98,39 +98,6 @@ package IG #DDDDDD{
              MedicationAdministration.performer.actor => [None..None]
         } 
 
-        class OncoFAIRMedicationRequestPrescription{
-
-             MedicationRequest.extension => [1..None]
-             MedicationRequest.extension:oncofair-mr-prescription-validation-date => <&plus>[1..1]
-             MedicationRequest.identifier => [1..1]
-             MedicationRequest.identifier.value => [1..None]
-             MedicationRequest.basedOn => [None..None]
-             MedicationRequest.medication => [None..None]
-             MedicationRequest.medication.concept.coding.code => [None..None]
-             MedicationRequest.encounter => [1..None]
-             MedicationRequest.supportingInformation => [None..None]
-             MedicationRequest.supportingInformation:accomodationUnit => [0..1]
-             MedicationRequest.supportingInformation:accomodationUnit.id => [1..None]
-             MedicationRequest.supportingInformation:medicalLiabiltyUnit => [0..1]
-             MedicationRequest.supportingInformation:medicalLiabiltyUnit.id => [1..None]
-             MedicationRequest.reason => [None..None]
-             MedicationRequest.note => [None..1]
-        } 
-
-        class OncoFAIRObservation{
-
-             Observation.code => [None..None]
-             Observation.effective[x] => [1..None]
-             Observation.effective[x]:effectiveDateTime => [1..1]
-             Observation.issued => [None..None]
-             Observation.value[x] => [1..None]
-        } 
-
-        class OncoFAIRPatient{
-
-             Patient.identifier => [1..1]
-        } 
-
         class OncoFAIRMedicationRequestComponent{
 
              MedicationRequest.extension => [None..None]
@@ -216,6 +183,39 @@ package IG #DDDDDD{
              MedicationRequest.dosageInstruction:posology.doseAndRate.rate[x] => [None..None]
              MedicationRequest.dosageInstruction:posology.doseAndRate.rate[x]:rateQuantity => [0..1]
              MedicationRequest.substitution => [None..None]
+        } 
+
+        class OncoFAIRMedicationRequestPrescription{
+
+             MedicationRequest.extension => [1..None]
+             MedicationRequest.extension:oncofair-mr-prescription-validation-date => <&plus>[1..1]
+             MedicationRequest.identifier => [1..1]
+             MedicationRequest.identifier.value => [1..None]
+             MedicationRequest.basedOn => [None..None]
+             MedicationRequest.medication => [None..None]
+             MedicationRequest.medication.concept.coding.code => [None..None]
+             MedicationRequest.encounter => [1..None]
+             MedicationRequest.supportingInformation => [None..None]
+             MedicationRequest.supportingInformation:accomodationUnit => [0..1]
+             MedicationRequest.supportingInformation:accomodationUnit.id => [1..None]
+             MedicationRequest.supportingInformation:medicalLiabiltyUnit => [0..1]
+             MedicationRequest.supportingInformation:medicalLiabiltyUnit.id => [1..None]
+             MedicationRequest.reason => [None..None]
+             MedicationRequest.note => [None..1]
+        } 
+
+        class OncoFAIRObservation{
+
+             Observation.code => [None..None]
+             Observation.effective[x] => [1..None]
+             Observation.effective[x]:effectiveDateTime => [1..1]
+             Observation.issued => [None..None]
+             Observation.value[x] => [1..None]
+        } 
+
+        class OncoFAIRPatient{
+
+             Patient.identifier => [1..1]
          }
 
      }
@@ -233,7 +233,6 @@ package IG #DDDDDD{
      OncoFAIRMedicationAdministrationElement -[#black,dashed,thickness=2]-> OncoFAIRMAElementTraceability
      OncoFAIRMedicationAdministrationElement -[#black,dashed,thickness=2]-> OncoFAIRMAElementPlannedPeriod
      OncoFAIRMedicationAdministrationElement -[#black,dashed,thickness=2]-> OncoFAIRElementForm
-     OncoFAIRMedicationRequestPrescription -[#black,dashed,thickness=2]-> OncoFAIRMRPrescriptionValidationDate
      OncoFAIRMedicationRequestComponent -[#black,dashed,thickness=2]-> OncoFAIRMRExemptLTC
      OncoFAIRMedicationRequestComponent -[#black,dashed,thickness=2]-> OncoFAIRMRComponentSolute
      OncoFAIRMedicationRequestComponent -[#black,dashed,thickness=2]-> OncoFAIRMRIsDosageReferent
@@ -243,6 +242,7 @@ package IG #DDDDDD{
      OncoFAIRMedicationRequestElement -[#black,dashed,thickness=2]-> OncoFAIRMRElementGoNogo
      OncoFAIRMedicationRequestElement -[#black,dashed,thickness=2]-> OncoFAIRPharmacistAdvice
      OncoFAIRMedicationRequestElement -[#black,dashed,thickness=2]-> OncoFAIRMRElementLinkType
+     OncoFAIRMedicationRequestPrescription -[#black,dashed,thickness=2]-> OncoFAIRMRPrescriptionValidationDate
 
         class OncoFAIRCPTreatment{
 
@@ -419,6 +419,14 @@ package "Ressources de base" #palegreen {
 
  class "MedicationRequest" as  class2071abb7e1482ea8731af3cdcaed7225 
 
+    class2071abb7e1482ea8731af3cdcaed7225 --> OncoFAIRMedicationRequestComponent
+
+ class "MedicationRequest" as  class2071abb7e1482ea8731af3cdcaed7225 
+
+    class2071abb7e1482ea8731af3cdcaed7225 --> OncoFAIRMedicationRequestElement
+
+ class "MedicationRequest" as  class2071abb7e1482ea8731af3cdcaed7225 
+
     class2071abb7e1482ea8731af3cdcaed7225 --> OncoFAIRMedicationRequestPrescription
 
  class "Observation" as  classc680d437163cc6bab4f9bdb35c3073d0 
@@ -428,13 +436,5 @@ package "Ressources de base" #palegreen {
  class "Patient" as  class01122a97dca927210827560cb7d76af8 
 
     class01122a97dca927210827560cb7d76af8 --> OncoFAIRPatient
-
- class "MedicationRequest" as  class2071abb7e1482ea8731af3cdcaed7225 
-
-    class2071abb7e1482ea8731af3cdcaed7225 --> OncoFAIRMedicationRequestComponent
-
- class "MedicationRequest" as  class2071abb7e1482ea8731af3cdcaed7225 
-
-    class2071abb7e1482ea8731af3cdcaed7225 --> OncoFAIRMedicationRequestElement
 }
 @enduml

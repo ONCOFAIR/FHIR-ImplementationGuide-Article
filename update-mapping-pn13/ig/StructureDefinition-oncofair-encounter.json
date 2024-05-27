@@ -10,7 +10,7 @@
   "name" : "OncoFAIREncounter",
   "title" : "OncoFAIR Encounter",
   "status" : "draft",
-  "date" : "2024-05-27T09:43:00+00:00",
+  "date" : "2024-05-27T14:54:53+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -19,7 +19,7 @@
       "value" : "https://ltsi.univ-rennes.fr"
     }]
   }],
-  "description" : "Must be taken in the generic sense, i.e. it goes beyond hospital admissions, outpatient consultations, dialysis sessions, day hospitals, etc.",
+  "description" : "Must be taken in the generic sense, i.e. it goes beyond hospital admissions, outpatient consultations, dialysis sessions, day hospitals, etc. \r\n\nDoit être pris au sens générique, c’est-à-dire que cela dépasse les hospitalisations, consultations externes, séances de dialyse, hôpitaux de jour, etc …",
   "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "mapping-oncofair-encounter",
@@ -124,7 +124,7 @@
       },
       {
         "identity" : "mapping-oncofair-encounter",
-        "map" : "SEJOUR"
+        "map" : "Sejour"
       }]
     },
     {
@@ -1059,7 +1059,7 @@
       },
       {
         "identity" : "mapping-oncofair-encounter",
-        "map" : "PATIENT"
+        "map" : "Patient"
       }]
     },
     {
@@ -3092,7 +3092,7 @@
       "path" : "Encounter",
       "mapping" : [{
         "identity" : "mapping-oncofair-encounter",
-        "map" : "SEJOUR"
+        "map" : "Sejour"
       }]
     },
     {
@@ -3124,7 +3124,7 @@
       "mustSupport" : true,
       "mapping" : [{
         "identity" : "mapping-oncofair-encounter",
-        "map" : "PATIENT"
+        "map" : "Patient"
       }]
     }]
   }

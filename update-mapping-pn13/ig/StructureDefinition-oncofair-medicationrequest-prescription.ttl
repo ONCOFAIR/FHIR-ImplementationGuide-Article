@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIRMedicationRequestPrescription"] ; # 
   fhir:title [ fhir:v "OncoFAIR MedicationRequest Prescription"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-27T09:43:00+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-27T14:54:53+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -26,7 +26,7 @@
        fhir:value [ fhir:v "https://ltsi.univ-rennes.fr" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "Groups together all the prescription elements validated simultaneously by the same prescriber"] ; # 
+  fhir:description [ fhir:v "Groups together all the prescription elements validated simultaneously by the same prescriber. \r\n\nRegroupe l’ensemble des éléments de prescription validés simultanément par un même prescripteur."] ; # 
   fhir:fhirVersion [ fhir:v "5.0.0"] ; # 
   fhir:mapping ( [
      fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-prescription" ] ;
@@ -144,7 +144,7 @@
          fhir:map [ fhir:v "clinical.medication" ]
        ] [
          fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-prescription" ] ;
-         fhir:map [ fhir:v "PRESCRIPTION" ]
+         fhir:map [ fhir:v "Prescription" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationRequest.id" ] ;
@@ -897,7 +897,7 @@
          fhir:map [ fhir:v ".outboundRelationship[typeCode=FLFS].target[classCode=SBADM or PROC or PCPR or OBS, moodCode=RQO orPLAN or PRP]" ]
        ] [
          fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-prescription" ] ;
-         fhir:map [ fhir:v "PROTOCOLE PRESCRIT" ]
+         fhir:map [ fhir:v "ProtocolePrescrit" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationRequest.priorPrescription" ] ;
@@ -2090,7 +2090,7 @@
          fhir:map [ fhir:v ".inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN, code=\"type of encounter or episode\"]" ]
        ] [
          fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-prescription" ] ;
-         fhir:map [ fhir:v "SEJOUR" ]
+         fhir:map [ fhir:v "Sejour" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationRequest.supportingInformation" ] ;
@@ -3077,7 +3077,7 @@
          fhir:map [ fhir:v "reason.observation.reasonCode | reason.observation[code=ASSERTION].value" ]
        ] [
          fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-prescription" ] ;
-         fhir:map [ fhir:v "RENSEIGNEMENT COMPLEMENTAIRE" ]
+         fhir:map [ fhir:v "RenseignementComplementaire" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationRequest.courseOfTherapyType" ] ;
@@ -4266,7 +4266,7 @@
        fhir:path [ fhir:v "MedicationRequest" ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-prescription" ] ;
-         fhir:map [ fhir:v "PRESCRIPTION" ]
+         fhir:map [ fhir:v "Prescription" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationRequest.extension" ] ;
@@ -4327,7 +4327,7 @@
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-prescription" ] ;
-         fhir:map [ fhir:v "PROTOCOLE PRESCRIT" ]
+         fhir:map [ fhir:v "ProtocolePrescrit" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationRequest.medication" ] ;
@@ -4352,7 +4352,7 @@
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-prescription" ] ;
-         fhir:map [ fhir:v "SEJOUR" ]
+         fhir:map [ fhir:v "Sejour" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationRequest.supportingInformation" ] ;
@@ -4425,7 +4425,7 @@
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-prescription" ] ;
-         fhir:map [ fhir:v "RENSEIGNEMENT COMPLEMENTAIRE" ]
+         fhir:map [ fhir:v "RenseignementComplementaire" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationRequest.note" ] ;

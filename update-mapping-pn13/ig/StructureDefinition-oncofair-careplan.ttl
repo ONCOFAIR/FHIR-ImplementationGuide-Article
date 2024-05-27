@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIRCarePlan"] ; # 
   fhir:title [ fhir:v "OncoFAIR CarePlan"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-27T09:43:00+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-27T14:54:53+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -26,7 +26,7 @@
        fhir:value [ fhir:v "https://ltsi.univ-rennes.fr" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "This object describes the chaining of prescription elements attached to the prescribed protocol. Its structure enables the chaining of nested sub-protocols."] ; # 
+  fhir:description [ fhir:v "This object describes the chaining of prescription elements attached to the prescribed protocol. Its structure enables the chaining of nested sub-protocols. \r\n\nCet objet décrit le chaînage des éléments de prescription rattachés au protocole prescrit. Sa structure permet le chaînage de sous-protocoles imbriqués."] ; # 
   fhir:fhirVersion [ fhir:v "5.0.0"] ; # 
   fhir:mapping ( [
      fhir:identity [ fhir:v "mapping-oncofair-careplan" ] ;
@@ -137,7 +137,7 @@
          fhir:map [ fhir:v "clinical.careprovision" ]
        ] [
          fhir:identity [ fhir:v "mapping-oncofair-careplan" ] ;
-         fhir:map [ fhir:v "PROTOCOLE PRESCRIT" ]
+         fhir:map [ fhir:v "ProtocolePrescrit" ]
        ] )
      ] [
        fhir:id [ fhir:v "CarePlan.id" ] ;
@@ -676,7 +676,7 @@
          fhir:map [ fhir:v "Request.basedOn" ]
        ] [
          fhir:identity [ fhir:v "mapping-oncofair-careplan" ] ;
-         fhir:map [ fhir:v "PROTOCOLE PRESCRIT" ]
+         fhir:map [ fhir:v "ProtocolePrescrit" ]
        ] )
      ] [
        fhir:id [ fhir:v "CarePlan.replaces" ] ;
@@ -2527,7 +2527,7 @@
        fhir:path [ fhir:v "CarePlan" ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "mapping-oncofair-careplan" ] ;
-         fhir:map [ fhir:v "PROTOCOLE PRESCRIT" ]
+         fhir:map [ fhir:v "ProtocolePrescrit" ]
        ] )
      ] [
        fhir:id [ fhir:v "CarePlan.extension" ] ;
@@ -2597,7 +2597,7 @@
        ] ) ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "mapping-oncofair-careplan" ] ;
-         fhir:map [ fhir:v "PROTOCOLE PRESCRIT" ]
+         fhir:map [ fhir:v "ProtocolePrescrit" ]
        ] )
      ] [
        fhir:id [ fhir:v "CarePlan.status" ] ;

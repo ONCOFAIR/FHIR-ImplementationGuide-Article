@@ -28,7 +28,7 @@
   <name value="OncoFAIRMedicationRequestPrescription"/>
   <title value="OncoFAIR MedicationRequest Prescription"/>
   <status value="draft"/>
-  <date value="2024-05-27T09:43:00+00:00"/>
+  <date value="2024-05-27T14:54:53+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -37,7 +37,7 @@
       <value value="https://ltsi.univ-rennes.fr"/>
     </telecom>
   </contact>
-  <description value="Groups together all the prescription elements validated simultaneously by the same prescriber"/>
+  <description value="Groups together all the prescription elements validated simultaneously by the same prescriber. &#xD;&#xA;&#xA;Regroupe l’ensemble des éléments de prescription validés simultanément par un même prescripteur."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="mapping-oncofair-medicationrequest-prescription"/>
@@ -149,7 +149,7 @@
       </mapping>
       <mapping>
         <identity value="mapping-oncofair-medicationrequest-prescription"/>
-        <map value="PRESCRIPTION"/>
+        <map value="Prescription"/>
       </mapping>
     </element>
     <element id="MedicationRequest.id">
@@ -847,7 +847,7 @@
       </mapping>
       <mapping>
         <identity value="mapping-oncofair-medicationrequest-prescription"/>
-        <map value="PROTOCOLE PRESCRIT"/>
+        <map value="ProtocolePrescrit"/>
       </mapping>
     </element>
     <element id="MedicationRequest.priorPrescription">
@@ -1948,7 +1948,7 @@
       </mapping>
       <mapping>
         <identity value="mapping-oncofair-medicationrequest-prescription"/>
-        <map value="SEJOUR"/>
+        <map value="Sejour"/>
       </mapping>
     </element>
     <element id="MedicationRequest.supportingInformation">
@@ -2825,7 +2825,7 @@
       </mapping>
       <mapping>
         <identity value="mapping-oncofair-medicationrequest-prescription"/>
-        <map value="RENSEIGNEMENT COMPLEMENTAIRE"/>
+        <map value="RenseignementComplementaire"/>
       </mapping>
     </element>
     <element id="MedicationRequest.courseOfTherapyType">
@@ -3909,7 +3909,7 @@
       <path value="MedicationRequest"/>
       <mapping>
         <identity value="mapping-oncofair-medicationrequest-prescription"/>
-        <map value="PRESCRIPTION"/>
+        <map value="Prescription"/>
       </mapping>
     </element>
     <element id="MedicationRequest.extension">
@@ -3964,7 +3964,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="mapping-oncofair-medicationrequest-prescription"/>
-        <map value="PROTOCOLE PRESCRIT"/>
+        <map value="ProtocolePrescrit"/>
       </mapping>
     </element>
     <element id="MedicationRequest.medication">
@@ -3986,7 +3986,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="mapping-oncofair-medicationrequest-prescription"/>
-        <map value="SEJOUR"/>
+        <map value="Sejour"/>
       </mapping>
     </element>
     <element id="MedicationRequest.supportingInformation">
@@ -4050,7 +4050,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="mapping-oncofair-medicationrequest-prescription"/>
-        <map value="RENSEIGNEMENT COMPLEMENTAIRE"/>
+        <map value="RenseignementComplementaire"/>
       </mapping>
     </element>
     <element id="MedicationRequest.note">

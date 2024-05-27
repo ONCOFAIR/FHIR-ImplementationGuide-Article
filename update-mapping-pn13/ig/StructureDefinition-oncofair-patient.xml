@@ -12,7 +12,7 @@
   <name value="OncoFAIRPatient"/>
   <title value="OncoFAIR Patient"/>
   <status value="draft"/>
-  <date value="2024-05-27T09:43:00+00:00"/>
+  <date value="2024-05-27T14:54:53+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -21,7 +21,7 @@
       <value value="https://ltsi.univ-rennes.fr"/>
     </telecom>
   </contact>
-  <description value="Contains the patient's identity details needed to ensure that the prescription is properly taken into account."/>
+  <description value="Contains the patient's identity details needed to ensure that the prescription is properly taken into account. &#xD;&#xA;&#xA;Contient les informations d’identité du patient nécessaires à la bonne prise en compte de la prescription médicamenteuse."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="mapping-oncofair-patient"/>
@@ -137,7 +137,7 @@
       </mapping>
       <mapping>
         <identity value="mapping-oncofair-patient"/>
-        <map value="PATIENT"/>
+        <map value="Patient"/>
       </mapping>
     </element>
     <element id="Patient.id">
@@ -1866,7 +1866,7 @@
       <path value="Patient"/>
       <mapping>
         <identity value="mapping-oncofair-patient"/>
-        <map value="PATIENT"/>
+        <map value="Patient"/>
       </mapping>
     </element>
     <element id="Patient.identifier">

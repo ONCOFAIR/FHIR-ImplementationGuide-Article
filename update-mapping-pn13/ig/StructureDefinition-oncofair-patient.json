@@ -10,7 +10,7 @@
   "name" : "OncoFAIRPatient",
   "title" : "OncoFAIR Patient",
   "status" : "draft",
-  "date" : "2024-05-27T09:43:00+00:00",
+  "date" : "2024-05-27T14:54:53+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -19,7 +19,7 @@
       "value" : "https://ltsi.univ-rennes.fr"
     }]
   }],
-  "description" : "Contains the patient's identity details needed to ensure that the prescription is properly taken into account.",
+  "description" : "Contains the patient's identity details needed to ensure that the prescription is properly taken into account. \r\n\nContient les informations d’identité du patient nécessaires à la bonne prise en compte de la prescription médicamenteuse.",
   "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "mapping-oncofair-patient",
@@ -138,7 +138,7 @@
       },
       {
         "identity" : "mapping-oncofair-patient",
-        "map" : "PATIENT"
+        "map" : "Patient"
       }]
     },
     {
@@ -1924,7 +1924,7 @@
       "path" : "Patient",
       "mapping" : [{
         "identity" : "mapping-oncofair-patient",
-        "map" : "PATIENT"
+        "map" : "Patient"
       }]
     },
     {

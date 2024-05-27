@@ -38,7 +38,7 @@
   <name value="OncoFAIRMedicationAdministrationElement"/>
   <title value="OncoFAIR MedicationAdministration Element"/>
   <status value="draft"/>
-  <date value="2024-05-27T09:43:00+00:00"/>
+  <date value="2024-05-27T14:54:53+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -47,7 +47,7 @@
       <value value="https://ltsi.univ-rennes.fr"/>
     </telecom>
   </contact>
-  <description value="Corresponds to the activity induced by a prescription item and its dosage (structured or unstructured), and carried out at a given moment."/>
+  <description value="Corresponds to the activity induced by a prescription item and its dosage (structured or unstructured), and carried out at a given moment. &#xD;&#xA;&#xA;Correspond à l’activité induite par un élément de prescription et sa posologie (structurée ou non), et réalisée à un instant donné."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="mapping-oncofair-medicationradministration-element"/>
@@ -148,7 +148,7 @@
       </mapping>
       <mapping>
         <identity value="mapping-oncofair-medicationradministration-element"/>
-        <map value="ELEMENT ADMINISTRATION"/>
+        <map value="ElementAdministration"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.id">
@@ -685,7 +685,7 @@
       </mapping>
       <mapping>
         <identity value="mapping-oncofair-medicationradministration-element"/>
-        <map value="COMPTE RENDU D'ADMINISTRATION"/>
+        <map value="CompteRenduAdministration"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.status">
@@ -1735,7 +1735,7 @@
       </mapping>
       <mapping>
         <identity value="mapping-oncofair-medicationradministration-element"/>
-        <map value="ELEMENT PRESCRIPTION"/>
+        <map value="ElementPrescription"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.request.id">
@@ -2874,7 +2874,7 @@
       <path value="MedicationAdministration"/>
       <mapping>
         <identity value="mapping-oncofair-medicationradministration-element"/>
-        <map value="ELEMENT ADMINISTRATION"/>
+        <map value="ElementAdministration"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.extension">
@@ -2966,7 +2966,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="mapping-oncofair-medicationradministration-element"/>
-        <map value="COMPTE RENDU D'ADMINISTRATION"/>
+        <map value="CompteRenduAdministration"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.category">
@@ -3047,7 +3047,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="mapping-oncofair-medicationradministration-element"/>
-        <map value="ELEMENT PRESCRIPTION"/>
+        <map value="ElementPrescription"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.request.identifier">

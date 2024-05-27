@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIRMedicationAdministrationElement"] ; # 
   fhir:title [ fhir:v "OncoFAIR MedicationAdministration Element"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-27T09:43:00+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-27T14:54:53+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -26,7 +26,7 @@
        fhir:value [ fhir:v "https://ltsi.univ-rennes.fr" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "Corresponds to the activity induced by a prescription item and its dosage (structured or unstructured), and carried out at a given moment."] ; # 
+  fhir:description [ fhir:v "Corresponds to the activity induced by a prescription item and its dosage (structured or unstructured), and carried out at a given moment. \r\n\nCorrespond à l’activité induite par un élément de prescription et sa posologie (structurée ou non), et réalisée à un instant donné."] ; # 
   fhir:fhirVersion [ fhir:v "5.0.0"] ; # 
   fhir:mapping ( [
      fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
@@ -136,7 +136,7 @@
          fhir:map [ fhir:v "clinical.medication" ]
        ] [
          fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
-         fhir:map [ fhir:v "ELEMENT ADMINISTRATION" ]
+         fhir:map [ fhir:v "ElementAdministration" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.id" ] ;
@@ -745,7 +745,7 @@
          fhir:map [ fhir:v ".outboundRelationship[typeCode=COMP]/target[classCode=SBADM or PROC,moodCode=EVN]" ]
        ] [
          fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
-         fhir:map [ fhir:v "COMPTE RENDU D'ADMINISTRATION" ]
+         fhir:map [ fhir:v "CompteRenduAdministration" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.status" ] ;
@@ -1901,7 +1901,7 @@
          fhir:map [ fhir:v "InFullfillmentOf->SubstanceAdministration" ]
        ] [
          fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
-         fhir:map [ fhir:v "ELEMENT PRESCRIPTION" ]
+         fhir:map [ fhir:v "ElementPrescription" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.request.id" ] ;
@@ -3158,7 +3158,7 @@
        fhir:path [ fhir:v "MedicationAdministration" ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
-         fhir:map [ fhir:v "ELEMENT ADMINISTRATION" ]
+         fhir:map [ fhir:v "ElementAdministration" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.extension" ] ;
@@ -3269,7 +3269,7 @@
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
-         fhir:map [ fhir:v "COMPTE RENDU D'ADMINISTRATION" ]
+         fhir:map [ fhir:v "CompteRenduAdministration" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.category" ] ;
@@ -3350,7 +3350,7 @@
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
-         fhir:map [ fhir:v "ELEMENT PRESCRIPTION" ]
+         fhir:map [ fhir:v "ElementPrescription" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.request.identifier" ] ;

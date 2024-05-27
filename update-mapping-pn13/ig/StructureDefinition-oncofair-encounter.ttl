@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIREncounter"] ; # 
   fhir:title [ fhir:v "OncoFAIR Encounter"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-27T09:43:00+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-27T14:54:53+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -26,7 +26,7 @@
        fhir:value [ fhir:v "https://ltsi.univ-rennes.fr" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "Must be taken in the generic sense, i.e. it goes beyond hospital admissions, outpatient consultations, dialysis sessions, day hospitals, etc."] ; # 
+  fhir:description [ fhir:v "Must be taken in the generic sense, i.e. it goes beyond hospital admissions, outpatient consultations, dialysis sessions, day hospitals, etc. \r\n\nDoit être pris au sens générique, c’est-à-dire que cela dépasse les hospitalisations, consultations externes, séances de dialyse, hôpitaux de jour, etc …"] ; # 
   fhir:fhirVersion [ fhir:v "5.0.0"] ; # 
   fhir:mapping ( [
      fhir:identity [ fhir:v "mapping-oncofair-encounter" ] ;
@@ -137,7 +137,7 @@
          fhir:map [ fhir:v "workflow.encounter" ]
        ] [
          fhir:identity [ fhir:v "mapping-oncofair-encounter" ] ;
-         fhir:map [ fhir:v "SEJOUR" ]
+         fhir:map [ fhir:v "Sejour" ]
        ] )
      ] [
        fhir:id [ fhir:v "Encounter.id" ] ;
@@ -1110,7 +1110,7 @@
          fhir:map [ fhir:v ".participation[typeCode=SBJ]/role[classCode=PAT]" ]
        ] [
          fhir:identity [ fhir:v "mapping-oncofair-encounter" ] ;
-         fhir:map [ fhir:v "PATIENT" ]
+         fhir:map [ fhir:v "Patient" ]
        ] )
      ] [
        fhir:id [ fhir:v "Encounter.subjectStatus" ] ;
@@ -3310,7 +3310,7 @@
        fhir:path [ fhir:v "Encounter" ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "mapping-oncofair-encounter" ] ;
-         fhir:map [ fhir:v "SEJOUR" ]
+         fhir:map [ fhir:v "Sejour" ]
        ] )
      ] [
        fhir:id [ fhir:v "Encounter.identifier" ] ;
@@ -3342,7 +3342,7 @@
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "mapping-oncofair-encounter" ] ;
-         fhir:map [ fhir:v "PATIENT" ]
+         fhir:map [ fhir:v "Patient" ]
        ] )
      ] )
   ] . # 
