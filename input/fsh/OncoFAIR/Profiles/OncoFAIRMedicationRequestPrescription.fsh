@@ -2,7 +2,8 @@ Profile: OncoFAIRMedicationRequestPrescription
 Parent: MedicationRequest
 Id: oncofair-medicationrequest-prescription
 Title: "OncoFAIR MedicationRequest Prescription"
-Description : "Groups together all the prescription elements validated simultaneously by the same prescriber" 
+Description : "Groups together all the prescription elements validated simultaneously by the same prescriber. \r\n
+Regroupe l’ensemble des éléments de prescription validés simultanément par un même prescripteur." 
 
 * encounter 1..1 MS
 * encounter only Reference(OncoFAIREncounter)
@@ -48,11 +49,11 @@ Mapping:  mapping_OncoFAIRMedicationRequestPrescription
 Source:   OncoFAIRMedicationRequestPrescription
 Id:       mapping-oncofair-medicationrequest-prescription
 Title:    "Mapping du profil OncoFAIR MedicationRequest Prescription"
-* -> "PRESCRIPTION"
+* -> "Prescription"
 
-* encounter -> "SEJOUR"
-* reason -> "RENSEIGNEMENT COMPLEMENTAIRE"
-* basedOn -> "PROTOCOLE PRESCRIT"
+* encounter -> "Sejour"
+* reason -> "RenseignementComplementaire"
+* basedOn -> "ProtocolePrescrit"
 
 * supportingInformation[accomodationUnit] -> "uniteHebergement"
 * supportingInformation[medicalLiabiltyUnit] ->  "uniteResponsabiliteMedicale"

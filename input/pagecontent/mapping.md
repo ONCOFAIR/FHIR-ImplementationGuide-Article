@@ -1,5 +1,7 @@
 ### Mapping Global
 
+<div>{%include mapping_global.svg%}</div>
+
 ### Mapping Medication
 
 ### Mapping MedicationRequest

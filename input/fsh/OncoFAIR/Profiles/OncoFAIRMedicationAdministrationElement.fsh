@@ -2,7 +2,8 @@ Profile: OncoFAIRMedicationAdministrationElement
 Parent: MedicationAdministration
 Id: oncofair-medicationadministration-element
 Title: "OncoFAIR MedicationAdministration Element"
-Description: "Corresponds to the activity induced by a prescription item and its dosage (structured or unstructured), and carried out at a given moment." 
+Description: "Corresponds to the activity induced by a prescription item and its dosage (structured or unstructured), and carried out at a given moment. \r\n
+Correspond à l’activité induite par un élément de prescription et sa posologie (structurée ou non), et réalisée à un instant donné." 
 
 * partOf 1..1 MS
 * partOf only Reference(OncoFAIRMedicationAdministrationReport)
@@ -63,11 +64,11 @@ Mapping:  mapping_OncoFAIRMedicationAdministrationElement
 Source:   OncoFAIRMedicationAdministrationElement
 Id:       mapping-oncofair-medicationradministration-element
 Title:    "Mapping du profil OncoFAIR MedicationAdministration Element"
-* -> "ELEMENT ADMINISTRATION"
+* -> "ElementAdministration"
 
-* partOf -> "COMPTE RENDU D'ADMINISTRATION"
+* partOf -> "CompteRenduAdministration"
 * device -> "dispositifsAssocies"
-* request -> "ELEMENT PRESCRIPTION"
+* request -> "ElementPrescription"
 
 * identifier -> "idElementAdministration"
 

@@ -2,7 +2,8 @@ Profile: OncoFAIRMedicationAdministrationComponent
 Parent: MedicationAdministration
 Id: oncofair-medicationadministration-component
 Title: "OncoFAIR MedicationAdministration Component"
-Description: "This object corresponds to a product that belongs to the nomenclature of medicines used in the hospital." 
+Description: "This object corresponds to a product that belongs to the nomenclature of medicines used in the hospital. \r\n
+Cet objet correspond à un produit qui appartient à la nomenclature de médicaments utilisée dans l’hôpital." 
 
 * partOf 1..1 MS
 * partOf only Reference(OncoFAIRMedicationAdministrationElement)
@@ -44,10 +45,10 @@ Mapping:  mapping_OncoFAIRMedicationAdministrationComponent
 Source:   OncoFAIRMedicationAdministrationComponent
 Id:       mapping-oncofair-medicationadministration-component
 Title:    "Mapping du profil OncoFAIR MedicationAdministration Component"
-* -> "COMPOSANT ADMINISTRE"
+* -> "ComposantAdministre"
 
-* partOf -> "ELEMENT ADMINISTRATION"
-* medication -> "COMPOSANT"
+* partOf -> "ElementAdministration"
+* medication -> "Composant"
 
 /** category -> "typeComposant"*/
 * dosage.dose -> "quantitePrevue"

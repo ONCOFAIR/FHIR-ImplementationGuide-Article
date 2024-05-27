@@ -2,7 +2,8 @@ Profile: OncoFAIRPatient
 Parent: Patient
 Id: oncofair-patient
 Title: "OncoFAIR Patient"
-Description : "Contains the patient's identity details needed to ensure that the prescription is properly taken into account."
+Description : "Contains the patient's identity details needed to ensure that the prescription is properly taken into account. \r\n
+Contient les informations d’identité du patient nécessaires à la bonne prise en compte de la prescription médicamenteuse."
 
 * identifier 1..1 MS
 * identifier ^short = "Permanent Patient Identifier"
@@ -55,6 +56,6 @@ Mapping:  mapping_OncoFAIRPatient
 Source:   OncoFAIRPatient
 Id:       mapping-oncofair-patient
 Title:    "Mapping du profil OncoFAIR Patient"
-* -> "PATIENT"
+* -> "Patient"
 
 * identifier -> "IPP" 

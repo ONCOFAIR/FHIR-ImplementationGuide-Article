@@ -2,7 +2,8 @@ Profile: OncoFAIRObservation
 Parent: Observation
 Id: oncofair-observation
 Title: "OncoFAIR Observation"
-Description: "Allows you to enter information about the patient in addition to that described in the prescription elements."
+Description: "Allows you to enter information about the patient in addition to that described in the prescription elements. \r\n
+Permet d’indiquer les informations relatives au patient qui complètent celles décrites par les éléments de prescription"
 
 * code MS
 * code ^short = "Nature of additional information representing by LOINC code"
@@ -19,7 +20,7 @@ Mapping:  mapping_OncoFAIRObservation
 Source:   OncoFAIRObservation
 Id:       mapping-oncofair-observation
 Title:    "Mapping du profil OncoFAIR Observation"
-* -> "RENSEIGNEMENT COMPLEMENTAIRE"
+* -> "RenseignementComplementaire"
 
 * code -> "codeRenseignementComplementaire"
 * effectiveDateTime -> "dateHeureEnregistrementRenseignementComplementaire"

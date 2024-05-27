@@ -1,9 +1,10 @@
 Profile: OncoFAIRMedicationRequestElement
 Parent: MedicationRequest
-Id: oncofaire-medicationrequest-element
+Id: oncofair-medicationrequest-element
 Title: "OncoFAIR MedicationRequest Element"
 Description : "Corresponds to a prescription line on a prescription. Each item contains one or more components (in the case of a magistral
-preparation or an infusion)." 
+preparation or an infusion). \r\n
+Correspond à une ligne de prescription d’une ordonnance. Chacune comporte un ou plusieurs composants (lorsqu’il s’agit d’une préparation magistrale ou d’une perfusion)." 
 
 * basedOn MS
 * basedOn ^slicing.discriminator.type = #type
@@ -117,12 +118,12 @@ Mapping:  mapping_OncoFAIRMedicationRequestElement
 Source:   OncoFAIRMedicationRequestElement
 Id:       mapping-oncofair-medicationrequest-element
 Title:    "Mapping du profil OncoFAIR MedicationRequest Element"
-* -> "ELEMENT PRESCRIPTION"
+* -> "ElementPrescription"
 
-* basedOn[prescription] -> "PRESCRIPTION" 
-* basedOn[element] -> "ELEMENT LIE"
+* basedOn[prescription] -> "Prescription" 
+* basedOn[element] -> "ElementLie"
 /** basedOn[element].extension[oncofair-mr-element-link-type] -> "typeLiaisonElement"*/
-* basedOn[protocol] -> "PROTOCOLE PRESCRIT"
+* basedOn[protocol] -> "ProtocolePrescrit"
 
 * device -> "dispostifsAssocies"
 * requester -> "idpPrescripteur"

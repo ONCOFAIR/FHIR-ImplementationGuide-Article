@@ -15,6 +15,6 @@ Mapping:  mapping_OncoFAIRMedication
 Source:   OncoFAIRMedication
 Id:       mapping-oncofair-medication
 Title:    "Mapping du profil OncoFAIR Medication"
-* -> "COMPOSANT"
+* -> "Composant"
 
 * code -> "codeComposant"

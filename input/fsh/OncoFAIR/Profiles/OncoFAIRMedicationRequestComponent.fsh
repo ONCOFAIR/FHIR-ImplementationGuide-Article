@@ -1,8 +1,9 @@
 Profile: OncoFAIRMedicationRequestComponent
 Parent: MedicationRequest
-Id: oncofaire-medicationrequest-component
+Id: oncofair-medicationrequest-component
 Title: "OncoFAIR MedicationRequest Component"
-Description : "Is a product that belongs to the nomenclature of medicines used. It may, for example, be a speciality, a product defined by its common name or a pharmacopoeial product." 
+Description : "Is a product that belongs to the nomenclature of medicines used. It may, for example, be a speciality, a product defined by its common name or a pharmacopoeial product. \r\n
+Est un produit qui appartient à la nomenclature de médicaments utilisée. Il peut s’agir par exemple d’une spécialité, d’un produit défini par sa DC ou d’un produit de la pharmacopée." 
 
 * basedOn 1..1 MS
 * basedOn ^short = "The element linked to the component prescribed"
@@ -43,10 +44,10 @@ Mapping:  mapping_OncoFAIRMedicationRequestComponent
 Source:   OncoFAIRMedicationRequestComponent
 Id:       mapping-oncofair-medicationrequest-component
 Title:    "Mapping du profil OncoFAIR MedicationRequest Component"
-* -> "COMPOSANT PRESCRIT"
+* -> "ComposantPrescrit"
 
-* basedOn -> "ELEMENT PRESCRIPTION"
-* medication -> "COMPOSANT"
+* basedOn -> "ElementPrescription"
+* medication -> "Composant"
 
 * dosageInstruction.doseAndRate.doseQuantity -> "quantiteComposantPrescrit"
 * substitution.allowedBoolean -> "nonSubstituable"
