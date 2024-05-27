@@ -10,7 +10,7 @@
   "name" : "OncoFAIRCarePlan",
   "title" : "OncoFAIR CarePlan",
   "status" : "draft",
-  "date" : "2024-05-23T14:57:19+00:00",
+  "date" : "2024-05-27T07:09:09+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -358,7 +358,7 @@
       "path" : "CarePlan.extension",
       "sliceName" : "oncofair-cp-treatment",
       "short" : "Extension",
-      "definition" : "Extension créée dans le cadre d'OncoFAIR",
+      "definition" : "Extension created as part of OncoFAIR,Extension créée dans le cadre d'OncoFAIR",
       "min" : 1,
       "max" : "1",
       "base" : {
@@ -620,6 +620,10 @@
       "mapping" : [{
         "identity" : "workflow",
         "map" : "Request.basedOn"
+      },
+      {
+        "identity" : "mapping-oncofair-careplan",
+        "map" : "PROTOCOLE PRESCRIT"
       }]
     },
     {
@@ -2372,6 +2376,10 @@
         }],
         "code" : "Reference",
         "targetProfile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-careplan"]
+      }],
+      "mapping" : [{
+        "identity" : "mapping-oncofair-careplan",
+        "map" : "PROTOCOLE PRESCRIT"
       }]
     },
     {

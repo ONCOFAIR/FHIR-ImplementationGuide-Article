@@ -25,7 +25,7 @@
   <name value="OncoFAIRCarePlan"/>
   <title value="OncoFAIR CarePlan"/>
   <status value="draft"/>
-  <date value="2024-05-23T14:57:19+00:00"/>
+  <date value="2024-05-27T07:09:09+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -360,7 +360,7 @@
       <path value="CarePlan.extension"/>
       <sliceName value="oncofair-cp-treatment"/>
       <short value="Extension"/>
-      <definition value="Extension créée dans le cadre d'OncoFAIR"/>
+      <definition value="Extension created as part of OncoFAIR,Extension créée dans le cadre d'OncoFAIR"/>
       <min value="1"/>
       <max value="1"/>
       <base>
@@ -615,6 +615,10 @@
       <mapping>
         <identity value="workflow"/>
         <map value="Request.basedOn"/>
+      </mapping>
+      <mapping>
+        <identity value="mapping-oncofair-careplan"/>
+        <map value="PROTOCOLE PRESCRIT"/>
       </mapping>
     </element>
     <element id="CarePlan.replaces">
@@ -2307,6 +2311,10 @@
         <code value="Reference"/>
         <targetProfile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-careplan"/>
       </type>
+      <mapping>
+        <identity value="mapping-oncofair-careplan"/>
+        <map value="PROTOCOLE PRESCRIT"/>
+      </mapping>
     </element>
     <element id="CarePlan.status">
       <path value="CarePlan.status"/>
