@@ -1,6 +1,6 @@
 ### Introduction
 
-The Onco-FAIR project is designed to improve the interoperability and reuse of healthcare data in oncology, focusing on chemotherapy. This guide details the use of FHIR standards to optimize prescribing and medication administration for oncology patients.
+The OncoFAIR project is designed to improve the interoperability and reuse of healthcare data in oncology, focusing on chemotherapy. This guide details the use of FHIR standards to optimize prescribing and medication administration for oncology patients.
 
 #### Objectives
 
@@ -16,18 +16,18 @@ Supported by the Brittany Region and Biotech Santé Bretagne, this project benef
 
 This guide is intended for developers, healthcare professionals and researchers involved in managing and modeling healthcare data in oncology. It is assumed that the reader is familiar with the FHIR standard.
 
-### UML diagram
+<!--### UML diagram
 
 This UML diagram provides an overview of the data structures, and is essential for understanding the relationships between the various FHIR resources used in the project.
 
 <div align="center;"> 
-<img src="uml_oncofair_english.svg" alt="UML class diagram representing the FHIR R5 medication prescription and administration use case" width="100%"/>
+<img src="uml_oncofair_english.svg" alt="UML class diagram representing the FHIR R5 medication prescription and administration use case" width="100%"/>-->
 
 </div>
 
 ### Profiled FHIR resources
 
-Each FHIR resource has been tailored to meet the specific requirements of the Onco-FAIR project, with constraints on cardinalities and extensions to capture critical oncology data:
+Each FHIR resource has been tailored to meet the specific requirements of the OncoFAIR project, with constraints on cardinalities and extensions to capture critical oncology data :
 
 #### Profiles 
 
@@ -244,7 +244,7 @@ Each FHIR resource has been tailored to meet the specific requirements of the On
 
 #### Extensions 
 
-FHIR extensions such as `TreatmentCycleNumber` and `TreatmentDayNumber` are used for oncology treatment-specific information.
+<!--FHIR extensions such as `TreatmentCycleNumber` and `TreatmentDayNumber` are used for oncology treatment-specific information.-->
 
 ### FHIR interaction
 
