@@ -19,4 +19,4 @@ Source:   OncoFAIRMRElementGoNogo
 Id:       mapping-oncofair-mr-element-go-nogo
 Title:    "Mapping de l'extension OncoFAIR MR Element GoNogo"
 * extension[GoNogoStatus] -> "GoNogo"
-* extension[GoNogoReasonWaiting] -> "Motif attente"
+* extension[GoNogoReasonWaiting] -> "motifAttente"

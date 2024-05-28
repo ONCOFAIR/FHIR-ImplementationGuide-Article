@@ -1,0 +1,13 @@
+@startuml
+
+
+
+map "**RenseignementComplementaire : OncoFAIRObservation**" as RenseignementComplementaire #back:PeachPuff;header:Orange {
+    codeRenseignementComplementaire => code
+    dateHeureEnregistrementRenseignementComplementaire => <&layers> effective[x]:effectiveDateTime
+    dateHeureRenseignementComplementaire => issued
+    valeurRenseignementComplementaire => value[x]
+}
+
+
+@enduml

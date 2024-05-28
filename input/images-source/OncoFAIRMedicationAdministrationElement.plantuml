@@ -1,0 +1,50 @@
+@startuml
+
+scale 1000 width
+
+map "<&layers> occurence[x]:occurencePeriod" as occurencexoccurencePeriod #back:WhiteSmoke;header:LightGray {
+    dateHeureDebutEffective => start
+    dateHeureFinEffective => end
+}
+
+map "dosage" as dosage #back:WhiteSmoke;header:LightGray {
+    lieuAdministration => site
+    voieAdministration => route
+    typeElementAdministration => method
+}
+
+object "**OncoFAIRMedicationAdministrationReport**" as OncoFAIRMedicationAdministrationReport #LightSeaGreen {
+    CompteRenduAdministration
+}
+
+map "<&plus> oncofair-ma-element-traceability" as oncofairmaelementtraceability #back:WhiteSmoke;header:LightGray {
+    lot => batchNumber
+    serie => serialNumber
+}
+
+map "<&plus> oncofair-ma-element-plannedperiod" as oncofairmaelementplannedperiod #back:WhiteSmoke;header:LightGray {
+    dateHeureDebutPrevue => Extension.value[x].start
+    dateHeureFinPrevue => Extension.value[x].end
+}
+
+map "**ElementAdministration : OncoFAIRMedicationAdministrationElement**" as ElementAdministration #back:MintCream;header:LightSeaGreen {
+    idElementAdministration => identifier
+    codeElementAdministration => category
+    codeElementAdministration => <&layers> category:code
+    presentation => <&layers> category:nature
+    ElementPrescription => request
+    dispositifsAssocies => device
+    libelleElementAdministration => <&layers> note:wording
+    commentaires => <&layers> note:comments
+    <&layers> occurence[x]:occurencePeriod *-> occurencexoccurencePeriod
+    dosage *-> dosage
+    urgent => <&plus> oncofair-ma-element-urgent
+    datePeremption => <&plus> oncofair-ma-element-expirationdate
+    oncofair-ma-element-traceability *-> oncofairmaelementtraceability
+    oncofair-ma-element-plannedperiod *-> oncofairmaelementplannedperiod
+    forme => <&plus> oncofair-element-form
+}
+
+ElementAdministration -u-> OncoFAIRMedicationAdministrationReport : partOf
+
+@enduml
