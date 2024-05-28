@@ -1,0 +1,18 @@
+@startuml
+
+map "performer" as performer #back:WhiteSmoke;header:LightGray {
+    idpAdministrateur => actor
+}
+
+object "**OncoFAIREncounter**" as OncoFAIREncounter #SlateGray {
+    Sejour
+}
+
+map "**CompteRenduAdministration : OncoFAIRMedicationAdministrationReport**" as CompteRenduAdministration #back:MintCream;header:LightSeaGreen {
+    idCompteRenduAdministration => identifier
+    performer *-> performer
+}
+
+CompteRenduAdministration -u-> OncoFAIREncounter : encounter
+
+@enduml
