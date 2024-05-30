@@ -10,7 +10,7 @@
   "name" : "OncoFAIR",
   "title" : "Onco-FAIR",
   "status" : "draft",
-  "date" : "2024-05-29T08:10:39+00:00",
+  "date" : "2024-05-30T08:16:30+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -71,6 +71,58 @@
       "name" : "Communication modes",
       "description" : "CodeSystem for french communication modes (incremental, summary).",
       "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CarePlan"
+      }],
+      "reference" : {
+        "reference" : "CarePlan/ExampleOncoFAIRCarePlan"
+      },
+      "name" : "Example OncoFAIR CarePlan",
+      "description" : "An example instance of an OncoFAIR CarePlan with required fields populated.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-careplan"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/ExampleOncoFAIREncounter"
+      },
+      "name" : "Example OncoFAIR Encounter",
+      "description" : "An example instance of an OncoFAIR Encounter with required fields populated.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-encounter"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/ExampleOncoFAIRMedication"
+      },
+      "name" : "Example OncoFAIR Medication",
+      "description" : "An example instance of an OncoFAIR Medication with required fields populated.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/ExampleOncoFAIRPatient"
+      },
+      "name" : "Example OncoFAIR Patient",
+      "description" : "An example instance of an OncoFAIR patient with a permanent patient identifier.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-patient"]
     },
     {
       "extension" : [{

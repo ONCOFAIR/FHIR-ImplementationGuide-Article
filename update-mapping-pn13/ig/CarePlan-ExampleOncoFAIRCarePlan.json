@@ -1,0 +1,62 @@
+{
+  "resourceType" : "CarePlan",
+  "id" : "ExampleOncoFAIRCarePlan",
+  "meta" : {
+    "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-careplan"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CarePlan </b><a name=\"ExampleOncoFAIRCarePlan\"> </a><a name=\"hcExampleOncoFAIRCarePlan\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceCarePlan &quot;ExampleOncoFAIRCarePlan&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-oncofair-careplan.html\">OncoFAIR CarePlan</a></p></div><blockquote><p><b>OncoFAIRCPTreatment</b></p><blockquote><p><b>url</b></p><code>treatmentRank</code></blockquote><p><b>value</b>: 1</p><blockquote><p><b>url</b></p><code>dayRank</code></blockquote><p><b>value</b>: 1</p><blockquote><p><b>url</b></p><code>dateTimeReference</code></blockquote><p><b>value</b>: 2024-05-29 10:00:00+0000</p></blockquote><blockquote><p><b>OncoFAIRPharmacistAdvice</b></p><blockquote><p><b>url</b></p><code>pharmacistValidation</code></blockquote><p><b>value</b>: Validated <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><blockquote><p><b>url</b></p><code>pharmacistProposal</code></blockquote><p><b>value</b>: Consider adding supplementary medication Z. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p></blockquote><p><b>identifier</b>: CP-123456</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>title</b>: Example Prescribed Protocol</p><p><b>subject</b>: <a href=\"Patient-ExampleOncoFAIRPatient.html\">Patient/ExampleOncoFAIRPatient</a></p><p><b>note</b>: Patient diagnosed with condition X requiring protocol Y., Patient responded well to previous treatments., Parent Protocol ID: CP-654321</p></div>"
+  },
+  "extension" : [{
+    "extension" : [{
+      "url" : "treatmentRank",
+      "valueInteger" : 1
+    },
+    {
+      "url" : "dayRank",
+      "valueInteger" : 1
+    },
+    {
+      "url" : "dateTimeReference",
+      "valueDateTime" : "2024-05-29T10:00:00Z"
+    }],
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-cp-treatment"
+  },
+  {
+    "extension" : [{
+      "url" : "pharmacistValidation",
+      "valueCodeableConcept" : {
+        "text" : "Validated"
+      }
+    },
+    {
+      "url" : "pharmacistProposal",
+      "valueCodeableConcept" : {
+        "text" : "Consider adding supplementary medication Z."
+      }
+    }],
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-pharmacist-advice"
+  }],
+  "identifier" : [{
+    "value" : "CP-123456"
+  }],
+  "status" : "active",
+  "intent" : "order",
+  "title" : "Example Prescribed Protocol",
+  "subject" : {
+    "reference" : "Patient/ExampleOncoFAIRPatient"
+  },
+  "note" : [{
+    "id" : "indication",
+    "text" : "Patient diagnosed with condition X requiring protocol Y."
+  },
+  {
+    "id" : "comments",
+    "text" : "Patient responded well to previous treatments."
+  },
+  {
+    "id" : "idFatherProtocol",
+    "text" : "Parent Protocol ID: CP-654321"
+  }]
+}

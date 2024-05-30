@@ -13,6 +13,7 @@ package IG #DDDDDD{
              CarePlan.extension:oncofair-cp-treatment => <&plus>[1..1]
              CarePlan.extension:oncofair-pharmacist-advice => <&plus>[0..1]
              CarePlan.identifier => [1..1]
+             CarePlan.identifier.value => [None..None]
              CarePlan.basedOn => [None..None]
              CarePlan.status => [None..None]
              CarePlan.title => [1..None]
@@ -216,6 +217,7 @@ package IG #DDDDDD{
         class OncoFAIRPatient{
 
              Patient.identifier => [1..1]
+             Patient.identifier.value => [None..None]
          }
 
      }
