@@ -10,7 +10,7 @@ Cet objet décrit le chaînage des éléments de prescription rattachés au prot
 * basedOn only Reference(OncoFAIRCarePlan)
 
 * identifier 1..1 MS
-* identifier ^short = "Prescribed protocol identifier"
+* identifier.value ^short = "Prescribed protocol identifier"
 * title 1..1 MS
 * title ^short = "Wording of the prescribed protocol"
 * status MS

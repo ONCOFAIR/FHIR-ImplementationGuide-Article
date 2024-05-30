@@ -6,7 +6,7 @@ Description : "Contains the patient's identity details needed to ensure that the
 Contient les informations d’identité du patient nécessaires à la bonne prise en compte de la prescription médicamenteuse."
 
 * identifier 1..1 MS
-* identifier ^short = "Permanent Patient Identifier"
+* identifier.value ^short = "Permanent Patient Identifier"
 
 /*
 * name ^slicing.discriminator.type = #value
