@@ -10,7 +10,7 @@
   "name" : "OncoFAIR",
   "title" : "Onco-FAIR",
   "status" : "draft",
-  "date" : "2024-05-30T08:16:30+00:00",
+  "date" : "2024-05-31T12:49:41+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -49,30 +49,6 @@
       "valueCode" : "hl7.fhir.uv.tools#0.1.0"
     }],
     "resource" : [{
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vsCommunicationModes"
-      },
-      "name" : "Communication modes",
-      "description" : "ValueSet for communication modes (incremental, summary).",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/CSCommunicationModes"
-      },
-      "name" : "Communication modes",
-      "description" : "CodeSystem for french communication modes (incremental, summary).",
-      "isExample" : false
-    },
-    {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CarePlan"
@@ -130,31 +106,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vsLOINC"
-      },
-      "name" : "LOINC codes",
-      "description" : "ValueSet of LOINC codes.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/CSLOINC"
-      },
-      "name" : "LOINC codes",
-      "description" : "LOINC CodeSystem.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vsMedicalUnits"
+        "reference" : "ValueSet/medical-units-oncofair-valueset"
       },
       "name" : "Medical units",
       "description" : "ValueSet for medical units (accommodation, medical liability unit).",
@@ -166,7 +118,7 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/CSMedicalUnits"
+        "reference" : "CodeSystem/medical-units-oncofair-codesystem"
       },
       "name" : "Medical units",
       "description" : "CodeSystem for french medical units (accommodation, medical liability unit).",
@@ -178,31 +130,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vsMedicationTypes"
-      },
-      "name" : "Medication types",
-      "description" : "ValueSet for medication types.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/CSMedicationTypes"
-      },
-      "name" : "Medication types",
-      "description" : "CodeSystem for french medication types.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vsMedications"
+        "reference" : "ValueSet/medications-oncofair-valueset"
       },
       "name" : "Medications",
       "description" : "ValueSet for medications.",
@@ -214,7 +142,7 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/CSMedications"
+        "reference" : "CodeSystem/medications-oncofair-codesystem"
       },
       "name" : "Medications",
       "description" : "CodeSystem for french medications.",
@@ -573,10 +501,10 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/CSPrescriptionCategory"
+        "reference" : "CodeSystem/siph-gonogo-oncofair-codesystem"
       },
-      "name" : "Prescription category",
-      "description" : "CodeSystem for french prescription category (creation, stop, modification, validation).",
+      "name" : "SIPhgoNogoOncoFAIRCodeSystem",
+      "description" : "Code system pour l'attribut goNogo",
       "isExample" : false
     },
     {
@@ -585,10 +513,22 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vsPrescriptionCategory"
+        "reference" : "ValueSet/siph-gonogo-oncofair-valueset"
       },
-      "name" : "Prescription status",
-      "description" : "ValueSet for PlanDefinition types, extended to include creation, stop, modification and validation.",
+      "name" : "SIPhgoNogoOncoFAIRValueSet",
+      "description" : "Value Set pour goNogo",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/siph-listeald-oncofair-codesystem"
+      },
+      "name" : "SIPhListeALDOncoFAIRCodeSystem",
+      "description" : "Code system pour l'attribut ListeALD",
       "isExample" : false
     },
     {
@@ -597,7 +537,211 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vsSCT"
+        "reference" : "ValueSet/siph-listeald-oncofair-valueset"
+      },
+      "name" : "SIPhListeALDOncoFAIRValueSet",
+      "description" : "Value Set pour ListeALD",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/siph-natureproppharm-oncofair-codesystem"
+      },
+      "name" : "SIPhNaturePropPharmOncoFAIRCodeSystem",
+      "description" : "Code system pour l'attribut NaturePropPharm",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/siph-natureproppharm-oncofair-valueset"
+      },
+      "name" : "SIPhNaturePropPharmOncoFAIRValueSet",
+      "description" : "Value Set pour NaturePropPharm",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/siph-paramposoconditionnelle-oncofair-codesystem"
+      },
+      "name" : "SIPhParamPosoConditionnelleOncoFAIRCodeSystem",
+      "description" : "Code system pour l'attribut ParamPosoConditionnelle",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/siph-paramposoconditionnelle-oncofair-valueset"
+      },
+      "name" : "SIPhParamPosoConditionnelleOncoFAIRValueSet",
+      "description" : "Value Set pour ParamPosoConditionnelle",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/siph-renscomplement-oncofair-codesystem"
+      },
+      "name" : "SIPhRensComplementOncoFAIRCodeSystem",
+      "description" : "Code system pour l'attribut RensComplement",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/siph-renscomplement-oncofair-valueset"
+      },
+      "name" : "SIPhRensComplementOncoFAIRValueSet",
+      "description" : "Value Set pour RensComplement",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/siph-statutcomposantadm-oncofair-codesystem"
+      },
+      "name" : "SIPhStatutComposantAdmOncoFAIRCodeSystem",
+      "description" : "Code system pour l'attribut StatutComposantAdm",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/siph-statutcomposantadm-oncofair-valueset"
+      },
+      "name" : "SIPhStatutComposantAdmOncoFAIRValueSet",
+      "description" : "Value Set pour StatutComposantAdm",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/siph-statutvalidpharm-oncofair-codesystem"
+      },
+      "name" : "SIPhStatutValidPharmOncoFAIRCodeSystem",
+      "description" : "Code system pour l'attribut StatutValidPharm",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/siph-statutvalidpharm-oncofair-valueset"
+      },
+      "name" : "SIPhStatutValidPharmOncoFAIRValueSet",
+      "description" : "Value Set pour StatutValidPharm",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/siph-typecomposant-oncofair-codesystem"
+      },
+      "name" : "SIPhTypeComposantOncoFAIRCodeSystem",
+      "description" : "Code system pour l'attribut TypeComposant",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/siph-typecomposant-oncofair-valueset"
+      },
+      "name" : "SIPhTypeComposantOncoFAIRValueSet",
+      "description" : "Value Set pour TypeComposant",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/siph-typeeltpla-oncofair-codesystem"
+      },
+      "name" : "SIPhTypeEltPLAOncoFAIRCodeSystem",
+      "description" : "Code system pour l'attribut TypeEltPLA",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/siph-typeeltpla-oncofair-valueset"
+      },
+      "name" : "SIPhTypeEltPLAOncoFAIRValueSet",
+      "description" : "Value Set pour TypeEltPLA",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/siph-typeevenement-oncofair-codesystem"
+      },
+      "name" : "SIPhTypeEvenementOncoFAIRCodeSystem",
+      "description" : "Code system pour l'attribut TypeEvenement",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/siph-typeevenement-oncofair-valueset"
+      },
+      "name" : "SIPhTypeEvenementOncoFAIRValueSet",
+      "description" : "Value Set pour TypeEvenement",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/snomedct-oncofair-valueset"
       },
       "name" : "SNOMED CT codes",
       "description" : "ValueSet of SNOMED CT codes.",
@@ -609,7 +753,7 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/CSSCT"
+        "reference" : "CodeSystem/snomedct-oncofair-codesystem"
       },
       "name" : "SNOMED CT Codes",
       "description" : "SNOMED CT code system.",
