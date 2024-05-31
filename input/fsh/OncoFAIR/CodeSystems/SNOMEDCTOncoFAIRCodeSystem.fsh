@@ -1,7 +1,7 @@
-CodeSystem: CSSCT
+CodeSystem: SNOMEDCTOncoFAIRCodeSystem
+Id : snomedct-oncofair-codesystem
 Title: "SNOMED CT Codes"
 Description: "SNOMED CT code system."
-* ^url = $SCT
 * ^experimental = true
 * ^caseSensitive = true
 

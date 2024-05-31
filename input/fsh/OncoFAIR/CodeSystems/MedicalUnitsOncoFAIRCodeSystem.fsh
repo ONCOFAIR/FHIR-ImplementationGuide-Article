@@ -1,7 +1,7 @@
-CodeSystem: CSMedicalUnits
+CodeSystem: MedicalUnitsOncoFAIRCodeSystem
+Id : medical-units-oncofair-codesystem
 Title: "Medical units"
 Description: "CodeSystem for french medical units (accommodation, medical liability unit)."
-* ^url = $MedicalUnits
 * ^experimental = true
 * ^caseSensitive = true
 

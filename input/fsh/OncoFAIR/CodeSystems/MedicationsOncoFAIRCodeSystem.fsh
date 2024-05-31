@@ -1,7 +1,7 @@
-CodeSystem: CSMedications
+CodeSystem: MedicationsOncoFAIRCodeSystem
+Id : medications-oncofair-codesystem
 Title: "Medications"
 Description: "CodeSystem for french medications."
-* ^url = $Medications
 * ^experimental = true
 * ^caseSensitive = true
 
