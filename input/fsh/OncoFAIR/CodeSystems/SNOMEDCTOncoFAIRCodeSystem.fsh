@@ -1,4 +1,4 @@
-CodeSystem: SNOMED_CT
+CodeSystem: SNOMEDCT
 Id: snomedct
 Title: "SNOMED CT (all versions)"
 Description: "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO)."
@@ -6,8 +6,8 @@ Description: "SNOMED CT is the most comprehensive and precise clinical health te
 * ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension.valueCode = #fhir
 
-* ^status = #active
-* ^experimental = false
+* ^status = #draft
+* ^experimental = true
 
 * ^caseSensitive = false
 * ^hierarchyMeaning = #is-a
