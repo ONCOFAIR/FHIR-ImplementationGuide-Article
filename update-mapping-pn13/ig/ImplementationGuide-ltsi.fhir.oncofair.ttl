@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIR"] ; # 
   fhir:title [ fhir:v "Onco-FAIR"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-31T12:49:41+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-03T08:47:04+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -61,22 +61,6 @@
        fhir:value [ fhir:v "hl7.fhir.uv.tools#0.1.0" ]
      ] ) ;
      fhir:resource ( [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CarePlan" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/CarePlan/ExampleOncoFAIRCarePlan> ;
-         fhir:reference [ fhir:v "CarePlan/ExampleOncoFAIRCarePlan" ]
-       ] ;
-       fhir:name [ fhir:v "Example OncoFAIR CarePlan" ] ;
-       fhir:description [ fhir:v "An example instance of an OncoFAIR CarePlan with required fields populated." ] ;
-       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:profile ( [
-         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-careplan"^^xsd:anyURI ;
-         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-careplan>
-       ] )
-     ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Encounter" ]
@@ -522,6 +506,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/ValueSet/route-of-administration-valueset> ;
+         fhir:reference [ fhir:v "ValueSet/route-of-administration-valueset" ]
+       ] ;
+       fhir:name [ fhir:v "Route of Administration Values" ] ;
+       fhir:description [ fhir:v "This ValueSet includes route of administration values from SNOMED CT, excluding specific methods." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
@@ -762,26 +758,14 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/ValueSet/snomedct-oncofair-valueset> ;
-         fhir:reference [ fhir:v "ValueSet/snomedct-oncofair-valueset" ]
-       ] ;
-       fhir:name [ fhir:v "SNOMED CT codes" ] ;
-       fhir:description [ fhir:v "ValueSet of SNOMED CT codes." ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/CodeSystem/snomedct-oncofair-codesystem> ;
-         fhir:reference [ fhir:v "CodeSystem/snomedct-oncofair-codesystem" ]
+         fhir:link <http://ltsi.univ-rennes.fr/CodeSystem/snomedct> ;
+         fhir:reference [ fhir:v "CodeSystem/snomedct" ]
        ] ;
-       fhir:name [ fhir:v "SNOMED CT Codes" ] ;
-       fhir:description [ fhir:v "SNOMED CT code system." ] ;
+       fhir:name [ fhir:v "SNOMED CT (all versions)" ] ;
+       fhir:description [ fhir:v "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO)." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [

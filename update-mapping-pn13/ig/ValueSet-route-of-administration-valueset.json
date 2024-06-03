@@ -1,0 +1,33 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "route-of-administration-valueset",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where constraint  = &lt; 736665006 |Dose form administration method (administration method)| minus &gt; (&lt; 736665006 |Dose form administration method (administration method)|)</li></ul></div>"
+  },
+  "url" : "http://ltsi.univ-rennes.fr/ValueSet/route-of-administration-valueset",
+  "version" : "0.1.0",
+  "name" : "RouteOfAdministrationValueSet",
+  "title" : "Route of Administration Values",
+  "status" : "draft",
+  "date" : "2024-06-03T08:47:04+00:00",
+  "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
+  "contact" : [{
+    "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://ltsi.univ-rennes.fr"
+    }]
+  }],
+  "description" : "This ValueSet includes route of administration values from SNOMED CT, excluding specific methods.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "constraint",
+        "op" : "=",
+        "value" : "< 736665006 |Dose form administration method (administration method)| minus > (< 736665006 |Dose form administration method (administration method)|)"
+      }]
+    }]
+  }
+}

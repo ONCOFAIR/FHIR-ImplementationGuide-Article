@@ -11,7 +11,7 @@
   <name value="OncoFAIR"/>
   <title value="Onco-FAIR"/>
   <status value="draft"/>
-  <date value="2024-05-31T12:49:41+00:00"/>
+  <date value="2024-06-03T08:47:04+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -44,18 +44,6 @@
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
       <valueCode value="hl7.fhir.uv.tools#0.1.0"/>
     </extension>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CarePlan"/>
-      </extension>
-      <reference>
-        <reference value="CarePlan/ExampleOncoFAIRCarePlan"/>
-      </reference>
-      <name value="Example OncoFAIR CarePlan"/>
-      <description value="An example instance of an OncoFAIR CarePlan with required fields populated."/>
-      <isExample value="true"/>
-      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-careplan"/>
-    </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Encounter"/>
@@ -456,6 +444,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/route-of-administration-valueset"/>
+      </reference>
+      <name value="Route of Administration Values"/>
+      <description value="This ValueSet includes route of administration values from SNOMED CT, excluding specific methods."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -676,24 +675,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/snomedct-oncofair-valueset"/>
-      </reference>
-      <name value="SNOMED CT codes"/>
-      <description value="ValueSet of SNOMED CT codes."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/snomedct-oncofair-codesystem"/>
+        <reference value="CodeSystem/snomedct"/>
       </reference>
-      <name value="SNOMED CT Codes"/>
-      <description value="SNOMED CT code system."/>
+      <name value="SNOMED CT (all versions)"/>
+      <description value="SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO)."/>
       <isExample value="false"/>
     </resource>
     <page>

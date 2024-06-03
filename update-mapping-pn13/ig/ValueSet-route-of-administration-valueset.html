@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>SNOMED CT Codes - Testing - Onco-FAIR v0.1.0</title>
+    <title>Route of Administration Values - Onco-FAIR v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -39,8 +39,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.55"}
-    h3,h4,h5,h6{--heading-prefix:"3.55"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.32"}
+    h3,h4,h5,h6{--heading-prefix:"3.32"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -97,7 +97,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>SNOMED CT Codes</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Route of Administration Values</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -122,29 +122,29 @@
 
 <ul class="nav nav-tabs">
 
-  <li>
-    <a href="CodeSystem-snomedct-oncofair-codesystem.html">Narrative Content</a>
+  <li class="active">
+    <a href="#">Narrative Content</a>
   </li>
 
 
 
   
     <li>
-      <a href="CodeSystem-snomedct-oncofair-codesystem.xml.html">XML</a>
+      <a href="ValueSet-route-of-administration-valueset.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="CodeSystem-snomedct-oncofair-codesystem.json.html">JSON</a>
+      <a href="ValueSet-route-of-administration-valueset.json.html">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="CodeSystem-snomedct-oncofair-codesystem.ttl.html">TTL</a>
+      <a href="ValueSet-route-of-administration-valueset.ttl.html">TTL</a>
     </li>
   
 
@@ -153,50 +153,117 @@
 </ul>
 
   <a name="root"> </a>
-  <h2 id="root">CodeSystem: SNOMED CT Codes - Testing
-(Experimental)
+  <h2 id="root">ValueSet: Route of Administration Values
+
   </h2>
-
-
   <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://ltsi.univ-rennes.fr/ValueSet/route-of-administration-valueset<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://ltsi.univ-rennes.fr/ValueSet/route-of-administration-valueset"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://ltsi.univ-rennes.fr/ValueSet/route-of-administration-valueset|0.1.0"/></span>
+      </td>
+    </tr>
+
     <tr>
 
-      <td colspan="2">
+
+
+
+
+
+
+      <td colspan="4">
         
           Draft
           
-            as of 2024-05-31
+            as of 2024-06-03
           
         
       </td>
 
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">RouteOfAdministrationValueSet</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>This ValueSet includes route of administration values from SNOMED CT, excluding specific methods.</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<p>This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)</p>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where constraint  = &lt; 736665006 |Dose form administration method (administration method)| minus &gt; (&lt; 736665006 |Dose form administration method (administration method)|)</li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <p style="border: maroon 1px solid; background-color: #FFCCCC; font-weight: bold; padding: 8px">No Expansion for this valueset (not supported by Publication Tooling<!-- [Unable to expand imported value set: Error from http://tx.fhir.org/r4: The filter &quot;constraint = &lt; 736665006 |Dose form administration method (administration method)| minus &gt; (&lt; 736665006 |Dose form administration method (administration method)|)&quot; from the value set was not understood in the context of http://snomed.info/sct, Error from http://tx.fhir.org/r4: The filter &quot;constraint = &lt; 736665006 |Dose form administration method (administration method)| minus &gt; (&lt; 736665006 |Dose form administration method (administration method)|)&quot; from the value set http://ltsi.univ-rennes.fr/ValueSet/route-of-administration-valueset was not understood in the context of http://snomed.info/sct] -->)</p>
+
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R5/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
     </tr>
   </table>
 
+  
+
+  <!-- insert notes if present -->
+  
 
 
 
-<!-- insert intro if present -->
-
-
-
-
-<h3>Test Plans</h3>
-
-  <p><b>No test plans are currently available for the  CodeSystem.</b></p>
-
-
-<h3>Test Scripts</h3>
-
-  <p><b>No test scripts are currently available for the  CodeSystem.</b></p>
-
-
-<!-- insert notes if present -->
-
-
-
-
-
+  
 
 </div>
         </div>  <!-- /inner-wrapper -->
@@ -214,7 +281,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, May 31, 2024 12:49+0000">2024-05-31</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Jun 3, 2024 08:47+0000">2024-06-03</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

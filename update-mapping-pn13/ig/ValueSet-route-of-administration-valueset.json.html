@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>SNOMED CT codes - JSON Representation - Onco-FAIR v0.1.0</title>
+    <title>Route of Administration Values - JSON Representation - Onco-FAIR v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.42"}
-    h3,h4,h5,h6{--heading-prefix:"3.42"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.32"}
+    h3,h4,h5,h6{--heading-prefix:"3.32"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -99,7 +99,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>SNOMED CT codes</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Route of Administration Values</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -125,14 +125,14 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="ValueSet-snomedct-oncofair-valueset.html">Narrative Content</a>
+    <a href="ValueSet-route-of-administration-valueset.html">Narrative Content</a>
   </li>
 
 
 
   
     <li>
-      <a href="ValueSet-snomedct-oncofair-valueset.xml.html">XML</a>
+      <a href="ValueSet-route-of-administration-valueset.xml.html">XML</a>
     </li>
   
 
@@ -146,7 +146,7 @@
 
   
     <li>
-      <a href="ValueSet-snomedct-oncofair-valueset.ttl.html">TTL</a>
+      <a href="ValueSet-route-of-administration-valueset.ttl.html">TTL</a>
     </li>
   
 
@@ -158,7 +158,7 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: SNOMED CT codes - JSON Representation</h2>
+<h2 id="root">: Route of Administration Values - JSON Representation</h2>
 
   <table class="colsd">
     <tr>
@@ -167,7 +167,7 @@
         
           Draft
           
-            as of 2024-05-31
+            as of 2024-06-03
           
         
       </td>
@@ -176,7 +176,7 @@
   </table>
 
 
-<p><a href="ValueSet-snomedct-oncofair-valueset.json" no-download="true">Raw json</a> | <a href="ValueSet-snomedct-oncofair-valueset.json" download>Download</a></p>
+<p><a href="ValueSet-route-of-administration-valueset.json" no-download="true">Raw json</a> | <a href="ValueSet-route-of-administration-valueset.json" download>Download</a></p>
 
   <!-- insert intro if present -->
   
@@ -186,17 +186,17 @@
   <pre class="json" style="white-space: pre; text-wrap: nowrap;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">
 {
   "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
-  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.id">id</a>" : "snomedct-oncofair-valueset",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.id">id</a>" : "route-of-administration-valueset",
   "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;ul&gt;&lt;li&gt;Include all codes defined in &lt;a href=\&quot;CodeSystem-snomedct-oncofair-codesystem.html\&quot;&gt;&lt;code&gt;http://ltsi.univ-rennes.fr/CodeSystem/snomedct-oncofair-codesystem&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;ul&gt;&lt;li&gt;Include codes from&lt;a href=\&quot;http://www.snomed.org/\&quot;&gt;&lt;code&gt;http://snomed.info/sct&lt;/code&gt;&lt;/a&gt; where constraint  = &amp;lt; 736665006 |Dose form administration method (administration method)| minus &amp;gt; (&amp;lt; 736665006 |Dose form administration method (administration method)|)&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
-  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.url">url</a>" : "http://ltsi.univ-rennes.fr/ValueSet/snomedct-oncofair-valueset",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.url">url</a>" : "http://ltsi.univ-rennes.fr/ValueSet/route-of-administration-valueset",
   "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.version">version</a>" : "0.1.0",
-  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.name">name</a>" : "SNOMEDCTOncoFAIRValueSet",
-  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.title">title</a>" : "SNOMED CT codes",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.name">name</a>" : "RouteOfAdministrationValueSet",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.title">title</a>" : "Route of Administration Values",
   "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.status">status</a>" : "draft",
-  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.date">date</a>" : "2024-05-31T12:49:41+00:00",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.date">date</a>" : "2024-06-03T08:47:04+00:00",
   "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.publisher">publisher</a>" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.contact">contact</a>" : [
     {
@@ -209,11 +209,18 @@
       ]
     }
   ],
-  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.description">description</a>" : "ValueSet of SNOMED CT codes.",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.description">description</a>" : "This ValueSet includes route of administration values from SNOMED CT, excluding specific methods.",
   "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose">compose</a>" : {
     "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include">include</a>" : [
       {
-        "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.system">system</a>" : "http://ltsi.univ-rennes.fr/CodeSystem/snomedct-oncofair-codesystem"
+        "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.system">system</a>" : "http://snomed.info/sct",
+        "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.filter">filter</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.filter.property">property</a>" : "constraint",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.filter.op">op</a>" : "=",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.filter.value">value</a>" : "&lt; 736665006 |Dose form administration method (administration method)| minus &gt; (&lt; 736665006 |Dose form administration method (administration method)|)"
+          }
+        ]
       }
     ]
   }
@@ -241,7 +248,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, May 31, 2024 12:49+0000">2024-05-31</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Jun 3, 2024 08:47+0000">2024-06-03</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
