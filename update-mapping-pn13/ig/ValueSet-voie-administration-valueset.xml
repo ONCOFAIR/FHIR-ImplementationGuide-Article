@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="route-of-administration-valueset"/>
+  <id value="voie-administration-valueset"/>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include codes from<a href="CodeSystem-snomedct.html"><code>http://ltsi.univ-rennes.fr/CodeSystem/snomedct</code></a> where constraint  = &lt; 736665006 |Dose form administration method (administration method)| minus &gt; (&lt; 736665006 |Dose form administration method (administration method)|)</li></ul></div>
   </text>
-  <url value="http://ltsi.univ-rennes.fr/ValueSet/route-of-administration-valueset"/>
+  <url value="http://ltsi.univ-rennes.fr/ValueSet/voie-administration-valueset"/>
   <version value="0.1.0"/>
-  <name value="RouteOfAdministrationValueSet"/>
-  <title value="Route of Administration Values"/>
+  <name value="VoieAdministrationValueSet"/>
+  <title value="Voie d'administration"/>
   <status value="draft"/>
-  <date value="2024-06-03T12:03:22+00:00"/>
+  <experimental value="true"/>
+  <date value="2024-06-03T13:43:08+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -19,7 +20,7 @@
       <value value="https://ltsi.univ-rennes.fr"/>
     </telecom>
   </contact>
-  <description value="This ValueSet includes route of administration values from SNOMED CT, excluding specific methods."/>
+  <description value="Value Set pour la voie d'administration"/>
   <compose>
     <include>
       <system value="http://ltsi.univ-rennes.fr/CodeSystem/snomedct"/>

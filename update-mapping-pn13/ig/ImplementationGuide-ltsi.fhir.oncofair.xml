@@ -11,7 +11,7 @@
   <name value="OncoFAIR"/>
   <title value="Onco-FAIR"/>
   <status value="draft"/>
-  <date value="2024-06-03T12:03:22+00:00"/>
+  <date value="2024-06-03T13:43:08+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -67,6 +67,17 @@
       <description value="An example instance of an OncoFAIR patient with a permanent patient identifier."/>
       <isExample value="true"/>
       <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/forme-pharmaceutique-valueset"/>
+      </reference>
+      <name value="Forme pharmaceutique"/>
+      <description value="Value Set pour la forme pharmaceutique"/>
+      <isExample value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -432,17 +443,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/route-of-administration-valueset"/>
-      </reference>
-      <name value="Route of Administration Values"/>
-      <description value="This ValueSet includes route of administration values from SNOMED CT, excluding specific methods."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -670,6 +670,17 @@
       </reference>
       <name value="SNOMED CT (all versions)"/>
       <description value="SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/voie-administration-valueset"/>
+      </reference>
+      <name value="Voie d'administration"/>
+      <description value="Value Set pour la voie d'administration"/>
       <isExample value="false"/>
     </resource>
     <page>

@@ -1,16 +1,17 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "route-of-administration-valueset",
+  "id" : "voie-administration-valueset",
   "text" : {
     "status" : "generated",
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from<a href=\"CodeSystem-snomedct.html\"><code>http://ltsi.univ-rennes.fr/CodeSystem/snomedct</code></a> where constraint  = &lt; 736665006 |Dose form administration method (administration method)| minus &gt; (&lt; 736665006 |Dose form administration method (administration method)|)</li></ul></div>"
   },
-  "url" : "http://ltsi.univ-rennes.fr/ValueSet/route-of-administration-valueset",
+  "url" : "http://ltsi.univ-rennes.fr/ValueSet/voie-administration-valueset",
   "version" : "0.1.0",
-  "name" : "RouteOfAdministrationValueSet",
-  "title" : "Route of Administration Values",
+  "name" : "VoieAdministrationValueSet",
+  "title" : "Voie d'administration",
   "status" : "draft",
-  "date" : "2024-06-03T12:03:22+00:00",
+  "experimental" : true,
+  "date" : "2024-06-03T13:43:08+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -19,7 +20,7 @@
       "value" : "https://ltsi.univ-rennes.fr"
     }]
   }],
-  "description" : "This ValueSet includes route of administration values from SNOMED CT, excluding specific methods.",
+  "description" : "Value Set pour la voie d'administration",
   "compose" : {
     "include" : [{
       "system" : "http://ltsi.univ-rennes.fr/CodeSystem/snomedct",

@@ -1,6 +1,15 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/forme-pharmaceutique-valueset",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "FormePharmaceutiqueValueSet",
+      "title" : "Forme pharmaceutique",
+      "description" : "Value Set pour la forme pharmaceutique",
+      "systems" : ["http://ltsi.univ-rennes.fr/CodeSystem/snomedct"]
+    },
+    {
       "url" : "http://ltsi.univ-rennes.fr/ValueSet/medical-units-oncofair-valueset",
       "version" : "0.1.0",
       "status" : "draft",
@@ -21,15 +30,6 @@
       "systems" : [
         "http://ltsi.univ-rennes.fr/CodeSystem/medications-oncofair-codesystem"
       ]
-    },
-    {
-      "url" : "http://ltsi.univ-rennes.fr/ValueSet/route-of-administration-valueset",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "RouteOfAdministrationValueSet",
-      "title" : "Route of Administration Values",
-      "description" : "This ValueSet includes route of administration values from SNOMED CT, excluding specific methods.",
-      "systems" : ["http://ltsi.univ-rennes.fr/CodeSystem/snomedct"]
     },
     {
       "url" : "http://ltsi.univ-rennes.fr/ValueSet/siph-gonogo-oncofair-valueset",
@@ -140,6 +140,15 @@
       "systems" : [
         "http://ltsi.univ-rennes.fr/CodeSystem/siph-typeevenement-oncofair-codesystem"
       ]
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/voie-administration-valueset",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VoieAdministrationValueSet",
+      "title" : "Voie d'administration",
+      "description" : "Value Set pour la voie d'administration",
+      "systems" : ["http://ltsi.univ-rennes.fr/CodeSystem/snomedct"]
     }
   ]
 }
