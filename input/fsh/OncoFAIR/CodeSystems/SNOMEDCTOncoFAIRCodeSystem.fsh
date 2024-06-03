@@ -5,7 +5,6 @@ Description: "SNOMED CT is the most comprehensive and precise clinical health te
 
 * ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension.valueCode = #fhir
-* ^url = "http://snomed.info/sct"
 
 * ^status = #active
 * ^experimental = false
@@ -37,11 +36,11 @@ Description: "SNOMED CT is the most comprehensive and precise clinical health te
 * ^property[=].description = "Either of the codes that are descendants of 900000000000444006"
 * ^property[=].type = #code
 * ^property[+].code = #parent
-* ^property[=].uri = "http://.........?"
+* ^property[=].uri = "http://snomed.info/field/Concept.parent"
 * ^property[=].description = "A SNOMED CT concept id that has the target of a direct is-a relationship from the concept"
 * ^property[=].type = #code
 * ^property[+].code = #child
-* ^property[=].uri = "http://.........?"
+* ^property[=].uri = "http://snomed.info/field/Concept.child"
 * ^property[=].description = "A SNOMED CT concept id that has a direct is-a relationship to the concept"
 * ^property[=].type = #code
 * ^property[+].code = #moduleId
@@ -49,11 +48,11 @@ Description: "SNOMED CT is the most comprehensive and precise clinical health te
 * ^property[=].description = "The SNOMED CT concept id of the module that the concept belongs to."
 * ^property[=].type = #code
 * ^property[+].code = #normalForm
-* ^property[=].uri = "http://.........?"
+* ^property[=].uri = "http://snomed.info/field/Concept.normalForm"
 * ^property[=].description = "Generated Normal form expression for the provided code or expression, with terms"
 * ^property[=].type = #string
 * ^property[+].code = #normalFormTerse
-* ^property[=].uri = "http://.........?"
+* ^property[=].uri = "http://snomed.info/field/Concept.normalFormTerset"
 * ^property[=].description = "Generated Normal form expression for the provided code or expression, conceptIds only"
 * ^property[=].type = #string
 * ^property[+].code = #"Due to"
@@ -140,7 +139,7 @@ Description: "SNOMED CT is the most comprehensive and precise clinical health te
 * ^property[+].code = #"Finding site"
 * ^property[=].uri = "http://snomed.info/id/363698007"
 * ^property[=].type = #code
-* ^property[+].code = #Laterality
+* ^property[+].code = #"Direct device"
 * ^property[=].uri = "http://snomed.info/id/363699004"
 * ^property[=].type = #code
 * ^property[+].code = #"Direct morphology"

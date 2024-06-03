@@ -259,4 +259,4 @@ Finally, the body of HTTP requests is a FHIR resource that can be formatted in X
 
 ---
 
-[Return to contents](file:///D:/Home/bguilbert/Documents/fhir/oncofair/output/toc.html "Return to contents")
+<!-- [Return to contents](file:///D:/Home/bguilbert/Documents/fhir/oncofair/output/toc.html "Return to contents") -->

@@ -1,4 +1,4 @@
-Instance: ExampleOncoFAIRMedication
+/*Instance: ExampleOncoFAIRMedication
 InstanceOf: OncoFAIRMedication
 Title: "Example OncoFAIR Medication"
 Description: "An example instance of an OncoFAIR Medication with required fields populated."
@@ -7,4 +7,4 @@ Description: "An example instance of an OncoFAIR Medication with required fields
 * code.coding[0].code = #387207008
 * code.coding[0].display = "Ibuprofen"
 
-* extension[oncofair-medication-type].valueCodeableConcept.text = "A definir"
+* extension[oncofair-medication-type].valueCodeableConcept.text = "A definir"*/
