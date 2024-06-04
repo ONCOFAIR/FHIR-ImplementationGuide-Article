@@ -11,7 +11,7 @@
   <name value="OncoFAIR"/>
   <title value="Onco-FAIR"/>
   <status value="draft"/>
-  <date value="2024-06-03T13:43:08+00:00"/>
+  <date value="2024-06-04T08:55:54+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -46,6 +46,18 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/ExampleOncoFAIRCarePlan"/>
+      </reference>
+      <name value="Example OncoFAIR CarePlan"/>
+      <description value="An example instance of an OncoFAIR CarePlan with required fields populated."/>
+      <isExample value="true"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-careplan"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Encounter"/>
       </extension>
       <reference>
@@ -75,19 +87,8 @@
       <reference>
         <reference value="ValueSet/forme-pharmaceutique-valueset"/>
       </reference>
-      <name value="Forme pharmaceutique"/>
+      <name value="FormePharmaceutiqueValueSet"/>
       <description value="Value Set pour la forme pharmaceutique"/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/medical-units-oncofair-valueset"/>
-      </reference>
-      <name value="Medical units"/>
-      <description value="ValueSet for medical units (accommodation, medical liability unit)."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -106,10 +107,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/medications-oncofair-valueset"/>
+        <reference value="ValueSet/medical-units-oncofair-valueset"/>
       </reference>
-      <name value="Medications"/>
-      <description value="ValueSet for medications."/>
+      <name value="MedicalUnitsOncoFAIRValueSet"/>
+      <description value="ValueSet for medical units (accommodation, medical liability unit)."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -121,6 +122,17 @@
       </reference>
       <name value="Medications"/>
       <description value="CodeSystem for french medications."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/medications-oncofair-valueset"/>
+      </reference>
+      <name value="MedicationsOncoFAIRValueSet"/>
+      <description value="ValueSet for medications."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -679,7 +691,7 @@
       <reference>
         <reference value="ValueSet/voie-administration-valueset"/>
       </reference>
-      <name value="Voie d'administration"/>
+      <name value="VoieAdministrationValueSet"/>
       <description value="Value Set pour la voie d'administration"/>
       <isExample value="false"/>
     </resource>

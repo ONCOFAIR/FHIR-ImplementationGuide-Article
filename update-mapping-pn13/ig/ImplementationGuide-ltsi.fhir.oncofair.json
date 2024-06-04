@@ -10,7 +10,7 @@
   "name" : "OncoFAIR",
   "title" : "Onco-FAIR",
   "status" : "draft",
-  "date" : "2024-06-03T13:43:08+00:00",
+  "date" : "2024-06-04T08:55:54+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -51,6 +51,19 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CarePlan"
+      }],
+      "reference" : {
+        "reference" : "CarePlan/ExampleOncoFAIRCarePlan"
+      },
+      "name" : "Example OncoFAIR CarePlan",
+      "description" : "An example instance of an OncoFAIR CarePlan with required fields populated.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-careplan"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Encounter"
       }],
       "reference" : {
@@ -82,20 +95,8 @@
       "reference" : {
         "reference" : "ValueSet/forme-pharmaceutique-valueset"
       },
-      "name" : "Forme pharmaceutique",
+      "name" : "FormePharmaceutiqueValueSet",
       "description" : "Value Set pour la forme pharmaceutique",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/medical-units-oncofair-valueset"
-      },
-      "name" : "Medical units",
-      "description" : "ValueSet for medical units (accommodation, medical liability unit).",
       "isExample" : false
     },
     {
@@ -116,10 +117,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/medications-oncofair-valueset"
+        "reference" : "ValueSet/medical-units-oncofair-valueset"
       },
-      "name" : "Medications",
-      "description" : "ValueSet for medications.",
+      "name" : "MedicalUnitsOncoFAIRValueSet",
+      "description" : "ValueSet for medical units (accommodation, medical liability unit).",
       "isExample" : false
     },
     {
@@ -132,6 +133,18 @@
       },
       "name" : "Medications",
       "description" : "CodeSystem for french medications.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/medications-oncofair-valueset"
+      },
+      "name" : "MedicationsOncoFAIRValueSet",
+      "description" : "ValueSet for medications.",
       "isExample" : false
     },
     {
@@ -741,7 +754,7 @@
       "reference" : {
         "reference" : "ValueSet/voie-administration-valueset"
       },
-      "name" : "Voie d'administration",
+      "name" : "VoieAdministrationValueSet",
       "description" : "Value Set pour la voie d'administration",
       "isExample" : false
     }],

@@ -5,16 +5,19 @@
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "FormePharmaceutiqueValueSet",
-      "title" : "Forme pharmaceutique",
+      "title" : null,
       "description" : "Value Set pour la forme pharmaceutique",
-      "systems" : ["http://ltsi.univ-rennes.fr/CodeSystem/snomedct"]
+      "systems" : ["http://ltsi.univ-rennes.fr/CodeSystem/snomedct"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-element-form.html" : "OncoFAIRElementForm"
     },
     {
       "url" : "http://ltsi.univ-rennes.fr/ValueSet/medical-units-oncofair-valueset",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "MedicalUnitsOncoFAIRValueSet",
-      "title" : "Medical units",
+      "title" : null,
       "description" : "ValueSet for medical units (accommodation, medical liability unit).",
       "systems" : [
         "http://ltsi.univ-rennes.fr/CodeSystem/medical-units-oncofair-codesystem"
@@ -25,7 +28,7 @@
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "MedicationsOncoFAIRValueSet",
-      "title" : "Medications",
+      "title" : null,
       "description" : "ValueSet for medications.",
       "systems" : [
         "http://ltsi.univ-rennes.fr/CodeSystem/medications-oncofair-codesystem"
@@ -40,7 +43,10 @@
       "description" : "Value Set pour goNogo",
       "systems" : [
         "http://ltsi.univ-rennes.fr/CodeSystem/siph-gonogo-oncofair-codesystem"
-      ]
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-mr-element-go-nogo.html" : "OncoFAIRMRElementGoNogo"
     },
     {
       "url" : "http://ltsi.univ-rennes.fr/ValueSet/siph-listeald-oncofair-valueset",
@@ -51,7 +57,10 @@
       "description" : "Value Set pour ListeALD",
       "systems" : [
         "http://ltsi.univ-rennes.fr/CodeSystem/siph-listeald-oncofair-codesystem"
-      ]
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-mr-exempt-ltc.html" : "OncoFAIRMRExemptLTC"
     },
     {
       "url" : "http://ltsi.univ-rennes.fr/ValueSet/siph-natureproppharm-oncofair-valueset",
@@ -62,7 +71,10 @@
       "description" : "Value Set pour NaturePropPharm",
       "systems" : [
         "http://ltsi.univ-rennes.fr/CodeSystem/siph-natureproppharm-oncofair-codesystem"
-      ]
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-pharmacist-advice.html" : "OncoFAIRPharmacistAdvice"
     },
     {
       "url" : "http://ltsi.univ-rennes.fr/ValueSet/siph-paramposoconditionnelle-oncofair-valueset",
@@ -84,7 +96,10 @@
       "description" : "Value Set pour RensComplement",
       "systems" : [
         "http://ltsi.univ-rennes.fr/CodeSystem/siph-renscomplement-oncofair-codesystem"
-      ]
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-observation.html" : "OncoFAIR Observation"
     },
     {
       "url" : "http://ltsi.univ-rennes.fr/ValueSet/siph-statutcomposantadm-oncofair-valueset",
@@ -95,7 +110,10 @@
       "description" : "Value Set pour StatutComposantAdm",
       "systems" : [
         "http://ltsi.univ-rennes.fr/CodeSystem/siph-statutcomposantadm-oncofair-codesystem"
-      ]
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-ma-component-administration-status.html" : "OncoFAIRMAComponentAdministrationStatus"
     },
     {
       "url" : "http://ltsi.univ-rennes.fr/ValueSet/siph-statutvalidpharm-oncofair-valueset",
@@ -106,7 +124,10 @@
       "description" : "Value Set pour StatutValidPharm",
       "systems" : [
         "http://ltsi.univ-rennes.fr/CodeSystem/siph-statutvalidpharm-oncofair-codesystem"
-      ]
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-pharmacist-advice.html" : "OncoFAIRPharmacistAdvice"
     },
     {
       "url" : "http://ltsi.univ-rennes.fr/ValueSet/siph-typecomposant-oncofair-valueset",
@@ -117,7 +138,10 @@
       "description" : "Value Set pour TypeComposant",
       "systems" : [
         "http://ltsi.univ-rennes.fr/CodeSystem/siph-typecomposant-oncofair-codesystem"
-      ]
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medication-type.html" : "OncoFAIRMedicationType"
     },
     {
       "url" : "http://ltsi.univ-rennes.fr/ValueSet/siph-typeeltpla-oncofair-valueset",
@@ -128,7 +152,11 @@
       "description" : "Value Set pour TypeEltPLA",
       "systems" : [
         "http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem"
-      ]
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element",
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element"
     },
     {
       "url" : "http://ltsi.univ-rennes.fr/ValueSet/siph-typeevenement-oncofair-valueset",
@@ -146,9 +174,13 @@
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "VoieAdministrationValueSet",
-      "title" : "Voie d'administration",
+      "title" : null,
       "description" : "Value Set pour la voie d'administration",
-      "systems" : ["http://ltsi.univ-rennes.fr/CodeSystem/snomedct"]
+      "systems" : ["http://ltsi.univ-rennes.fr/CodeSystem/snomedct"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element",
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element"
     }
   ]
 }

@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/CarePlan/ExampleOncoFAIRCarePlan> a fhir:CarePlan ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleOncoFAIRCarePlan"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-careplan"^^xsd:anyURI ;
+       fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-careplan>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CarePlan </b><a name=\"ExampleOncoFAIRCarePlan\"> </a><a name=\"hcExampleOncoFAIRCarePlan\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceCarePlan &quot;ExampleOncoFAIRCarePlan&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-oncofair-careplan.html\">OncoFAIR CarePlan</a></p></div><blockquote><p><b>OncoFAIRCPTreatment</b></p><blockquote><p><b>url</b></p><code>treatmentRank</code></blockquote><p><b>value</b>: 1</p><blockquote><p><b>url</b></p><code>dayRank</code></blockquote><p><b>value</b>: 1</p><blockquote><p><b>url</b></p><code>dateTimeReference</code></blockquote><p><b>value</b>: 2024-05-29 10:00:00+0000</p></blockquote><blockquote><p><b>OncoFAIRPharmacistAdvice</b></p><blockquote><p><b>url</b></p><code>pharmacistValidation</code></blockquote><p><b>value</b>: VAL <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#VAL)</span></p><blockquote><p><b>url</b></p><code>pharmacistProposal</code></blockquote><p><b>value</b>: SUG <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#SUG)</span></p></blockquote><p><b>identifier</b>: CP-123456</p><p><b>basedOn</b>: <a href=\"CarePlan-ExampleOncoFAIRCarePlan.html\">CarePlan/ExampleOncoFAIRCarePlan</a></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>title</b>: Example Prescribed Protocol</p><p><b>subject</b>: <a href=\"Patient-ExampleOncoFAIRPatient.html\">Patient/ExampleOncoFAIRPatient</a></p><p><b>note</b>: Patient diagnosed with condition X requiring protocol Y., Patient responded well to previous treatments., Parent Protocol ID: CP-654321</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "treatmentRank"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "1"^^xsd:integer ]
+     ] [
+       fhir:url [ fhir:v "dayRank"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "1"^^xsd:integer ]
+     ] [
+       fhir:url [ fhir:v "dateTimeReference"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "2024-05-29T10:00:00Z"^^xsd:dateTime ]
+     ] ) ;
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-cp-treatment"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "pharmacistValidation"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:code [ fhir:v "VAL" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "pharmacistProposal"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:code [ fhir:v "SUG" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-pharmacist-advice"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "CP-123456" ]
+  ] ) ; # 
+  fhir:basedOn ( [
+     fhir:link <http://ltsi.univ-rennes.fr/CarePlan/ExampleOncoFAIRCarePlan> ;
+     fhir:reference [ fhir:v "CarePlan/ExampleOncoFAIRCarePlan" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:title [ fhir:v "Example Prescribed Protocol"] ; # 
+  fhir:subject [
+     fhir:link <http://ltsi.univ-rennes.fr/Patient/ExampleOncoFAIRPatient> ;
+     fhir:reference [ fhir:v "Patient/ExampleOncoFAIRPatient" ]
+  ] ; # 
+  fhir:note ( [
+     fhir:id [ fhir:v "indication" ] ;
+     fhir:text [ fhir:v "Patient diagnosed with condition X requiring protocol Y." ]
+  ] [
+     fhir:id [ fhir:v "comments" ] ;
+     fhir:text [ fhir:v "Patient responded well to previous treatments." ]
+  ] [
+     fhir:id [ fhir:v "idFatherProtocol" ] ;
+     fhir:text [ fhir:v "Parent Protocol ID: CP-654321" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

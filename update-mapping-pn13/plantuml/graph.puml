@@ -391,6 +391,54 @@ package IG #DDDDDD{
          }
      }
      package valueset #PaleVioletRed{
+
+        class FormePharmaceutiqueValueSet  
+
+     OncoFAIRElementForm -[#black,dotted,thickness=2]-> FormePharmaceutiqueValueSet
+
+        class SIPhStatutComposantAdmOncoFAIRValueSet  
+
+     OncoFAIRMAComponentAdministrationStatus -[#black,dotted,thickness=2]-> SIPhStatutComposantAdmOncoFAIRValueSet
+
+        class SIPhTypeComposantOncoFAIRValueSet  
+
+     OncoFAIRMedicationType -[#black,dotted,thickness=2]-> SIPhTypeComposantOncoFAIRValueSet
+
+        class VoieAdministrationValueSet  
+
+     OncoFAIRMedicationAdministrationElement -[#black,dotted,thickness=2]-> VoieAdministrationValueSet
+
+        class SIPhTypeEltPLAOncoFAIRValueSet  
+
+     OncoFAIRMedicationAdministrationElement -[#black,dotted,thickness=2]-> SIPhTypeEltPLAOncoFAIRValueSet
+
+        class VoieAdministrationValueSet  
+
+     OncoFAIRMedicationRequestElement -[#black,dotted,thickness=2]-> VoieAdministrationValueSet
+
+        class SIPhTypeEltPLAOncoFAIRValueSet  
+
+     OncoFAIRMedicationRequestElement -[#black,dotted,thickness=2]-> SIPhTypeEltPLAOncoFAIRValueSet
+
+        class SIPhgoNogoOncoFAIRValueSet  
+
+     OncoFAIRMRElementGoNogo -[#black,dotted,thickness=2]-> SIPhgoNogoOncoFAIRValueSet
+
+        class SIPhListeALDOncoFAIRValueSet  
+
+     OncoFAIRMRExemptLTC -[#black,dotted,thickness=2]-> SIPhListeALDOncoFAIRValueSet
+
+        class SIPhRensComplementOncoFAIRValueSet  
+
+     OncoFAIRObservation -[#black,dotted,thickness=2]-> SIPhRensComplementOncoFAIRValueSet
+
+        class SIPhStatutValidPharmOncoFAIRValueSet  
+
+     OncoFAIRPharmacistAdvice -[#black,dotted,thickness=2]-> SIPhStatutValidPharmOncoFAIRValueSet
+
+        class SIPhNaturePropPharmOncoFAIRValueSet  
+
+     OncoFAIRPharmacistAdvice -[#black,dotted,thickness=2]-> SIPhNaturePropPharmOncoFAIRValueSet
        }
 
 package "Ressources de base" #palegreen {
