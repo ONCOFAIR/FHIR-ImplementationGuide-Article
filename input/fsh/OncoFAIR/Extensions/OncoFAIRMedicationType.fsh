@@ -7,6 +7,8 @@ Extension créée dans le cadre d'OncoFAIR contenant le type de composant."
 * value[x] only CodeableConcept
 * . ^short = "Specifies whether the component prescribed is a speciality, a common name or any other product (pharmacopoeia)."
 
+* valueCodeableConcept from SIPhTypeComposantOncoFAIRValueSet (required)
+
 Mapping:  mapping_OncoFAIRMedicationType
 Source:   OncoFAIRMedicationType
 Id:       mapping-oncofair-medication-type

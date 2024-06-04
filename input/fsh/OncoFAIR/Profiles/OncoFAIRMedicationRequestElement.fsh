@@ -74,14 +74,17 @@ Correspond à une ligne de prescription d’une ordonnance. Chacune comporte un 
 * dosageInstruction[posology].timing.event[startEvent].id = "startEvent"
 * dosageInstruction[posology].timing.event[endEvent].id = "endEvent"
 
-* dosageInstruction[posology].timing.event[startEvent] ^short = "Event triggering the start of a therapeutic phase"
-* dosageInstruction[posology].timing.event[endEvent] ^short = "Event triggering the end of a therapeutic phase"
+* dosageInstruction[posology].timing.event[startEvent] ^short = "Type of event that triggers the start of a therapeutic phase" /*La nomenclature SIPh-Type_événement n'a pas été associée car .event est de type dateTime*/
+* dosageInstruction[posology].timing.event[endEvent] ^short = "Type of event that triggers the end of a therapeutic phase"/*La nomenclature SIPh-Type_événement n'a pas été associée car .event est de type dateTime*/
 * dosageInstruction[posology].timing.repeat.duration ^short = "Duration of administration"
 * dosageInstruction[posology].doseAndRate.rateQuantity ^short = "Rate of administration in the case of injection"
 * dosageInstruction[posology].doseAndRate.doseQuantity ^short = "Quantity of the prescription element in the dosage"
+* dosageInstruction[posology].timing.repeat.frequency ^short = "Indicates the recurrence of the dosage. By default, every day"
 
 * dosageInstruction[element].method ^short = "Type of prescription element"
+* dosageInstruction[element].method from SIPhTypeEltPLAOncoFAIRValueSet (required)
 * dosageInstruction[element].route ^short = "Specifies the route of administration of the product"
+* dosageInstruction[element].route from VoieAdministrationValueSet (required)
 * dosageInstruction[element].site ^short = "Specifies, where appropriate, the exact point on the body where the product is to be applied to the patient" 
 * dosageInstruction[element].text ^short = "Description of the prescribed dosage, in text form."
 * dosageInstruction[element].timing.repeat.boundsPeriod.start ^short = "Prescribed start date and time of product prescription"
@@ -89,7 +92,7 @@ Correspond à une ligne de prescription d’une ordonnance. Chacune comporte un 
 * dosageInstruction[element].timing.repeat.offset ^short = "Decimal value, positive or negative, of the interval between the reference date/time of the prescribed protocol and that of this prescription item"
 * dosageInstruction[element].additionalInstruction ^short = "Free text describing the conditions of application of this prescription element"
 
-* dosageInstruction[posology].timing.repeat.frequency ^short = "Indicates the recurrence of the dosage. By default, every day"
+
 
 * note MS
 * note ^slicing.discriminator.type = #value
@@ -119,6 +122,7 @@ Source:   OncoFAIRMedicationRequestElement
 Id:       mapping-oncofair-medicationrequest-element
 Title:    "Mapping du profil OncoFAIR MedicationRequest Element"
 * -> "ElementPrescription"
+* -> "ElementPosologie"
 
 * basedOn[prescription] -> "Prescription" 
 * basedOn[element] -> "ElementLie"
@@ -144,9 +148,32 @@ Title:    "Mapping du profil OncoFAIR MedicationRequest Element"
 * dosageInstruction[element].timing.repeat.offset -> "deltaDateHeureReference"
 * dosageInstruction[element].additionalInstruction -> "conditionsApplication"
 
+* dosageInstruction[posology].timing.event[startEvent] -> "typeEvenementDebut"
+* dosageInstruction[posology].timing.event[endEvent] -> "typeEvenementFin"
+* dosageInstruction[posology].timing.repeat.duration -> "duree"
+* dosageInstruction[posology].doseAndRate.rateQuantity -> "debit"
+* dosageInstruction[posology].doseAndRate.doseQuantity -> "quantite"
+* dosageInstruction[posology].timing.repeat.frequency -> "frequence"
+
 * effectiveDosePeriod.start -> "dateHeureDebutPrescription"
 * effectiveDosePeriod.end -> "dateHeureFinPrescription"
 
 * note[wording] -> "libelleElementPrescription"
 * note[indication] -> "indication"
 * note[comments] -> "commentaires"
+
+/* TO DO :
+Dans la classe element posologie : 
+- EvenementDebut
+- EvenementFin
+- IntervalleTempsEvenementDebut
+- IntervalleTempsEvenementFin
+- typeEvenement2Debut
+- typeEvenement2Fin
+- evenement2Debut
+- evenement2Fin
+- Intervalle2TempsEvenementDebut
+
+Extensions?
+
+*/

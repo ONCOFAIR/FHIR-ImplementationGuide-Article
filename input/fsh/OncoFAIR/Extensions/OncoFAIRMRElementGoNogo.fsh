@@ -14,6 +14,8 @@ Extension créée dans le cadre d'OncoFAIR contenant la notion de GoNogo."
 * extension[GoNogoStatus].value[x] ^short = "Communicates the conditional state of implementation of the prescription element according to a list of coded values"
 * extension[GoNogoReasonWaiting].value[x] ^short = "Describes the reason for the goNogo implementation status of the prescription element if the management option via the goNogo attribute is enabled"
 
+* extension[GoNogoStatus].valueCodeableConcept from SIPhgoNogoOncoFAIRValueSet (required)
+
 Mapping:  mapping_OncoFAIRMRElementGoNogo
 Source:   OncoFAIRMRElementGoNogo
 Id:       mapping-oncofair-mr-element-go-nogo

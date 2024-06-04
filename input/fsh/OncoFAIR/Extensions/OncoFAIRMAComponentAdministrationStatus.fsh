@@ -5,8 +5,10 @@ Extension créée dans le cadre d'OncoFAIR contenant le statut d'administration 
 
 * ^context[+].type = #element
 * ^context[=].expression = "OncoFAIRMedicationAdministrationComponent"
-* value[x] only code
+* value[x] only CodeableConcept
 * . ^short = "Specifies whether the component administered was actually administered to the patient or not."
+
+* valueCodeableConcept from SIPhStatutComposantAdmOncoFAIRValueSet (required)
 
 Mapping:  mapping_OncoFAIRMAOncoFAIRMAComponentAdministrationStatus
 Source:   OncoFAIRMAComponentAdministrationStatus

@@ -7,6 +7,7 @@ Permet d’indiquer les informations relatives au patient qui complètent celles
 
 * code MS
 * code ^short = "Nature of additional information representing by LOINC code"
+* code from SIPhRensComplementOncoFAIRValueSet (required)
 * effectiveDateTime 1..1 MS
 * effectiveDateTime ^short = "Date and time of registration of the additional information" 
 * issued MS

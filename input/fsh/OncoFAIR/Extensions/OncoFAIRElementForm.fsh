@@ -7,6 +7,8 @@ Extension créée dans le cadre d'OncoFair contenant la forme du médicament."
 * ^context[+].type = #element
 * ^context[=].expression = "OncoFAIRMedicationAdministrationElement"
 * value[x] only CodeableConcept
+* valueCodeableConcept from FormePharmaceutiqueValueSet (required)
+
 * . ^short = "Pharmaceutical form of the prescription/administration item"
 
 Mapping:  mapping_OncoFAIRElementForm

@@ -8,6 +8,7 @@ Extension créée dans le cadre d'OncoFAIR contenant la notion d'exonération."
 
 * . ^short = "Identifier of the ALD for which the component prescribed is prescribed for one of the reasons for which the patient benefits from an exemption under article L324-1 of the CSS."
 
+* valueCodeableConcept from SIPhListeALDOncoFAIRValueSet (required)
 Mapping:  mapping_OncoFAIRMRExemptLTC
 Source:   OncoFAIRMRExemptLTC
 Id:       mapping-oncofair-mr-exempt-ltc

@@ -1,4 +1,4 @@
-/*Instance: ExampleOncoFAIRCarePlan
+Instance: ExampleOncoFAIRCarePlan
 InstanceOf: OncoFAIRCarePlan
 Title: "Example OncoFAIR CarePlan"
 Description: "An example instance of an OncoFAIR CarePlan with required fields populated."
@@ -7,6 +7,7 @@ Description: "An example instance of an OncoFAIR CarePlan with required fields p
 * title = "Example Prescribed Protocol"
 * status = #active
 * intent = #order
+* basedOn = Reference(ExampleOncoFAIRCarePlan)
 * subject = Reference(ExampleOncoFAIRPatient)
 
 * note[indication].text = "Patient diagnosed with condition X requiring protocol Y."
@@ -17,5 +18,5 @@ Description: "An example instance of an OncoFAIR CarePlan with required fields p
 * extension[oncofair-cp-treatment].extension[dayRank].valueInteger = 1
 * extension[oncofair-cp-treatment].extension[dateTimeReference].valueDateTime = "2024-05-29T10:00:00Z"
 
-* extension[oncofair-pharmacist-advice].extension[pharmacistValidation].valueCodeableConcept.text = "Validated"
-* extension[oncofair-pharmacist-advice].extension[pharmacistProposal].valueCodeableConcept.text = "Consider adding supplementary medication Z."*/
+* extension[oncofair-pharmacist-advice].extension[pharmacistValidation].valueCodeableConcept = #VAL
+* extension[oncofair-pharmacist-advice].extension[pharmacistProposal].valueCodeableConcept = #SUG

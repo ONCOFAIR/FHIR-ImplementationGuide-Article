@@ -24,7 +24,11 @@ Correspond à l’activité induite par un élément de prescription et sa posol
 
 * dosage MS
 * dosage.method ^short = "Type of administration element. Must be used to differentiate between management processes adapted to different types of drug treatment."
+* dosage.method from SIPhTypeEltPLAOncoFAIRValueSet (required)
+
 * dosage.route ^short = "Specifies the route of administration of the product. By default, it is the one shown in the prescription element associated with the administration element."
+* dosage.route from VoieAdministrationValueSet (required)
+
 * dosage.site ^short = "Specifies, where applicable, the exact point on the body where the product is to be applied to the patient. By default, the place of administration is that shown in the prescription element associated with the administration element"
 
 
