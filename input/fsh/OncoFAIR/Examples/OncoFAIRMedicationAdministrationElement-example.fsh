@@ -20,7 +20,7 @@ Description: "An example instance of an OncoFAIR MedicationAdministration Elemen
 * occurencePeriod.end = "2024-06-01T09:00:00Z"
 
 * dosage.method.coding[0].system = "http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem"
-* dosage.method.coding[0].code = #MEC
+* dosage.method.coding[0].code = #MED
 * dosage.method.coding[0].display = "Médicament"
 
 * dosage.route.coding[0].system = "http://ltsi.univ-rennes.fr/CodeSystem/snomedct"

@@ -59,6 +59,9 @@ Description: "Example instance of OncoFAIRMedicationRequestElement"
 
 * dosageInstruction[element].timing.repeat.offset = 10
 
+/*Pas présent en PN13, mais comme on utilise l'offset on dessus, obligatoire : */
+* dosageInstruction[element].timing.repeat.when = #ACM
+
 * note[wording].text = "Paracetamol 500mg Tablet"
 * note[indication].text = "Prescribed for headaches"
 * note[comments].text = "Administered after meals"
