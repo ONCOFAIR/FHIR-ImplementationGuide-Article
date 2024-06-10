@@ -1,7 +1,7 @@
 OncoFAIR : Validation Results
 =========================================
 
-err = 4, warn = 73, info = 16
+err = 0, warn = 73, info = 16
 $--
 Generated $--. FHIR version $-- for ltsi.fhir.oncofair#$-- (canonical = http://ltsi.univ-rennes.fr)
  Build Errors : 0 / 4 / 0
@@ -26,10 +26,10 @@ Generated $--. FHIR version $-- for ltsi.fhir.oncofair#$-- (canonical = http://l
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/ImplementationGuide-ltsi.fhir.oncofair : 0 / 1 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/Medication-ExampleOncoFAIRMedication : 0 / 0 / 2
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationAdministration-ExampleOncoFAIRMedicationAdministrationComponent : 0 / 1 / 2
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationAdministration-ExampleOncoFAIRMedicationAdministrationElement : 2 / 7 / 2
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationAdministration-ExampleOncoFAIRMedicationAdministrationElement : 0 / 7 / 2
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationAdministration-ExampleOncoFAIRMedicationAdministrationReport : 0 / 1 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationRequest-ExampleOncoFAIRMedicationRequestComponent : 0 / 1 / 2
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationRequest-ExampleOncoFAIRMedicationRequestElement : 2 / 6 / 7
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationRequest-ExampleOncoFAIRMedicationRequestElement : 0 / 6 / 7
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationRequest-ExampleOncoFAIRMedicationRequestPrescription : 0 / 1 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/Observation-ExampleOncoFAIRObservation : 0 / 1 / 2
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/Patient-ExampleOncoFAIRPatient : 0 / 0 / 1
@@ -133,8 +133,6 @@ WARNING: MedicationAdministration/ExampleOncoFAIRMedicationAdministrationElement
 WARNING: MedicationAdministration/ExampleOncoFAIRMedicationAdministrationElement: MedicationAdministration.dosage.route: Unable to check whether the code is in the value set 'http://ltsi.univ-rennes.fr/ValueSet/voie-administration-valueset|0.1.0' because the code system http://ltsi.univ-rennes.fr/CodeSystem/snomedct was not found
 WARNING: MedicationAdministration/ExampleOncoFAIRMedicationAdministrationElement: MedicationAdministration.dosage.route: A definition for CodeSystem 'http://ltsi.univ-rennes.fr/CodeSystem/snomedct' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'http://ltsi.univ-rennes.fr/ValueSet/voie-administration-valueset|0.1.0' because the code system http://ltsi.univ-rennes.fr/CodeSystem/snomedct was not found
 INFORMATION: MedicationAdministration/ExampleOncoFAIRMedicationAdministrationElement: MedicationAdministration.dosage.method: Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem|0.1.0
-ERROR: MedicationAdministration/ExampleOncoFAIRMedicationAdministrationElement: MedicationAdministration.dosage.method.coding[0].code: Unknown code 'MEC' in the CodeSystem 'http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem' version '0.1.0'
-ERROR: MedicationAdministration/ExampleOncoFAIRMedicationAdministrationElement: MedicationAdministration.dosage.method: None of the codings provided are in the value set 'SIPhTypeEltPLAOncoFAIRValueSet' (http://ltsi.univ-rennes.fr/ValueSet/siph-typeeltpla-oncofair-valueset|0.1.0), and a coding from this value set is required) (codes = http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem#MEC)
 == fsh-generated/resources/MedicationAdministration-ExampleOncoFAIRMedicationAdministrationReport.json ==
 WARNING: MedicationAdministration/ExampleOncoFAIRMedicationAdministrationReport: MedicationAdministration.medication.concept.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/MedicationRequest-ExampleOncoFAIRMedicationRequestComponent.json ==
@@ -147,10 +145,8 @@ WARNING: MedicationRequest/ExampleOncoFAIRMedicationRequestElement: MedicationRe
 INFORMATION: MedicationRequest/ExampleOncoFAIRMedicationRequestElement: MedicationRequest.extension[3].extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-gonogo-oncofair-codesystem|0.1.0
 INFORMATION: MedicationRequest/ExampleOncoFAIRMedicationRequestElement: MedicationRequest.extension[4].extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-statutvalidpharm-oncofair-codesystem|0.1.0
 INFORMATION: MedicationRequest/ExampleOncoFAIRMedicationRequestElement: MedicationRequest.extension[4].extension[1].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-natureproppharm-oncofair-codesystem|0.1.0
-ERROR: MedicationRequest/ExampleOncoFAIRMedicationRequestElement: MedicationRequest.basedOn[1]: The extension http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-link-type is not allowed to be used at this point (allowed = e:MedicationRequest; this element is [MedicationRequest.basedOn, Reference])
 INFORMATION: MedicationRequest/ExampleOncoFAIRMedicationRequestElement: MedicationRequest.basedOn[1].extension[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://ltsi.univ-rennes.fr/CodeSystem/siph-type-liasion-oncofair-codesystem' could not be found, so the code cannot be validated
 WARNING: MedicationRequest/ExampleOncoFAIRMedicationRequestElement: MedicationRequest.medication.concept.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
-ERROR: MedicationRequest/ExampleOncoFAIRMedicationRequestElement: MedicationRequest.dosageInstruction[0].timing.repeat: Constraint failed: tim-9: 'If there's an offset, there must be a when (and not C, CM, CD, CV)' (defined in http://hl7.org/fhir/StructureDefinition/Timing)
 INFORMATION: MedicationRequest/ExampleOncoFAIRMedicationRequestElement: MedicationRequest.dosageInstruction[0].route.coding[0].system: A definition for CodeSystem 'http://ltsi.univ-rennes.fr/CodeSystem/snomedct' could not be found, so the code cannot be validated
 INFORMATION: MedicationRequest/ExampleOncoFAIRMedicationRequestElement: MedicationRequest.dosageInstruction[0].method: Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem|0.1.0
 WARNING: MedicationRequest/ExampleOncoFAIRMedicationRequestElement: MedicationRequest.dosageInstruction[0].route: Unable to check whether the code is in the value set 'http://ltsi.univ-rennes.fr/ValueSet/voie-administration-valueset|0.1.0' because the code system http://ltsi.univ-rennes.fr/CodeSystem/snomedct was not found
