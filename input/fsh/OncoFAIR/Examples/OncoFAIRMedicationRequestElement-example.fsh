@@ -1,0 +1,84 @@
+Instance: ExampleOncoFAIRMedicationRequestElement
+InstanceOf: OncoFAIRMedicationRequestElement
+Title: "Example OncoFAIR MedicationRequest Element "
+Description: "Example instance of OncoFAIRMedicationRequestElement"
+
+* basedOn[prescription] = Reference(ExampleOncoFAIRMedicationRequestPrescription)
+* basedOn[element] = Reference(ExampleOncoFAIRMedicationRequestElement)
+* basedOn[protocol] = Reference(ExampleOncoFAIRCarePlan)
+* basedOn[element].extension[oncofair-mr-element-link-type].valueCodeableConcept.coding[0].system = "http://ltsi.univ-rennes.fr/CodeSystem/siph-type-liasion-oncofair-codesystem"
+* basedOn[element].extension[oncofair-mr-element-link-type].valueCodeableConcept.coding[0].code = #COMP 
+* basedOn[element].extension[oncofair-mr-element-link-type].valueCodeableConcept.coding[0].display = "Complément"
+
+* device = Reference(ExampleOncoFAIRDeviceDefinition)
+
+* requester = Reference(ExampleOncoFAIRPractitioner)
+
+* subject = Reference(ExampleOncoFAIRPatient)
+
+* intent = #proposal
+
+* identifier.value = "123456"
+
+* groupIdentifier.value = "303030"
+
+* medication.concept = #element
+* medication.reference = Reference(ExampleOncoFAIRMedication)
+
+* status = #active
+
+* priority = #urgent
+
+* dosageInstruction[element].additionalInstruction.coding[0].system = "http://snomed.info/sct"
+* dosageInstruction[element].additionalInstruction.coding[0].code = #311501008
+* dosageInstruction[element].additionalInstruction.coding[0].display = "Half to one hour before food"
+
+* dosageInstruction[posology].timing.repeat.duration = 1.0
+* dosageInstruction[posology].timing.repeat.durationUnit = #s
+
+* dosageInstruction[posology].doseAndRate.rateQuantity = 50 'mg/h'
+* dosageInstruction[posology].doseAndRate.doseQuantity = 250 'mg'
+* dosageInstruction[posology].timing.repeat.frequency = 2
+
+* dosageInstruction[element].method.coding[0].system = "http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem"
+* dosageInstruction[element].method.coding[0].code = #MED
+* dosageInstruction[element].method.coding[0].display = "Médicament"
+
+* dosageInstruction[element].route.coding[0].system = "http://ltsi.univ-rennes.fr/CodeSystem/snomedct"
+* dosageInstruction[element].route.coding[0].code = #26643006
+* dosageInstruction[element].route.coding[0].display = "Oral route"
+
+* dosageInstruction[element].site.coding[0].system = "http://snomed.info/sct" 
+* dosageInstruction[element].site.coding[0].code = #49928004
+* dosageInstruction[element].site.coding[0].display = "Throat"
+
+* dosageInstruction[element].text = "Description of the dosage"
+
+* dosageInstruction[element].timing.repeat.boundsPeriod.start = "2024-06-01T08:00:00Z"
+* dosageInstruction[element].timing.repeat.boundsPeriod.end = "2024-06-01T09:00:00Z"
+
+* dosageInstruction[element].timing.repeat.offset = 10
+
+* note[wording].text = "Paracetamol 500mg Tablet"
+* note[indication].text = "Prescribed for headaches"
+* note[comments].text = "Administered after meals"
+
+* extension[oncofair-element-form].valueCodeableConcept.coding[0].system = "http://ltsi.univ-rennes.fr/CodeSystem/snomedct"
+* extension[oncofair-element-form].valueCodeableConcept.coding[0].code = #385055001
+* extension[oncofair-element-form].valueCodeableConcept.coding[0].display = "Tablet"
+
+* extension[oncofair-mr-element-supply].valueBoolean = true
+* extension[oncofair-mr-element-rank].valueInteger = 3
+* extension[oncofair-mr-element-go-nogo].extension[GoNogoStatus].valueCodeableConcept.coding[0].system = "http://ltsi.univ-rennes.fr/CodeSystem/siph-gonogo-oncofair-codesystem"
+* extension[oncofair-mr-element-go-nogo].extension[GoNogoStatus].valueCodeableConcept.coding[0].code = #ATT
+* extension[oncofair-mr-element-go-nogo].extension[GoNogoStatus].valueCodeableConcept.coding[0].display = "En attente"
+
+* extension[oncofair-mr-element-go-nogo].extension[GoNogoReasonWaiting].valueCodeableConcept.text = "XXX"
+
+* extension[oncofair-pharmacist-advice].extension[pharmacistValidation].valueCodeableConcept.coding[0].system = "http://ltsi.univ-rennes.fr/CodeSystem/siph-statutvalidpharm-oncofair-codesystem"
+* extension[oncofair-pharmacist-advice].extension[pharmacistValidation].valueCodeableConcept.coding[0].code = #VAL
+* extension[oncofair-pharmacist-advice].extension[pharmacistValidation].valueCodeableConcept.coding[0].display = "validée"
+
+* extension[oncofair-pharmacist-advice].extension[pharmacistProposal].valueCodeableConcept.coding[0].system = "http://ltsi.univ-rennes.fr/CodeSystem/siph-natureproppharm-oncofair-codesystem"
+* extension[oncofair-pharmacist-advice].extension[pharmacistProposal].valueCodeableConcept.coding[0].code = #SUG
+* extension[oncofair-pharmacist-advice].extension[pharmacistProposal].valueCodeableConcept.coding[0].display = "Suggestion"
