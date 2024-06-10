@@ -1,0 +1,93 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/MedicationAdministration/ExampleOncoFAIRMedicationAdministrationComponent> a fhir:MedicationAdministration ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleOncoFAIRMedicationAdministrationComponent"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationadministration-component"^^xsd:anyURI ;
+       fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationadministration-component>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationAdministration </b><a name=\"ExampleOncoFAIRMedicationAdministrationComponent\"> </a><a name=\"hcExampleOncoFAIRMedicationAdministrationComponent\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceMedicationAdministration &quot;ExampleOncoFAIRMedicationAdministrationComponent&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-oncofair-medicationadministration-component.html\">OncoFAIR MedicationAdministration Component</a></p></div><blockquote><p><b>OncoFAIRMAElementTraceability</b></p><blockquote><p><b>url</b></p><code>batchNumber</code></blockquote><p><b>value</b>: BATCH12345</p><blockquote><p><b>url</b></p><code>serialNumber</code></blockquote><p><b>value</b>: SN67890</p></blockquote><p><b>OncoFAIRMAElementExpirationDate</b>: 2024-12-31 23:59:59+0000</p><p><b>OncoFAIRMAComponentOrigin</b>: XXXX <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>OncoFAIRMAComponentAdministrationStatus</b>: suivi <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-siph-statutcomposantadm-oncofair-codesystem.html\">SIPhStatutComposantAdmOncoFAIRCodeSystem</a>#SU)</span></p><p><b>partOf</b>: <a href=\"MedicationAdministration-ExampleOncoFAIRMedicationAdministrationElement.html\">MedicationAdministration/ExampleOncoFAIRMedicationAdministrationElement</a></p><p><b>status</b>: in-progress</p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td>component <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#component)</span></td><td><a href=\"Medication-ExampleOncoFAIRMedication.html\">Medication/ExampleOncoFAIRMedication</a></td></tr></table><p><b>subject</b>: <a href=\"Patient-ExampleOncoFAIRPatient.html\">Patient/ExampleOncoFAIRPatient</a></p><p><b>occurence</b>: 2024-06-04 12:00:00+0000</p><p><b>note</b>: Patient experienced mild nausea., Paracetamol 500mg Tablet</p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose</b></td><td><b>Rate[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>250 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td><td>50 mg/h<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/h = 'mg/h')</span></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "batchNumber"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "BATCH12345" ]
+     ] [
+       fhir:url [ fhir:v "serialNumber"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "SN67890" ]
+     ] ) ;
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-traceability"^^xsd:anyURI ]
+  ] [
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-expirationdate"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2024-12-31T23:59:59Z"^^xsd:dateTime ]
+  ] [
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-component-origin"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:text [ fhir:v "XXXX" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-component-administration-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/siph-statutcomposantadm-oncofair-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "SU" ] ;
+         fhir:display [ fhir:v "suivi" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:partOf ( [
+     fhir:link <http://ltsi.univ-rennes.fr/MedicationAdministration/ExampleOncoFAIRMedicationAdministrationElement> ;
+     fhir:reference [ fhir:v "MedicationAdministration/ExampleOncoFAIRMedicationAdministrationElement" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "in-progress"] ; # 
+  fhir:medication [
+     fhir:concept [
+       fhir:coding ( [
+         fhir:code [ fhir:v "component" ]
+       ] )
+     ] ;
+     fhir:reference [
+       fhir:link <http://ltsi.univ-rennes.fr/Medication/ExampleOncoFAIRMedication> ;
+       fhir:reference [ fhir:v "Medication/ExampleOncoFAIRMedication" ]
+     ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://ltsi.univ-rennes.fr/Patient/ExampleOncoFAIRPatient> ;
+     fhir:reference [ fhir:v "Patient/ExampleOncoFAIRPatient" ]
+  ] ; # 
+  fhir:occurence [ fhir:v "2024-06-04T12:00:00Z"^^xsd:dateTime] ; # 
+  fhir:note ( [
+     fhir:id [ fhir:v "comments" ] ;
+     fhir:text [ fhir:v "Patient experienced mild nausea." ]
+  ] [
+     fhir:id [ fhir:v "wording" ] ;
+     fhir:text [ fhir:v "Paracetamol 500mg Tablet" ]
+  ] ) ; # 
+  fhir:dosage [
+     fhir:dose [
+       fhir:value [ fhir:v "250"^^xsd:decimal ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "mg" ]
+     ] ;
+     fhir:rate [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "50"^^xsd:decimal ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "mg/h" ]
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

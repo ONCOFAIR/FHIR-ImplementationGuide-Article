@@ -10,7 +10,7 @@
   "name" : "OncoFAIR",
   "title" : "Onco-FAIR",
   "status" : "draft",
-  "date" : "2024-06-04T08:55:54+00:00",
+  "date" : "2024-06-10T07:36:07+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -64,6 +64,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Device"
+      }],
+      "reference" : {
+        "reference" : "Device/ExampleOncoFAIRDevice"
+      },
+      "name" : "Example OncoFAIR Device",
+      "description" : "An example instance of an OncoFAIR Device",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DeviceDefinition"
+      }],
+      "reference" : {
+        "reference" : "DeviceDefinition/ExampleOncoFAIRDeviceDefinition"
+      },
+      "name" : "Example OncoFAIR Device Definition",
+      "description" : "An example instance of an OncoFAIR Device Definition.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Encounter"
       }],
       "reference" : {
@@ -77,6 +101,110 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/ExampleOncoFAIRMedication"
+      },
+      "name" : "Example OncoFAIR Medication",
+      "description" : "An example instance of an OncoFAIR Medication with required fields populated.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationAdministration"
+      }],
+      "reference" : {
+        "reference" : "MedicationAdministration/ExampleOncoFAIRMedicationAdministrationComponent"
+      },
+      "name" : "Example OncoFAIR MedicationAdministration Component",
+      "description" : "An example instance of an OncoFAIR MedicationAdministration Component with required fields populated.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationadministration-component"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationAdministration"
+      }],
+      "reference" : {
+        "reference" : "MedicationAdministration/ExampleOncoFAIRMedicationAdministrationElement"
+      },
+      "name" : "Example OncoFAIR MedicationAdministration Element",
+      "description" : "An example instance of an OncoFAIR MedicationAdministration Element with required fields populated.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationadministration-element"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationAdministration"
+      }],
+      "reference" : {
+        "reference" : "MedicationAdministration/ExampleOncoFAIRMedicationAdministrationReport"
+      },
+      "name" : "Example OncoFAIR MedicationAdministration Report",
+      "description" : "An example instance of an OncoFAIR MedicationAdministration Report with required fields populated.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationadministration-report"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/ExampleOncoFAIRMedicationRequestComponent"
+      },
+      "name" : "Example OncoFAIR MedicationRequest Component",
+      "description" : "Example instance of OncoFAIRMedicationRequestComponent",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/ExampleOncoFAIRMedicationRequestElement"
+      },
+      "name" : "Example OncoFAIR MedicationRequest Element ",
+      "description" : "Example instance of OncoFAIRMedicationRequestElement",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/ExampleOncoFAIRMedicationRequestPrescription"
+      },
+      "name" : "Example OncoFAIR MedicationRequest Prescription",
+      "description" : "An example instance of OncoFAIR MedicationRequest Prescription.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleOncoFAIRObservation"
+      },
+      "name" : "Example OncoFAIR Observation",
+      "description" : "An example instance of OncoFAIR Observation.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-observation"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Patient"
       }],
       "reference" : {
@@ -86,6 +214,18 @@
       "description" : "An example instance of an OncoFAIR patient with a permanent patient identifier.",
       "isExample" : true,
       "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-patient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/ExampleOncoFAIRPractitioner"
+      },
+      "name" : "Example OncoFAIR Practitioner",
+      "description" : "An example instance of an OncoFAIR practitioner with an identifier.",
+      "isExample" : true
     },
     {
       "extension" : [{
@@ -732,6 +872,30 @@
       },
       "name" : "SIPhTypeEvenementOncoFAIRValueSet",
       "description" : "Value Set pour TypeEvenement",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/siph-type-liaison-oncofair-codesystem"
+      },
+      "name" : "SIPhTypeLiaisonOncoFAIRCodeSystem",
+      "description" : "Code system pour l'attribut TypeLiaison",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/siph-type-liasion-oncofair-valueset"
+      },
+      "name" : "SIPhTypeLiasionOncoFAIRValueSet",
+      "description" : "Value Set pour Type Liaison",
       "isExample" : false
     },
     {

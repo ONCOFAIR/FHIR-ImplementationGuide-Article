@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/MedicationAdministration/ExampleOncoFAIRMedicationAdministrationReport> a fhir:MedicationAdministration ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleOncoFAIRMedicationAdministrationReport"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationadministration-report"^^xsd:anyURI ;
+       fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationadministration-report>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationAdministration </b><a name=\"ExampleOncoFAIRMedicationAdministrationReport\"> </a><a name=\"hcExampleOncoFAIRMedicationAdministrationReport\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceMedicationAdministration &quot;ExampleOncoFAIRMedicationAdministrationReport&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-oncofair-medicationadministration-report.html\">OncoFAIR MedicationAdministration Report</a></p></div><p><b>identifier</b>: REP-123456</p><p><b>status</b>: in-progress</p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td>report <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#report)</span></td><td><a href=\"Medication-ExampleOncoFAIRMedication.html\">Medication/ExampleOncoFAIRMedication</a></td></tr></table><p><b>subject</b>: <a href=\"Patient-ExampleOncoFAIRPatient.html\">Patient/ExampleOncoFAIRPatient</a></p><p><b>encounter</b>: <a href=\"Encounter-ExampleOncoFAIREncounter.html\">Encounter/ExampleOncoFAIREncounter</a></p><p><b>occurence</b>: 2024-06-01 08:00:00+0000</p><blockquote><p><b>performer</b></p><h3>Actors</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Practitioner-ExampleOncoFAIRPractitioner.html\">Practitioner/ExampleOncoFAIRPractitioner</a></td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "REP-123456" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "in-progress"] ; # 
+  fhir:medication [
+     fhir:concept [
+       fhir:coding ( [
+         fhir:code [ fhir:v "report" ]
+       ] )
+     ] ;
+     fhir:reference [
+       fhir:link <http://ltsi.univ-rennes.fr/Medication/ExampleOncoFAIRMedication> ;
+       fhir:reference [ fhir:v "Medication/ExampleOncoFAIRMedication" ]
+     ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://ltsi.univ-rennes.fr/Patient/ExampleOncoFAIRPatient> ;
+     fhir:reference [ fhir:v "Patient/ExampleOncoFAIRPatient" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://ltsi.univ-rennes.fr/Encounter/ExampleOncoFAIREncounter> ;
+     fhir:reference [ fhir:v "Encounter/ExampleOncoFAIREncounter" ]
+  ] ; # 
+  fhir:occurence [ fhir:v "2024-06-01T08:00:00Z"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:actor [
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/Practitioner/ExampleOncoFAIRPractitioner> ;
+         fhir:reference [ fhir:v "Practitioner/ExampleOncoFAIRPractitioner" ]
+       ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
