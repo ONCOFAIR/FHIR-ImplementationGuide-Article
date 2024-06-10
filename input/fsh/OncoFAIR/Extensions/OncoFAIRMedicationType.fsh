@@ -3,7 +3,8 @@ Id: oncofair-medication-type
 Description: "Extension created as part of OncoFAIR containing the type of component. \r\n
 Extension créée dans le cadre d'OncoFAIR contenant le type de composant."
 * ^context[+].type = #element
-* ^context[=].expression = "OncoFAIRMedication"
+* ^context[=].expression = "Medication"
+
 * value[x] only CodeableConcept
 * . ^short = "Specifies whether the component prescribed is a speciality, a common name or any other product (pharmacopoeia)."
 

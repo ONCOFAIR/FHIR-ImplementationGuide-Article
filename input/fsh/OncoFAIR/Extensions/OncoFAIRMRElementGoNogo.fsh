@@ -3,7 +3,7 @@ Id: oncofair-mr-element-go-nogo
 Description: "Extension created as part of OncoFAIR containing the concept of GoNogo. \r\n
 Extension créée dans le cadre d'OncoFAIR contenant la notion de GoNogo." 
 * ^context[+].type = #element
-* ^context[=].expression = "OncoFAIRMedicationRequestElement"
+* ^context[=].expression = "MedicationRequest"
 
 * extension contains
     GoNogoStatus 0..1 and

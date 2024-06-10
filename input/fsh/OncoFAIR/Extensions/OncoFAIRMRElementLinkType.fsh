@@ -3,11 +3,10 @@ Id: oncofair-mr-element-link-type
 Description: "Extension created as part of OncoFAIR containing the element's type of link. \r\n
 Extension créée dans le cadre d'OncoFAIR contenant le type de liaison de l'élément." 
 * ^context[+].type = #element
-* ^context[=].expression = "OncoFAIRMedicationRequestElement"
+* ^context[=].expression = "MedicationRequest"
 * value[x] only CodeableConcept
 
 * . ^short = "Type of link between the two prescription elements"
-
 
 Mapping:  mapping_OncoFAIRMRElementLinkType
 Source:   OncoFAIRMRElementLinkType

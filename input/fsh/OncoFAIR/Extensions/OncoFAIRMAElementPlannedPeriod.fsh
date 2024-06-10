@@ -3,7 +3,7 @@ Id: oncofair-ma-element-plannedperiod
 Description: "Extension created as part of OncoFAIR containing the planned start and end date of administration. \r\n
 Extension créée dans le cadre d'OncoFAIR contenant la date de début et de fin prévue de l'administration." 
 * ^context[+].type = #element
-* ^context[=].expression = "OncoFAIRMedicationAdministrationElement"
+* ^context[=].expression = "MedicationAdministration"
 * value[x] only Period
 * value[x].start 1..1
 * value[x].start ^short = "Date and time scheduled for the start of administration of the administration element"

@@ -3,9 +3,9 @@ Id: oncofair-element-form
 Description: "Extension created as part of OncoFair containing the drug form. \r\n
 Extension créée dans le cadre d'OncoFair contenant la forme du médicament." 
 * ^context[+].type = #element
-* ^context[=].expression = "OncoFAIRMedicationRequestElement"
+* ^context[=].expression = "MedicationRequest"
 * ^context[+].type = #element
-* ^context[=].expression = "OncoFAIRMedicationAdministrationElement"
+* ^context[=].expression = "MedicationAdministration"
 * value[x] only CodeableConcept
 * valueCodeableConcept from FormePharmaceutiqueValueSet (required)
 

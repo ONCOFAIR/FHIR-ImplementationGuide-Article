@@ -3,7 +3,7 @@ Id: oncofair-cp-treatment
 Description: "Extension created as part of OncoFAIR grouping together the treatment number, the day number and the reference date and time of the prescribed protocol. \r\n 
 Extension créée dans le cadre d'OncoFAIR regroupant le numéro de cure, le numéro de jour ainsi que la date et heure de référence du protocole prescrit." 
 * ^context[+].type = #element
-* ^context[=].expression = "OncoFAIRCarePlan"
+* ^context[=].expression = "CarePlan"
 
 * extension contains
     treatmentRank 0..1 and

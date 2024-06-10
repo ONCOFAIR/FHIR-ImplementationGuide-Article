@@ -4,7 +4,7 @@ Description: "Extension created as part of OncoFAIR containing the administratio
 Extension créée dans le cadre d'OncoFAIR contenant le statut d'administration du composant administré."
 
 * ^context[+].type = #element
-* ^context[=].expression = "OncoFAIRMedicationAdministrationComponent"
+* ^context[=].expression = "MedicationAdministration"
 * value[x] only CodeableConcept
 * . ^short = "Specifies whether the component administered was actually administered to the patient or not."
 

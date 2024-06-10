@@ -3,9 +3,9 @@ Id: oncofair-pharmacist-advice
 Description: "Extension created as part of OncoFAIR containing the validation and pharmaceutical proposal. \r\n
 Extension créée dans le cadre d'OncoFAIR contenant la validation et proposition pharmaceutique." 
 * ^context[+].type = #element
-* ^context[=].expression = "OncoFAIRCarePlan"
+* ^context[=].expression = "CarePlan"
 * ^context[+].type = #element
-* ^context[=].expression = "OncoFAIRMRElement"
+* ^context[=].expression = "MedicationRequest"
 
 * extension contains
     pharmacistValidation 0..1 and

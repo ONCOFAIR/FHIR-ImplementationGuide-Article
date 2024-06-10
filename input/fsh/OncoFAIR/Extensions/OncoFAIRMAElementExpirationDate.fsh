@@ -3,10 +3,7 @@ Id: oncofair-ma-element-expirationdate
 Description: "Extension created as part of OncoFAIR containing the expiry date of the component administered. \r\n
 Extension créée dans le cadre d'OncoFAIR contenant la date de péremption du composant administré." 
 * ^context[+].type = #element
-* ^context[=].expression = "OncoFAIRMedicationAdministrationElement"
-
-* ^context[+].type = #element
-* ^context[=].expression = "OncoFAIRMedicationAdministrationComponent"
+* ^context[=].expression = "MedicationAdministration"
 
 * value[x] only dateTime
 
