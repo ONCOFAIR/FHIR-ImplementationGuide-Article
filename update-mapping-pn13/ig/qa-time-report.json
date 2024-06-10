@@ -1,5 +1,5 @@
 {
-  "date" : "Mon, 10 Jun, 2024 07:36:07 +0000",
+  "date" : "Mon, 10 Jun, 2024 07:36:39 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [
     {
@@ -9,7 +9,7 @@
         {
           "activity" : "load",
           "start" : 23,
-          "length" : 11
+          "length" : 10
         },
         {
           "activity" : "checkR4R4B",
@@ -19,32 +19,37 @@
         {
           "activity" : "generateNarratives",
           "start" : 24,
-          "length" : 44
+          "length" : 53
         },
         {
           "activity" : "validate",
-          "start" : 29,
-          "length" : 664
+          "start" : 30,
+          "length" : 404
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 30,
+          "start" : 31,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 32,
-          "length" : 139
+          "start" : 33,
+          "length" : 173
         },
         {
           "activity" : "generate2",
-          "start" : 42,
-          "length" : 224
+          "start" : 43,
+          "length" : 177
         },
         {
           "activity" : "generateValidationPack",
           "start" : 64,
-          "length" : 6
+          "length" : 7
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 77,
+          "length" : 1
         }
       ]
     },
@@ -55,37 +60,32 @@
         {
           "activity" : "loadResources",
           "start" : 21,
-          "length" : 9
+          "length" : 11
         },
         {
-          "activity" : "loadInfo",
+          "activity" : "load-configure",
           "start" : 23,
           "length" : 1
         },
         {
           "activity" : "generateNarratives",
           "start" : 24,
-          "length" : 89
+          "length" : 95
         },
         {
           "activity" : "validate",
-          "start" : 30,
-          "length" : 54
+          "start" : 31,
+          "length" : 50
         },
         {
           "activity" : "generate1",
-          "start" : 32,
-          "length" : 27
+          "start" : 33,
+          "length" : 35
         },
         {
           "activity" : "generate2",
-          "start" : 42,
-          "length" : 17
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 76,
-          "length" : 1
+          "start" : 43,
+          "length" : 33
         }
       ]
     },
@@ -96,57 +96,52 @@
         {
           "activity" : "loadResources",
           "start" : 21,
-          "length" : 14
+          "length" : 18
         },
         {
-          "activity" : "loadDepInfo",
+          "activity" : "load-configure",
           "start" : 23,
           "length" : 1
         },
         {
           "activity" : "load",
           "start" : 23,
-          "length" : 17
+          "length" : 16
         },
         {
           "activity" : "checkR4R4B",
           "start" : 24,
-          "length" : 3
+          "length" : 5
         },
         {
           "activity" : "generateNarratives",
           "start" : 24,
-          "length" : 79
+          "length" : 49
         },
         {
           "activity" : "validate",
-          "start" : 25,
-          "length" : 271
+          "start" : 26,
+          "length" : 248
         },
         {
           "activity" : "checkConformanceResources",
-          "start" : 30,
-          "length" : 1
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 30,
+          "start" : 31,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 32,
-          "length" : 218
+          "start" : 33,
+          "length" : 221
         },
         {
           "activity" : "generate2",
-          "start" : 42,
-          "length" : 1639
+          "start" : 43,
+          "length" : 1577
         },
         {
           "activity" : "generateValidationPack",
           "start" : 64,
-          "length" : 7
+          "length" : 4
         }
       ]
     },
@@ -162,27 +157,32 @@
         {
           "activity" : "load",
           "start" : 23,
-          "length" : 3
+          "length" : 4
         },
         {
           "activity" : "generateNarratives",
           "start" : 24,
-          "length" : 5
+          "length" : 4
         },
         {
           "activity" : "validate",
-          "start" : 25,
+          "start" : 26,
           "length" : 8
         },
         {
+          "activity" : "scanForUsageStats",
+          "start" : 31,
+          "length" : 1
+        },
+        {
           "activity" : "generate1",
-          "start" : 33,
-          "length" : 14
+          "start" : 34,
+          "length" : 19
         },
         {
           "activity" : "generate2",
           "start" : 44,
-          "length" : 48
+          "length" : 43
         },
         {
           "activity" : "generateValidationPack",
@@ -197,18 +197,8 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 21,
-          "length" : 4
-        },
-        {
-          "activity" : "load-configure",
-          "start" : 23,
-          "length" : 1
-        },
-        {
-          "activity" : "scan",
-          "start" : 23,
-          "length" : 1
+          "start" : 22,
+          "length" : 5
         },
         {
           "activity" : "load",
@@ -218,17 +208,17 @@
         {
           "activity" : "generateNarratives",
           "start" : 24,
-          "length" : 4
+          "length" : 3
         },
         {
           "activity" : "validate",
-          "start" : 25,
+          "start" : 26,
           "length" : 4
         },
         {
           "activity" : "generate1",
-          "start" : 33,
-          "length" : 16
+          "start" : 34,
+          "length" : 14
         },
         {
           "activity" : "generate2",
@@ -243,37 +233,37 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 21,
-          "length" : 3
+          "start" : 22,
+          "length" : 6
         },
         {
           "activity" : "load",
           "start" : 23,
-          "length" : 3
+          "length" : 4
         },
         {
           "activity" : "generateNarratives",
           "start" : 24,
-          "length" : 4
+          "length" : 5
         },
         {
           "activity" : "validate",
-          "start" : 25,
-          "length" : 16
+          "start" : 26,
+          "length" : 18
         },
         {
           "activity" : "generate1",
-          "start" : 33,
-          "length" : 38
+          "start" : 34,
+          "length" : 33
         },
         {
           "activity" : "generate2",
           "start" : 44,
-          "length" : 98
+          "length" : 81
         },
         {
-          "activity" : "generateValidationPack",
-          "start" : 64,
+          "activity" : "scanExamplesForR5",
+          "start" : 77,
           "length" : 1
         }
       ]
@@ -284,49 +274,13 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 21,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 23,
-          "length" : 3
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 24,
-          "length" : 2
-        },
-        {
-          "activity" : "validate",
-          "start" : 25,
+          "start" : 22,
           "length" : 5
         },
         {
-          "activity" : "generate1",
-          "start" : 33,
-          "length" : 11
-        },
-        {
-          "activity" : "generate2",
-          "start" : 44,
-          "length" : 45
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/CodeSystem-siph-paramposoconditionnelle-oncofair-codesystem.json",
-      "size" : 1046,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 21,
-          "length" : 2
-        },
-        {
           "activity" : "load",
           "start" : 23,
-          "length" : 3
+          "length" : 2
         },
         {
           "activity" : "checkR4R4B",
@@ -336,22 +290,63 @@
         {
           "activity" : "generateNarratives",
           "start" : 24,
-          "length" : 2
+          "length" : 3
         },
         {
           "activity" : "validate",
-          "start" : 25,
-          "length" : 7
+          "start" : 26,
+          "length" : 5
         },
         {
           "activity" : "generate1",
-          "start" : 33,
+          "start" : 34,
           "length" : 14
         },
         {
           "activity" : "generate2",
-          "start" : 44,
-          "length" : 41
+          "start" : 45,
+          "length" : 34
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-siph-paramposoconditionnelle-oncofair-codesystem.json",
+      "size" : 1046,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 34,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 45,
+          "length" : 32
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 1
         }
       ]
     },
@@ -361,13 +356,8 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 21,
-          "length" : 3
-        },
-        {
-          "activity" : "scan",
-          "start" : 23,
-          "length" : 1
+          "start" : 22,
+          "length" : 5
         },
         {
           "activity" : "load",
@@ -377,27 +367,22 @@
         {
           "activity" : "generateNarratives",
           "start" : 24,
-          "length" : 2
+          "length" : 3
         },
         {
           "activity" : "validate",
-          "start" : 25,
-          "length" : 8
+          "start" : 26,
+          "length" : 6
         },
         {
           "activity" : "generate1",
-          "start" : 33,
-          "length" : 16
+          "start" : 34,
+          "length" : 14
         },
         {
           "activity" : "generate2",
-          "start" : 44,
-          "length" : 41
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 64,
-          "length" : 1
+          "start" : 45,
+          "length" : 30
         }
       ]
     },
@@ -407,233 +392,7 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 21,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 23,
-          "length" : 4
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 24,
-          "length" : 2
-        },
-        {
-          "activity" : "validate",
-          "start" : 25,
-          "length" : 6
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 30,
-          "length" : 1
-        },
-        {
-          "activity" : "generate1",
-          "start" : 33,
-          "length" : 15
-        },
-        {
-          "activity" : "generate2",
-          "start" : 44,
-          "length" : 43
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/CodeSystem-siph-statutvalidpharm-oncofair-codesystem.json",
-      "size" : 551,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 21,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 23,
-          "length" : 3
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 24,
-          "length" : 2
-        },
-        {
-          "activity" : "validate",
-          "start" : 25,
-          "length" : 3
-        },
-        {
-          "activity" : "generate1",
-          "start" : 33,
-          "length" : 9
-        },
-        {
-          "activity" : "generate2",
-          "start" : 44,
-          "length" : 34
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/CodeSystem-siph-type-liaison-oncofair-codesystem.json",
-      "size" : 877,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 21,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 23,
-          "length" : 3
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 24,
-          "length" : 2
-        },
-        {
-          "activity" : "validate",
-          "start" : 25,
-          "length" : 5
-        },
-        {
-          "activity" : "generate1",
-          "start" : 33,
-          "length" : 12
-        },
-        {
-          "activity" : "generate2",
-          "start" : 44,
-          "length" : 34
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/CodeSystem-siph-typecomposant-oncofair-codesystem.json",
-      "size" : 1479,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 21,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 23,
-          "length" : 2
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 24,
-          "length" : 3
-        },
-        {
-          "activity" : "validate",
-          "start" : 25,
-          "length" : 7
-        },
-        {
-          "activity" : "generate1",
-          "start" : 33,
-          "length" : 16
-        },
-        {
-          "activity" : "generate2",
-          "start" : 44,
-          "length" : 36
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 64,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/CodeSystem-siph-typeeltpla-oncofair-codesystem.json",
-      "size" : 1024,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 21,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 23,
-          "length" : 3
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 24,
-          "length" : 2
-        },
-        {
-          "activity" : "validate",
-          "start" : 25,
-          "length" : 6
-        },
-        {
-          "activity" : "generate1",
-          "start" : 33,
-          "length" : 13
-        },
-        {
-          "activity" : "generate2",
-          "start" : 45,
-          "length" : 37
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/CodeSystem-siph-typeevenement-oncofair-codesystem.json",
-      "size" : 749,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 21,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 23,
-          "length" : 3
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 24,
-          "length" : 1
-        },
-        {
-          "activity" : "validate",
-          "start" : 25,
-          "length" : 5
-        },
-        {
-          "activity" : "generate1",
-          "start" : 33,
-          "length" : 15
-        },
-        {
-          "activity" : "generate2",
-          "start" : 45,
-          "length" : 34
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/CodeSystem-snomedct.json",
-      "size" : 12031,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 21,
+          "start" : 22,
           "length" : 5
         },
         {
@@ -644,7 +403,120 @@
         {
           "activity" : "load",
           "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 34,
+          "length" : 18
+        },
+        {
+          "activity" : "generate2",
+          "start" : 45,
+          "length" : 35
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-siph-statutvalidpharm-oncofair-codesystem.json",
+      "size" : 551,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 34,
+          "length" : 9
+        },
+        {
+          "activity" : "generate2",
+          "start" : 45,
+          "length" : 28
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-siph-type-liaison-oncofair-codesystem.json",
+      "size" : 877,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
           "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 34,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 45,
+          "length" : 26
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-siph-typecomposant-oncofair-codesystem.json",
+      "size" : 1479,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 5
+        },
+        {
+          "activity" : "loadDepInfo",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 3
         },
         {
           "activity" : "checkR4R4B",
@@ -654,27 +526,150 @@
         {
           "activity" : "generateNarratives",
           "start" : 24,
-          "length" : 7
+          "length" : 4
         },
         {
           "activity" : "validate",
-          "start" : 25,
-          "length" : 288
+          "start" : 26,
+          "length" : 6
         },
         {
           "activity" : "generate1",
-          "start" : 33,
-          "length" : 64
+          "start" : 34,
+          "length" : 16
         },
         {
           "activity" : "generate2",
           "start" : 45,
-          "length" : 55
+          "length" : 26
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-siph-typeeltpla-oncofair-codesystem.json",
+      "size" : 1024,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 34,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 45,
+          "length" : 26
         },
         {
           "activity" : "generateValidationPack",
           "start" : 64,
-          "length" : 14
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-siph-typeevenement-oncofair-codesystem.json",
+      "size" : 749,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 34,
+          "length" : 15
+        },
+        {
+          "activity" : "generate2",
+          "start" : 45,
+          "length" : 25
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-snomedct.json",
+      "size" : 12031,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 9
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 8
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 294
+        },
+        {
+          "activity" : "generate1",
+          "start" : 34,
+          "length" : 67
+        },
+        {
+          "activity" : "generate2",
+          "start" : 45,
+          "length" : 46
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 2
         }
       ]
     },
@@ -684,23 +679,23 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 21,
-          "length" : 4
+          "start" : 22,
+          "length" : 6
         },
         {
           "activity" : "generateNarratives",
           "start" : 24,
-          "length" : 1
+          "length" : 3
         },
         {
           "activity" : "validate",
-          "start" : 30,
+          "start" : 31,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 33,
-          "length" : 8
+          "start" : 34,
+          "length" : 7
         },
         {
           "activity" : "generate2",
@@ -715,8 +710,8 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 21,
-          "length" : 2
+          "start" : 22,
+          "length" : 5
         },
         {
           "activity" : "generateNarratives",
@@ -725,13 +720,13 @@
         },
         {
           "activity" : "validate",
-          "start" : 30,
-          "length" : 2
+          "start" : 31,
+          "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 33,
-          "length" : 7
+          "start" : 34,
+          "length" : 6
         },
         {
           "activity" : "generate2",
@@ -746,28 +741,28 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 21,
-          "length" : 4
+          "start" : 22,
+          "length" : 7
         },
         {
           "activity" : "generateNarratives",
           "start" : 24,
-          "length" : 9
+          "length" : 10
         },
         {
           "activity" : "validate",
-          "start" : 30,
+          "start" : 31,
           "length" : 5
         },
         {
           "activity" : "generate1",
-          "start" : 33,
+          "start" : 34,
           "length" : 7
         },
         {
           "activity" : "generate2",
           "start" : 45,
-          "length" : 8
+          "length" : 7
         }
       ]
     },
@@ -777,28 +772,28 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 21,
-          "length" : 3
+          "start" : 22,
+          "length" : 5
         },
         {
           "activity" : "generateNarratives",
           "start" : 24,
-          "length" : 5
+          "length" : 6
         },
         {
           "activity" : "validate",
-          "start" : 30,
-          "length" : 140
+          "start" : 31,
+          "length" : 107
         },
         {
           "activity" : "generate1",
-          "start" : 33,
-          "length" : 9
+          "start" : 34,
+          "length" : 8
         },
         {
           "activity" : "generate2",
           "start" : 45,
-          "length" : 9
+          "length" : 8
         }
       ]
     },
@@ -808,28 +803,33 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 21,
-          "length" : 4
+          "start" : 22,
+          "length" : 7
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 24,
+          "length" : 1
         },
         {
           "activity" : "generateNarratives",
           "start" : 24,
-          "length" : 250
+          "length" : 269
         },
         {
           "activity" : "validate",
-          "start" : 30,
-          "length" : 125
+          "start" : 31,
+          "length" : 131
         },
         {
           "activity" : "generate1",
-          "start" : 33,
-          "length" : 16
+          "start" : 34,
+          "length" : 15
         },
         {
           "activity" : "generate2",
           "start" : 45,
-          "length" : 12
+          "length" : 9
         }
       ]
     },
@@ -839,33 +839,28 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 21,
-          "length" : 4
+          "start" : 22,
+          "length" : 6
         },
         {
           "activity" : "generateNarratives",
-          "start" : 24,
-          "length" : 37
+          "start" : 25,
+          "length" : 34
         },
         {
           "activity" : "validate",
-          "start" : 30,
-          "length" : 1391
+          "start" : 31,
+          "length" : 1351
         },
         {
           "activity" : "generate1",
-          "start" : 33,
-          "length" : 20
+          "start" : 34,
+          "length" : 19
         },
         {
           "activity" : "generate2",
           "start" : 45,
           "length" : 8
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 76,
-          "length" : 1
         }
       ]
     },
@@ -875,22 +870,22 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 21,
-          "length" : 2
+          "start" : 22,
+          "length" : 5
         },
         {
           "activity" : "generateNarratives",
-          "start" : 24,
-          "length" : 18
+          "start" : 25,
+          "length" : 17
         },
         {
           "activity" : "validate",
           "start" : 32,
-          "length" : 7
+          "length" : 8
         },
         {
           "activity" : "generate1",
-          "start" : 33,
+          "start" : 34,
           "length" : 14
         },
         {
@@ -906,23 +901,28 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 21,
-          "length" : 7
+          "start" : 22,
+          "length" : 64
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 23,
+          "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 24,
-          "length" : 25
+          "start" : 25,
+          "length" : 19
         },
         {
           "activity" : "validate",
           "start" : 32,
-          "length" : 13
+          "length" : 15
         },
         {
           "activity" : "generate1",
-          "start" : 33,
-          "length" : 13
+          "start" : 34,
+          "length" : 14
         },
         {
           "activity" : "generate2",
@@ -937,8 +937,8 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 21,
-          "length" : 5
+          "start" : 22,
+          "length" : 9
         },
         {
           "activity" : "checkR4R4B",
@@ -947,23 +947,23 @@
         },
         {
           "activity" : "generateNarratives",
-          "start" : 24,
-          "length" : 52
+          "start" : 25,
+          "length" : 48
         },
         {
           "activity" : "validate",
           "start" : 32,
-          "length" : 309
+          "length" : 448
         },
         {
           "activity" : "generate1",
-          "start" : 33,
-          "length" : 32
+          "start" : 34,
+          "length" : 26
         },
         {
           "activity" : "generate2",
           "start" : 45,
-          "length" : 11
+          "length" : 10
         }
       ]
     },
@@ -973,23 +973,23 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 21,
-          "length" : 3
+          "start" : 22,
+          "length" : 5
         },
         {
           "activity" : "generateNarratives",
-          "start" : 24,
-          "length" : 22
+          "start" : 25,
+          "length" : 21
         },
         {
           "activity" : "validate",
-          "start" : 32,
-          "length" : 12
+          "start" : 33,
+          "length" : 8
         },
         {
           "activity" : "generate1",
-          "start" : 33,
-          "length" : 12
+          "start" : 34,
+          "length" : 11
         },
         {
           "activity" : "generate2",
@@ -1004,22 +1004,22 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 21,
-          "length" : 3
+          "start" : 22,
+          "length" : 6
         },
         {
           "activity" : "generateNarratives",
-          "start" : 24,
+          "start" : 25,
           "length" : 23
         },
         {
           "activity" : "validate",
-          "start" : 32,
-          "length" : 7
+          "start" : 33,
+          "length" : 4
         },
         {
           "activity" : "generate1",
-          "start" : 33,
+          "start" : 34,
           "length" : 8
         },
         {
@@ -1035,23 +1035,23 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 21,
-          "length" : 4
+          "start" : 22,
+          "length" : 6
         },
         {
           "activity" : "generateNarratives",
-          "start" : 24,
-          "length" : 2
+          "start" : 25,
+          "length" : 3
         },
         {
           "activity" : "validate",
-          "start" : 32,
+          "start" : 33,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 33,
-          "length" : 5
+          "start" : 34,
+          "length" : 7
         },
         {
           "activity" : "generate2",
@@ -1066,23 +1066,18 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 21,
-          "length" : 2
+          "start" : 22,
+          "length" : 5
         },
         {
           "activity" : "generateNarratives",
-          "start" : 24,
-          "length" : 2
-        },
-        {
-          "activity" : "validate",
-          "start" : 32,
-          "length" : 1
+          "start" : 25,
+          "length" : 3
         },
         {
           "activity" : "generate1",
-          "start" : 33,
-          "length" : 5
+          "start" : 34,
+          "length" : 6
         },
         {
           "activity" : "generate2",
@@ -1097,63 +1092,58 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 21,
-          "length" : 5
-        },
-        {
-          "activity" : "load-configure",
-          "start" : 23,
-          "length" : 1
+          "start" : 22,
+          "length" : 7
         },
         {
           "activity" : "load",
           "start" : 23,
-          "length" : 5
+          "length" : 4
         },
         {
           "activity" : "generateSnapshots",
           "start" : 23,
-          "length" : 74
+          "length" : 75
         },
         {
           "activity" : "generateNarratives",
-          "start" : 24,
-          "length" : 32
+          "start" : 25,
+          "length" : 41
         },
         {
           "activity" : "validate",
           "start" : 26,
-          "length" : 375
+          "length" : 406
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 30,
+          "start" : 31,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 33,
-          "length" : 322
+          "start" : 34,
+          "length" : 320
         },
         {
           "activity" : "generate2",
           "start" : 45,
-          "length" : 1503
+          "length" : 1593
+        },
+        {
+          "activity" : "makeDependencies",
+          "start" : 58,
+          "length" : 1
         },
         {
           "activity" : "generateValidationPack",
           "start" : 64,
-          "length" : 9
-        },
-        {
-          "activity" : "scanProfilesForR5",
-          "start" : 76,
-          "length" : 1
+          "length" : 6
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 76,
-          "length" : 1
+          "start" : 77,
+          "length" : 2
         }
       ]
     },
@@ -1163,8 +1153,8 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 21,
-          "length" : 4
+          "start" : 22,
+          "length" : 7
         },
         {
           "activity" : "load",
@@ -1174,37 +1164,42 @@
         {
           "activity" : "generateSnapshots",
           "start" : 23,
-          "length" : 12
+          "length" : 13
         },
         {
           "activity" : "generateNarratives",
-          "start" : 24,
-          "length" : 8
+          "start" : 25,
+          "length" : 13
         },
         {
           "activity" : "validate",
-          "start" : 26,
-          "length" : 122
+          "start" : 27,
+          "length" : 140
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 30,
+          "start" : 31,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 33,
-          "length" : 158
+          "start" : 34,
+          "length" : 154
         },
         {
           "activity" : "generate2",
-          "start" : 46,
-          "length" : 236
+          "start" : 47,
+          "length" : 290
         },
         {
           "activity" : "generateValidationPack",
           "start" : 64,
-          "length" : 4
+          "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 77,
+          "length" : 1
         }
       ]
     },
@@ -1214,165 +1209,7 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 21,
-          "length" : 4
-        },
-        {
-          "activity" : "load",
-          "start" : 23,
-          "length" : 3
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 23,
-          "length" : 13
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 24,
-          "length" : 7
-        },
-        {
-          "activity" : "validate",
-          "start" : 26,
-          "length" : 37
-        },
-        {
-          "activity" : "generate1",
-          "start" : 34,
-          "length" : 57
-        },
-        {
-          "activity" : "generate2",
-          "start" : 46,
-          "length" : 120
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 64,
-          "length" : 2
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 76,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-oncofair-encounter.json",
-      "size" : 2177,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 21,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 23,
-          "length" : 3
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 23,
-          "length" : 77
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 24,
-          "length" : 16
-        },
-        {
-          "activity" : "validate",
-          "start" : 26,
-          "length" : 271
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 30,
-          "length" : 1
-        },
-        {
-          "activity" : "generate1",
-          "start" : 34,
-          "length" : 313
-        },
-        {
-          "activity" : "generate2",
-          "start" : 47,
-          "length" : 530
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 64,
-          "length" : 9
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 76,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-oncofair-ma-component-administration-status.json",
-      "size" : 2478,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 21,
-          "length" : 6
-        },
-        {
-          "activity" : "load",
-          "start" : 23,
-          "length" : 4
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 23,
-          "length" : 12
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 24,
-          "length" : 4
-        },
-        {
-          "activity" : "validate",
-          "start" : 26,
-          "length" : 28
-        },
-        {
-          "activity" : "checkConformanceResources",
-          "start" : 30,
-          "length" : 1
-        },
-        {
-          "activity" : "generate1",
-          "start" : 34,
-          "length" : 73
-        },
-        {
-          "activity" : "generate2",
-          "start" : 47,
-          "length" : 96
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 64,
-          "length" : 2
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-oncofair-ma-component-origin.json",
-      "size" : 2184,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 21,
+          "start" : 22,
           "length" : 5
         },
         {
@@ -1383,838 +1220,27 @@
         {
           "activity" : "generateSnapshots",
           "start" : 23,
-          "length" : 12
+          "length" : 14
         },
         {
           "activity" : "generateNarratives",
-          "start" : 24,
-          "length" : 6
-        },
-        {
-          "activity" : "validate",
-          "start" : 26,
-          "length" : 22
-        },
-        {
-          "activity" : "generate1",
-          "start" : 34,
-          "length" : 70
-        },
-        {
-          "activity" : "generate2",
-          "start" : 47,
-          "length" : 82
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 64,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-oncofair-ma-element-expirationdate.json",
-      "size" : 2147,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 21,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 23,
-          "length" : 3
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 23,
-          "length" : 12
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 24,
-          "length" : 6
-        },
-        {
-          "activity" : "validate",
-          "start" : 26,
-          "length" : 23
-        },
-        {
-          "activity" : "generate1",
-          "start" : 34,
-          "length" : 62
-        },
-        {
-          "activity" : "generate2",
-          "start" : 47,
-          "length" : 96
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 64,
-          "length" : 2
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-oncofair-ma-element-plannedperiod.json",
-      "size" : 2704,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 21,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 23,
-          "length" : 1
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 23,
-          "length" : 13
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 24,
-          "length" : 7
-        },
-        {
-          "activity" : "validate",
-          "start" : 26,
-          "length" : 38
-        },
-        {
-          "activity" : "generate1",
-          "start" : 34,
-          "length" : 73
-        },
-        {
-          "activity" : "generate2",
-          "start" : 47,
-          "length" : 128
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 64,
-          "length" : 2
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-oncofair-ma-element-traceability.json",
-      "size" : 3812,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 21,
-          "length" : 4
-        },
-        {
-          "activity" : "load",
-          "start" : 23,
-          "length" : 4
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 23,
-          "length" : 16
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 24,
-          "length" : 11
-        },
-        {
-          "activity" : "validate",
-          "start" : 26,
-          "length" : 76
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 30,
-          "length" : 1
-        },
-        {
-          "activity" : "generate1",
-          "start" : 34,
-          "length" : 113
-        },
-        {
-          "activity" : "generate2",
-          "start" : 48,
-          "length" : 128
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 64,
-          "length" : 2
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-oncofair-ma-element-urgent.json",
-      "size" : 2034,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 21,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 23,
-          "length" : 3
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 23,
-          "length" : 12
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 24,
-          "length" : 6
-        },
-        {
-          "activity" : "validate",
-          "start" : 26,
-          "length" : 31
-        },
-        {
-          "activity" : "generate1",
-          "start" : 34,
-          "length" : 48
-        },
-        {
-          "activity" : "generate2",
-          "start" : 48,
-          "length" : 66
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 64,
-          "length" : 2
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-oncofair-medication-type.json",
-      "size" : 2205,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 21,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 23,
-          "length" : 3
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 23,
-          "length" : 11
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 24,
-          "length" : 6
-        },
-        {
-          "activity" : "validate",
-          "start" : 27,
-          "length" : 20
-        },
-        {
-          "activity" : "generate1",
-          "start" : 34,
-          "length" : 50
-        },
-        {
-          "activity" : "generate2",
-          "start" : 48,
-          "length" : 99
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 64,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-oncofair-medication.json",
-      "size" : 1965,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 21,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 23,
-          "length" : 3
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 23,
-          "length" : 25
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 24,
-          "length" : 7
-        },
-        {
-          "activity" : "validate",
-          "start" : 27,
-          "length" : 85
-        },
-        {
-          "activity" : "generate1",
-          "start" : 34,
-          "length" : 145
-        },
-        {
-          "activity" : "generate2",
-          "start" : 48,
-          "length" : 173
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 64,
-          "length" : 11
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-component.json",
-      "size" : 8328,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 21,
-          "length" : 4
-        },
-        {
-          "activity" : "load-configure",
-          "start" : 23,
-          "length" : 1
-        },
-        {
-          "activity" : "load",
-          "start" : 23,
-          "length" : 2
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 23,
-          "length" : 79
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 24,
-          "length" : 42
-        },
-        {
-          "activity" : "validate",
-          "start" : 27,
-          "length" : 232
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 30,
-          "length" : 1
-        },
-        {
-          "activity" : "generate1",
-          "start" : 35,
-          "length" : 312
-        },
-        {
-          "activity" : "generate2",
-          "start" : 48,
-          "length" : 304
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 64,
-          "length" : 10
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 76,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-element.json",
-      "size" : 12868,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 21,
-          "length" : 6
-        },
-        {
-          "activity" : "load",
-          "start" : 23,
-          "length" : 6
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 23,
-          "length" : 43
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 24,
-          "length" : 22
-        },
-        {
-          "activity" : "validate",
-          "start" : 27,
-          "length" : 338
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 30,
-          "length" : 2
-        },
-        {
-          "activity" : "checkURLsUnique",
-          "start" : 30,
-          "length" : 1
-        },
-        {
-          "activity" : "generate1",
-          "start" : 35,
-          "length" : 420
-        },
-        {
-          "activity" : "generate2",
-          "start" : 48,
-          "length" : 391
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 64,
-          "length" : 9
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-report.json",
-      "size" : 3193,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 21,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 23,
-          "length" : 4
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 23,
-          "length" : 19
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 24,
-          "length" : 9
-        },
-        {
-          "activity" : "validate",
-          "start" : 27,
-          "length" : 179
-        },
-        {
-          "activity" : "generate1",
-          "start" : 35,
-          "length" : 197
-        },
-        {
-          "activity" : "generate2",
-          "start" : 49,
-          "length" : 271
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 64,
-          "length" : 4
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 76,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-component.json",
-      "size" : 8880,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 21,
-          "length" : 4
-        },
-        {
-          "activity" : "load",
-          "start" : 23,
-          "length" : 4
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 23,
-          "length" : 221
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 24,
-          "length" : 25
-        },
-        {
-          "activity" : "validate",
-          "start" : 27,
-          "length" : 406
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 30,
-          "length" : 2
-        },
-        {
-          "activity" : "generate1",
-          "start" : 36,
-          "length" : 497
-        },
-        {
-          "activity" : "generate2",
-          "start" : 49,
-          "length" : 480
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 64,
-          "length" : 16
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-element.json",
-      "size" : 23992,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 21,
-          "length" : 7
-        },
-        {
-          "activity" : "load",
-          "start" : 23,
+          "start" : 25,
           "length" : 8
         },
         {
-          "activity" : "generateSnapshots",
-          "start" : 23,
-          "length" : 36
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 24,
-          "length" : 66
-        },
-        {
           "activity" : "validate",
-          "start" : 28,
-          "length" : 774
-        },
-        {
-          "activity" : "checkConformanceResources",
-          "start" : 30,
-          "length" : 1
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 30,
-          "length" : 4
+          "start" : 27,
+          "length" : 35
         },
         {
           "activity" : "generate1",
-          "start" : 36,
-          "length" : 1174
-        },
-        {
-          "activity" : "generate2",
-          "start" : 49,
-          "length" : 1607
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 64,
-          "length" : 33
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 76,
-          "length" : 2
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-prescription.json",
-      "size" : 7433,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 21,
-          "length" : 4
-        },
-        {
-          "activity" : "load",
-          "start" : 23,
-          "length" : 5
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 24,
-          "length" : 18
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 25,
-          "length" : 30
-        },
-        {
-          "activity" : "validate",
-          "start" : 29,
-          "length" : 262
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 30,
-          "length" : 2
-        },
-        {
-          "activity" : "generate1",
-          "start" : 37,
-          "length" : 510
-        },
-        {
-          "activity" : "generate2",
-          "start" : 51,
-          "length" : 616
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 64,
-          "length" : 13
-        },
-        {
-          "activity" : "scanProfilesForR5",
-          "start" : 76,
-          "length" : 1
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 76,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-oncofair-mr-component-solute.json",
-      "size" : 2023,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 21,
-          "length" : 3
-        },
-        {
-          "activity" : "load-configure",
-          "start" : 23,
-          "length" : 1
-        },
-        {
-          "activity" : "load",
-          "start" : 23,
-          "length" : 3
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 24,
-          "length" : 2
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 25,
-          "length" : 7
-        },
-        {
-          "activity" : "validate",
-          "start" : 29,
-          "length" : 16
-        },
-        {
-          "activity" : "generate1",
-          "start" : 38,
-          "length" : 49
-        },
-        {
-          "activity" : "generate2",
-          "start" : 52,
-          "length" : 109
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 64,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-oncofair-mr-element-go-nogo.json",
-      "size" : 3774,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 21,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 23,
-          "length" : 4
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 24,
-          "length" : 3
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 25,
-          "length" : 10
-        },
-        {
-          "activity" : "validate",
-          "start" : 29,
-          "length" : 48
-        },
-        {
-          "activity" : "generate1",
-          "start" : 38,
-          "length" : 112
-        },
-        {
-          "activity" : "generate2",
-          "start" : 52,
-          "length" : 123
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 64,
-          "length" : 3
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-oncofair-mr-element-link-type.json",
-      "size" : 2062,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 21,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 23,
-          "length" : 3
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 24,
-          "length" : 2
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 25,
-          "length" : 6
-        },
-        {
-          "activity" : "validate",
-          "start" : 29,
-          "length" : 13
-        },
-        {
-          "activity" : "generate1",
-          "start" : 38,
-          "length" : 48
-        },
-        {
-          "activity" : "generate2",
-          "start" : 52,
-          "length" : 70
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 64,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-oncofair-mr-element-rank.json",
-      "size" : 2160,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 21,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 23,
-          "length" : 3
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 24,
-          "length" : 2
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 25,
-          "length" : 16
-        },
-        {
-          "activity" : "validate",
-          "start" : 29,
-          "length" : 13
-        },
-        {
-          "activity" : "generate1",
-          "start" : 38,
-          "length" : 49
-        },
-        {
-          "activity" : "generate2",
-          "start" : 52,
+          "start" : 34,
           "length" : 52
+        },
+        {
+          "activity" : "generate2",
+          "start" : 47,
+          "length" : 142
         },
         {
           "activity" : "generateExampleZip",
@@ -2229,13 +1255,457 @@
       ]
     },
     {
-      "name" : "fsh-generated/resources/StructureDefinition-oncofair-mr-element-supply.json",
-      "size" : 2025,
+      "name" : "fsh-generated/resources/StructureDefinition-oncofair-encounter.json",
+      "size" : 2177,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 21,
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
           "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 23,
+          "length" : 104
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 25,
+          "length" : 16
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 343
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 31,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 34,
+          "length" : 293
+        },
+        {
+          "activity" : "generate2",
+          "start" : 47,
+          "length" : 688
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 9
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 77,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-oncofair-ma-component-administration-status.json",
+      "size" : 2478,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 24,
+          "length" : 15
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 25,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 31
+        },
+        {
+          "activity" : "generate1",
+          "start" : 35,
+          "length" : 51
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 148
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-oncofair-ma-component-origin.json",
+      "size" : 2184,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 24,
+          "length" : 11
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 25,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 29
+        },
+        {
+          "activity" : "generate1",
+          "start" : 35,
+          "length" : 48
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 114
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-oncofair-ma-element-expirationdate.json",
+      "size" : 2147,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 24,
+          "length" : 8
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 25,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 29
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 31,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 35,
+          "length" : 49
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 104
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-oncofair-ma-element-plannedperiod.json",
+      "size" : 2704,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 24,
+          "length" : 10
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 25,
+          "length" : 8
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 39
+        },
+        {
+          "activity" : "generate1",
+          "start" : 35,
+          "length" : 72
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 111
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-oncofair-ma-element-traceability.json",
+      "size" : 3812,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 24,
+          "length" : 17
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 25,
+          "length" : 11
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 91
+        },
+        {
+          "activity" : "generate1",
+          "start" : 35,
+          "length" : 113
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 141
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 2
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 77,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-oncofair-ma-element-urgent.json",
+      "size" : 2034,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 24,
+          "length" : 12
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 25,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 29
+        },
+        {
+          "activity" : "generate1",
+          "start" : 35,
+          "length" : 48
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 82
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-oncofair-medication-type.json",
+      "size" : 2205,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 24,
+          "length" : 11
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 25,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 28
+        },
+        {
+          "activity" : "generate1",
+          "start" : 35,
+          "length" : 51
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 83
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-oncofair-medication.json",
+      "size" : 1965,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 24,
+          "length" : 25
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 25,
+          "length" : 7
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 117
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 31,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 35,
+          "length" : 147
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 273
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-component.json",
+      "size" : 8528,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 6
         },
         {
           "activity" : "load",
@@ -2245,7 +1715,333 @@
         {
           "activity" : "generateSnapshots",
           "start" : 24,
+          "length" : 92
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 25,
+          "length" : 51
+        },
+        {
+          "activity" : "validate",
+          "start" : 28,
+          "length" : 377
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 31,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 35,
+          "length" : 367
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 513
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-element.json",
+      "size" : 13088,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 8
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 6
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 24,
+          "length" : 30
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 25,
+          "length" : 21
+        },
+        {
+          "activity" : "validate",
+          "start" : 28,
+          "length" : 302
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 31,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 36,
+          "length" : 456
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 679
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 10
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 77,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-report.json",
+      "size" : 3412,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 24,
+          "length" : 20
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 25,
+          "length" : 16
+        },
+        {
+          "activity" : "validate",
+          "start" : 28,
+          "length" : 184
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 31,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 31,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 36,
+          "length" : 236
+        },
+        {
+          "activity" : "generate2",
+          "start" : 50,
+          "length" : 447
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-component.json",
+      "size" : 8880,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 5
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 24,
+          "length" : 187
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 25,
+          "length" : 35
+        },
+        {
+          "activity" : "validate",
+          "start" : 28,
+          "length" : 364
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 31,
           "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 36,
+          "length" : 486
+        },
+        {
+          "activity" : "generate2",
+          "start" : 50,
+          "length" : 781
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 9
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 77,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-element.json",
+      "size" : 22556,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 15
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 7
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 24,
+          "length" : 66
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 25,
+          "length" : 160
+        },
+        {
+          "activity" : "validate",
+          "start" : 29,
+          "length" : 689
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 31,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 37,
+          "length" : 1165
+        },
+        {
+          "activity" : "generate2",
+          "start" : 51,
+          "length" : 1061
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 21
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 77,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-prescription.json",
+      "size" : 7433,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 7
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 24,
+          "length" : 27
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 25,
+          "length" : 29
+        },
+        {
+          "activity" : "validate",
+          "start" : 29,
+          "length" : 252
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 31,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 38,
+          "length" : 459
+        },
+        {
+          "activity" : "generate2",
+          "start" : 52,
+          "length" : 502
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 12
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-oncofair-mr-component-solute.json",
+      "size" : 2023,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 24,
+          "length" : 4
         },
         {
           "activity" : "generateNarratives",
@@ -2254,18 +2050,227 @@
         },
         {
           "activity" : "validate",
-          "start" : 29,
-          "length" : 13
+          "start" : 30,
+          "length" : 22
         },
         {
           "activity" : "generate1",
-          "start" : 38,
+          "start" : 39,
           "length" : 48
         },
         {
           "activity" : "generate2",
-          "start" : 52,
+          "start" : 53,
+          "length" : 54
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-oncofair-mr-element-go-nogo.json",
+      "size" : 3774,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 24,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 25,
+          "length" : 10
+        },
+        {
+          "activity" : "validate",
+          "start" : 30,
+          "length" : 59
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 31,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 112
+        },
+        {
+          "activity" : "generate2",
+          "start" : 53,
+          "length" : 78
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 2
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 77,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-oncofair-mr-element-link-type.json",
+      "size" : 2062,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 24,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 25,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 30,
+          "length" : 19
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 48
+        },
+        {
+          "activity" : "generate2",
+          "start" : 53,
           "length" : 51
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-oncofair-mr-element-rank.json",
+      "size" : 2160,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 25,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 30,
+          "length" : 17
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 48
+        },
+        {
+          "activity" : "generate2",
+          "start" : 53,
+          "length" : 47
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 1
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 77,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-oncofair-mr-element-supply.json",
+      "size" : 2025,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 25,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 30,
+          "length" : 19
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 47
+        },
+        {
+          "activity" : "generate2",
+          "start" : 53,
+          "length" : 47
         },
         {
           "activity" : "generateValidationPack",
@@ -2280,13 +2285,8 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 21,
-          "length" : 4
-        },
-        {
-          "activity" : "scan",
-          "start" : 23,
-          "length" : 1
+          "start" : 22,
+          "length" : 5
         },
         {
           "activity" : "load",
@@ -2296,32 +2296,32 @@
         {
           "activity" : "generateSnapshots",
           "start" : 24,
-          "length" : 2
+          "length" : 3
         },
         {
           "activity" : "generateNarratives",
           "start" : 25,
-          "length" : 5
+          "length" : 6
         },
         {
           "activity" : "validate",
-          "start" : 29,
-          "length" : 14
+          "start" : 30,
+          "length" : 17
         },
         {
           "activity" : "generate1",
-          "start" : 38,
+          "start" : 39,
           "length" : 50
         },
         {
           "activity" : "generate2",
-          "start" : 52,
-          "length" : 52
+          "start" : 53,
+          "length" : 49
         },
         {
           "activity" : "generateValidationPack",
           "start" : 64,
-          "length" : 4
+          "length" : 1
         }
       ]
     },
@@ -2331,8 +2331,8 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 21,
-          "length" : 2
+          "start" : 22,
+          "length" : 6
         },
         {
           "activity" : "load",
@@ -2342,32 +2342,27 @@
         {
           "activity" : "generateSnapshots",
           "start" : 24,
-          "length" : 2
+          "length" : 3
         },
         {
           "activity" : "generateNarratives",
           "start" : 25,
-          "length" : 5
+          "length" : 6
         },
         {
           "activity" : "validate",
-          "start" : 29,
-          "length" : 14
-        },
-        {
-          "activity" : "scanForUsageStats",
           "start" : 30,
-          "length" : 1
+          "length" : 17
         },
         {
           "activity" : "generate1",
-          "start" : 38,
+          "start" : 39,
           "length" : 48
         },
         {
           "activity" : "generate2",
-          "start" : 52,
-          "length" : 56
+          "start" : 53,
+          "length" : 54
         },
         {
           "activity" : "generateValidationPack",
@@ -2382,7 +2377,7 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 21,
+          "start" : 22,
           "length" : 5
         },
         {
@@ -2393,7 +2388,7 @@
         {
           "activity" : "generateSnapshots",
           "start" : 24,
-          "length" : 2
+          "length" : 3
         },
         {
           "activity" : "generateNarratives",
@@ -2402,18 +2397,23 @@
         },
         {
           "activity" : "validate",
-          "start" : 29,
-          "length" : 14
+          "start" : 30,
+          "length" : 13
+        },
+        {
+          "activity" : "validate",
+          "start" : 33,
+          "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 38,
-          "length" : 48
+          "start" : 39,
+          "length" : 47
         },
         {
           "activity" : "generate2",
-          "start" : 52,
-          "length" : 54
+          "start" : 53,
+          "length" : 51
         },
         {
           "activity" : "generateValidationPack",
@@ -2428,7 +2428,7 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 21,
+          "start" : 22,
           "length" : 5
         },
         {
@@ -2439,7 +2439,7 @@
         {
           "activity" : "generateSnapshots",
           "start" : 24,
-          "length" : 9
+          "length" : 15
         },
         {
           "activity" : "generateNarratives",
@@ -2448,33 +2448,28 @@
         },
         {
           "activity" : "validate",
-          "start" : 29,
-          "length" : 140
+          "start" : 30,
+          "length" : 117
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 30,
+          "start" : 31,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 38,
-          "length" : 291
+          "start" : 39,
+          "length" : 289
         },
         {
           "activity" : "generate2",
-          "start" : 52,
-          "length" : 304
+          "start" : 53,
+          "length" : 292
         },
         {
           "activity" : "generateValidationPack",
           "start" : 64,
-          "length" : 8
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 76,
-          "length" : 1
+          "length" : 5
         }
       ]
     },
@@ -2484,13 +2479,8 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 21,
-          "length" : 3
-        },
-        {
-          "activity" : "load-configure",
-          "start" : 23,
-          "length" : 1
+          "start" : 22,
+          "length" : 5
         },
         {
           "activity" : "load",
@@ -2500,37 +2490,42 @@
         {
           "activity" : "generateSnapshots",
           "start" : 24,
-          "length" : 7
+          "length" : 12
         },
         {
           "activity" : "generateNarratives",
           "start" : 25,
-          "length" : 16
+          "length" : 14
         },
         {
           "activity" : "validate",
-          "start" : 29,
-          "length" : 87
+          "start" : 30,
+          "length" : 129
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 30,
+          "start" : 31,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 38,
-          "length" : 215
+          "start" : 39,
+          "length" : 213
         },
         {
           "activity" : "generate2",
           "start" : 53,
-          "length" : 251
+          "length" : 261
         },
         {
           "activity" : "generateValidationPack",
           "start" : 64,
-          "length" : 6
+          "length" : 4
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 77,
+          "length" : 1
         }
       ]
     },
@@ -2540,352 +2535,8 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 21,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 23,
-          "length" : 4
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 24,
-          "length" : 4
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 25,
-          "length" : 13
-        },
-        {
-          "activity" : "validate",
-          "start" : 29,
-          "length" : 44
-        },
-        {
-          "activity" : "generate1",
-          "start" : 39,
-          "length" : 118
-        },
-        {
-          "activity" : "generate2",
-          "start" : 53,
-          "length" : 121
-        },
-        {
-          "activity" : "makeDependencies",
-          "start" : 58,
-          "length" : 1
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 64,
-          "length" : 3
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-forme-pharmaceutique-valueset.json",
-      "size" : 659,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 21,
-          "length" : 4
-        },
-        {
-          "activity" : "load",
-          "start" : 23,
-          "length" : 3
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 25,
-          "length" : 68
-        },
-        {
-          "activity" : "validate",
-          "start" : 25,
-          "length" : 12
-        },
-        {
-          "activity" : "generate1",
-          "start" : 39,
-          "length" : 9
-        },
-        {
-          "activity" : "generate2",
-          "start" : 53,
-          "length" : 1401
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-medical-units-oncofair-valueset.json",
-      "size" : 458,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 21,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 23,
-          "length" : 3
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 25,
-          "length" : 2
-        },
-        {
-          "activity" : "validate",
-          "start" : 25,
+          "start" : 22,
           "length" : 6
-        },
-        {
-          "activity" : "generate1",
-          "start" : 39,
-          "length" : 8
-        },
-        {
-          "activity" : "generate2",
-          "start" : 54,
-          "length" : 462
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-medications-oncofair-valueset.json",
-      "size" : 409,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 21,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 23,
-          "length" : 3
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 25,
-          "length" : 2
-        },
-        {
-          "activity" : "validate",
-          "start" : 25,
-          "length" : 5
-        },
-        {
-          "activity" : "generate1",
-          "start" : 39,
-          "length" : 12
-        },
-        {
-          "activity" : "generate2",
-          "start" : 55,
-          "length" : 40
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-siph-gonogo-oncofair-valueset.json",
-      "size" : 404,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 21,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 23,
-          "length" : 3
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 25,
-          "length" : 3
-        },
-        {
-          "activity" : "validate",
-          "start" : 25,
-          "length" : 4
-        },
-        {
-          "activity" : "generate1",
-          "start" : 39,
-          "length" : 8
-        },
-        {
-          "activity" : "generate2",
-          "start" : 55,
-          "length" : 51
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-siph-listeald-oncofair-valueset.json",
-      "size" : 414,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 21,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 23,
-          "length" : 3
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 25,
-          "length" : 1
-        },
-        {
-          "activity" : "validate",
-          "start" : 25,
-          "length" : 4
-        },
-        {
-          "activity" : "generate1",
-          "start" : 39,
-          "length" : 8
-        },
-        {
-          "activity" : "generate2",
-          "start" : 55,
-          "length" : 73
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-siph-natureproppharm-oncofair-valueset.json",
-      "size" : 449,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 21,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 23,
-          "length" : 3
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 25,
-          "length" : 2
-        },
-        {
-          "activity" : "validate",
-          "start" : 25,
-          "length" : 4
-        },
-        {
-          "activity" : "generate1",
-          "start" : 39,
-          "length" : 8
-        },
-        {
-          "activity" : "generate2",
-          "start" : 55,
-          "length" : 38
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 64,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-siph-paramposoconditionnelle-oncofair-valueset.json",
-      "size" : 489,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 21,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 23,
-          "length" : 2
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 25,
-          "length" : 1
-        },
-        {
-          "activity" : "validate",
-          "start" : 25,
-          "length" : 3
-        },
-        {
-          "activity" : "generate1",
-          "start" : 39,
-          "length" : 10
-        },
-        {
-          "activity" : "generate2",
-          "start" : 55,
-          "length" : 47
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-siph-renscomplement-oncofair-valueset.json",
-      "size" : 444,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 21,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 23,
-          "length" : 3
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 25,
-          "length" : 2
-        },
-        {
-          "activity" : "validate",
-          "start" : 25,
-          "length" : 4
-        },
-        {
-          "activity" : "generate1",
-          "start" : 39,
-          "length" : 8
-        },
-        {
-          "activity" : "generate2",
-          "start" : 55,
-          "length" : 51
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-siph-statutcomposantadm-oncofair-valueset.json",
-      "size" : 464,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 21,
-          "length" : 3
         },
         {
           "activity" : "load-configure",
@@ -2895,27 +2546,371 @@
         {
           "activity" : "load",
           "start" : 23,
-          "length" : 3
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 24,
+          "length" : 6
         },
         {
           "activity" : "generateNarratives",
           "start" : 25,
-          "length" : 1
+          "length" : 22
         },
         {
           "activity" : "validate",
-          "start" : 25,
-          "length" : 4
+          "start" : 30,
+          "length" : 52
         },
         {
           "activity" : "generate1",
           "start" : 39,
+          "length" : 114
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 83
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-forme-pharmaceutique-valueset.json",
+      "size" : 659,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 7
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 25,
+          "length" : 100
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 12
+        },
+        {
+          "activity" : "generate1",
+          "start" : 40,
           "length" : 9
         },
         {
           "activity" : "generate2",
+          "start" : 54,
+          "length" : 1354
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-medical-units-oncofair-valueset.json",
+      "size" : 458,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 26,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 40,
+          "length" : 8
+        },
+        {
+          "activity" : "generate2",
           "start" : 55,
-          "length" : 51
+          "length" : 403
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-medications-oncofair-valueset.json",
+      "size" : 409,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 40,
+          "length" : 7
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 42
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-siph-gonogo-oncofair-valueset.json",
+      "size" : 404,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 26,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 40,
+          "length" : 8
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 28
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-siph-listeald-oncofair-valueset.json",
+      "size" : 414,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 40,
+          "length" : 8
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 55
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-siph-natureproppharm-oncofair-valueset.json",
+      "size" : 449,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 40,
+          "length" : 8
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 35
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-siph-paramposoconditionnelle-oncofair-valueset.json",
+      "size" : 489,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 26,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 40,
+          "length" : 7
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 44
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-siph-renscomplement-oncofair-valueset.json",
+      "size" : 444,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 40,
+          "length" : 8
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 42
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-siph-statutcomposantadm-oncofair-valueset.json",
+      "size" : 464,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 40,
+          "length" : 8
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 32
         }
       ]
     },
@@ -2925,38 +2920,43 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 21,
-          "length" : 2
+          "start" : 22,
+          "length" : 5
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "scan",
+          "start" : 23,
+          "length" : 1
         },
         {
           "activity" : "load",
           "start" : 23,
-          "length" : 3
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 25,
-          "length" : 2
-        },
-        {
-          "activity" : "validate",
-          "start" : 25,
-          "length" : 4
-        },
-        {
-          "activity" : "validate",
-          "start" : 30,
           "length" : 1
         },
         {
+          "activity" : "generateNarratives",
+          "start" : 26,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 3
+        },
+        {
           "activity" : "generate1",
-          "start" : 39,
-          "length" : 9
+          "start" : 40,
+          "length" : 8
         },
         {
           "activity" : "generate2",
-          "start" : 55,
-          "length" : 30
+          "start" : 56,
+          "length" : 27
         }
       ]
     },
@@ -2966,33 +2966,33 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 21,
-          "length" : 2
+          "start" : 22,
+          "length" : 4
         },
         {
           "activity" : "load",
           "start" : 23,
-          "length" : 3
+          "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 25,
+          "start" : 26,
           "length" : 2
         },
         {
           "activity" : "validate",
-          "start" : 25,
-          "length" : 6
+          "start" : 26,
+          "length" : 3
         },
         {
           "activity" : "generate1",
-          "start" : 39,
+          "start" : 40,
           "length" : 8
         },
         {
           "activity" : "generate2",
-          "start" : 55,
-          "length" : 50
+          "start" : 56,
+          "length" : 36
         }
       ]
     },
@@ -3002,8 +3002,8 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 21,
-          "length" : 2
+          "start" : 22,
+          "length" : 4
         },
         {
           "activity" : "load",
@@ -3012,23 +3012,23 @@
         },
         {
           "activity" : "generateNarratives",
-          "start" : 25,
-          "length" : 3
+          "start" : 26,
+          "length" : 2
         },
         {
           "activity" : "validate",
-          "start" : 25,
-          "length" : 6
+          "start" : 26,
+          "length" : 3
         },
         {
           "activity" : "generate1",
-          "start" : 39,
-          "length" : 9
+          "start" : 40,
+          "length" : 7
         },
         {
           "activity" : "generate2",
-          "start" : 55,
-          "length" : 52
+          "start" : 56,
+          "length" : 38
         }
       ]
     },
@@ -3038,33 +3038,43 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 21,
-          "length" : 2
+          "start" : 22,
+          "length" : 5
+        },
+        {
+          "activity" : "scan",
+          "start" : 23,
+          "length" : 1
         },
         {
           "activity" : "load",
           "start" : 23,
-          "length" : 3
+          "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 25,
+          "start" : 26,
           "length" : 3
         },
         {
           "activity" : "validate",
-          "start" : 25,
-          "length" : 4
+          "start" : 26,
+          "length" : 3
         },
         {
           "activity" : "generate1",
-          "start" : 39,
+          "start" : 40,
           "length" : 8
         },
         {
           "activity" : "generate2",
-          "start" : 55,
-          "length" : 38
+          "start" : 56,
+          "length" : 41
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 1
         }
       ]
     },
@@ -3074,33 +3084,33 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 21,
-          "length" : 2
+          "start" : 22,
+          "length" : 4
         },
         {
           "activity" : "load",
           "start" : 23,
-          "length" : 3
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 25,
           "length" : 1
         },
         {
+          "activity" : "generateNarratives",
+          "start" : 26,
+          "length" : 2
+        },
+        {
           "activity" : "validate",
-          "start" : 25,
-          "length" : 4
+          "start" : 26,
+          "length" : 3
         },
         {
           "activity" : "generate1",
-          "start" : 39,
-          "length" : 9
+          "start" : 40,
+          "length" : 8
         },
         {
           "activity" : "generate2",
-          "start" : 55,
-          "length" : 30
+          "start" : 56,
+          "length" : 37
         }
       ]
     },
@@ -3110,38 +3120,38 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 21,
-          "length" : 3
+          "start" : 22,
+          "length" : 5
+        },
+        {
+          "activity" : "scan",
+          "start" : 23,
+          "length" : 1
         },
         {
           "activity" : "load",
           "start" : 23,
-          "length" : 3
-        },
-        {
-          "activity" : "checkR4R4B",
-          "start" : 24,
           "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 25,
+          "start" : 26,
           "length" : 2
         },
         {
           "activity" : "validate",
-          "start" : 25,
-          "length" : 5
+          "start" : 26,
+          "length" : 4
         },
         {
           "activity" : "generate1",
-          "start" : 39,
-          "length" : 11
+          "start" : 40,
+          "length" : 8
         },
         {
           "activity" : "generate2",
-          "start" : 55,
-          "length" : 220
+          "start" : 56,
+          "length" : 232
         }
       ]
     }
