@@ -1,6 +1,7 @@
 CodeSystem: SIPhListeALDOncoFAIRCodeSystem
 Id: siph-listeald-oncofair-codesystem
 Description : "Code system pour l'attribut ListeALD"
+Title : "Liste ALD Code System"
 * ^experimental = true
 * ^caseSensitive = true
 
@@ -13,7 +14,7 @@ Description : "Code system pour l'attribut ListeALD"
 * #ALD7 "Déficit immunitaire primitif grave nécessitant un traitement prolongé, infection par le virus de limmuno-déficience humaine"
 * #ALD8 "Diabète de type 1 et diabète de type 2"
 * #ALD9 "Forme grave des affections neurologiques et musculaires (dont myopathie), épilepsie grave"
-* #ALD10 "Hémoglobinopathies, hémolyses, chroniques constitutionnelles et acquises sévères "
+* #ALD10 "Hémoglobinopathies, hémolyses, chroniques constitutionnelles et acquises sévères"
 * #ALD11 "Hémophilies et affections constitutionnelles de lhémostase graves"
 * #ALD12 "Hypertension artérielle sévère"
 * #ALD13 "Maladie coronaire"

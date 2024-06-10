@@ -27,7 +27,7 @@ Description: "An example instance of an OncoFAIR MedicationAdministration Elemen
 * dosage.route.coding[0].code = #26643006
 * dosage.route.coding[0].display = "Oral route"
 
-* dosage.site.coding[0].system = "http://snomed.info/sct"
+* dosage.site.coding[0].system = "http://ltsi.univ-rennes.fr/CodeSystem/snomedct"
 * dosage.site.coding[0].code = #49928004
 * dosage.site.coding[0].display = "Throat"
 

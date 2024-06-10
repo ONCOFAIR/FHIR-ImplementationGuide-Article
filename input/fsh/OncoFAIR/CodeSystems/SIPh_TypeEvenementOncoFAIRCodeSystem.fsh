@@ -1,6 +1,8 @@
 CodeSystem: SIPhTypeEvenementOncoFAIRCodeSystem
 Id: siph-typeevenement-oncofair-codesystem
 Description : "Code system pour l'attribut TypeEvenement"
+Title : "Type évènement Code System"
+
 * ^experimental = true
 * ^caseSensitive = true
 

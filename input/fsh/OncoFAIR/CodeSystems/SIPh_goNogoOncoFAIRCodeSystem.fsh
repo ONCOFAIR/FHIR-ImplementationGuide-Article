@@ -1,5 +1,6 @@
 CodeSystem: SIPhgoNogoOncoFAIRCodeSystem
 Id: siph-gonogo-oncofair-codesystem
+Title : "goNogo Code System"
 Description : "Code system pour l'attribut goNogo"
 * ^experimental = true
 * ^caseSensitive = true

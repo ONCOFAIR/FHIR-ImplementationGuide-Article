@@ -1,6 +1,6 @@
 Instance: ExampleOncoFAIRMedicationRequestElement
 InstanceOf: OncoFAIRMedicationRequestElement
-Title: "Example OncoFAIR MedicationRequest Element "
+Title: "Example OncoFAIR MedicationRequest Element"
 Description: "Example instance of OncoFAIRMedicationRequestElement"
 
 * basedOn[prescription] = Reference(ExampleOncoFAIRMedicationRequestPrescription)
@@ -36,8 +36,12 @@ Description: "Example instance of OncoFAIRMedicationRequestElement"
 * dosageInstruction[posology].timing.repeat.duration = 1.0
 * dosageInstruction[posology].timing.repeat.durationUnit = #s
 
-* dosageInstruction[posology].doseAndRate.rateQuantity = 50 'mg/h'
-* dosageInstruction[posology].doseAndRate.doseQuantity = 250 'mg'
+* dosageInstruction[posology].doseAndRate.rateQuantity.value = 50
+* dosageInstruction[posology].doseAndRate.rateQuantity.unit = "mg/h"
+* dosageInstruction[posology].doseAndRate.rateQuantity.system = "http://unitsofmeasure.org"
+* dosageInstruction[posology].doseAndRate.doseQuantity.value = 250
+* dosageInstruction[posology].doseAndRate.doseQuantity.unit = "mg"
+* dosageInstruction[posology].doseAndRate.doseQuantity.system = "http://unitsofmeasure.org"
 * dosageInstruction[posology].timing.repeat.frequency = 2
 
 * dosageInstruction[element].method.coding[0].system = "http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem"

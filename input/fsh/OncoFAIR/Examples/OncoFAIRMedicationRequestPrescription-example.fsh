@@ -14,8 +14,8 @@ Description: "An example instance of OncoFAIR MedicationRequest Prescription."
 * reason = Reference (ExampleOncoFAIRObservation)
 * basedOn = Reference (ExampleOncoFAIRCarePlan)
 
-/** supportingInformation[accomodationUnit].reference = "HealthcareService" 
-* supportingInformation[accomodationUnit].reference = "HealthcareService" */
+* supportingInformation[accomodationUnit] = Reference (ExampleHealthcareServiceAccomodation)
+* supportingInformation[medicalLiabiltyUnit] = Reference (ExampleHealthcareServiceMedicalLiability) 
 * identifier.value = "12345"
 * note.text = "This is a default comment on the prescription by the prescribing doctor."
 

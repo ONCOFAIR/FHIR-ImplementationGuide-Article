@@ -1,6 +1,8 @@
 CodeSystem: SIPhTypeEltPLAOncoFAIRCodeSystem
 Id: siph-typeeltpla-oncofair-codesystem
 Description : "Code system pour l'attribut TypeEltPLA"
+Title : "Type de l'élément d'administration Code System"
+
 * ^experimental = true
 * ^caseSensitive = true
 

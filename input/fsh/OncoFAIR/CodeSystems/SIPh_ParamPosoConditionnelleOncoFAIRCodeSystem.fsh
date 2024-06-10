@@ -1,6 +1,7 @@
 CodeSystem: SIPhParamPosoConditionnelleOncoFAIRCodeSystem
 Id: siph-paramposoconditionnelle-oncofair-codesystem
 Description : "Code system pour l'attribut ParamPosoConditionnelle"
+Title : "Paremètres posologie conditionnelle Code System"
 * ^experimental = true
 * ^caseSensitive = true
 

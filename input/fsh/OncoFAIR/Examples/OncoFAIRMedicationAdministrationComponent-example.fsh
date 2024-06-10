@@ -14,8 +14,12 @@ Description: "An example instance of an OncoFAIR MedicationAdministration Compon
 
 * status = #in-progress
 
-* dosage.dose = 250 'mg'
-* dosage.rateQuantity = 50 'mg/h'
+* dosage.dose.value = 250
+* dosage.dose.unit = "mg"
+* dosage.dose.system = "http://unitsofmeasure.org"
+* dosage.rateQuantity.value = 50
+* dosage.rateQuantity.unit = "mg/h"
+* dosage.rateQuantity.system = "http://unitsofmeasure.org"
 
 * note[comments].text = "Patient experienced mild nausea."
 * note[wording].text = "Paracetamol 500mg Tablet"

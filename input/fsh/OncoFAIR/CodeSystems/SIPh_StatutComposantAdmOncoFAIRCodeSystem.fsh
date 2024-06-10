@@ -1,6 +1,8 @@
 CodeSystem: SIPhStatutComposantAdmOncoFAIRCodeSystem
 Id: siph-statutcomposantadm-oncofair-codesystem
 Description : "Code system pour l'attribut StatutComposantAdm"
+Title : "Statut composant administré Code System"
+
 * ^experimental = true
 * ^caseSensitive = true
 

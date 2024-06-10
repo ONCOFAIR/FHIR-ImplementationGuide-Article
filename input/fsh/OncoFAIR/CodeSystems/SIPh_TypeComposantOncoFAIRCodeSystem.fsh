@@ -1,6 +1,8 @@
 CodeSystem: SIPhTypeComposantOncoFAIRCodeSystem
 Id: siph-typecomposant-oncofair-codesystem
 Description : "Code system pour l'attribut TypeComposant"
+Title : "Type de composant Code System"
+
 * ^experimental = true
 * ^caseSensitive = true
 

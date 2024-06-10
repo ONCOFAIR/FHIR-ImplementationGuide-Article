@@ -1,6 +1,8 @@
 CodeSystem: SIPhRensComplementOncoFAIRCodeSystem
 Id: siph-renscomplement-oncofair-codesystem
 Description : "Code system pour l'attribut RensComplement"
+Title : "Renseignement complémentaire Code System"
+
 * ^experimental = true
 * ^caseSensitive = true
 

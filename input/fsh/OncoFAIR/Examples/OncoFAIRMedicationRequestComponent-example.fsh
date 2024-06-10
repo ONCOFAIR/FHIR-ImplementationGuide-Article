@@ -11,7 +11,9 @@ Description: "Example instance of OncoFAIRMedicationRequestComponent"
 * subject = Reference(ExampleOncoFAIRPatient)
 * basedOn = Reference (ExampleOncoFAIRMedicationRequestElement)
 
-* dosageInstruction.doseAndRate.doseQuantity = 1 'mg'
+* dosageInstruction.doseAndRate.doseQuantity.value = 250
+* dosageInstruction.doseAndRate.doseQuantity.unit = "mg"
+* dosageInstruction.doseAndRate.doseQuantity.system = "http://unitsofmeasure.org"
 
 * substitution.allowedBoolean = false
 
