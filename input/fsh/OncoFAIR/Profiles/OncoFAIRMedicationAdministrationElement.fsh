@@ -9,6 +9,8 @@ Correspond à l’activité induite par un élément de prescription et sa posol
 * partOf only Reference(OncoFAIRMedicationAdministrationReport)
 * partOf ^short = "The medication administration report linked to the element of administration"
 
+* medication.concept.coding = #element
+
 * device MS
 * device ^short = "Specifies, where applicable, the medical devices or equipment to be used to administer the product. By default, the associated devices are those listed in the prescription element associated with the administration element"
 * request MS
@@ -40,8 +42,6 @@ Correspond à l’activité induite par un élément de prescription et sa posol
     code 0..1 and 
     nature 0..1
 
-/*category[code] ^short = "Code identifying the nature of the administration element"
-category[nature] ^short = "Nature of the primary packaging of the delivery element"*/
 
 * note MS
 * note ^slicing.discriminator.type = #value
@@ -62,6 +62,10 @@ category[nature] ^short = "Nature of the primary packaging of the delivery eleme
         OncoFAIRMAElementTraceability named oncofair-ma-element-traceability 0..1 and
         OncoFAIRMAElementPlannedPeriod named oncofair-ma-plannedperiod 1..1 and
         OncoFAIRElementForm named oncofair-element-form 0..1
+
+
+/*category[code] ^short = "Code identifying the nature of the administration element"
+category[nature] ^short = "Nature of the primary packaging of the delivery element"*/
 
 
 Mapping:  mapping_OncoFAIRMedicationAdministrationElement

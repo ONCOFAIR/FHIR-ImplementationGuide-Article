@@ -9,6 +9,8 @@ Regroupe l’ensemble des éléments de prescription reçus sur lesquels le phar
 * encounter only Reference(OncoFAIREncounter)
 * encounter ^short = "The encounter linked to the administration report"
 
+* medication.concept.coding = #report
+
 * performer 1..1 MS
 * performer.actor ^short = "Identification of the person who planned, administered or monitored the administration of the medicines represented by the administration elements"
 

@@ -11,6 +11,7 @@ Cet objet correspond à un produit qui appartient à la nomenclature de médicam
 
 * medication MS
 * medication only CodeableReference(OncoFAIRMedication)
+* medication.concept.coding.code = #component
 * medication ^short = "The medication linked to the administered component"
 
 /*Si on suit la logique du composant prescrit, il n'y a pas le type et le code du composant dans ce profil. Ils sont dans le profil medication.*/

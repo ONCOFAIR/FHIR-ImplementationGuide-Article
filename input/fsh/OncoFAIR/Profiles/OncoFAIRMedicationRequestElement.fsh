@@ -7,8 +7,8 @@ preparation or an infusion). \r\n
 Correspond à une ligne de prescription d’une ordonnance. Chacune comporte un ou plusieurs composants (lorsqu’il s’agit d’une préparation magistrale ou d’une perfusion)." 
 
 * basedOn MS
-* basedOn ^slicing.discriminator.type = #type
-* basedOn ^slicing.discriminator.path = "item.resolve()"
+* basedOn ^slicing.discriminator.type = #profile
+* basedOn ^slicing.discriminator.path = "resolve()"
 * basedOn ^slicing.rules = #open
 * basedOn contains
     prescription 1..1 and
@@ -67,15 +67,15 @@ Correspond à une ligne de prescription d’une ordonnance. Chacune comporte un 
 * dosageInstruction[posology].timing.event ^slicing.discriminator.type = #value
 * dosageInstruction[posology].timing.event ^slicing.discriminator.path = "id"
 * dosageInstruction[posology].timing.event ^slicing.rules = #open
-* dosageInstruction[posology].timing.event contains
+/** dosageInstruction[posology].timing.event contains
     startEvent 0..1 and
     endEvent 0..1
 
 * dosageInstruction[posology].timing.event[startEvent].id = "startEvent"
 * dosageInstruction[posology].timing.event[endEvent].id = "endEvent"
 
-* dosageInstruction[posology].timing.event[startEvent] ^short = "Type of event that triggers the start of a therapeutic phase" /*La nomenclature SIPh-Type_événement n'a pas été associée car .event est de type dateTime*/
-* dosageInstruction[posology].timing.event[endEvent] ^short = "Type of event that triggers the end of a therapeutic phase"/*La nomenclature SIPh-Type_événement n'a pas été associée car .event est de type dateTime*/
+* dosageInstruction[posology].timing.event[startEvent] ^short = "Type of event that triggers the start of a therapeutic phase" 
+* dosageInstruction[posology].timing.event[endEvent] ^short = "Type of event that triggers the end of a therapeutic phase"*/
 * dosageInstruction[posology].timing.repeat.duration ^short = "Duration of administration"
 * dosageInstruction[posology].doseAndRate.rateQuantity ^short = "Rate of administration in the case of injection"
 * dosageInstruction[posology].doseAndRate.doseQuantity ^short = "Quantity of the prescription element in the dosage"
@@ -148,8 +148,8 @@ Title:    "Mapping du profil OncoFAIR MedicationRequest Element"
 * dosageInstruction[element].timing.repeat.offset -> "deltaDateHeureReference"
 * dosageInstruction[element].additionalInstruction -> "conditionsApplication"
 
-* dosageInstruction[posology].timing.event[startEvent] -> "typeEvenementDebut"
-* dosageInstruction[posology].timing.event[endEvent] -> "typeEvenementFin"
+/** dosageInstruction[posology].timing.event[startEvent] -> "typeEvenementDebut"
+* dosageInstruction[posology].timing.event[endEvent] -> "typeEvenementFin"*/
 * dosageInstruction[posology].timing.repeat.duration -> "duree"
 * dosageInstruction[posology].doseAndRate.rateQuantity -> "debit"
 * dosageInstruction[posology].doseAndRate.doseQuantity -> "quantite"

@@ -4,6 +4,8 @@ Id: oncofair-medication
 Title: "OncoFAIR Medication"
 Description : ""
 
+
+/*La nomenclature pour le code dépend du type de composant, mais pas de nomenclature PN13 fournie*/
 * code 1..1 MS
 * code ^short = "Identifies the prescribed component according to a nomenclature depending on the type"
 
