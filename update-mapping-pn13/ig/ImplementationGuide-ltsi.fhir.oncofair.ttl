@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIR"] ; # 
   fhir:title [ fhir:v "Onco-FAIR"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-10T08:10:59+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-10T15:21:14+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -61,6 +61,30 @@
        fhir:value [ fhir:v "hl7.fhir.uv.tools#0.1.0" ]
      ] ) ;
      fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "HealthcareService" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/HealthcareService/ExampleHealthcareServiceAccomodation> ;
+         fhir:reference [ fhir:v "HealthcareService/ExampleHealthcareServiceAccomodation" ]
+       ] ;
+       fhir:name [ fhir:v "Example HealthcareServiceAccomodation" ] ;
+       fhir:description [ fhir:v "An example instance of an OncoFAIR HealthcareServiceAccomodation" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "HealthcareService" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/HealthcareService/ExampleHealthcareServiceMedicalLiability> ;
+         fhir:reference [ fhir:v "HealthcareService/ExampleHealthcareServiceMedicalLiability" ]
+       ] ;
+       fhir:name [ fhir:v "Example HealthcareServiceMedicalLiability" ] ;
+       fhir:description [ fhir:v "An example instance of an OncoFAIR HealthcareServiceMedicalLiability" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ]
+     ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "CarePlan" ]
@@ -205,7 +229,7 @@
          fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/ExampleOncoFAIRMedicationRequestElement> ;
          fhir:reference [ fhir:v "MedicationRequest/ExampleOncoFAIRMedicationRequestElement" ]
        ] ;
-       fhir:name [ fhir:v "Example OncoFAIR MedicationRequest Element " ] ;
+       fhir:name [ fhir:v "Example OncoFAIR MedicationRequest Element" ] ;
        fhir:description [ fhir:v "Example instance of OncoFAIRMedicationRequestElement" ] ;
        fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
        fhir:profile ( [
@@ -281,8 +305,56 @@
          fhir:link <http://ltsi.univ-rennes.fr/ValueSet/forme-pharmaceutique-valueset> ;
          fhir:reference [ fhir:v "ValueSet/forme-pharmaceutique-valueset" ]
        ] ;
-       fhir:name [ fhir:v "FormePharmaceutiqueValueSet" ] ;
+       fhir:name [ fhir:v "Forme pharmaceutique Value Set" ] ;
        fhir:description [ fhir:v "Value Set pour la forme pharmaceutique" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/CodeSystem/siph-gonogo-oncofair-codesystem> ;
+         fhir:reference [ fhir:v "CodeSystem/siph-gonogo-oncofair-codesystem" ]
+       ] ;
+       fhir:name [ fhir:v "goNogo Code System" ] ;
+       fhir:description [ fhir:v "Code system pour l'attribut goNogo" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/ValueSet/siph-gonogo-oncofair-valueset> ;
+         fhir:reference [ fhir:v "ValueSet/siph-gonogo-oncofair-valueset" ]
+       ] ;
+       fhir:name [ fhir:v "goNogo Value Set" ] ;
+       fhir:description [ fhir:v "Value Set pour goNogo" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/ValueSet/siph-listeald-oncofair-valueset> ;
+         fhir:reference [ fhir:v "ValueSet/siph-listeald-oncofair-valueset" ]
+       ] ;
+       fhir:name [ fhir:v "Liste Affectation Longue Durée Value Set" ] ;
+       fhir:description [ fhir:v "Value Set pour ListeALD" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/CodeSystem/siph-listeald-oncofair-codesystem> ;
+         fhir:reference [ fhir:v "CodeSystem/siph-listeald-oncofair-codesystem" ]
+       ] ;
+       fhir:name [ fhir:v "Liste ALD Code System" ] ;
+       fhir:description [ fhir:v "Code system pour l'attribut ListeALD" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -305,7 +377,7 @@
          fhir:link <http://ltsi.univ-rennes.fr/ValueSet/medical-units-oncofair-valueset> ;
          fhir:reference [ fhir:v "ValueSet/medical-units-oncofair-valueset" ]
        ] ;
-       fhir:name [ fhir:v "MedicalUnitsOncoFAIRValueSet" ] ;
+       fhir:name [ fhir:v "Medical units Value Set" ] ;
        fhir:description [ fhir:v "ValueSet for medical units (accommodation, medical liability unit)." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
@@ -329,8 +401,32 @@
          fhir:link <http://ltsi.univ-rennes.fr/ValueSet/medications-oncofair-valueset> ;
          fhir:reference [ fhir:v "ValueSet/medications-oncofair-valueset" ]
        ] ;
-       fhir:name [ fhir:v "MedicationsOncoFAIRValueSet" ] ;
+       fhir:name [ fhir:v "Medications Value Set" ] ;
        fhir:description [ fhir:v "ValueSet for medications." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/CodeSystem/siph-natureproppharm-oncofair-codesystem> ;
+         fhir:reference [ fhir:v "CodeSystem/siph-natureproppharm-oncofair-codesystem" ]
+       ] ;
+       fhir:name [ fhir:v "Nature proposition pharmaceutique Code System" ] ;
+       fhir:description [ fhir:v "Code system pour l'attribut NaturePropPharm" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/ValueSet/siph-natureproppharm-oncofair-valueset> ;
+         fhir:reference [ fhir:v "ValueSet/siph-natureproppharm-oncofair-valueset" ]
+       ] ;
+       fhir:name [ fhir:v "Nature proposition pharmaceutique Value Set" ] ;
+       fhir:description [ fhir:v "Value Set pour NaturePropPharm" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -682,74 +778,14 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/CodeSystem/siph-gonogo-oncofair-codesystem> ;
-         fhir:reference [ fhir:v "CodeSystem/siph-gonogo-oncofair-codesystem" ]
-       ] ;
-       fhir:name [ fhir:v "SIPhgoNogoOncoFAIRCodeSystem" ] ;
-       fhir:description [ fhir:v "Code system pour l'attribut goNogo" ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/ValueSet/siph-gonogo-oncofair-valueset> ;
-         fhir:reference [ fhir:v "ValueSet/siph-gonogo-oncofair-valueset" ]
+         fhir:link <http://ltsi.univ-rennes.fr/ValueSet/siph-paramposoconditionnelle-oncofair-valueset> ;
+         fhir:reference [ fhir:v "ValueSet/siph-paramposoconditionnelle-oncofair-valueset" ]
        ] ;
-       fhir:name [ fhir:v "SIPhgoNogoOncoFAIRValueSet" ] ;
-       fhir:description [ fhir:v "Value Set pour goNogo" ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/CodeSystem/siph-listeald-oncofair-codesystem> ;
-         fhir:reference [ fhir:v "CodeSystem/siph-listeald-oncofair-codesystem" ]
-       ] ;
-       fhir:name [ fhir:v "SIPhListeALDOncoFAIRCodeSystem" ] ;
-       fhir:description [ fhir:v "Code system pour l'attribut ListeALD" ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/ValueSet/siph-listeald-oncofair-valueset> ;
-         fhir:reference [ fhir:v "ValueSet/siph-listeald-oncofair-valueset" ]
-       ] ;
-       fhir:name [ fhir:v "SIPhListeALDOncoFAIRValueSet" ] ;
-       fhir:description [ fhir:v "Value Set pour ListeALD" ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/CodeSystem/siph-natureproppharm-oncofair-codesystem> ;
-         fhir:reference [ fhir:v "CodeSystem/siph-natureproppharm-oncofair-codesystem" ]
-       ] ;
-       fhir:name [ fhir:v "SIPhNaturePropPharmOncoFAIRCodeSystem" ] ;
-       fhir:description [ fhir:v "Code system pour l'attribut NaturePropPharm" ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/ValueSet/siph-natureproppharm-oncofair-valueset> ;
-         fhir:reference [ fhir:v "ValueSet/siph-natureproppharm-oncofair-valueset" ]
-       ] ;
-       fhir:name [ fhir:v "SIPhNaturePropPharmOncoFAIRValueSet" ] ;
-       fhir:description [ fhir:v "Value Set pour NaturePropPharm" ] ;
+       fhir:name [ fhir:v "Paramètres posologie conditionnelle" ] ;
+       fhir:description [ fhir:v "Value Set pour ParamPosoConditionnelle" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -760,20 +796,8 @@
          fhir:link <http://ltsi.univ-rennes.fr/CodeSystem/siph-paramposoconditionnelle-oncofair-codesystem> ;
          fhir:reference [ fhir:v "CodeSystem/siph-paramposoconditionnelle-oncofair-codesystem" ]
        ] ;
-       fhir:name [ fhir:v "SIPhParamPosoConditionnelleOncoFAIRCodeSystem" ] ;
+       fhir:name [ fhir:v "Paremètres posologie conditionnelle Code System" ] ;
        fhir:description [ fhir:v "Code system pour l'attribut ParamPosoConditionnelle" ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/ValueSet/siph-paramposoconditionnelle-oncofair-valueset> ;
-         fhir:reference [ fhir:v "ValueSet/siph-paramposoconditionnelle-oncofair-valueset" ]
-       ] ;
-       fhir:name [ fhir:v "SIPhParamPosoConditionnelleOncoFAIRValueSet" ] ;
-       fhir:description [ fhir:v "Value Set pour ParamPosoConditionnelle" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -784,7 +808,7 @@
          fhir:link <http://ltsi.univ-rennes.fr/CodeSystem/siph-renscomplement-oncofair-codesystem> ;
          fhir:reference [ fhir:v "CodeSystem/siph-renscomplement-oncofair-codesystem" ]
        ] ;
-       fhir:name [ fhir:v "SIPhRensComplementOncoFAIRCodeSystem" ] ;
+       fhir:name [ fhir:v "Renseignement complémentaire Code System" ] ;
        fhir:description [ fhir:v "Code system pour l'attribut RensComplement" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
@@ -796,152 +820,8 @@
          fhir:link <http://ltsi.univ-rennes.fr/ValueSet/siph-renscomplement-oncofair-valueset> ;
          fhir:reference [ fhir:v "ValueSet/siph-renscomplement-oncofair-valueset" ]
        ] ;
-       fhir:name [ fhir:v "SIPhRensComplementOncoFAIRValueSet" ] ;
+       fhir:name [ fhir:v "Renseignement complémentaire Value Set" ] ;
        fhir:description [ fhir:v "Value Set pour RensComplement" ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/CodeSystem/siph-statutcomposantadm-oncofair-codesystem> ;
-         fhir:reference [ fhir:v "CodeSystem/siph-statutcomposantadm-oncofair-codesystem" ]
-       ] ;
-       fhir:name [ fhir:v "SIPhStatutComposantAdmOncoFAIRCodeSystem" ] ;
-       fhir:description [ fhir:v "Code system pour l'attribut StatutComposantAdm" ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/ValueSet/siph-statutcomposantadm-oncofair-valueset> ;
-         fhir:reference [ fhir:v "ValueSet/siph-statutcomposantadm-oncofair-valueset" ]
-       ] ;
-       fhir:name [ fhir:v "SIPhStatutComposantAdmOncoFAIRValueSet" ] ;
-       fhir:description [ fhir:v "Value Set pour StatutComposantAdm" ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/CodeSystem/siph-statutvalidpharm-oncofair-codesystem> ;
-         fhir:reference [ fhir:v "CodeSystem/siph-statutvalidpharm-oncofair-codesystem" ]
-       ] ;
-       fhir:name [ fhir:v "SIPhStatutValidPharmOncoFAIRCodeSystem" ] ;
-       fhir:description [ fhir:v "Code system pour l'attribut StatutValidPharm" ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/ValueSet/siph-statutvalidpharm-oncofair-valueset> ;
-         fhir:reference [ fhir:v "ValueSet/siph-statutvalidpharm-oncofair-valueset" ]
-       ] ;
-       fhir:name [ fhir:v "SIPhStatutValidPharmOncoFAIRValueSet" ] ;
-       fhir:description [ fhir:v "Value Set pour StatutValidPharm" ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/CodeSystem/siph-typecomposant-oncofair-codesystem> ;
-         fhir:reference [ fhir:v "CodeSystem/siph-typecomposant-oncofair-codesystem" ]
-       ] ;
-       fhir:name [ fhir:v "SIPhTypeComposantOncoFAIRCodeSystem" ] ;
-       fhir:description [ fhir:v "Code system pour l'attribut TypeComposant" ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/ValueSet/siph-typecomposant-oncofair-valueset> ;
-         fhir:reference [ fhir:v "ValueSet/siph-typecomposant-oncofair-valueset" ]
-       ] ;
-       fhir:name [ fhir:v "SIPhTypeComposantOncoFAIRValueSet" ] ;
-       fhir:description [ fhir:v "Value Set pour TypeComposant" ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem> ;
-         fhir:reference [ fhir:v "CodeSystem/siph-typeeltpla-oncofair-codesystem" ]
-       ] ;
-       fhir:name [ fhir:v "SIPhTypeEltPLAOncoFAIRCodeSystem" ] ;
-       fhir:description [ fhir:v "Code system pour l'attribut TypeEltPLA" ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/ValueSet/siph-typeeltpla-oncofair-valueset> ;
-         fhir:reference [ fhir:v "ValueSet/siph-typeeltpla-oncofair-valueset" ]
-       ] ;
-       fhir:name [ fhir:v "SIPhTypeEltPLAOncoFAIRValueSet" ] ;
-       fhir:description [ fhir:v "Value Set pour TypeEltPLA" ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/CodeSystem/siph-typeevenement-oncofair-codesystem> ;
-         fhir:reference [ fhir:v "CodeSystem/siph-typeevenement-oncofair-codesystem" ]
-       ] ;
-       fhir:name [ fhir:v "SIPhTypeEvenementOncoFAIRCodeSystem" ] ;
-       fhir:description [ fhir:v "Code system pour l'attribut TypeEvenement" ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/ValueSet/siph-typeevenement-oncofair-valueset> ;
-         fhir:reference [ fhir:v "ValueSet/siph-typeevenement-oncofair-valueset" ]
-       ] ;
-       fhir:name [ fhir:v "SIPhTypeEvenementOncoFAIRValueSet" ] ;
-       fhir:description [ fhir:v "Value Set pour TypeEvenement" ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/CodeSystem/siph-type-liaison-oncofair-codesystem> ;
-         fhir:reference [ fhir:v "CodeSystem/siph-type-liaison-oncofair-codesystem" ]
-       ] ;
-       fhir:name [ fhir:v "SIPhTypeLiaisonOncoFAIRCodeSystem" ] ;
-       fhir:description [ fhir:v "Code system pour l'attribut TypeLiaison" ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/ValueSet/siph-type-liasion-oncofair-valueset> ;
-         fhir:reference [ fhir:v "ValueSet/siph-type-liasion-oncofair-valueset" ]
-       ] ;
-       fhir:name [ fhir:v "SIPhTypeLiasionOncoFAIRValueSet" ] ;
-       fhir:description [ fhir:v "Value Set pour Type Liaison" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -958,13 +838,157 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/CodeSystem/siph-statutcomposantadm-oncofair-codesystem> ;
+         fhir:reference [ fhir:v "CodeSystem/siph-statutcomposantadm-oncofair-codesystem" ]
+       ] ;
+       fhir:name [ fhir:v "Statut composant administré Code System" ] ;
+       fhir:description [ fhir:v "Code system pour l'attribut StatutComposantAdm" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/ValueSet/siph-statutcomposantadm-oncofair-valueset> ;
+         fhir:reference [ fhir:v "ValueSet/siph-statutcomposantadm-oncofair-valueset" ]
+       ] ;
+       fhir:name [ fhir:v "Statut composant administré Value Set" ] ;
+       fhir:description [ fhir:v "Value Set pour StatutComposantAdm" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/CodeSystem/siph-statutvalidpharm-oncofair-codesystem> ;
+         fhir:reference [ fhir:v "CodeSystem/siph-statutvalidpharm-oncofair-codesystem" ]
+       ] ;
+       fhir:name [ fhir:v "Statut validation pharmaceutique Code System" ] ;
+       fhir:description [ fhir:v "Code system pour l'attribut StatutValidPharm" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/ValueSet/siph-statutvalidpharm-oncofair-valueset> ;
+         fhir:reference [ fhir:v "ValueSet/siph-statutvalidpharm-oncofair-valueset" ]
+       ] ;
+       fhir:name [ fhir:v "Statut validation pharmaceutique Value Set" ] ;
+       fhir:description [ fhir:v "Value Set pour StatutValidPharm" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/CodeSystem/siph-typecomposant-oncofair-codesystem> ;
+         fhir:reference [ fhir:v "CodeSystem/siph-typecomposant-oncofair-codesystem" ]
+       ] ;
+       fhir:name [ fhir:v "Type de composant Code System" ] ;
+       fhir:description [ fhir:v "Code system pour l'attribut TypeComposant" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/ValueSet/siph-typecomposant-oncofair-valueset> ;
+         fhir:reference [ fhir:v "ValueSet/siph-typecomposant-oncofair-valueset" ]
+       ] ;
+       fhir:name [ fhir:v "Type de composant Value Set" ] ;
+       fhir:description [ fhir:v "Value Set pour TypeComposant" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem> ;
+         fhir:reference [ fhir:v "CodeSystem/siph-typeeltpla-oncofair-codesystem" ]
+       ] ;
+       fhir:name [ fhir:v "Type de l'élément d'administration Code System" ] ;
+       fhir:description [ fhir:v "Code system pour l'attribut TypeEltPLA" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/ValueSet/siph-typeeltpla-oncofair-valueset> ;
+         fhir:reference [ fhir:v "ValueSet/siph-typeeltpla-oncofair-valueset" ]
+       ] ;
+       fhir:name [ fhir:v "Type de l'élément d'administration Value Set" ] ;
+       fhir:description [ fhir:v "Value Set pour TypeEltPLA" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/ValueSet/siph-typeevenement-oncofair-valueset> ;
+         fhir:reference [ fhir:v "ValueSet/siph-typeevenement-oncofair-valueset" ]
+       ] ;
+       fhir:name [ fhir:v "Type de l'évènement Value Set" ] ;
+       fhir:description [ fhir:v "Value Set pour TypeEvenement" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/CodeSystem/siph-type-liaison-oncofair-codesystem> ;
+         fhir:reference [ fhir:v "CodeSystem/siph-type-liaison-oncofair-codesystem" ]
+       ] ;
+       fhir:name [ fhir:v "Type de liaison Code System" ] ;
+       fhir:description [ fhir:v "Code system pour l'attribut TypeLiaison" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/ValueSet/siph-type-liasion-oncofair-valueset> ;
+         fhir:reference [ fhir:v "ValueSet/siph-type-liasion-oncofair-valueset" ]
+       ] ;
+       fhir:name [ fhir:v "Type de liaison Value Set" ] ;
+       fhir:description [ fhir:v "Value Set pour Type Liaison" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/CodeSystem/siph-typeevenement-oncofair-codesystem> ;
+         fhir:reference [ fhir:v "CodeSystem/siph-typeevenement-oncofair-codesystem" ]
+       ] ;
+       fhir:name [ fhir:v "Type évènement Code System" ] ;
+       fhir:description [ fhir:v "Code system pour l'attribut TypeEvenement" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
          fhir:link <http://ltsi.univ-rennes.fr/ValueSet/voie-administration-valueset> ;
          fhir:reference [ fhir:v "ValueSet/voie-administration-valueset" ]
        ] ;
-       fhir:name [ fhir:v "VoieAdministrationValueSet" ] ;
+       fhir:name [ fhir:v "Voie d'administration Value Set" ] ;
        fhir:description [ fhir:v "Value Set pour la voie d'administration" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
