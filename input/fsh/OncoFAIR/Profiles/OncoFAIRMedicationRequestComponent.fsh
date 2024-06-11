@@ -13,6 +13,10 @@ Est un produit qui appartient à la nomenclature de médicaments utilisée. Il p
 * medication ^short = "The medication linked to the component prescribed"
 * medication only CodeableReference(OncoFAIRMedication)
 
+* medication from ConceptMedicationOncoFAIRValueSet (required)
+* medication.concept.coding = #component
+
+
 * dosageInstruction 0..1 MS
 * dosageInstruction.doseAndRate 0..1
 * dosageInstruction.doseAndRate.doseQuantity 1..1 

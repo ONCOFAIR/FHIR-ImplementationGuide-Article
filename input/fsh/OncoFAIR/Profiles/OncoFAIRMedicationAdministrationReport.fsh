@@ -9,6 +9,7 @@ Regroupe l’ensemble des éléments de prescription reçus sur lesquels le phar
 * encounter only Reference(OncoFAIREncounter)
 * encounter ^short = "The encounter linked to the administration report"
 
+* medication from ConceptMedicationOncoFAIRValueSet (required)
 * medication.concept.coding = #report
 
 * performer 1..1 MS

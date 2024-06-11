@@ -36,7 +36,9 @@ Regroupe l’ensemble des éléments de prescription validés simultanément par
 * identifier ^short = "Unique prescription identifier"
 
 * medication MS
-* medication.concept.coding.code = #prescription
+
+* medication from ConceptMedicationOncoFAIRValueSet (required)
+* medication.concept.coding = #prescription
 
 * note 0..1 MS
 * note ^short = "Default comment on the prescription by the prescribing doctor"

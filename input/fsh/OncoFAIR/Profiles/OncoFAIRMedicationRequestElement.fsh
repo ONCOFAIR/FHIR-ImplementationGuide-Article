@@ -38,7 +38,9 @@ Correspond à une ligne de prescription d’une ordonnance. Chacune comporte un 
 * groupIdentifier ^short = "Identifier common to all components of the same prescription"
 
 * medication MS
-* medication.concept.coding.code = #element
+* medication.concept.coding = #element
+* medication from ConceptMedicationOncoFAIRValueSet (required)
+
 
 * status MS
 * status ^short = "Indicates the status of the protocol from the prescriber's point of view"
@@ -84,7 +86,7 @@ Correspond à une ligne de prescription d’une ordonnance. Chacune comporte un 
 * dosageInstruction[element].method ^short = "Type of prescription element"
 * dosageInstruction[element].method from SIPhTypeEltPLAOncoFAIRValueSet (required)
 * dosageInstruction[element].route ^short = "Specifies the route of administration of the product"
-* dosageInstruction[element].route from VoieAdministrationValueSet (required)
+/** dosageInstruction[element].route from VoieAdministrationValueSet (required)*/
 * dosageInstruction[element].site ^short = "Specifies, where appropriate, the exact point on the body where the product is to be applied to the patient" 
 * dosageInstruction[element].text ^short = "Description of the prescribed dosage, in text form."
 * dosageInstruction[element].timing.repeat.boundsPeriod.start ^short = "Prescribed start date and time of product prescription"
