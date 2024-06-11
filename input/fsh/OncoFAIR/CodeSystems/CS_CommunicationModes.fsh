@@ -1,9 +1,9 @@
 CodeSystem: CSCommunicationModes
 Title: "Communication modes"
-Description: "CodeSystem for french communication modes (incremental, summary)."
+Description: "CodeSystem for french communication modes (Incrémental, Récapitulatif)."
 * ^url = $CommunicationModes 
 * ^experimental = true
 * ^caseSensitive = true
 
-* #I "Incremental"
-* #S "Summary"
+* #I "Incrémental"
+* #R "Récapitulatif"
