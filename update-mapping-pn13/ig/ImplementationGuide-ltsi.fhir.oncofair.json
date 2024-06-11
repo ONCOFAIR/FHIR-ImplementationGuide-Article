@@ -10,7 +10,7 @@
   "name" : "OncoFAIR",
   "title" : "Onco-FAIR",
   "status" : "draft",
-  "date" : "2024-06-10T15:21:14+00:00",
+  "date" : "2024-06-11T13:09:11+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -49,6 +49,30 @@
       "valueCode" : "hl7.fhir.uv.tools#0.1.0"
     }],
     "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/concept-medication-oncofair-codesystem"
+      },
+      "name" : "Concepts Medication Code System",
+      "description" : "Code system pour différiencier les niveaux de MR/MA",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/concept-medication-oncofair-valueset"
+      },
+      "name" : "Concepts Medication Value Set",
+      "description" : "Value Set pour différiencier les niveaux de MR/MA",
+      "isExample" : false
+    },
+    {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "HealthcareService"
@@ -250,18 +274,6 @@
       "name" : "Example OncoFAIR Practitioner",
       "description" : "An example instance of an OncoFAIR practitioner with an identifier.",
       "isExample" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/forme-pharmaceutique-valueset"
-      },
-      "name" : "Forme pharmaceutique Value Set",
-      "description" : "Value Set pour la forme pharmaceutique",
-      "isExample" : false
     },
     {
       "extension" : [{
@@ -784,18 +796,6 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/snomedct"
-      },
-      "name" : "SNOMED CT (all versions)",
-      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
         "reference" : "CodeSystem/siph-statutcomposantadm-oncofair-codesystem"
       },
       "name" : "Statut composant administré Code System",
@@ -932,18 +932,6 @@
       },
       "name" : "Type évènement Code System",
       "description" : "Code system pour l'attribut TypeEvenement",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/voie-administration-valueset"
-      },
-      "name" : "Voie d'administration Value Set",
-      "description" : "Value Set pour la voie d'administration",
       "isExample" : false
     }],
     "page" : {

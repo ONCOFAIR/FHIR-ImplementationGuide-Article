@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Voie d&#39;administration Value Set - TTL Representation - Onco-FAIR v0.1.0</title>
+    <title>Concepts Medication Code System - TTL Representation - Onco-FAIR v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -99,7 +99,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Voie d'administration Value Set</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Concepts Medication Code System</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -125,21 +125,21 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="ValueSet-voie-administration-valueset.html">Narrative Content</a>
+    <a href="CodeSystem-concept-medication-oncofair-codesystem.html">Narrative Content</a>
   </li>
 
 
 
   
     <li>
-      <a href="ValueSet-voie-administration-valueset.xml.html">XML</a>
+      <a href="CodeSystem-concept-medication-oncofair-codesystem.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="ValueSet-voie-administration-valueset.json.html">JSON</a>
+      <a href="CodeSystem-concept-medication-oncofair-codesystem.json.html">JSON</a>
     </li>
   
 
@@ -158,7 +158,7 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: Voie d&#39;administration Value Set - TTL Representation</h2>
+<h2 id="root">: Concepts Medication Code System - TTL Representation</h2>
 
   <table class="colsd">
     <tr>
@@ -167,7 +167,7 @@
         
           Draft
           
-            as of 2024-06-10
+            as of 2024-06-11
           
         
       </td>
@@ -176,7 +176,7 @@
   </table>
 
 
-<p><a href="ValueSet-voie-administration-valueset.ttl" no-download="true">Raw ttl</a> | <a href="ValueSet-voie-administration-valueset.ttl" download>Download</a></p>
+<p><a href="CodeSystem-concept-medication-oncofair-codesystem.ttl" no-download="true">Raw ttl</a> | <a href="CodeSystem-concept-medication-oncofair-codesystem.ttl" download>Download</a></p>
 
   <!-- insert intro if present -->
   
@@ -191,36 +191,44 @@
 
 # - resource -------------------------------------------------------------------
 
- a fhir:ValueSet ;
+ a fhir:CodeSystem ;
   <a href="http://hl7.org/fhir/R5/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;voie-administration-valueset&quot;] ; # 
-  <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.text">fhir:text</a> [
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;concept-medication-oncofair-codesystem&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;ul&gt;&lt;li&gt;Include codes from&lt;a href=\&quot;CodeSystem-snomedct.html\&quot;&gt;&lt;code&gt;http://ltsi.univ-rennes.fr/CodeSystem/snomedct&lt;/code&gt;&lt;/a&gt; where constraint  = &amp;lt; 736665006 |Dose form administration method (administration method)| minus &amp;gt; (&amp;lt; 736665006 |Dose form administration method (administration method)|)&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;element&lt;a name=\&quot;concept-medication-oncofair-codesystem-element\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;report&lt;a name=\&quot;concept-medication-oncofair-codesystem-report\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;component&lt;a name=\&quot;concept-medication-oncofair-codesystem-component\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;prescription&lt;a name=\&quot;concept-medication-oncofair-codesystem-prescription\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
   ] ; # 
-  <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://ltsi.univ-rennes.fr/ValueSet/voie-administration-valueset&quot;^^xsd:anyURI] ; # 
-  <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;0.1.0&quot;] ; # 
-  <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;VoieAdministrationValueSet&quot;] ; # 
-  <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Voie d'administration Value Set&quot;] ; # 
-  <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;draft&quot;] ; # 
-  <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.experimental">fhir:experimental</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean] ; # 
-  <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">fhir:v</a> &quot;2024-06-10T15:21:14+00:00&quot;^^xsd:dateTime] ; # 
-  <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL&quot;] ; # 
-  <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.contact">fhir:contact</a> ( [
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem&quot;^^xsd:anyURI] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;0.1.0&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ConceptMedicationOncoFAIRCodeSystem&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Concepts Medication Code System&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;draft&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.experimental">fhir:experimental</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">fhir:v</a> &quot;2024-06-11T13:09:11+00:00&quot;^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.contact">fhir:contact</a> ( [
 <a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL&quot; ] ;
     ( <a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
 <a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
 <a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;https://ltsi.univ-rennes.fr&quot; ]     ] )
   ] ) ; # 
-  <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Value Set pour la voie d'administration&quot;] ; # 
-  <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose">fhir:compose</a> [
-    ( <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include">fhir:include</a> [
-<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://ltsi.univ-rennes.fr/CodeSystem/snomedct&quot;^^xsd:anyURI ] ;
-      ( <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.filter">fhir:filter</a> [
-<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.filter.property">fhir:property</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;constraint&quot; ] ;
-<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.filter.op">fhir:op</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;=&quot; ] ;
-<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.filter.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;&lt; 736665006 |Dose form administration method (administration method)| minus &gt; (&lt; 736665006 |Dose form administration method (administration method)|)&quot; ]       ] )     ] )
-  ] . # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Code system pour différiencier les niveaux de MR/MA&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.caseSensitive">fhir:caseSensitive</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.content">fhir:content</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;complete&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.count">fhir:count</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;4&quot;^^xsd:nonNegativeInteger] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">fhir:concept</a> ( [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;element&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;element&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;report&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;report&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;component&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;component&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;prescription&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;prescription&quot; ]
+  ] ) . # 
 
 </code></pre>
 
@@ -247,7 +255,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;u
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Jun 10, 2024 15:21+0000">2024-06-10</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Jun 11, 2024 13:09+0000">2024-06-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -1,11 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="2ba6fd54-986e-417b-a272-5d4b097c680a"/>
+  <id value="43de214c-0681-4031-a648-d48a0c613b97"/>
   <meta>
-    <lastUpdated value="2024-06-10T15:21:14.091+00:00"/>
+    <lastUpdated value="2024-06-11T13:09:11.254+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="http://ltsi.univ-rennes.fr/ValueSet/concept-medication-oncofair-valueset"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-concept-medication-oncofair-codesystem.html">codesystem Concepts Medication Code System v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-concept-medication-oncofair-codesystem-element"> </a>  
+                  <a href="CodeSystem-concept-medication-oncofair-codesystem.html#concept-medication-oncofair-codesystem-element">element</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem</td>
+                <td>element</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-concept-medication-oncofair-codesystem-report"> </a>  
+                  <a href="CodeSystem-concept-medication-oncofair-codesystem.html#concept-medication-oncofair-codesystem-report">report</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem</td>
+                <td>report</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-concept-medication-oncofair-codesystem-component"> </a>  
+                  <a href="CodeSystem-concept-medication-oncofair-codesystem.html#concept-medication-oncofair-codesystem-component">component</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem</td>
+                <td>component</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-concept-medication-oncofair-codesystem-prescription"> </a>  
+                  <a href="CodeSystem-concept-medication-oncofair-codesystem.html#concept-medication-oncofair-codesystem-prescription">prescription</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem</td>
+                <td>prescription</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://ltsi.univ-rennes.fr/ValueSet/concept-medication-oncofair-valueset"/>
+        <version value="0.1.0"/>
+        <name value="ConceptMedicationOncoFAIRValueSet"/>
+        <title value="Concepts Medication Value Set"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2024-06-11T13:09:11+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:cb2edcfb-d92e-4733-96a0-6a20575f4555"/>
+          <timestamp value="2024-06-11T13:09:44+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem"/>
+            <code value="element"/>
+            <display value="element"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem"/>
+            <code value="report"/>
+            <display value="report"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem"/>
+            <code value="component"/>
+            <display value="component"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem"/>
+            <code value="prescription"/>
+            <display value="prescription"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="http://ltsi.univ-rennes.fr/ValueSet/medical-units-oncofair-valueset"/>
     <resource>
@@ -2982,10 +3092,10 @@
         <title value="Medical units Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-06-10T15:21:14+00:00"/>
+        <date value="2024-06-11T13:09:11+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:593aac43-06c5-4b3d-9c39-f7e9bff80e2f"/>
-          <timestamp value="2024-06-10T15:21:48+00:00"/>
+          <identifier value="urn:uuid:d9158d13-2fa7-4ccf-a7e9-a30fc428fbb2"/>
+          <timestamp value="2024-06-11T13:09:44+00:00"/>
           <total value="368"/>
           <offset value="0"/>
           <parameter>
@@ -4952,10 +5062,10 @@
         <title value="Medications Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-06-10T15:21:14+00:00"/>
+        <date value="2024-06-11T13:09:11+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:51212174-99d5-4967-a9b4-4e49113de2c7"/>
-          <timestamp value="2024-06-10T15:21:48+00:00"/>
+          <identifier value="urn:uuid:7acdb765-bde5-4f8f-a02b-884f8a97457d"/>
+          <timestamp value="2024-06-11T13:09:44+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -5095,10 +5205,10 @@
         <title value="goNogo Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-06-10T15:21:14+00:00"/>
+        <date value="2024-06-11T13:09:11+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:cbbac019-9b82-4f9a-9393-45b0bbe6af8c"/>
-          <timestamp value="2024-06-10T15:21:48+00:00"/>
+          <identifier value="urn:uuid:0a32288b-b800-45ee-a9ff-7798c17bbcd0"/>
+          <timestamp value="2024-06-11T13:09:44+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -5434,10 +5544,10 @@
         <title value="Liste Affectation Longue Durée Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-06-10T15:21:14+00:00"/>
+        <date value="2024-06-11T13:09:11+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:6d825ba6-c938-40ba-8484-0cd45639b1a7"/>
-          <timestamp value="2024-06-10T15:21:48+00:00"/>
+          <identifier value="urn:uuid:9d9e6278-7ed9-47cd-9d41-d20d988f3e3a"/>
+          <timestamp value="2024-06-11T13:09:44+00:00"/>
           <total value="32"/>
           <offset value="0"/>
           <parameter>
@@ -5684,10 +5794,10 @@
         <title value="Nature proposition pharmaceutique Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-06-10T15:21:14+00:00"/>
+        <date value="2024-06-11T13:09:11+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:851a0ced-1d9d-49fc-ba98-27fbd4509f04"/>
-          <timestamp value="2024-06-10T15:21:48+00:00"/>
+          <identifier value="urn:uuid:2c61a77a-781e-447e-9602-8bdd97265c91"/>
+          <timestamp value="2024-06-11T13:09:44+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -5818,10 +5928,10 @@
         <title value="Paramètres posologie conditionnelle"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-06-10T15:21:14+00:00"/>
+        <date value="2024-06-11T13:09:11+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:52a6b54c-a9dc-4453-9452-634895a7fc78"/>
-          <timestamp value="2024-06-10T15:21:49+00:00"/>
+          <identifier value="urn:uuid:d03ef358-082f-447e-a818-f613d77e90e9"/>
+          <timestamp value="2024-06-11T13:09:44+00:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -5999,10 +6109,10 @@
         <title value="Renseignement complémentaire Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-06-10T15:21:14+00:00"/>
+        <date value="2024-06-11T13:09:11+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:c7715033-6500-4a71-9d34-03c7fd96ecdc"/>
-          <timestamp value="2024-06-10T15:21:49+00:00"/>
+          <identifier value="urn:uuid:8b9e9c85-9d20-405d-9f8b-524eeb1040aa"/>
+          <timestamp value="2024-06-11T13:09:45+00:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>
@@ -6192,10 +6302,10 @@
         <title value="Statut composant administré Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-06-10T15:21:14+00:00"/>
+        <date value="2024-06-11T13:09:11+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:6adaabea-2384-4491-afec-3d1f088dad62"/>
-          <timestamp value="2024-06-10T15:21:49+00:00"/>
+          <identifier value="urn:uuid:15d63545-d0a9-4c68-8bb1-d1899ca37314"/>
+          <timestamp value="2024-06-11T13:09:45+00:00"/>
           <total value="10"/>
           <offset value="0"/>
           <parameter>
@@ -6316,10 +6426,10 @@
         <title value="Statut validation pharmaceutique Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-06-10T15:21:14+00:00"/>
+        <date value="2024-06-11T13:09:11+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:bcca4bc6-b123-4c40-8173-9069c7492f6b"/>
-          <timestamp value="2024-06-10T15:21:49+00:00"/>
+          <identifier value="urn:uuid:382c3e87-dd4f-4b2d-bcfa-ac51d11abcd4"/>
+          <timestamp value="2024-06-11T13:09:45+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -6440,10 +6550,10 @@
         <title value="Type de liaison Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-06-10T15:21:14+00:00"/>
+        <date value="2024-06-11T13:09:11+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:bc510feb-edc0-45c2-a30f-b7021f118946"/>
-          <timestamp value="2024-06-10T15:21:49+00:00"/>
+          <identifier value="urn:uuid:1fdab66f-69a1-4082-9b53-1d7dfa6b6de6"/>
+          <timestamp value="2024-06-11T13:09:45+00:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -6645,10 +6755,10 @@
         <title value="Type de composant Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-06-10T15:21:14+00:00"/>
+        <date value="2024-06-11T13:09:11+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:7845541d-ad92-4e7e-9340-4436284cd8ec"/>
-          <timestamp value="2024-06-10T15:21:49+00:00"/>
+          <identifier value="urn:uuid:2c59a779-b9f7-4e49-8227-4c77bcb0584d"/>
+          <timestamp value="2024-06-11T13:09:45+00:00"/>
           <total value="14"/>
           <offset value="0"/>
           <parameter>
@@ -6845,10 +6955,10 @@
         <title value="Type de l'élément d'administration Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-06-10T15:21:14+00:00"/>
+        <date value="2024-06-11T13:09:11+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:59e4fb2d-05c6-4bd1-bf6e-18482e5dbf5b"/>
-          <timestamp value="2024-06-10T15:21:49+00:00"/>
+          <identifier value="urn:uuid:425d2b5e-e8b2-4d41-b2c1-ec2ce5b70f42"/>
+          <timestamp value="2024-06-11T13:09:45+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -6980,10 +7090,10 @@
         <title value="Type de l'évènement Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-06-10T15:21:14+00:00"/>
+        <date value="2024-06-11T13:09:11+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:04f2e220-cbd7-4f89-944c-f77084f26521"/>
-          <timestamp value="2024-06-10T15:21:49+00:00"/>
+          <identifier value="urn:uuid:bd2a5ac5-e69e-46d8-b95c-da2754519a85"/>
+          <timestamp value="2024-06-11T13:09:45+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>

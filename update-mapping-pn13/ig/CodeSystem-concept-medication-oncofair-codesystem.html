@@ -1,13 +1,9 @@
-<!-- layouts\layout-changehistory.html -->
-<!-- get modelType -->
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title> - Onco-FAIR v0.1.0</title>
+    <title>Concepts Medication Code System - Onco-FAIR v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -43,8 +39,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:""}
-    h3,h4,h5,h6{--heading-prefix:""}</style>
+    <style type="text/css">h2{--heading-prefix:"3.44"}
+    h3,h4,h5,h6{--heading-prefix:"3.44"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -101,7 +97,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Concepts Medication Code System</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -113,8 +109,7 @@
         <div class="row">
           <div class="inner-wrapper">
 
-
-<div style="counter-reset: section 10" class="col-12">
+<div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Onco-FAIR - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://ltsi.univ-rennes.fr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
@@ -127,29 +122,29 @@
 
 <ul class="nav nav-tabs">
 
-  <li>
-    <a href="CodeSystem-snomedct.html">Narrative Content</a>
+  <li class="active">
+    <a href="#">Narrative Content</a>
   </li>
 
 
 
   
     <li>
-      <a href="CodeSystem-snomedct.xml.html">XML</a>
+      <a href="CodeSystem-concept-medication-oncofair-codesystem.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="CodeSystem-snomedct.json.html">JSON</a>
+      <a href="CodeSystem-concept-medication-oncofair-codesystem.json.html">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="CodeSystem-snomedct.ttl.html">TTL</a>
+      <a href="CodeSystem-concept-medication-oncofair-codesystem.ttl.html">TTL</a>
     </li>
   
 
@@ -157,15 +152,85 @@
 
 </ul>
 
-
   <a name="root"> </a>
-  <h2 id="root">: SNOMEDCT - Change History</h2>
-  <p>History of changes for snomedct .</p>
+  <h2 id="root">CodeSystem: Concepts Medication Code System
+(Experimental)
+  </h2>
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2024-06-11
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">ConceptMedicationOncoFAIRCodeSystem</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Code system pour différiencier les niveaux de MR/MA</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-concept-medication-oncofair-valueset.html">ConceptMedicationOncoFAIRValueSet</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem</code> defines the following codes:</p>
+<table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr>
+<tr><td style="white-space:nowrap">element<a name="concept-medication-oncofair-codesystem-element"> </a></td></tr>
+<tr><td style="white-space:nowrap">report<a name="concept-medication-oncofair-codesystem-report"> </a></td></tr>
+<tr><td style="white-space:nowrap">component<a name="concept-medication-oncofair-codesystem-component"> </a></td></tr>
+<tr><td style="white-space:nowrap">prescription<a name="concept-medication-oncofair-codesystem-prescription"> </a></td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
 
   
 
 </div>
-
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -174,8 +239,6 @@
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript" src="assets/js/tabs.js"> </script>
-
   <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
@@ -183,7 +246,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Jun 10, 2024 15:21+0000">2024-06-10</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Jun 11, 2024 13:09+0000">2024-06-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

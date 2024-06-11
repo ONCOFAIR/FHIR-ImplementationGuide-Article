@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 0, errors = 0, warn = 31, info = 15-->
+<!-- broken links = 0, errors = 0, warn = 16, info = 22-->
 <head>
   <title>OncoFAIR : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for OncoFAIR</h1>
- <p>Generated Mon Jun 10 15:22:10 UTC 2024, FHIR version 5.0.0 for ltsi.fhir.oncofair#0.1.0 (canonical = <a href="http://ltsi.univ-rennes.fr">http://ltsi.univ-rennes.fr</a> (<a href="http://ltsi.univ-rennes.fr/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+ <p>Generated Tue Jun 11 13:10:06 UTC 2024, FHIR version 5.0.0 for ltsi.fhir.oncofair#0.1.0 (canonical = <a href="http://ltsi.univ-rennes.fr">http://ltsi.univ-rennes.fr</a> (<a href="http://ltsi.univ-rennes.fr/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.6.11</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ltsi.fhir.oncofair, Canonical = http://ltsi.univ-rennes.fr</td></tr>
@@ -114,7 +114,7 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
  (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-location-form.html">LocationForm</a>
  (1 uses),     <a href="http://hl7.org/fhir/R5/medication.html">Medication</a>
  (7 uses),     <a href="http://hl7.org/fhir/R5/valueset-medication-codes.html">SNOMEDCTMedicationCodes</a>
- (8 uses),     <a href="http://hl7.org/fhir/R5/valueset-medication-status.html">MedicationStatusCodes</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R5/valueset-medication-status.html">MedicationStatusCodes</a>
  (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-medication-form-codes.html">SNOMEDCTFormCodes</a>
  (1 uses),     <a href="http://hl7.org/fhir/R5/substance.html">Substance</a>
  (2 uses),     <a href="http://hl7.org/fhir/R5/valueset-medication-ingredientstrength.html">MedicationIngredientStrengthCodes</a>
@@ -128,7 +128,7 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
  (3 uses),     <a href="http://hl7.org/fhir/R5/valueset-reason-medication-given-codes.html">ReasonMedicationGivenCodes</a>
  (3 uses),     <a href="http://hl7.org/fhir/R5/valueset-approach-site-codes.html">SNOMEDCTAnatomicalStructureAdministrationSites</a>
  (6 uses),     <a href="http://hl7.org/fhir/R5/valueset-route-codes.html">SNOMEDCTRouteCodes</a>
- (4 uses),     <a href="http://hl7.org/fhir/R5/valueset-administration-method-codes.html">SNOMEDCTAdministrationMethodCodes</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R5/valueset-administration-method-codes.html">SNOMEDCTAdministrationMethodCodes</a>
  (4 uses),     <a href="http://hl7.org/fhir/R5/provenance.html">Provenance</a>
  (6 uses),     <a href="http://hl7.org/fhir/R5/valueset-resource-types.html">ResourceType</a>
  (4 uses),     <a href="http://hl7.org/fhir/R5/medicationdispense.html">MedicationDispense</a>
@@ -175,7 +175,7 @@ hl7.fhir.uv.extensions.r5#5.1.0:     <a href="http://hl7.org/fhir/extensions/5.1
   </li>
   <li>
 hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureDefinition-resource-sort.html">ResourceSortExt</a>
- (74 uses)
+ (73 uses)
   </li>
   <li>
 hl7.terminology.r5#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/ValueSet-encounter-class.html">EncounterClass</a>
@@ -188,7 +188,7 @@ hl7.terminology.r5#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/ValueSet
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://ltsi.univ-rennes.fr (Problem #1 with package-list.json at http://ltsi.univ-rennes.fr: Not Found)</td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
- <tr><td>Summary:</td><td> errors = 0, warn = 31, info = 15, broken links = 0</td></tr>
+ <tr><td>Summary:</td><td> errors = 0, warn = 16, info = 22, broken links = 0</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -196,24 +196,6 @@ hl7.terminology.r5#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/ValueSet
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>4</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_MedicationAdministration-ExampleOncoFAIRMedicationAdministrationComponent"><b>/home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationAdministration-ExampleOncoFAIRMedicationAdministrationComponent</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_MedicationAdministration-ExampleOncoFAIRMedicationAdministrationElement"><b>/home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationAdministration-ExampleOncoFAIRMedicationAdministrationElement</b></a></td><td><b>0</b></td><td><b>7</b></td><td><b>1</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_MedicationAdministration-ExampleOncoFAIRMedicationAdministrationReport"><b>/home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationAdministration-ExampleOncoFAIRMedicationAdministrationReport</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_MedicationRequest-ExampleOncoFAIRMedicationRequestComponent"><b>/home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationRequest-ExampleOncoFAIRMedicationRequestComponent</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_MedicationRequest-ExampleOncoFAIRMedicationRequestElement"><b>/home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationRequest-ExampleOncoFAIRMedicationRequestElement</b></a></td><td><b>0</b></td><td><b>6</b></td><td><b>6</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_MedicationRequest-ExampleOncoFAIRMedicationRequestPrescription"><b>/home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationRequest-ExampleOncoFAIRMedicationRequestPrescription</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_Observation-ExampleOncoFAIRObservation"><b>/home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/Observation-ExampleOncoFAIRObservation</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
@@ -225,13 +207,13 @@ hl7.terminology.r5#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/ValueSet
      <td><a href="#_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_StructureDefinition-oncofair-medicationadministration-report"><b>/home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-report</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_StructureDefinition-oncofair-medicationrequest-element"><b>/home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-element</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_StructureDefinition-oncofair-medicationrequest-component"><b>/home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-component</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_ValueSet-forme-pharmaceutique-valueset"><b>/home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/ValueSet-forme-pharmaceutique-valueset</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+     <td><a href="#_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_StructureDefinition-oncofair-medicationrequest-element"><b>/home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-element</b></a></td><td><b>0</b></td><td><b>3</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_ValueSet-voie-administration-valueset"><b>/home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/ValueSet-voie-administration-valueset</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+     <td><a href="#_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_StructureDefinition-oncofair-medicationrequest-prescription"><b>/home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-prescription</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>1</b></td>
    </tr>
 </table>
 <hr/>
@@ -253,147 +235,9 @@ hl7.terminology.r5#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/ValueSet
    </tr>
 </table>
 <hr/>
-<a name="_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_MedicationAdministration-ExampleOncoFAIRMedicationAdministrationComponent"> </a>
-<h2><a href="MedicationAdministration-ExampleOncoFAIRMedicationAdministrationComponent.html">fsh-generated/resources/MedicationAdministration-ExampleOncoFAIRMedicationAdministrationComponent.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>MedicationAdministration: Validated against <i>this.</i><a href="StructureDefinition-oncofair-medicationadministration-component.html">OncoFAIR MedicationAdministration Component</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>MedicationAdministration&#8203;.extension[3]&#8203;.value&#8203;.ofType(CodeableConcept) (l73&#8203;/c8)</b></td><td><b>information</b></td><td title="MSG_EXPERIMENTAL"><b>Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-statutcomposantadm-oncofair-codesystem|0.1.0</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>MedicationAdministration&#8203;.medication&#8203;.concept&#8203;.coding[0] (l15&#8203;/c6)</b></td><td><b>warning</b></td><td title=""><b>Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_MedicationAdministration-ExampleOncoFAIRMedicationAdministrationElement"> </a>
-<h2><a href="MedicationAdministration-ExampleOncoFAIRMedicationAdministrationElement.html">fsh-generated/resources/MedicationAdministration-ExampleOncoFAIRMedicationAdministrationElement.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>MedicationAdministration: Validated against <i>this.</i><a href="StructureDefinition-oncofair-medicationadministration-element.html">OncoFAIR MedicationAdministration Element</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>MedicationAdministration&#8203;.extension[4]&#8203;.value&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.system (l117&#8203;/c8)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://ltsi.univ-rennes.fr/CodeSystem/snomedct' could not be found, so the code cannot be validated</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>MedicationAdministration&#8203;.extension[4]&#8203;.value&#8203;.ofType(CodeableConcept) (l117&#8203;/c8)</b></td><td><b>warning</b></td><td title=""><b>Unable to check whether the code is in the value set 'http://ltsi.univ-rennes.fr/ValueSet/forme-pharmaceutique-valueset|0.1.0' because the code system http://ltsi.univ-rennes.fr/CodeSystem/snomedct was not found</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>MedicationAdministration&#8203;.extension[4]&#8203;.value&#8203;.ofType(CodeableConcept) (l117&#8203;/c8)</b></td><td><b>warning</b></td><td title=""><b>A definition for CodeSystem 'http://ltsi.univ-rennes.fr/CodeSystem/snomedct' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'http://ltsi.univ-rennes.fr/ValueSet/forme-pharmaceutique-valueset|0.1.0' because the code system http://ltsi.univ-rennes.fr/CodeSystem/snomedct was not found</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>MedicationAdministration&#8203;.medication&#8203;.concept&#8203;.coding[0] (l15&#8203;/c6)</b></td><td><b>warning</b></td><td title=""><b>Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>MedicationAdministration&#8203;.dosage&#8203;.site&#8203;.coding[0]&#8203;.system (l66&#8203;/c6)</b></td><td><b>information</b></td><td><b>A definition for CodeSystem 'http://ltsi.univ-rennes.fr/CodeSystem/snomedct' could not be found, so the code cannot be validated</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>MedicationAdministration&#8203;.dosage&#8203;.route&#8203;.coding[0]&#8203;.system (l57&#8203;/c6)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://ltsi.univ-rennes.fr/CodeSystem/snomedct' could not be found, so the code cannot be validated</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>MedicationAdministration&#8203;.dosage&#8203;.route (l57&#8203;/c6)</b></td><td><b>warning</b></td><td title=""><b>Unable to check whether the code is in the value set 'http://ltsi.univ-rennes.fr/ValueSet/voie-administration-valueset|0.1.0' because the code system http://ltsi.univ-rennes.fr/CodeSystem/snomedct was not found</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>MedicationAdministration&#8203;.dosage&#8203;.route (l57&#8203;/c6)</b></td><td><b>warning</b></td><td title=""><b>A definition for CodeSystem 'http://ltsi.univ-rennes.fr/CodeSystem/snomedct' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'http://ltsi.univ-rennes.fr/ValueSet/voie-administration-valueset|0.1.0' because the code system http://ltsi.univ-rennes.fr/CodeSystem/snomedct was not found</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_MedicationAdministration-ExampleOncoFAIRMedicationAdministrationReport"> </a>
-<h2><a href="MedicationAdministration-ExampleOncoFAIRMedicationAdministrationReport.html">fsh-generated/resources/MedicationAdministration-ExampleOncoFAIRMedicationAdministrationReport.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>MedicationAdministration: Validated against <i>this.</i><a href="StructureDefinition-oncofair-medicationadministration-report.html">OncoFAIR MedicationAdministration Report</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>MedicationAdministration&#8203;.medication&#8203;.concept&#8203;.coding[0] (l24&#8203;/c6)</b></td><td><b>warning</b></td><td title=""><b>Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_MedicationRequest-ExampleOncoFAIRMedicationRequestComponent"> </a>
-<h2><a href="MedicationRequest-ExampleOncoFAIRMedicationRequestComponent.html">fsh-generated/resources/MedicationRequest-ExampleOncoFAIRMedicationRequestComponent.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>MedicationRequest: Validated against <i>this.</i><a href="StructureDefinition-oncofair-medicationrequest-component.html">OncoFAIR MedicationRequest Component</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>MedicationRequest&#8203;.extension[0]&#8203;.value&#8203;.ofType(CodeableConcept) (l58&#8203;/c8)</b></td><td><b>information</b></td><td title="MSG_EXPERIMENTAL"><b>Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-listeald-oncofair-codesystem|0.1.0</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest&#8203;.medication&#8203;.concept&#8203;.coding[0] (l10&#8203;/c6)</b></td><td><b>warning</b></td><td title=""><b>Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_MedicationRequest-ExampleOncoFAIRMedicationRequestElement"> </a>
-<h2><a href="MedicationRequest-ExampleOncoFAIRMedicationRequestElement.html">fsh-generated/resources/MedicationRequest-ExampleOncoFAIRMedicationRequestElement.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(3)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>MedicationRequest: Validated against <i>this.</i><a href="StructureDefinition-oncofair-medicationrequest-element.html">OncoFAIR MedicationRequest Element</a>, <i>this.</i><a href="StructureDefinition-oncofair-medicationrequest-prescription.html">OncoFAIR MedicationRequest Prescription</a> and <i>this.</i><a href="StructureDefinition-oncofair-medicationrequest-element.html">OncoFAIR MedicationRequest Element</a> (per meta)</li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest&#8203;.extension[0]&#8203;.value&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.system (l157&#8203;/c8)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://ltsi.univ-rennes.fr/CodeSystem/snomedct' could not be found, so the code cannot be validated</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest&#8203;.extension[0]&#8203;.value&#8203;.ofType(CodeableConcept) (l157&#8203;/c8)</b></td><td><b>warning</b></td><td title=""><b>Unable to check whether the code is in the value set 'http://ltsi.univ-rennes.fr/ValueSet/forme-pharmaceutique-valueset|0.1.0' because the code system http://ltsi.univ-rennes.fr/CodeSystem/snomedct was not found</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest&#8203;.extension[0]&#8203;.value&#8203;.ofType(CodeableConcept) (l157&#8203;/c8)</b></td><td><b>warning</b></td><td title=""><b>A definition for CodeSystem 'http://ltsi.univ-rennes.fr/CodeSystem/snomedct' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'http://ltsi.univ-rennes.fr/ValueSet/forme-pharmaceutique-valueset|0.1.0' because the code system http://ltsi.univ-rennes.fr/CodeSystem/snomedct was not found</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>MedicationRequest&#8203;.extension[3]&#8203;.extension[0]&#8203;.value&#8203;.ofType(CodeableConcept) (l179&#8203;/c12)</b></td><td><b>information</b></td><td title="MSG_EXPERIMENTAL"><b>Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-gonogo-oncofair-codesystem|0.1.0</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>MedicationRequest&#8203;.extension[4]&#8203;.extension[0]&#8203;.value&#8203;.ofType(CodeableConcept) (l202&#8203;/c12)</b></td><td><b>information</b></td><td title="MSG_EXPERIMENTAL"><b>Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-statutvalidpharm-oncofair-codesystem|0.1.0</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>MedicationRequest&#8203;.extension[4]&#8203;.extension[1]&#8203;.value&#8203;.ofType(CodeableConcept) (l214&#8203;/c12)</b></td><td><b>information</b></td><td title="MSG_EXPERIMENTAL"><b>Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-natureproppharm-oncofair-codesystem|0.1.0</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>MedicationRequest&#8203;.basedOn[1]&#8203;.extension[0]&#8203;.value&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.system (l16&#8203;/c12)</b></td><td><b>information</b></td><td><b>A definition for CodeSystem 'http://ltsi.univ-rennes.fr/CodeSystem/siph-type-liasion-oncofair-codesystem' could not be found, so the code cannot be validated</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest&#8203;.medication&#8203;.concept&#8203;.coding[0] (l50&#8203;/c6)</b></td><td><b>warning</b></td><td title=""><b>Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>MedicationRequest&#8203;.dosageInstruction[0]&#8203;.route&#8203;.coding[0]&#8203;.system (l83&#8203;/c8)</b></td><td><b>information</b></td><td><b>A definition for CodeSystem 'http://ltsi.univ-rennes.fr/CodeSystem/snomedct' could not be found, so the code cannot be validated</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>MedicationRequest&#8203;.dosageInstruction[0]&#8203;.method (l74&#8203;/c8)</b></td><td><b>information</b></td><td title="MSG_EXPERIMENTAL"><b>Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem|0.1.0</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest&#8203;.dosageInstruction[0]&#8203;.route (l83&#8203;/c8)</b></td><td><b>warning</b></td><td title=""><b>Unable to check whether the code is in the value set 'http://ltsi.univ-rennes.fr/ValueSet/voie-administration-valueset|0.1.0' because the code system http://ltsi.univ-rennes.fr/CodeSystem/snomedct was not found</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest&#8203;.dosageInstruction[0]&#8203;.route (l83&#8203;/c8)</b></td><td><b>warning</b></td><td title=""><b>A definition for CodeSystem 'http://ltsi.univ-rennes.fr/CodeSystem/snomedct' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'http://ltsi.univ-rennes.fr/ValueSet/voie-administration-valueset|0.1.0' because the code system http://ltsi.univ-rennes.fr/CodeSystem/snomedct was not found</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_MedicationRequest-ExampleOncoFAIRMedicationRequestPrescription"> </a>
-<h2><a href="MedicationRequest-ExampleOncoFAIRMedicationRequestPrescription.html">fsh-generated/resources/MedicationRequest-ExampleOncoFAIRMedicationRequestPrescription.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(3)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>MedicationRequest: Validated against <i>this.</i><a href="StructureDefinition-oncofair-medicationrequest-prescription.html">OncoFAIR MedicationRequest Prescription</a>, <i>this.</i><a href="StructureDefinition-oncofair-medicationrequest-element.html">OncoFAIR MedicationRequest Element</a> and <i>this.</i><a href="StructureDefinition-oncofair-medicationrequest-prescription.html">OncoFAIR MedicationRequest Prescription</a> (per meta)</li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest&#8203;.medication&#8203;.concept&#8203;.coding[0] (l10&#8203;/c6)</b></td><td><b>warning</b></td><td title=""><b>Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
-   </tr>
-</table>
-<hr/>
 <a name="_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_Observation-ExampleOncoFAIRObservation"> </a>
-<h2><a href="Observation-ExampleOncoFAIRObservation.html">fsh-generated/resources/Observation-ExampleOncoFAIRObservation.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-oncofair-observation.html">OncoFAIR Observation</a></li></ul>
+<h2><a href="Observation-ExampleOncoFAIRObservation.html">fsh-generated/resources/Observation-ExampleOncoFAIRObservation.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-oncofair-observation.html">OncoFAIR Observation</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -405,18 +249,18 @@ hl7.terminology.r5#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/ValueSet
 </table>
 <hr/>
 <a name="_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_StructureDefinition-oncofair-medicationadministration-element"> </a>
-<h2><a href="StructureDefinition-oncofair-medicationadministration-element.html">fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-element.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-oncofair-medicationadministration-element.html">fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-element.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[28]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c106727)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[28]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c106513)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[12]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c175544)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[13]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c175799)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[28]&#8203;.pattern&#8203;.ofType(Coding)</b></td><td><b>information</b></td><td title=""><b>The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)</b></td>
@@ -424,66 +268,81 @@ hl7.terminology.r5#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/ValueSet
 </table>
 <hr/>
 <a name="_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_StructureDefinition-oncofair-medicationadministration-report"> </a>
-<h2><a href="StructureDefinition-oncofair-medicationadministration-report.html">fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-report.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-oncofair-medicationadministration-report.html">fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-report.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[21]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c52282)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[21]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c52853)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c90411)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[3]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c91192)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[21]&#8203;.pattern&#8203;.ofType(Coding)</b></td><td><b>information</b></td><td title=""><b>The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)</b></td>
    </tr>
 </table>
 <hr/>
+<a name="_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_StructureDefinition-oncofair-medicationrequest-component"> </a>
+<h2><a href="StructureDefinition-oncofair-medicationrequest-component.html">fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-component.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[29]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c93606)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[7]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c202077)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[29]&#8203;.pattern&#8203;.ofType(Coding)</b></td><td><b>information</b></td><td title=""><b>The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_StructureDefinition-oncofair-medicationrequest-element"> </a>
-<h2><a href="StructureDefinition-oncofair-medicationrequest-element.html">fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-element.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-oncofair-medicationrequest-element.html">fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-element.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[0] (l1&#8203;/c428228)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-27: 'Mappings SHOULD be unique by key' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[57]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c210442)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[0] (l1&#8203;/c419293)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-27: 'Mappings SHOULD be unique by key' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[20]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c424400)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[57]&#8203;.pattern&#8203;.ofType(Coding)</b></td><td><b>information</b></td><td title=""><b>The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_ValueSet-forme-pharmaceutique-valueset"> </a>
-<h2><a href="ValueSet-forme-pharmaceutique-valueset.html">fsh-generated/resources/ValueSet-forme-pharmaceutique-valueset.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/valueset.html">ValueSet</a></li></ul>
+<a name="_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_StructureDefinition-oncofair-medicationrequest-prescription"> </a>
+<h2><a href="StructureDefinition-oncofair-medicationrequest-prescription.html">fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-prescription.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.filter[0] (l1&#8203;/c1199)</b></td><td><b>warning</b></td><td title=""><b>The property 'constraint' is not known for the system 'http://ltsi.univ-rennes.fr/CodeSystem/snomedct', so may not be understood by the terminology ecosystem. Known properties for this system: concept,code,status,inactive,effectiveDate,deprecationDate,retirementDate,notSelectable,synonym,comment,itemWeight,parent,child,partOf,expression,expressions,definitionStatusId,moduleId,normalForm,normalFormTerse,Due to,Associated with,Associated morphology,Has specimen,Specimen source morphology,Specimen source topography,Specimen source identity,Specimen procedure,Part of,Has active ingredient,Subject of information,Causative agent,Associated finding,Component,Severity,Occurrence,Episodicity,Technique,Revision status,Units,After,Access,Method,Priority,Clinical course,Laterality,Associated procedure,Finding site,Direct device,Direct morphology,Direct substance,Has focus,Has intent,Procedure site,Has definitional manifestation,Indirect morphology,Indirect device,Has interpretation,Interprets,Measurement method,Property,Recipient category,Scale type,Specimen substance,Time aspect,Pathological process,Procedure site - Direct,Procedure site - Indirect,Procedure device,Procedure morphology,Finding context,Procedure context,Temporal context,Subject relationship context,Route of administration,Has dose form,Finding method,Finding informer,Using device,Using energy,Using substance,Surgical approach,Using access device,Role group,Property type,Inheres in,Towards,Characterizes,Process agent,Process duration,Process output,Relative to,Precondition,Direct site,Specified by,Observes,Is about</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[35]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c88093)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet&#8203;.where(id = 'forme-pharmaceutique-valueset')</b></td><td><b>warning</b></td><td><b>Error from http://tx.fhir.org/r4: Unable to provide support for code system http://ltsi.univ-rennes.fr/CodeSystem/snomedct</b> (from <a href="qa-txsrvr.html#"></ta>, see <a href="qa-tx.html#l16">log</a>)</td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[7]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c170543)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
    </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_ValueSet-voie-administration-valueset"> </a>
-<h2><a href="ValueSet-voie-administration-valueset.html">fsh-generated/resources/ValueSet-voie-administration-valueset.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/valueset.html">ValueSet</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.filter[0] (l1&#8203;/c1310)</b></td><td><b>warning</b></td><td title=""><b>The property 'constraint' is not known for the system 'http://ltsi.univ-rennes.fr/CodeSystem/snomedct', so may not be understood by the terminology ecosystem. Known properties for this system: concept,code,status,inactive,effectiveDate,deprecationDate,retirementDate,notSelectable,synonym,comment,itemWeight,parent,child,partOf,expression,expressions,definitionStatusId,moduleId,normalForm,normalFormTerse,Due to,Associated with,Associated morphology,Has specimen,Specimen source morphology,Specimen source topography,Specimen source identity,Specimen procedure,Part of,Has active ingredient,Subject of information,Causative agent,Associated finding,Component,Severity,Occurrence,Episodicity,Technique,Revision status,Units,After,Access,Method,Priority,Clinical course,Laterality,Associated procedure,Finding site,Direct device,Direct morphology,Direct substance,Has focus,Has intent,Procedure site,Has definitional manifestation,Indirect morphology,Indirect device,Has interpretation,Interprets,Measurement method,Property,Recipient category,Scale type,Specimen substance,Time aspect,Pathological process,Procedure site - Direct,Procedure site - Indirect,Procedure device,Procedure morphology,Finding context,Procedure context,Temporal context,Subject relationship context,Route of administration,Has dose form,Finding method,Finding informer,Using device,Using energy,Using substance,Surgical approach,Using access device,Role group,Property type,Inheres in,Towards,Characterizes,Process agent,Process duration,Process output,Relative to,Precondition,Direct site,Specified by,Observes,Is about</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>ValueSet&#8203;.where(id = 'voie-administration-valueset')</b></td><td><b>warning</b></td><td><b>Error from http://tx.fhir.org/r4: Unable to provide support for code system http://ltsi.univ-rennes.fr/CodeSystem/snomedct</b> (from <a href="qa-txsrvr.html#"></ta>, see <a href="qa-tx.html#l18">log</a>)</td>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[35]&#8203;.pattern&#8203;.ofType(Coding)</b></td><td><b>information</b></td><td title=""><b>The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)</b></td>
    </tr>
 </table>
 <a name="suppressed"> </a>
@@ -518,7 +377,19 @@ hl7.terminology.r5#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/ValueSet
      <td><a href="MedicationAdministration-ExampleOncoFAIRMedicationAdministrationComponent.html">fsh-generated/resources/MedicationAdministration-ExampleOncoFAIRMedicationAdministrationComponent.json</a></td><td><b>Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-statutcomposantadm-oncofair-codesystem|0.1.0</b></td>
    </tr>
    <tr style="background-color: #fffff2">
+     <td><a href="MedicationAdministration-ExampleOncoFAIRMedicationAdministrationComponent.html">fsh-generated/resources/MedicationAdministration-ExampleOncoFAIRMedicationAdministrationComponent.json</a></td><td><b>Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem|0.1.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationAdministration-ExampleOncoFAIRMedicationAdministrationElement.html">fsh-generated/resources/MedicationAdministration-ExampleOncoFAIRMedicationAdministrationElement.json</a></td><td><b>Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem|0.1.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationAdministration-ExampleOncoFAIRMedicationAdministrationReport.html">fsh-generated/resources/MedicationAdministration-ExampleOncoFAIRMedicationAdministrationReport.json</a></td><td><b>Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem|0.1.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
      <td><a href="MedicationRequest-ExampleOncoFAIRMedicationRequestComponent.html">fsh-generated/resources/MedicationRequest-ExampleOncoFAIRMedicationRequestComponent.json</a></td><td><b>Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-listeald-oncofair-codesystem|0.1.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationRequest-ExampleOncoFAIRMedicationRequestComponent.html">fsh-generated/resources/MedicationRequest-ExampleOncoFAIRMedicationRequestComponent.json</a></td><td><b>Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem|0.1.0</b></td>
    </tr>
    <tr style="background-color: #fffff2">
      <td><a href="MedicationRequest-ExampleOncoFAIRMedicationRequestElement.html">fsh-generated/resources/MedicationRequest-ExampleOncoFAIRMedicationRequestElement.json</a></td><td><b>Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-gonogo-oncofair-codesystem|0.1.0</b></td>
@@ -530,7 +401,16 @@ hl7.terminology.r5#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/ValueSet
      <td><a href="MedicationRequest-ExampleOncoFAIRMedicationRequestElement.html">fsh-generated/resources/MedicationRequest-ExampleOncoFAIRMedicationRequestElement.json</a></td><td><b>Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-natureproppharm-oncofair-codesystem|0.1.0</b></td>
    </tr>
    <tr style="background-color: #fffff2">
+     <td><a href="MedicationRequest-ExampleOncoFAIRMedicationRequestElement.html">fsh-generated/resources/MedicationRequest-ExampleOncoFAIRMedicationRequestElement.json</a></td><td><b>Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-type-liaison-oncofair-codesystem|0.1.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationRequest-ExampleOncoFAIRMedicationRequestElement.html">fsh-generated/resources/MedicationRequest-ExampleOncoFAIRMedicationRequestElement.json</a></td><td><b>Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem|0.1.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
      <td><a href="MedicationRequest-ExampleOncoFAIRMedicationRequestElement.html">fsh-generated/resources/MedicationRequest-ExampleOncoFAIRMedicationRequestElement.json</a></td><td><b>Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem|0.1.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationRequest-ExampleOncoFAIRMedicationRequestPrescription.html">fsh-generated/resources/MedicationRequest-ExampleOncoFAIRMedicationRequestPrescription.json</a></td><td><b>Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem|0.1.0</b></td>
    </tr>
 </table>
 <hr/>
@@ -548,6 +428,24 @@ hl7.terminology.r5#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/ValueSet
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="StructureDefinition-oncofair-medicationadministration-report.html">fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-report.json</a></td><td><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-oncofair-medicationrequest-component.html">fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-component.json</a></td><td><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-oncofair-medicationrequest-component.html">fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-component.json</a></td><td><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-oncofair-medicationrequest-element.html">fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-element.json</a></td><td><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-oncofair-medicationrequest-element.html">fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-element.json</a></td><td><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-oncofair-medicationrequest-prescription.html">fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-prescription.json</a></td><td><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-oncofair-medicationrequest-prescription.html">fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-prescription.json</a></td><td><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
    </tr>
 </table>
 </body>

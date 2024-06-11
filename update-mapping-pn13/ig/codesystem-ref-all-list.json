@@ -320,6 +320,17 @@
       "http://hl7.org/fhir/R5/valueset-observation-codes.html" : "LOINC Codes"
     },
     {
+      "url" : "http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ConceptMedicationOncoFAIRCodeSystem",
+      "title" : "Concepts Medication Code System",
+      "description" : "Code system pour différiencier les niveaux de MR/MA",
+      "uses" : {
+      },
+      "ValueSet-concept-medication-oncofair-valueset.html" : "Concepts Medication Value Set"
+    },
+    {
       "url" : "http://ltsi.univ-rennes.fr/CodeSystem/medical-units-oncofair-codesystem",
       "version" : "0.1.0",
       "status" : "draft",
@@ -461,18 +472,6 @@
       "uses" : {
       },
       "ValueSet-siph-typeevenement-oncofair-valueset.html" : "Type de l'évènement Value Set"
-    },
-    {
-      "url" : "http://ltsi.univ-rennes.fr/CodeSystem/snomedct",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "SNOMEDCT",
-      "title" : "SNOMED CT (all versions)",
-      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
-      "uses" : {
-      },
-      "ValueSet-voie-administration-valueset.html" : "Voie d'administration Value Set",
-      "ValueSet-forme-pharmaceutique-valueset.html" : "Forme pharmaceutique Value Set"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/admit-source",
@@ -831,8 +830,8 @@
       "oids" : ["2.16.840.1.113883.5.1008"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R5/valueset-encounter-special-courtesy.html" : "Special Courtesy",
-      "http://hl7.org/fhir/R5/valueset-marital-status.html" : "Marital Status Codes"
+      "http://hl7.org/fhir/R5/valueset-marital-status.html" : "Marital Status Codes",
+      "http://hl7.org/fhir/R5/valueset-encounter-special-courtesy.html" : "Special Courtesy"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",

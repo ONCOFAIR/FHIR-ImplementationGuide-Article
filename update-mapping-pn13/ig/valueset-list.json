@@ -1,13 +1,15 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://ltsi.univ-rennes.fr/ValueSet/forme-pharmaceutique-valueset",
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/concept-medication-oncofair-valueset",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "FormePharmaceutiqueValueSet",
-      "title" : "Forme pharmaceutique Value Set",
-      "description" : "Value Set pour la forme pharmaceutique",
-      "systems" : ["http://ltsi.univ-rennes.fr/CodeSystem/snomedct"]
+      "name" : "ConceptMedicationOncoFAIRValueSet",
+      "title" : "Concepts Medication Value Set",
+      "description" : "Value Set pour différiencier les niveaux de MR/MA",
+      "systems" : [
+        "http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem"
+      ]
     },
     {
       "url" : "http://ltsi.univ-rennes.fr/ValueSet/medical-units-oncofair-valueset",
@@ -151,15 +153,6 @@
       "systems" : [
         "http://ltsi.univ-rennes.fr/CodeSystem/siph-typeevenement-oncofair-codesystem"
       ]
-    },
-    {
-      "url" : "http://ltsi.univ-rennes.fr/ValueSet/voie-administration-valueset",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "VoieAdministrationValueSet",
-      "title" : "Voie d'administration Value Set",
-      "description" : "Value Set pour la voie d'administration",
-      "systems" : ["http://ltsi.univ-rennes.fr/CodeSystem/snomedct"]
     }
   ]
 }

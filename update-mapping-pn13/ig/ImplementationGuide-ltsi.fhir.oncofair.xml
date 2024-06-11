@@ -11,7 +11,7 @@
   <name value="OncoFAIR"/>
   <title value="Onco-FAIR"/>
   <status value="draft"/>
-  <date value="2024-06-10T15:21:14+00:00"/>
+  <date value="2024-06-11T13:09:11+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -44,6 +44,28 @@
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
       <valueCode value="hl7.fhir.uv.tools#0.1.0"/>
     </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/concept-medication-oncofair-codesystem"/>
+      </reference>
+      <name value="Concepts Medication Code System"/>
+      <description value="Code system pour différiencier les niveaux de MR/MA"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/concept-medication-oncofair-valueset"/>
+      </reference>
+      <name value="Concepts Medication Value Set"/>
+      <description value="Value Set pour différiencier les niveaux de MR/MA"/>
+      <isExample value="false"/>
+    </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="HealthcareService"/>
@@ -230,17 +252,6 @@
       <name value="Example OncoFAIR Practitioner"/>
       <description value="An example instance of an OncoFAIR practitioner with an identifier."/>
       <isExample value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/forme-pharmaceutique-valueset"/>
-      </reference>
-      <name value="Forme pharmaceutique Value Set"/>
-      <description value="Value Set pour la forme pharmaceutique"/>
-      <isExample value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -719,17 +730,6 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/snomedct"/>
-      </reference>
-      <name value="SNOMED CT (all versions)"/>
-      <description value="SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO)."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
         <reference value="CodeSystem/siph-statutcomposantadm-oncofair-codesystem"/>
       </reference>
       <name value="Statut composant administré Code System"/>
@@ -855,17 +855,6 @@
       </reference>
       <name value="Type évènement Code System"/>
       <description value="Code system pour l'attribut TypeEvenement"/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/voie-administration-valueset"/>
-      </reference>
-      <name value="Voie d'administration Value Set"/>
-      <description value="Value Set pour la voie d'administration"/>
       <isExample value="false"/>
     </resource>
     <page>
