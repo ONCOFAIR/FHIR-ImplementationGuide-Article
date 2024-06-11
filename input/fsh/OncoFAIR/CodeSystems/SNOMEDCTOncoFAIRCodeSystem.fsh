@@ -1,4 +1,4 @@
-CodeSystem: SNOMEDCT
+/*CodeSystem: SNOMEDCT
 Id: snomedct
 Title: "SNOMED CT (all versions)"
 Description: "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO)."
@@ -23,7 +23,7 @@ Description: "SNOMED CT is the most comprehensive and precise clinical health te
 * ^filter[=].description = "The result of the filter is the result of executing the given SNOMED CT Expression Constraint"
 * ^filter[=].operator = #=
 * ^filter[=].value = "A SNOMED CT ECL expression (see http://snomed.org/ecl)"
-* ^filter[+].code = #expressions
+* ^filter[+].code = #expression
 * ^filter[=].description = "Whether post-coordinated expressions are included in the value set"
 * ^filter[=].operator = #=
 * ^filter[=].value = "true or false"
@@ -285,7 +285,7 @@ Description: "SNOMED CT is the most comprehensive and precise clinical health te
 * ^property[=].type = #code
 * ^property[+].code = #"Is about"
 * ^property[=].uri = "http://snomed.info/id/704647008"
-* ^property[=].type = #code
+* ^property[=].type = #code*/
 
 
 
