@@ -5,7 +5,11 @@ Description: "An example instance of OncoFAIR MedicationRequest Prescription."
 
 * status = #active
 * intent = #order
-* medication.concept.coding.code = #prescription
+
+* medication.concept.coding[0].system = "http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem"
+* medication.concept.coding[0].display = "prescription"
+* medication.concept.coding[0].code = #prescription
+
 * medication.reference = Reference(ExampleOncoFAIRMedication)
 
 * subject = Reference (ExampleOncoFAIRPatient)

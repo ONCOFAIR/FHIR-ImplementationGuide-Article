@@ -5,7 +5,12 @@ Description: "An example instance of an OncoFAIR MedicationAdministration Compon
 
 * partOf = Reference(ExampleOncoFAIRMedicationAdministrationElement)
 
-* medication.concept = #component
+
+
+* medication.concept.coding[0].system = "http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem"
+* medication.concept.coding[0].display = "component"
+* medication.concept.coding[0].code = #component
+
 * medication.reference = Reference(ExampleOncoFAIRMedication)
 * subject = Reference (ExampleOncoFAIRPatient)
 

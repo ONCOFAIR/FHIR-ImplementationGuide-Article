@@ -9,7 +9,12 @@ Description: "An example instance of an OncoFAIR MedicationAdministration Report
 * status = #in-progress
 * subject = Reference(ExampleOncoFAIRPatient)
 
-* medication.concept = #report
+
+
+* medication.concept.coding[0].system = "http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem"
+* medication.concept.coding[0].display = "report"
+* medication.concept.coding[0].code = #report
+
 * medication.reference = Reference(ExampleOncoFAIRMedication)
 
 

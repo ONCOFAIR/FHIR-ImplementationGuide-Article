@@ -6,7 +6,7 @@ Description: "Example instance of OncoFAIRMedicationRequestElement"
 * basedOn[prescription] = Reference(ExampleOncoFAIRMedicationRequestPrescription)
 * basedOn[element] = Reference(ExampleOncoFAIRMedicationRequestElement)
 * basedOn[protocol] = Reference(ExampleOncoFAIRCarePlan)
-* basedOn[element].extension[oncofair-mr-element-link-type].valueCodeableConcept.coding[0].system = "http://ltsi.univ-rennes.fr/CodeSystem/siph-type-liasion-oncofair-codesystem"
+* basedOn[element].extension[oncofair-mr-element-link-type].valueCodeableConcept.coding[0].system = "http://ltsi.univ-rennes.fr/CodeSystem/siph-type-liaison-oncofair-codesystem"
 * basedOn[element].extension[oncofair-mr-element-link-type].valueCodeableConcept.coding[0].code = #COMP 
 * basedOn[element].extension[oncofair-mr-element-link-type].valueCodeableConcept.coding[0].display = "Complément"
 
@@ -22,7 +22,10 @@ Description: "Example instance of OncoFAIRMedicationRequestElement"
 
 * groupIdentifier.value = "303030"
 
-* medication.concept = #element
+* medication.concept.coding[0].system = "http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem"
+* medication.concept.coding[0].display = "element"
+* medication.concept.coding[0].code = #element
+
 * medication.reference = Reference(ExampleOncoFAIRMedication)
 
 * status = #active
@@ -48,7 +51,7 @@ Description: "Example instance of OncoFAIRMedicationRequestElement"
 * dosageInstruction[element].method.coding[0].code = #MED
 * dosageInstruction[element].method.coding[0].display = "Médicament"
 
-* dosageInstruction[element].route.coding[0].system = "http://ltsi.univ-rennes.fr/CodeSystem/snomedct"
+* dosageInstruction[element].route.coding[0].system = "http://snomed.info/sct"
 * dosageInstruction[element].route.coding[0].code = #26643006
 * dosageInstruction[element].route.coding[0].display = "Oral route"
 
@@ -70,7 +73,7 @@ Description: "Example instance of OncoFAIRMedicationRequestElement"
 * note[indication].text = "Prescribed for headaches"
 * note[comments].text = "Administered after meals"
 
-* extension[oncofair-element-form].valueCodeableConcept.coding[0].system = "http://ltsi.univ-rennes.fr/CodeSystem/snomedct"
+* extension[oncofair-element-form].valueCodeableConcept.coding[0].system = "http://snomed.info/sct"
 * extension[oncofair-element-form].valueCodeableConcept.coding[0].code = #385055001
 * extension[oncofair-element-form].valueCodeableConcept.coding[0].display = "Tablet"
 
