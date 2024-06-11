@@ -14,25 +14,21 @@ Description: "Prescription item."
 * category 1..1 MS
 * category.coding 1..1 
 * category.coding ^short = "The prescription category"
-* category.coding ^definition = "The prescription category. Could be: Creation, Stop, Modification, Validation"
+* category.coding ^definition = "The prescription category. Could be: Création, Arrêt, Modification, Validation"
 * subject MS
 * subject ^short = "The patient who will take the prescription item"
-* dispenseRequest.initialFill.quantity.value 1..1 MS 
-* dispenseRequest.initialFill.quantity.value ^short = "The first fill quantity of medication"
 * requester only Reference(OncologyPractitioner)
 * requester ^short = "The practitioner's identifier"
 * device MS 
 * device ^short = "The associated device"
-* effectiveDosePeriod.start 1..1 MS // PN13 = dh_debut_prescrite
+* effectiveDosePeriod.start 1..1 MS // PN13 = dateHeureDebutPrescription 
 * effectiveDosePeriod.start ^short = "Beginning of the period over which the medication must be taken"
-* effectiveDosePeriod.end MS // PN13 = dh_fin_prescrite 
+* effectiveDosePeriod.end MS // PN13 = dateHeureFinPrescription 
 * effectiveDosePeriod.end ^short = "End of the period over which the medication must be taken"
 * dosageInstruction.route.coding 1..1 MS 
 * dosageInstruction.route.coding ^short = "How the medication should enter the body"
-* note MS // = for notes & vehicle ?
+* note MS 
 * note ^short = "Note"
-* supportingInformation MS // = for vehicle ?
-* supportingInformation ^short = "Additional information"
 * medication MS
 * medication only CodeableReference(OncologyMedication)
 * medication ^short = "The prescribed medication"
@@ -44,9 +40,9 @@ Description: "Prescription item."
 * dosageInstruction.text ^short = "Textual dosage instructions"
 * dosageInstruction.timing MS
 * dosageInstruction.timing ^short = "Timing for the dosage"
-* dosageInstruction.timing.repeat.boundsPeriod.start MS
+* dosageInstruction.timing.repeat.boundsPeriod.start MS // PN13 = dateHeureDebutPrescrite 
 * dosageInstruction.timing.repeat.boundsPeriod.start ^short = "Minimum start time for event"
-* dosageInstruction.timing.repeat.boundsPeriod.end MS
+* dosageInstruction.timing.repeat.boundsPeriod.end MS // PN13 = dateHeureFinPrescrite
 * dosageInstruction.timing.repeat.boundsPeriod.end ^short = "Maximum start time for event"
 * dosageInstruction.timing.repeat.frequency MS // = number of time
 * dosageInstruction.timing.repeat.frequency ^short = "Frequency of dosage"
@@ -69,11 +65,7 @@ Description: "Prescription item."
 * dosageInstruction.doseAndRate.rateRatio.denominator.value ^short = "Value of the dose rate denominator"
 * dosageInstruction.doseAndRate.rateRatio.denominator.unit
 * dosageInstruction.doseAndRate.rateRatio.numerator.unit ^short = "Unit of the dose rate numerator"
-
-// old version to represent the prescribed component quantity
-/*
-* dispenseRequest.quantity MS 
-* dispenseRequest.quantity ^short = "Quantity prescribed"
-* dispenseRequest.quantity.value //e.g. 142.5
-* dispenseRequest.quantity.unit //e.g. mg
-*/
+* extension contains MedicationItemProvenance named medicationItemProvenance 0..1
+and EventTypeData named eventTypeData 0..1 
+and EventTimeMin named eventTimeMin 0..1
+and EventTimeMax named eventTimeMax 0..1
