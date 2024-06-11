@@ -5,7 +5,12 @@ Description: "An example instance of an OncoFAIR MedicationAdministration Elemen
 
 * partOf = Reference(ExampleOncoFAIRMedicationAdministrationReport)
 
-* medication.concept = #element
+
+
+* medication.concept.coding[0].system = "http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem"
+* medication.concept.coding[0].display = "element"
+* medication.concept.coding[0].code = #element
+
 * medication.reference = Reference(ExampleOncoFAIRMedication)
 
 * subject = Reference(ExampleOncoFAIRPatient)
@@ -23,11 +28,11 @@ Description: "An example instance of an OncoFAIR MedicationAdministration Elemen
 * dosage.method.coding[0].code = #MED
 * dosage.method.coding[0].display = "Médicament"
 
-* dosage.route.coding[0].system = "http://ltsi.univ-rennes.fr/CodeSystem/snomedct"
+* dosage.route.coding[0].system = "http://snomed.info/sct"
 * dosage.route.coding[0].code = #26643006
 * dosage.route.coding[0].display = "Oral route"
 
-* dosage.site.coding[0].system = "http://ltsi.univ-rennes.fr/CodeSystem/snomedct"
+* dosage.site.coding[0].system = "http://snomed.info/sct"
 * dosage.site.coding[0].code = #49928004
 * dosage.site.coding[0].display = "Throat"
 
@@ -49,6 +54,6 @@ Description: "An example instance of an OncoFAIR MedicationAdministration Elemen
 * extension[oncofair-ma-plannedperiod].valuePeriod.start = "2024-06-01T07:00:00Z"
 * extension[oncofair-ma-plannedperiod].valuePeriod.end = "2024-06-01T08:00:00Z"
 
-* extension[oncofair-element-form].valueCodeableConcept.coding[0].system = "http://ltsi.univ-rennes.fr/CodeSystem/snomedct"
+* extension[oncofair-element-form].valueCodeableConcept.coding[0].system = "http://snomed.info/sct"
 * extension[oncofair-element-form].valueCodeableConcept.coding[0].code = #385055001
 * extension[oncofair-element-form].valueCodeableConcept.coding[0].display = "Tablet"
