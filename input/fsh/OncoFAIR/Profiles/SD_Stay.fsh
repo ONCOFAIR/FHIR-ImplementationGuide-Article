@@ -1,6 +1,6 @@
 Profile: Stay
 Parent: Encounter
-Id: Stay
+Id: stay
 Title: "Stay"
 Description : "Stay."
 * identifier 1..* MS
@@ -12,6 +12,6 @@ Description : "Stay."
 * subject 1..1 MS
 * subject only Reference(OncologyPatient)
 * subject ^short = "The patient involved in the stay"
-* location 1..* MS
-* location.location only Reference(AccomodationUnit)
-* location.location ^short = "The medical liability unit of the stay"
+* serviceType 1..* MS
+* serviceType only CodeableReference(OncologyHealthcareService)
+* serviceType ^short = "The healthcare service of the stay"
