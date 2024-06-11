@@ -10,28 +10,33 @@
   fhir:id [ fhir:v "exampleStayFOLFOX4"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/Stay"^^xsd:anyURI ;
-       fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/Stay>
+       fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/stay"^^xsd:anyURI ;
+       fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/stay>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"exampleStayFOLFOX4\"> </a><a name=\"hcexampleStayFOLFOX4\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;exampleStayFOLFOX4&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Stay.html\">Stay</a></p></div><p><b>identifier</b>: 15461</p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"Patient-exampleOncologyPatient.html\">Patient/exampleOncologyPatient</a> &quot; DOE&quot;</p><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Location-exampleAccomodationUnit.html\">Location/exampleAccomodationUnit</a> &quot;SAB&quot;</td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter </b><a name=\"exampleStayFOLFOX4\"> </a><a name=\"hcexampleStayFOLFOX4\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceEncounter &quot;exampleStayFOLFOX4&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-stay.html\">Stay</a></p></div><p><b>identifier</b>: 15461</p><p><b>status</b>: completed</p><h3>ServiceTypes</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"HealthcareService-exampleHealthcareServiceSAB.html\">HealthcareService/exampleHealthcareServiceSAB</a> &quot;SAB&quot;</td></tr><tr><td style=\"display: none\">*</td><td><a href=\"HealthcareService-exampleHealthcareServiceHCMED.html\">HealthcareService/exampleHealthcareServiceHCMED</a> &quot;HCMED&quot;</td></tr></table><p><b>subject</b>: <a href=\"Patient-exampleOncologyPatient.html\">Patient/exampleOncologyPatient</a> &quot; DOE&quot;</p></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:value [ fhir:v "15461" ]
   ] ) ; # 
   fhir:status [ fhir:v "completed"] ; # 
+  fhir:serviceType ( [
+     fhir:reference [
+       fhir:link <http://ltsi.univ-rennes.fr/HealthcareService/exampleHealthcareServiceSAB> ;
+       fhir:reference [ fhir:v "HealthcareService/exampleHealthcareServiceSAB" ]
+     ]
+  ] [
+     fhir:reference [
+       fhir:link <http://ltsi.univ-rennes.fr/HealthcareService/exampleHealthcareServiceHCMED> ;
+       fhir:reference [ fhir:v "HealthcareService/exampleHealthcareServiceHCMED" ]
+     ]
+  ] ) ; # 
   fhir:subject [
      fhir:link <http://ltsi.univ-rennes.fr/Patient/exampleOncologyPatient> ;
      fhir:reference [ fhir:v "Patient/exampleOncologyPatient" ]
-  ] ; # 
-  fhir:location ( [
-     fhir:location [
-       fhir:link <http://ltsi.univ-rennes.fr/Location/exampleAccomodationUnit> ;
-       fhir:reference [ fhir:v "Location/exampleAccomodationUnit" ]
-     ]
-  ] ) . # 
+  ] . # 
 
 # -------------------------------------------------------------------------------------
 

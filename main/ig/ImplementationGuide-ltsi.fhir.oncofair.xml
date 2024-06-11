@@ -11,7 +11,7 @@
   <name value="OncoFAIR"/>
   <title value="Onco-FAIR"/>
   <status value="draft"/>
-  <date value="2024-04-18T13:54:15+00:00"/>
+  <date value="2024-06-11T08:08:31+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -30,7 +30,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r5"/>
-    <version value="5.3.0"/>
+    <version value="5.5.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -38,7 +38,7 @@
     </extension>
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r5"/>
-    <version value="1.0.0"/>
+    <version value="5.1.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
@@ -64,6 +64,17 @@
       </reference>
       <name value="Additional Information"/>
       <description value="Additional information, such as height or weight."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/medication-administered-quantity"/>
+      </reference>
+      <name value="Administered quantity of medication"/>
+      <description value="The administered quantity of medication."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -96,7 +107,7 @@
         <reference value="ValueSet/vsCommunicationModes"/>
       </reference>
       <name value="Communication modes"/>
-      <description value="ValueSet for communication modes (incremental, summary)."/>
+      <description value="ValueSet for communication modes (Incrémental, Récapitulatif)."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -107,20 +118,85 @@
         <reference value="CodeSystem/CSCommunicationModes"/>
       </reference>
       <name value="Communication modes"/>
-      <description value="CodeSystem for french communication modes (incremental, summary)."/>
+      <description value="CodeSystem for french communication modes (Incrémental, Récapitulatif)."/>
       <isExample value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Location"/>
+        <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="Location/exampleAccomodationUnit"/>
+        <reference value="StructureDefinition/date-time"/>
       </reference>
-      <name value="exampleAccomodationUnit"/>
-      <description value="SAB accomodation unit."/>
-      <isExample value="true"/>
-      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/accomodation-unit"/>
+      <name value="Date and time"/>
+      <description value="Date and time."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/date-time-end"/>
+      </reference>
+      <name value="End date and time"/>
+      <description value="End date and time."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/eventTimeMax"/>
+      </reference>
+      <name value="Event Time Max"/>
+      <description value="Represents the maximum time for the event."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/eventTimeMin"/>
+      </reference>
+      <name value="Event Time Min"/>
+      <description value="Represents the minimum time for the event."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/eventTypeData"/>
+      </reference>
+      <name value="Event Type Data"/>
+      <description value="Represents the type of logical data for an event."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CSEventTypeData"/>
+      </reference>
+      <name value="Event Types"/>
+      <description value="CodeSystem for various event types used in French healthcare systems, identified by number, abbreviation, and full name."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VSEventTypeData"/>
+      </reference>
+      <name value="Event Types Data"/>
+      <description value="ValueSet for various event types used in French healthcare systems."/>
+      <isExample value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -172,15 +248,27 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
+        <valueString value="HealthcareService"/>
       </extension>
       <reference>
-        <reference value="Organization/exampleMedicalLiabilityUnit"/>
+        <reference value="HealthcareService/exampleHealthcareServiceHCMED"/>
       </reference>
-      <name value="exampleMedicalLiabilityUnit"/>
-      <description value="HCMED Medical liability unit."/>
+      <name value="exampleHealthcareServiceHCMED"/>
+      <description value="HCMED healthcare service."/>
       <isExample value="true"/>
-      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/Medical-liability-unit"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncology-healthcare-service"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="HealthcareService"/>
+      </extension>
+      <reference>
+        <reference value="HealthcareService/exampleHealthcareServiceSAB"/>
+      </reference>
+      <name value="exampleHealthcareServiceSAB"/>
+      <description value="SAB healthcare service."/>
+      <isExample value="true"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncology-healthcare-service"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -480,7 +568,7 @@
       <name value="exampleStayFOLFOX4"/>
       <description value="Stay of ID 15461."/>
       <isExample value="true"/>
-      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/Stay"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/stay"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -492,7 +580,7 @@
       <name value="exampleStayMISCELLANEOUS"/>
       <description value="Stay of ID 98456."/>
       <isExample value="true"/>
-      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/Stay"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/stay"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -514,6 +602,17 @@
       </reference>
       <name value="LOINC codes"/>
       <description value="LOINC CodeSystem."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/medication-lti-exemption"/>
+      </reference>
+      <name value="LTI Detailed Descriptions"/>
+      <description value="Detailed list of long-term illness (LTI)."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -547,6 +646,127 @@
       </reference>
       <name value="Medical units"/>
       <description value="CodeSystem for french medical units (accommodation, medical liability unit)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/medication-comment"/>
+      </reference>
+      <name value="Medication comment"/>
+      <description value="Adds a comment to a Medication resource."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/medication-is-vehicle"/>
+      </reference>
+      <name value="Medication Is Vehicle"/>
+      <description value="Indicates whether the medication is a vehicle."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/medication-item-provenance"/>
+      </reference>
+      <name value="Medication item provenance"/>
+      <description value="Adds a provenance to a MedicationItem resource"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vsMedicationItemProvenance"/>
+      </reference>
+      <name value="Medication item provenance"/>
+      <description value="ValueSet for medication item provenance."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CSMedicationItemProvenance"/>
+      </reference>
+      <name value="Medication item provenance"/>
+      <description value="CodeSystem for french medication item provenance."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/medication-lti-exemption"/>
+      </reference>
+      <name value="Medication LTI exemption"/>
+      <description value="Long-term illness (LTI) for which the patient can benefit from an exemption."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vsMedicationLTIExemption"/>
+      </reference>
+      <name value="Medication LTI Exemption"/>
+      <description value="ValueSet for medication LTI exemption."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/medication-status"/>
+      </reference>
+      <name value="Medication status"/>
+      <description value="Adds a status to a Medication resource"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vsMedicationStatus"/>
+      </reference>
+      <name value="Medication status"/>
+      <description value="ValueSet for medication status."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CSMedicationStatus"/>
+      </reference>
+      <name value="Medication status"/>
+      <description value="CodeSystem for french medication status."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/medication-type"/>
+      </reference>
+      <name value="Medication type"/>
+      <description value="Adds a type to a Medication resource"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -631,6 +851,28 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/oncology-healthcare-service"/>
+      </reference>
+      <name value="OncologyHealthcareService"/>
+      <description value="Healthcare service(s)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/medication-administered-planned-quantity"/>
+      </reference>
+      <name value="Planned quantity of medication"/>
+      <description value="The planned quantity of medication administered."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/prescription"/>
       </reference>
       <name value="Prescription"/>
@@ -645,7 +887,7 @@
         <reference value="CodeSystem/CSPrescriptionCategory"/>
       </reference>
       <name value="Prescription category"/>
-      <description value="CodeSystem for french prescription category (creation, stop, modification, validation)."/>
+      <description value="CodeSystem for french prescription category (Création, Arrêt, Modification, Validation)."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -667,7 +909,7 @@
         <reference value="ValueSet/vsPrescriptionCategory"/>
       </reference>
       <name value="Prescription status"/>
-      <description value="ValueSet for PlanDefinition types, extended to include creation, stop, modification and validation."/>
+      <description value="ValueSet for PlanDefinition types, extended to include Création, Arrêt, Modification and Validation."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -729,10 +971,21 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/date-time-start"/>
+      </reference>
+      <name value="Start date and time"/>
+      <description value="Start date and time."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/Stay"/>
+        <reference value="StructureDefinition/stay"/>
       </reference>
       <name value="Stay"/>
       <description value="Stay."/>

@@ -12,16 +12,6 @@ package IG #DDDDDD{
              Organization.name => [1..None]
         } 
 
-        class Stay{
-
-             Encounter.identifier => [1..None]
-             Encounter.identifier.value => [1..None]
-             Encounter.status => [None..None]
-             Encounter.subject => [1..None]
-             Encounter.location => [1..None]
-             Encounter.location.location => [None..None]
-        } 
-
         class AccomodationUnit{
 
              Location.name => [1..None]
@@ -41,13 +31,20 @@ package IG #DDDDDD{
 
         class AdministrationReport{
 
+             MedicationAdministration.extension => [1..None]
+             MedicationAdministration.extension:dateTimePlannedStart => <&plus>[1..1]
+             MedicationAdministration.extension:dateTimePlannedEnd => <&plus>[0..1]
+             MedicationAdministration.extension:medicationPlannedQuantity => <&plus>[0..1]
+             MedicationAdministration.extension:medicationAdministeredQuantity => <&plus>[0..1]
              MedicationAdministration.identifier.value => [None..None]
              MedicationAdministration.basedOn => [1..1]
              MedicationAdministration.medication => [None..None]
              MedicationAdministration.subject => [None..None]
              MedicationAdministration.encounter => [1..None]
              MedicationAdministration.occurence[x] => [None..None]
-             MedicationAdministration.occurence[x]:occurencePeriod => [1..1]
+             MedicationAdministration.occurence[x]:occurencePeriod => [0..1]
+             MedicationAdministration.occurence[x]:occurencePeriod.start => [1..None]
+             MedicationAdministration.occurence[x]:occurencePeriod.end => [None..None]
              MedicationAdministration.performer => [1..None]
              MedicationAdministration.performer.actor => [None..None]
              MedicationAdministration.request => [1..None]
@@ -63,8 +60,16 @@ package IG #DDDDDD{
              DeviceDefinition.deviceName => [1..1]
         } 
 
+        class OncologyHealthcareService{
+
+             HealthcareService.name => [1..None]
+        } 
+
         class OncologyMedication{
 
+             Medication.extension => [None..None]
+             Medication.extension:medicationType => <&plus>[0..1]
+             Medication.extension:medicationIsVehicle => <&plus>[0..1]
              Medication.identifier => [1..None]
              Medication.identifier.value => [1..None]
              Medication.code => [1..None]
@@ -95,6 +100,11 @@ package IG #DDDDDD{
 
         class PrescriptionItem{
 
+             MedicationRequest.extension => [None..None]
+             MedicationRequest.extension:medicationItemProvenance => <&plus>[0..1]
+             MedicationRequest.extension:eventTypeData => <&plus>[0..1]
+             MedicationRequest.extension:eventTimeMin => <&plus>[0..1]
+             MedicationRequest.extension:eventTimeMax => <&plus>[0..1]
              MedicationRequest.identifier => [1..None]
              MedicationRequest.identifier.value => [1..None]
              MedicationRequest.basedOn => [None..None]
@@ -104,7 +114,6 @@ package IG #DDDDDD{
              MedicationRequest.category.coding => [1..1]
              MedicationRequest.medication => [None..None]
              MedicationRequest.subject => [None..None]
-             MedicationRequest.supportingInformation => [None..None]
              MedicationRequest.requester => [None..None]
              MedicationRequest.device => [None..None]
              MedicationRequest.note => [None..None]
@@ -132,20 +141,19 @@ package IG #DDDDDD{
              MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateRatio.numerator.value => [None..None]
              MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateRatio.numerator.unit => [None..None]
              MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateRatio.denominator.value => [None..None]
-             MedicationRequest.dispenseRequest.initialFill.quantity.value => [1..None]
         } 
 
         class Prescription{
 
+             CarePlan.extension => [1..None]
+             CarePlan.extension:dateTimePrescription => <&plus>[1..1]
              CarePlan.identifier => [None..None]
              CarePlan.instantiatesCanonical => [1..1]
-             CarePlan.category => [1..1]
              CarePlan.subject => [None..None]
              CarePlan.encounter => [1..None]
              CarePlan.period => [1..None]
              CarePlan.period.start => [1..None]
              CarePlan.period.end => [1..None]
-             CarePlan.created => [1..None]
              CarePlan.supportingInfo => [1..None]
              CarePlan.activity => [1..None]
              CarePlan.activity.plannedActivityReference => [1..None]
@@ -160,15 +168,124 @@ package IG #DDDDDD{
              PlanDefinition.identifier.value => [1..None]
              PlanDefinition.name => [1..None]
              PlanDefinition.title => [1..None]
-             PlanDefinition.date => [1..None]
+             PlanDefinition.effectivePeriod.start => [1..None]
+        } 
+
+        class Stay{
+
+             Encounter.identifier => [1..None]
+             Encounter.identifier.value => [1..None]
+             Encounter.status => [None..None]
+             Encounter.serviceType => [1..None]
+             Encounter.subject => [1..None]
          }
 
      }
      package extension #paleturquoise {
 
+     AdministrationReport -[#black,dashed,thickness=2]-> DateTimeStart
+     AdministrationReport -[#black,dashed,thickness=2]-> DateTimeEnd
+     AdministrationReport -[#black,dashed,thickness=2]-> MedicationPlannedQuantity
+     AdministrationReport -[#black,dashed,thickness=2]-> MedicationAdministeredQuantity
+     OncologyMedication -[#black,dashed,thickness=2]-> MedicationType
+     OncologyMedication -[#black,dashed,thickness=2]-> MedicationIsVehicle
+     PrescriptionItem -[#black,dashed,thickness=2]-> MedicationItemProvenance
+     PrescriptionItem -[#black,dashed,thickness=2]-> EventTypeData
+     PrescriptionItem -[#black,dashed,thickness=2]-> EventTimeMin
+     PrescriptionItem -[#black,dashed,thickness=2]-> EventTimeMax
+     Prescription -[#black,dashed,thickness=2]-> DateTime
      Protocol -[#black,dashed,thickness=2]-> TreatmentCycleNumber
      Protocol -[#black,dashed,thickness=2]-> TreatmentDayNumber
 
+        class DateTimeEnd{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [1..None]
+          Extension.value[x]:valueDateTime => [1..1]
+        } 
+        class DateTimeStart{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [1..None]
+          Extension.value[x]:valueDateTime => [1..1]
+        } 
+        class DateTime{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [1..None]
+          Extension.value[x]:valueDateTime => [1..1]
+        } 
+        class EventTimeMax{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [1..None]
+          Extension.value[x]:valueTime => [1..1]
+        } 
+        class EventTimeMin{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [1..None]
+          Extension.value[x]:valueTime => [1..1]
+        } 
+        class EventTypeData{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class MedicationPlannedQuantity{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class MedicationAdministeredQuantity{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class MedicationComment{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class MedicationIsVehicle{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class MedicationItemProvenance{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class MedicationLTIExemption{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class MedicationStatus{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class MedicationType{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
         class TreatmentCycleNumber{
 
           Extension.extension => [None..0]
@@ -185,6 +302,26 @@ package IG #DDDDDD{
          }
      }
      package valueset #PaleVioletRed{
+
+        class VSEventTypeData  
+
+     EventTypeData -[#black,dotted,thickness=2]-> VSEventTypeData
+
+        class VSMedicationItemProvenance  
+
+     MedicationItemProvenance -[#black,dotted,thickness=2]-> VSMedicationItemProvenance
+
+        class VSMedicationLTIExemption  
+
+     MedicationLTIExemption -[#black,dotted,thickness=2]-> VSMedicationLTIExemption
+
+        class VSMedicationStatus  
+
+     MedicationStatus -[#black,dotted,thickness=2]-> VSMedicationStatus
+
+        class VSMedicationTypes  
+
+     MedicationType -[#black,dotted,thickness=2]-> VSMedicationTypes
        }
 
 package "Ressources de base" #palegreen {
@@ -192,10 +329,6 @@ package "Ressources de base" #palegreen {
  class "Organization" as  classd6b258792ff06f82933c74eeb8aef591 
 
     classd6b258792ff06f82933c74eeb8aef591 --> MedicalLiabilityUnit
-
- class "Encounter" as  classd1e9f9f891de8f9a655739a01fbf68f0 
-
-    classd1e9f9f891de8f9a655739a01fbf68f0 --> Stay
 
  class "Location" as  classce5bf551379459c1c61d2a204061c455 
 
@@ -212,6 +345,10 @@ package "Ressources de base" #palegreen {
  class "DeviceDefinition" as  classa6797321593ef085d950f590f4014cfa 
 
     classa6797321593ef085d950f590f4014cfa --> AssociatedDevice
+
+ class "HealthcareService" as  classccfbac0a7f2dd501f3a20274066b28a3 
+
+    classccfbac0a7f2dd501f3a20274066b28a3 --> OncologyHealthcareService
 
  class "Medication" as  class353bd6f65060d17097c3b03141e79cce 
 
@@ -236,5 +373,9 @@ package "Ressources de base" #palegreen {
  class "PlanDefinition" as  class0375201638a0df09e5ecd3c0b36df917 
 
     class0375201638a0df09e5ecd3c0b36df917 --> Protocol
+
+ class "Encounter" as  classd1e9f9f891de8f9a655739a01fbf68f0 
+
+    classd1e9f9f891de8f9a655739a01fbf68f0 --> Stay
 }
 @enduml

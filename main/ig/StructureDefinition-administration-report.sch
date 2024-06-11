@@ -12,6 +12,11 @@
   <sch:pattern>
     <sch:title>f:MedicationAdministration</sch:title>
     <sch:rule context="f:MedicationAdministration">
+      <sch:assert test="count(f:extension[@url = 'http://ltsi.univ-rennes.fr/StructureDefinition/date-time-start']) &gt;= 1">extension with URL = 'http://ltsi.univ-rennes.fr/StructureDefinition/date-time-start': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://ltsi.univ-rennes.fr/StructureDefinition/date-time-start']) &lt;= 1">extension with URL = 'http://ltsi.univ-rennes.fr/StructureDefinition/date-time-start': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://ltsi.univ-rennes.fr/StructureDefinition/date-time-end']) &lt;= 1">extension with URL = 'http://ltsi.univ-rennes.fr/StructureDefinition/date-time-end': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://ltsi.univ-rennes.fr/StructureDefinition/medication-administered-planned-quantity']) &lt;= 1">extension with URL = 'http://ltsi.univ-rennes.fr/StructureDefinition/medication-administered-planned-quantity': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://ltsi.univ-rennes.fr/StructureDefinition/medication-administered-quantity']) &lt;= 1">extension with URL = 'http://ltsi.univ-rennes.fr/StructureDefinition/medication-administered-quantity': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:basedOn) &gt;= 1">basedOn: minimum cardinality of 'basedOn' is 1</sch:assert>
       <sch:assert test="count(f:basedOn) &lt;= 1">basedOn: maximum cardinality of 'basedOn' is 1</sch:assert>
       <sch:assert test="count(f:encounter) &gt;= 1">encounter: minimum cardinality of 'encounter' is 1</sch:assert>

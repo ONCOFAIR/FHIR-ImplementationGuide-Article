@@ -4,6 +4,109 @@
   "fhirVersion": "5.0.0",
   "extensions": [
     {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/date-time",
+      "title": "Date and time",
+      "types": [
+        "dateTime",
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/date-time-end",
+      "title": "End date and time",
+      "types": [
+        "dateTime",
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/date-time-start",
+      "title": "Start date and time",
+      "types": [
+        "dateTime",
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/eventTimeMax",
+      "title": "Event Time Max",
+      "types": [
+        "time",
+        "time"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/eventTimeMin",
+      "title": "Event Time Min",
+      "types": [
+        "time",
+        "time"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/eventTypeData",
+      "title": "Event Type Data",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/medication-administered-planned-quantity",
+      "title": "Planned quantity of medication",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/medication-administered-quantity",
+      "title": "Administered quantity of medication",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/medication-comment",
+      "title": "Medication comment",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/medication-is-vehicle",
+      "title": "Medication Is Vehicle",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/medication-item-provenance",
+      "title": "Medication item provenance",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/medication-lti-exemption",
+      "title": "Medication LTI exemption",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/medication-status",
+      "title": "Medication status",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/medication-type",
+      "title": "Medication type",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
       "url": "http://ltsi.univ-rennes.fr/StructureDefinition/treatment-cycle-number",
       "title": "Treatment cycle number",
       "types": [
@@ -25,12 +128,6 @@
       {
         "url": "http://ltsi.univ-rennes.fr/StructureDefinition/Medical-liability-unit",
         "title": "Medical Liability Unit"
-      }
-    ],
-    "Encounter": [
-      {
-        "url": "http://ltsi.univ-rennes.fr/StructureDefinition/Stay",
-        "title": "Stay"
       }
     ],
     "Location": [
@@ -55,6 +152,12 @@
       {
         "url": "http://ltsi.univ-rennes.fr/StructureDefinition/associated-device",
         "title": "Associated Device"
+      }
+    ],
+    "HealthcareService": [
+      {
+        "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncology-healthcare-service",
+        "title": "OncologyHealthcareService"
       }
     ],
     "Medication": [
@@ -91,6 +194,12 @@
       {
         "url": "http://ltsi.univ-rennes.fr/StructureDefinition/protocol",
         "title": "Protocol"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://ltsi.univ-rennes.fr/StructureDefinition/stay",
+        "title": "Stay"
       }
     ]
   },
@@ -130,6 +239,39 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/date-time": [
+      "CarePlan"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/date-time-end": [
+      "MedicationAdministration"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/date-time-start": [
+      "MedicationAdministration"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/eventTimeMax": [
+      "MedicationRequest"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/eventTimeMin": [
+      "MedicationRequest"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/eventTypeData": [
+      "MedicationRequest"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/medication-administered-planned-quantity": [
+      "MedicationAdministration"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/medication-administered-quantity": [
+      "MedicationAdministration"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/medication-is-vehicle": [
+      "Medication"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/medication-item-provenance": [
+      "MedicationRequest"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/medication-type": [
+      "Medication"
     ],
     "http://ltsi.univ-rennes.fr/StructureDefinition/treatment-cycle-number": [
       "PlanDefinition"

@@ -10,7 +10,7 @@
   "name" : "OncoFAIR",
   "title" : "Onco-FAIR",
   "status" : "draft",
-  "date" : "2024-04-18T13:54:15+00:00",
+  "date" : "2024-06-11T08:08:31+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -31,7 +31,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r5",
-    "version" : "5.3.0"
+    "version" : "5.5.0"
   },
   {
     "id" : "hl7ext",
@@ -41,7 +41,7 @@
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r5",
-    "version" : "1.0.0"
+    "version" : "5.1.0"
   }],
   "definition" : {
     "extension" : [{
@@ -70,6 +70,18 @@
       },
       "name" : "Additional Information",
       "description" : "Additional information, such as height or weight.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/medication-administered-quantity"
+      },
+      "name" : "Administered quantity of medication",
+      "description" : "The administered quantity of medication.",
       "isExample" : false
     },
     {
@@ -105,7 +117,7 @@
         "reference" : "ValueSet/vsCommunicationModes"
       },
       "name" : "Communication modes",
-      "description" : "ValueSet for communication modes (incremental, summary).",
+      "description" : "ValueSet for communication modes (Incrémental, Récapitulatif).",
       "isExample" : false
     },
     {
@@ -117,21 +129,92 @@
         "reference" : "CodeSystem/CSCommunicationModes"
       },
       "name" : "Communication modes",
-      "description" : "CodeSystem for french communication modes (incremental, summary).",
+      "description" : "CodeSystem for french communication modes (Incrémental, Récapitulatif).",
       "isExample" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Location"
+        "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "Location/exampleAccomodationUnit"
+        "reference" : "StructureDefinition/date-time"
       },
-      "name" : "exampleAccomodationUnit",
-      "description" : "SAB accomodation unit.",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/accomodation-unit"]
+      "name" : "Date and time",
+      "description" : "Date and time.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/date-time-end"
+      },
+      "name" : "End date and time",
+      "description" : "End date and time.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/eventTimeMax"
+      },
+      "name" : "Event Time Max",
+      "description" : "Represents the maximum time for the event.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/eventTimeMin"
+      },
+      "name" : "Event Time Min",
+      "description" : "Represents the minimum time for the event.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/eventTypeData"
+      },
+      "name" : "Event Type Data",
+      "description" : "Represents the type of logical data for an event.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/CSEventTypeData"
+      },
+      "name" : "Event Types",
+      "description" : "CodeSystem for various event types used in French healthcare systems, identified by number, abbreviation, and full name.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/VSEventTypeData"
+      },
+      "name" : "Event Types Data",
+      "description" : "ValueSet for various event types used in French healthcare systems.",
+      "isExample" : false
     },
     {
       "extension" : [{
@@ -188,15 +271,28 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Organization"
+        "valueString" : "HealthcareService"
       }],
       "reference" : {
-        "reference" : "Organization/exampleMedicalLiabilityUnit"
+        "reference" : "HealthcareService/exampleHealthcareServiceHCMED"
       },
-      "name" : "exampleMedicalLiabilityUnit",
-      "description" : "HCMED Medical liability unit.",
+      "name" : "exampleHealthcareServiceHCMED",
+      "description" : "HCMED healthcare service.",
       "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/Medical-liability-unit"]
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-healthcare-service"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "HealthcareService"
+      }],
+      "reference" : {
+        "reference" : "HealthcareService/exampleHealthcareServiceSAB"
+      },
+      "name" : "exampleHealthcareServiceSAB",
+      "description" : "SAB healthcare service.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-healthcare-service"]
     },
     {
       "extension" : [{
@@ -521,7 +617,7 @@
       "name" : "exampleStayFOLFOX4",
       "description" : "Stay of ID 15461.",
       "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/Stay"]
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/stay"]
     },
     {
       "extension" : [{
@@ -534,7 +630,7 @@
       "name" : "exampleStayMISCELLANEOUS",
       "description" : "Stay of ID 98456.",
       "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/Stay"]
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/stay"]
     },
     {
       "extension" : [{
@@ -558,6 +654,18 @@
       },
       "name" : "LOINC codes",
       "description" : "LOINC CodeSystem.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/medication-lti-exemption"
+      },
+      "name" : "LTI Detailed Descriptions",
+      "description" : "Detailed list of long-term illness (LTI).",
       "isExample" : false
     },
     {
@@ -594,6 +702,138 @@
       },
       "name" : "Medical units",
       "description" : "CodeSystem for french medical units (accommodation, medical liability unit).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/medication-comment"
+      },
+      "name" : "Medication comment",
+      "description" : "Adds a comment to a Medication resource.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/medication-is-vehicle"
+      },
+      "name" : "Medication Is Vehicle",
+      "description" : "Indicates whether the medication is a vehicle.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/medication-item-provenance"
+      },
+      "name" : "Medication item provenance",
+      "description" : "Adds a provenance to a MedicationItem resource",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vsMedicationItemProvenance"
+      },
+      "name" : "Medication item provenance",
+      "description" : "ValueSet for medication item provenance.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/CSMedicationItemProvenance"
+      },
+      "name" : "Medication item provenance",
+      "description" : "CodeSystem for french medication item provenance.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/medication-lti-exemption"
+      },
+      "name" : "Medication LTI exemption",
+      "description" : "Long-term illness (LTI) for which the patient can benefit from an exemption.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vsMedicationLTIExemption"
+      },
+      "name" : "Medication LTI Exemption",
+      "description" : "ValueSet for medication LTI exemption.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/medication-status"
+      },
+      "name" : "Medication status",
+      "description" : "Adds a status to a Medication resource",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vsMedicationStatus"
+      },
+      "name" : "Medication status",
+      "description" : "ValueSet for medication status.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/CSMedicationStatus"
+      },
+      "name" : "Medication status",
+      "description" : "CodeSystem for french medication status.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/medication-type"
+      },
+      "name" : "Medication type",
+      "description" : "Adds a type to a Medication resource",
       "isExample" : false
     },
     {
@@ -686,6 +926,30 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/oncology-healthcare-service"
+      },
+      "name" : "OncologyHealthcareService",
+      "description" : "Healthcare service(s).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/medication-administered-planned-quantity"
+      },
+      "name" : "Planned quantity of medication",
+      "description" : "The planned quantity of medication administered.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/prescription"
       },
       "name" : "Prescription",
@@ -701,7 +965,7 @@
         "reference" : "CodeSystem/CSPrescriptionCategory"
       },
       "name" : "Prescription category",
-      "description" : "CodeSystem for french prescription category (creation, stop, modification, validation).",
+      "description" : "CodeSystem for french prescription category (Création, Arrêt, Modification, Validation).",
       "isExample" : false
     },
     {
@@ -725,7 +989,7 @@
         "reference" : "ValueSet/vsPrescriptionCategory"
       },
       "name" : "Prescription status",
-      "description" : "ValueSet for PlanDefinition types, extended to include creation, stop, modification and validation.",
+      "description" : "ValueSet for PlanDefinition types, extended to include Création, Arrêt, Modification and Validation.",
       "isExample" : false
     },
     {
@@ -793,10 +1057,22 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/date-time-start"
+      },
+      "name" : "Start date and time",
+      "description" : "Start date and time.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/Stay"
+        "reference" : "StructureDefinition/stay"
       },
       "name" : "Stay",
       "description" : "Stay.",

@@ -6,10 +6,21 @@
       "status" : "draft",
       "name" : "CSCommunicationModes",
       "title" : "Communication modes",
-      "description" : "CodeSystem for french communication modes (incremental, summary).",
+      "description" : "CodeSystem for french communication modes (Incrémental, Récapitulatif).",
       "uses" : {
       },
       "ValueSet-vsCommunicationModes.html" : "Communication modes"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/CodeSystem/CSEventTypeData",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CSEventTypeData",
+      "title" : "Event Types",
+      "description" : "CodeSystem for various event types used in French healthcare systems, identified by number, abbreviation, and full name.",
+      "uses" : {
+      },
+      "ValueSet-VSEventTypeData.html" : "Event Types Data"
     },
     {
       "url" : "http://ltsi.univ-rennes.fr/CodeSystem/CSLOINC",
@@ -32,6 +43,28 @@
       "uses" : {
       },
       "ValueSet-vsMedicalUnits.html" : "Medical units"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationItemProvenance",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CSMedicationItemProvenance",
+      "title" : "Medication item provenance",
+      "description" : "CodeSystem for french medication item provenance.",
+      "uses" : {
+      },
+      "ValueSet-vsMedicationItemProvenance.html" : "Medication item provenance"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationStatus",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CSMedicationStatus",
+      "title" : "Medication status",
+      "description" : "CodeSystem for french medication status.",
+      "uses" : {
+      },
+      "ValueSet-vsMedicationStatus.html" : "Medication status"
     },
     {
       "url" : "http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes",
@@ -61,7 +94,7 @@
       "status" : "draft",
       "name" : "CSPrescriptionCategory",
       "title" : "Prescription category",
-      "description" : "CodeSystem for french prescription category (creation, stop, modification, validation).",
+      "description" : "CodeSystem for french prescription category (Création, Arrêt, Modification, Validation).",
       "uses" : {
       },
       "ValueSet-vsPrescriptionCategory.html" : "Prescription status"
@@ -76,6 +109,17 @@
       "uses" : {
       },
       "ValueSet-vsSCT.html" : "SNOMED CT codes"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CSMedicationLTIExemption",
+      "title" : "LTI Detailed Descriptions",
+      "description" : "Detailed list of long-term illness (LTI).",
+      "uses" : {
+      },
+      "ValueSet-vsMedicationLTIExemption.html" : "Medication LTI Exemption"
     }
   ]
 }

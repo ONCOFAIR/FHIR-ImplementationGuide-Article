@@ -1,11 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="55cbcc28-a209-43b2-969b-77e6bb7b89b3"/>
+  <id value="b16a53e9-5bdc-4f3d-8136-6d270bada3bb"/>
   <meta>
-    <lastUpdated value="2024-04-18T13:54:15.286+00:00"/>
+    <lastUpdated value="2024-06-11T08:08:31.778+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="http://ltsi.univ-rennes.fr/ValueSet/VSEventTypeData"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-CSEventTypeData.html">codesystem Event Types v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 6 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-CSEventTypeData-1"> </a>  
+                  <a href="CodeSystem-CSEventTypeData.html#CSEventTypeData-1">1</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/CSEventTypeData</td>
+                <td>BOO - Booléen</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-CSEventTypeData-2"> </a>  
+                  <a href="CodeSystem-CSEventTypeData.html#CSEventTypeData-2">2</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/CSEventTypeData</td>
+                <td>QLT - Qualitatif</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-CSEventTypeData-3"> </a>  
+                  <a href="CodeSystem-CSEventTypeData.html#CSEventTypeData-3">3</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/CSEventTypeData</td>
+                <td>QLO - Qualitatif ordonné</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-CSEventTypeData-4"> </a>  
+                  <a href="CodeSystem-CSEventTypeData.html#CSEventTypeData-4">4</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/CSEventTypeData</td>
+                <td>QTT - Quantitatif</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-CSEventTypeData-5"> </a>  
+                  <a href="CodeSystem-CSEventTypeData.html#CSEventTypeData-5">5</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/CSEventTypeData</td>
+                <td>HOR - Horaire</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-CSEventTypeData-6"> </a>  
+                  <a href="CodeSystem-CSEventTypeData.html#CSEventTypeData-6">6</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/CSEventTypeData</td>
+                <td>PHE - Plage horaire</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://ltsi.univ-rennes.fr/ValueSet/VSEventTypeData"/>
+        <version value="0.1.0"/>
+        <name value="VSEventTypeData"/>
+        <title value="Event Types Data"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2024-06-11T08:08:31+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:acf613d1-cab5-4ce8-b9f3-3e3c30e92dc3"/>
+          <timestamp value="2024-06-11T08:09:01+00:00"/>
+          <total value="6"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://ltsi.univ-rennes.fr/CodeSystem/CSEventTypeData|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSEventTypeData"/>
+            <code value="1"/>
+            <display value="BOO - Booléen"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSEventTypeData"/>
+            <code value="2"/>
+            <display value="QLT - Qualitatif"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSEventTypeData"/>
+            <code value="3"/>
+            <display value="QLO - Qualitatif ordonné"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSEventTypeData"/>
+            <code value="4"/>
+            <display value="QTT - Quantitatif"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSEventTypeData"/>
+            <code value="5"/>
+            <display value="HOR - Horaire"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSEventTypeData"/>
+            <code value="6"/>
+            <display value="PHE - Plage horaire"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="http://ltsi.univ-rennes.fr/ValueSet/vsCommunicationModes"/>
     <resource>
@@ -16,7 +152,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-CSCommunicationModes.html">codesystem Communication modes v0.1.0 (CodeSystem)</a>
             </p>
-            <p>This value set contains 2 concepts.</p>
+            <p>This value set contains 2 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -35,15 +171,15 @@
                   <a href="CodeSystem-CSCommunicationModes.html#CSCommunicationModes-I">I</a>
                 </td>
                 <td>http://ltsi.univ-rennes.fr/CodeSystem/CSCommunicationModes</td>
-                <td>Incremental</td>
+                <td>Incrémental</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-CSCommunicationModes-S"> </a>  
-                  <a href="CodeSystem-CSCommunicationModes.html#CSCommunicationModes-S">S</a>
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-CSCommunicationModes-R"> </a>  
+                  <a href="CodeSystem-CSCommunicationModes.html#CSCommunicationModes-R">R</a>
                 </td>
                 <td>http://ltsi.univ-rennes.fr/CodeSystem/CSCommunicationModes</td>
-                <td>Summary</td>
+                <td>Récapitulatif</td>
               </tr>
             </table>
           </div>
@@ -54,10 +190,10 @@
         <title value="Communication modes"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-04-18T13:54:15+00:00"/>
+        <date value="2024-06-11T08:08:31+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:469907d9-1122-4482-9aa2-fa3d5545b75b"/>
-          <timestamp value="2024-04-18T13:54:39+00:00"/>
+          <identifier value="urn:uuid:45d912e6-f323-4d5e-b9fa-ff7f3fad52d3"/>
+          <timestamp value="2024-06-11T08:09:01+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -79,12 +215,12 @@
           <contains>
             <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSCommunicationModes"/>
             <code value="I"/>
-            <display value="Incremental"/>
+            <display value="Incrémental"/>
           </contains>
           <contains>
             <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSCommunicationModes"/>
-            <code value="S"/>
-            <display value="Summary"/>
+            <code value="R"/>
+            <display value="Récapitulatif"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -100,7 +236,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-CSLOINC.html">codesystem LOINC codes v0.1.0 (CodeSystem)</a>
             </p>
-            <p>This value set contains 5 concepts.</p>
+            <p>This value set contains 5 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -162,10 +298,10 @@
         <title value="LOINC codes"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-04-18T13:54:15+00:00"/>
+        <date value="2024-06-11T08:08:31+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:1780f633-537f-4980-b884-9528405ae838"/>
-          <timestamp value="2024-04-18T13:54:39+00:00"/>
+          <identifier value="urn:uuid:510116cc-fc1e-4472-b81e-641dbfb3d0e4"/>
+          <timestamp value="2024-06-11T08:09:01+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -223,7 +359,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-CSMedicalUnits.html">codesystem Medical units v0.1.0 (CodeSystem)</a>
             </p>
-            <p>This value set contains 368 concepts.</p>
+            <p>This value set contains 368 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -3189,10 +3325,10 @@
         <title value="Medical units"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-04-18T13:54:15+00:00"/>
+        <date value="2024-06-11T08:08:31+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:f359b0fd-6a3e-47cf-bb8e-fcf3c573d9b4"/>
-          <timestamp value="2024-04-18T13:54:39+00:00"/>
+          <identifier value="urn:uuid:a104a768-9449-4004-af85-5795d55778c2"/>
+          <timestamp value="2024-06-11T08:09:01+00:00"/>
           <total value="368"/>
           <offset value="0"/>
           <parameter>
@@ -5056,6 +5192,778 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://ltsi.univ-rennes.fr/ValueSet/vsMedicationItemProvenance"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-CSMedicationItemProvenance.html">codesystem Medication item provenance v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-CSMedicationItemProvenance-1"> </a>  
+                  <a href="CodeSystem-CSMedicationItemProvenance.html#CSMedicationItemProvenance-1">1</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationItemProvenance</td>
+                <td>Pharmacie</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-CSMedicationItemProvenance-2"> </a>  
+                  <a href="CodeSystem-CSMedicationItemProvenance.html#CSMedicationItemProvenance-2">2</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationItemProvenance</td>
+                <td>Armoire de service</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-CSMedicationItemProvenance-3"> </a>  
+                  <a href="CodeSystem-CSMedicationItemProvenance.html#CSMedicationItemProvenance-3">3</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationItemProvenance</td>
+                <td>Non comptabilisé</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-CSMedicationItemProvenance-4"> </a>  
+                  <a href="CodeSystem-CSMedicationItemProvenance.html#CSMedicationItemProvenance-4">4</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationItemProvenance</td>
+                <td>Gestion particulière</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://ltsi.univ-rennes.fr/ValueSet/vsMedicationItemProvenance"/>
+        <version value="0.1.0"/>
+        <name value="VSMedicationItemProvenance"/>
+        <title value="Medication item provenance"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2024-06-11T08:08:31+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:d9bec20a-6ff7-484f-98b2-685221013840"/>
+          <timestamp value="2024-06-11T08:09:01+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationItemProvenance|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationItemProvenance"/>
+            <code value="1"/>
+            <display value="Pharmacie"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationItemProvenance"/>
+            <code value="2"/>
+            <display value="Armoire de service"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationItemProvenance"/>
+            <code value="3"/>
+            <display value="Non comptabilisé"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationItemProvenance"/>
+            <code value="4"/>
+            <display value="Gestion particulière"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://ltsi.univ-rennes.fr/ValueSet/vsMedicationLTIExemption"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-medication-lti-exemption.html">codesystem LTI Detailed Descriptions v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 32 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-medication-lti-exemption-1"> </a>  
+                  <a href="CodeSystem-medication-lti-exemption.html#medication-lti-exemption-1">1</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption</td>
+                <td>Accident vasculaire cérébral invalidant</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-medication-lti-exemption-2"> </a>  
+                  <a href="CodeSystem-medication-lti-exemption.html#medication-lti-exemption-2">2</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption</td>
+                <td>Insuffisances médullaires et autres cytopénies chroniques</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-medication-lti-exemption-3"> </a>  
+                  <a href="CodeSystem-medication-lti-exemption.html#medication-lti-exemption-3">3</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption</td>
+                <td>Artériopathies chroniques avec manifestations ischémiques</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-medication-lti-exemption-4"> </a>  
+                  <a href="CodeSystem-medication-lti-exemption.html#medication-lti-exemption-4">4</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption</td>
+                <td>Bilharziose compliquée</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-medication-lti-exemption-5"> </a>  
+                  <a href="CodeSystem-medication-lti-exemption.html#medication-lti-exemption-5">5</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption</td>
+                <td>Insuffisance cardiaque grave, troubles du rythme graves, cardiopathies valvulaires graves ; cardiopathies congénitales graves</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-medication-lti-exemption-6"> </a>  
+                  <a href="CodeSystem-medication-lti-exemption.html#medication-lti-exemption-6">6</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption</td>
+                <td>Maladies chroniques actives du foie et cirrhoses</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-medication-lti-exemption-7"> </a>  
+                  <a href="CodeSystem-medication-lti-exemption.html#medication-lti-exemption-7">7</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption</td>
+                <td>Déficit immunitaire primitif grave nécessitant un traitement prolongé, infection par le virus de l’immuno-déficience humaine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-medication-lti-exemption-8"> </a>  
+                  <a href="CodeSystem-medication-lti-exemption.html#medication-lti-exemption-8">8</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption</td>
+                <td>Diabète de type 1 et diabète de type 2</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-medication-lti-exemption-9"> </a>  
+                  <a href="CodeSystem-medication-lti-exemption.html#medication-lti-exemption-9">9</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption</td>
+                <td>Forme grave des affections neurologiques et musculaires (dont myopathie), épilepsie grave</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-medication-lti-exemption-10"> </a>  
+                  <a href="CodeSystem-medication-lti-exemption.html#medication-lti-exemption-10">10</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption</td>
+                <td>Hémoglobinopathies, hémolyses, chroniques constitutionnelles et acquises sévères</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-medication-lti-exemption-11"> </a>  
+                  <a href="CodeSystem-medication-lti-exemption.html#medication-lti-exemption-11">11</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption</td>
+                <td>Hémophilies et affections constitutionnelles de l’hémostase graves</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-medication-lti-exemption-12"> </a>  
+                  <a href="CodeSystem-medication-lti-exemption.html#medication-lti-exemption-12">12</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption</td>
+                <td>Hypertension artérielle sévère</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-medication-lti-exemption-13"> </a>  
+                  <a href="CodeSystem-medication-lti-exemption.html#medication-lti-exemption-13">13</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption</td>
+                <td>Maladie coronaire</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-medication-lti-exemption-14"> </a>  
+                  <a href="CodeSystem-medication-lti-exemption.html#medication-lti-exemption-14">14</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption</td>
+                <td>Insuffisance respiratoire chronique grave</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-medication-lti-exemption-15"> </a>  
+                  <a href="CodeSystem-medication-lti-exemption.html#medication-lti-exemption-15">15</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption</td>
+                <td>Lèpre</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-medication-lti-exemption-16"> </a>  
+                  <a href="CodeSystem-medication-lti-exemption.html#medication-lti-exemption-16">16</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption</td>
+                <td>Maladie de Parkinson</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-medication-lti-exemption-17"> </a>  
+                  <a href="CodeSystem-medication-lti-exemption.html#medication-lti-exemption-17">17</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption</td>
+                <td>Maladies métaboliques héréditaires nécessitant un traitement prolongé spécialisé</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-medication-lti-exemption-18"> </a>  
+                  <a href="CodeSystem-medication-lti-exemption.html#medication-lti-exemption-18">18</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption</td>
+                <td>Mucoviscidose</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-medication-lti-exemption-19"> </a>  
+                  <a href="CodeSystem-medication-lti-exemption.html#medication-lti-exemption-19">19</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption</td>
+                <td>Néphropathie chronique grave et syndrome néphrotique primitif</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-medication-lti-exemption-20"> </a>  
+                  <a href="CodeSystem-medication-lti-exemption.html#medication-lti-exemption-20">20</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption</td>
+                <td>Paraplégie</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-medication-lti-exemption-21"> </a>  
+                  <a href="CodeSystem-medication-lti-exemption.html#medication-lti-exemption-21">21</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption</td>
+                <td>Péri-artérite noueuse, lupus érythémateux aigu disséminé, sclérodermie généralisée évolutive</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-medication-lti-exemption-22"> </a>  
+                  <a href="CodeSystem-medication-lti-exemption.html#medication-lti-exemption-22">22</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption</td>
+                <td>Polyarthrite rhumatoïde évolutive grave</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-medication-lti-exemption-23"> </a>  
+                  <a href="CodeSystem-medication-lti-exemption.html#medication-lti-exemption-23">23</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption</td>
+                <td>Psychose, trouble grave de la personnalité, arriération mentale</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-medication-lti-exemption-24"> </a>  
+                  <a href="CodeSystem-medication-lti-exemption.html#medication-lti-exemption-24">24</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption</td>
+                <td>Rectocolite hémorragique et maladie de Crohn évolutives</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-medication-lti-exemption-25"> </a>  
+                  <a href="CodeSystem-medication-lti-exemption.html#medication-lti-exemption-25">25</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption</td>
+                <td>Sclérose en plaques</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-medication-lti-exemption-26"> </a>  
+                  <a href="CodeSystem-medication-lti-exemption.html#medication-lti-exemption-26">26</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption</td>
+                <td>Scoliose structurale évolutive (dont l’angle est égal ou supérieur à 25 degrés) jusqu’à maturation rachidienne</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-medication-lti-exemption-27"> </a>  
+                  <a href="CodeSystem-medication-lti-exemption.html#medication-lti-exemption-27">27</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption</td>
+                <td>Spondylarthrite ankylosante grave</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-medication-lti-exemption-28"> </a>  
+                  <a href="CodeSystem-medication-lti-exemption.html#medication-lti-exemption-28">28</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption</td>
+                <td>Suites de transplantation d’organe</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-medication-lti-exemption-29"> </a>  
+                  <a href="CodeSystem-medication-lti-exemption.html#medication-lti-exemption-29">29</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption</td>
+                <td>Tuberculose active</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-medication-lti-exemption-30"> </a>  
+                  <a href="CodeSystem-medication-lti-exemption.html#medication-lti-exemption-30">30</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption</td>
+                <td>Tumeur maligne, affection maligne du tissu lymphatique ou hématopoïétique</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-medication-lti-exemption-31"> </a>  
+                  <a href="CodeSystem-medication-lti-exemption.html#medication-lti-exemption-31">31</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption</td>
+                <td>Affections dites « hors liste »</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-medication-lti-exemption-32"> </a>  
+                  <a href="CodeSystem-medication-lti-exemption.html#medication-lti-exemption-32">32</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption</td>
+                <td>Plusieurs affections entraînant un état pathologique invalidant</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://ltsi.univ-rennes.fr/ValueSet/vsMedicationLTIExemption"/>
+        <version value="0.1.0"/>
+        <name value="VSMedicationLTIExemption"/>
+        <title value="Medication LTI Exemption"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2024-06-11T08:08:31+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:18b57d07-8d55-4927-b8b1-86bc74faa78d"/>
+          <timestamp value="2024-06-11T08:09:02+00:00"/>
+          <total value="32"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption"/>
+            <code value="1"/>
+            <display value="Accident vasculaire cérébral invalidant"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption"/>
+            <code value="2"/>
+            <display value="Insuffisances médullaires et autres cytopénies chroniques"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption"/>
+            <code value="3"/>
+            <display value="Artériopathies chroniques avec manifestations ischémiques"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption"/>
+            <code value="4"/>
+            <display value="Bilharziose compliquée"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption"/>
+            <code value="5"/>
+            <display value="Insuffisance cardiaque grave, troubles du rythme graves, cardiopathies valvulaires graves ; cardiopathies congénitales graves"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption"/>
+            <code value="6"/>
+            <display value="Maladies chroniques actives du foie et cirrhoses"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption"/>
+            <code value="7"/>
+            <display value="Déficit immunitaire primitif grave nécessitant un traitement prolongé, infection par le virus de l’immuno-déficience humaine"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption"/>
+            <code value="8"/>
+            <display value="Diabète de type 1 et diabète de type 2"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption"/>
+            <code value="9"/>
+            <display value="Forme grave des affections neurologiques et musculaires (dont myopathie), épilepsie grave"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption"/>
+            <code value="10"/>
+            <display value="Hémoglobinopathies, hémolyses, chroniques constitutionnelles et acquises sévères"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption"/>
+            <code value="11"/>
+            <display value="Hémophilies et affections constitutionnelles de l’hémostase graves"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption"/>
+            <code value="12"/>
+            <display value="Hypertension artérielle sévère"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption"/>
+            <code value="13"/>
+            <display value="Maladie coronaire"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption"/>
+            <code value="14"/>
+            <display value="Insuffisance respiratoire chronique grave"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption"/>
+            <code value="15"/>
+            <display value="Lèpre"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption"/>
+            <code value="16"/>
+            <display value="Maladie de Parkinson"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption"/>
+            <code value="17"/>
+            <display value="Maladies métaboliques héréditaires nécessitant un traitement prolongé spécialisé"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption"/>
+            <code value="18"/>
+            <display value="Mucoviscidose"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption"/>
+            <code value="19"/>
+            <display value="Néphropathie chronique grave et syndrome néphrotique primitif"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption"/>
+            <code value="20"/>
+            <display value="Paraplégie"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption"/>
+            <code value="21"/>
+            <display value="Péri-artérite noueuse, lupus érythémateux aigu disséminé, sclérodermie généralisée évolutive"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption"/>
+            <code value="22"/>
+            <display value="Polyarthrite rhumatoïde évolutive grave"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption"/>
+            <code value="23"/>
+            <display value="Psychose, trouble grave de la personnalité, arriération mentale"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption"/>
+            <code value="24"/>
+            <display value="Rectocolite hémorragique et maladie de Crohn évolutives"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption"/>
+            <code value="25"/>
+            <display value="Sclérose en plaques"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption"/>
+            <code value="26"/>
+            <display value="Scoliose structurale évolutive (dont l’angle est égal ou supérieur à 25 degrés) jusqu’à maturation rachidienne"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption"/>
+            <code value="27"/>
+            <display value="Spondylarthrite ankylosante grave"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption"/>
+            <code value="28"/>
+            <display value="Suites de transplantation d’organe"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption"/>
+            <code value="29"/>
+            <display value="Tuberculose active"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption"/>
+            <code value="30"/>
+            <display value="Tumeur maligne, affection maligne du tissu lymphatique ou hématopoïétique"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption"/>
+            <code value="31"/>
+            <display value="Affections dites « hors liste »"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption"/>
+            <code value="32"/>
+            <display value="Plusieurs affections entraînant un état pathologique invalidant"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://ltsi.univ-rennes.fr/ValueSet/vsMedicationStatus"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-CSMedicationStatus.html">codesystem Medication status v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 10 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-CSMedicationStatus-1"> </a>  
+                  <a href="CodeSystem-CSMedicationStatus.html#CSMedicationStatus-1">1</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationStatus</td>
+                <td>à faire</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-CSMedicationStatus-2"> </a>  
+                  <a href="CodeSystem-CSMedicationStatus.html#CSMedicationStatus-2">2</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationStatus</td>
+                <td>fait</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-CSMedicationStatus-3"> </a>  
+                  <a href="CodeSystem-CSMedicationStatus.html#CSMedicationStatus-3">3</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationStatus</td>
+                <td>annulé</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-CSMedicationStatus-4"> </a>  
+                  <a href="CodeSystem-CSMedicationStatus.html#CSMedicationStatus-4">4</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationStatus</td>
+                <td>perdu</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-CSMedicationStatus-5"> </a>  
+                  <a href="CodeSystem-CSMedicationStatus.html#CSMedicationStatus-5">5</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationStatus</td>
+                <td>démarré</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-CSMedicationStatus-6"> </a>  
+                  <a href="CodeSystem-CSMedicationStatus.html#CSMedicationStatus-6">6</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationStatus</td>
+                <td>fini</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-CSMedicationStatus-7"> </a>  
+                  <a href="CodeSystem-CSMedicationStatus.html#CSMedicationStatus-7">7</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationStatus</td>
+                <td>arrêté</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-CSMedicationStatus-8"> </a>  
+                  <a href="CodeSystem-CSMedicationStatus.html#CSMedicationStatus-8">8</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationStatus</td>
+                <td>suspendu</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-CSMedicationStatus-9"> </a>  
+                  <a href="CodeSystem-CSMedicationStatus.html#CSMedicationStatus-9">9</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationStatus</td>
+                <td>suivi</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---ltsi.univ-rennes.fr-CodeSystem-CSMedicationStatus-10"> </a>  
+                  <a href="CodeSystem-CSMedicationStatus.html#CSMedicationStatus-10">10</a>
+                </td>
+                <td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationStatus</td>
+                <td>redémarré</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://ltsi.univ-rennes.fr/ValueSet/vsMedicationStatus"/>
+        <version value="0.1.0"/>
+        <name value="VSMedicationStatus"/>
+        <title value="Medication status"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2024-06-11T08:08:31+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:5d0dc97d-53ad-461b-b659-6d68e6355a13"/>
+          <timestamp value="2024-06-11T08:09:02+00:00"/>
+          <total value="10"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationStatus|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationStatus"/>
+            <code value="1"/>
+            <display value="à faire"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationStatus"/>
+            <code value="2"/>
+            <display value="fait"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationStatus"/>
+            <code value="3"/>
+            <display value="annulé"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationStatus"/>
+            <code value="4"/>
+            <display value="perdu"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationStatus"/>
+            <code value="5"/>
+            <display value="démarré"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationStatus"/>
+            <code value="6"/>
+            <display value="fini"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationStatus"/>
+            <code value="7"/>
+            <display value="arrêté"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationStatus"/>
+            <code value="8"/>
+            <display value="suspendu"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationStatus"/>
+            <code value="9"/>
+            <display value="suivi"/>
+          </contains>
+          <contains>
+            <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationStatus"/>
+            <code value="10"/>
+            <display value="redémarré"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
     <fullUrl value="http://ltsi.univ-rennes.fr/ValueSet/vsMedicationTypes"/>
     <resource>
       <ValueSet>
@@ -5065,7 +5973,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-CSMedicationTypes.html">codesystem Medication types v0.1.0 (CodeSystem)</a>
             </p>
-            <p>This value set contains 14 concepts.</p>
+            <p>This value set contains 14 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -5084,7 +5992,7 @@
                   <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-1">1</a>
                 </td>
                 <td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td>
-                <td>specialite</td>
+                <td>spécialité</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -5108,7 +6016,7 @@
                   <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-4">4</a>
                 </td>
                 <td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td>
-                <td>preparation hospitaliere</td>
+                <td>préparation hospitalière</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -5116,7 +6024,7 @@
                   <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-5">5</a>
                 </td>
                 <td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td>
-                <td>importation|importation</td>
+                <td>importation</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -5132,7 +6040,7 @@
                   <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-7">7</a>
                 </td>
                 <td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td>
-                <td>preparation magistrale</td>
+                <td>préparation magistrale</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -5140,7 +6048,7 @@
                   <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-8">8</a>
                 </td>
                 <td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td>
-                <td>matiere premiere</td>
+                <td>matière première</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -5148,7 +6056,7 @@
                   <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-9">9</a>
                 </td>
                 <td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td>
-                <td>medicament virtuel THESORIMED</td>
+                <td>médicament virtuel THESORIMED</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -5156,7 +6064,7 @@
                   <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-10">10</a>
                 </td>
                 <td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td>
-                <td>medicament virtuel THERIAQUE</td>
+                <td>médicament virtuel THERIAQUE</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -5164,7 +6072,7 @@
                   <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-11">11</a>
                 </td>
                 <td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td>
-                <td>medicament virtuel BCB DEXTER</td>
+                <td>médicament virtuel BCB DEXTER</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -5172,7 +6080,7 @@
                   <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-12">12</a>
                 </td>
                 <td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td>
-                <td>medicament virtuel VIDAL</td>
+                <td>médicament virtuel VIDAL</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -5180,7 +6088,7 @@
                   <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-13">13</a>
                 </td>
                 <td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td>
-                <td>denomination commune</td>
+                <td>dénomination commune</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -5188,7 +6096,7 @@
                   <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-14">14</a>
                 </td>
                 <td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td>
-                <td>medicament virtuel MedicaBase</td>
+                <td>médicament virtuel MedicaBase</td>
               </tr>
             </table>
           </div>
@@ -5199,10 +6107,10 @@
         <title value="Medication types"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-04-18T13:54:15+00:00"/>
+        <date value="2024-06-11T08:08:31+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:453c5e32-6545-484a-a889-6e0673ae4548"/>
-          <timestamp value="2024-04-18T13:54:39+00:00"/>
+          <identifier value="urn:uuid:4511e407-8bb7-483f-adba-c34210b62fa1"/>
+          <timestamp value="2024-06-11T08:09:02+00:00"/>
           <total value="14"/>
           <offset value="0"/>
           <parameter>
@@ -5224,7 +6132,7 @@
           <contains>
             <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes"/>
             <code value="1"/>
-            <display value="specialite"/>
+            <display value="spécialité"/>
           </contains>
           <contains>
             <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes"/>
@@ -5239,12 +6147,12 @@
           <contains>
             <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes"/>
             <code value="4"/>
-            <display value="preparation hospitaliere"/>
+            <display value="préparation hospitalière"/>
           </contains>
           <contains>
             <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes"/>
             <code value="5"/>
-            <display value="importation|importation"/>
+            <display value="importation"/>
           </contains>
           <contains>
             <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes"/>
@@ -5254,42 +6162,42 @@
           <contains>
             <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes"/>
             <code value="7"/>
-            <display value="preparation magistrale"/>
+            <display value="préparation magistrale"/>
           </contains>
           <contains>
             <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes"/>
             <code value="8"/>
-            <display value="matiere premiere"/>
+            <display value="matière première"/>
           </contains>
           <contains>
             <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes"/>
             <code value="9"/>
-            <display value="medicament virtuel THESORIMED"/>
+            <display value="médicament virtuel THESORIMED"/>
           </contains>
           <contains>
             <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes"/>
             <code value="10"/>
-            <display value="medicament virtuel THERIAQUE"/>
+            <display value="médicament virtuel THERIAQUE"/>
           </contains>
           <contains>
             <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes"/>
             <code value="11"/>
-            <display value="medicament virtuel BCB DEXTER"/>
+            <display value="médicament virtuel BCB DEXTER"/>
           </contains>
           <contains>
             <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes"/>
             <code value="12"/>
-            <display value="medicament virtuel VIDAL"/>
+            <display value="médicament virtuel VIDAL"/>
           </contains>
           <contains>
             <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes"/>
             <code value="13"/>
-            <display value="denomination commune"/>
+            <display value="dénomination commune"/>
           </contains>
           <contains>
             <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes"/>
             <code value="14"/>
-            <display value="medicament virtuel MedicaBase"/>
+            <display value="médicament virtuel MedicaBase"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -5305,7 +6213,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-CSMedications.html">codesystem Medications v0.1.0 (CodeSystem)</a>
             </p>
-            <p>This value set contains 9 concepts.</p>
+            <p>This value set contains 9 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -5399,10 +6307,10 @@
         <title value="Medications"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-04-18T13:54:15+00:00"/>
+        <date value="2024-06-11T08:08:31+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:35850824-5575-4887-ac64-588f27664fdd"/>
-          <timestamp value="2024-04-18T13:54:39+00:00"/>
+          <identifier value="urn:uuid:92d9bb95-c83e-4468-aa58-71c31b6cd3b9"/>
+          <timestamp value="2024-06-11T08:09:02+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -5480,7 +6388,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-CSSCT.html">codesystem SNOMED CT Codes v0.1.0 (CodeSystem)</a>
             </p>
-            <p>This value set contains 21 concepts.</p>
+            <p>This value set contains 21 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -5670,10 +6578,10 @@
         <title value="SNOMED CT codes"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-04-18T13:54:15+00:00"/>
+        <date value="2024-06-11T08:08:31+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:b7cb0534-0c43-46b7-8aef-492dcd18e083"/>
-          <timestamp value="2024-04-18T13:54:40+00:00"/>
+          <identifier value="urn:uuid:c5efb178-5191-4424-99de-aa80c7ba92ad"/>
+          <timestamp value="2024-06-11T08:09:02+00:00"/>
           <total value="21"/>
           <offset value="0"/>
           <parameter>

@@ -12,13 +12,12 @@
   <sch:pattern>
     <sch:title>f:CarePlan</sch:title>
     <sch:rule context="f:CarePlan">
+      <sch:assert test="count(f:extension[@url = 'http://ltsi.univ-rennes.fr/StructureDefinition/date-time']) &gt;= 1">extension with URL = 'http://ltsi.univ-rennes.fr/StructureDefinition/date-time': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://ltsi.univ-rennes.fr/StructureDefinition/date-time']) &lt;= 1">extension with URL = 'http://ltsi.univ-rennes.fr/StructureDefinition/date-time': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:instantiatesCanonical) &gt;= 1">instantiatesCanonical: minimum cardinality of 'instantiatesCanonical' is 1</sch:assert>
       <sch:assert test="count(f:instantiatesCanonical) &lt;= 1">instantiatesCanonical: maximum cardinality of 'instantiatesCanonical' is 1</sch:assert>
-      <sch:assert test="count(f:category) &gt;= 1">category: minimum cardinality of 'category' is 1</sch:assert>
-      <sch:assert test="count(f:category) &lt;= 1">category: maximum cardinality of 'category' is 1</sch:assert>
       <sch:assert test="count(f:encounter) &gt;= 1">encounter: minimum cardinality of 'encounter' is 1</sch:assert>
       <sch:assert test="count(f:period) &gt;= 1">period: minimum cardinality of 'period' is 1</sch:assert>
-      <sch:assert test="count(f:created) &gt;= 1">created: minimum cardinality of 'created' is 1</sch:assert>
       <sch:assert test="count(f:supportingInfo) &gt;= 1">supportingInfo: minimum cardinality of 'supportingInfo' is 1</sch:assert>
       <sch:assert test="count(f:activity) &gt;= 1">activity: minimum cardinality of 'activity' is 1</sch:assert>
     </sch:rule>

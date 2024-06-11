@@ -7,6 +7,13 @@
     "name" : "CSCommunicationModes"
   },
   {
+    "id" : "CSEventTypeData",
+    "type" : "CodeSystem",
+    "url" : "http://ltsi.univ-rennes.fr/CodeSystem/CSEventTypeData",
+    "version" : "0.1.0",
+    "name" : "CSEventTypeData"
+  },
+  {
     "id" : "CSLOINC",
     "type" : "CodeSystem",
     "url" : "http://ltsi.univ-rennes.fr/CodeSystem/CSLOINC",
@@ -19,6 +26,20 @@
     "url" : "http://ltsi.univ-rennes.fr/CodeSystem/CSMedicalUnits",
     "version" : "0.1.0",
     "name" : "CSMedicalUnits"
+  },
+  {
+    "id" : "CSMedicationItemProvenance",
+    "type" : "CodeSystem",
+    "url" : "http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationItemProvenance",
+    "version" : "0.1.0",
+    "name" : "CSMedicationItemProvenance"
+  },
+  {
+    "id" : "CSMedicationStatus",
+    "type" : "CodeSystem",
+    "url" : "http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationStatus",
+    "version" : "0.1.0",
+    "name" : "CSMedicationStatus"
   },
   {
     "id" : "CSMedicationTypes",
@@ -49,6 +70,13 @@
     "name" : "CSSCT"
   },
   {
+    "id" : "medication-lti-exemption",
+    "type" : "CodeSystem",
+    "url" : "http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption",
+    "version" : "0.1.0",
+    "name" : "CSMedicationLTIExemption"
+  },
+  {
     "id" : "ltsi.fhir.oncofair",
     "type" : "ImplementationGuide",
     "url" : "http://ltsi.univ-rennes.fr/ImplementationGuide/ltsi.fhir.oncofair",
@@ -77,13 +105,6 @@
     "name" : "MedicalLiabilityUnit"
   },
   {
-    "id" : "Stay",
-    "type" : "StructureDefinition",
-    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/Stay",
-    "version" : "0.1.0",
-    "name" : "Stay"
-  },
-  {
     "id" : "accomodation-unit",
     "type" : "StructureDefinition",
     "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/accomodation-unit",
@@ -110,6 +131,111 @@
     "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/associated-device",
     "version" : "0.1.0",
     "name" : "AssociatedDevice"
+  },
+  {
+    "id" : "date-time",
+    "type" : "StructureDefinition",
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/date-time",
+    "version" : "0.1.0",
+    "name" : "DateTime"
+  },
+  {
+    "id" : "date-time-end",
+    "type" : "StructureDefinition",
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/date-time-end",
+    "version" : "0.1.0",
+    "name" : "DateTimeEnd"
+  },
+  {
+    "id" : "date-time-start",
+    "type" : "StructureDefinition",
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/date-time-start",
+    "version" : "0.1.0",
+    "name" : "DateTimeStart"
+  },
+  {
+    "id" : "eventTimeMax",
+    "type" : "StructureDefinition",
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/eventTimeMax",
+    "version" : "0.1.0",
+    "name" : "EventTimeMax"
+  },
+  {
+    "id" : "eventTimeMin",
+    "type" : "StructureDefinition",
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/eventTimeMin",
+    "version" : "0.1.0",
+    "name" : "EventTimeMin"
+  },
+  {
+    "id" : "eventTypeData",
+    "type" : "StructureDefinition",
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/eventTypeData",
+    "version" : "0.1.0",
+    "name" : "EventTypeData"
+  },
+  {
+    "id" : "medication-administered-planned-quantity",
+    "type" : "StructureDefinition",
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/medication-administered-planned-quantity",
+    "version" : "0.1.0",
+    "name" : "MedicationPlannedQuantity"
+  },
+  {
+    "id" : "medication-administered-quantity",
+    "type" : "StructureDefinition",
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/medication-administered-quantity",
+    "version" : "0.1.0",
+    "name" : "MedicationAdministeredQuantity"
+  },
+  {
+    "id" : "medication-comment",
+    "type" : "StructureDefinition",
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/medication-comment",
+    "version" : "0.1.0",
+    "name" : "MedicationComment"
+  },
+  {
+    "id" : "medication-is-vehicle",
+    "type" : "StructureDefinition",
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/medication-is-vehicle",
+    "version" : "0.1.0",
+    "name" : "MedicationIsVehicle"
+  },
+  {
+    "id" : "medication-item-provenance",
+    "type" : "StructureDefinition",
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/medication-item-provenance",
+    "version" : "0.1.0",
+    "name" : "MedicationItemProvenance"
+  },
+  {
+    "id" : "medication-lti-exemption",
+    "type" : "StructureDefinition",
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/medication-lti-exemption",
+    "version" : "0.1.0",
+    "name" : "MedicationLTIExemption"
+  },
+  {
+    "id" : "medication-status",
+    "type" : "StructureDefinition",
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/medication-status",
+    "version" : "0.1.0",
+    "name" : "MedicationStatus"
+  },
+  {
+    "id" : "medication-type",
+    "type" : "StructureDefinition",
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/medication-type",
+    "version" : "0.1.0",
+    "name" : "MedicationType"
+  },
+  {
+    "id" : "oncology-healthcare-service",
+    "type" : "StructureDefinition",
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/oncology-healthcare-service",
+    "version" : "0.1.0",
+    "name" : "OncologyHealthcareService"
   },
   {
     "id" : "oncology-medication",
@@ -154,6 +280,13 @@
     "name" : "Protocol"
   },
   {
+    "id" : "stay",
+    "type" : "StructureDefinition",
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/stay",
+    "version" : "0.1.0",
+    "name" : "Stay"
+  },
+  {
     "id" : "treatment-cycle-number",
     "type" : "StructureDefinition",
     "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/treatment-cycle-number",
@@ -166,6 +299,13 @@
     "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/treatment-day-number",
     "version" : "0.1.0",
     "name" : "TreatmentDayNumber"
+  },
+  {
+    "id" : "VSEventTypeData",
+    "type" : "ValueSet",
+    "url" : "http://ltsi.univ-rennes.fr/ValueSet/VSEventTypeData",
+    "version" : "0.1.0",
+    "name" : "VSEventTypeData"
   },
   {
     "id" : "vsCommunicationModes",
@@ -187,6 +327,27 @@
     "url" : "http://ltsi.univ-rennes.fr/ValueSet/vsMedicalUnits",
     "version" : "0.1.0",
     "name" : "VSMedicalUnits"
+  },
+  {
+    "id" : "vsMedicationItemProvenance",
+    "type" : "ValueSet",
+    "url" : "http://ltsi.univ-rennes.fr/ValueSet/vsMedicationItemProvenance",
+    "version" : "0.1.0",
+    "name" : "VSMedicationItemProvenance"
+  },
+  {
+    "id" : "vsMedicationLTIExemption",
+    "type" : "ValueSet",
+    "url" : "http://ltsi.univ-rennes.fr/ValueSet/vsMedicationLTIExemption",
+    "version" : "0.1.0",
+    "name" : "VSMedicationLTIExemption"
+  },
+  {
+    "id" : "vsMedicationStatus",
+    "type" : "ValueSet",
+    "url" : "http://ltsi.univ-rennes.fr/ValueSet/vsMedicationStatus",
+    "version" : "0.1.0",
+    "name" : "VSMedicationStatus"
   },
   {
     "id" : "vsMedicationTypes",

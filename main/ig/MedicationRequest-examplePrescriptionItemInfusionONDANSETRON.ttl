@@ -15,9 +15,36 @@
      ] )
   ] ; # 
   fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationRequest</b><a name=\"examplePrescriptionItemInfusionONDANSETRON\"> </a><a name=\"hcexamplePrescriptionItemInfusionONDANSETRON\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationRequest &quot;examplePrescriptionItemInfusionONDANSETRON&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-prescription-item.html\">Prescription Item</a></p></div><p><b>identifier</b>: 454545</p><p><b>basedOn</b>: <a href=\"examplePrescriptionINFUSION\">examplePrescriptionINFUSION</a></p><p><b>groupIdentifier</b>: 589127</p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>category</b>: Creation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSPrescriptionCategory.html\">Prescription category</a>#C)</span></p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Medication-exampleOncologyMedicationONDANSETRON.html\">Medication/exampleOncologyMedicationONDANSETRON</a></td></tr></table><p><b>subject</b>: <a href=\"Patient-exampleOncologyPatient.html\">Patient/exampleOncologyPatient</a> &quot; DOE&quot;</p><p><b>requester</b>: <a href=\"Practitioner-exampleOncologyPractitioner.html\">Practitioner/exampleOncologyPractitioner</a></p><p><b>effectiveDosePeriod</b>: 2023-01-01 09:00:00+0000 --&gt; 2023-01-01 11:35:00+0000</p><blockquote><p><b>dosageInstruction</b></p><p><b>text</b>: Administer 1 dose of 8 mg ONDANSETRON in 1 min.</p><p><b>timing</b>: Starting 2023-01-15 09:02:00+0000, Once per 1 days, Until 2023-01-15 09:02:00+0000</p><p><b>route</b>: Intravenous route <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSSCT.html\">SNOMED CT Codes</a>#47625008)</span></p><blockquote><p><b>doseAndRate</b></p></blockquote></blockquote><blockquote><p><b>dispenseRequest</b></p><h3>InitialFills</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Quantity</b></td></tr><tr><td style=\"display: none\">*</td><td>1</td></tr></table></blockquote></div>"
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationRequest </b><a name=\"examplePrescriptionItemInfusionONDANSETRON\"> </a><a name=\"hcexamplePrescriptionItemInfusionONDANSETRON\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceMedicationRequest &quot;examplePrescriptionItemInfusionONDANSETRON&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-prescription-item.html\">Prescription Item</a></p></div><p><b>Medication item provenance</b>: Pharmacie <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSMedicationItemProvenance.html\">Medication item provenance</a>#1)</span></p><p><b>Event Type Data</b>: PHE - Plage horaire <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSEventTypeData.html\">Event Types</a>#6)</span></p><p><b>Event Time Min</b>: 2023-01-15 09:02:00+0000</p><p><b>Event Time Max</b>: 2023-01-15 09:02:00+0000</p><p><b>identifier</b>: 454545</p><p><b>basedOn</b>: <a href=\"examplePrescriptionINFUSION\">examplePrescriptionINFUSION</a></p><p><b>groupIdentifier</b>: 589127</p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>category</b>: Création <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSPrescriptionCategory.html\">Prescription category</a>#C)</span></p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Medication-exampleOncologyMedicationONDANSETRON.html\">Medication/exampleOncologyMedicationONDANSETRON</a></td></tr></table><p><b>subject</b>: <a href=\"Patient-exampleOncologyPatient.html\">Patient/exampleOncologyPatient</a> &quot; DOE&quot;</p><p><b>requester</b>: <a href=\"Practitioner-exampleOncologyPractitioner.html\">Practitioner/exampleOncologyPractitioner</a></p><p><b>effectiveDosePeriod</b>: 2023-01-01 09:00:00+0000 --&gt; 2023-01-01 11:35:00+0000</p><blockquote><p><b>dosageInstruction</b></p><p><b>text</b>: Administer 1 dose of 8 mg ONDANSETRON in 1 min.</p><p><b>timing</b>: Starting 2023-01-01 09:00:00+0000 , Once per1 days, Until 2023-01-01 11:35:00+0000 </p><p><b>route</b>: Intravenous route <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSSCT.html\">SNOMED CT Codes</a>#47625008)</span></p><blockquote><p><b>doseAndRate</b></p></blockquote></blockquote></div>"
   ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/medication-item-provenance"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationItemProvenance"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1" ] ;
+         fhir:display [ fhir:v "Pharmacie" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/eventTypeData"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/CSEventTypeData"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "6" ] ;
+         fhir:display [ fhir:v "PHE - Plage horaire" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/eventTimeMin"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2023-01-15T09:02:00.0000Z"^^xsd:dateTime ]
+  ] [
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/eventTimeMax"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2023-01-15T09:02:00.0000Z"^^xsd:dateTime ]
+  ] ) ; # 
   fhir:identifier ( [
      fhir:value [ fhir:v "454545" ]
   ] ) ; # 
@@ -33,7 +60,7 @@
      fhir:coding ( [
        fhir:system [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/CSPrescriptionCategory"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "C" ] ;
-       fhir:display [ fhir:v "Creation" ]
+       fhir:display [ fhir:v "Création" ]
      ] )
   ] ) ; # 
   fhir:medication [
@@ -60,8 +87,8 @@
        fhir:repeat [
          fhir:bounds [
            a fhir:Period ;
-           fhir:start [ fhir:v "2023-01-15T09:02:00.0000Z"^^xsd:dateTime ] ;
-           fhir:end [ fhir:v "2023-01-15T09:02:00.0000Z"^^xsd:dateTime ]
+           fhir:start [ fhir:v "2023-01-01T09:00:00.0000Z"^^xsd:dateTime ] ;
+           fhir:end [ fhir:v "2023-01-01T11:35:00.0000Z"^^xsd:dateTime ]
          ] ;
          fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
          fhir:period [ fhir:v "1"^^xsd:decimal ] ;
@@ -93,14 +120,7 @@
          ]
        ]
      ] )
-  ] ) ; # 
-  fhir:dispenseRequest [
-     fhir:initialFill [
-       fhir:quantity [
-         fhir:value [ fhir:v "1"^^xsd:decimal ]
-       ]
-     ]
-  ] . # 
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 
