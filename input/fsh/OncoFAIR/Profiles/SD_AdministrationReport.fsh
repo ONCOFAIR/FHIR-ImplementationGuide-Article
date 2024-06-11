@@ -15,8 +15,10 @@ Description: "Prescribed medication administration report."
 * encounter 1..1 MS
 * encounter only Reference(Stay)
 * encounter ^short = "The encounter linked to the administration report"
-* occurencePeriod 1..1 MS
+* occurencePeriod MS
 * occurencePeriod ^short = "Specific date/time or interval of time during which the administration took place (or did not take place)"
+* occurencePeriod.start 1..1 MS // PN13 = dateHeureDebutEffective 
+* occurencePeriod.end 0..1 MS // PN13 = dateHeureFinEffective
 * request 1..1 MS
 * request only Reference(PrescriptionItem)
 * request ^short = "The prescription item at the origin of the administration report"
@@ -24,7 +26,7 @@ Description: "Prescribed medication administration report."
 * note ^short = "The administration report label and other note(s)"
 * medication MS
 * medication only CodeableReference(OncologyMedication)
-* medication ^short = "The administred medication"
+* medication ^short = "The administered medication"
 * dosage 1..1 MS
 * dosage ^short = "The intended dosage of the administered medication"
 * dosage.text 1..1 
@@ -33,3 +35,8 @@ Description: "Prescribed medication administration report."
 * dosage.dose.value ^short = "Value of the dose quantity"
 * dosage.dose.unit 1..1
 * dosage.dose.unit ^short = "Unit of the dose quantity"
+* extension contains DateTimeStart named dateTimePlannedStart 1..1 // PN13 = dateHeureDebutPrevue 
+and DateTimeEnd named dateTimePlannedEnd 0..1 // PN13 = dateHeureFinPrevue 
+and MedicationPlannedQuantity named medicationPlannedQuantity 0..1 
+and MedicationAdministeredQuantity named medicationAdministeredQuantity 0..1
+
