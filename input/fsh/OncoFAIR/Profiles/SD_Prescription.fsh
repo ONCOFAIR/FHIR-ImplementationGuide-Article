@@ -5,17 +5,12 @@ Title: "Prescription"
 Description : "Medication prescription."
 * identifier MS 
 * identifier ^short = "The prescription's identifier"
-* category 1..1 MS
-* category ^short = "The communication mode"
-* category ^definition = "The communication mode (incremental or summary)"
 * subject MS
 * subject only Reference(OncologyPatient)
 * subject ^short = "The patient covered by the prescription"
 * encounter 1..1 MS
 * encounter only Reference(Stay)
 * encounter ^short = "The encounter linked to the prescription"
-* created 1..1 MS 
-* created ^short = "The date on which the registration was first made"
 * period 1..1 MS
 * period ^short = "Time period the prescription covers"
 * period.start 1..1
@@ -30,3 +25,4 @@ Description : "Medication prescription."
 * activity.plannedActivityReference ^short = "The prescription element(s) contained in the prescription"
 * instantiatesCanonical 1..1 MS
 * instantiatesCanonical ^short = "The protocol linked to the prescription"
+* extension contains DateTime named dateTimePrescription 1..1
