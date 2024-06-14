@@ -9,6 +9,8 @@ Cet objet décrit le chaînage des éléments de prescription rattachés au prot
 * basedOn ^short = "Describes the reference protocol from which the prescribed protocol is derived"
 * basedOn only Reference(OncoFAIRCarePlan)
 
+/*Slicer basedOn avec un protocole père*/
+
 * identifier 1..1 MS
 * identifier.value ^short = "Prescribed protocol identifier"
 * title 1..1 MS
@@ -29,6 +31,7 @@ Cet objet décrit le chaînage des éléments de prescription rattachés au prot
 * note[indication] ^short = "Explains the reasons that led the prescriber to prescribe this protocol (or this sub-protocol if Id. parent protocol is defined)"
 * note[comments].id = "comments"
 * note[comments] ^short = "Comments associated with the prescribed protocol"
+
 * note[idFatherProtocol].id = "idFatherProtocol"
 * note[idFatherProtocol] ^short = "Identifier of the prescribed protocol to which this prescribed protocol belongs"
 
