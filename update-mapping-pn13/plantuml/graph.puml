@@ -49,7 +49,7 @@ package IG #DDDDDD{
              MedicationAdministration.extension:oncofair-ma-component-administration-status => <&plus>[1..1]
              MedicationAdministration.partOf => [1..1]
              MedicationAdministration.medication => [None..None]
-             MedicationAdministration.medication.concept.coding => [None..None]
+             MedicationAdministration.medication.concept => [None..None]
              MedicationAdministration.note => [None..None]
              MedicationAdministration.note:comments => [0..1]
              MedicationAdministration.note:comments.id => [1..None]
@@ -75,7 +75,7 @@ package IG #DDDDDD{
              MedicationAdministration.category:code => [0..1]
              MedicationAdministration.category:nature => [0..1]
              MedicationAdministration.medication => [None..None]
-             MedicationAdministration.medication.concept.coding => [None..None]
+             MedicationAdministration.medication.concept => [None..None]
              MedicationAdministration.occurence[x] => [None..None]
              MedicationAdministration.occurence[x]:occurencePeriod => [0..1]
              MedicationAdministration.occurence[x]:occurencePeriod.start => [1..None]
@@ -98,7 +98,7 @@ package IG #DDDDDD{
 
              MedicationAdministration.identifier => [1..1]
              MedicationAdministration.medication => [None..None]
-             MedicationAdministration.medication.concept.coding => [None..None]
+             MedicationAdministration.medication.concept => [None..None]
              MedicationAdministration.encounter => [1..None]
              MedicationAdministration.performer => [1..1]
              MedicationAdministration.performer.actor => [None..None]
@@ -112,7 +112,7 @@ package IG #DDDDDD{
              MedicationRequest.extension:oncofair-mr-is-dosage-referent => <&plus>[0..1]
              MedicationRequest.basedOn => [1..1]
              MedicationRequest.medication => [None..None]
-             MedicationRequest.medication.concept.coding => [None..None]
+             MedicationRequest.medication.concept => [None..None]
              MedicationRequest.note => [1..None]
              MedicationRequest.note:wording => [1..1]
              MedicationRequest.note:wording.id => [1..None]
@@ -150,7 +150,7 @@ package IG #DDDDDD{
              MedicationRequest.status => [None..None]
              MedicationRequest.priority => [None..None]
              MedicationRequest.medication => [None..None]
-             MedicationRequest.medication.concept.coding => [None..None]
+             MedicationRequest.medication.concept => [None..None]
              MedicationRequest.requester => [None..None]
              MedicationRequest.device => [None..None]
              MedicationRequest.note => [None..None]
@@ -196,7 +196,7 @@ package IG #DDDDDD{
              MedicationRequest.identifier.value => [1..None]
              MedicationRequest.basedOn => [None..None]
              MedicationRequest.medication => [None..None]
-             MedicationRequest.medication.concept.coding => [None..None]
+             MedicationRequest.medication.concept => [None..None]
              MedicationRequest.encounter => [1..None]
              MedicationRequest.supportingInformation => [None..None]
              MedicationRequest.supportingInformation:accomodationUnit => [0..1]
@@ -401,6 +401,10 @@ package IG #DDDDDD{
         class SIPhTypeComposantOncoFAIRValueSet  
 
      OncoFAIRMedicationType -[#black,dotted,thickness=2]-> SIPhTypeComposantOncoFAIRValueSet
+
+        class ConceptMedicationOncoFAIRValueSet  
+
+     OncoFAIRMedicationAdministrationComponent -[#black,dotted,thickness=2]-> ConceptMedicationOncoFAIRValueSet
 
         class ConceptMedicationOncoFAIRValueSet  
 
