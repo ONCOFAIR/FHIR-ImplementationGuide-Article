@@ -10,7 +10,7 @@
   "name" : "OncoFAIRMedicationRequestElement",
   "title" : "OncoFAIR MedicationRequest Element",
   "status" : "draft",
-  "date" : "2024-06-17T15:02:03+00:00",
+  "date" : "2024-06-17T15:41:32+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -2944,7 +2944,7 @@
         "map" : ".inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=\"annotation\"].value"
       },
       {
-        "identity" : "mapping-oncofair-medicationrequest-element-posologie",
+        "identity" : "mapping-oncofair-medicationrequest-element-prescription",
         "map" : "libelleElementPrescription"
       }]
     },
@@ -3171,7 +3171,7 @@
         "map" : ".inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=\"annotation\"].value"
       },
       {
-        "identity" : "mapping-oncofair-medicationrequest-element-posologie",
+        "identity" : "mapping-oncofair-medicationrequest-element-prescription",
         "map" : "indication"
       }]
     },
@@ -3398,7 +3398,7 @@
         "map" : ".inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=\"annotation\"].value"
       },
       {
-        "identity" : "mapping-oncofair-medicationrequest-element-posologie",
+        "identity" : "mapping-oncofair-medicationrequest-element-prescription",
         "map" : "commentaires"
       }]
     },
@@ -3757,7 +3757,7 @@
         "map" : "./low"
       },
       {
-        "identity" : "mapping-oncofair-medicationrequest-element-posologie",
+        "identity" : "mapping-oncofair-medicationrequest-element-prescription",
         "map" : "dateHeureDebutPrescription"
       }]
     },
@@ -3797,7 +3797,7 @@
         "map" : "./high"
       },
       {
-        "identity" : "mapping-oncofair-medicationrequest-element-posologie",
+        "identity" : "mapping-oncofair-medicationrequest-element-prescription",
         "map" : "dateHeureFinPrescription"
       }]
     },
@@ -8805,7 +8805,7 @@
       "min" : 0,
       "max" : "1",
       "mapping" : [{
-        "identity" : "mapping-oncofair-medicationrequest-element-posologie",
+        "identity" : "mapping-oncofair-medicationrequest-element-prescription",
         "map" : "libelleElementPrescription"
       }]
     },
@@ -8823,7 +8823,7 @@
       "min" : 0,
       "max" : "1",
       "mapping" : [{
-        "identity" : "mapping-oncofair-medicationrequest-element-posologie",
+        "identity" : "mapping-oncofair-medicationrequest-element-prescription",
         "map" : "indication"
       }]
     },
@@ -8841,7 +8841,7 @@
       "min" : 0,
       "max" : "1",
       "mapping" : [{
-        "identity" : "mapping-oncofair-medicationrequest-element-posologie",
+        "identity" : "mapping-oncofair-medicationrequest-element-prescription",
         "map" : "commentaires"
       }]
     },
@@ -8861,7 +8861,7 @@
       "id" : "MedicationRequest.effectiveDosePeriod.start",
       "path" : "MedicationRequest.effectiveDosePeriod.start",
       "mapping" : [{
-        "identity" : "mapping-oncofair-medicationrequest-element-posologie",
+        "identity" : "mapping-oncofair-medicationrequest-element-prescription",
         "map" : "dateHeureDebutPrescription"
       }]
     },
@@ -8869,7 +8869,7 @@
       "id" : "MedicationRequest.effectiveDosePeriod.end",
       "path" : "MedicationRequest.effectiveDosePeriod.end",
       "mapping" : [{
-        "identity" : "mapping-oncofair-medicationrequest-element-posologie",
+        "identity" : "mapping-oncofair-medicationrequest-element-prescription",
         "map" : "dateHeureFinPrescription"
       }]
     },

@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIRMedicationRequestElement"] ; # 
   fhir:title [ fhir:v "OncoFAIR MedicationRequest Element"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-17T15:02:03+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-17T15:41:32+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -3159,7 +3159,7 @@
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=\"annotation\"].value" ]
        ] [
-         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-element-posologie" ] ;
+         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-element-prescription" ] ;
          fhir:map [ fhir:v "libelleElementPrescription" ]
        ] )
      ] [
@@ -3400,7 +3400,7 @@
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=\"annotation\"].value" ]
        ] [
-         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-element-posologie" ] ;
+         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-element-prescription" ] ;
          fhir:map [ fhir:v "indication" ]
        ] )
      ] [
@@ -3641,7 +3641,7 @@
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=\"annotation\"].value" ]
        ] [
-         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-element-posologie" ] ;
+         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-element-prescription" ] ;
          fhir:map [ fhir:v "commentaires" ]
        ] )
      ] [
@@ -4021,7 +4021,7 @@
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "./low" ]
        ] [
-         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-element-posologie" ] ;
+         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-element-prescription" ] ;
          fhir:map [ fhir:v "dateHeureDebutPrescription" ]
        ] )
      ] [
@@ -4061,7 +4061,7 @@
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "./high" ]
        ] [
-         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-element-posologie" ] ;
+         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-element-prescription" ] ;
          fhir:map [ fhir:v "dateHeureFinPrescription" ]
        ] )
      ] [
@@ -9387,7 +9387,7 @@
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-element-posologie" ] ;
+         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-element-prescription" ] ;
          fhir:map [ fhir:v "libelleElementPrescription" ]
        ] )
      ] [
@@ -9403,7 +9403,7 @@
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-element-posologie" ] ;
+         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-element-prescription" ] ;
          fhir:map [ fhir:v "indication" ]
        ] )
      ] [
@@ -9419,7 +9419,7 @@
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-element-posologie" ] ;
+         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-element-prescription" ] ;
          fhir:map [ fhir:v "commentaires" ]
        ] )
      ] [
@@ -9436,14 +9436,14 @@
        fhir:id [ fhir:v "MedicationRequest.effectiveDosePeriod.start" ] ;
        fhir:path [ fhir:v "MedicationRequest.effectiveDosePeriod.start" ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-element-posologie" ] ;
+         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-element-prescription" ] ;
          fhir:map [ fhir:v "dateHeureDebutPrescription" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationRequest.effectiveDosePeriod.end" ] ;
        fhir:path [ fhir:v "MedicationRequest.effectiveDosePeriod.end" ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-element-posologie" ] ;
+         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-element-prescription" ] ;
          fhir:map [ fhir:v "dateHeureFinPrescription" ]
        ] )
      ] [

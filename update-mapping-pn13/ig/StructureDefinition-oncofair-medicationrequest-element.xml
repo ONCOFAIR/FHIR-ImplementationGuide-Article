@@ -73,7 +73,7 @@
   <name value="OncoFAIRMedicationRequestElement"/>
   <title value="OncoFAIR MedicationRequest Element"/>
   <status value="draft"/>
-  <date value="2024-06-17T15:02:03+00:00"/>
+  <date value="2024-06-17T15:41:32+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -2912,7 +2912,7 @@
         <map value=".inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=&quot;annotation&quot;].value"/>
       </mapping>
       <mapping>
-        <identity value="mapping-oncofair-medicationrequest-element-posologie"/>
+        <identity value="mapping-oncofair-medicationrequest-element-prescription"/>
         <map value="libelleElementPrescription"/>
       </mapping>
     </element>
@@ -3132,7 +3132,7 @@
         <map value=".inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=&quot;annotation&quot;].value"/>
       </mapping>
       <mapping>
-        <identity value="mapping-oncofair-medicationrequest-element-posologie"/>
+        <identity value="mapping-oncofair-medicationrequest-element-prescription"/>
         <map value="indication"/>
       </mapping>
     </element>
@@ -3352,7 +3352,7 @@
         <map value=".inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=&quot;annotation&quot;].value"/>
       </mapping>
       <mapping>
-        <identity value="mapping-oncofair-medicationrequest-element-posologie"/>
+        <identity value="mapping-oncofair-medicationrequest-element-prescription"/>
         <map value="commentaires"/>
       </mapping>
     </element>
@@ -3699,7 +3699,7 @@
         <map value="./low"/>
       </mapping>
       <mapping>
-        <identity value="mapping-oncofair-medicationrequest-element-posologie"/>
+        <identity value="mapping-oncofair-medicationrequest-element-prescription"/>
         <map value="dateHeureDebutPrescription"/>
       </mapping>
     </element>
@@ -3738,7 +3738,7 @@
         <map value="./high"/>
       </mapping>
       <mapping>
-        <identity value="mapping-oncofair-medicationrequest-element-posologie"/>
+        <identity value="mapping-oncofair-medicationrequest-element-prescription"/>
         <map value="dateHeureFinPrescription"/>
       </mapping>
     </element>
@@ -8560,7 +8560,7 @@
       <min value="0"/>
       <max value="1"/>
       <mapping>
-        <identity value="mapping-oncofair-medicationrequest-element-posologie"/>
+        <identity value="mapping-oncofair-medicationrequest-element-prescription"/>
         <map value="libelleElementPrescription"/>
       </mapping>
     </element>
@@ -8576,7 +8576,7 @@
       <min value="0"/>
       <max value="1"/>
       <mapping>
-        <identity value="mapping-oncofair-medicationrequest-element-posologie"/>
+        <identity value="mapping-oncofair-medicationrequest-element-prescription"/>
         <map value="indication"/>
       </mapping>
     </element>
@@ -8592,7 +8592,7 @@
       <min value="0"/>
       <max value="1"/>
       <mapping>
-        <identity value="mapping-oncofair-medicationrequest-element-posologie"/>
+        <identity value="mapping-oncofair-medicationrequest-element-prescription"/>
         <map value="commentaires"/>
       </mapping>
     </element>
@@ -8609,14 +8609,14 @@
     <element id="MedicationRequest.effectiveDosePeriod.start">
       <path value="MedicationRequest.effectiveDosePeriod.start"/>
       <mapping>
-        <identity value="mapping-oncofair-medicationrequest-element-posologie"/>
+        <identity value="mapping-oncofair-medicationrequest-element-prescription"/>
         <map value="dateHeureDebutPrescription"/>
       </mapping>
     </element>
     <element id="MedicationRequest.effectiveDosePeriod.end">
       <path value="MedicationRequest.effectiveDosePeriod.end"/>
       <mapping>
-        <identity value="mapping-oncofair-medicationrequest-element-posologie"/>
+        <identity value="mapping-oncofair-medicationrequest-element-prescription"/>
         <map value="dateHeureFinPrescription"/>
       </mapping>
     </element>
