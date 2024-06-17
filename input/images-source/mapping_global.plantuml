@@ -1,7 +1,6 @@
 @startuml
 
 scale 700 width
-title **Vue fonctionnelle d'OncoFAIR**
 
 rectangle "ProtocolePrescrit \n [[StructureDefinition-oncofair-careplan.html OncoFAIRCarePlan]]" as ProtocolePrescrit #Gold 
 
@@ -19,6 +18,8 @@ rectangle "ComposantPrescrit \n [[StructureDefinition-oncofair-medicationrequest
 
 rectangle "ElementPrescription \n [[StructureDefinition-oncofair-medicationrequest-element.html OncoFAIRMedicationRequestElement]]" as ElementPrescription #LightSkyBlue 
 
+rectangle "ElementPosologie \n [[StructureDefinition-oncofair-medicationrequest-element.html OncoFAIRMedicationRequestElement]]" as ElementPosologie #LightSkyBlue 
+
 rectangle "Prescription \n [[StructureDefinition-oncofair-medicationrequest-prescription.html OncoFAIRMedicationRequestPrescription]]" as Prescription #LightSkyBlue 
 
 rectangle "RenseignementComplementaire \n [[StructureDefinition-oncofair-observation.html OncoFAIRObservation]]" as RenseignementComplementaire #Orange 
@@ -28,14 +29,20 @@ rectangle "Patient \n [[StructureDefinition-oncofair-patient.html OncoFAIRPatien
 ProtocolePrescrit --> ProtocolePrescrit : "basedOn" 0..*
 Sejour --> Patient : "subject" 1..1
 ComposantAdministre --> ElementAdministration : "partOf" 1..1
-ComposantAdministre -u-> Composant : "medication" 1..1
+ComposantAdministre --> Composant : "medication" 1..1
 ElementAdministration --> CompteRenduAdministration : "partOf" 1..1
 CompteRenduAdministration --> Sejour : "encounter" 1..1
 ComposantPrescrit --> ElementPrescription : "basedOn" 1..1
-ComposantPrescrit -u-> Composant : "medication" 1..1
+ComposantPrescrit --> ElementPosologie : "basedOn" 1..1
+ComposantPrescrit --> Composant : "medication" 1..1
 ElementPrescription --> Prescription : "basedOn" 1..1
 ElementPrescription --> ElementPrescription : "basedOn" 0..*
+ElementPrescription --> ElementPosologie : "basedOn" 0..*
 ElementPrescription --> ProtocolePrescrit : "basedOn" 0..1
+ElementPosologie --> Prescription : "basedOn" 1..1
+ElementPosologie --> ElementPrescription : "basedOn" 0..*
+ElementPosologie --> ElementPosologie : "basedOn" 0..*
+ElementPosologie --> ProtocolePrescrit : "basedOn" 0..1
 Prescription --> ProtocolePrescrit : "basedOn" 0..*
 Prescription --> Sejour : "encounter" 1..1
 Prescription --> RenseignementComplementaire : "reason" 0..*
