@@ -33,7 +33,16 @@ Each FHIR resource has been tailored to meet the specific requirements of the On
 
 La liste ci-dessous expose la liste des profils génériques profilés.
 
-{% sql SELECT '[' || Name ||'](StructureDefinition-' || id || '.html)' as "Titre du profil", Description FROM Resources WHERE Type = 'StructureDefinition'%}
+| Resource | Profile | Description |
+| ----- | ----- | ----- |
+| <a href="https://hl7.org/fhir/R5/careplan.html">CarePlan</a> | [OncoFAIRCarePlan](StructureDefinition-oncofair-careplan.html) | This object describes the chaining of prescription elements attached to the prescribed protocol. Its structure enables the chaining of nested sub-protocols. |
+| <a href="https://hl7.org/fhir/R5/encounter.html">Encounter</a> | [OncoFAIREncounter](StructureDefinition-oncofair-encounter.html) | Must be taken in the generic sense, i.e. it goes beyond hospital admissions, outpatient consultations, dialysis sessions, day hospitals, etc. |
+| <a href="https://hl7.org/fhir/R5/medication.html">Mediaction</a> | [OncoFAIRMedication](StructureDefinition-oncofair-medication.html) | TO DO |
+| <a href="https://hl7.org/fhir/R5/medicationadministration.html">MedicationAdministration</a> | [OncoFAIRMedicationAdministrationComponent](StructureDefinition-oncofair-medicationadministration-component.html) | This object corresponds to a product that belongs to the nomenclature of medicines used in the hospital. |
+| <a href="https://hl7.org/fhir/R5/medicationadministration.html">MedicationAdministration</a> | [OncoFAIRMedicationAdministrationComponent](StructureDefinition-oncofair-medicationadministration-component.html) | This object corresponds to a product that belongs to the nomenclature of medicines used in the hospital. |
+| <a href="https://hl7.org/fhir/R5/medicationadministration.html">MedicationAdministration</a> | [OncoFAIRMedicationAdministrationElement](StructureDefinition-oncofair-medicationadministration-element.html) | Corresponds to the activity induced by a prescription item and its dosage (structured or unstructured), and carried out at a given moment. |
+| <a href="https://hl7.org/fhir/R5/medicationadministration.html">MedicationAdministration</a> | [OncoFAIRMedicationAdministrationReport](StructureDefinition-oncofair-medicationadministration-report.html) | Regroups all the prescription elements received on which the pharmacist expresses his validation. It also includes items suggested or resulting from a replacement proposed by the pharmacist. |
+
 
 
 #### Extensions 
