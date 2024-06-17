@@ -1,7 +1,7 @@
 OncoFAIR : Validation Results
 =========================================
 
-err = 0, warn = 17, info = 17
+err = 0, warn = 16, info = 17
 $--
 Generated $--. FHIR version $-- for ltsi.fhir.oncofair#$-- (canonical = http://ltsi.univ-rennes.fr)
  Build Errors : 0 / 3 / 0
@@ -52,7 +52,7 @@ Generated $--. FHIR version $-- for ltsi.fhir.oncofair#$-- (canonical = http://l
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-element : 0 / 2 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-report : 0 / 2 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-component : 0 / 2 / 1
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-element : 0 / 3 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-element : 0 / 2 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-prescription : 0 / 2 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-mr-component-solute : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-mr-element-go-nogo : 0 / 0 / 1
@@ -159,7 +159,6 @@ WARNING: StructureDefinition/oncofair-medicationrequest-component: StructureDefi
 WARNING: StructureDefinition/oncofair-medicationrequest-component: StructureDefinition.differential.element[7].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-element.json ==
 WARNING: StructureDefinition/oncofair-medicationrequest-element: StructureDefinition.snapshot.element[54].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
-WARNING: StructureDefinition/oncofair-medicationrequest-element: StructureDefinition.differential.element[0]: Constraint failed: eld-27: 'Mappings SHOULD be unique by key' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)
 WARNING: StructureDefinition/oncofair-medicationrequest-element: StructureDefinition.differential.element[20].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-prescription.json ==
 WARNING: StructureDefinition/oncofair-medicationrequest-prescription: StructureDefinition.snapshot.element[32].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
