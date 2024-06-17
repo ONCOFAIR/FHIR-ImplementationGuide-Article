@@ -33,7 +33,8 @@ Each FHIR resource has been tailored to meet the specific requirements of the On
 
 La liste ci-dessous expose la liste des profils génériques profilés.
 
-{% sql SELECT '[' || Title ||'](StructureDefinition-' || id || '.html)' as "Titre du profil", Description FROM Resources WHERE Type = 'StructureDefinition' and Description like "Profil%" %}
+{% sql SELECT '[' || Name ||'](StructureDefinition-' || id || '.html)' as "Titre du profil", Description FROM Resources WHERE Type = 'StructureDefinition'%}
+
 
 #### Extensions 
 
