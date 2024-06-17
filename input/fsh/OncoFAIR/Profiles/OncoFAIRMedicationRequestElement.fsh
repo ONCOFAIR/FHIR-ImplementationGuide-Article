@@ -38,7 +38,7 @@ Correspond à une ligne de prescription d’une ordonnance. Chacune comporte un 
 * groupIdentifier ^short = "Identifier common to all components of the same prescription"
 
 * medication MS
-* medication.concept.coding = #element
+* medication.concept = #element
 * medication from ConceptMedicationOncoFAIRValueSet (required)
 
 

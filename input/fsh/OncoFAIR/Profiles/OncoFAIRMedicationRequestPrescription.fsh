@@ -38,7 +38,7 @@ Regroupe l’ensemble des éléments de prescription validés simultanément par
 * medication MS
 
 * medication from ConceptMedicationOncoFAIRValueSet (required)
-* medication.concept.coding = #prescription
+* medication.concept = #prescription
 
 * note 0..1 MS
 * note ^short = "Default comment on the prescription by the prescribing doctor"

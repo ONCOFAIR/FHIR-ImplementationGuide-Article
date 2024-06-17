@@ -10,7 +10,7 @@ Correspond à l’activité induite par un élément de prescription et sa posol
 * partOf ^short = "The medication administration report linked to the element of administration"
 
 * medication from ConceptMedicationOncoFAIRValueSet (required)
-* medication.concept.coding = #element
+* medication.concept = #element
 
 * device MS
 * device ^short = "Specifies, where applicable, the medical devices or equipment to be used to administer the product. By default, the associated devices are those listed in the prescription element associated with the administration element"

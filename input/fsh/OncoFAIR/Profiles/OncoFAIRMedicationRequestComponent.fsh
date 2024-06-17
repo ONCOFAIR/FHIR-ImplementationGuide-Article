@@ -14,7 +14,7 @@ Est un produit qui appartient à la nomenclature de médicaments utilisée. Il p
 * medication only CodeableReference(OncoFAIRMedication)
 
 * medication from ConceptMedicationOncoFAIRValueSet (required)
-* medication.concept.coding = #component
+* medication.concept = #component
 
 
 * dosageInstruction 0..1 MS
