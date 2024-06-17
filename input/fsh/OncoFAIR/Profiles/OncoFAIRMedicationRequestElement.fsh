@@ -66,10 +66,10 @@ Correspond à une ligne de prescription d’une ordonnance. Chacune comporte un 
 * dosageInstruction[posology].id = "posology"
 * dosageInstruction[element].additionalInstruction ..1
 
-* dosageInstruction[posology].timing.event ^slicing.discriminator.type = #value
+/** dosageInstruction[posology].timing.event ^slicing.discriminator.type = #value
 * dosageInstruction[posology].timing.event ^slicing.discriminator.path = "id"
 * dosageInstruction[posology].timing.event ^slicing.rules = #open
-/** dosageInstruction[posology].timing.event contains
+* dosageInstruction[posology].timing.event contains
     startEvent 0..1 and
     endEvent 0..1
 
@@ -119,12 +119,11 @@ Correspond à une ligne de prescription d’une ordonnance. Chacune comporte un 
     OncoFAIRPharmacistAdvice named oncofair-pharmacist-advice 0..1 MS
 
 
-Mapping:  mapping_OncoFAIRMedicationRequestElement
+Mapping:  mapping_OncoFAIRMedicationRequestElementPrescription
 Source:   OncoFAIRMedicationRequestElement
-Id:       mapping-oncofair-medicationrequest-element
+Id:       mapping-oncofair-medicationrequest-element-prescription
 Title:    "Mapping du profil OncoFAIR MedicationRequest Element"
 * -> "ElementPrescription"
-* -> "ElementPosologie"
 
 * basedOn[prescription] -> "Prescription" 
 * basedOn[element] -> "ElementLie"
@@ -152,17 +151,6 @@ Title:    "Mapping du profil OncoFAIR MedicationRequest Element"
 
 /** dosageInstruction[posology].timing.event[startEvent] -> "typeEvenementDebut"
 * dosageInstruction[posology].timing.event[endEvent] -> "typeEvenementFin"*/
-* dosageInstruction[posology].timing.repeat.duration -> "duree"
-* dosageInstruction[posology].doseAndRate.rateQuantity -> "debit"
-* dosageInstruction[posology].doseAndRate.doseQuantity -> "quantite"
-* dosageInstruction[posology].timing.repeat.frequency -> "frequence"
-
-* effectiveDosePeriod.start -> "dateHeureDebutPrescription"
-* effectiveDosePeriod.end -> "dateHeureFinPrescription"
-
-* note[wording] -> "libelleElementPrescription"
-* note[indication] -> "indication"
-* note[comments] -> "commentaires"
 
 /* TO DO :
 Dans la classe element posologie : 
@@ -179,3 +167,22 @@ Dans la classe element posologie :
 Extensions?
 
 */
+
+Mapping:  mapping_OncoFAIRMedicationRequestElementPosologie
+Source:   OncoFAIRMedicationRequestElement
+Id:       mapping-oncofair-medicationrequest-element-posologie
+Title:    "Mapping du profil OncoFAIR MedicationRequest Element"
+
+* -> "ElementPosologie"
+
+* dosageInstruction[posology].timing.repeat.duration -> "duree"
+* dosageInstruction[posology].doseAndRate.rateQuantity -> "debit"
+* dosageInstruction[posology].doseAndRate.doseQuantity -> "quantite"
+* dosageInstruction[posology].timing.repeat.frequency -> "frequence"
+
+* effectiveDosePeriod.start -> "dateHeureDebutPrescription"
+* effectiveDosePeriod.end -> "dateHeureFinPrescription"
+
+* note[wording] -> "libelleElementPrescription"
+* note[indication] -> "indication"
+* note[comments] -> "commentaires"
