@@ -6,11 +6,9 @@ map "timing" as timing #back:WhiteSmoke;header:LightGray {
     dateHeureDebutPrescrite => repeat.bounds[x]:boundsPeriod.start
     dateHeureFinPrescrite => repeat.bounds[x]:boundsPeriod.end
     deltaDateHeureReference => repeat.offset
-}
+    duree => repeat.duration
+    frequence => repeat.frequency
 
-map "doseAndRate" as doseAndRate #back:WhiteSmoke;header:LightGray {
-    quantite => dose[x]:doseQuantity
-    debit => rate[x]:rateQuantity
 }
 
 map "effectiveDosePeriod" as effectiveDosePeriod #back:WhiteSmoke;header:LightGray {
@@ -25,11 +23,6 @@ map "<&layers> dosageInstruction:element" as dosageInstructionelement #back:Whit
     lieuAdministration => site
     voieAdministration => route
     typeElementPrescription => method
-}
-
-map "<&layers> dosageInstruction:posology" as dosageInstructionposology #back:WhiteSmoke;header:LightGray {
-    timing *--> timing
-    doseAndRate *--> doseAndRate
 }
 
 object "**OncoFAIRMedicationRequestPrescription**" as OncoFAIRMedicationRequestPrescription #LightSkyBlue {
@@ -58,7 +51,7 @@ map "<&plus> oncofair-pharmacist-advice" as oncofairpharmacistadvice #back:White
     propositionPharmaceutique => pharmacistProposal
 }
 
-map "**ElementPosologie : OncoFAIRMedicationRequestElement**" as ElementPosologie #back:AliceBlue;header:LightSkyBlue {
+map "**ElementPrescription : OncoFAIRMedicationRequestElement**" as ElementPrescription #back:AliceBlue;header:LightSkyBlue {
     idElementPrescription => identifier
     idGroupe => groupIdentifier
     CreationArretModificationValidation => status
@@ -70,7 +63,6 @@ map "**ElementPosologie : OncoFAIRMedicationRequestElement**" as ElementPosologi
     propostionPharmaceutique => substitution
     effectiveDosePeriod *-> effectiveDosePeriod
     <&layers> dosageInstruction:element *-> dosageInstructionelement
-    <&layers> dosageInstruction:posology *-> dosageInstructionposology
     forme => <&plus> oncofair-element-form
     fourniture => <&plus> oncofair-mr-element-supply
     rangElementPrescription => <&plus> oncofair-mr-element-rank
@@ -78,9 +70,24 @@ map "**ElementPosologie : OncoFAIRMedicationRequestElement**" as ElementPosologi
     oncofair-pharmacist-advice *-> oncofairpharmacistadvice
 }
 
-ElementPosologie -u-> OncoFAIRMedicationRequestPrescription : basedOn:prescription
-ElementPosologie -d-> OncoFAIRMedicationRequestElement : basedOn:element
-ElementPosologie -l-> OncoFAIRCarePlan : basedOn:protocol
-ElementPosologie -r-> Practitioner : requester
+map "doseAndRate" as doseAndRate #back:WhiteSmoke;header:LightGray {
+    quantite => dose[x]:doseQuantity
+    debit => rate[x]:rateQuantity
+}
+
+map "<&layers> dosageInstruction:posology" as dosageInstructionposology #back:WhiteSmoke;header:LightGray {
+    timing *--> timing
+    doseAndRate *--> doseAndRate
+}
+
+map "**ElementPosologie : OncoFAIRMedicationRequestElement**" as ElementPosologie #back:AliceBlue;header:LightSkyBlue {
+    <&layers> dosageInstruction:posology *-> dosageInstructionposology
+
+}
+
+ElementPrescription -u-> OncoFAIRMedicationRequestPrescription : basedOn:prescription
+ElementPrescription -d-> OncoFAIRMedicationRequestElement : basedOn:element
+ElementPrescription -l-> OncoFAIRCarePlan : basedOn:protocol
+ElementPrescription -r-> Practitioner : requester
 
 @enduml
