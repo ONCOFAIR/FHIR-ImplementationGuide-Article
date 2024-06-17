@@ -1,6 +1,3 @@
-
-{% include header.html %}
-
 ### Introduction
 
 The OncoFAIR project is designed to improve the interoperability and reuse of healthcare data in oncology, focusing on chemotherapy. This guide details the use of FHIR standards to optimize prescribing and medication administration for oncology patients.
