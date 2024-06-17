@@ -149,6 +149,13 @@ Title:    "Mapping du profil OncoFAIR MedicationRequest Element"
 * dosageInstruction[element].timing.repeat.offset -> "deltaDateHeureReference"
 * dosageInstruction[element].additionalInstruction -> "conditionsApplication"
 
+* effectiveDosePeriod.start -> "dateHeureDebutPrescription"
+* effectiveDosePeriod.end -> "dateHeureFinPrescription"
+
+* note[wording] -> "libelleElementPrescription"
+* note[indication] -> "indication"
+* note[comments] -> "commentaires"
+
 /** dosageInstruction[posology].timing.event[startEvent] -> "typeEvenementDebut"
 * dosageInstruction[posology].timing.event[endEvent] -> "typeEvenementFin"*/
 
@@ -180,9 +187,4 @@ Title:    "Mapping du profil OncoFAIR MedicationRequest Element"
 * dosageInstruction[posology].doseAndRate.doseQuantity -> "quantite"
 * dosageInstruction[posology].timing.repeat.frequency -> "frequence"
 
-* effectiveDosePeriod.start -> "dateHeureDebutPrescription"
-* effectiveDosePeriod.end -> "dateHeureFinPrescription"
 
-* note[wording] -> "libelleElementPrescription"
-* note[indication] -> "indication"
-* note[comments] -> "commentaires"
