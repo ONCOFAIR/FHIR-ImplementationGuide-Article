@@ -218,7 +218,52 @@ This UML diagram provides an overview of the data structures, and is essential f
 
 <p>La liste ci-dessous expose la liste des profils génériques profilés.</p>
 
-<p><span style="color: maroon">Error processing SQL: Cannot invoke "String.contains(java.lang.CharSequence)" because "content" is null</span></p>
+<table>
+  <thead>
+    <tr>
+      <th>Resource</th>
+      <th>Profile</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://hl7.org/fhir/R5/careplan.html">CarePlan</a></td>
+      <td><a href="StructureDefinition-oncofair-careplan.html">OncoFAIRCarePlan</a></td>
+      <td>This object describes the chaining of prescription elements attached to the prescribed protocol. Its structure enables the chaining of nested sub-protocols.</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/R5/encounter.html">Encounter</a></td>
+      <td><a href="StructureDefinition-oncofair-encounter.html">OncoFAIREncounter</a></td>
+      <td>Must be taken in the generic sense, i.e. it goes beyond hospital admissions, outpatient consultations, dialysis sessions, day hospitals, etc.</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/R5/medication.html">Mediaction</a></td>
+      <td><a href="StructureDefinition-oncofair-medication.html">OncoFAIRMedication</a></td>
+      <td>TO DO</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/R5/medicationadministration.html">MedicationAdministration</a></td>
+      <td><a href="StructureDefinition-oncofair-medicationadministration-component.html">OncoFAIRMedicationAdministrationComponent</a></td>
+      <td>This object corresponds to a product that belongs to the nomenclature of medicines used in the hospital.</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/R5/medicationadministration.html">MedicationAdministration</a></td>
+      <td><a href="StructureDefinition-oncofair-medicationadministration-component.html">OncoFAIRMedicationAdministrationComponent</a></td>
+      <td>This object corresponds to a product that belongs to the nomenclature of medicines used in the hospital.</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/R5/medicationadministration.html">MedicationAdministration</a></td>
+      <td><a href="StructureDefinition-oncofair-medicationadministration-element.html">OncoFAIRMedicationAdministrationElement</a></td>
+      <td>Corresponds to the activity induced by a prescription item and its dosage (structured or unstructured), and carried out at a given moment.</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/R5/medicationadministration.html">MedicationAdministration</a></td>
+      <td><a href="StructureDefinition-oncofair-medicationadministration-report.html">OncoFAIRMedicationAdministrationReport</a></td>
+      <td>Regroups all the prescription elements received on which the pharmacist expresses his validation. It also includes items suggested or resulting from a replacement proposed by the pharmacist.</td>
+    </tr>
+  </tbody>
+</table>
 
 <h4 id="extensions">Extensions</h4>
 
@@ -260,7 +305,7 @@ This UML diagram provides an overview of the data structures, and is essential f
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Jun 17, 2024 08:31+0000">2024-06-17</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Jun 17, 2024 10:03+0000">2024-06-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
