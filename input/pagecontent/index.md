@@ -121,6 +121,7 @@ The following is a list of generic profiles :
 </body>
 </html>
 
+<div>{%include mapping_global.svg%}</div>
 
 ### Dependencies
 
