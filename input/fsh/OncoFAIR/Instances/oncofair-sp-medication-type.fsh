@@ -8,5 +8,5 @@ Usage : #definition
 * code = #medication-type
 * base = #Medication
 * type = #token
-* expression = "Medication.extension.where(url='http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication-type').value as CodeableConcept"
+* expression = "Medication.extension.where(url='http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication-type').value"
 * processingMode = #normal
