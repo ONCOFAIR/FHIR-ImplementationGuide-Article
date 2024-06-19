@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 0, errors = 0, warn = 16, info = 17-->
+<!-- broken links = 0, errors = 0, warn = 15, info = 17-->
 <head>
   <title>OncoFAIR : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for OncoFAIR</h1>
- <p>Generated Wed Jun 19 14:44:34 UTC 2024, FHIR version 5.0.0 for ltsi.fhir.oncofair#0.1.0 (canonical = <a href="http://ltsi.univ-rennes.fr">http://ltsi.univ-rennes.fr</a> (<a href="http://ltsi.univ-rennes.fr/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+ <p>Generated Wed Jun 19 14:53:01 UTC 2024, FHIR version 5.0.0 for ltsi.fhir.oncofair#0.1.0 (canonical = <a href="http://ltsi.univ-rennes.fr">http://ltsi.univ-rennes.fr</a> (<a href="http://ltsi.univ-rennes.fr/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.6.11</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ltsi.fhir.oncofair, Canonical = http://ltsi.univ-rennes.fr</td></tr>
@@ -191,7 +191,7 @@ hl7.terminology.r5#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/ValueSet
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://ltsi.univ-rennes.fr (Problem #1 with package-list.json at http://ltsi.univ-rennes.fr: Not Found)</td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
- <tr><td>Summary:</td><td> errors = 0, warn = 16, info = 17, broken links = 0</td></tr>
+ <tr><td>Summary:</td><td> errors = 0, warn = 15, info = 17, broken links = 0</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -202,9 +202,6 @@ hl7.terminology.r5#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/ValueSet
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_Observation-ExampleOncoFAIRObservation"><b>/home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/Observation-ExampleOncoFAIRObservation</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_SearchParameter-oncofair-sp-medication-type"><b>/home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/SearchParameter-oncofair-sp-medication-type</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_StructureDefinition-oncofair-medicationadministration-component"><b>/home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-component</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
@@ -251,22 +248,9 @@ hl7.terminology.r5#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/ValueSet
    </tr>
 </table>
 <hr/>
-<a name="_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_SearchParameter-oncofair-sp-medication-type"> </a>
-<h2><a href="SearchParameter-oncofair-sp-medication-type.html">fsh-generated/resources/SearchParameter-oncofair-sp-medication-type.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>SearchParameter: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/searchparameter.html">SearchParameter</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>SearchParameter.expression (l1/c1725)</b></td><td><b>warning</b></td><td title="FHIRPATH_COLLECTION_STATUS_OPERATION_LEFT"><b>The left side is inherently a collection, and so the expression 'Medication.extension.where(url = 'http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication-type').value as CodeableConcept' may fail or return false if there is more than one item in the content being evaluated</b></td>
-   </tr>
-</table>
-<hr/>
 <a name="_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_StructureDefinition-oncofair-medicationadministration-component"> </a>
-<h2><a href="StructureDefinition-oncofair-medicationadministration-component.html">fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-component.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-oncofair-medicationadministration-component.html">fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-component.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -281,8 +265,8 @@ hl7.terminology.r5#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/ValueSet
 </table>
 <hr/>
 <a name="_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_StructureDefinition-oncofair-medicationadministration-element"> </a>
-<h2><a href="StructureDefinition-oncofair-medicationadministration-element.html">fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-element.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-oncofair-medicationadministration-element.html">fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-element.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -297,8 +281,8 @@ hl7.terminology.r5#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/ValueSet
 </table>
 <hr/>
 <a name="_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_StructureDefinition-oncofair-medicationadministration-report"> </a>
-<h2><a href="StructureDefinition-oncofair-medicationadministration-report.html">fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-report.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-oncofair-medicationadministration-report.html">fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-report.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -313,8 +297,8 @@ hl7.terminology.r5#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/ValueSet
 </table>
 <hr/>
 <a name="_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_StructureDefinition-oncofair-medicationrequest-component"> </a>
-<h2><a href="StructureDefinition-oncofair-medicationrequest-component.html">fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-component.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-oncofair-medicationrequest-component.html">fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-component.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -329,8 +313,8 @@ hl7.terminology.r5#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/ValueSet
 </table>
 <hr/>
 <a name="_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_StructureDefinition-oncofair-medicationrequest-element"> </a>
-<h2><a href="StructureDefinition-oncofair-medicationrequest-element.html">fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-element.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-oncofair-medicationrequest-element.html">fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-element.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -345,8 +329,8 @@ hl7.terminology.r5#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/ValueSet
 </table>
 <hr/>
 <a name="_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_StructureDefinition-oncofair-medicationrequest-prescription"> </a>
-<h2><a href="StructureDefinition-oncofair-medicationrequest-prescription.html">fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-prescription.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-oncofair-medicationrequest-prescription.html">fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-prescription.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -369,14 +353,6 @@ hl7.terminology.r5#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/ValueSet
  <table class="grid">
    <tr style="background-color: #fff4ee">
      <td><a href="Observation-ExampleOncoFAIRObservation.html">fsh-generated/resources/Observation-ExampleOncoFAIRObservation.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="FHIRPATH_COLLECTION_STATUS_OPERATION_LEFT"> </a>
-<h2>FHIRPATH_COLLECTION_STATUS_OPERATION_LEFT</h2>
- <table class="grid">
-   <tr style="background-color: #fff4ee">
-     <td><a href="SearchParameter-oncofair-sp-medication-type.html">fsh-generated/resources/SearchParameter-oncofair-sp-medication-type.json</a></td><td><b>The left side is inherently a collection, and so the expression 'Medication.extension.where(url = 'http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication-type').value as CodeableConcept' may fail or return false if there is more than one item in the content being evaluated</b></td>
    </tr>
 </table>
 <hr/>

@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 0, errors = 0, warn = 16, info = 17-->
+<!-- broken links = 0, errors = 0, warn = 15, info = 17-->
 <head>
   <title>OncoFAIR : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for OncoFAIR</h1>
- <p>Generated Wed Jun 19 14:44:34 UTC 2024, FHIR version 5.0.0 for ltsi.fhir.oncofair#0.1.0 (canonical = <a href="http://ltsi.univ-rennes.fr">http://ltsi.univ-rennes.fr</a> (<a href="http://ltsi.univ-rennes.fr/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+ <p>Generated Wed Jun 19 14:53:01 UTC 2024, FHIR version 5.0.0 for ltsi.fhir.oncofair#0.1.0 (canonical = <a href="http://ltsi.univ-rennes.fr">http://ltsi.univ-rennes.fr</a> (<a href="http://ltsi.univ-rennes.fr/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.6.11</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ltsi.fhir.oncofair, Canonical = http://ltsi.univ-rennes.fr</td></tr>
@@ -191,7 +191,7 @@ hl7.terminology.r5#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/ValueSet
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://ltsi.univ-rennes.fr (Problem #1 with package-list.json at http://ltsi.univ-rennes.fr: Not Found)</td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
- <tr><td>Summary:</td><td> errors = 0, warn = 16, info = 17, broken links = 0</td></tr>
+ <tr><td>Summary:</td><td> errors = 0, warn = 15, info = 17, broken links = 0</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -297,7 +297,7 @@ hl7.terminology.r5#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/ValueSet
      <td><a href="#_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_Practitioner-ExampleOncoFAIRPractitioner"><b>/home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/Practitioner-ExampleOncoFAIRPractitioner</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_SearchParameter-oncofair-sp-medication-type"><b>/home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/SearchParameter-oncofair-sp-medication-type</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_SearchParameter-oncofair-sp-medication-type"><b>/home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/SearchParameter-oncofair-sp-medication-type</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_StructureDefinition-oncofair-careplan"><b>/home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-careplan</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -822,10 +822,7 @@ hl7.terminology.r5#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/ValueSet
 </div>
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>SearchParameter.expression (l1/c1725)</b></td><td><b>warning</b></td><td title="FHIRPATH_COLLECTION_STATUS_OPERATION_LEFT"><b>The left side is inherently a collection, and so the expression 'Medication.extension.where(url = 'http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication-type').value as CodeableConcept' may fail or return false if there is more than one item in the content being evaluated</b></td>
+     <td>&check;</td>
    </tr>
 </table>
 <hr/>
@@ -1304,14 +1301,6 @@ hl7.terminology.r5#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/ValueSet
  <table class="grid">
    <tr style="background-color: #fff4ee">
      <td><a href="Observation-ExampleOncoFAIRObservation.html">fsh-generated/resources/Observation-ExampleOncoFAIRObservation.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="FHIRPATH_COLLECTION_STATUS_OPERATION_LEFT"> </a>
-<h2>FHIRPATH_COLLECTION_STATUS_OPERATION_LEFT</h2>
- <table class="grid">
-   <tr style="background-color: #fff4ee">
-     <td><a href="SearchParameter-oncofair-sp-medication-type.html">fsh-generated/resources/SearchParameter-oncofair-sp-medication-type.json</a></td><td><b>The left side is inherently a collection, and so the expression 'Medication.extension.where(url = 'http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication-type').value as CodeableConcept' may fail or return false if there is more than one item in the content being evaluated</b></td>
    </tr>
 </table>
 <hr/>

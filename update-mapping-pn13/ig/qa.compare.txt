@@ -1,7 +1,7 @@
 OncoFAIR : Validation Results
 =========================================
 
-err = 0, warn = 16, info = 17
+err = 0, warn = 15, info = 17
 $--
 Generated $--. FHIR version $-- for ltsi.fhir.oncofair#$-- (canonical = http://ltsi.univ-rennes.fr)
  Build Errors : 0 / 2 / 0
@@ -37,7 +37,7 @@ Generated $--. FHIR version $-- for ltsi.fhir.oncofair#$-- (canonical = http://l
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/Observation-ExampleOncoFAIRObservation : 0 / 1 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/Patient-ExampleOncoFAIRPatient : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/Practitioner-ExampleOncoFAIRPractitioner : 0 / 0 / 1
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/SearchParameter-oncofair-sp-medication-type : 0 / 1 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/SearchParameter-oncofair-sp-medication-type : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-careplan : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-cp-treatment : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-element-form : 0 / 0 / 1
@@ -136,7 +136,6 @@ WARNING: Observation/ExampleOncoFAIRObservation: Observation: Best Practice Reco
 == fsh-generated/resources/Patient-ExampleOncoFAIRPatient.json ==
 == fsh-generated/resources/Practitioner-ExampleOncoFAIRPractitioner.json ==
 == fsh-generated/resources/SearchParameter-oncofair-sp-medication-type.json ==
-WARNING: SearchParameter/oncofair-sp-medication-type: SearchParameter.expression: The left side is inherently a collection, and so the expression 'Medication.extension.where(url = 'http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication-type').value as CodeableConcept' may fail or return false if there is more than one item in the content being evaluated
 == fsh-generated/resources/StructureDefinition-oncofair-careplan.json ==
 == fsh-generated/resources/StructureDefinition-oncofair-cp-treatment.json ==
 == fsh-generated/resources/StructureDefinition-oncofair-element-form.json ==
