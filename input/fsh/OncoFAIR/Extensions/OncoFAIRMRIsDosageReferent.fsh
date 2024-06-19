@@ -1,5 +1,6 @@
 Extension: OncoFAIRMRIsDosageReferent
 Id: oncofair-mr-is-dosage-referent
+Title: "OncoFAIRMRIsDosageReferent"
 Description: "Extension created as part of OncoFAIR containing the notion of a posology reference. \r\n
 Extension créée dans le cadre d'OncoFAIR contenant la notion de référence posologie." 
 * ^context[+].type = #element

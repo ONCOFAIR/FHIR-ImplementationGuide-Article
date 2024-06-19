@@ -1,5 +1,6 @@
 Extension: OncoFAIRMRComponentSolute
 Id: oncofair-mr-component-solute
+Title: "OncoFAIRMRComponentSolute"
 Description: "Extension created as part of OncoFAIR containing the notion of solute. \r\n
 Extension créée dans le cadre d'OncoFAIR contenant la notion de soluté." 
 * ^context[+].type = #element

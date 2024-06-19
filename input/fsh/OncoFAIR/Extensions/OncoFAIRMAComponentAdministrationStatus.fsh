@@ -1,5 +1,6 @@
 Extension: OncoFAIRMAComponentAdministrationStatus
 Id: oncofair-ma-component-administration-status
+Title: "OncoFAIRMAComponentAdministrationStatus"
 Description: "Extension created as part of OncoFAIR containing the administration status of the administered component. \r\n
 Extension créée dans le cadre d'OncoFAIR contenant le statut d'administration du composant administré."
 

@@ -1,5 +1,6 @@
 Extension: OncoFAIRMAElementUrgent
 Id: oncofair-ma-element-urgent
+Title: "OncoFAIRMAElementUrgent"
 Description: "Extension created as part of OncoFAIR containing the notion of emergency. \r\n
 Extension créée dans le cadre d'OncoFAIR contenant la notion d'urgence." 
 * ^context[+].type = #element

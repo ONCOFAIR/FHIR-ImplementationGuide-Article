@@ -140,7 +140,7 @@ The following interactions can be applied:
 * *Update* to update an existing resource. Use the `HTTP PUT` method.
 
 Finally, the body of HTTP requests is a FHIR resource that can be formatted in XML, JSON or RDF.
-
+{% sql SELECT '[' || Name ||'](StructureDefinition-' || id || '.html)' as "Titre du profil", Title FROM Resources WHERE Type = 'StructureDefinition'%}
 ---
 
 <!-- [Return to contents](file:///D:/Home/bguilbert/Documents/fhir/oncofair/output/toc.html "Return to contents") -->

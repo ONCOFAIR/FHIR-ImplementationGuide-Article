@@ -1,5 +1,6 @@
 Extension: OncoFAIRPharmacistAdvice
 Id: oncofair-pharmacist-advice
+Title: "OncoFAIRPharmacistAdvice"
 Description: "Extension created as part of OncoFAIR containing the validation and pharmaceutical proposal. \r\n
 Extension créée dans le cadre d'OncoFAIR contenant la validation et proposition pharmaceutique." 
 * ^context[+].type = #element

@@ -1,5 +1,6 @@
 Extension: OncoFAIRMRPrescriptionValidationDate
 Id: oncofair-mr-prescription-validation-date
+Title: "OncoFAIRMRPrescriptionValidationDate"
 Description: "Extension créée dans le cadre d'OncoFAIR contenant la date et heure de la prescription" 
 * ^context[+].type = #element
 * ^context[=].expression = "MedicationRequest"

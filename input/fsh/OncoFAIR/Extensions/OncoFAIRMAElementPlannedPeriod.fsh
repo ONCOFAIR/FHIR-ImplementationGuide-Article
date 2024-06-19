@@ -1,5 +1,6 @@
 Extension: OncoFAIRMAElementPlannedPeriod
 Id: oncofair-ma-element-plannedperiod
+Title: "OncoFAIRMAElementPlannedPeriod"
 Description: "Extension created as part of OncoFAIR containing the planned start and end date of administration. \r\n
 Extension créée dans le cadre d'OncoFAIR contenant la date de début et de fin prévue de l'administration." 
 * ^context[+].type = #element

@@ -1,5 +1,6 @@
 Extension: OncoFAIRMedicationType
 Id: oncofair-medication-type
+Title: "OncoFAIRMedicationType"
 Description: "Extension created as part of OncoFAIR containing the type of component. \r\n
 Extension créée dans le cadre d'OncoFAIR contenant le type de composant."
 * ^context[+].type = #element

@@ -1,5 +1,6 @@
 Extension: OncoFAIRMRExemptLTC
 Id: oncofair-mr-exempt-ltc
+Title: "OncoFAIRMRExemptLTC"
 Description: "Extension created as part of OncoFAIR containing the notion of exemption. \r\n
 Extension créée dans le cadre d'OncoFAIR contenant la notion d'exonération." 
 * ^context[+].type = #element
