@@ -1,5 +1,6 @@
 Extension: OncoFAIRElementForm
 Id: oncofair-element-form
+Title: "OncoFAIRElementForm"
 Description: "Extension created as part of OncoFair containing the drug form. \r\n
 Extension créée dans le cadre d'OncoFair contenant la forme du médicament." 
 * ^context[+].type = #element

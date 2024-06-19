@@ -1,5 +1,7 @@
 Extension: OncoFAIRMAComponentOrigin
 Id: oncofair-ma-component-origin
+Title: "OncoFAIRMAComponentOrigin"
+
 Description: "Extension created as part of OncoFAIR containing the origin of the administered component. \r\n
 Extension créée dans le cadre d'OncoFAIR contenant la provenance du composant administré." 
 * ^context[+].type = #element

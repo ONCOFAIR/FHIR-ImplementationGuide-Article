@@ -1,5 +1,6 @@
 Extension: OncoFAIRMRElementLinkType
 Id: oncofair-mr-element-link-type
+Title: "OncoFAIRMRElementLinkType"
 Description: "Extension created as part of OncoFAIR containing the element's type of link. \r\n
 Extension créée dans le cadre d'OncoFAIR contenant le type de liaison de l'élément." 
 

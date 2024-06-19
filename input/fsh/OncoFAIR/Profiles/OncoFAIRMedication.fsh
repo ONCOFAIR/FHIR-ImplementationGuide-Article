@@ -2,7 +2,8 @@ Profile: OncoFAIRMedication
 Parent: Medication
 Id: oncofair-medication
 Title: "OncoFAIR Medication"
-Description : ""
+Description : "This object describes the medication. \r\n
+Cet objet décrit le médicament"
 
 
 /*La nomenclature pour le code dépend du type de composant, mais pas de nomenclature PN13 fournie*/

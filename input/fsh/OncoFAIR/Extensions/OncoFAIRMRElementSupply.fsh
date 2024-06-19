@@ -1,5 +1,6 @@
 Extension: OncoFAIRMRElementSupply
 Id: oncofair-mr-element-supply
+Title: "OncoFAIRMRElementSupply"
 Description: "Extension created as part of OncoFAIR containing the concept of supply. \r\n
 Extension créée dans le cadre d'OncoFAIR contenant la notion de fourniture." 
 * ^context[+].type = #element

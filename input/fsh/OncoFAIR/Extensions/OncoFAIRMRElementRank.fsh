@@ -1,5 +1,6 @@
 Extension: OncoFAIRMRElementRank
 Id: oncofair-mr-element-rank
+Title: "OncoFAIRMRElementRank"
 Description: "Extension created as part of OncoFAIR containing the prescription element rank. \r\n
 Extension créée dans le cadre d'OncoFAIR contenant le rangd d'élement de la prescription." 
 * ^context[+].type = #element

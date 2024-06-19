@@ -1,5 +1,6 @@
 Extension: OncoFAIRMAElementTraceability
 Id: oncofair-ma-element-traceability
+Title: "OncoFAIRMAElementTraceability"
 Description: "Extension created as part of OncoFAIR containing the batch and serial number of the administered component/administration element. \r\n
 Extension créée dans le cadre d'OncoFAIR contenant le numéro de lot et de série du composant administré/élément d'administration." 
 * ^context[+].type = #element
