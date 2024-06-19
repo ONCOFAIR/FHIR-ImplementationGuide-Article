@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationAdministration xmlns="http://hl7.org/fhir">
+  <id value="ExampleOncoFAIRMedicationAdministrationReport"/>
+  <meta>
+    <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationadministration-report"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MedicationAdministration </b><a name="ExampleOncoFAIRMedicationAdministrationReport"> </a><a name="hcExampleOncoFAIRMedicationAdministrationReport"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceMedicationAdministration &quot;ExampleOncoFAIRMedicationAdministrationReport&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-oncofair-medicationadministration-report.html">OncoFAIR MedicationAdministration Report</a></p></div><p><b>identifier</b>: REP-123456</p><p><b>status</b>: in-progress</p><h3>Medications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td><td><b>Reference</b></td></tr><tr><td style="display: none">*</td><td>report <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-concept-medication-oncofair-codesystem.html">Concepts Medication Code System</a>#report)</span></td><td><a href="Medication-ExampleOncoFAIRMedication.html">Medication/ExampleOncoFAIRMedication</a></td></tr></table><p><b>subject</b>: <a href="Patient-ExampleOncoFAIRPatient.html">Patient/ExampleOncoFAIRPatient</a></p><p><b>encounter</b>: <a href="Encounter-ExampleOncoFAIREncounter.html">Encounter/ExampleOncoFAIREncounter</a></p><p><b>occurence</b>: 2024-06-01 08:00:00+0000</p><blockquote><p><b>performer</b></p><h3>Actors</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Reference</b></td></tr><tr><td style="display: none">*</td><td><a href="Practitioner-ExampleOncoFAIRPractitioner.html">Practitioner/ExampleOncoFAIRPractitioner</a></td></tr></table></blockquote></div>
+  </text>
+  <identifier>
+    <value value="REP-123456"/>
+  </identifier>
+  <status value="in-progress"/>
+  <medication>
+    <concept>
+      <coding>
+        <system value="http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem"/>
+        <code value="report"/>
+        <display value="report"/>
+      </coding>
+    </concept>
+    <reference>
+      <reference value="Medication/ExampleOncoFAIRMedication"/>
+    </reference>
+  </medication>
+  <subject>
+    <reference value="Patient/ExampleOncoFAIRPatient"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/ExampleOncoFAIREncounter"/>
+  </encounter>
+  <occurenceDateTime value="2024-06-01T08:00:00Z"/>
+  <performer>
+    <actor>
+      <reference>
+        <reference value="Practitioner/ExampleOncoFAIRPractitioner"/>
+      </reference>
+    </actor>
+  </performer>
+</MedicationAdministration>

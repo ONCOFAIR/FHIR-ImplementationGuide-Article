@@ -1,0 +1,1598 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/additional-instruction-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTAdditionalDosageInstructions",
+      "title" : "SNOMED CT Additional Dosage Instructions",
+      "description" : "This value set includes all SNOMED CT Additional Dosage Instructions.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.95"],
+      "sources" : ["2.16.840.1.113883.4.642.3.95"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
+      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administration-method-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTAdministrationMethodCodes",
+      "title" : "SNOMED CT Administration Method Codes",
+      "description" : "This value set includes some method codes from SNOMED CT - provided as an exemplar",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.90", "2.16.840.1.113883.4.642.3.97"],
+      "sources" : ["2.16.840.1.113883.4.642.3.90", "2.16.840.1.113883.4.642.3.97"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medicationadministration-component.html" : "OncoFAIR MedicationAdministration Component",
+      "StructureDefinition-oncofair-medicationadministration-report.html" : "OncoFAIR MedicationAdministration Report",
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
+      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administration-subpotent-reason",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationAdministrationSubpotentReason",
+      "title" : "MedicationAdministration Subpotent Reason",
+      "description" : "MedicationAdministration Subpotent Reason",
+      "systems" : [
+        "http://hl7.org/fhir/CodeSystem/administration-subpotent-reason"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.3128"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3128"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medicationadministration-component.html" : "OncoFAIR MedicationAdministration Component",
+      "StructureDefinition-oncofair-medicationadministration-report.html" : "OncoFAIR MedicationAdministration Report",
+      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-patient.html" : "OncoFAIR Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/all-languages",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AllLanguages",
+      "title" : "All Languages",
+      "description" : "This value set includes all possible codes from BCP-47 (see http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.21"],
+      "sources" : ["2.16.840.1.113883.4.642.3.21"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-encounter.html" : "OncoFAIR Encounter",
+      "StructureDefinition-oncofair-medicationrequest-prescription.html" : "OncoFAIR MedicationRequest Prescription",
+      "StructureDefinition-oncofair-careplan.html" : "OncoFAIR CarePlan",
+      "StructureDefinition-oncofair-medicationadministration-component.html" : "OncoFAIR MedicationAdministration Component",
+      "StructureDefinition-oncofair-medicationadministration-report.html" : "OncoFAIR MedicationAdministration Report",
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
+      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component",
+      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element",
+      "StructureDefinition-oncofair-patient.html" : "OncoFAIR Patient",
+      "StructureDefinition-oncofair-medication.html" : "OncoFAIR Medication",
+      "StructureDefinition-oncofair-observation.html" : "OncoFAIR Observation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/approach-site-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTAnatomicalStructureAdministrationSites",
+      "title" : "SNOMED CT Anatomical Structure for Administration Site Codes",
+      "description" : "This value set includes Anatomical Structure codes from SNOMED CT - provided as an exemplar.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.346"],
+      "sources" : ["2.16.840.1.113883.4.642.3.346"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medicationadministration-component.html" : "OncoFAIR MedicationAdministration Component",
+      "StructureDefinition-oncofair-medicationadministration-report.html" : "OncoFAIR MedicationAdministration Report",
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
+      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component",
+      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/body-site",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTBodyStructures",
+      "title" : "SNOMED CT Body Structures",
+      "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.653",
+        "2.16.840.1.113883.4.642.2.78",
+        "2.16.840.1.113883.4.642.3.141"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.653",
+        "2.16.840.1.113883.4.642.2.78",
+        "2.16.840.1.113883.4.642.3.141"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-observation.html" : "OncoFAIR Observation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-performed",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "CarePlanActivityPerformed",
+      "title" : "Care Plan Activity Performed",
+      "description" : "Example codes indicating the care plan activity that was performed. Note that these are in no way complete and might not even be appropriate for some uses.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3000"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3000"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-careplan.html" : "OncoFAIR CarePlan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-category",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "CarePlanCategory",
+      "title" : "Care Plan Category",
+      "description" : "Example codes indicating the category a care plan falls within.  Note that these are in no way complete and might not even be appropriate for some uses.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.136",
+        "2.16.840.1.113883.4.642.2.67",
+        "2.16.840.1.113883.4.642.3.148"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.136",
+        "2.16.840.1.113883.4.642.2.67",
+        "2.16.840.1.113883.4.642.3.148"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-careplan.html" : "OncoFAIR CarePlan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-intent",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "CarePlanIntent",
+      "title" : "Care Plan Intent",
+      "description" : "Codes indicating the degree of authority/intentionality associated with a care plan.",
+      "systems" : ["http://hl7.org/fhir/request-intent"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.150",
+        "2.16.840.1.113883.4.642.3.141"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.150",
+        "2.16.840.1.113883.4.642.3.141"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-careplan.html" : "OncoFAIR CarePlan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTClinicalFindings",
+      "title" : "SNOMED CT Clinical Findings",
+      "description" : "This value set includes all the \"Clinical finding\" [SNOMED CT](http://snomed.info/sct) codes - concepts where concept is-a 404684003 (Clinical finding (finding)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.232",
+        "2.16.840.1.113883.4.642.3.227",
+        "2.16.840.1.113883.4.642.2.115"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.232",
+        "2.16.840.1.113883.4.642.3.227",
+        "2.16.840.1.113883.4.642.2.115"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-careplan.html" : "OncoFAIR CarePlan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-code",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ConditionProblemDiagnosisCodes",
+      "title" : "Condition/Problem/Diagnosis Codes",
+      "description" : "Example value set for Condition/Problem/Diagnosis codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.161",
+        "2.16.840.1.113883.4.642.2.72",
+        "2.16.840.1.113883.4.642.3.152"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.161",
+        "2.16.840.1.113883.4.642.2.72",
+        "2.16.840.1.113883.4.642.3.152"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-encounter.html" : "OncoFAIR Encounter",
+      "StructureDefinition-oncofair-medicationrequest-prescription.html" : "OncoFAIR MedicationRequest Prescription",
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
+      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "DataAbsentReason",
+      "title" : "Data Absent Reason",
+      "description" : "Used to specify why the normally expected content of the data element is missing.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/data-absent-reason"],
+      "oids" : ["2.16.840.1.113883.4.642.3.5"],
+      "sources" : ["2.16.840.1.113883.4.642.3.5"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-observation.html" : "OncoFAIR Observation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "DaysOfWeek",
+      "title" : "Days Of Week",
+      "description" : "The days of the week.",
+      "systems" : ["http://hl7.org/fhir/days-of-week"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.512",
+        "2.16.840.1.113883.4.642.2.302",
+        "2.16.840.1.113883.4.642.3.506"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.512",
+        "2.16.840.1.113883.4.642.2.302",
+        "2.16.840.1.113883.4.642.3.506"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-admit-source",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "AdmitSource",
+      "title" : "Admit Source",
+      "description" : "This value set defines a set of codes that can be used to indicate from where the patient came in.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/admit-source"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.257",
+        "2.16.840.1.113883.4.642.2.144",
+        "2.16.840.1.113883.4.642.3.252"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.257",
+        "2.16.840.1.113883.4.642.2.144",
+        "2.16.840.1.113883.4.642.3.252"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-encounter.html" : "OncoFAIR Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-diagnosis-use",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "EncounterDiagnosisUse",
+      "title" : "Encounter Diagnosis Use",
+      "description" : "What a specific Encounter/EpisodeOfCare `diagnosis.condition` is to be used for.",
+      "systems" : ["http://hl7.org/fhir/encounter-diagnosis-use"],
+      "oids" : ["2.16.840.1.113883.4.642.4.3321"],
+      "sources" : ["2.16.840.1.113883.4.642.4.3321"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-encounter.html" : "OncoFAIR Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-diet",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "EncounterDiet",
+      "title" : "Diet",
+      "description" : "This value set defines a set of codes that can be used to indicate dietary preferences or restrictions a patient may have.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/diet"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.255",
+        "2.16.840.1.113883.4.642.2.142",
+        "2.16.840.1.113883.4.642.3.250"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.255",
+        "2.16.840.1.113883.4.642.2.142",
+        "2.16.840.1.113883.4.642.3.250"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-encounter.html" : "OncoFAIR Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-discharge-disposition",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "DischargeDisposition",
+      "title" : "Discharge Disposition",
+      "description" : "This value set defines a set of codes that can be used to where the patient left the hospital.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/discharge-disposition"
+      ],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.254",
+        "2.16.840.1.113883.4.642.2.145",
+        "2.16.840.1.113883.4.642.3.259"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.254",
+        "2.16.840.1.113883.4.642.2.145",
+        "2.16.840.1.113883.4.642.3.259"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-encounter.html" : "OncoFAIR Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-location-status",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "EncounterLocationStatus",
+      "title" : "Encounter Location Status",
+      "description" : "The status of the location.",
+      "systems" : ["http://hl7.org/fhir/encounter-location-status"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.257",
+        "2.16.840.1.113883.4.642.2.147",
+        "2.16.840.1.113883.4.642.3.262"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.257",
+        "2.16.840.1.113883.4.642.2.147",
+        "2.16.840.1.113883.4.642.3.262"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-encounter.html" : "OncoFAIR Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-participant-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ParticipantType",
+      "title" : "Participant Type",
+      "description" : "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/participant-type",
+        "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+      ],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.245",
+        "2.16.840.1.113883.4.642.2.139",
+        "2.16.840.1.113883.4.642.3.250"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.245",
+        "2.16.840.1.113883.4.642.2.139",
+        "2.16.840.1.113883.4.642.3.250"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-encounter.html" : "OncoFAIR Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "EncounterReasonCodes",
+      "title" : "Encounter Reason Codes",
+      "description" : "This examples value set defines the set of codes that can be used to indicate reasons for an encounter.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.256",
+        "2.16.840.1.113883.4.642.2.146",
+        "2.16.840.1.113883.4.642.3.261"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.256",
+        "2.16.840.1.113883.4.642.2.146",
+        "2.16.840.1.113883.4.642.3.261"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-encounter.html" : "OncoFAIR Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-reason-use",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "EncounterReasonUse",
+      "title" : "Encounter Reason Use",
+      "description" : "What a specific Encounter/EpisodeOfCare `reason.value` is to be used for.",
+      "systems" : ["http://hl7.org/fhir/encounter-reason-use"],
+      "oids" : ["2.16.840.1.113883.4.642.4.3320"],
+      "sources" : ["2.16.840.1.113883.4.642.4.3320"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-encounter.html" : "OncoFAIR Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-special-arrangements",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SpecialArrangements",
+      "title" : "Special Arrangements",
+      "description" : "This value set defines a set of codes that can be used to indicate the kinds of special arrangements in place for a patients visit.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/encounter-special-arrangements"
+      ],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.248",
+        "2.16.840.1.113883.4.642.2.141",
+        "2.16.840.1.113883.4.642.3.253"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.248",
+        "2.16.840.1.113883.4.642.2.141",
+        "2.16.840.1.113883.4.642.3.253"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-encounter.html" : "OncoFAIR Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-special-courtesy",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SpecialCourtesy",
+      "title" : "Special Courtesy",
+      "description" : "This value set defines a set of codes that can be used to indicate special courtesies provided to the patient.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.247",
+        "2.16.840.1.113883.4.642.3.252",
+        "2.16.840.1.113883.4.642.2.140"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.247",
+        "2.16.840.1.113883.4.642.3.252",
+        "2.16.840.1.113883.4.642.2.140"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-encounter.html" : "OncoFAIR Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-status",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "EncounterStatus",
+      "title" : "Encounter Status",
+      "description" : "Current state of the encounter.",
+      "systems" : ["http://hl7.org/fhir/encounter-status"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.246",
+        "2.16.840.1.113883.4.642.3.241"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.246",
+        "2.16.840.1.113883.4.642.3.241"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-encounter.html" : "OncoFAIR Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-subject-status",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "EncounterSubjectStatus",
+      "title" : "Encounter Subject Status",
+      "description" : "This example value set defines a set of codes that can be used to indicate the status of the subject within the encounter",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/encounter-subject-status"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.3159"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3159"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-encounter.html" : "OncoFAIR Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "EncounterType",
+      "title" : "Encounter Type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the type of encounter: a specific code indicating type of service provided.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/encounter-type"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.243",
+        "2.16.840.1.113883.4.642.3.248",
+        "2.16.840.1.113883.4.642.2.137"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.243",
+        "2.16.840.1.113883.4.642.3.248",
+        "2.16.840.1.113883.4.642.2.137"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-encounter.html" : "OncoFAIR Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/event-timing",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "EventTiming",
+      "title" : "EventTiming",
+      "description" : "Real-world event relating to the schedule.",
+      "systems" : [
+        "http://hl7.org/fhir/event-timing",
+        "http://terminology.hl7.org/CodeSystem/v3-TimingEvent"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.75"],
+      "sources" : ["2.16.840.1.113883.4.642.3.75"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "IdentifierTypeCodes",
+      "title" : "Identifier Type Codes",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.4.642.3.45"],
+      "sources" : ["2.16.840.1.113883.4.642.3.45"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-encounter.html" : "OncoFAIR Encounter",
+      "StructureDefinition-oncofair-medicationrequest-prescription.html" : "OncoFAIR MedicationRequest Prescription",
+      "StructureDefinition-oncofair-careplan.html" : "OncoFAIR CarePlan",
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
+      "StructureDefinition-oncofair-patient.html" : "OncoFAIR Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "systems" : ["http://hl7.org/fhir/identifier-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.57"],
+      "sources" : ["2.16.840.1.113883.4.642.3.57"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-encounter.html" : "OncoFAIR Encounter",
+      "StructureDefinition-oncofair-medicationrequest-prescription.html" : "OncoFAIR MedicationRequest Prescription",
+      "StructureDefinition-oncofair-careplan.html" : "OncoFAIR CarePlan",
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
+      "StructureDefinition-oncofair-patient.html" : "OncoFAIR Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (see http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.891",
+        "2.16.840.1.113883.4.642.3.20"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.891",
+        "2.16.840.1.113883.4.642.3.20"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-encounter.html" : "OncoFAIR Encounter",
+      "StructureDefinition-oncofair-medicationrequest-prescription.html" : "OncoFAIR MedicationRequest Prescription",
+      "StructureDefinition-oncofair-careplan.html" : "OncoFAIR CarePlan",
+      "StructureDefinition-oncofair-medicationadministration-component.html" : "OncoFAIR MedicationAdministration Component",
+      "StructureDefinition-oncofair-medicationadministration-report.html" : "OncoFAIR MedicationAdministration Report",
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
+      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component",
+      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element",
+      "StructureDefinition-oncofair-patient.html" : "OncoFAIR Patient",
+      "StructureDefinition-oncofair-medication.html" : "OncoFAIR Medication",
+      "StructureDefinition-oncofair-observation.html" : "OncoFAIR Observation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/link-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "Link Type",
+      "description" : "The type of link between this Patient resource and another Patient/RelatedPerson resource.",
+      "systems" : ["http://hl7.org/fhir/link-type"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.2.234",
+        "2.16.840.1.113883.4.642.3.423",
+        "2.16.840.1.113883.4.642.3.412"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.2.234",
+        "2.16.840.1.113883.4.642.3.423",
+        "2.16.840.1.113883.4.642.3.412"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-patient.html" : "OncoFAIR Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/location-form",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "LocationForm",
+      "title" : "Location Form",
+      "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/location-physical-type"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.328"],
+      "sources" : ["2.16.840.1.113883.4.642.3.328"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-encounter.html" : "OncoFAIR Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/marital-status",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "MaritalStatusCodes",
+      "title" : "Marital Status Codes",
+      "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.29"],
+      "sources" : ["2.16.840.1.113883.4.642.3.29"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-patient.html" : "OncoFAIR Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/med-admin-perform-function",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationAdministrationPerformerFunctionCodes",
+      "title" : "MedicationAdministration Performer Function Codes",
+      "description" : "MedicationAdministration Performer Function Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/med-admin-perform-function"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.349"],
+      "sources" : ["2.16.840.1.113883.4.642.3.349"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medicationadministration-component.html" : "OncoFAIR MedicationAdministration Component",
+      "StructureDefinition-oncofair-medicationadministration-report.html" : "OncoFAIR MedicationAdministration Report",
+      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-admin-location",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationAdministrationLocationCodes",
+      "title" : "MedicationAdministration Location Codes",
+      "description" : "MedicationAdministration Location Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medication-admin-location"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.3127"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3127"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medicationadministration-component.html" : "OncoFAIR MedicationAdministration Component",
+      "StructureDefinition-oncofair-medicationadministration-report.html" : "OncoFAIR MedicationAdministration Report",
+      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-admin-status",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationAdministrationStatusCodes",
+      "title" : "MedicationAdministration Status Codes",
+      "description" : "MedicationAdministration Status Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medication-admin-status"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.2.186",
+        "2.16.840.1.113883.4.642.3.340",
+        "2.16.840.1.113883.4.642.3.330"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.2.186",
+        "2.16.840.1.113883.4.642.3.340",
+        "2.16.840.1.113883.4.642.3.330"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medicationadministration-component.html" : "OncoFAIR MedicationAdministration Component",
+      "StructureDefinition-oncofair-medicationadministration-report.html" : "OncoFAIR MedicationAdministration Report",
+      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-as-needed-reason",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationAsNeededReasonCodes",
+      "title" : "SNOMED CT Medication As Needed Reason Codes",
+      "description" : "This value set includes all clinical findings from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.89", "2.16.840.1.113883.4.642.3.96"],
+      "sources" : ["2.16.840.1.113883.4.642.3.89", "2.16.840.1.113883.4.642.3.96"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
+      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationCodes",
+      "title" : "SNOMED CT Medication Codes",
+      "description" : "This value set includes all drug or medicament substance codes and all pharmaceutical/biologic products from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.375",
+        "2.16.840.1.113883.4.642.2.199",
+        "2.16.840.1.113883.4.642.3.360"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.375",
+        "2.16.840.1.113883.4.642.2.199",
+        "2.16.840.1.113883.4.642.3.360"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medication.html" : "OncoFAIR Medication"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-dose-aid",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationDoseAids",
+      "title" : "Medication Dose Aids",
+      "description" : "Medication Dose Aids",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medication-dose-aid"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3241"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3241"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medicationrequest-prescription.html" : "OncoFAIR MedicationRequest Prescription",
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
+      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-form-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTFormCodes",
+      "title" : "SNOMED CT Form Codes",
+      "description" : "This value set includes all dose form codes from SNOMED CT - provided as an exemplar.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.359",
+        "2.16.840.1.113883.4.642.2.198",
+        "2.16.840.1.113883.4.642.3.374"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.359",
+        "2.16.840.1.113883.4.642.2.198",
+        "2.16.840.1.113883.4.642.3.374"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medication.html" : "OncoFAIR Medication"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-ingredientstrength",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationIngredientStrengthCodes",
+      "title" : "Medication Ingredient Strength Codes",
+      "description" : "Medication Ingredient Strength Codes",
+      "systems" : [
+        "http://hl7.org/fhir/CodeSystem/medication-ingredientstrength"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1953"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1953"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medication.html" : "OncoFAIR Medication"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-intended-performer-role",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationIntendedPerformerRole",
+      "title" : "Medication Intended Performer Role",
+      "description" : "Medication Intended Performer Role",
+      "systems" : [
+        "http://hl7.org/fhir/CodeSystem/medication-intended-performer-role"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1979"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1979"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medicationrequest-prescription.html" : "OncoFAIR MedicationRequest Prescription",
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
+      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-status",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationStatusCodes",
+      "title" : "Medication Status Codes",
+      "description" : "Medication Status Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medication-status"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.376",
+        "2.16.840.1.113883.4.642.3.363"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.376",
+        "2.16.840.1.113883.4.642.3.363"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medication.html" : "OncoFAIR Medication"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-admin-location",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationRequestAdministrationLocationCodes",
+      "title" : "medicationRequest Administration Location Codes",
+      "description" : "MedicationRequest Administration Location Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-admin-location"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.3242"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3242"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medicationrequest-prescription.html" : "OncoFAIR MedicationRequest Prescription",
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
+      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-course-of-therapy",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationRequestCourseOfTherapyCodes",
+      "title" : "medicationRequest Course of Therapy Codes",
+      "description" : "MedicationRequest Course of Therapy Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1326"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1326"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medicationrequest-prescription.html" : "OncoFAIR MedicationRequest Prescription",
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
+      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-intent",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationRequestIntent",
+      "title" : "medicationRequest Intent",
+      "description" : "MedicationRequest Intent Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medicationrequest-intent"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1321"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1321"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medicationrequest-prescription.html" : "OncoFAIR MedicationRequest Prescription",
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
+      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationrequestStatus",
+      "title" : "medicationrequest Status",
+      "description" : "MedicationRequest Status Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medicationrequest-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1320"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1320"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medicationrequest-prescription.html" : "OncoFAIR MedicationRequest Prescription",
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
+      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status-reason",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationRequestStatusReasonCodes",
+      "title" : "medicationRequest Status Reason Codes",
+      "description" : "MedicationRequest Status Reason Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1324"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1324"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medicationrequest-prescription.html" : "OncoFAIR MedicationRequest Prescription",
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
+      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-category",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ObservationCategoryCodes",
+      "title" : "Observation Category Codes",
+      "description" : "Observation Category codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/observation-category"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.403",
+        "2.16.840.1.113883.4.642.2.222",
+        "2.16.840.1.113883.4.642.3.392"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.403",
+        "2.16.840.1.113883.4.642.2.222",
+        "2.16.840.1.113883.4.642.3.392"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-observation.html" : "OncoFAIR Observation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "LOINCCodes",
+      "title" : "LOINC Codes",
+      "description" : "This value set includes all LOINC codes",
+      "systems" : ["http://loinc.org"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.2.216",
+        "2.16.840.1.113883.4.642.3.396",
+        "2.16.840.1.113883.4.642.3.383"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.2.216",
+        "2.16.840.1.113883.4.642.3.396",
+        "2.16.840.1.113883.4.642.3.383"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-observation.html" : "OncoFAIR Observation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ObservationInterpretationCodes",
+      "title" : "Observation Interpretation Codes",
+      "description" : "A categorical assessment, providing a rough qualitative interpretation of the observation value,    such as “normal”/ “abnormal”,”low” / “high”, “better” / “worse”, “susceptible” / “resistant”, “expected”/ “not expected”.    The value set is intended to be for ANY use where coded representation of an interpretation is needed.   \r\n   \r\n   Notes:\r\n   \r\n   This is being communicated in v2.x in OBX-8 (Observation Interpretation), in v3 in ObservationInterpretation (CWE) in R1 (Representative Realm) and in FHIR in    Observation.interpretation. Historically these values come from the laboratory domain, and these codes are extensively    used. The value set binding is extensible, so codes outside the value set that are needed for interpretation concepts    (i.e. particular meanings) that are not included in the value set can be used, and these new codes may also be added to    the value set and published in a future version.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+      ],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.399",
+        "2.16.840.1.113883.4.642.3.386",
+        "2.16.840.1.113883.4.642.2.218"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.399",
+        "2.16.840.1.113883.4.642.3.386",
+        "2.16.840.1.113883.4.642.2.218"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-observation.html" : "OncoFAIR Observation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ObservationMethods",
+      "title" : "Observation Methods",
+      "description" : "Observation Method codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 272394005 (Technique (qualifier value)) or is-a 129264002 (Action (qualifier value)) or is-a 386053000 (Evaluation procedure(procedure))",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.2.215",
+        "2.16.840.1.113883.4.642.3.395",
+        "2.16.840.1.113883.4.642.3.382"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.2.215",
+        "2.16.840.1.113883.4.642.3.395",
+        "2.16.840.1.113883.4.642.3.382"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-observation.html" : "OncoFAIR Observation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-referencerange-normalvalue",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeNormalValueCodes",
+      "title" : "Observation Reference Range Normal Value Codes",
+      "description" : "Codes that describe the normal value in the reference range, such as “Negative” or “Absent”",
+      "systems" : ["http://hl7.org/fhir/observation-referencerange-normalvalue"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3264"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3264"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-observation.html" : "OncoFAIR Observation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-status",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ObservationStatus",
+      "title" : "Observation Status",
+      "description" : "Codes providing the status of an observation.",
+      "systems" : ["http://hl7.org/fhir/observation-status"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.400",
+        "2.16.840.1.113883.4.642.3.387",
+        "2.16.840.1.113883.4.642.2.219"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.400",
+        "2.16.840.1.113883.4.642.3.387",
+        "2.16.840.1.113883.4.642.2.219"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-observation.html" : "OncoFAIR Observation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-triggeredbytype",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "TriggeredBytype",
+      "title" : "triggered Bytype",
+      "description" : "Codes providing the type of triggeredBy observation.",
+      "systems" : ["http://hl7.org/fhir/observation-triggeredbytype"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3265"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3265"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-observation.html" : "OncoFAIR Observation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "PatientContactRelationship",
+      "title" : "Patient Contact Relationship ",
+      "description" : "The nature of the relationship between the patient and the contact person.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0131"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1130"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1130"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-patient.html" : "OncoFAIR Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/reason-medication-given-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ReasonMedicationGivenCodes",
+      "title" : "Reason Medication Given Codes",
+      "description" : "This value set is provided as an example. The value set to instantiate this attribute should be drawn from a robust terminology code system that consists of or contains concepts to support the medication process.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/reason-medication-given"
+      ],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.344",
+        "2.16.840.1.113883.4.642.3.334",
+        "2.16.840.1.113883.4.642.2.188"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.344",
+        "2.16.840.1.113883.4.642.3.334",
+        "2.16.840.1.113883.4.642.2.188"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medicationadministration-component.html" : "OncoFAIR MedicationAdministration Component",
+      "StructureDefinition-oncofair-medicationadministration-report.html" : "OncoFAIR MedicationAdministration Report",
+      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/reason-medication-not-given-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTReasonMedicationNotGivenCodes",
+      "title" : "SNOMED CT Reason Medication Not Given Codes",
+      "description" : "This value set includes all medication refused, medication not administered, and non-administration of necessary drug or medicine codes from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.342",
+        "2.16.840.1.113883.4.642.3.332",
+        "2.16.840.1.113883.4.642.2.187"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.342",
+        "2.16.840.1.113883.4.642.3.332",
+        "2.16.840.1.113883.4.642.2.187"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medicationadministration-component.html" : "OncoFAIR MedicationAdministration Component",
+      "StructureDefinition-oncofair-medicationadministration-report.html" : "OncoFAIR MedicationAdministration Report",
+      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeAppliesToCodes",
+      "title" : "Observation Reference Range Applies To Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the particular target population the reference range applies to.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-Race",
+        "http://snomed.info/sct"
+      ],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.407",
+        "2.16.840.1.113883.4.642.3.396"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.407",
+        "2.16.840.1.113883.4.642.3.396"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-observation.html" : "OncoFAIR Observation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeMeaningCodes",
+      "title" : "Observation Reference Range Meaning Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/referencerange-meaning"
+      ],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.397",
+        "2.16.840.1.113883.4.642.2.217",
+        "2.16.840.1.113883.4.642.3.384"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.397",
+        "2.16.840.1.113883.4.642.2.217",
+        "2.16.840.1.113883.4.642.3.384"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-observation.html" : "OncoFAIR Observation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-priority",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "RequestPriority",
+      "title" : "RequestPriority",
+      "description" : "Identifies the level of importance to be assigned to actioning the request.",
+      "systems" : ["http://hl7.org/fhir/request-priority"],
+      "oids" : ["2.16.840.1.113883.4.642.3.115"],
+      "sources" : ["2.16.840.1.113883.4.642.3.115"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medicationrequest-prescription.html" : "OncoFAIR MedicationRequest Prescription",
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
+      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-status",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "RequestStatus",
+      "title" : "RequestStatus",
+      "description" : "Codes identifying the lifecycle stage of a request.",
+      "systems" : ["http://hl7.org/fhir/request-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.111"],
+      "sources" : ["2.16.840.1.113883.4.642.3.111"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-careplan.html" : "OncoFAIR CarePlan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/resource-types",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ResourceType",
+      "title" : "Resource Types",
+      "description" : "Concrete FHIR Resource Types",
+      "systems" : ["http://hl7.org/fhir/fhir-types"],
+      "oids" : ["2.16.840.1.113883.4.642.3.27"],
+      "sources" : ["2.16.840.1.113883.4.642.3.27"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medicationrequest-prescription.html" : "OncoFAIR MedicationRequest Prescription",
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
+      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/route-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTRouteCodes",
+      "title" : "SNOMED CT Route Codes",
+      "description" : "This value set includes all Route codes from SNOMED CT - provided as an exemplar.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.98"],
+      "sources" : ["2.16.840.1.113883.4.642.3.98"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medicationadministration-component.html" : "OncoFAIR MedicationAdministration Component",
+      "StructureDefinition-oncofair-medicationadministration-report.html" : "OncoFAIR MedicationAdministration Report",
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
+      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component",
+      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/service-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ServiceType",
+      "title" : "Service Type",
+      "description" : "This value set defines an example set of codes of service-types.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/service-type"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.512",
+        "2.16.840.1.113883.4.642.3.518"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.512",
+        "2.16.840.1.113883.4.642.3.518"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-encounter.html" : "OncoFAIR Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/timing-abbreviation",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "TimingAbbreviation",
+      "title" : "TimingAbbreviation",
+      "description" : "Code for a known / defined timing pattern.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation",
+        "http://terminology.hl7.org/CodeSystem/timing-abbreviation"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.78"],
+      "sources" : ["2.16.840.1.113883.4.642.3.78"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/units-of-time",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "UnitsOfTime",
+      "title" : "UnitsOfTime",
+      "description" : "A unit of time (units from UCUM).",
+      "systems" : ["http://unitsofmeasure.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.77"],
+      "sources" : ["2.16.840.1.113883.4.642.3.77"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/concept-medication-oncofair-valueset",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ConceptMedicationOncoFAIRValueSet",
+      "title" : "Concepts Medication Value Set",
+      "description" : "Value Set pour différiencier les niveaux de MR/MA",
+      "systems" : [
+        "http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medicationrequest-prescription.html" : "OncoFAIR MedicationRequest Prescription",
+      "StructureDefinition-oncofair-medicationadministration-component.html" : "OncoFAIR MedicationAdministration Component",
+      "StructureDefinition-oncofair-medicationadministration-report.html" : "OncoFAIR MedicationAdministration Report",
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
+      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component",
+      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/medical-units-oncofair-valueset",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MedicalUnitsOncoFAIRValueSet",
+      "title" : "Medical units Value Set",
+      "description" : "ValueSet for medical units (accommodation, medical liability unit).",
+      "systems" : [
+        "http://ltsi.univ-rennes.fr/CodeSystem/medical-units-oncofair-codesystem"
+      ]
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/medications-oncofair-valueset",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MedicationsOncoFAIRValueSet",
+      "title" : "Medications Value Set",
+      "description" : "ValueSet for medications.",
+      "systems" : [
+        "http://ltsi.univ-rennes.fr/CodeSystem/medications-oncofair-codesystem"
+      ]
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/siph-gonogo-oncofair-valueset",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SIPhgoNogoOncoFAIRValueSet",
+      "title" : "goNogo Value Set",
+      "description" : "Value Set pour goNogo",
+      "systems" : [
+        "http://ltsi.univ-rennes.fr/CodeSystem/siph-gonogo-oncofair-codesystem"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-mr-element-go-nogo.html" : "OncoFAIRMRElementGoNogo"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/siph-listeald-oncofair-valueset",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SIPhListeALDOncoFAIRValueSet",
+      "title" : "Liste Affectation Longue Durée Value Set",
+      "description" : "Value Set pour ListeALD",
+      "systems" : [
+        "http://ltsi.univ-rennes.fr/CodeSystem/siph-listeald-oncofair-codesystem"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-mr-exempt-ltc.html" : "OncoFAIRMRExemptLTC"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/siph-natureproppharm-oncofair-valueset",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SIPhNaturePropPharmOncoFAIRValueSet",
+      "title" : "Nature proposition pharmaceutique Value Set",
+      "description" : "Value Set pour NaturePropPharm",
+      "systems" : [
+        "http://ltsi.univ-rennes.fr/CodeSystem/siph-natureproppharm-oncofair-codesystem"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-pharmacist-advice.html" : "OncoFAIRPharmacistAdvice"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/siph-paramposoconditionnelle-oncofair-valueset",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SIPhParamPosoConditionnelleOncoFAIRValueSet",
+      "title" : "Paramètres posologie conditionnelle",
+      "description" : "Value Set pour ParamPosoConditionnelle",
+      "systems" : [
+        "http://ltsi.univ-rennes.fr/CodeSystem/siph-paramposoconditionnelle-oncofair-codesystem"
+      ]
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/siph-renscomplement-oncofair-valueset",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SIPhRensComplementOncoFAIRValueSet",
+      "title" : "Renseignement complémentaire Value Set",
+      "description" : "Value Set pour RensComplement",
+      "systems" : [
+        "http://ltsi.univ-rennes.fr/CodeSystem/siph-renscomplement-oncofair-codesystem"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-observation.html" : "OncoFAIR Observation"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/siph-statutcomposantadm-oncofair-valueset",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SIPhStatutComposantAdmOncoFAIRValueSet",
+      "title" : "Statut composant administré Value Set",
+      "description" : "Value Set pour StatutComposantAdm",
+      "systems" : [
+        "http://ltsi.univ-rennes.fr/CodeSystem/siph-statutcomposantadm-oncofair-codesystem"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-ma-component-administration-status.html" : "OncoFAIRMAComponentAdministrationStatus"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/siph-statutvalidpharm-oncofair-valueset",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SIPhStatutValidPharmOncoFAIRValueSet",
+      "title" : "Statut validation pharmaceutique Value Set",
+      "description" : "Value Set pour StatutValidPharm",
+      "systems" : [
+        "http://ltsi.univ-rennes.fr/CodeSystem/siph-statutvalidpharm-oncofair-codesystem"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-pharmacist-advice.html" : "OncoFAIRPharmacistAdvice"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/siph-type-liasion-oncofair-valueset",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SIPhTypeLiasionOncoFAIRValueSet",
+      "title" : "Type de liaison Value Set",
+      "description" : "Value Set pour Type Liaison",
+      "systems" : [
+        "http://ltsi.univ-rennes.fr/CodeSystem/siph-type-liaison-oncofair-codesystem"
+      ]
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/siph-typecomposant-oncofair-valueset",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SIPhTypeComposantOncoFAIRValueSet",
+      "title" : "Type de composant Value Set",
+      "description" : "Value Set pour TypeComposant",
+      "systems" : [
+        "http://ltsi.univ-rennes.fr/CodeSystem/siph-typecomposant-oncofair-codesystem"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medication-type.html" : "OncoFAIRMedicationType"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/siph-typeeltpla-oncofair-valueset",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SIPhTypeEltPLAOncoFAIRValueSet",
+      "title" : "Type de l'élément d'administration Value Set",
+      "description" : "Value Set pour TypeEltPLA",
+      "systems" : [
+        "http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
+      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/siph-typeevenement-oncofair-valueset",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SIPhTypeEvenementOncoFAIRValueSet",
+      "title" : "Type de l'évènement Value Set",
+      "description" : "Value Set pour TypeEvenement",
+      "systems" : [
+        "http://ltsi.univ-rennes.fr/CodeSystem/siph-typeevenement-oncofair-codesystem"
+      ]
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/dose-rate-type",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "DoseAndRateType",
+      "title" : "DoseAndRateType",
+      "description" : "The kind of dose or rate specified.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/dose-rate-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.981"],
+      "sources" : ["2.16.840.1.113883.4.642.3.981"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
+      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/encounter-class",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "EncounterClass",
+      "title" : "Encounter class",
+      "description" : "This value set defines a set of codes that can be used to indicate the class of encounter: a specific code indicating class of service provided.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-encounter.html" : "OncoFAIR Encounter"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0092",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSReAdmissionIndicator",
+      "title" : "hl7VS-re-admissionIndicator",
+      "description" : "Value Set of codes which are used to specify that a patient is being re-admitted to a healthcare facility from which they were discharged, and indicates the circumstances around such re-admission.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0092"],
+      "oids" : ["2.16.840.1.113883.21.40"],
+      "sources" : ["2.16.840.1.113883.21.40"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-encounter.html" : "OncoFAIR Encounter"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActPriority",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActPriority",
+      "title" : "ActPriority",
+      "description" : "A code or set of codes (e.g., for routine, emergency,) specifying the urgency under which the Act happened, can happen, is happening, is intended to happen, or is requested/demanded to happen.\r\n\r\n*Discussion:* This attribute is used in orders to indicate the ordered priority, and in event documentation it indicates the actual priority used to perform the act. In definition mood it indicates the available priorities.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActPriority"],
+      "oids" : ["2.16.840.1.113883.1.11.16866"],
+      "sources" : ["2.16.840.1.113883.1.11.16866"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-encounter.html" : "OncoFAIR Encounter"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActSubstanceAdminSubstitutionCode",
+      "title" : "ActSubstanceAdminSubstitutionCode",
+      "description" : "***No description***",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution"
+      ],
+      "oids" : ["2.16.840.1.113883.1.11.16621"],
+      "sources" : ["2.16.840.1.113883.1.11.16621"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medicationrequest-prescription.html" : "OncoFAIR MedicationRequest Prescription",
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
+      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-SubstanceAdminSubstitutionReason",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "SubstanceAdminSubstitutionReason",
+      "title" : "SubstanceAdminSubstitutionReason",
+      "description" : "***No description***",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActReason"],
+      "oids" : ["2.16.840.1.113883.1.11.19377"],
+      "sources" : ["2.16.840.1.113883.1.11.19377"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medicationrequest-prescription.html" : "OncoFAIR MedicationRequest Prescription",
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
+      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component"
+    }
+  ]
+}

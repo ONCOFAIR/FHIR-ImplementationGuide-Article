@@ -1,0 +1,82 @@
+{
+  "resourceType" : "MedicationAdministration",
+  "id" : "ExampleOncoFAIRMedicationAdministrationComponent",
+  "meta" : {
+    "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationadministration-component"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationAdministration </b><a name=\"ExampleOncoFAIRMedicationAdministrationComponent\"> </a><a name=\"hcExampleOncoFAIRMedicationAdministrationComponent\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceMedicationAdministration &quot;ExampleOncoFAIRMedicationAdministrationComponent&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-oncofair-medicationadministration-component.html\">OncoFAIR MedicationAdministration Component</a></p></div><blockquote><p><b>OncoFAIRMAElementTraceability</b></p><blockquote><p><b>url</b></p><code>batchNumber</code></blockquote><p><b>value</b>: BATCH12345</p><blockquote><p><b>url</b></p><code>serialNumber</code></blockquote><p><b>value</b>: SN67890</p></blockquote><p><b>OncoFAIRMAElementExpirationDate</b>: 2024-12-31 23:59:59+0000</p><p><b>OncoFAIRMAComponentOrigin</b>: XXXX <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>OncoFAIRMAComponentAdministrationStatus</b>: suivi <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-siph-statutcomposantadm-oncofair-codesystem.html\">Statut composant administré Code System</a>#SU)</span></p><p><b>partOf</b>: <a href=\"MedicationAdministration-ExampleOncoFAIRMedicationAdministrationElement.html\">MedicationAdministration/ExampleOncoFAIRMedicationAdministrationElement</a></p><p><b>status</b>: in-progress</p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td>component <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-concept-medication-oncofair-codesystem.html\">Concepts Medication Code System</a>#component)</span></td><td><a href=\"Medication-ExampleOncoFAIRMedication.html\">Medication/ExampleOncoFAIRMedication</a></td></tr></table><p><b>subject</b>: <a href=\"Patient-ExampleOncoFAIRPatient.html\">Patient/ExampleOncoFAIRPatient</a></p><p><b>occurence</b>: 2024-06-04 12:00:00+0000</p><p><b>note</b>: Patient experienced mild nausea., Paracetamol 500mg Tablet</p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose</b></td><td><b>Rate[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>250 mg</td><td>50 mg/h</td></tr></table></div>"
+  },
+  "extension" : [{
+    "extension" : [{
+      "url" : "batchNumber",
+      "valueString" : "BATCH12345"
+    },
+    {
+      "url" : "serialNumber",
+      "valueString" : "SN67890"
+    }],
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-traceability"
+  },
+  {
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-expirationdate",
+    "valueDateTime" : "2024-12-31T23:59:59Z"
+  },
+  {
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-component-origin",
+    "valueCodeableConcept" : {
+      "text" : "XXXX"
+    }
+  },
+  {
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-component-administration-status",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://ltsi.univ-rennes.fr/CodeSystem/siph-statutcomposantadm-oncofair-codesystem",
+        "code" : "SU",
+        "display" : "suivi"
+      }]
+    }
+  }],
+  "partOf" : [{
+    "reference" : "MedicationAdministration/ExampleOncoFAIRMedicationAdministrationElement"
+  }],
+  "status" : "in-progress",
+  "medication" : {
+    "concept" : {
+      "coding" : [{
+        "system" : "http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem",
+        "code" : "component",
+        "display" : "component"
+      }]
+    },
+    "reference" : {
+      "reference" : "Medication/ExampleOncoFAIRMedication"
+    }
+  },
+  "subject" : {
+    "reference" : "Patient/ExampleOncoFAIRPatient"
+  },
+  "occurenceDateTime" : "2024-06-04T12:00:00Z",
+  "note" : [{
+    "id" : "comments",
+    "text" : "Patient experienced mild nausea."
+  },
+  {
+    "id" : "wording",
+    "text" : "Paracetamol 500mg Tablet"
+  }],
+  "dosage" : {
+    "dose" : {
+      "value" : 250,
+      "unit" : "mg",
+      "system" : "http://unitsofmeasure.org"
+    },
+    "rateQuantity" : {
+      "value" : 50,
+      "unit" : "mg/h",
+      "system" : "http://unitsofmeasure.org"
+    }
+  }
+}

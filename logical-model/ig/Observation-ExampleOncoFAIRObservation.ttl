@@ -1,0 +1,42 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/Observation/ExampleOncoFAIRObservation> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleOncoFAIRObservation"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-observation"^^xsd:anyURI ;
+       fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation </b><a name=\"ExampleOncoFAIRObservation\"> </a><a name=\"hcExampleOncoFAIRObservation\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceObservation &quot;ExampleOncoFAIRObservation&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-oncofair-observation.html\">OncoFAIR Observation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Poids <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-siph-renscomplement-oncofair-codesystem.html\">Renseignement complémentaire Code System</a>#POIDS)</span></p><p><b>subject</b>: <a href=\"Patient-ExampleOncoFAIRPatient.html\">Patient/ExampleOncoFAIRPatient</a></p><p><b>effective</b>: 2024-06-06 10:00:00+0000</p><p><b>issued</b>: Jun 6, 2024, 10:15:00 AM</p><p><b>value</b>: 70 kg</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/siph-renscomplement-oncofair-codesystem"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "POIDS" ] ;
+       fhir:display [ fhir:v "Poids" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://ltsi.univ-rennes.fr/Patient/ExampleOncoFAIRPatient> ;
+     fhir:reference [ fhir:v "Patient/ExampleOncoFAIRPatient" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2024-06-06T10:00:00Z"^^xsd:dateTime] ; # 
+  fhir:issued [ fhir:v "2024-06-06T10:15:00Z"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "70"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "kg" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
