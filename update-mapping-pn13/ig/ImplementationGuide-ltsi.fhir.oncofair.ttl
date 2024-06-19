@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIR"] ; # 
   fhir:title [ fhir:v "OncoFAIR"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-19T11:28:46+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-19T14:43:39+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -571,6 +571,30 @@
        ] ;
        fhir:name [ fhir:v "OncoFAIR Patient" ] ;
        fhir:description [ fhir:v "Contains the patient's identity details needed to ensure that the prescription is properly taken into account. \r\n\nContient les informations d’identité du patient nécessaires à la bonne prise en compte de la prescription médicamenteuse." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CapabilityStatement" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/CapabilityStatement/oncofair-consommateur> ;
+         fhir:reference [ fhir:v "CapabilityStatement/oncofair-consommateur" ]
+       ] ;
+       fhir:name [ fhir:v "OncoFAIR-Consommateur" ] ;
+       fhir:description [ fhir:v "Capability Statement pour ..." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-medication-type> ;
+         fhir:reference [ fhir:v "SearchParameter/oncofair-sp-medication-type" ]
+       ] ;
+       fhir:name [ fhir:v "oncofair-sp-medication-type" ] ;
+       fhir:description [ fhir:v "Search parameter to retrieve the type of medication" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

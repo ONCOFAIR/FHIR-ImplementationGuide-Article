@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+  <id value="oncofair-consommateur"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2 id="title">OncoFAIR-Consommateur</h2><ul><li>Implementation Guide Version: 0.1.0 </li><li>FHIR Version: 5.0.0 </li><li>Supported Formats: <code>application/fhir+json</code>, <code>application/fhir+ndjson</code></li><li>Supported Patch Formats: <code>application/fhir+json</code></li><li>Published on: 2024-06-19 15:15:00+0100 </li><li>Published by: DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL </li></ul><blockquote class="impl-note"><p><strong>Note to Implementers: FHIR Capabilities</strong></p><p>Any FHIR capability may be 'allowed' by the system unless explicitly marked as 'SHALL NOT'. A few items are marked as MAY in the Implementation Guide to highlight their potential relevance to the use case.</p></blockquote><h2 id="rest">FHIR RESTful Capabilities</h2><div class="panel panel-default"><div class="panel-heading"><h3 id="mode1" class="panel-title">Mode: <code>client</code></h3></div><div class="panel-body"><div><p>XXX</p>
+</div><div class="lead"><em>Security</em></div><div class="row"><div class="col-lg-6">Enable CORS: no</div><div class="col-lg-6">Security services supported: <code>OAuth</code></div></div><blockquote><div><p>XXXX</p>
+</div></blockquote><div class="lead"><em>Summary of System-wide Interactions</em></div></div></div><h3 id="resourcesCap1">Capabilities by Resource/Profile</h3><h4 id="resourcesSummary1">Summary</h4><p>The summary table lists the resources that are part of this configuration, and for each resource it lists:</p><ul><li>The relevant profiles (if any)</li><li>The interactions supported by each resource (<b><span class="bg-info">R</span></b>ead, <b><span class="bg-info">S</span></b>earch, <b><span class="bg-info">U</span></b>pdate, and <b><span class="bg-info">C</span></b>reate, are always shown, while <b><span class="bg-info">VR</span></b>ead, <b><span class="bg-info">P</span></b>atch, <b><span class="bg-info">D</span></b>elete, <b><span class="bg-info">H</span></b>istory on <b><span class="bg-info">I</span></b>nstance, or <b><span class="bg-info">H</span></b>istory on <b><span class="bg-info">T</span></b>ype are only present if at least one of the resources has support for them.</li><li><span>The required, recommended, and some optional search parameters (if any). </span></li><li>The linked resources enabled for <code>_include</code></li><li>The other resources enabled for <code>_revinclude</code></li><li>The operations on the resource (if any)</li></ul><div class="table-responsive"><table class="table table-condensed table-hover"><thead><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th class="text-center"><b title="GET a resource (read interaction)">R</b></th><th class="text-center"><b title="GET all set of resources of the type (search interaction)">S</b></th><th class="text-center"><b title="PUT a new resource version (update interaction)">U</b></th><th class="text-center"><b title="PATCH a new resource version (patch interaction)">P</b></th><th class="text-center"><b title="POST a new resource (create interaction)">C</b></th><th><b title="Required and recommended search parameters">Searches</b></th><th><code><b>_include</b></code></th><th><code><b>_revinclude</b></code></th><th><b>Operations</b></th></tr></thead><tbody><tr><td><a href="#Medication1-1">Medication</a></td><td><a href="StructureDefinition-oncofair-medication.html">http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication</a></td><td>y</td><td class="text-center">y</td><td class="text-center"></td><td class="text-center">y</td><td class="text-center"></td><td>_filter, _has, _id, code, medication-type</td><td/><td/><td/></tr></tbody></table></div><hr/><div class="panel panel-default"><div class="panel-heading"><h4 id="Medication1-1" class="panel-title"><span style="float: right;">Resource Conformance: supported </span>Medication</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-6"><span class="lead">Base System Profile</span><br/><a href="StructureDefinition-oncofair-medication.html">http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication</a></div><div class="col-lg-3"><span class="lead">Profile Conformance</span><br/><b>SHALL</b></div><div class="col-lg-3"><span class="lead">Reference Policy</span><br/></div></div><p/><div class="row"><div class="col-lg-6"><span class="lead">Interaction summary</span><br/><ul><li>Supports <code>search-type</code>, <code>read</code>, <code>patch</code>.</li></ul></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/resource.html#search">_filter</a></td><td><code>special</code></td><td><div><p>Paramètre de recherche de filtre qui prend en charge une grammaire de recherche plus sophistiquée. Voir la <a href="https://hl7.org/fhir/search_filter.html">documentation</a> pour plus de détails</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/resource.html#search">_has</a></td><td><code>special</code></td><td><div><p>Permet la sélection des ressources en fonction des propriétés des ressources qui y font référence (reverse chaining)</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/resource.html#search">_id</a></td><td><code>token</code></td><td><div><p>Identifiant logique de la ressource</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/medication.html#search">code</a></td><td><code>token</code></td><td><div><p>Identifies the prescribed component according to a nomenclature depending on the type</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-medication-type.html">medication-type</a></td><td><code>token</code></td><td><div><p>Specifies whether the component prescribed is a speciality, a common name or any other product (pharmacopoeia).</p>
+</div></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div></div>
+  </text>
+  <url value="http://ltsi.univ-rennes.fr/CapabilityStatement/oncofair-consommateur"/>
+  <version value="0.1.0"/>
+  <name value="OncoFAIRConsommateur"/>
+  <title value="OncoFAIR-Consommateur"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2024-06-19T15:15:00+01:00"/>
+  <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
+  <contact>
+    <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://ltsi.univ-rennes.fr"/>
+    </telecom>
+  </contact>
+  <description value="Capability Statement pour ..."/>
+  <kind value="requirements"/>
+  <fhirVersion value="5.0.0"/>
+  <format value="application/fhir+json"/>
+  <format value="application/fhir+ndjson"/>
+  <patchFormat value="application/fhir+json"/>
+  <rest>
+    <mode value="client"/>
+    <documentation value="XXX"/>
+    <security>
+      <cors value="false"/>
+      <service>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/restful-security-service"/>
+          <code value="OAuth"/>
+        </coding>
+      </service>
+      <description value="XXXX"/>
+    </security>
+    <resource>
+      <type value="Medication"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication"/>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="patch"/>
+        <documentation value="Seuls les attributs de 'premier niveau' peuvent être mis à jour avec l'interaction patch."/>
+      </interaction>
+      <searchParam>
+        <name value="_filter"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-filter"/>
+        <type value="special"/>
+        <documentation value="Paramètre de recherche de filtre qui prend en charge une grammaire de recherche plus sophistiquée. Voir la [documentation](https://hl7.org/fhir/search_filter.html) pour plus de détails"/>
+      </searchParam>
+      <searchParam>
+        <name value="_has"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-has"/>
+        <type value="special"/>
+        <documentation value="Permet la sélection des ressources en fonction des propriétés des ressources qui y font référence (reverse chaining)"/>
+      </searchParam>
+      <searchParam>
+        <name value="_id"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+        <type value="token"/>
+        <documentation value="Identifiant logique de la ressource"/>
+      </searchParam>
+      <searchParam>
+        <name value="code"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/clinical-code"/>
+        <type value="token"/>
+        <documentation value="Identifies the prescribed component according to a nomenclature depending on the type"/>
+      </searchParam>
+      <searchParam>
+        <name value="medication-type"/>
+        <definition value="http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-medication-type"/>
+        <type value="token"/>
+        <documentation value="Specifies whether the component prescribed is a speciality, a common name or any other product (pharmacopoeia)."/>
+      </searchParam>
+    </resource>
+  </rest>
+</CapabilityStatement>

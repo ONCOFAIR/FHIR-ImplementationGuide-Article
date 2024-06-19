@@ -11,7 +11,7 @@
   <name value="OncoFAIR"/>
   <title value="OncoFAIR"/>
   <status value="draft"/>
-  <date value="2024-06-19T11:28:46+00:00"/>
+  <date value="2024-06-19T14:43:39+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -482,6 +482,28 @@
       </reference>
       <name value="OncoFAIR Patient"/>
       <description value="Contains the patient's identity details needed to ensure that the prescription is properly taken into account. &#xD;&#xA;&#xA;Contient les informations d’identité du patient nécessaires à la bonne prise en compte de la prescription médicamenteuse."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/oncofair-consommateur"/>
+      </reference>
+      <name value="OncoFAIR-Consommateur"/>
+      <description value="Capability Statement pour ..."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/oncofair-sp-medication-type"/>
+      </reference>
+      <name value="oncofair-sp-medication-type"/>
+      <description value="Search parameter to retrieve the type of medication"/>
       <isExample value="false"/>
     </resource>
     <resource>
