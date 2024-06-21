@@ -30,7 +30,7 @@ Usage: #definition
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].interaction[+].code = #read
 * rest.resource[=].interaction[+].code = #patch
-* rest.resource[=].interaction[=].documentation = "Seuls les attributs de 'premier niveau' peuvent être mis à jour avec l'interaction patch."
+* rest.resource[=].interaction[=].documentation = "Only 'top-level' attributes can be updated using patch interaction."
 //* rest.resource[=].searchRevInclude = "XXX"
 
 
@@ -59,11 +59,37 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Specifies whether the component prescribed is a speciality, a common name or any other product (pharmacopoeia)."
 
-//MedicationRequest
+// Declaration for MedicationRequest
+* rest.resource[+].type = #MedicationRequest
+* rest.resource[=].profile = Canonical(oncofair-medicationrequest-prescription)
+* rest.resource[=].supportedProfile = Canonical(oncofair-medicationrequest-element)
+* rest.resource[=].interaction[+].code = #search-type
+* rest.resource[=].interaction[+].code = #read
+* rest.resource[=].interaction[+].code = #patch
+* rest.resource[=].interaction[=].documentation = "Only 'top-level' attributes can be updated using patch interaction."
 
-//* rest.resource[=].searchParam[+].name = "code"
-//* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Medication-code"
-//* rest.resource[=].searchParam[=].type = #token
-//* rest.resource[=].searchParam[=].documentation = "Identifies the prescribed component according to a nomenclature depending on the type"
+// MedicationRequestPrescription
+* rest.resource[=].searchParam[+].name = "mr-prescription-validation-date"
+* rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-mr-prescription-validation-date)
+* rest.resource[=].searchParam[=].type = #date
+* rest.resource[=].searchParam[=].documentation = "Date and time at which the prescriber considered the prescription validated"
+
+* rest.resource[=].searchParam[+].name = "identifier"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/clinical-identifier"
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].documentation = "Unique prescription identifier"
+
+
+// MedicationRequestElement
+* rest.resource[=].searchParam[+].name = "identifier"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/clinical-identifier"
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].documentation = "Unique identifier of the prescription item by the prescriber"
+
+* rest.resource[=].searchParam[+].name = "mr-type-elementprescription"
+* rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-mr-type-elementprescrption)
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].documentation = "Type of prescription element"
+
 
 
