@@ -1,11 +1,11 @@
 OncoFAIR : Validation Results
 =========================================
 
-err = 0, warn = 15, info = 17
+err = 1, warn = 15, info = 17
 IG Publisher Version: 1.6.11
-Generated Wed Jun 19 14:53:01 UTC 2024. FHIR version 5.0.0 for ltsi.fhir.oncofair#0.1.0 (canonical = http://ltsi.univ-rennes.fr)
+Generated Fri Jun 21 13:37:01 UTC 2024. FHIR version 5.0.0 for ltsi.fhir.oncofair#0.1.0 (canonical = http://ltsi.univ-rennes.fr)
  Build Errors : 0 / 2 / 0
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/CapabilityStatement-oncofair-consommateur : 0 / 0 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/CapabilityStatement-oncofair-consommateur : 1 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/CarePlan-ExampleOncoFAIRCarePlan : 0 / 0 / 4
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/CodeSystem-concept-medication-oncofair-codesystem : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/CodeSystem-medical-units-oncofair-codesystem : 0 / 0 / 1
@@ -38,6 +38,8 @@ Generated Wed Jun 19 14:53:01 UTC 2024. FHIR version 5.0.0 for ltsi.fhir.oncofai
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/Patient-ExampleOncoFAIRPatient : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/Practitioner-ExampleOncoFAIRPractitioner : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/SearchParameter-oncofair-sp-medication-type : 0 / 0 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/SearchParameter-oncofair-sp-mr-prescription-validation-date : 0 / 0 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/SearchParameter-oncofair-sp-mr-type-elementprescrption : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-careplan : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-cp-treatment : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-element-form : 0 / 0 / 1
@@ -86,6 +88,7 @@ Generated Wed Jun 19 14:53:01 UTC 2024. FHIR version 5.0.0 for ltsi.fhir.oncofai
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/CapabilityStatement-oncofair-consommateur.json ==
+ERROR: CapabilityStatement/oncofair-consommateur: CapabilityStatement.rest[0].resource[1]: Constraint failed: cpb-12: 'Search parameter names must be unique in the context of a resource.' (defined in http://hl7.org/fhir/StructureDefinition/CapabilityStatement)
 == fsh-generated/resources/CarePlan-ExampleOncoFAIRCarePlan.json ==
 INFORMATION: CarePlan/ExampleOncoFAIRCarePlan: CarePlan.extension[1].extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-statutvalidpharm-oncofair-codesystem|0.1.0
 INFORMATION: CarePlan/ExampleOncoFAIRCarePlan: CarePlan.extension[1].extension[1].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-natureproppharm-oncofair-codesystem|0.1.0
@@ -136,6 +139,8 @@ WARNING: Observation/ExampleOncoFAIRObservation: Observation: Best Practice Reco
 == fsh-generated/resources/Patient-ExampleOncoFAIRPatient.json ==
 == fsh-generated/resources/Practitioner-ExampleOncoFAIRPractitioner.json ==
 == fsh-generated/resources/SearchParameter-oncofair-sp-medication-type.json ==
+== fsh-generated/resources/SearchParameter-oncofair-sp-mr-prescription-validation-date.json ==
+== fsh-generated/resources/SearchParameter-oncofair-sp-mr-type-elementprescrption.json ==
 == fsh-generated/resources/StructureDefinition-oncofair-careplan.json ==
 == fsh-generated/resources/StructureDefinition-oncofair-cp-treatment.json ==
 == fsh-generated/resources/StructureDefinition-oncofair-element-form.json ==

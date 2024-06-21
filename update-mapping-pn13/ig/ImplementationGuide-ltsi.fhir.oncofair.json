@@ -10,7 +10,7 @@
   "name" : "OncoFAIR",
   "title" : "OncoFAIR",
   "status" : "draft",
-  "date" : "2024-06-19T14:52:00+00:00",
+  "date" : "2024-06-21T13:36:06+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -549,6 +549,30 @@
       },
       "name" : "oncofair-sp-medication-type",
       "description" : "Search parameter to retrieve the type of medication",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-mr-prescription-validation-date"
+      },
+      "name" : "oncofair-sp-mr-prescription-validation-date",
+      "description" : "Search parameter to retrieve the prescription validation date",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-mr-type-elementprescrption"
+      },
+      "name" : "oncofair-sp-mr-type-elementprescrption",
+      "description" : "Search parameter to retrieve the type of element prescription",
       "isExample" : false
     },
     {
