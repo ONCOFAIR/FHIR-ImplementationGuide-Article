@@ -14,4 +14,4 @@ Description:  "Protocole Prescrit provenant de la norme PN13, Prescribed compone
 * dateHeureReference  1..1 instant ""
 * Indication  0..1 string ""
 * Commentaires  0..1 string ""
-* idProtocolePère 0..1  Identifier ""
+* idProtocolePere 0..1  Identifier ""
