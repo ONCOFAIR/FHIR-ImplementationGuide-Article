@@ -1,0 +1,19 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"PatientPN13","PatientPN13","","","",0,*,"","","","null {[]} {[]}
+","Patient PN13","Patient provenant de la norme PN13, Patient as defined in the PN13","","","","","","","","","",,,,,"",,,,"Base",0,*,"","","n/a"
+"PatientPN13.IPP","PatientPN13.IPP","","","",1,1,"","","","Identifier {[]} {[]}
+","Identifiant Permanent du Patient/Permanent Patient Identifier","Identifiant Permanent du Patient/Permanent Patient Identifier","","","","","","","","","",,,,,"",,,,"PatientPN13.IPP",1,1,"",""
+"PatientPN13.nomUsuel","PatientPN13.nomUsuel","","","",0,1,"","","","HumanName {[]} {[]}
+","Nom usuel du patient/Patient's usual name","Nom usuel du patient/Patient's usual name","","","","","","","","","",,,,,"",,,,"PatientPN13.nomUsuel",0,1,"",""
+"PatientPN13.nomNaissance","PatientPN13.nomNaissance","","","",0,1,"","","","HumanName {[]} {[]}
+","Nom de naissance du patient/Patient's birth name","Nom de naissance du patient/Patient's birth name","","","","","","","","","",,,,,"",,,,"PatientPN13.nomNaissance",0,1,"",""
+"PatientPN13.prenom","PatientPN13.prenom","","","",0,1,"","","","HumanName {[]} {[]}
+","Liste des prénoms du patient/List of patient's first name ","Liste des prénoms du patient/List of patient's first name","","","","","","","","","",,,,,"",,,,"PatientPN13.prenom",0,1,"",""
+"PatientPN13.birthDate","PatientPN13.birthDate","","","",0,1,"","","","date {[]} {[]}
+","Date de naissance du patient/Birth date of the patient","Date de naissance du patient/Birth date of the patient","","","","","","","","","",,,,,"",,,,"PatientPN13.birthDate",0,1,"",""
+"PatientPN13.sexe","PatientPN13.sexe","","","",0,1,"","","","code {[]} {[]}
+","Sexe du patient/ Patient's gender","Sexe du patient/ Patient's gender","","","","","","","","","",,,,,"",,,,"PatientPN13.sexe",0,1,"",""
+"PatientPN13.oppositionReutilisationDonnees","PatientPN13.oppositionReutilisationDonnees","","","",0,1,"","","","boolean {[]} {[]}
+","DESCRIPTION A AJOUTER","DESCRIPTION A AJOUTER","","","","","","","","","",,,,,"",,,,"PatientPN13.oppositionReutilisationDonnees",0,1,"",""
+"PatientPN13.oppositionRecontact","PatientPN13.oppositionRecontact","","","",0,1,"","","","boolean {[]} {[]}
+","DESCRIPTION A AJOUTER","DESCRIPTION A AJOUTER","","","","","","","","","",,,,,"",,,,"PatientPN13.oppositionRecontact",0,1,"",""

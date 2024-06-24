@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="PrescriptionPN13"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-PrescriptionPN13-definitions.html#PrescriptionPN13" title="Prescription provenant de la norme PN13, Prescription as defined in the PN13">PrescriptionPN13</a><a name="PrescriptionPN13"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/types.html#Base">Base</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Prescription PN13<br/><span style="font-weight:bold">Instances of this logical model are not marked to be the target of a Reference</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PrescriptionPN13-definitions.html#PrescriptionPN13.modeCommunication" title="Indique si message reprend seulement les éléments de prescription ajoutés, modifiés ou arrêtés par rapport au dernier 
+envoi (mode de fonctionnement incrémental) ou s’il récapitule l’ensemble des éléments de prescription pour le patient 
+(mode récapitulatif) en incluant également les éléments inchangés/Indicates whether the message only includes prescription elements added, modified or stopped in relation to the last 
+sent (incremental mode) or whether it summarizes all prescription elements for the patient 
+(summary mode), including unchanged elements">modeCommunication</a><a name="PrescriptionPN13.modeCommunication"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Indique si message reprend seulement les éléments de prescription ajoutés, modifiés ou arrêtés par rapport au dernier 
+envoi (mode de fonctionnement incrémental) ou s’il récapitule l’ensemble des éléments de prescription pour le patient 
+(mode récapitulatif) en incluant également les éléments inchangés/Indicates whether the message only includes prescription elements added, modified or stopped in relation to the last 
+sent (incremental mode) or whether it summarizes all prescription elements for the patient 
+(summary mode), including unchanged elements</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PrescriptionPN13-definitions.html#PrescriptionPN13.dateHeurePrescription" title="Date et heure à laquelle le prescripteur a considéré la prescription comme validée. Lorsque la validation s’effectue en plusieurs étapes avant toute transmission, c’est la dernière date et heure qui figure 
+dans le message./Date and time at which the prescriber considered the prescription validated. When validation is carried out in several stages before transmission, the last date and time appears in the message. 
+in the message. ">dateHeurePrescription</a><a name="PrescriptionPN13.dateHeurePrescription"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#instant">instant</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date et heure à laquelle le prescripteur a considéré la prescription comme validée. Lorsque la validation s’effectue en plusieurs étapes avant toute transmission, c’est la dernière date et heure qui figure 
+dans le message./Date and time at which the prescriber considered the prescription validated. When validation is carried out in several stages before transmission, the last date and time appears in the message. 
+in the message. </td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PrescriptionPN13-definitions.html#PrescriptionPN13.uniteHebergement" title="Il s’agit de l’unité qui héberge le patient/the unit that houses the patient">uniteHebergement</a><a name="PrescriptionPN13.uniteHebergement"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Il s’agit de l’unité qui héberge le patient/the unit that houses the patient</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PrescriptionPN13-definitions.html#PrescriptionPN13.uniteResponsabiliteMedicale" title="l’unité qui assume la responsabilité médicale de prise en charge du patient./ Unit that assumes medical responsibility for the patient's care. ">uniteResponsabiliteMedicale</a><a name="PrescriptionPN13.uniteResponsabiliteMedicale"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">l’unité qui assume la responsabilité médicale de prise en charge du patient./ Unit that assumes medical responsibility for the patient's care. </td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PrescriptionPN13-definitions.html#PrescriptionPN13.commentaire" title="Commentaire, par défaut, du médecin prescripteur sur la prescription./Prescribing physician's default comment on prescription.">commentaire</a><a name="PrescriptionPN13.commentaire"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Commentaire, par défaut, du médecin prescripteur sur la prescription./Prescribing physician's default comment on prescription.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-PrescriptionPN13-definitions.html#PrescriptionPN13.idPrescription" title="DESCRIPTION A AJOUTER">idPrescription</a><a name="PrescriptionPN13.idPrescription"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">DESCRIPTION A AJOUTER</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-PrescriptionPN13-definitions.html#PrescriptionPN13.lienSejour" title="DESCRIPTION A AJOUTER">lienSejour</a><a name="PrescriptionPN13.lienSejour"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/references.html">Reference</a>()</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">DESCRIPTION A AJOUTER</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-PrescriptionPN13-definitions.html#PrescriptionPN13.lienRenseignementComplementaire" title="DESCRIPTION A AJOUTER">lienRenseignementComplementaire</a><a name="PrescriptionPN13.lienRenseignementComplementaire"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/references.html">CodeableReference</a>()</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">DESCRIPTION A AJOUTER<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-PrescriptionPN13-definitions.html#PrescriptionPN13.lienProtocolePrescrit" title="DESCRIPTION A AJOUTER">lienProtocolePrescrit</a><a name="PrescriptionPN13.lienProtocolePrescrit"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/references.html">Reference</a>()</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">DESCRIPTION A AJOUTER<br/></td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <url value="http://ltsi.univ-rennes.fr/StructureDefinition/PrescriptionPN13"/>
+  <version value="0.1.0"/>
+  <name value="PrescriptionPN13"/>
+  <title value="Prescription PN13"/>
+  <status value="draft"/>
+  <date value="2024-06-24T15:04:31+00:00"/>
+  <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
+  <contact>
+    <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://ltsi.univ-rennes.fr"/>
+    </telecom>
+  </contact>
+  <description value="Prescription provenant de la norme PN13, Prescription as defined in the PN13"/>
+  <fhirVersion value="5.0.0"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="http://ltsi.univ-rennes.fr/StructureDefinition/PrescriptionPN13"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <element id="PrescriptionPN13">
+      <path value="PrescriptionPN13"/>
+      <short value="Prescription PN13"/>
+      <definition value="Prescription provenant de la norme PN13, Prescription as defined in the PN13"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="PrescriptionPN13.modeCommunication">
+      <path value="PrescriptionPN13.modeCommunication"/>
+      <short value="Indique si message reprend seulement les éléments de prescription ajoutés, modifiés ou arrêtés par rapport au dernier &#xA;envoi (mode de fonctionnement incrémental) ou s’il récapitule l’ensemble des éléments de prescription pour le patient &#xA;(mode récapitulatif) en incluant également les éléments inchangés/Indicates whether the message only includes prescription elements added, modified or stopped in relation to the last &#xA;sent (incremental mode) or whether it summarizes all prescription elements for the patient &#xA;(summary mode), including unchanged elements"/>
+      <definition value="Indique si message reprend seulement les éléments de prescription ajoutés, modifiés ou arrêtés par rapport au dernier &#xA;envoi (mode de fonctionnement incrémental) ou s’il récapitule l’ensemble des éléments de prescription pour le patient &#xA;(mode récapitulatif) en incluant également les éléments inchangés/Indicates whether the message only includes prescription elements added, modified or stopped in relation to the last &#xA;sent (incremental mode) or whether it summarizes all prescription elements for the patient &#xA;(summary mode), including unchanged elements"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="PrescriptionPN13.modeCommunication"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="PrescriptionPN13.dateHeurePrescription">
+      <path value="PrescriptionPN13.dateHeurePrescription"/>
+      <short value="Date et heure à laquelle le prescripteur a considéré la prescription comme validée. Lorsque la validation s’effectue en plusieurs étapes avant toute transmission, c’est la dernière date et heure qui figure &#xA;dans le message./Date and time at which the prescriber considered the prescription validated. When validation is carried out in several stages before transmission, the last date and time appears in the message. &#xA;in the message. "/>
+      <definition value="Date et heure à laquelle le prescripteur a considéré la prescription comme validée. Lorsque la validation s’effectue en plusieurs étapes avant toute transmission, c’est la dernière date et heure qui figure &#xA;dans le message./Date and time at which the prescriber considered the prescription validated. When validation is carried out in several stages before transmission, the last date and time appears in the message. &#xA;in the message."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="PrescriptionPN13.dateHeurePrescription"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="instant"/>
+      </type>
+    </element>
+    <element id="PrescriptionPN13.uniteHebergement">
+      <path value="PrescriptionPN13.uniteHebergement"/>
+      <short value="Il s’agit de l’unité qui héberge le patient/the unit that houses the patient"/>
+      <definition value="Il s’agit de l’unité qui héberge le patient/the unit that houses the patient"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PrescriptionPN13.uniteHebergement"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="PrescriptionPN13.uniteResponsabiliteMedicale">
+      <path value="PrescriptionPN13.uniteResponsabiliteMedicale"/>
+      <short value="l’unité qui assume la responsabilité médicale de prise en charge du patient./ Unit that assumes medical responsibility for the patient's care. "/>
+      <definition value="l’unité qui assume la responsabilité médicale de prise en charge du patient./ Unit that assumes medical responsibility for the patient's care."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PrescriptionPN13.uniteResponsabiliteMedicale"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="PrescriptionPN13.commentaire">
+      <path value="PrescriptionPN13.commentaire"/>
+      <short value="Commentaire, par défaut, du médecin prescripteur sur la prescription./Prescribing physician's default comment on prescription."/>
+      <definition value="Commentaire, par défaut, du médecin prescripteur sur la prescription./Prescribing physician's default comment on prescription."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PrescriptionPN13.commentaire"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PrescriptionPN13.idPrescription">
+      <path value="PrescriptionPN13.idPrescription"/>
+      <short value="DESCRIPTION A AJOUTER"/>
+      <definition value="DESCRIPTION A AJOUTER"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="PrescriptionPN13.idPrescription"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="PrescriptionPN13.lienSejour">
+      <path value="PrescriptionPN13.lienSejour"/>
+      <short value="DESCRIPTION A AJOUTER"/>
+      <definition value="DESCRIPTION A AJOUTER"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PrescriptionPN13.lienSejour"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+      </type>
+    </element>
+    <element id="PrescriptionPN13.lienRenseignementComplementaire">
+      <path value="PrescriptionPN13.lienRenseignementComplementaire"/>
+      <short value="DESCRIPTION A AJOUTER"/>
+      <definition value="DESCRIPTION A AJOUTER"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="PrescriptionPN13.lienRenseignementComplementaire"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableReference"/>
+      </type>
+    </element>
+    <element id="PrescriptionPN13.lienProtocolePrescrit">
+      <path value="PrescriptionPN13.lienProtocolePrescrit"/>
+      <short value="DESCRIPTION A AJOUTER"/>
+      <definition value="DESCRIPTION A AJOUTER"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="PrescriptionPN13.lienProtocolePrescrit"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="PrescriptionPN13">
+      <path value="PrescriptionPN13"/>
+      <short value="Prescription PN13"/>
+      <definition value="Prescription provenant de la norme PN13, Prescription as defined in the PN13"/>
+    </element>
+    <element id="PrescriptionPN13.modeCommunication">
+      <path value="PrescriptionPN13.modeCommunication"/>
+      <short value="Indique si message reprend seulement les éléments de prescription ajoutés, modifiés ou arrêtés par rapport au dernier &#xA;envoi (mode de fonctionnement incrémental) ou s’il récapitule l’ensemble des éléments de prescription pour le patient &#xA;(mode récapitulatif) en incluant également les éléments inchangés/Indicates whether the message only includes prescription elements added, modified or stopped in relation to the last &#xA;sent (incremental mode) or whether it summarizes all prescription elements for the patient &#xA;(summary mode), including unchanged elements"/>
+      <definition value="Indique si message reprend seulement les éléments de prescription ajoutés, modifiés ou arrêtés par rapport au dernier &#xA;envoi (mode de fonctionnement incrémental) ou s’il récapitule l’ensemble des éléments de prescription pour le patient &#xA;(mode récapitulatif) en incluant également les éléments inchangés/Indicates whether the message only includes prescription elements added, modified or stopped in relation to the last &#xA;sent (incremental mode) or whether it summarizes all prescription elements for the patient &#xA;(summary mode), including unchanged elements"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="PrescriptionPN13.dateHeurePrescription">
+      <path value="PrescriptionPN13.dateHeurePrescription"/>
+      <short value="Date et heure à laquelle le prescripteur a considéré la prescription comme validée. Lorsque la validation s’effectue en plusieurs étapes avant toute transmission, c’est la dernière date et heure qui figure &#xA;dans le message./Date and time at which the prescriber considered the prescription validated. When validation is carried out in several stages before transmission, the last date and time appears in the message. &#xA;in the message. "/>
+      <definition value="Date et heure à laquelle le prescripteur a considéré la prescription comme validée. Lorsque la validation s’effectue en plusieurs étapes avant toute transmission, c’est la dernière date et heure qui figure &#xA;dans le message./Date and time at which the prescriber considered the prescription validated. When validation is carried out in several stages before transmission, the last date and time appears in the message. &#xA;in the message. "/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="instant"/>
+      </type>
+    </element>
+    <element id="PrescriptionPN13.uniteHebergement">
+      <path value="PrescriptionPN13.uniteHebergement"/>
+      <short value="Il s’agit de l’unité qui héberge le patient/the unit that houses the patient"/>
+      <definition value="Il s’agit de l’unité qui héberge le patient/the unit that houses the patient"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="PrescriptionPN13.uniteResponsabiliteMedicale">
+      <path value="PrescriptionPN13.uniteResponsabiliteMedicale"/>
+      <short value="l’unité qui assume la responsabilité médicale de prise en charge du patient./ Unit that assumes medical responsibility for the patient's care. "/>
+      <definition value="l’unité qui assume la responsabilité médicale de prise en charge du patient./ Unit that assumes medical responsibility for the patient's care. "/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="PrescriptionPN13.commentaire">
+      <path value="PrescriptionPN13.commentaire"/>
+      <short value="Commentaire, par défaut, du médecin prescripteur sur la prescription./Prescribing physician's default comment on prescription."/>
+      <definition value="Commentaire, par défaut, du médecin prescripteur sur la prescription./Prescribing physician's default comment on prescription."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PrescriptionPN13.idPrescription">
+      <path value="PrescriptionPN13.idPrescription"/>
+      <short value="DESCRIPTION A AJOUTER"/>
+      <definition value="DESCRIPTION A AJOUTER"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="PrescriptionPN13.lienSejour">
+      <path value="PrescriptionPN13.lienSejour"/>
+      <short value="DESCRIPTION A AJOUTER"/>
+      <definition value="DESCRIPTION A AJOUTER"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+      </type>
+    </element>
+    <element id="PrescriptionPN13.lienRenseignementComplementaire">
+      <path value="PrescriptionPN13.lienRenseignementComplementaire"/>
+      <short value="DESCRIPTION A AJOUTER"/>
+      <definition value="DESCRIPTION A AJOUTER"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="CodeableReference"/>
+      </type>
+    </element>
+    <element id="PrescriptionPN13.lienProtocolePrescrit">
+      <path value="PrescriptionPN13.lienProtocolePrescrit"/>
+      <short value="DESCRIPTION A AJOUTER"/>
+      <definition value="DESCRIPTION A AJOUTER"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Reference"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

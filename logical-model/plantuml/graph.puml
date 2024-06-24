@@ -7,6 +7,150 @@ package IG #DDDDDD{
 
      package Profiles #DDDDDD{
 
+        class ComposantPrescriptPN13{
+
+             ComposantPrescriptPN13 => [None..None]
+             ComposantPrescriptPN13.typeComposant => [1..1]
+             ComposantPrescriptPN13.codeComposant => [1..1]
+             ComposantPrescriptPN13.libelleComposant => [1..1]
+             ComposantPrescriptPN13.quantiteComposantPrescrit => [1..1]
+             ComposantPrescriptPN13.nonSubstituable => [0..1]
+             ComposantPrescriptPN13.estReferentPoso => [0..1]
+             ComposantPrescriptPN13.ALDExonerante => [0..1]
+             ComposantPrescriptPN13.Indication => [0..1]
+             ComposantPrescriptPN13.Commentaire => [0..1]
+             ComposantPrescriptPN13.estVehicule => [0..1]
+             ComposantPrescriptPN13.lienElementPrescription => [1..1]
+        } 
+
+        class ElementPosologiePN13{
+
+             ElementPosologiePN13 => [None..None]
+             ElementPosologiePN13.frequence => [0..*]
+             ElementPosologiePN13.typeEvenementDebut => [0..1]
+             ElementPosologiePN13.evenementDebut => [0..1]
+             ElementPosologiePN13.intervalleTempsEvenementDebut => [0..1]
+             ElementPosologiePN13.typeEvenementFin => [0..1]
+             ElementPosologiePN13.evenementFin => [0..1]
+             ElementPosologiePN13.intervalleTempsEvenementFin => [0..1]
+             ElementPosologiePN13.typeEvenement2Debut => [0..1]
+             ElementPosologiePN13.evenement2Debut => [0..1]
+             ElementPosologiePN13.intervalle2TempsEvenenementDebut => [0..1]
+             ElementPosologiePN13.typeEvenement2Fin => [0..1]
+             ElementPosologiePN13.evenement2Fin => [0..1]
+             ElementPosologiePN13.intervalle2TempsEvenenementFin => [0..1]
+             ElementPosologiePN13.duree => [0..1]
+             ElementPosologiePN13.debit => [0..1]
+             ElementPosologiePN13.quantite => [0..1]
+        } 
+
+        class ElementPrescriptionMedicalePharmacienLivrePN13{
+
+             ElementPrescriptionMedicalePharmacienLivrePN13 => [None..None]
+             ElementPrescriptionMedicalePharmacienLivrePN13.idPrescription => [1..1]
+             ElementPrescriptionMedicalePharmacienLivrePN13.typeElementPrescription => [0..1]
+             ElementPrescriptionMedicalePharmacienLivrePN13.forme => [0..1]
+             ElementPrescriptionMedicalePharmacienLivrePN13.libelleElementPrescription => [0..1]
+             ElementPrescriptionMedicalePharmacienLivrePN13.creationArretModificationValidation => [0..1]
+             ElementPrescriptionMedicalePharmacienLivrePN13.urgent => [0..1]
+             ElementPrescriptionMedicalePharmacienLivrePN13.validationPharmaceutique => [0..1]
+             ElementPrescriptionMedicalePharmacienLivrePN13.propositionPharmaceutique => [0..1]
+             ElementPrescriptionMedicalePharmacienLivrePN13.fourniture => [0..1]
+             ElementPrescriptionMedicalePharmacienLivrePN13.idpPrescripteur => [0..1]
+             ElementPrescriptionMedicalePharmacienLivrePN13.voieAdministration => [0..1]
+             ElementPrescriptionMedicalePharmacienLivrePN13.lieuAdministration => [0..1]
+             ElementPrescriptionMedicalePharmacienLivrePN13.dispositifsAssocies => [0..*]
+             ElementPrescriptionMedicalePharmacienLivrePN13.posologie => [0..1]
+             ElementPrescriptionMedicalePharmacienLivrePN13.dateHeureDebutPrescrite => [0..1]
+             ElementPrescriptionMedicalePharmacienLivrePN13.dateHeureFinPrescrite => [0..1]
+             ElementPrescriptionMedicalePharmacienLivrePN13.dateHeureDebutPrescription => [0..1]
+             ElementPrescriptionMedicalePharmacienLivrePN13.dateHeureFinPrescription => [0..1]
+             ElementPrescriptionMedicalePharmacienLivrePN13.indication => [0..1]
+             ElementPrescriptionMedicalePharmacienLivrePN13.commentaire => [0..1]
+             ElementPrescriptionMedicalePharmacienLivrePN13.rangElementPrescription => [0..1]
+             ElementPrescriptionMedicalePharmacienLivrePN13.goNogo => [0..1]
+             ElementPrescriptionMedicalePharmacienLivrePN13.motifAttente => [0..1]
+             ElementPrescriptionMedicalePharmacienLivrePN13.deltaDateHeureReference => [0..1]
+             ElementPrescriptionMedicalePharmacienLivrePN13.idGroupe => [1..1]
+        } 
+
+        class PatientPN13{
+
+             PatientPN13 => [None..None]
+             PatientPN13.IPP => [1..1]
+             PatientPN13.nomUsuel => [0..1]
+             PatientPN13.nomNaissance => [0..1]
+             PatientPN13.prenom => [0..1]
+             PatientPN13.birthDate => [0..1]
+             PatientPN13.sexe => [0..1]
+             PatientPN13.oppositionReutilisationDonnees => [0..1]
+             PatientPN13.oppositionRecontact => [0..1]
+        } 
+
+        class PrescriptionPN13{
+
+             PrescriptionPN13 => [None..None]
+             PrescriptionPN13.modeCommunication => [1..1]
+             PrescriptionPN13.dateHeurePrescription => [1..1]
+             PrescriptionPN13.uniteHebergement => [0..1]
+             PrescriptionPN13.uniteResponsabiliteMedicale => [0..1]
+             PrescriptionPN13.commentaire => [0..1]
+             PrescriptionPN13.idPrescription => [1..1]
+             PrescriptionPN13.lienSejour => [0..1]
+             PrescriptionPN13.lienRenseignementComplementaire => [0..*]
+             PrescriptionPN13.lienProtocolePrescrit => [0..*]
+        } 
+
+        class ProtocolePrescritPN13{
+
+             ProtocolePrescritPN13 => [None..None]
+             ProtocolePrescritPN13.idProtocolePrescrit => [1..1]
+             ProtocolePrescritPN13.libelleProtocolePrescrit => [1..1]
+             ProtocolePrescritPN13.CreationArretModificationValidation => [0..1]
+             ProtocolePrescritPN13.validationPharmaceutique => [0..1]
+             ProtocolePrescritPN13.propostionPharmaceutique => [0..1]
+             ProtocolePrescritPN13.referenceProtocole => [0..1]
+             ProtocolePrescritPN13.numeroCure => [0..1]
+             ProtocolePrescritPN13.numeroJour => [0..1]
+             ProtocolePrescritPN13.dateHeureReference => [1..1]
+             ProtocolePrescritPN13.Indication => [0..1]
+             ProtocolePrescritPN13.Commentaires => [0..1]
+             ProtocolePrescritPN13.idProtocolePere => [0..1]
+        } 
+
+        class RenseignementComplementairePN13{
+
+             RenseignementComplementairePN13 => [None..None]
+             RenseignementComplementairePN13.codeRenseignementComplementaire => [1..1]
+             RenseignementComplementairePN13.dateHeureEnregistrementEnregistrementComplementaire => [1..1]
+             RenseignementComplementairePN13.dateHeureEnregistrementRenseignementComplementaire => [0..1]
+             RenseignementComplementairePN13.valeurRenseignementComplementaire => [1..1]
+        } 
+
+        class SejourPN13{
+
+             SejourPN13 => [None..None]
+             SejourPN13.lienPatient => [1..1]
+             SejourPN13.idSejour => [1..1]
+        } 
+
+        class compteRenduAdministrationPN13{
+
+             compteRenduAdministration => [None..None]
+             compteRenduAdministration.idProtocolePrescrit => [1..1]
+             compteRenduAdministration.libelleProtocolePrescrit => [1..1]
+             compteRenduAdministration.CreationArretModificationValidation => [0..1]
+             compteRenduAdministration.validationPharmaceutique => [0..1]
+             compteRenduAdministration.propostionPharmaceutique => [0..1]
+             compteRenduAdministration.referenceProtocole => [0..1]
+             compteRenduAdministration.numeroCure => [0..1]
+             compteRenduAdministration.numeroJour => [0..1]
+             compteRenduAdministration.dateHeureReference => [1..1]
+             compteRenduAdministration.Indication => [0..1]
+             compteRenduAdministration.Commentaires => [0..1]
+             compteRenduAdministration.idProtocolePere => [0..1]
+        } 
+
         class OncoFAIRCarePlan{
 
              CarePlan.extension => [1..None]
@@ -455,6 +599,42 @@ package IG #DDDDDD{
        }
 
 package "Ressources de base" #palegreen {
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> ComposantPrescriptPN13
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> ElementPosologiePN13
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> ElementPrescriptionMedicalePharmacienLivrePN13
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> PatientPN13
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> PrescriptionPN13
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> ProtocolePrescritPN13
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> RenseignementComplementairePN13
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> SejourPN13
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> compteRenduAdministrationPN13
 
  class "CarePlan" as  classc1c8e4b50c739ddc150dd233aa035d7a 
 

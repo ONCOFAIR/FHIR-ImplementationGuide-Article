@@ -1,4 +1,232 @@
 "Profile","Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"ComposantPrescriptPN13","ComposantPrescriptPN13","ComposantPrescriptPN13","","","",0,*,"","","","null {[]} {[]}
+","Composant Prescript PN13","Composant Prescript provenant de la norme PN13, Prescribed component as defined in the PN13","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"ComposantPrescriptPN13","ComposantPrescriptPN13.typeComposant","ComposantPrescriptPN13.typeComposant","","","",1,1,"","","","code {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ComposantPrescriptPN13.typeComposant",1,1,"",""
+"ComposantPrescriptPN13","ComposantPrescriptPN13.codeComposant","ComposantPrescriptPN13.codeComposant","","","",1,1,"","","","code {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ComposantPrescriptPN13.codeComposant",1,1,"",""
+"ComposantPrescriptPN13","ComposantPrescriptPN13.libelleComposant","ComposantPrescriptPN13.libelleComposant","","","",1,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ComposantPrescriptPN13.libelleComposant",1,1,"",""
+"ComposantPrescriptPN13","ComposantPrescriptPN13.quantiteComposantPrescrit","ComposantPrescriptPN13.quantiteComposantPrescrit","","","",1,1,"","","","Quantity {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ComposantPrescriptPN13.quantiteComposantPrescrit",1,1,"",""
+"ComposantPrescriptPN13","ComposantPrescriptPN13.nonSubstituable","ComposantPrescriptPN13.nonSubstituable","","","",0,1,"","","","boolean {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ComposantPrescriptPN13.nonSubstituable",0,1,"",""
+"ComposantPrescriptPN13","ComposantPrescriptPN13.estReferentPoso","ComposantPrescriptPN13.estReferentPoso","","","",0,1,"","","","boolean {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ComposantPrescriptPN13.estReferentPoso",0,1,"",""
+"ComposantPrescriptPN13","ComposantPrescriptPN13.ALDExonerante","ComposantPrescriptPN13.ALDExonerante","","","",0,1,"","","","code {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ComposantPrescriptPN13.ALDExonerante",0,1,"",""
+"ComposantPrescriptPN13","ComposantPrescriptPN13.Indication","ComposantPrescriptPN13.Indication","","","",0,1,"","","","code {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ComposantPrescriptPN13.Indication",0,1,"",""
+"ComposantPrescriptPN13","ComposantPrescriptPN13.Commentaire","ComposantPrescriptPN13.Commentaire","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ComposantPrescriptPN13.Commentaire",0,1,"",""
+"ComposantPrescriptPN13","ComposantPrescriptPN13.estVehicule","ComposantPrescriptPN13.estVehicule","","","",0,1,"","","","boolean {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ComposantPrescriptPN13.estVehicule",0,1,"",""
+"ComposantPrescriptPN13","ComposantPrescriptPN13.lienElementPrescription","ComposantPrescriptPN13.lienElementPrescription","","","",1,1,"","","","Reference {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ComposantPrescriptPN13.lienElementPrescription",1,1,"",""
+"ElementPosologiePN13","ElementPosologiePN13","ElementPosologiePN13","","","",0,*,"","","","null {[]} {[]}
+","Element Posologie PN13","Element Posologie provenant de la norme PN13, Prescribed component as defined in the PN13","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"ElementPosologiePN13","ElementPosologiePN13.frequence","ElementPosologiePN13.frequence","","","",0,*,"","","","Timing {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPosologiePN13.frequence",0,*,"",""
+"ElementPosologiePN13","ElementPosologiePN13.typeEvenementDebut","ElementPosologiePN13.typeEvenementDebut","","","",0,1,"","","","code {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPosologiePN13.typeEvenementDebut",0,1,"",""
+"ElementPosologiePN13","ElementPosologiePN13.evenementDebut","ElementPosologiePN13.evenementDebut","","","",0,1,"","","","code {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPosologiePN13.evenementDebut",0,1,"",""
+"ElementPosologiePN13","ElementPosologiePN13.intervalleTempsEvenementDebut","ElementPosologiePN13.intervalleTempsEvenementDebut","","","",0,1,"","","","Quantity {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPosologiePN13.intervalleTempsEvenementDebut",0,1,"",""
+"ElementPosologiePN13","ElementPosologiePN13.typeEvenementFin","ElementPosologiePN13.typeEvenementFin","","","",0,1,"","","","code {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPosologiePN13.typeEvenementFin",0,1,"",""
+"ElementPosologiePN13","ElementPosologiePN13.evenementFin","ElementPosologiePN13.evenementFin","","","",0,1,"","","","code {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPosologiePN13.evenementFin",0,1,"",""
+"ElementPosologiePN13","ElementPosologiePN13.intervalleTempsEvenementFin","ElementPosologiePN13.intervalleTempsEvenementFin","","","",0,1,"","","","Quantity {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPosologiePN13.intervalleTempsEvenementFin",0,1,"",""
+"ElementPosologiePN13","ElementPosologiePN13.typeEvenement2Debut","ElementPosologiePN13.typeEvenement2Debut","","","",0,1,"","","","code {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPosologiePN13.typeEvenement2Debut",0,1,"",""
+"ElementPosologiePN13","ElementPosologiePN13.evenement2Debut","ElementPosologiePN13.evenement2Debut","","","",0,1,"","","","code {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPosologiePN13.evenement2Debut",0,1,"",""
+"ElementPosologiePN13","ElementPosologiePN13.intervalle2TempsEvenenementDebut","ElementPosologiePN13.intervalle2TempsEvenenementDebut","","","",0,1,"","","","Quantity {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPosologiePN13.intervalle2TempsEvenenementDebut",0,1,"",""
+"ElementPosologiePN13","ElementPosologiePN13.typeEvenement2Fin","ElementPosologiePN13.typeEvenement2Fin","","","",0,1,"","","","code {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPosologiePN13.typeEvenement2Fin",0,1,"",""
+"ElementPosologiePN13","ElementPosologiePN13.evenement2Fin","ElementPosologiePN13.evenement2Fin","","","",0,1,"","","","code {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPosologiePN13.evenement2Fin",0,1,"",""
+"ElementPosologiePN13","ElementPosologiePN13.intervalle2TempsEvenenementFin","ElementPosologiePN13.intervalle2TempsEvenenementFin","","","",0,1,"","","","Quantity {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPosologiePN13.intervalle2TempsEvenenementFin",0,1,"",""
+"ElementPosologiePN13","ElementPosologiePN13.duree","ElementPosologiePN13.duree","","","",0,1,"","","","Quantity {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPosologiePN13.duree",0,1,"",""
+"ElementPosologiePN13","ElementPosologiePN13.debit","ElementPosologiePN13.debit","","","",0,1,"","","","Quantity {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPosologiePN13.debit",0,1,"",""
+"ElementPosologiePN13","ElementPosologiePN13.quantite","ElementPosologiePN13.quantite","","","",0,1,"","","","Quantity {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPosologiePN13.quantite",0,1,"",""
+"ElementPrescriptionMedicalePharmacienLivrePN13","ElementPrescriptionMedicalePharmacienLivrePN13","ElementPrescriptionMedicalePharmacienLivrePN13","","","",0,*,"","","","null {[]} {[]}
+","Element Prescription Medicale Pharmacien Livre PN13","Element Prescription Medicale Pharmacien Livre provenant de la norme PN13, A TRADUIRE as defined in the PN13","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"ElementPrescriptionMedicalePharmacienLivrePN13","ElementPrescriptionMedicalePharmacienLivrePN13.idPrescription","ElementPrescriptionMedicalePharmacienLivrePN13.idPrescription","","","",1,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPrescriptionMedicalePharmacienLivrePN13.idPrescription",1,1,"",""
+"ElementPrescriptionMedicalePharmacienLivrePN13","ElementPrescriptionMedicalePharmacienLivrePN13.typeElementPrescription","ElementPrescriptionMedicalePharmacienLivrePN13.typeElementPrescription","","","",0,1,"","","","code {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPrescriptionMedicalePharmacienLivrePN13.typeElementPrescription",0,1,"",""
+"ElementPrescriptionMedicalePharmacienLivrePN13","ElementPrescriptionMedicalePharmacienLivrePN13.forme","ElementPrescriptionMedicalePharmacienLivrePN13.forme","","","",0,1,"","","","code {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPrescriptionMedicalePharmacienLivrePN13.forme",0,1,"",""
+"ElementPrescriptionMedicalePharmacienLivrePN13","ElementPrescriptionMedicalePharmacienLivrePN13.libelleElementPrescription","ElementPrescriptionMedicalePharmacienLivrePN13.libelleElementPrescription","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPrescriptionMedicalePharmacienLivrePN13.libelleElementPrescription",0,1,"",""
+"ElementPrescriptionMedicalePharmacienLivrePN13","ElementPrescriptionMedicalePharmacienLivrePN13.creationArretModificationValidation","ElementPrescriptionMedicalePharmacienLivrePN13.creationArretModificationValidation","","","",0,1,"","","","code {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPrescriptionMedicalePharmacienLivrePN13.creationArretModificationValidation",0,1,"",""
+"ElementPrescriptionMedicalePharmacienLivrePN13","ElementPrescriptionMedicalePharmacienLivrePN13.urgent","ElementPrescriptionMedicalePharmacienLivrePN13.urgent","","","",0,1,"","","","boolean {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPrescriptionMedicalePharmacienLivrePN13.urgent",0,1,"",""
+"ElementPrescriptionMedicalePharmacienLivrePN13","ElementPrescriptionMedicalePharmacienLivrePN13.validationPharmaceutique","ElementPrescriptionMedicalePharmacienLivrePN13.validationPharmaceutique","","","",0,1,"","","","code {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPrescriptionMedicalePharmacienLivrePN13.validationPharmaceutique",0,1,"",""
+"ElementPrescriptionMedicalePharmacienLivrePN13","ElementPrescriptionMedicalePharmacienLivrePN13.propositionPharmaceutique","ElementPrescriptionMedicalePharmacienLivrePN13.propositionPharmaceutique","","","",0,1,"","","","code {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPrescriptionMedicalePharmacienLivrePN13.propositionPharmaceutique",0,1,"",""
+"ElementPrescriptionMedicalePharmacienLivrePN13","ElementPrescriptionMedicalePharmacienLivrePN13.fourniture","ElementPrescriptionMedicalePharmacienLivrePN13.fourniture","","","",0,1,"","","","boolean {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPrescriptionMedicalePharmacienLivrePN13.fourniture",0,1,"",""
+"ElementPrescriptionMedicalePharmacienLivrePN13","ElementPrescriptionMedicalePharmacienLivrePN13.idpPrescripteur","ElementPrescriptionMedicalePharmacienLivrePN13.idpPrescripteur","","","",0,1,"","","","Identifier {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPrescriptionMedicalePharmacienLivrePN13.idpPrescripteur",0,1,"",""
+"ElementPrescriptionMedicalePharmacienLivrePN13","ElementPrescriptionMedicalePharmacienLivrePN13.voieAdministration","ElementPrescriptionMedicalePharmacienLivrePN13.voieAdministration","","","",0,1,"","","","code {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPrescriptionMedicalePharmacienLivrePN13.voieAdministration",0,1,"",""
+"ElementPrescriptionMedicalePharmacienLivrePN13","ElementPrescriptionMedicalePharmacienLivrePN13.lieuAdministration","ElementPrescriptionMedicalePharmacienLivrePN13.lieuAdministration","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPrescriptionMedicalePharmacienLivrePN13.lieuAdministration",0,1,"",""
+"ElementPrescriptionMedicalePharmacienLivrePN13","ElementPrescriptionMedicalePharmacienLivrePN13.dispositifsAssocies","ElementPrescriptionMedicalePharmacienLivrePN13.dispositifsAssocies","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPrescriptionMedicalePharmacienLivrePN13.dispositifsAssocies",0,*,"",""
+"ElementPrescriptionMedicalePharmacienLivrePN13","ElementPrescriptionMedicalePharmacienLivrePN13.posologie","ElementPrescriptionMedicalePharmacienLivrePN13.posologie","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPrescriptionMedicalePharmacienLivrePN13.posologie",0,1,"",""
+"ElementPrescriptionMedicalePharmacienLivrePN13","ElementPrescriptionMedicalePharmacienLivrePN13.dateHeureDebutPrescrite","ElementPrescriptionMedicalePharmacienLivrePN13.dateHeureDebutPrescrite","","","",0,1,"","","","instant {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPrescriptionMedicalePharmacienLivrePN13.dateHeureDebutPrescrite",0,1,"",""
+"ElementPrescriptionMedicalePharmacienLivrePN13","ElementPrescriptionMedicalePharmacienLivrePN13.dateHeureFinPrescrite","ElementPrescriptionMedicalePharmacienLivrePN13.dateHeureFinPrescrite","","","",0,1,"","","","instant {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPrescriptionMedicalePharmacienLivrePN13.dateHeureFinPrescrite",0,1,"",""
+"ElementPrescriptionMedicalePharmacienLivrePN13","ElementPrescriptionMedicalePharmacienLivrePN13.dateHeureDebutPrescription","ElementPrescriptionMedicalePharmacienLivrePN13.dateHeureDebutPrescription","","","",0,1,"","","","instant {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPrescriptionMedicalePharmacienLivrePN13.dateHeureDebutPrescription",0,1,"",""
+"ElementPrescriptionMedicalePharmacienLivrePN13","ElementPrescriptionMedicalePharmacienLivrePN13.dateHeureFinPrescription","ElementPrescriptionMedicalePharmacienLivrePN13.dateHeureFinPrescription","","","",0,1,"","","","instant {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPrescriptionMedicalePharmacienLivrePN13.dateHeureFinPrescription",0,1,"",""
+"ElementPrescriptionMedicalePharmacienLivrePN13","ElementPrescriptionMedicalePharmacienLivrePN13.indication","ElementPrescriptionMedicalePharmacienLivrePN13.indication","","","",0,1,"","","","CodeableReference {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPrescriptionMedicalePharmacienLivrePN13.indication",0,1,"",""
+"ElementPrescriptionMedicalePharmacienLivrePN13","ElementPrescriptionMedicalePharmacienLivrePN13.commentaire","ElementPrescriptionMedicalePharmacienLivrePN13.commentaire","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPrescriptionMedicalePharmacienLivrePN13.commentaire",0,1,"",""
+"ElementPrescriptionMedicalePharmacienLivrePN13","ElementPrescriptionMedicalePharmacienLivrePN13.rangElementPrescription","ElementPrescriptionMedicalePharmacienLivrePN13.rangElementPrescription","","","",0,1,"","","","integer {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPrescriptionMedicalePharmacienLivrePN13.rangElementPrescription",0,1,"",""
+"ElementPrescriptionMedicalePharmacienLivrePN13","ElementPrescriptionMedicalePharmacienLivrePN13.goNogo","ElementPrescriptionMedicalePharmacienLivrePN13.goNogo","","","",0,1,"","","","code {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPrescriptionMedicalePharmacienLivrePN13.goNogo",0,1,"",""
+"ElementPrescriptionMedicalePharmacienLivrePN13","ElementPrescriptionMedicalePharmacienLivrePN13.motifAttente","ElementPrescriptionMedicalePharmacienLivrePN13.motifAttente","","","",0,1,"","","","code {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPrescriptionMedicalePharmacienLivrePN13.motifAttente",0,1,"",""
+"ElementPrescriptionMedicalePharmacienLivrePN13","ElementPrescriptionMedicalePharmacienLivrePN13.deltaDateHeureReference","ElementPrescriptionMedicalePharmacienLivrePN13.deltaDateHeureReference","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPrescriptionMedicalePharmacienLivrePN13.deltaDateHeureReference",0,1,"",""
+"ElementPrescriptionMedicalePharmacienLivrePN13","ElementPrescriptionMedicalePharmacienLivrePN13.idGroupe","ElementPrescriptionMedicalePharmacienLivrePN13.idGroupe","","","",1,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ElementPrescriptionMedicalePharmacienLivrePN13.idGroupe",1,1,"",""
+"PatientPN13","PatientPN13","PatientPN13","","","",0,*,"","","","null {[]} {[]}
+","Patient PN13","Patient provenant de la norme PN13, Patient as defined in the PN13","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"PatientPN13","PatientPN13.IPP","PatientPN13.IPP","","","",1,1,"","","","Identifier {[]} {[]}
+","Identifiant Permanent du Patient/Permanent Patient Identifier","Identifiant Permanent du Patient/Permanent Patient Identifier","","","","","","","","","",,,,,"",,,,"PatientPN13.IPP",1,1,"",""
+"PatientPN13","PatientPN13.nomUsuel","PatientPN13.nomUsuel","","","",0,1,"","","","HumanName {[]} {[]}
+","Nom usuel du patient/Patient's usual name","Nom usuel du patient/Patient's usual name","","","","","","","","","",,,,,"",,,,"PatientPN13.nomUsuel",0,1,"",""
+"PatientPN13","PatientPN13.nomNaissance","PatientPN13.nomNaissance","","","",0,1,"","","","HumanName {[]} {[]}
+","Nom de naissance du patient/Patient's birth name","Nom de naissance du patient/Patient's birth name","","","","","","","","","",,,,,"",,,,"PatientPN13.nomNaissance",0,1,"",""
+"PatientPN13","PatientPN13.prenom","PatientPN13.prenom","","","",0,1,"","","","HumanName {[]} {[]}
+","Liste des prénoms du patient/List of patient's first name ","Liste des prénoms du patient/List of patient's first name","","","","","","","","","",,,,,"",,,,"PatientPN13.prenom",0,1,"",""
+"PatientPN13","PatientPN13.birthDate","PatientPN13.birthDate","","","",0,1,"","","","date {[]} {[]}
+","Date de naissance du patient/Birth date of the patient","Date de naissance du patient/Birth date of the patient","","","","","","","","","",,,,,"",,,,"PatientPN13.birthDate",0,1,"",""
+"PatientPN13","PatientPN13.sexe","PatientPN13.sexe","","","",0,1,"","","","code {[]} {[]}
+","Sexe du patient/ Patient's gender","Sexe du patient/ Patient's gender","","","","","","","","","",,,,,"",,,,"PatientPN13.sexe",0,1,"",""
+"PatientPN13","PatientPN13.oppositionReutilisationDonnees","PatientPN13.oppositionReutilisationDonnees","","","",0,1,"","","","boolean {[]} {[]}
+","DESCRIPTION A AJOUTER","DESCRIPTION A AJOUTER","","","","","","","","","",,,,,"",,,,"PatientPN13.oppositionReutilisationDonnees",0,1,"",""
+"PatientPN13","PatientPN13.oppositionRecontact","PatientPN13.oppositionRecontact","","","",0,1,"","","","boolean {[]} {[]}
+","DESCRIPTION A AJOUTER","DESCRIPTION A AJOUTER","","","","","","","","","",,,,,"",,,,"PatientPN13.oppositionRecontact",0,1,"",""
+"PrescriptionPN13","PrescriptionPN13","PrescriptionPN13","","","",0,*,"","","","null {[]} {[]}
+","Prescription PN13","Prescription provenant de la norme PN13, Prescription as defined in the PN13","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"PrescriptionPN13","PrescriptionPN13.modeCommunication","PrescriptionPN13.modeCommunication","","","",1,1,"","","","code {[]} {[]}
+","Indique si message reprend seulement les éléments de prescription ajoutés, modifiés ou arrêtés par rapport au dernier 
+envoi (mode de fonctionnement incrémental) ou s’il récapitule l’ensemble des éléments de prescription pour le patient 
+(mode récapitulatif) en incluant également les éléments inchangés/Indicates whether the message only includes prescription elements added, modified or stopped in relation to the last 
+sent (incremental mode) or whether it summarizes all prescription elements for the patient 
+(summary mode), including unchanged elements","Indique si message reprend seulement les éléments de prescription ajoutés, modifiés ou arrêtés par rapport au dernier 
+envoi (mode de fonctionnement incrémental) ou s’il récapitule l’ensemble des éléments de prescription pour le patient 
+(mode récapitulatif) en incluant également les éléments inchangés/Indicates whether the message only includes prescription elements added, modified or stopped in relation to the last 
+sent (incremental mode) or whether it summarizes all prescription elements for the patient 
+(summary mode), including unchanged elements","","","","","","","","","",,,,,"",,,,"PrescriptionPN13.modeCommunication",1,1,"",""
+"PrescriptionPN13","PrescriptionPN13.dateHeurePrescription","PrescriptionPN13.dateHeurePrescription","","","",1,1,"","","","instant {[]} {[]}
+","Date et heure à laquelle le prescripteur a considéré la prescription comme validée. Lorsque la validation s’effectue en plusieurs étapes avant toute transmission, c’est la dernière date et heure qui figure 
+dans le message./Date and time at which the prescriber considered the prescription validated. When validation is carried out in several stages before transmission, the last date and time appears in the message. 
+in the message. ","Date et heure à laquelle le prescripteur a considéré la prescription comme validée. Lorsque la validation s’effectue en plusieurs étapes avant toute transmission, c’est la dernière date et heure qui figure 
+dans le message./Date and time at which the prescriber considered the prescription validated. When validation is carried out in several stages before transmission, the last date and time appears in the message. 
+in the message.","","","","","","","","","",,,,,"",,,,"PrescriptionPN13.dateHeurePrescription",1,1,"",""
+"PrescriptionPN13","PrescriptionPN13.uniteHebergement","PrescriptionPN13.uniteHebergement","","","",0,1,"","","","code {[]} {[]}
+","Il s’agit de l’unité qui héberge le patient/the unit that houses the patient","Il s’agit de l’unité qui héberge le patient/the unit that houses the patient","","","","","","","","","",,,,,"",,,,"PrescriptionPN13.uniteHebergement",0,1,"",""
+"PrescriptionPN13","PrescriptionPN13.uniteResponsabiliteMedicale","PrescriptionPN13.uniteResponsabiliteMedicale","","","",0,1,"","","","code {[]} {[]}
+","l’unité qui assume la responsabilité médicale de prise en charge du patient./ Unit that assumes medical responsibility for the patient's care. ","l’unité qui assume la responsabilité médicale de prise en charge du patient./ Unit that assumes medical responsibility for the patient's care.","","","","","","","","","",,,,,"",,,,"PrescriptionPN13.uniteResponsabiliteMedicale",0,1,"",""
+"PrescriptionPN13","PrescriptionPN13.commentaire","PrescriptionPN13.commentaire","","","",0,1,"","","","string {[]} {[]}
+","Commentaire, par défaut, du médecin prescripteur sur la prescription./Prescribing physician's default comment on prescription.","Commentaire, par défaut, du médecin prescripteur sur la prescription./Prescribing physician's default comment on prescription.","","","","","","","","","",,,,,"",,,,"PrescriptionPN13.commentaire",0,1,"",""
+"PrescriptionPN13","PrescriptionPN13.idPrescription","PrescriptionPN13.idPrescription","","","",1,1,"","","","Identifier {[]} {[]}
+","DESCRIPTION A AJOUTER","DESCRIPTION A AJOUTER","","","","","","","","","",,,,,"",,,,"PrescriptionPN13.idPrescription",1,1,"",""
+"PrescriptionPN13","PrescriptionPN13.lienSejour","PrescriptionPN13.lienSejour","","","",0,1,"","","","Reference {[]} {[]}
+","DESCRIPTION A AJOUTER","DESCRIPTION A AJOUTER","","","","","","","","","",,,,,"",,,,"PrescriptionPN13.lienSejour",0,1,"",""
+"PrescriptionPN13","PrescriptionPN13.lienRenseignementComplementaire","PrescriptionPN13.lienRenseignementComplementaire","","","",0,*,"","","","CodeableReference {[]} {[]}
+","DESCRIPTION A AJOUTER","DESCRIPTION A AJOUTER","","","","","","","","","",,,,,"",,,,"PrescriptionPN13.lienRenseignementComplementaire",0,*,"",""
+"PrescriptionPN13","PrescriptionPN13.lienProtocolePrescrit","PrescriptionPN13.lienProtocolePrescrit","","","",0,*,"","","","Reference {[]} {[]}
+","DESCRIPTION A AJOUTER","DESCRIPTION A AJOUTER","","","","","","","","","",,,,,"",,,,"PrescriptionPN13.lienProtocolePrescrit",0,*,"",""
+"ProtocolePrescritPN13","ProtocolePrescritPN13","ProtocolePrescritPN13","","","",0,*,"","","","null {[]} {[]}
+","Protocole Prescrit PN13","Protocole Prescrit provenant de la norme PN13, Prescribed component as defined in the PN13","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"ProtocolePrescritPN13","ProtocolePrescritPN13.idProtocolePrescrit","ProtocolePrescritPN13.idProtocolePrescrit","","","",1,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ProtocolePrescritPN13.idProtocolePrescrit",1,1,"",""
+"ProtocolePrescritPN13","ProtocolePrescritPN13.libelleProtocolePrescrit","ProtocolePrescritPN13.libelleProtocolePrescrit","","","",1,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ProtocolePrescritPN13.libelleProtocolePrescrit",1,1,"",""
+"ProtocolePrescritPN13","ProtocolePrescritPN13.CreationArretModificationValidation","ProtocolePrescritPN13.CreationArretModificationValidation","","","",0,1,"","","","code {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ProtocolePrescritPN13.CreationArretModificationValidation",0,1,"",""
+"ProtocolePrescritPN13","ProtocolePrescritPN13.validationPharmaceutique","ProtocolePrescritPN13.validationPharmaceutique","","","",0,1,"","","","code {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ProtocolePrescritPN13.validationPharmaceutique",0,1,"",""
+"ProtocolePrescritPN13","ProtocolePrescritPN13.propostionPharmaceutique","ProtocolePrescritPN13.propostionPharmaceutique","","","",0,1,"","","","code {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ProtocolePrescritPN13.propostionPharmaceutique",0,1,"",""
+"ProtocolePrescritPN13","ProtocolePrescritPN13.referenceProtocole","ProtocolePrescritPN13.referenceProtocole","","","",0,1,"","","","code {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ProtocolePrescritPN13.referenceProtocole",0,1,"",""
+"ProtocolePrescritPN13","ProtocolePrescritPN13.numeroCure","ProtocolePrescritPN13.numeroCure","","","",0,1,"","","","integer {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ProtocolePrescritPN13.numeroCure",0,1,"",""
+"ProtocolePrescritPN13","ProtocolePrescritPN13.numeroJour","ProtocolePrescritPN13.numeroJour","","","",0,1,"","","","integer {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ProtocolePrescritPN13.numeroJour",0,1,"",""
+"ProtocolePrescritPN13","ProtocolePrescritPN13.dateHeureReference","ProtocolePrescritPN13.dateHeureReference","","","",1,1,"","","","instant {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ProtocolePrescritPN13.dateHeureReference",1,1,"",""
+"ProtocolePrescritPN13","ProtocolePrescritPN13.Indication","ProtocolePrescritPN13.Indication","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ProtocolePrescritPN13.Indication",0,1,"",""
+"ProtocolePrescritPN13","ProtocolePrescritPN13.Commentaires","ProtocolePrescritPN13.Commentaires","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ProtocolePrescritPN13.Commentaires",0,1,"",""
+"ProtocolePrescritPN13","ProtocolePrescritPN13.idProtocolePere","ProtocolePrescritPN13.idProtocolePere","","","",0,1,"","","","Identifier {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"ProtocolePrescritPN13.idProtocolePere",0,1,"",""
+"RenseignementComplementairePN13","RenseignementComplementairePN13","RenseignementComplementairePN13","","","",0,*,"","","","null {[]} {[]}
+","RenseignementComplementaire PN13","Renseignement complementaire provenant de la norme PN13, Complementatry information as defined in the PN13","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"RenseignementComplementairePN13","RenseignementComplementairePN13.codeRenseignementComplementaire","RenseignementComplementairePN13.codeRenseignementComplementaire","","","",1,1,"","","","code {[]} {[]}
+","Nature du renseignement complémentaire./Nature of additional information.","Nature du renseignement complémentaire./Nature of additional information.","","","","","","","","","",,,,,"",,,,"RenseignementComplementairePN13.codeRenseignementComplementaire",1,1,"",""
+"RenseignementComplementairePN13","RenseignementComplementairePN13.dateHeureEnregistrementEnregistrementComplementaire","RenseignementComplementairePN13.dateHeureEnregistrementEnregistrementComplementaire","","","",1,1,"","","","instant {[]} {[]}
+"," date/heure d’enregistrement du renseignement/ date/time of information recording"," date/heure d’enregistrement du renseignement/ date/time of information recording","","","","","","","","","",,,,,"",,,,"RenseignementComplementairePN13.dateHeureEnregistrementEnregistrementComplementaire",1,1,"",""
+"RenseignementComplementairePN13","RenseignementComplementairePN13.dateHeureEnregistrementRenseignementComplementaire","RenseignementComplementairePN13.dateHeureEnregistrementRenseignementComplementaire","","","",0,1,"","","","instant {[]} {[]}
+"," date/heure associée au renseignement complémentaire (date/heure de la valeur ou de son observation). / date/time associated with additional information (date/time of value or observation). "," date/heure associée au renseignement complémentaire (date/heure de la valeur ou de son observation). / date/time associated with additional information (date/time of value or observation).","","","","","","","","","",,,,,"",,,,"RenseignementComplementairePN13.dateHeureEnregistrementRenseignementComplementaire",0,1,"",""
+"RenseignementComplementairePN13","RenseignementComplementairePN13.valeurRenseignementComplementaire","RenseignementComplementairePN13.valeurRenseignementComplementaire","","","",1,1,"","","","code {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RenseignementComplementairePN13.valeurRenseignementComplementaire",1,1,"",""
+"SejourPN13","SejourPN13","SejourPN13","","","",0,*,"","","","null {[]} {[]}
+","Sejour PN13","Sejour provenant de la norme PN13, Stay as defined in the PN13","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"SejourPN13","SejourPN13.lienPatient","SejourPN13.lienPatient","","","",1,1,"","","","Reference {[]} {[]}
+","DESCRIPTION A AJOUTER","DESCRIPTION A AJOUTER","","","","","","","","","",,,,,"",,,,"SejourPN13.lienPatient",1,1,"",""
+"SejourPN13","SejourPN13.idSejour","SejourPN13.idSejour","","","",1,1,"","","","Identifier {[]} {[]}
+","Identifiant du séjour du patient/Identifier of the patient's stay","Identifiant du séjour du patient/Identifier of the patient's stay","","","","","","","","","",,,,,"",,,,"SejourPN13.idSejour",1,1,"",""
+"compteRenduAdministration","compteRenduAdministration","compteRenduAdministration","","","",0,*,"","","","null {[]} {[]}
+","Compte Rendu Administration PN13","Protocole Prescrit provenant de la norme PN13, Prescribed component as defined in the PN13","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"compteRenduAdministration","compteRenduAdministration.idProtocolePrescrit","compteRenduAdministration.idProtocolePrescrit","","","",1,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"compteRenduAdministration.idProtocolePrescrit",1,1,"",""
+"compteRenduAdministration","compteRenduAdministration.libelleProtocolePrescrit","compteRenduAdministration.libelleProtocolePrescrit","","","",1,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"compteRenduAdministration.libelleProtocolePrescrit",1,1,"",""
+"compteRenduAdministration","compteRenduAdministration.CreationArretModificationValidation","compteRenduAdministration.CreationArretModificationValidation","","","",0,1,"","","","code {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"compteRenduAdministration.CreationArretModificationValidation",0,1,"",""
+"compteRenduAdministration","compteRenduAdministration.validationPharmaceutique","compteRenduAdministration.validationPharmaceutique","","","",0,1,"","","","code {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"compteRenduAdministration.validationPharmaceutique",0,1,"",""
+"compteRenduAdministration","compteRenduAdministration.propostionPharmaceutique","compteRenduAdministration.propostionPharmaceutique","","","",0,1,"","","","code {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"compteRenduAdministration.propostionPharmaceutique",0,1,"",""
+"compteRenduAdministration","compteRenduAdministration.referenceProtocole","compteRenduAdministration.referenceProtocole","","","",0,1,"","","","code {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"compteRenduAdministration.referenceProtocole",0,1,"",""
+"compteRenduAdministration","compteRenduAdministration.numeroCure","compteRenduAdministration.numeroCure","","","",0,1,"","","","integer {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"compteRenduAdministration.numeroCure",0,1,"",""
+"compteRenduAdministration","compteRenduAdministration.numeroJour","compteRenduAdministration.numeroJour","","","",0,1,"","","","integer {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"compteRenduAdministration.numeroJour",0,1,"",""
+"compteRenduAdministration","compteRenduAdministration.dateHeureReference","compteRenduAdministration.dateHeureReference","","","",1,1,"","","","instant {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"compteRenduAdministration.dateHeureReference",1,1,"",""
+"compteRenduAdministration","compteRenduAdministration.Indication","compteRenduAdministration.Indication","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"compteRenduAdministration.Indication",0,1,"",""
+"compteRenduAdministration","compteRenduAdministration.Commentaires","compteRenduAdministration.Commentaires","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"compteRenduAdministration.Commentaires",0,1,"",""
+"compteRenduAdministration","compteRenduAdministration.idProtocolePere","compteRenduAdministration.idProtocolePere","","","",0,1,"","","","Identifier {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"compteRenduAdministration.idProtocolePere",0,1,"",""
 "oncofair-careplan","CarePlan","CarePlan","","Care Team
 ","",0,*,"","","","null {[]} {[]}
 ","Healthcare plan for patient or group","Describes the intention of how one or more practitioners intend to deliver care for a particular patient, group or community for a period of time, possibly limited to care for a specific condition or set of conditions.","","","","","","","","","",,,,,"",,,,"CarePlan",0,*,"","dom-2:If the resource is contained in another resource, it SHALL NOT contain nested Resources {contained.contained.empty()}

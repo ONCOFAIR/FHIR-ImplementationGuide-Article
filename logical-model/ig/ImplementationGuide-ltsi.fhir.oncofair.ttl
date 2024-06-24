@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIR"] ; # 
   fhir:title [ fhir:v "OncoFAIR"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-19T12:21:16+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-24T15:04:31+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -63,6 +63,30 @@
      fhir:resource ( [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/ComposantPrescriptPN13> ;
+         fhir:reference [ fhir:v "StructureDefinition/ComposantPrescriptPN13" ]
+       ] ;
+       fhir:name [ fhir:v "Composant Prescript PN13" ] ;
+       fhir:description [ fhir:v "Composant Prescript provenant de la norme PN13, Prescribed component as defined in the PN13" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/compteRenduAdministration> ;
+         fhir:reference [ fhir:v "StructureDefinition/compteRenduAdministration" ]
+       ] ;
+       fhir:name [ fhir:v "Compte Rendu Administration PN13" ] ;
+       fhir:description [ fhir:v "Protocole Prescrit provenant de la norme PN13, Prescribed component as defined in the PN13" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
@@ -83,6 +107,30 @@
        ] ;
        fhir:name [ fhir:v "Concepts Medication Value Set" ] ;
        fhir:description [ fhir:v "Value Set pour différiencier les niveaux de MR/MA" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/ElementPosologiePN13> ;
+         fhir:reference [ fhir:v "StructureDefinition/ElementPosologiePN13" ]
+       ] ;
+       fhir:name [ fhir:v "Element Posologie PN13" ] ;
+       fhir:description [ fhir:v "Element Posologie provenant de la norme PN13, Prescribed component as defined in the PN13" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/ElementPrescriptionMedicalePharmacienLivrePN13> ;
+         fhir:reference [ fhir:v "StructureDefinition/ElementPrescriptionMedicalePharmacienLivrePN13" ]
+       ] ;
+       fhir:name [ fhir:v "Element Prescription Medicale Pharmacien Livre PN13" ] ;
+       fhir:description [ fhir:v "Element Prescription Medicale Pharmacien Livre provenant de la norme PN13, A TRADUIRE as defined in the PN13" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -815,6 +863,42 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/PatientPN13> ;
+         fhir:reference [ fhir:v "StructureDefinition/PatientPN13" ]
+       ] ;
+       fhir:name [ fhir:v "Patient PN13" ] ;
+       fhir:description [ fhir:v "Patient provenant de la norme PN13, Patient as defined in the PN13" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/PrescriptionPN13> ;
+         fhir:reference [ fhir:v "StructureDefinition/PrescriptionPN13" ]
+       ] ;
+       fhir:name [ fhir:v "Prescription PN13" ] ;
+       fhir:description [ fhir:v "Prescription provenant de la norme PN13, Prescription as defined in the PN13" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/ProtocolePrescritPN13> ;
+         fhir:reference [ fhir:v "StructureDefinition/ProtocolePrescritPN13" ]
+       ] ;
+       fhir:name [ fhir:v "Protocole Prescrit PN13" ] ;
+       fhir:description [ fhir:v "Protocole Prescrit provenant de la norme PN13, Prescribed component as defined in the PN13" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
@@ -835,6 +919,30 @@
        ] ;
        fhir:name [ fhir:v "Renseignement complémentaire Value Set" ] ;
        fhir:description [ fhir:v "Value Set pour RensComplement" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/RenseignementComplementairePN13> ;
+         fhir:reference [ fhir:v "StructureDefinition/RenseignementComplementairePN13" ]
+       ] ;
+       fhir:name [ fhir:v "RenseignementComplementaire PN13" ] ;
+       fhir:description [ fhir:v "Renseignement complementaire provenant de la norme PN13, Complementatry information as defined in the PN13" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/SejourPN13> ;
+         fhir:reference [ fhir:v "StructureDefinition/SejourPN13" ]
+       ] ;
+       fhir:name [ fhir:v "Sejour PN13" ] ;
+       fhir:description [ fhir:v "Sejour provenant de la norme PN13, Stay as defined in the PN13" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

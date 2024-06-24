@@ -10,7 +10,7 @@
   "name" : "OncoFAIR",
   "title" : "OncoFAIR",
   "status" : "draft",
-  "date" : "2024-06-19T12:21:16+00:00",
+  "date" : "2024-06-24T15:04:31+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -51,6 +51,30 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ComposantPrescriptPN13"
+      },
+      "name" : "Composant Prescript PN13",
+      "description" : "Composant Prescript provenant de la norme PN13, Prescribed component as defined in the PN13",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/compteRenduAdministration"
+      },
+      "name" : "Compte Rendu Administration PN13",
+      "description" : "Protocole Prescrit provenant de la norme PN13, Prescribed component as defined in the PN13",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -70,6 +94,30 @@
       },
       "name" : "Concepts Medication Value Set",
       "description" : "Value Set pour différiencier les niveaux de MR/MA",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ElementPosologiePN13"
+      },
+      "name" : "Element Posologie PN13",
+      "description" : "Element Posologie provenant de la norme PN13, Prescribed component as defined in the PN13",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ElementPrescriptionMedicalePharmacienLivrePN13"
+      },
+      "name" : "Element Prescription Medicale Pharmacien Livre PN13",
+      "description" : "Element Prescription Medicale Pharmacien Livre provenant de la norme PN13, A TRADUIRE as defined in the PN13",
       "isExample" : false
     },
     {
@@ -770,6 +818,42 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PatientPN13"
+      },
+      "name" : "Patient PN13",
+      "description" : "Patient provenant de la norme PN13, Patient as defined in the PN13",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PrescriptionPN13"
+      },
+      "name" : "Prescription PN13",
+      "description" : "Prescription provenant de la norme PN13, Prescription as defined in the PN13",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ProtocolePrescritPN13"
+      },
+      "name" : "Protocole Prescrit PN13",
+      "description" : "Protocole Prescrit provenant de la norme PN13, Prescribed component as defined in the PN13",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -789,6 +873,30 @@
       },
       "name" : "Renseignement complémentaire Value Set",
       "description" : "Value Set pour RensComplement",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/RenseignementComplementairePN13"
+      },
+      "name" : "RenseignementComplementaire PN13",
+      "description" : "Renseignement complementaire provenant de la norme PN13, Complementatry information as defined in the PN13",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/SejourPN13"
+      },
+      "name" : "Sejour PN13",
+      "description" : "Sejour provenant de la norme PN13, Stay as defined in the PN13",
       "isExample" : false
     },
     {

@@ -11,7 +11,7 @@
   <name value="OncoFAIR"/>
   <title value="OncoFAIR"/>
   <status value="draft"/>
-  <date value="2024-06-19T12:21:16+00:00"/>
+  <date value="2024-06-24T15:04:31+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -46,6 +46,28 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ComposantPrescriptPN13"/>
+      </reference>
+      <name value="Composant Prescript PN13"/>
+      <description value="Composant Prescript provenant de la norme PN13, Prescribed component as defined in the PN13"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/compteRenduAdministration"/>
+      </reference>
+      <name value="Compte Rendu Administration PN13"/>
+      <description value="Protocole Prescrit provenant de la norme PN13, Prescribed component as defined in the PN13"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -64,6 +86,28 @@
       </reference>
       <name value="Concepts Medication Value Set"/>
       <description value="Value Set pour différiencier les niveaux de MR/MA"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ElementPosologiePN13"/>
+      </reference>
+      <name value="Element Posologie PN13"/>
+      <description value="Element Posologie provenant de la norme PN13, Prescribed component as defined in the PN13"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ElementPrescriptionMedicalePharmacienLivrePN13"/>
+      </reference>
+      <name value="Element Prescription Medicale Pharmacien Livre PN13"/>
+      <description value="Element Prescription Medicale Pharmacien Livre provenant de la norme PN13, A TRADUIRE as defined in the PN13"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -706,6 +750,39 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PatientPN13"/>
+      </reference>
+      <name value="Patient PN13"/>
+      <description value="Patient provenant de la norme PN13, Patient as defined in the PN13"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PrescriptionPN13"/>
+      </reference>
+      <name value="Prescription PN13"/>
+      <description value="Prescription provenant de la norme PN13, Prescription as defined in the PN13"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ProtocolePrescritPN13"/>
+      </reference>
+      <name value="Protocole Prescrit PN13"/>
+      <description value="Protocole Prescrit provenant de la norme PN13, Prescribed component as defined in the PN13"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -724,6 +801,28 @@
       </reference>
       <name value="Renseignement complémentaire Value Set"/>
       <description value="Value Set pour RensComplement"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RenseignementComplementairePN13"/>
+      </reference>
+      <name value="RenseignementComplementaire PN13"/>
+      <description value="Renseignement complementaire provenant de la norme PN13, Complementatry information as defined in the PN13"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SejourPN13"/>
+      </reference>
+      <name value="Sejour PN13"/>
+      <description value="Sejour provenant de la norme PN13, Stay as defined in the PN13"/>
       <isExample value="false"/>
     </resource>
     <resource>
