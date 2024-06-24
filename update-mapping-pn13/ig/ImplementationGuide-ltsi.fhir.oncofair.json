@@ -10,7 +10,7 @@
   "name" : "OncoFAIR",
   "title" : "OncoFAIR",
   "status" : "draft",
-  "date" : "2024-06-21T13:36:06+00:00",
+  "date" : "2024-06-24T09:13:58+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -545,10 +545,82 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-element-form"
+      },
+      "name" : "oncofair-sp-element-form",
+      "description" : "Search parameter to retrieve the element form",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-element-indication"
+      },
+      "name" : "oncofair-sp-element-indication",
+      "description" : "Search parameter to retrieve the element indication",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-element-route"
+      },
+      "name" : "oncofair-sp-element-route",
+      "description" : "Search parameter to retrieve the element route",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-element-site"
+      },
+      "name" : "oncofair-sp-element-site",
+      "description" : "Search parameter to retrieve the element site",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
         "reference" : "SearchParameter/oncofair-sp-medication-type"
       },
       "name" : "oncofair-sp-medication-type",
       "description" : "Search parameter to retrieve the type of medication",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-mr-date-prescribed-end-time"
+      },
+      "name" : "oncofair-sp-mr-date-prescribed-end-time",
+      "description" : "Search parameter to retrieve the date prescribed end time",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-mr-date-prescribed-start-time"
+      },
+      "name" : "oncofair-sp-mr-date-prescribed-start-time",
+      "description" : "Search parameter to retrieve the date prescribed start time",
       "isExample" : false
     },
     {

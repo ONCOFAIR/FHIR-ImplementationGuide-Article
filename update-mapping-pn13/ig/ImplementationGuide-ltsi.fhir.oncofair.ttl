@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIR"] ; # 
   fhir:title [ fhir:v "OncoFAIR"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-21T13:36:06+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-24T09:13:58+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -590,11 +590,83 @@
          fhir:value [ fhir:v "SearchParameter" ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-element-form> ;
+         fhir:reference [ fhir:v "SearchParameter/oncofair-sp-element-form" ]
+       ] ;
+       fhir:name [ fhir:v "oncofair-sp-element-form" ] ;
+       fhir:description [ fhir:v "Search parameter to retrieve the element form" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-element-indication> ;
+         fhir:reference [ fhir:v "SearchParameter/oncofair-sp-element-indication" ]
+       ] ;
+       fhir:name [ fhir:v "oncofair-sp-element-indication" ] ;
+       fhir:description [ fhir:v "Search parameter to retrieve the element indication" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-element-route> ;
+         fhir:reference [ fhir:v "SearchParameter/oncofair-sp-element-route" ]
+       ] ;
+       fhir:name [ fhir:v "oncofair-sp-element-route" ] ;
+       fhir:description [ fhir:v "Search parameter to retrieve the element route" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-element-site> ;
+         fhir:reference [ fhir:v "SearchParameter/oncofair-sp-element-site" ]
+       ] ;
+       fhir:name [ fhir:v "oncofair-sp-element-site" ] ;
+       fhir:description [ fhir:v "Search parameter to retrieve the element site" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-medication-type> ;
          fhir:reference [ fhir:v "SearchParameter/oncofair-sp-medication-type" ]
        ] ;
        fhir:name [ fhir:v "oncofair-sp-medication-type" ] ;
        fhir:description [ fhir:v "Search parameter to retrieve the type of medication" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-date-prescribed-end-time> ;
+         fhir:reference [ fhir:v "SearchParameter/oncofair-sp-mr-date-prescribed-end-time" ]
+       ] ;
+       fhir:name [ fhir:v "oncofair-sp-mr-date-prescribed-end-time" ] ;
+       fhir:description [ fhir:v "Search parameter to retrieve the date prescribed end time" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-date-prescribed-start-time> ;
+         fhir:reference [ fhir:v "SearchParameter/oncofair-sp-mr-date-prescribed-start-time" ]
+       ] ;
+       fhir:name [ fhir:v "oncofair-sp-mr-date-prescribed-start-time" ] ;
+       fhir:description [ fhir:v "Search parameter to retrieve the date prescribed start time" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
