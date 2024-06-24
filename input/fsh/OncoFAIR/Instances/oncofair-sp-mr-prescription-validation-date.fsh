@@ -8,5 +8,6 @@ Usage : #definition
 * code = #mr-prescription-validation-date
 * base = #MedicationRequest
 * type = #date
+// Testée sur fhirpath : 
 * expression = "MedicationRequest.extension.where(url='http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-prescription-validation-date').value"
 * processingMode = #normal

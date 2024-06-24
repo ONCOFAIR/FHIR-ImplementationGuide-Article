@@ -8,5 +8,6 @@ Usage : #definition
 * code = #mr-type-elementprescrption
 * base = #MedicationRequest
 * type = #token
-* expression = "MedicationRequest.dosageInstruction.method"
+// Testée sur fhirpath : 
+* expression = "MedicationRequest.dosageInstruction.where(id='element').method"
 * processingMode = #normal

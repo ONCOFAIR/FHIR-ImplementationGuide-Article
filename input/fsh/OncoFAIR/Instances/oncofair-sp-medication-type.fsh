@@ -8,5 +8,6 @@ Usage : #definition
 * code = #medication-type
 * base = #Medication
 * type = #token
+// Testée sur fhirpath : 
 * expression = "Medication.extension.where(url='http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication-type').value"
 * processingMode = #normal
