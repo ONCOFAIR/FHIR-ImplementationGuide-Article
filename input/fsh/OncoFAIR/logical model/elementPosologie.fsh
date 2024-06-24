@@ -1,0 +1,21 @@
+Logical: ElementPosologiePN13				
+Id: ElementPosologiePN13				
+Title: "Element Posologie PN13"				
+Description:  "Element Posologie provenant de la norme PN13, Prescribed component as defined in the PN13" 
+
+* frequence 0..* Timing ""
+* typeEvenementDebut 0..1 code ""
+* evenementDebut 0..1 code ""
+* intervalleTempsEvenementDebut 0..1 Quantity ""
+* typeEvenementFin 0..1 code ""
+* evenementFin 0..1 code ""
+* intervalleTempsEvenementFin 0..1 Quantity ""
+* typeEvenement2Debut 0..1 code ""
+* evenement2Debut 0..1 code ""
+* intervalle2TempsEvenenementDebut 0..1 Quantity ""
+* typeEvenement2Fin 0..1 code ""
+* evenement2Fin 0..1 code ""
+* intervalle2TempsEvenenementFin 0..1 Quantity ""
+* duree 0..1 Quantity ""
+* debit 0..1 Quantity ""
+* quantite 0..1 Quantity ""
