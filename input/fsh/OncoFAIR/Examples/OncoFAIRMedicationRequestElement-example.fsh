@@ -66,6 +66,9 @@ Description: "Example instance of OncoFAIRMedicationRequestElement"
 
 * dosageInstruction[element].timing.repeat.offset = 10
 
+* effectiveDosePeriod.start = "2024-06-01T08:00:00Z"
+* effectiveDosePeriod.end = "2024-06-01T09:00:00Z"
+
 /*Pas présent en PN13, mais comme on utilise l'offset on dessus, obligatoire : */
 * dosageInstruction[element].timing.repeat.when = #ACM
 

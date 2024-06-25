@@ -6,7 +6,7 @@ Usage: #definition
 * name = "OncoFAIRConsommateur"
 * title = "OncoFAIR-Consommateur"
 * experimental = true
-* description = "Capability Statement pour ..."
+* description = "Capability Statement for ..."
 * kind = #requirements
 * fhirVersion = #5.0.0
 * date = "2024-06-19T15:15:00+01:00"
@@ -37,19 +37,19 @@ Usage: #definition
 * rest.resource[=].searchParam[+].name = "_filter"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-filter"
 * rest.resource[=].searchParam[=].type = #special
-* rest.resource[=].searchParam[=].documentation = "Paramètre de recherche de filtre qui prend en charge une grammaire de recherche plus sophistiquée. Voir la [documentation](https://hl7.org/fhir/search_filter.html) pour plus de détails"
+* rest.resource[=].searchParam[=].documentation = "Filter search parameter that supports a more sophisticated search grammar. See [documentation](https://hl7.org/fhir/search_filter.html) for more details."
 
 * rest.resource[=].searchParam[+].name = "_has"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-has"
 * rest.resource[=].searchParam[=].type = #special
-* rest.resource[=].searchParam[=].documentation = "Permet la sélection des ressources en fonction des propriétés des ressources qui y font référence (reverse chaining)"
+* rest.resource[=].searchParam[=].documentation = "Enables resources to be selected on the basis of the properties of the resources that refer to them (reverse chaining)."
 
 * rest.resource[=].searchParam[+].name = "_id"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * rest.resource[=].searchParam[=].type = #token
-* rest.resource[=].searchParam[=].documentation = "Identifiant logique de la ressource"
+* rest.resource[=].searchParam[=].documentation = "Logical resource identifier"
 
-* rest.resource[=].searchParam[+].name = "code"
+* rest.resource[=].searchParam[+].name = "clinical-code"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/clinical-code"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Identifies the prescribed component according to a nomenclature depending on the type"
@@ -58,6 +58,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-medication-type)
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Specifies whether the component prescribed is a speciality, a common name or any other product (pharmacopoeia)."
+
 
 // Declaration for MedicationRequest
 * rest.resource[+].type = #MedicationRequest
@@ -75,11 +76,6 @@ Usage: #definition
 * rest.resource[=].searchParam[=].documentation = "Date and time at which the prescriber considered the prescription validated"
 
 // MedicationRequestElement
-* rest.resource[=].searchParam[+].name = "identifier"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/clinical-identifier"
-* rest.resource[=].searchParam[=].type = #token
-* rest.resource[=].searchParam[=].documentation = "Unique identifier"
-
 * rest.resource[=].searchParam[+].name = "mr-type-elementprescription"
 * rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-mr-type-elementprescrption)
 * rest.resource[=].searchParam[=].type = #token
@@ -110,15 +106,92 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Specifies, where appropriate, the exact point on the body where the product is to be applied to the patient"
 
-* rest.resource[=].searchParam[+].name = "mr-date-prescribed-start-time"
-* rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-mr-date-prescribed-start-time)
+* rest.resource[=].searchParam[+].name = "combo-date"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/MedicationRequest-combo-date"
 * rest.resource[=].searchParam[=].type = #date
-* rest.resource[=].searchParam[=].documentation = "Prescribed start date and time of product prescription"
+* rest.resource[=].searchParam[=].documentation = "Returns medication request to be administered on a specific date or within a date range"
 
-* rest.resource[=].searchParam[+].name = "mr-date-prescribed-end-time"
-* rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-mr-date-prescribed-end-time)
+
+* rest.resource[=].searchParam[+].name = "mr-date-time-prescription-start"
+* rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-mr-date-time-prescription-start)
 * rest.resource[=].searchParam[=].type = #date
-* rest.resource[=].searchParam[=].documentation = "Prescribed end date and time of product prescription"
+* rest.resource[=].searchParam[=].documentation = "Effective start date and time of product prescription"
+
+* rest.resource[=].searchParam[+].name = "mr-date-time-prescription-end"
+* rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-mr-date-time-prescription-end)
+* rest.resource[=].searchParam[=].type = #date
+* rest.resource[=].searchParam[=].documentation = "Effective end date and time of product prescription"
+
+* rest.resource[=].searchParam[+].name = "mr-element-reason"
+* rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-mr-element-reason)
+* rest.resource[=].searchParam[=].type = #string
+* rest.resource[=].searchParam[=].documentation = "Explain the reasons that led the prescriber to prescribe this item"
+
+* rest.resource[=].searchParam[+].name = "mr-element-gonogo-status"
+* rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-mr-element-gonogo-status)
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].documentation = "Communicates the conditional state of implementation of the prescription element according to a list of coded values"
+
+* rest.resource[=].searchParam[+].name = "mr-element-gonogo-reasonwaiting"
+* rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-mr-element-gonogo-reasonwaiting)
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].documentation = "Describes the reason for the goNogo implementation status of the prescription element if the management option via the goNogo attribute is enabled"
+
+* rest.resource[=].searchParam[+].name = "mr-element-frequency-posology"
+* rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-mr-element-frequency-posology)
+* rest.resource[=].searchParam[=].type = #number
+* rest.resource[=].searchParam[=].documentation = "Indicates the recurrence of the dosage. By default, every day"
+
+* rest.resource[=].searchParam[+].name = "group-identifier"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/MedicationRequest-group-identifier"
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].documentation = "Identifier common to all components of the same prescription"
+
+
+
+// MedicationRequest Component
+
+* rest.resource[=].searchParam[+].name = "mr-prescribed-component-quantity"
+* rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-mr-prescribed-component-quantity)
+* rest.resource[=].searchParam[=].type = #quantity
+* rest.resource[=].searchParam[=].documentation = "Quantity of the component prescribed in the prescription element"
+
+* rest.resource[=].searchParam[+].name = "mr-component-substitution"
+* rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-mr-component-substitution)
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].documentation = "True if the component prescribed is declared non-substitutable in the prescription element"
+
+* rest.resource[=].searchParam[+].name = "mr-is-dosage-referent"
+* rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-mr-is-dosage-referent)
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].documentation = "True if the component prescribed is the component that refers to the quantity or flow rate expressed in the dosage element when these are gravimetric (for example, mg or mg/h)."
+
+* rest.resource[=].searchParam[+].name = "mr-exempt-ltc"
+* rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-mr-exempt-ltc)
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].documentation = "Identifier of the ALD for which the component prescribed is prescribed for one of the reasons for which the patient benefits from an exemption under article L324-1 of the CSS.."
+
+* rest.resource[=].searchParam[+].name = "mr-component-solute"
+* rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-mr-component-solute)
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].documentation = "True if the component prescribed is solute in the prescription element"
+// Paramètres de recherche communs à MR
+
+* rest.resource[=].searchParam[+].name = "identifier"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/clinical-identifier"
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].documentation = "Identifier"
+
+* rest.resource[=].searchParam[+].name = "mr-wording"
+* rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-mr-wording)
+* rest.resource[=].searchParam[=].type = #string
+* rest.resource[=].searchParam[=].documentation = "Wording of element/component"
+
+
+
+
+
+
 
 
 

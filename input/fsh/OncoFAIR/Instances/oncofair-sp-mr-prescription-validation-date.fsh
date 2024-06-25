@@ -3,7 +3,7 @@ InstanceOf : SearchParameter
 Usage : #definition
 
 * status = #active
-* name = "OncoFAIRMRSPPrescriptionValidationDate"
+* name = "OncoFAIRSPMRPrescriptionValidationDate"
 * description = "Search parameter to retrieve the prescription validation date"
 * code = #mr-prescription-validation-date
 * base = #MedicationRequest
