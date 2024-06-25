@@ -64,6 +64,7 @@ Usage: #definition
 * rest.resource[+].type = #MedicationRequest
 * rest.resource[=].profile = Canonical(oncofair-medicationrequest-prescription)
 * rest.resource[=].supportedProfile = Canonical(oncofair-medicationrequest-element)
+* rest.resource[=].profile = Canonical(oncofair-medicationrequest-component)
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].interaction[+].code = #read
 * rest.resource[=].interaction[+].code = #patch
@@ -137,15 +138,30 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Describes the reason for the goNogo implementation status of the prescription element if the management option via the goNogo attribute is enabled"
 
+* rest.resource[=].searchParam[+].name = "group-identifier"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/MedicationRequest-group-identifier"
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].documentation = "Identifier common to all components of the same prescription"
+
 * rest.resource[=].searchParam[+].name = "mr-element-frequency-posology"
 * rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-mr-element-frequency-posology)
 * rest.resource[=].searchParam[=].type = #number
 * rest.resource[=].searchParam[=].documentation = "Indicates the recurrence of the dosage. By default, every day"
 
-* rest.resource[=].searchParam[+].name = "group-identifier"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/MedicationRequest-group-identifier"
-* rest.resource[=].searchParam[=].type = #token
-* rest.resource[=].searchParam[=].documentation = "Identifier common to all components of the same prescription"
+* rest.resource[=].searchParam[+].name = "mr-element-duration-posology"
+* rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-mr-element-duration-posology)
+* rest.resource[=].searchParam[=].type = #number
+* rest.resource[=].searchParam[=].documentation = "Duration of administration"
+
+* rest.resource[=].searchParam[+].name = "mr-element-rate-posology"
+* rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-mr-element-rate-posology)
+* rest.resource[=].searchParam[=].type = #number
+* rest.resource[=].searchParam[=].documentation = "Rate of administration in the case of injection"
+
+* rest.resource[=].searchParam[+].name = "mr-element-quantity-posology"
+* rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-mr-element-quantity-posology)
+* rest.resource[=].searchParam[=].type = #number
+* rest.resource[=].searchParam[=].documentation = "Quantity of the prescription element in the dosage"
 
 
 
@@ -187,7 +203,62 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #string
 * rest.resource[=].searchParam[=].documentation = "Wording of element/component"
 
+// Declaration for CarePlan
 
+* rest.resource[+].type = #CarePlan
+* rest.resource[=].profile = Canonical(oncofair-careplan)
+* rest.resource[=].interaction[+].code = #search-type
+* rest.resource[=].interaction[+].code = #read
+* rest.resource[=].interaction[+].code = #patch
+* rest.resource[=].interaction[=].documentation = "Only 'top-level' attributes can be updated using patch interaction."
+
+* rest.resource[=].searchParam[+].name = "identifier"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/clinical-identifier"
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].documentation = "Prescribed protocol identifier"
+
+* rest.resource[=].searchParam[+].name = "cp-title"
+* rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-cp-title)
+* rest.resource[=].searchParam[=].type = #string
+* rest.resource[=].searchParam[=].documentation = "Wording of the prescribed protocom"
+
+* rest.resource[=].searchParam[+].name = "status"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/CarePlan-status"
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].documentation = "Indicates the status of the protocol from the prescriber's point of view"
+
+* rest.resource[=].searchParam[+].name = "cp-date-time-reference"
+* rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-cp-date-time-reference)
+* rest.resource[=].searchParam[=].type = #date
+* rest.resource[=].searchParam[=].documentation = "Reference date and time of this prescribed protocol"
+
+// Declaration for MedicationAdministration
+
+* rest.resource[+].type = #MedicationAdministration
+* rest.resource[=].profile = Canonical(oncofair-medicationadministration-report)
+* rest.resource[=].profile = Canonical(oncofair-medicationadministration-element)
+* rest.resource[=].profile = Canonical(oncofair-medicationadministration-component)
+* rest.resource[=].interaction[+].code = #search-type
+* rest.resource[=].interaction[+].code = #read
+* rest.resource[=].interaction[+].code = #patch
+* rest.resource[=].interaction[=].documentation = "Only 'top-level' attributes can be updated using patch interaction."
+
+// Paramètres de recherche communs à MA
+
+* rest.resource[=].searchParam[+].name = "identifier"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/clinical-identifier"
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].documentation = "External identifier of the administration report"
+
+// Medication Administration Report
+
+* rest.resource[=].searchParam[+].name = "performer"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/MedicationAdministration-performer"
+* rest.resource[=].searchParam[=].type = #reference
+* rest.resource[=].searchParam[=].documentation = "Identification of the person who planned, administered or monitored the administration of the medicines represented by the administration elements"
+
+
+// Medication Administration Element
 
 
 
