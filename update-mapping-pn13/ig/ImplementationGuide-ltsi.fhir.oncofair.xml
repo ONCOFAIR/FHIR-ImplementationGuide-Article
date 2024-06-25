@@ -11,7 +11,7 @@
   <name value="OncoFAIR"/>
   <title value="OncoFAIR"/>
   <status value="draft"/>
-  <date value="2024-06-24T09:13:58+00:00"/>
+  <date value="2024-06-25T08:47:40+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -492,7 +492,7 @@
         <reference value="CapabilityStatement/oncofair-consommateur"/>
       </reference>
       <name value="OncoFAIR-Consommateur"/>
-      <description value="Capability Statement pour ..."/>
+      <description value="Capability Statement for ..."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -555,10 +555,10 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/oncofair-sp-mr-date-prescribed-end-time"/>
+        <reference value="SearchParameter/oncofair-sp-mr-component-solute"/>
       </reference>
-      <name value="oncofair-sp-mr-date-prescribed-end-time"/>
-      <description value="Search parameter to retrieve the date prescribed end time"/>
+      <name value="oncofair-sp-mr-component-solute"/>
+      <description value="Search parameter to retrieve the element goNogo status"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -566,10 +566,109 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/oncofair-sp-mr-date-prescribed-start-time"/>
+        <reference value="SearchParameter/oncofair-sp-mr-component-substitution"/>
       </reference>
-      <name value="oncofair-sp-mr-date-prescribed-start-time"/>
-      <description value="Search parameter to retrieve the date prescribed start time"/>
+      <name value="oncofair-sp-mr-component-substitution"/>
+      <description value="Search parameter to retrieve the component substitution"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/oncofair-sp-mr-date-time-prescription-end"/>
+      </reference>
+      <name value="oncofair-sp-mr-date-time-prescription-end"/>
+      <description value="Search parameter to retrieve the date/time prescription end"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/oncofair-sp-mr-date-time-prescription-start"/>
+      </reference>
+      <name value="oncofair-sp-mr-date-time-prescription-start"/>
+      <description value="Search parameter to retrieve the date/time prescription start"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/oncofair-sp-mr-element-frequency-posology"/>
+      </reference>
+      <name value="oncofair-sp-mr-element-frequency-posology"/>
+      <description value="Search parameter to XXX"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/oncofair-sp-mr-element-gonogo-reasonwaiting"/>
+      </reference>
+      <name value="oncofair-sp-mr-element-gonogo-reasonwaiting"/>
+      <description value="Search parameter to retrieve the element goNogo reason waiting"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/oncofair-sp-mr-element-gonogo-status"/>
+      </reference>
+      <name value="oncofair-sp-mr-element-gonogo-status"/>
+      <description value="Search parameter to retrieve the element goNogo status"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/oncofair-sp-mr-element-reason"/>
+      </reference>
+      <name value="oncofair-sp-mr-element-reason"/>
+      <description value="Search parameter to retrieve the element reason"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/oncofair-sp-mr-exempt-ltc"/>
+      </reference>
+      <name value="oncofair-sp-mr-exempt-ltc"/>
+      <description value="Search parameter to XXX"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/oncofair-sp-mr-is-dosage-referent"/>
+      </reference>
+      <name value="oncofair-sp-mr-is-dosage-referent"/>
+      <description value="Search parameter to XXX"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/oncofair-sp-mr-prescribed-component-quantity"/>
+      </reference>
+      <name value="oncofair-sp-mr-prescribed-component-quantity"/>
+      <description value="Search parameter to retrieve the prescribed component quantity"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -592,6 +691,17 @@
       </reference>
       <name value="oncofair-sp-mr-type-elementprescrption"/>
       <description value="Search parameter to retrieve the type of element prescription"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/oncofair-sp-mr-wording"/>
+      </reference>
+      <name value="oncofair-sp-mr-wording"/>
+      <description value="Search parameter to retrieve the wording"/>
       <isExample value="false"/>
     </resource>
     <resource>
