@@ -6,10 +6,10 @@ Description : "This object describes the chaining of prescription elements attac
 Cet objet décrit le chaînage des éléments de prescription rattachés au protocole prescrit. Sa structure permet le chaînage de sous-protocoles imbriqués." 
 
 
-* basedOn ^short = "Describes the reference protocol from which the prescribed protocol is derived"
-* basedOn only Reference(OncoFAIRCarePlan)
+* partOf ^short = "Describes the reference protocol from which the prescribed protocol is derived"
+* partOf only Reference(OncoFAIRCarePlan)
+/*Extension Element Type*/
 
-/*Slicer basedOn avec un protocole père*/
 
 * identifier 1..1 MS
 * identifier.value ^short = "Prescribed protocol identifier"

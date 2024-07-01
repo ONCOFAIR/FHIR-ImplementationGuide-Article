@@ -1,4 +1,4 @@
-Instance : oncofair-sp-mr-component-substitution
+/*Instance : oncofair-sp-mr-component-substitution
 InstanceOf : SearchParameter
 Usage : #definition
 
@@ -10,4 +10,4 @@ Usage : #definition
 * type = #token
 // Testée sur fhirpath : 
 * expression = "MedicationRequest.substitution.allowed.as(boolean)"
-* processingMode = #normal
+* processingMode = #normal*/

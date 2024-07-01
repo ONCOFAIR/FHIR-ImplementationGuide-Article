@@ -1,4 +1,4 @@
-Instance : oncofair-sp-mr-element-gonogo-status
+/*Instance : oncofair-sp-mr-element-gonogo-status
 InstanceOf : SearchParameter
 Usage : #definition
 
@@ -10,4 +10,4 @@ Usage : #definition
 * type = #token
 // Testée sur fhirpath : 
 * expression = "MedicationRequest.extension.where(url='http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-go-nogo').extension.where(url='GoNogoStatus').value"
-* processingMode = #normal
+* processingMode = #normal*/

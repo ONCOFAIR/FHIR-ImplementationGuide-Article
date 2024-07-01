@@ -1,4 +1,4 @@
-Instance : oncofair-sp-mr-exempt-ltc
+/*Instance : oncofair-sp-mr-exempt-ltc
 InstanceOf : SearchParameter
 Usage : #definition
 
@@ -10,4 +10,4 @@ Usage : #definition
 * type = #token
 // Testée sur fhirpath : 
 * expression = "MedicationRequest.extension.where(url='http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-exempt-ltc').value"
-* processingMode = #normal
+* processingMode = #normal*/

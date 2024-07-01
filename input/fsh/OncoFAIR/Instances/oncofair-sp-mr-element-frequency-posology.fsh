@@ -4,7 +4,7 @@ Usage : #definition
 
 * status = #active
 * name = "OncoFAIRSPMRFrequencyPosology"
-* description = "Search parameter to XXX"
+* description = "Search for the frequency of the dosage element"
 * code = #mr-frequency-posology
 * base = #MedicationRequest
 * type = #number

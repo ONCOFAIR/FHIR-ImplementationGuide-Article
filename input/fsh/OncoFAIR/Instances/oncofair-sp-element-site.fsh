@@ -1,13 +1,13 @@
-Instance : oncofair-sp-element-site
+/*Instance : oncofair-sp-element-site
 InstanceOf : SearchParameter
 Usage : #definition
 
 * status = #active
 * name = "OncoFAIRSPElementSite"
-* description = "Search parameter to retrieve the element site"
+* description = "Search on the administration site of the element"
 * code = #element-site
-* base = #MedicationRequest
+* base = #MedicationAdministration
 * type = #token
 // Testée sur fhirpath : 
-* expression = "MedicationRequest.dosageInstruction.where(id='element').site"
-* processingMode = #normal
+* expression = "MedicationAdministration.dosage.site"
+* processingMode = #normal*/

@@ -4,7 +4,7 @@ Usage : #definition
 
 * status = #active
 * name = "OncoFAIRSPCPTitle"
-* description = "Search parameter to XXXX"
+* description = "Search for the title of the prescribed protocol"
 * code = #cp-title
 * base = #CarePlan
 * type = #string

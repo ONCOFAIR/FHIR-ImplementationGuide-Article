@@ -1,12 +1,12 @@
-Instance : oncofair-consommateur
+Instance : oncofair-consumer-secondary-hemotherapy-data
 InstanceOf : CapabilityStatement
 Usage: #definition
 
 * status = #draft
-* name = "OncoFAIRConsommateur"
-* title = "OncoFAIR-Consommateur"
+* name = "OncoFAIR Consumer of secondary chemotherapy data"
+* title = "OncoFAIR-Consumer-secondary-hemotherapy-data"
 * experimental = true
-* description = "Capability Statement for ..."
+* description = "A structure or professional using chemotherapy data (complete or aggregated). These data may be used for a variety of purposes (pharmacovigilance, clinical studies, etc.). "
 * kind = #requirements
 * fhirVersion = #5.0.0
 * date = "2024-06-19T15:15:00+01:00"
@@ -18,11 +18,9 @@ Usage: #definition
 
 
 * rest.mode = #client
-* rest.documentation = "XXX"
+* rest.documentation = "Request for aggregated chemotherapy data"
 * rest.security.cors = false
 * rest.security.service = $restful-security-service#OAuth
-* rest.security.description = "XXXX"
-
 
 //Medication
 * rest.resource[+].type = #Medication
@@ -31,7 +29,7 @@ Usage: #definition
 * rest.resource[=].interaction[+].code = #read
 * rest.resource[=].interaction[+].code = #patch
 * rest.resource[=].interaction[=].documentation = "Only 'top-level' attributes can be updated using patch interaction."
-//* rest.resource[=].searchRevInclude = "XXX"
+//* rest.resource[=].searchRevInclude = "XXX"*/
 
 
 * rest.resource[=].searchParam[+].name = "_filter"
@@ -54,17 +52,10 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Identifies the prescribed component according to a nomenclature depending on the type"
 
-* rest.resource[=].searchParam[+].name = "medication-type"
-* rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-medication-type)
-* rest.resource[=].searchParam[=].type = #token
-* rest.resource[=].searchParam[=].documentation = "Specifies whether the component prescribed is a speciality, a common name or any other product (pharmacopoeia)."
-
-
 // Declaration for MedicationRequest
 * rest.resource[+].type = #MedicationRequest
 * rest.resource[=].profile = Canonical(oncofair-medicationrequest-prescription)
 * rest.resource[=].supportedProfile = Canonical(oncofair-medicationrequest-element)
-* rest.resource[=].profile = Canonical(oncofair-medicationrequest-component)
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].interaction[+].code = #read
 * rest.resource[=].interaction[+].code = #patch
@@ -77,7 +68,105 @@ Usage: #definition
 * rest.resource[=].searchParam[=].documentation = "Date and time at which the prescriber considered the prescription validated"
 
 // MedicationRequestElement
-* rest.resource[=].searchParam[+].name = "mr-type-elementprescription"
+* rest.resource[=].searchParam[+].name = "mr-element-frequency-posology"
+* rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-mr-element-frequency-posology)
+* rest.resource[=].searchParam[=].type = #number
+* rest.resource[=].searchParam[=].documentation = "Indicates the recurrence of the dosage. By default, every day"
+
+
+// Declaration for CarePlan
+* rest.resource[+].type = #CarePlan
+* rest.resource[=].profile = Canonical(oncofair-careplan)
+* rest.resource[=].interaction[+].code = #search-type
+* rest.resource[=].interaction[+].code = #read
+* rest.resource[=].interaction[+].code = #patch
+* rest.resource[=].interaction[=].documentation = "Only 'top-level' attributes can be updated using patch interaction."
+
+* rest.resource[=].searchParam[+].name = "cp-title"
+* rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-cp-title)
+* rest.resource[=].searchParam[=].type = #string
+* rest.resource[=].searchParam[=].documentation = "Wording of the prescribed protocol"
+
+// Declaration for MedicationAdministration
+* rest.resource[+].type = #MedicationAdministration
+* rest.resource[=].profile = Canonical(oncofair-medicationadministration-element)
+* rest.resource[=].supportedProfile = Canonical(oncofair-medicationadministration-component)
+* rest.resource[=].interaction[+].code = #search-type
+* rest.resource[=].interaction[+].code = #read
+* rest.resource[=].interaction[+].code = #patch
+* rest.resource[=].interaction[=].documentation = "Only 'top-level' attributes can be updated using patch interaction."
+
+// Medication Administration Element
+
+* rest.resource[=].searchParam[+].name = "ma-element-form"
+* rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-element-form)
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].documentation = "Pharmaceutical form of administration item"
+
+* rest.resource[=].searchParam[+].name = "ma-element-route"
+* rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-ma-element-route)
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].documentation = "Specifies the route of administration of the product"
+
+// Medication Administration Component
+* rest.resource[=].searchParam[+].name = "ma-wording"
+* rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-ma-wording)
+* rest.resource[=].searchParam[=].type = #string
+* rest.resource[=].searchParam[=].documentation = "Wording of component"
+
+* rest.resource[=].searchParam[+].name = "ma-comments"
+* rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-ma-comments)
+* rest.resource[=].searchParam[=].type = #string
+* rest.resource[=].searchParam[=].documentation = "Comments of component"
+
+* rest.resource[=].searchParam[+].name = "ma-planned-quantity"
+* rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-ma-planned-quantity)
+* rest.resource[=].searchParam[=].type = #quantity
+* rest.resource[=].searchParam[=].documentation = "Quantity of the component administered in the administration element that was intended to be administered to the patient"
+
+* rest.resource[=].searchParam[+].name = "ma-prescribed-quantity"
+* rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-ma-prescribed-quantity)
+* rest.resource[=].searchParam[=].type = #quantity
+* rest.resource[=].searchParam[=].documentation = "Quantity actually administered to the patient or planned to be administered"
+
+// Declaration for Patient
+* rest.resource[+].type = #Patient
+* rest.resource[=].profile = Canonical(oncofair-patient)
+* rest.resource[=].interaction[+].code = #search-type
+* rest.resource[=].interaction[+].code = #read
+* rest.resource[=].interaction[+].code = #patch
+* rest.resource[=].interaction[=].documentation = "Only 'top-level' attributes can be updated using patch interaction."
+
+* rest.resource[=].searchParam[+].name = "identifier"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Patient-identifier"
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].documentation = "Identifier of the patient"
+
+// Declaration for Encounter
+* rest.resource[+].type = #Encounter
+* rest.resource[=].profile = Canonical(oncofair-encounter)
+* rest.resource[=].interaction[+].code = #search-type
+* rest.resource[=].interaction[+].code = #read
+* rest.resource[=].interaction[+].code = #patch
+* rest.resource[=].interaction[=].documentation = "Only 'top-level' attributes can be updated using patch interaction."
+
+* rest.resource[=].searchParam[+].name = "identifier"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/clinical-identifier"
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].documentation = "Identifier of the patient's stay"
+
+
+// Paramètres de recherche en stand by
+
+// Medication :
+/** rest.resource[=].searchParam[+].name = "medication-type"
+* rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-medication-type)
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].documentation = "Specifies whether the component prescribed is a speciality, a common name or any other product (pharmacopoeia)."*/
+
+// MR Element : 
+
+/** rest.resource[=].searchParam[+].name = "mr-type-elementprescription"
 * rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-mr-type-elementprescrption)
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Type of prescription element"
@@ -141,14 +230,9 @@ Usage: #definition
 * rest.resource[=].searchParam[+].name = "group-identifier"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/MedicationRequest-group-identifier"
 * rest.resource[=].searchParam[=].type = #token
-* rest.resource[=].searchParam[=].documentation = "Identifier common to all components of the same prescription"
+* rest.resource[=].searchParam[=].documentation = "Identifier common to all components of the same prescription"*/
 
-* rest.resource[=].searchParam[+].name = "mr-element-frequency-posology"
-* rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-mr-element-frequency-posology)
-* rest.resource[=].searchParam[=].type = #number
-* rest.resource[=].searchParam[=].documentation = "Indicates the recurrence of the dosage. By default, every day"
-
-* rest.resource[=].searchParam[+].name = "mr-element-duration-posology"
+/** rest.resource[=].searchParam[+].name = "mr-element-duration-posology"
 * rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-mr-element-duration-posology)
 * rest.resource[=].searchParam[=].type = #number
 * rest.resource[=].searchParam[=].documentation = "Duration of administration"
@@ -161,13 +245,11 @@ Usage: #definition
 * rest.resource[=].searchParam[+].name = "mr-element-quantity-posology"
 * rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-mr-element-quantity-posology)
 * rest.resource[=].searchParam[=].type = #number
-* rest.resource[=].searchParam[=].documentation = "Quantity of the prescription element in the dosage"
+* rest.resource[=].searchParam[=].documentation = "Quantity of the prescription element in the dosage"*/
 
+// MedicationRequest Component : 
 
-
-// MedicationRequest Component
-
-* rest.resource[=].searchParam[+].name = "mr-prescribed-component-quantity"
+/** rest.resource[=].searchParam[+].name = "mr-prescribed-component-quantity"
 * rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-mr-prescribed-component-quantity)
 * rest.resource[=].searchParam[=].type = #quantity
 * rest.resource[=].searchParam[=].documentation = "Quantity of the component prescribed in the prescription element"
@@ -201,28 +283,17 @@ Usage: #definition
 * rest.resource[=].searchParam[+].name = "mr-wording"
 * rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-mr-wording)
 * rest.resource[=].searchParam[=].type = #string
-* rest.resource[=].searchParam[=].documentation = "Wording of element/component"
+* rest.resource[=].searchParam[=].documentation = "Wording of element/component"*/
 
-// Declaration for CarePlan
+// CarePlan : 
 
-* rest.resource[+].type = #CarePlan
-* rest.resource[=].profile = Canonical(oncofair-careplan)
-* rest.resource[=].interaction[+].code = #search-type
-* rest.resource[=].interaction[+].code = #read
-* rest.resource[=].interaction[+].code = #patch
-* rest.resource[=].interaction[=].documentation = "Only 'top-level' attributes can be updated using patch interaction."
 
-* rest.resource[=].searchParam[+].name = "identifier"
+/** rest.resource[=].searchParam[+].name = "identifier"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/clinical-identifier"
 * rest.resource[=].searchParam[=].type = #token
-* rest.resource[=].searchParam[=].documentation = "Prescribed protocol identifier"
+* rest.resource[=].searchParam[=].documentation = "Prescribed protocol identifier"*/
 
-* rest.resource[=].searchParam[+].name = "cp-title"
-* rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-cp-title)
-* rest.resource[=].searchParam[=].type = #string
-* rest.resource[=].searchParam[=].documentation = "Wording of the prescribed protocom"
-
-* rest.resource[=].searchParam[+].name = "status"
+/** rest.resource[=].searchParam[+].name = "status"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/CarePlan-status"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Indicates the status of the protocol from the prescriber's point of view"
@@ -230,20 +301,10 @@ Usage: #definition
 * rest.resource[=].searchParam[+].name = "cp-date-time-reference"
 * rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-cp-date-time-reference)
 * rest.resource[=].searchParam[=].type = #date
-* rest.resource[=].searchParam[=].documentation = "Reference date and time of this prescribed protocol"
+* rest.resource[=].searchParam[=].documentation = "Reference date and time of this prescribed protocol"*/
 
-// Declaration for MedicationAdministration
-
-* rest.resource[+].type = #MedicationAdministration
-* rest.resource[=].profile = Canonical(oncofair-medicationadministration-report)
-* rest.resource[=].profile = Canonical(oncofair-medicationadministration-element)
-* rest.resource[=].profile = Canonical(oncofair-medicationadministration-component)
-* rest.resource[=].interaction[+].code = #search-type
-* rest.resource[=].interaction[+].code = #read
-* rest.resource[=].interaction[+].code = #patch
-* rest.resource[=].interaction[=].documentation = "Only 'top-level' attributes can be updated using patch interaction."
-
-// Paramètres de recherche communs à MA
+// Medication Administration : 
+/*// Paramètres de recherche communs à MA
 
 * rest.resource[=].searchParam[+].name = "identifier"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/clinical-identifier"
@@ -256,13 +317,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/MedicationAdministration-performer"
 * rest.resource[=].searchParam[=].type = #reference
 * rest.resource[=].searchParam[=].documentation = "Identification of the person who planned, administered or monitored the administration of the medicines represented by the administration elements"
-
-
-// Medication Administration Element
-
-
-
-
+*/
 
 
 

@@ -1,4 +1,4 @@
-Instance : oncofair-sp-mr-element-reason
+/*Instance : oncofair-sp-mr-element-reason
 InstanceOf : SearchParameter
 Usage : #definition
 
@@ -10,4 +10,4 @@ Usage : #definition
 * type = #string
 // Testée sur fhirpath : 
 * expression = "MedicationRequest.note.where(id='reason').text"
-* processingMode = #normal
+* processingMode = #normal*/

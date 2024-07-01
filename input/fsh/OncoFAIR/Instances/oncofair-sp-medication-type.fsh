@@ -4,7 +4,7 @@ Usage : #definition
 
 * status = #active
 * name = "OncoFAIRSPMedicationType"
-* description = "Search parameter to retrieve the type of medication"
+* description = "Search for type of medication"
 * code = #medication-type
 * base = #Medication
 * type = #token
