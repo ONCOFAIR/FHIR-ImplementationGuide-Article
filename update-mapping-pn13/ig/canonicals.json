@@ -1,8 +1,8 @@
 [
   {
-    "id" : "oncofair-consumer-secondary-hemotherapy-data",
+    "id" : "oncofair-consumer-secondary-chemotherapy-data",
     "type" : "CapabilityStatement",
-    "url" : "http://ltsi.univ-rennes.fr/CapabilityStatement/oncofair-consumer-secondary-hemotherapy-data",
+    "url" : "http://ltsi.univ-rennes.fr/CapabilityStatement/oncofair-consumer-secondary-chemotherapy-data",
     "version" : "0.1.0",
     "name" : "OncoFAIR Consumer of secondary chemotherapy data"
   },
@@ -133,11 +133,11 @@
     "name" : "OncoFAIRSPElementForm"
   },
   {
-    "id" : "oncofair-sp-element-indication",
+    "id" : "oncofair-sp-element-route",
     "type" : "SearchParameter",
-    "url" : "http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-element-indication",
+    "url" : "http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-element-route",
     "version" : "0.1.0",
-    "name" : "OncoFAIRSPElementIndication"
+    "name" : "OncoFAIRSPElementRoute"
   },
   {
     "id" : "oncofair-sp-element-site",
@@ -147,18 +147,18 @@
     "name" : "OncoFAIRSPElementSite"
   },
   {
+    "id" : "oncofair-sp-indication",
+    "type" : "SearchParameter",
+    "url" : "http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-indication",
+    "version" : "0.1.0",
+    "name" : "OncoFAIRSPIndication"
+  },
+  {
     "id" : "oncofair-sp-ma-comments",
     "type" : "SearchParameter",
     "url" : "http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-ma-comments",
     "version" : "0.1.0",
     "name" : "OncoFAIRSPMAComments"
-  },
-  {
-    "id" : "oncofair-sp-ma-element-route",
-    "type" : "SearchParameter",
-    "url" : "http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-ma-element-route",
-    "version" : "0.1.0",
-    "name" : "OncoFAIRSPElementRoute"
   },
   {
     "id" : "oncofair-sp-ma-planned-quantity",
@@ -252,13 +252,6 @@
     "name" : "OncoFAIRSPMRRatePosology"
   },
   {
-    "id" : "oncofair-sp-mr-element-reason",
-    "type" : "SearchParameter",
-    "url" : "http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-element-reason",
-    "version" : "0.1.0",
-    "name" : "OncoFAIRSPMRElementReason"
-  },
-  {
     "id" : "oncofair-sp-mr-exempt-ltc",
     "type" : "SearchParameter",
     "url" : "http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-exempt-ltc",
@@ -298,7 +291,7 @@
     "type" : "SearchParameter",
     "url" : "http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-wording",
     "version" : "0.1.0",
-    "name" : "OncoFAIRSPMAWording"
+    "name" : "OncoFAIRSPWording"
   },
   {
     "id" : "oncofair-careplan",

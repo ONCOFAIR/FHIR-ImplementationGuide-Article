@@ -10,7 +10,7 @@
   "name" : "OncoFAIR",
   "title" : "OncoFAIR",
   "status" : "draft",
-  "date" : "2024-07-01T08:31:50+00:00",
+  "date" : "2024-07-01T09:30:15+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -533,7 +533,7 @@
         "valueString" : "CapabilityStatement"
       }],
       "reference" : {
-        "reference" : "CapabilityStatement/oncofair-consumer-secondary-hemotherapy-data"
+        "reference" : "CapabilityStatement/oncofair-consumer-secondary-chemotherapy-data"
       },
       "name" : "OncoFAIR-Consumer-secondary-hemotherapy-data",
       "description" : "A structure or professional using chemotherapy data (complete or aggregated). These data may be used for a variety of purposes (pharmacovigilance, clinical studies, etc.).",
@@ -572,7 +572,7 @@
         "reference" : "SearchParameter/oncofair-sp-element-form"
       },
       "name" : "oncofair-sp-element-form",
-      "description" : "Search for the form of the administrative element",
+      "description" : "Search for the pharmaceutical form of the prescription/administration item",
       "isExample" : false
     },
     {
@@ -581,10 +581,10 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/oncofair-sp-element-indication"
+        "reference" : "SearchParameter/oncofair-sp-element-route"
       },
-      "name" : "oncofair-sp-element-indication",
-      "description" : "Search parameter to retrieve the element indication",
+      "name" : "oncofair-sp-element-route",
+      "description" : "Search for the route of administration element",
       "isExample" : false
     },
     {
@@ -605,10 +605,10 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/oncofair-sp-ma-comments"
+        "reference" : "SearchParameter/oncofair-sp-indication"
       },
-      "name" : "oncofair-sp-ma-comments",
-      "description" : "Search for comments on the administration element",
+      "name" : "oncofair-sp-indication",
+      "description" : "Search for indications concerning the prescription item and the component prescribed or prescribed protocol",
       "isExample" : false
     },
     {
@@ -617,10 +617,10 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/oncofair-sp-ma-element-route"
+        "reference" : "SearchParameter/oncofair-sp-ma-comments"
       },
-      "name" : "oncofair-sp-ma-element-route",
-      "description" : "Search for the route of administration element",
+      "name" : "oncofair-sp-ma-comments",
+      "description" : "Search for comments on the administration element",
       "isExample" : false
     },
     {
@@ -785,18 +785,6 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/oncofair-sp-mr-element-reason"
-      },
-      "name" : "oncofair-sp-mr-element-reason",
-      "description" : "Search parameter to retrieve the element reason",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
         "reference" : "SearchParameter/oncofair-sp-mr-exempt-ltc"
       },
       "name" : "oncofair-sp-mr-exempt-ltc",
@@ -860,7 +848,7 @@
         "reference" : "SearchParameter/oncofair-sp-wording"
       },
       "name" : "oncofair-sp-wording",
-      "description" : "Search for wording on the administration element",
+      "description" : "Search for wording on the administration/prescribed element",
       "isExample" : false
     },
     {

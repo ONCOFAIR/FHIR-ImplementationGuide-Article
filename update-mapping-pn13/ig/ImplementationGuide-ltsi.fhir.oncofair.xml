@@ -11,7 +11,7 @@
   <name value="OncoFAIR"/>
   <title value="OncoFAIR"/>
   <status value="draft"/>
-  <date value="2024-07-01T08:31:50+00:00"/>
+  <date value="2024-07-01T09:30:15+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -489,7 +489,7 @@
         <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
-        <reference value="CapabilityStatement/oncofair-consumer-secondary-hemotherapy-data"/>
+        <reference value="CapabilityStatement/oncofair-consumer-secondary-chemotherapy-data"/>
       </reference>
       <name value="OncoFAIR-Consumer-secondary-hemotherapy-data"/>
       <description value="A structure or professional using chemotherapy data (complete or aggregated). These data may be used for a variety of purposes (pharmacovigilance, clinical studies, etc.)."/>
@@ -525,7 +525,7 @@
         <reference value="SearchParameter/oncofair-sp-element-form"/>
       </reference>
       <name value="oncofair-sp-element-form"/>
-      <description value="Search for the form of the administrative element"/>
+      <description value="Search for the pharmaceutical form of the prescription/administration item"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -533,10 +533,10 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/oncofair-sp-element-indication"/>
+        <reference value="SearchParameter/oncofair-sp-element-route"/>
       </reference>
-      <name value="oncofair-sp-element-indication"/>
-      <description value="Search parameter to retrieve the element indication"/>
+      <name value="oncofair-sp-element-route"/>
+      <description value="Search for the route of administration element"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -555,10 +555,10 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/oncofair-sp-ma-comments"/>
+        <reference value="SearchParameter/oncofair-sp-indication"/>
       </reference>
-      <name value="oncofair-sp-ma-comments"/>
-      <description value="Search for comments on the administration element"/>
+      <name value="oncofair-sp-indication"/>
+      <description value="Search for indications concerning the prescription item and the component prescribed or prescribed protocol"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -566,10 +566,10 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/oncofair-sp-ma-element-route"/>
+        <reference value="SearchParameter/oncofair-sp-ma-comments"/>
       </reference>
-      <name value="oncofair-sp-ma-element-route"/>
-      <description value="Search for the route of administration element"/>
+      <name value="oncofair-sp-ma-comments"/>
+      <description value="Search for comments on the administration element"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -720,17 +720,6 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/oncofair-sp-mr-element-reason"/>
-      </reference>
-      <name value="oncofair-sp-mr-element-reason"/>
-      <description value="Search parameter to retrieve the element reason"/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
         <reference value="SearchParameter/oncofair-sp-mr-exempt-ltc"/>
       </reference>
       <name value="oncofair-sp-mr-exempt-ltc"/>
@@ -789,7 +778,7 @@
         <reference value="SearchParameter/oncofair-sp-wording"/>
       </reference>
       <name value="oncofair-sp-wording"/>
-      <description value="Search for wording on the administration element"/>
+      <description value="Search for wording on the administration/prescribed element"/>
       <isExample value="false"/>
     </resource>
     <resource>

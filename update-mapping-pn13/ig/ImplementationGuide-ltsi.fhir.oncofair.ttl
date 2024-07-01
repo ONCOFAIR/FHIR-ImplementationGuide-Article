@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIR"] ; # 
   fhir:title [ fhir:v "OncoFAIR"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-07-01T08:31:50+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-07-01T09:30:15+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -578,8 +578,8 @@
          fhir:value [ fhir:v "CapabilityStatement" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/CapabilityStatement/oncofair-consumer-secondary-hemotherapy-data> ;
-         fhir:reference [ fhir:v "CapabilityStatement/oncofair-consumer-secondary-hemotherapy-data" ]
+         fhir:link <http://ltsi.univ-rennes.fr/CapabilityStatement/oncofair-consumer-secondary-chemotherapy-data> ;
+         fhir:reference [ fhir:v "CapabilityStatement/oncofair-consumer-secondary-chemotherapy-data" ]
        ] ;
        fhir:name [ fhir:v "OncoFAIR-Consumer-secondary-hemotherapy-data" ] ;
        fhir:description [ fhir:v "A structure or professional using chemotherapy data (complete or aggregated). These data may be used for a variety of purposes (pharmacovigilance, clinical studies, etc.)." ] ;
@@ -618,7 +618,7 @@
          fhir:reference [ fhir:v "SearchParameter/oncofair-sp-element-form" ]
        ] ;
        fhir:name [ fhir:v "oncofair-sp-element-form" ] ;
-       fhir:description [ fhir:v "Search for the form of the administrative element" ] ;
+       fhir:description [ fhir:v "Search for the pharmaceutical form of the prescription/administration item" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -626,11 +626,11 @@
          fhir:value [ fhir:v "SearchParameter" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-element-indication> ;
-         fhir:reference [ fhir:v "SearchParameter/oncofair-sp-element-indication" ]
+         fhir:link <http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-element-route> ;
+         fhir:reference [ fhir:v "SearchParameter/oncofair-sp-element-route" ]
        ] ;
-       fhir:name [ fhir:v "oncofair-sp-element-indication" ] ;
-       fhir:description [ fhir:v "Search parameter to retrieve the element indication" ] ;
+       fhir:name [ fhir:v "oncofair-sp-element-route" ] ;
+       fhir:description [ fhir:v "Search for the route of administration element" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -650,11 +650,11 @@
          fhir:value [ fhir:v "SearchParameter" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-ma-comments> ;
-         fhir:reference [ fhir:v "SearchParameter/oncofair-sp-ma-comments" ]
+         fhir:link <http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-indication> ;
+         fhir:reference [ fhir:v "SearchParameter/oncofair-sp-indication" ]
        ] ;
-       fhir:name [ fhir:v "oncofair-sp-ma-comments" ] ;
-       fhir:description [ fhir:v "Search for comments on the administration element" ] ;
+       fhir:name [ fhir:v "oncofair-sp-indication" ] ;
+       fhir:description [ fhir:v "Search for indications concerning the prescription item and the component prescribed or prescribed protocol" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -662,11 +662,11 @@
          fhir:value [ fhir:v "SearchParameter" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-ma-element-route> ;
-         fhir:reference [ fhir:v "SearchParameter/oncofair-sp-ma-element-route" ]
+         fhir:link <http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-ma-comments> ;
+         fhir:reference [ fhir:v "SearchParameter/oncofair-sp-ma-comments" ]
        ] ;
-       fhir:name [ fhir:v "oncofair-sp-ma-element-route" ] ;
-       fhir:description [ fhir:v "Search for the route of administration element" ] ;
+       fhir:name [ fhir:v "oncofair-sp-ma-comments" ] ;
+       fhir:description [ fhir:v "Search for comments on the administration element" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -830,18 +830,6 @@
          fhir:value [ fhir:v "SearchParameter" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-element-reason> ;
-         fhir:reference [ fhir:v "SearchParameter/oncofair-sp-mr-element-reason" ]
-       ] ;
-       fhir:name [ fhir:v "oncofair-sp-mr-element-reason" ] ;
-       fhir:description [ fhir:v "Search parameter to retrieve the element reason" ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "SearchParameter" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-exempt-ltc> ;
          fhir:reference [ fhir:v "SearchParameter/oncofair-sp-mr-exempt-ltc" ]
        ] ;
@@ -906,7 +894,7 @@
          fhir:reference [ fhir:v "SearchParameter/oncofair-sp-wording" ]
        ] ;
        fhir:name [ fhir:v "oncofair-sp-wording" ] ;
-       fhir:description [ fhir:v "Search for wording on the administration element" ] ;
+       fhir:description [ fhir:v "Search for wording on the administration/prescribed element" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
