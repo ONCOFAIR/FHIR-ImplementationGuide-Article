@@ -2,15 +2,15 @@
   "resourceType" : "ImplementationGuide",
   "id" : "ltsi.fhir.oncofair",
   "text" : {
-    "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>OncoFAIR</h2><p>The official URL for this implementation guide is: </p><pre>http://ltsi.univ-rennes.fr/ImplementationGuide/ltsi.fhir.oncofair</pre><div><p>The OncoFAIR implementation guide reports on the implementation of prescribing and medication administration in oncology.</p>\n</div></div>"
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ltsi.fhir.oncofair</b></p><a name=\"ltsi.fhir.oncofair\"> </a><a name=\"hcltsi.fhir.oncofair\"> </a><a name=\"hcltsi.fhir.oncofair-en-US\"> </a><h2>OncoFAIR</h2><p>The official URL for this implementation guide is: </p><pre>http://ltsi.univ-rennes.fr/ImplementationGuide/ltsi.fhir.oncofair</pre><div><p>The OncoFAIR implementation guide reports on the implementation of prescribing and medication administration in oncology.</p>\n</div></div>"
   },
   "url" : "http://ltsi.univ-rennes.fr/ImplementationGuide/ltsi.fhir.oncofair",
   "version" : "0.1.0",
   "name" : "OncoFAIR",
   "title" : "OncoFAIR",
   "status" : "draft",
-  "date" : "2024-06-25T15:16:11+00:00",
+  "date" : "2024-07-01T07:50:29+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -533,22 +533,10 @@
         "valueString" : "CapabilityStatement"
       }],
       "reference" : {
-        "reference" : "CapabilityStatement/oncofair-consommateur"
+        "reference" : "CapabilityStatement/oncofair-consumer-secondary-hemotherapy-data"
       },
-      "name" : "OncoFAIR-Consommateur",
-      "description" : "Capability Statement for ...",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/oncofair-sp-cp-date-time-reference"
-      },
-      "name" : "oncofair-sp-cp-date-time-reference",
-      "description" : "Search parameter to  XXX",
+      "name" : "OncoFAIR-Consumer-secondary-hemotherapy-data",
+      "description" : "A structure or professional using chemotherapy data (complete or aggregated). These data may be used for a variety of purposes (pharmacovigilance, clinical studies, etc.).",
       "isExample" : false
     },
     {
@@ -560,7 +548,7 @@
         "reference" : "SearchParameter/oncofair-sp-cp-title"
       },
       "name" : "oncofair-sp-cp-title",
-      "description" : "Search parameter to XXXX",
+      "description" : "Search for the title of the prescribed protocol",
       "isExample" : false
     },
     {
@@ -572,7 +560,7 @@
         "reference" : "SearchParameter/oncofair-sp-element-form"
       },
       "name" : "oncofair-sp-element-form",
-      "description" : "Search parameter to retrieve the element form",
+      "description" : "Search for the form of the administrative element",
       "isExample" : false
     },
     {
@@ -581,10 +569,10 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/oncofair-sp-element-indication"
+        "reference" : "SearchParameter/oncofair-sp-ma-comments"
       },
-      "name" : "oncofair-sp-element-indication",
-      "description" : "Search parameter to retrieve the element indication",
+      "name" : "oncofair-sp-ma-comments",
+      "description" : "Search for comments on the administration element",
       "isExample" : false
     },
     {
@@ -593,10 +581,10 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/oncofair-sp-element-route"
+        "reference" : "SearchParameter/oncofair-sp-ma-element-route"
       },
-      "name" : "oncofair-sp-element-route",
-      "description" : "Search parameter to retrieve the element route",
+      "name" : "oncofair-sp-ma-element-route",
+      "description" : "Search for the route of administration element",
       "isExample" : false
     },
     {
@@ -605,10 +593,34 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/oncofair-sp-element-site"
+        "reference" : "SearchParameter/oncofair-sp-ma-planned-quantity"
       },
-      "name" : "oncofair-sp-element-site",
-      "description" : "Search parameter to retrieve the element site",
+      "name" : "oncofair-sp-ma-planned-quantity",
+      "description" : "Search for the expected quantity of the administration element",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-ma-prescribed-quantity"
+      },
+      "name" : "oncofair-sp-ma-prescribed-quantity",
+      "description" : "Search for the prescribed quantity of the administration element",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-ma-wording"
+      },
+      "name" : "oncofair-sp-ma-wording",
+      "description" : "Search for wording on the administration element",
       "isExample" : false
     },
     {
@@ -620,67 +632,7 @@
         "reference" : "SearchParameter/oncofair-sp-medication-type"
       },
       "name" : "oncofair-sp-medication-type",
-      "description" : "Search parameter to retrieve the type of medication",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/oncofair-sp-mr-component-solute"
-      },
-      "name" : "oncofair-sp-mr-component-solute",
-      "description" : "Search parameter to retrieve the element goNogo status",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/oncofair-sp-mr-component-substitution"
-      },
-      "name" : "oncofair-sp-mr-component-substitution",
-      "description" : "Search parameter to retrieve the component substitution",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/oncofair-sp-mr-date-time-prescription-end"
-      },
-      "name" : "oncofair-sp-mr-date-time-prescription-end",
-      "description" : "Search parameter to retrieve the date/time prescription end",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/oncofair-sp-mr-date-time-prescription-start"
-      },
-      "name" : "oncofair-sp-mr-date-time-prescription-start",
-      "description" : "Search parameter to retrieve the date/time prescription start",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/oncofair-sp-mr-element-duration-posology"
-      },
-      "name" : "oncofair-sp-mr-element-duration-posology",
-      "description" : "Search parameter to XXX",
+      "description" : "Search for type of medication",
       "isExample" : false
     },
     {
@@ -692,103 +644,7 @@
         "reference" : "SearchParameter/oncofair-sp-mr-element-frequency-posology"
       },
       "name" : "oncofair-sp-mr-element-frequency-posology",
-      "description" : "Search parameter to XXX",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/oncofair-sp-mr-element-gonogo-reasonwaiting"
-      },
-      "name" : "oncofair-sp-mr-element-gonogo-reasonwaiting",
-      "description" : "Search parameter to retrieve the element goNogo reason waiting",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/oncofair-sp-mr-element-gonogo-status"
-      },
-      "name" : "oncofair-sp-mr-element-gonogo-status",
-      "description" : "Search parameter to retrieve the element goNogo status",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/oncofair-sp-mr-element-quantity-posology"
-      },
-      "name" : "oncofair-sp-mr-element-quantity-posology",
-      "description" : "Search parameter to XXX",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/oncofair-sp-mr-element-rate-posology"
-      },
-      "name" : "oncofair-sp-mr-element-rate-posology",
-      "description" : "Search parameter to XXX",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/oncofair-sp-mr-element-reason"
-      },
-      "name" : "oncofair-sp-mr-element-reason",
-      "description" : "Search parameter to retrieve the element reason",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/oncofair-sp-mr-exempt-ltc"
-      },
-      "name" : "oncofair-sp-mr-exempt-ltc",
-      "description" : "Search parameter to XXX",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/oncofair-sp-mr-is-dosage-referent"
-      },
-      "name" : "oncofair-sp-mr-is-dosage-referent",
-      "description" : "Search parameter to XXX",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/oncofair-sp-mr-prescribed-component-quantity"
-      },
-      "name" : "oncofair-sp-mr-prescribed-component-quantity",
-      "description" : "Search parameter to retrieve the prescribed component quantity",
+      "description" : "Search for the frequency of the dosage element",
       "isExample" : false
     },
     {
@@ -800,31 +656,7 @@
         "reference" : "SearchParameter/oncofair-sp-mr-prescription-validation-date"
       },
       "name" : "oncofair-sp-mr-prescription-validation-date",
-      "description" : "Search parameter to retrieve the prescription validation date",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/oncofair-sp-mr-type-elementprescrption"
-      },
-      "name" : "oncofair-sp-mr-type-elementprescrption",
-      "description" : "Search parameter to retrieve the type of element prescription",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/oncofair-sp-mr-wording"
-      },
-      "name" : "oncofair-sp-mr-wording",
-      "description" : "Search parameter to retrieve the wording",
+      "description" : "Search for the prescription validation date of the prescription",
       "isExample" : false
     },
     {
