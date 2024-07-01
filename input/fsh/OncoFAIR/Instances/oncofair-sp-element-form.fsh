@@ -4,10 +4,11 @@ Usage : #definition
 
 * status = #active
 * name = "OncoFAIRSPElementForm"
-* description = "Search for the form of the administrative element"
+* description = "Search for the pharmaceutical form of the prescription/administration item"
 * code = #element-form
 * base = #MedicationAdministration
+* base = #MedicationRequest
 * type = #token
 // Testée sur fhirpath : 
-* expression = "MedicationAdministration.extension.where(url='http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-element-form').value"
+* expression = "MedicationAdministration.extension.where(url='http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-element-form').value | MedicationRequest.extension.where(url='http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-element-form').value"
 * processingMode = #normal

@@ -3,8 +3,8 @@ InstanceOf : SearchParameter
 Usage : #definition
 
 * status = #active
-* name = "OncoFAIRSPMAWording"
-* description = "Search for wording on the administration element"
+* name = "OncoFAIRSPWording"
+* description = "Search for wording on the administration/prescribed element"
 * code = #wording
 * base = #MedicationAdministration
 * base = #MedicationRequest
