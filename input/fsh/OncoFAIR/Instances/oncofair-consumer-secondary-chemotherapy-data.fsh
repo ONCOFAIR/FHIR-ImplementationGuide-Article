@@ -3,8 +3,8 @@ InstanceOf : CapabilityStatement
 Usage: #definition
 
 * status = #draft
-* name = "OncoFAIR Consumer of secondary chemotherapy data"
-* title = "OncoFAIR-Consumer-secondary-chemotherapy-data"
+* name = "OncoFAIRConsumerOfSecondaryChemotherapyData"
+* title = "OncoFAIR Consumer secondary chemotherapy data"
 * experimental = true
 * description = "A structure or professional using chemotherapy data (complete or aggregated). These data may be used for a variety of purposes (pharmacovigilance, clinical studies, etc.). "
 * kind = #requirements
@@ -189,12 +189,12 @@ Usage: #definition
 
 * rest.resource[=].searchParam[+].name = "mr-element-rate-posology"
 * rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-mr-element-rate-posology)
-* rest.resource[=].searchParam[=].type = #number
+* rest.resource[=].searchParam[=].type = #quantity
 * rest.resource[=].searchParam[=].documentation = "Rate of administration in the case of injection"
 
 * rest.resource[=].searchParam[+].name = "mr-element-quantity-posology"
 * rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-mr-element-quantity-posology)
-* rest.resource[=].searchParam[=].type = #number
+* rest.resource[=].searchParam[=].type = #quantity
 * rest.resource[=].searchParam[=].documentation = "Quantity of the prescription element in the dosage"
 
 // MedicationRequest Component

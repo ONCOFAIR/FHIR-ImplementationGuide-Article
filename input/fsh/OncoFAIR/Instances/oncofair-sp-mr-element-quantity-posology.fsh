@@ -5,7 +5,7 @@ Usage : #definition
 * status = #active
 * name = "OncoFAIRSPMRQuantityPosology"
 * description = "Search for quantity of the prescription element in the dosage"
-* code = #mr-quantity-posology
+* code = #mr-element-quantity-posology
 * base = #MedicationRequest
 * type = #quantity
 // Testée sur fhirpath : 
