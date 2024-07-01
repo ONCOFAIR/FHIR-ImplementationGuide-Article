@@ -91,6 +91,7 @@ Usage: #definition
 * rest.resource[+].type = #MedicationRequest
 * rest.resource[=].profile = Canonical(oncofair-medicationrequest-prescription)
 * rest.resource[=].supportedProfile = Canonical(oncofair-medicationrequest-element)
+* rest.resource[=].supportedProfile = Canonical(oncofair-medicationrequest-component)
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].interaction[+].code = #read
 * rest.resource[=].interaction[+].code = #patch
@@ -216,7 +217,7 @@ Usage: #definition
 * rest.resource[=].searchParam[+].name = "mr-exempt-ltc"
 * rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-mr-exempt-ltc)
 * rest.resource[=].searchParam[=].type = #token
-* rest.resource[=].searchParam[=].documentation = "Identifier of the ALD for which the component prescribed is prescribed for one of the reasons for which the patient benefits from an exemption under article L324-1 of the CSS.."
+* rest.resource[=].searchParam[=].documentation = "Identifier of the ALD for which the component prescribed is prescribed for one of the reasons for which the patient benefits from an exemption under article L324-1 of the CSS."
 
 * rest.resource[=].searchParam[+].name = "mr-component-solute"
 * rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-mr-component-solute)
@@ -263,6 +264,7 @@ Usage: #definition
 * rest.resource[+].type = #MedicationAdministration
 * rest.resource[=].profile = Canonical(oncofair-medicationadministration-element)
 * rest.resource[=].supportedProfile = Canonical(oncofair-medicationadministration-component)
+* rest.resource[=].supportedProfile = Canonical(oncofair-medicationadministration-report)
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].interaction[+].code = #read
 * rest.resource[=].interaction[+].code = #patch

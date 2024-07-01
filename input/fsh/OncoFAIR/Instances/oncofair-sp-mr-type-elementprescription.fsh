@@ -4,7 +4,7 @@ Usage : #definition
 
 * status = #active
 * name = "OncoFAIRSPMRTypeElementPrescription"
-* description = "Search parameter to retrieve the type of element prescription"
+* description = "Search for the type of element prescription"
 * code = #mr-type-elementprescrption
 * base = #MedicationRequest
 * type = #token

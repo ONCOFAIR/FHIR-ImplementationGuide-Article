@@ -4,7 +4,7 @@ Usage : #definition
 
 * status = #active
 * name = "OncoFAIRSPMRElementGonogoStatus"
-* description = "Search parameter to retrieve the element goNogo status"
+* description = "Search for the element goNogo status"
 * code = #mr-element-gonogo-status
 * base = #MedicationRequest
 * type = #token

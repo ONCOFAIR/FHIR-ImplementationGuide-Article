@@ -4,7 +4,7 @@ Usage : #definition
 
 * status = #active
 * name = "OncoFAIRSPMRIsDosageReferent"
-* description = "Search parameter to XXX"
+* description = "Search to find out if the component prescribed is the component that refers to the quantity or flow rate expressed in the dosage element when these are gravimetric (for example, mg or mg/h)."
 * code = #mr-is-dosage-referent
 * base = #MedicationRequest
 * type = #token

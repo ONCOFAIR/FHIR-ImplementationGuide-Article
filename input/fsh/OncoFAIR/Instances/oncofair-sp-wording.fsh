@@ -6,9 +6,9 @@ Usage : #definition
 * name = "OncoFAIRSPWording"
 * description = "Search for wording on the administration/prescribed element"
 * code = #wording
-* base = #MedicationAdministration
-* base = #MedicationRequest
+* base[0] = #MedicationAdministration
+* base[1] = #MedicationRequest
 * type = #string
 // Testée sur fhirpath : 
-* expression = "MedicationAdministration.note.where(id='wording').text | MedicationRequest.note.where(id='wording').text"
+* expression = "note.where(id='wording').text"
 * processingMode = #normal

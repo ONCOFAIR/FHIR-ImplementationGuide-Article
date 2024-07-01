@@ -6,9 +6,9 @@ Usage : #definition
 * name = "OncoFAIRSPIndication"
 * description = "Search for indications concerning the prescription item and the component prescribed or prescribed protocol"
 * code = #indication
-* base = #MedicationRequest
-* base = #CarePlan
+* base[0] = #MedicationRequest
+* base[1] = #CarePlan
 * type = #string
 // Testée sur fhirpath : 
-* expression = "MedicationRequest.note.where(id='indication').text | CarePlan.note.where(id='indication').text"
+* expression = "note.where(id='indication').text"
 * processingMode = #normal

@@ -4,7 +4,7 @@ Usage : #definition
 
 * status = #active
 * name = "OncoFAIRSPMRComponentSubstitution"
-* description = "Search parameter to retrieve the component substitution"
+* description = "Search to find out if the component prescribed is declared non-substitutable in the prescription element "
 * code = #mr-component-substitution
 * base = #MedicationRequest
 * type = #token

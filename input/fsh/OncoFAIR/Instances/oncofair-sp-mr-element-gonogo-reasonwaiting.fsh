@@ -4,7 +4,7 @@ Usage : #definition
 
 * status = #active
 * name = "OncoFAIRSPMRElementGonogoReasonWaiting"
-* description = "Search parameter to retrieve the element goNogo reason waiting"
+* description = "Search for the element goNogo reason waiting"
 * code = #mr-element-gonogo-reasonwaiting
 * base = #MedicationRequest
 * type = #token
