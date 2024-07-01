@@ -22,7 +22,7 @@ Correspond à l’activité induite par un élément de prescription et sa posol
 
 * occurencePeriod MS
 * occurencePeriod.start 1..1
-* occurencePeriod.start ^short = "Actual start date and time of administration of the administration element"
+* occurencePeriod.start ^short = "Effective date and time for startinf administration of the administration element"
 * occurencePeriod.end ^short = "Effective date and time for ending administration of the administration element"
 
 * dosage MS
@@ -41,6 +41,9 @@ Correspond à l’activité induite par un élément de prescription et sa posol
 * category contains
     code 0..1 and 
     nature 0..1
+
+/*category[code] ^short = "Code identifying the nature of the administration element"
+category[nature] ^short = "Nature of the primary packaging of the delivery element"*/
 
 
 * note MS
@@ -64,10 +67,6 @@ Correspond à l’activité induite par un élément de prescription et sa posol
         OncoFAIRElementForm named oncofair-element-form 0..1
 
 
-/*category[code] ^short = "Code identifying the nature of the administration element"
-category[nature] ^short = "Nature of the primary packaging of the delivery element"*/
-
-
 Mapping:  mapping_OncoFAIRMedicationAdministrationElement
 Source:   OncoFAIRMedicationAdministrationElement
 Id:       mapping-oncofair-medicationradministration-element
@@ -79,8 +78,6 @@ Title:    "Mapping du profil OncoFAIR MedicationAdministration Element"
 * request -> "ElementPrescription"
 
 * identifier -> "idElementAdministration"
-
-* category -> "codeElementAdministration"
 
 * dosage.method -> "typeElementAdministration"
 * dosage.route -> "voieAdministration"

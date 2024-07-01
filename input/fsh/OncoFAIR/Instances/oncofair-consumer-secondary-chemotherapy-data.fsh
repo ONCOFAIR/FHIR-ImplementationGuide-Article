@@ -270,6 +270,16 @@ Usage: #definition
 
 // Medication Administration Element
 
+* rest.resource[=].searchParam[+].name = "ma-method"
+* rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-ma-method)
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].documentation = "Type of administration element"
+
+* rest.resource[=].searchParam[+].name = "ma-category"
+* rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-ma-category)
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].documentation = "Code identifying the nature of the administration element"
+
 * rest.resource[=].searchParam[+].name = "element-form"
 * rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-element-form)
 * rest.resource[=].searchParam[=].type = #token
@@ -285,10 +295,12 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Specifies, where applicable, the exact point on the body where the product is to be applied to the patient. By default, the place of administration is that shown in the prescription element associated with the administration element"
 
-// D/H début/fin prévue
-// D/H début/fin effective
-
 // Medication Administration Component
+
+* rest.resource[=].searchParam[+].name = "date"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/medications-date"
+* rest.resource[=].searchParam[=].type = #date
+* rest.resource[=].searchParam[=].documentation = "Effective date and time for starting/ending administration of the administration element"
 
 * rest.resource[=].searchParam[+].name = "ma-comments"
 * rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-ma-comments)
