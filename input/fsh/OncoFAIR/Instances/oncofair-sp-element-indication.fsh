@@ -1,4 +1,4 @@
-/*Instance : oncofair-sp-element-indication
+Instance : oncofair-sp-element-indication
 InstanceOf : SearchParameter
 Usage : #definition
 
@@ -10,4 +10,4 @@ Usage : #definition
 * type = #string
 // Testée sur fhirpath : 
 * expression = "MedicationRequest.note.where(id='indication').text"
-* processingMode = #normal*/
+* processingMode = #normal

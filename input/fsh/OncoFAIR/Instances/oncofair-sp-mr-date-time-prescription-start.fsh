@@ -1,4 +1,4 @@
-/*Instance : oncofair-sp-mr-date-time-prescription-start
+Instance : oncofair-sp-mr-date-time-prescription-start
 InstanceOf : SearchParameter
 Usage : #definition
 
@@ -10,4 +10,4 @@ Usage : #definition
 * type = #date
 // Testée sur fhirpath : 
 * expression = "MedicationRequest.effectiveDosePeriod.start"
-* processingMode = #normal*/
+* processingMode = #normal

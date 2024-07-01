@@ -1,4 +1,4 @@
-/*Instance : oncofair-sp-mr-element-rate-posology
+Instance : oncofair-sp-mr-element-rate-posology
 InstanceOf : SearchParameter
 Usage : #definition
 
@@ -10,4 +10,4 @@ Usage : #definition
 * type = #number
 // Testée sur fhirpath : 
 * expression = "MedicationRequest.dosageInstruction.doseAndRate.rate.as(Quantity)"
-* processingMode = #normal*/
+* processingMode = #normal

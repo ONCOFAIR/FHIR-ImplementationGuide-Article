@@ -1,4 +1,4 @@
-/*Instance : oncofair-sp-cp-date-time-reference
+Instance : oncofair-sp-cp-date-time-reference
 InstanceOf : SearchParameter
 Usage : #definition
 
@@ -10,4 +10,4 @@ Usage : #definition
 * type = #date
 // Testée sur fhirpath : 
 * expression = "CarePlan.extension.where(url='http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-cp-treatment').extension.where(url='dateTimeReference').value"
-* processingMode = #normal*/
+* processingMode = #normal

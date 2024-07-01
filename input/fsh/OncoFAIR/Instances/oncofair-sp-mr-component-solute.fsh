@@ -1,4 +1,4 @@
-/*Instance : oncofair-sp-mr-component-solute
+Instance : oncofair-sp-mr-component-solute
 InstanceOf : SearchParameter
 Usage : #definition
 
@@ -10,4 +10,4 @@ Usage : #definition
 * type = #token
 // Testée sur fhirpath : 
 * expression = "MedicationRequest.extension.where(url='http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-component-solute').value"
-* processingMode = #normal*/
+* processingMode = #normal

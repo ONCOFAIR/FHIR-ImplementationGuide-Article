@@ -1,4 +1,4 @@
-/*Instance : oncofair-sp-mr-type-elementprescrption
+Instance : oncofair-sp-mr-type-elementprescrption
 InstanceOf : SearchParameter
 Usage : #definition
 
@@ -10,4 +10,4 @@ Usage : #definition
 * type = #token
 // Testée sur fhirpath : 
 * expression = "MedicationRequest.dosageInstruction.where(id='element').method"
-* processingMode = #normal*/
+* processingMode = #normal

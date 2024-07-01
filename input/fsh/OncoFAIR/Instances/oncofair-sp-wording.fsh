@@ -1,13 +1,14 @@
-Instance : oncofair-sp-ma-wording
+Instance : oncofair-sp-wording
 InstanceOf : SearchParameter
 Usage : #definition
 
 * status = #active
 * name = "OncoFAIRSPMAWording"
 * description = "Search for wording on the administration element"
-* code = #ma-wording
+* code = #wording
 * base = #MedicationAdministration
+* base = #MedicationRequest
 * type = #string
 // Testée sur fhirpath : 
-* expression = "MedicationAdministration.note.where(id='wording').text"
+* expression = "MedicationAdministration.note.where(id='wording').text | MedicationRequest.note.where(id='wording').text"
 * processingMode = #normal

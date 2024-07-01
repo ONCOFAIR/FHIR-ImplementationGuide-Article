@@ -1,4 +1,4 @@
-/*Instance : oncofair-sp-mr-element-duration-posology
+Instance : oncofair-sp-mr-element-duration-posology
 InstanceOf : SearchParameter
 Usage : #definition
 
@@ -10,4 +10,4 @@ Usage : #definition
 * type = #number
 // Testée sur fhirpath : 
 * expression = "MedicationRequest.dosageInstruction.timing.repeat.duration"
-* processingMode = #normal*/
+* processingMode = #normal

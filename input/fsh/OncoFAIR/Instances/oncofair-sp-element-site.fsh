@@ -1,4 +1,4 @@
-/*Instance : oncofair-sp-element-site
+Instance : oncofair-sp-element-site
 InstanceOf : SearchParameter
 Usage : #definition
 
@@ -10,4 +10,4 @@ Usage : #definition
 * type = #token
 // Testée sur fhirpath : 
 * expression = "MedicationAdministration.dosage.site"
-* processingMode = #normal*/
+* processingMode = #normal
