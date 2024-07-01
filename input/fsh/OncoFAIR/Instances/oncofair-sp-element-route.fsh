@@ -6,8 +6,7 @@ Usage : #definition
 * name = "OncoFAIRSPElementRoute"
 * description = "Search for the route of administration element"
 * code = #element-route
-* base = #MedicationAdministration
-* base = #MedicationRequest
+* base = #MedicationAdministration#MedicationRequest
 * type = #token
 // Testée sur fhirpath : 
 * expression = "MedicationAdministration.dosage.route | MedicationRequest.dosageInstruction.where(id='element').route"

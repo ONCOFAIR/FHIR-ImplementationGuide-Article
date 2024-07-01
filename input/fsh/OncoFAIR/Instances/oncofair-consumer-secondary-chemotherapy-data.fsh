@@ -4,7 +4,7 @@ Usage: #definition
 
 * status = #draft
 * name = "OncoFAIR Consumer of secondary chemotherapy data"
-* title = "OncoFAIR-Consumer-secondary-hemotherapy-data"
+* title = "OncoFAIR-Consumer-secondary-chemotherapy-data"
 * experimental = true
 * description = "A structure or professional using chemotherapy data (complete or aggregated). These data may be used for a variety of purposes (pharmacovigilance, clinical studies, etc.). "
 * kind = #requirements
