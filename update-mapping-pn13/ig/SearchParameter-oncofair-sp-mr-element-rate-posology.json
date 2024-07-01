@@ -1,0 +1,27 @@
+{
+  "resourceType" : "SearchParameter",
+  "id" : "oncofair-sp-mr-element-rate-posology",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter oncofair-sp-mr-element-rate-posology</b></p><a name=\"oncofair-sp-mr-element-rate-posology\"> </a><a name=\"hconcofair-sp-mr-element-rate-posology\"> </a><a name=\"hconcofair-sp-mr-element-rate-posology-en-US\"> </a><h2>OncoFAIRSPMRRatePosology</h2><p>Parameter <code>mr-element-rate-posology</code>:<code>number</code></p><div><p>Search parameter to XXX</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R5/medicationrequest.html\">MedicationRequest</a></td></tr><tr><td>Expression</td><td><code>MedicationRequest.dosageInstruction.doseAndRate.rate.as(Quantity)</code></td></tr><tr><td>Processing Mode</td><td>Normal</td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: It's up to the server whether the parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: It's up to the server whether the parameter can have multiple values (separated by comma) where at least one must be true</li></ul></td></tr></table></div>"
+  },
+  "url" : "http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-element-rate-posology",
+  "version" : "0.1.0",
+  "name" : "OncoFAIRSPMRRatePosology",
+  "status" : "active",
+  "date" : "2024-07-01T08:31:50+00:00",
+  "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
+  "contact" : [{
+    "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://ltsi.univ-rennes.fr"
+    }]
+  }],
+  "description" : "Search parameter to XXX",
+  "code" : "mr-element-rate-posology",
+  "base" : ["MedicationRequest"],
+  "type" : "number",
+  "expression" : "MedicationRequest.dosageInstruction.doseAndRate.rate.as(Quantity)",
+  "processingMode" : "normal"
+}

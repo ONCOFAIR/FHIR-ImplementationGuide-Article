@@ -112,6 +112,13 @@
     "name" : "OncoFAIR"
   },
   {
+    "id" : "oncofair-sp-cp-date-time-reference",
+    "type" : "SearchParameter",
+    "url" : "http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-cp-date-time-reference",
+    "version" : "0.1.0",
+    "name" : "OncoFAIRSPCPDateTimeReference"
+  },
+  {
     "id" : "oncofair-sp-cp-title",
     "type" : "SearchParameter",
     "url" : "http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-cp-title",
@@ -124,6 +131,20 @@
     "url" : "http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-element-form",
     "version" : "0.1.0",
     "name" : "OncoFAIRSPElementForm"
+  },
+  {
+    "id" : "oncofair-sp-element-indication",
+    "type" : "SearchParameter",
+    "url" : "http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-element-indication",
+    "version" : "0.1.0",
+    "name" : "OncoFAIRSPElementIndication"
+  },
+  {
+    "id" : "oncofair-sp-element-site",
+    "type" : "SearchParameter",
+    "url" : "http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-element-site",
+    "version" : "0.1.0",
+    "name" : "OncoFAIRSPElementSite"
   },
   {
     "id" : "oncofair-sp-ma-comments",
@@ -154,18 +175,46 @@
     "name" : "OncoFAIRSPMAPrescribedQuantity"
   },
   {
-    "id" : "oncofair-sp-ma-wording",
-    "type" : "SearchParameter",
-    "url" : "http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-ma-wording",
-    "version" : "0.1.0",
-    "name" : "OncoFAIRSPMAWording"
-  },
-  {
     "id" : "oncofair-sp-medication-type",
     "type" : "SearchParameter",
     "url" : "http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-medication-type",
     "version" : "0.1.0",
     "name" : "OncoFAIRSPMedicationType"
+  },
+  {
+    "id" : "oncofair-sp-mr-component-solute",
+    "type" : "SearchParameter",
+    "url" : "http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-component-solute",
+    "version" : "0.1.0",
+    "name" : "OncoFAIRSPMRComponentSolute"
+  },
+  {
+    "id" : "oncofair-sp-mr-component-substitution",
+    "type" : "SearchParameter",
+    "url" : "http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-component-substitution",
+    "version" : "0.1.0",
+    "name" : "OncoFAIRSPMRComponentSubstitution"
+  },
+  {
+    "id" : "oncofair-sp-mr-date-time-prescription-end",
+    "type" : "SearchParameter",
+    "url" : "http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-date-time-prescription-end",
+    "version" : "0.1.0",
+    "name" : "OncoFAIRSPMRDateTimePrescriptionEnd"
+  },
+  {
+    "id" : "oncofair-sp-mr-date-time-prescription-start",
+    "type" : "SearchParameter",
+    "url" : "http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-date-time-prescription-start",
+    "version" : "0.1.0",
+    "name" : "OncoFAIRSPMRDateTimePrescriptionStart"
+  },
+  {
+    "id" : "oncofair-sp-mr-element-duration-posology",
+    "type" : "SearchParameter",
+    "url" : "http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-element-duration-posology",
+    "version" : "0.1.0",
+    "name" : "OncoFAIRSPMRDurationPosology"
   },
   {
     "id" : "oncofair-sp-mr-element-frequency-posology",
@@ -175,11 +224,81 @@
     "name" : "OncoFAIRSPMRFrequencyPosology"
   },
   {
+    "id" : "oncofair-sp-mr-element-gonogo-reasonwaiting",
+    "type" : "SearchParameter",
+    "url" : "http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-element-gonogo-reasonwaiting",
+    "version" : "0.1.0",
+    "name" : "OncoFAIRSPMRElementGonogoReasonWaiting"
+  },
+  {
+    "id" : "oncofair-sp-mr-element-gonogo-status",
+    "type" : "SearchParameter",
+    "url" : "http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-element-gonogo-status",
+    "version" : "0.1.0",
+    "name" : "OncoFAIRSPMRElementGonogoStatus"
+  },
+  {
+    "id" : "oncofair-sp-mr-element-quantity-posology",
+    "type" : "SearchParameter",
+    "url" : "http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-element-quantity-posology",
+    "version" : "0.1.0",
+    "name" : "OncoFAIRSPMRQuantityPosology"
+  },
+  {
+    "id" : "oncofair-sp-mr-element-rate-posology",
+    "type" : "SearchParameter",
+    "url" : "http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-element-rate-posology",
+    "version" : "0.1.0",
+    "name" : "OncoFAIRSPMRRatePosology"
+  },
+  {
+    "id" : "oncofair-sp-mr-element-reason",
+    "type" : "SearchParameter",
+    "url" : "http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-element-reason",
+    "version" : "0.1.0",
+    "name" : "OncoFAIRSPMRElementReason"
+  },
+  {
+    "id" : "oncofair-sp-mr-exempt-ltc",
+    "type" : "SearchParameter",
+    "url" : "http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-exempt-ltc",
+    "version" : "0.1.0",
+    "name" : "OncoFAIRSPMRExemptLTC"
+  },
+  {
+    "id" : "oncofair-sp-mr-is-dosage-referent",
+    "type" : "SearchParameter",
+    "url" : "http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-is-dosage-referent",
+    "version" : "0.1.0",
+    "name" : "OncoFAIRSPMRIsDosageReferent"
+  },
+  {
+    "id" : "oncofair-sp-mr-prescribed-component-quantity",
+    "type" : "SearchParameter",
+    "url" : "http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-prescribed-component-quantity",
+    "version" : "0.1.0",
+    "name" : "OncoFAIRSPMRPrescribedComponentQuantity"
+  },
+  {
     "id" : "oncofair-sp-mr-prescription-validation-date",
     "type" : "SearchParameter",
     "url" : "http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-prescription-validation-date",
     "version" : "0.1.0",
     "name" : "OncoFAIRSPMRPrescriptionValidationDate"
+  },
+  {
+    "id" : "oncofair-sp-mr-type-elementprescrption",
+    "type" : "SearchParameter",
+    "url" : "http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-type-elementprescrption",
+    "version" : "0.1.0",
+    "name" : "OncoFAIRSPMRTypeElementPrescription"
+  },
+  {
+    "id" : "oncofair-sp-wording",
+    "type" : "SearchParameter",
+    "url" : "http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-wording",
+    "version" : "0.1.0",
+    "name" : "OncoFAIRSPMAWording"
   },
   {
     "id" : "oncofair-careplan",
