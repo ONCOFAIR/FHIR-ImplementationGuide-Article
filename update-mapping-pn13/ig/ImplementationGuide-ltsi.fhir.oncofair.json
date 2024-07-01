@@ -10,7 +10,7 @@
   "name" : "OncoFAIR",
   "title" : "OncoFAIR",
   "status" : "draft",
-  "date" : "2024-07-01T09:30:15+00:00",
+  "date" : "2024-07-01T10:02:25+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -617,10 +617,34 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-ma-category"
+      },
+      "name" : "oncofair-sp-ma-category",
+      "description" : "Search for code identifying the nature of the administration element",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
         "reference" : "SearchParameter/oncofair-sp-ma-comments"
       },
       "name" : "oncofair-sp-ma-comments",
       "description" : "Search for comments on the administration element",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-ma-method"
+      },
+      "name" : "oncofair-sp-ma-method",
+      "description" : "Search for type of administration element",
       "isExample" : false
     },
     {

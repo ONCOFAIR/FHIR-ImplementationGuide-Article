@@ -11,7 +11,7 @@
   <name value="OncoFAIR"/>
   <title value="OncoFAIR"/>
   <status value="draft"/>
-  <date value="2024-07-01T09:30:15+00:00"/>
+  <date value="2024-07-01T10:02:25+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -566,10 +566,32 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
+        <reference value="SearchParameter/oncofair-sp-ma-category"/>
+      </reference>
+      <name value="oncofair-sp-ma-category"/>
+      <description value="Search for code identifying the nature of the administration element"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
         <reference value="SearchParameter/oncofair-sp-ma-comments"/>
       </reference>
       <name value="oncofair-sp-ma-comments"/>
       <description value="Search for comments on the administration element"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/oncofair-sp-ma-method"/>
+      </reference>
+      <name value="oncofair-sp-ma-method"/>
+      <description value="Search for type of administration element"/>
       <isExample value="false"/>
     </resource>
     <resource>

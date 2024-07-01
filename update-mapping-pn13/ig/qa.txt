@@ -3,7 +3,7 @@ OncoFAIR : Validation Results
 
 err = 5, warn = 45, info = 17
 IG Publisher Version: 1.6.13
-Generated Mon Jul 01 09:31:13 UTC 2024. FHIR version 5.0.0 for ltsi.fhir.oncofair#0.1.0 (canonical = http://ltsi.univ-rennes.fr)
+Generated Mon Jul 01 10:03:23 UTC 2024. FHIR version 5.0.0 for ltsi.fhir.oncofair#0.1.0 (canonical = http://ltsi.univ-rennes.fr)
  Build Errors : 0 / 31 / 0
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/CapabilityStatement-oncofair-consumer-secondary-chemotherapy-data : 0 / 1 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/CarePlan-ExampleOncoFAIRCarePlan : 0 / 0 / 4
@@ -43,7 +43,9 @@ Generated Mon Jul 01 09:31:13 UTC 2024. FHIR version 5.0.0 for ltsi.fhir.oncofai
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/SearchParameter-oncofair-sp-element-route : 1 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/SearchParameter-oncofair-sp-element-site : 1 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/SearchParameter-oncofair-sp-indication : 1 / 0 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/SearchParameter-oncofair-sp-ma-category : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/SearchParameter-oncofair-sp-ma-comments : 0 / 0 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/SearchParameter-oncofair-sp-ma-method : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/SearchParameter-oncofair-sp-ma-planned-quantity : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/SearchParameter-oncofair-sp-ma-prescribed-quantity : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/SearchParameter-oncofair-sp-medication-type : 0 / 0 / 1
@@ -200,7 +202,9 @@ ERROR: SearchParameter/oncofair-sp-element-route: SearchParameter.expression: Er
 ERROR: SearchParameter/oncofair-sp-element-site: SearchParameter.expression: Error in search expression 'MedicationAdministration.dosage.site | MedicationRequest.dosageInstruction.where(id='element').site': Error evaluating FHIRPath expression: The name 'MedicationAdministration' is not valid for any of the possible types: [http://hl7.org/fhir/StructureDefinition/MedicationRequest] (@char 3)
 == fsh-generated/resources/SearchParameter-oncofair-sp-indication.json ==
 ERROR: SearchParameter/oncofair-sp-indication: SearchParameter.expression: Error in search expression 'MedicationRequest.note.where(id='indication').text | CarePlan.note.where(id='indication').text': Error evaluating FHIRPath expression: The name 'MedicationRequest' is not valid for any of the possible types: [http://hl7.org/fhir/StructureDefinition/CarePlan] (@char 3)
+== fsh-generated/resources/SearchParameter-oncofair-sp-ma-category.json ==
 == fsh-generated/resources/SearchParameter-oncofair-sp-ma-comments.json ==
+== fsh-generated/resources/SearchParameter-oncofair-sp-ma-method.json ==
 == fsh-generated/resources/SearchParameter-oncofair-sp-ma-planned-quantity.json ==
 == fsh-generated/resources/SearchParameter-oncofair-sp-ma-prescribed-quantity.json ==
 == fsh-generated/resources/SearchParameter-oncofair-sp-medication-type.json ==

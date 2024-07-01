@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIR"] ; # 
   fhir:title [ fhir:v "OncoFAIR"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-07-01T09:30:15+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-07-01T10:02:25+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -662,11 +662,35 @@
          fhir:value [ fhir:v "SearchParameter" ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-ma-category> ;
+         fhir:reference [ fhir:v "SearchParameter/oncofair-sp-ma-category" ]
+       ] ;
+       fhir:name [ fhir:v "oncofair-sp-ma-category" ] ;
+       fhir:description [ fhir:v "Search for code identifying the nature of the administration element" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-ma-comments> ;
          fhir:reference [ fhir:v "SearchParameter/oncofair-sp-ma-comments" ]
        ] ;
        fhir:name [ fhir:v "oncofair-sp-ma-comments" ] ;
        fhir:description [ fhir:v "Search for comments on the administration element" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-ma-method> ;
+         fhir:reference [ fhir:v "SearchParameter/oncofair-sp-ma-method" ]
+       ] ;
+       fhir:name [ fhir:v "oncofair-sp-ma-method" ] ;
+       fhir:description [ fhir:v "Search for type of administration element" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
