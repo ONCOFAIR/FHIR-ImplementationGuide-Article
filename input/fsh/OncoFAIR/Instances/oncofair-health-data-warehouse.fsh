@@ -1,20 +1,20 @@
-Instance : oncofair-consumer-secondary-chemotherapy-data
+Instance : oncofair-health-data-warehouse
 InstanceOf : CapabilityStatement
 Usage: #definition
 
 * status = #draft
-* name = "OncoFAIRConsumerOfSecondaryChemotherapyData"
-* title = "OncoFAIR Consumer secondary chemotherapy data"
+* name = "OncoFAIRHealthDataWarehouse"
+* title = "OncoFAIR Health Data Warehouse"
 * experimental = true
-* description = "A structure or professional using chemotherapy data (complete or aggregated). These data may be used for a variety of purposes (pharmacovigilance, clinical studies, etc.). "
+* description = "A database intended to be used for research, studies or evaluation in the field of health."
 * kind = #requirements
 * fhirVersion = #5.0.0
 * date = "2024-06-19T15:15:00+01:00"
 * format[0] = #xml
 * format[+] = #json
 
-* rest.mode = #client
-* rest.documentation = "Search and consultation of aggregate data on chemotherapy"
+* rest.mode = #server
+* rest.documentation = "A database intended to be used for research, studies or evaluation in the field of health."
 * rest.security.cors = false
 * rest.security.service = $restful-security-service#OAuth
 
@@ -83,8 +83,8 @@ Usage: #definition
 // Declaration for MedicationRequest
 * rest.resource[+].type = #MedicationRequest
 * rest.resource[=].profile = Canonical(oncofair-medicationrequest-prescription)
-* rest.resource[=].supportedProfile[0] = Canonical(oncofair-medicationrequest-element)
-* rest.resource[=].supportedProfile[1] = Canonical(oncofair-medicationrequest-component)
+* rest.resource[=].supportedProfile = Canonical(oncofair-medicationrequest-element)
+* rest.resource[=].supportedProfile = Canonical(oncofair-medicationrequest-component)
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].interaction[+].code = #read
 * rest.resource[=].interaction[=].documentation = "Only 'top-level' attributes can be updated using patch interaction."
@@ -254,11 +254,10 @@ Usage: #definition
 
 * rest.resource[+].type = #MedicationAdministration
 * rest.resource[=].profile = Canonical(oncofair-medicationadministration-element)
-* rest.resource[=].supportedProfile[0] = Canonical(oncofair-medicationadministration-component)
-* rest.resource[=].supportedProfile[1] = Canonical(oncofair-medicationadministration-report)
+* rest.resource[=].supportedProfile = Canonical(oncofair-medicationadministration-component)
+* rest.resource[=].supportedProfile = Canonical(oncofair-medicationadministration-report)
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].interaction[+].code = #read
- 
 * rest.resource[=].interaction[=].documentation = "Only 'top-level' attributes can be updated using patch interaction."
 
 // Medication Administration Element
