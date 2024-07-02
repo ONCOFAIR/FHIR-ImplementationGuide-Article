@@ -11,7 +11,7 @@
   <name value="OncoFAIR"/>
   <title value="OncoFAIR"/>
   <status value="draft"/>
-  <date value="2024-07-01T15:03:37+00:00"/>
+  <date value="2024-07-02T14:09:09+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -398,6 +398,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/oncofair-health-data-warehouse"/>
+      </reference>
+      <name value="OncoFAIR Health Data Warehouse"/>
+      <description value="A database intended to be used for research, studies or evaluation in the field of health."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -493,6 +504,17 @@
       </reference>
       <name value="OncoFAIR Patient"/>
       <description value="Contains the patient's identity details needed to ensure that the prescription is properly taken into account. &#xD;&#xA;&#xA;Contient les informations d’identité du patient nécessaires à la bonne prise en compte de la prescription médicamenteuse."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/oncofair-producer-chemotherapy-data"/>
+      </reference>
+      <name value="OncoFAIR Producer Chemotherapy Data"/>
+      <description value="Software for tracking chemotherapy information relating to a patient. The software generates chemotherapy data by means of data updates by medical staff."/>
       <isExample value="false"/>
     </resource>
     <resource>

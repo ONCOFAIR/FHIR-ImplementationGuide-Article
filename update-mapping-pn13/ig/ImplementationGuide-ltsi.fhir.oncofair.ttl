@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIR"] ; # 
   fhir:title [ fhir:v "OncoFAIR"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-07-01T15:03:37+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-07-02T14:09:09+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -479,6 +479,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CapabilityStatement" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/CapabilityStatement/oncofair-health-data-warehouse> ;
+         fhir:reference [ fhir:v "CapabilityStatement/oncofair-health-data-warehouse" ]
+       ] ;
+       fhir:name [ fhir:v "OncoFAIR Health Data Warehouse" ] ;
+       fhir:description [ fhir:v "A database intended to be used for research, studies or evaluation in the field of health." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
@@ -583,6 +595,18 @@
        ] ;
        fhir:name [ fhir:v "OncoFAIR Patient" ] ;
        fhir:description [ fhir:v "Contains the patient's identity details needed to ensure that the prescription is properly taken into account. \r\n\nContient les informations d’identité du patient nécessaires à la bonne prise en compte de la prescription médicamenteuse." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CapabilityStatement" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/CapabilityStatement/oncofair-producer-chemotherapy-data> ;
+         fhir:reference [ fhir:v "CapabilityStatement/oncofair-producer-chemotherapy-data" ]
+       ] ;
+       fhir:name [ fhir:v "OncoFAIR Producer Chemotherapy Data" ] ;
+       fhir:description [ fhir:v "Software for tracking chemotherapy information relating to a patient. The software generates chemotherapy data by means of data updates by medical staff." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

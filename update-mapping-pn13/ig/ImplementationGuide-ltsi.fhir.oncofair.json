@@ -10,7 +10,7 @@
   "name" : "OncoFAIR",
   "title" : "OncoFAIR",
   "status" : "draft",
-  "date" : "2024-07-01T15:03:37+00:00",
+  "date" : "2024-07-02T14:09:09+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -434,6 +434,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CapabilityStatement"
+      }],
+      "reference" : {
+        "reference" : "CapabilityStatement/oncofair-health-data-warehouse"
+      },
+      "name" : "OncoFAIR Health Data Warehouse",
+      "description" : "A database intended to be used for research, studies or evaluation in the field of health.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -537,6 +549,18 @@
       },
       "name" : "OncoFAIR Patient",
       "description" : "Contains the patient's identity details needed to ensure that the prescription is properly taken into account. \r\n\nContient les informations d’identité du patient nécessaires à la bonne prise en compte de la prescription médicamenteuse.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CapabilityStatement"
+      }],
+      "reference" : {
+        "reference" : "CapabilityStatement/oncofair-producer-chemotherapy-data"
+      },
+      "name" : "OncoFAIR Producer Chemotherapy Data",
+      "description" : "Software for tracking chemotherapy information relating to a patient. The software generates chemotherapy data by means of data updates by medical staff.",
       "isExample" : false
     },
     {

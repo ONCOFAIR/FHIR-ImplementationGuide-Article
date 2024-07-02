@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/CapabilityStatement/oncofair-producer-chemotherapy-data> a fhir:CapabilityStatement ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "oncofair-producer-chemotherapy-data"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CapabilityStatement oncofair-producer-chemotherapy-data</b></p><a name=\"oncofair-producer-chemotherapy-data\"> </a><a name=\"hconcofair-producer-chemotherapy-data\"> </a><a name=\"hconcofair-producer-chemotherapy-data-en-US\"> </a><h2 id=\"title\">OncoFAIR Producer Chemotherapy Data</h2><ul><li>Implementation Guide Version: 0.1.0 </li><li>FHIR Version: 5.0.0 </li><li>Supported Formats: <code>xml</code>, <code>json</code></li><li>Supported Patch Formats: </li><li>Published on: 2024-06-19 15:15:00+0100 </li><li>Published by: DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL </li></ul><blockquote class=\"impl-note\"><p><strong>Note to Implementers: FHIR Capabilities</strong></p><p>Any FHIR capability may be 'allowed' by the system unless explicitly marked as 'SHALL NOT'. A few items are marked as MAY in the Implementation Guide to highlight their potential relevance to the use case.</p></blockquote><h2 id=\"rest\">FHIR RESTful Capabilities</h2><div class=\"panel panel-default\"><div class=\"panel-heading\"><h3 id=\"mode1\" class=\"panel-title\">Mode: <code>client</code></h3></div><div class=\"panel-body\"><div><p>Feeding primary chemotherapy data into a health data warehouse via queries</p>\n</div><div class=\"lead\"><em>Security</em></div><div class=\"row\"><div class=\"col-lg-6\">Enable CORS: no</div><div class=\"col-lg-6\">Security services supported: <code>OAuth</code></div></div><div class=\"lead\"><em>Summary of System-wide Interactions</em></div></div></div></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/CapabilityStatement/oncofair-producer-chemotherapy-data"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "OncoFAIRProducerChemotherapyData"] ; # 
+  fhir:title [ fhir:v "OncoFAIR Producer Chemotherapy Data"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-06-19T15:15:00+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://ltsi.univ-rennes.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Software for tracking chemotherapy information relating to a patient. The software generates chemotherapy data by means of data updates by medical staff."] ; # 
+  fhir:kind [ fhir:v "requirements"] ; # 
+  fhir:fhirVersion [ fhir:v "5.0.0"] ; # 
+  fhir:format ( [ fhir:v "xml"] [ fhir:v "json"] ) ; # 
+  fhir:rest ( [
+     fhir:mode [ fhir:v "client" ] ;
+     fhir:documentation [ fhir:v "Feeding primary chemotherapy data into a health data warehouse via queries" ] ;
+     fhir:security [
+       fhir:cors [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:service ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/restful-security-service"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "OAuth" ]
+         ] )
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
