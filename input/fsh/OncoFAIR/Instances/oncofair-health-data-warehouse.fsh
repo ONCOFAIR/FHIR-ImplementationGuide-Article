@@ -25,7 +25,7 @@ Usage: #definition
 * rest.resource[=].profile = Canonical(oncofair-patient)
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].interaction[+].code = #read
-* rest.resource[=].interaction[=].documentation = "Only 'top-level' attributes can be updated using patch interaction."
+* rest.resource[=].interaction[+].code = #create
 
 * rest.resource[=].searchParam[+].name = "identifier"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Patient-identifier"
@@ -38,8 +38,7 @@ Usage: #definition
 * rest.resource[=].profile = Canonical(oncofair-encounter)
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].interaction[+].code = #read
-* rest.resource[=].interaction[=].documentation = "Only 'top-level' attributes can be updated using patch interaction."
-
+* rest.resource[=].interaction[+].code = #create
 * rest.resource[=].searchParam[+].name = "identifier"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/clinical-identifier"
 * rest.resource[=].searchParam[=].type = #token
@@ -50,7 +49,7 @@ Usage: #definition
 * rest.resource[=].profile = Canonical(oncofair-medication)
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].interaction[+].code = #read
-* rest.resource[=].interaction[=].documentation = "Only 'top-level' attributes can be updated using patch interaction."
+* rest.resource[=].interaction[+].code = #create
 //* rest.resource[=].searchRevInclude = "XXX"*/
 
 
@@ -87,8 +86,7 @@ Usage: #definition
 * rest.resource[=].supportedProfile = Canonical(oncofair-medicationrequest-component)
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].interaction[+].code = #read
-* rest.resource[=].interaction[=].documentation = "Only 'top-level' attributes can be updated using patch interaction."
-
+* rest.resource[=].interaction[+].code = #create
 // Paramètres de recherche communs à MR
 
 * rest.resource[=].searchParam[+].name = "identifier"
@@ -222,8 +220,7 @@ Usage: #definition
 * rest.resource[=].profile = Canonical(oncofair-careplan)
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].interaction[+].code = #read
-* rest.resource[=].interaction[=].documentation = "Only 'top-level' attributes can be updated using patch interaction."
-
+* rest.resource[=].interaction[+].code = #create
 * rest.resource[=].searchParam[+].name = "identifier"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/clinical-identifier"
 * rest.resource[=].searchParam[=].type = #token
@@ -258,8 +255,7 @@ Usage: #definition
 * rest.resource[=].supportedProfile = Canonical(oncofair-medicationadministration-report)
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].interaction[+].code = #read
-* rest.resource[=].interaction[=].documentation = "Only 'top-level' attributes can be updated using patch interaction."
-
+* rest.resource[=].interaction[+].code = #create
 // Medication Administration Element
 
 * rest.resource[=].searchParam[+].name = "ma-method"

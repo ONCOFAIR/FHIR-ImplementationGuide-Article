@@ -126,9 +126,6 @@ The following is a list of generic profiles :
 ### Dependencies
 
 {% include dependency-table.xhtml %}
-<!--#### Extensions 
-
-FHIR extensions such as `TreatmentCycleNumber` and `TreatmentDayNumber` are used for oncology treatment-specific information.-->
 
 ### FHIR interaction
 
@@ -139,10 +136,10 @@ The following interactions can be applied:
 * *Create* method to add a new resource to the server. Uses the `HTTP POST` method.
 * *Update* to update an existing resource. Use the `HTTP PUT` method.
 
-Finally, the body of HTTP requests is a FHIR resource that can be formatted in XML, JSON or RDF.
+<!--Finally, the body of HTTP requests is a FHIR resource that can be formatted in XML, JSON or RDF.
 {% sql SELECT '[' || Name ||'](StructureDefinition-' || id || '.html)' as "Titre du profil", Title FROM Resources WHERE Type = 'StructureDefinition'%}
 
 
 ---
 
-<!-- [Return to contents](file:///D:/Home/bguilbert/Documents/fhir/oncofair/output/toc.html "Return to contents") -->
+[Return to contents](file:///D:/Home/bguilbert/Documents/fhir/oncofair/output/toc.html "Return to contents") -->

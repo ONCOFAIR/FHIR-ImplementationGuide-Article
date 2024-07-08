@@ -24,12 +24,25 @@ pages:
   index.md:
     title: Accueil
   mapping.md:
-    title: Mapping PN13/FHIR R5 
+    title: Mapping PN13/FHIR R5
+  specifications_techniques.md : 
+      flux_alimentation.md:
+          title : Flux 01 - Alimenter par des requêtes un EDS avec des données de chimiothérapie
+      flux_requete_etude_faisabilite.md:
+          title : Flux 02 - Requêter des données de chimiothérapie pour une étude de faisabilité
+      flux_requete_etude_multicentrique.md:
+          title : Flux 03 - Requêter des données de chimiothérapie pour une étude multicentrique
+    
+     
 
 menu:
   Accueil: index.html
   Mapping: mapping.html
   Ressources de conformité: artifacts.html
+  Description des flux :
+      Flux 01 - Alimenter par des requêtes un EDS avec des données de chimiothérapie : flux_alimentation.html
+      Flux 02 - Requêter des données de chimiothérapie pour une étude de faisabilité : flux_requete_etude_faisabilite.html
+      Flux 03 - Requêter des données de chimiothérapie pour une étude multicentrique : flux_requete_etude_multicentrique.html
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
