@@ -73,8 +73,8 @@
       }
     },
     "/Patient": {
-      "summary": "manage the collection of resources of type Patient",
-      "description": "Access to services to manage the collection of all resources of type Patient",
+      "summary": "Manager for resources of type Patient",
+      "description": "The Manager for resources of type Patient: provides services to manage the collection of all the Patient instances",
       "get": {
         "summary": "Search all resources of type Patient based on a set of criteria",
         "operationId": "searchPatient",
@@ -130,6 +130,80 @@
             "schema": {
               "type": "string"
             }
+          }
+        ]
+      },
+      "post": {
+        "summary": "Create a new resource",
+        "operationId": "createPatient",
+        "requestBody": {
+          "description": "The new state of the resource",
+          "required": true,
+          "content": {
+            "application/fhir+json": {
+              "schema": {
+                "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Patient"
+              }
+            },
+            "application/fhir+xml": {
+              "schema": {
+                "$ref": "https://build.fhir.org/Patient.xsd"
+              }
+            }
+          }
+        },
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://build.fhir.org/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned after being updated",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Patient"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://build.fhir.org/Patient.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
           }
         ]
       }
@@ -200,8 +274,8 @@
       }
     },
     "/Encounter": {
-      "summary": "manage the collection of resources of type Encounter",
-      "description": "Access to services to manage the collection of all resources of type Encounter",
+      "summary": "Manager for resources of type Encounter",
+      "description": "The Manager for resources of type Encounter: provides services to manage the collection of all the Encounter instances",
       "get": {
         "summary": "Search all resources of type Encounter based on a set of criteria",
         "operationId": "searchEncounter",
@@ -257,6 +331,80 @@
             "schema": {
               "type": "string"
             }
+          }
+        ]
+      },
+      "post": {
+        "summary": "Create a new resource",
+        "operationId": "createEncounter",
+        "requestBody": {
+          "description": "The new state of the resource",
+          "required": true,
+          "content": {
+            "application/fhir+json": {
+              "schema": {
+                "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Encounter"
+              }
+            },
+            "application/fhir+xml": {
+              "schema": {
+                "$ref": "https://build.fhir.org/Encounter.xsd"
+              }
+            }
+          }
+        },
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://build.fhir.org/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned after being updated",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Encounter"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://build.fhir.org/Encounter.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
           }
         ]
       }
@@ -327,8 +475,8 @@
       }
     },
     "/Medication": {
-      "summary": "manage the collection of resources of type Medication",
-      "description": "Access to services to manage the collection of all resources of type Medication",
+      "summary": "Manager for resources of type Medication",
+      "description": "The Manager for resources of type Medication: provides services to manage the collection of all the Medication instances",
       "get": {
         "summary": "Search all resources of type Medication based on a set of criteria",
         "operationId": "searchMedication",
@@ -414,6 +562,80 @@
             }
           }
         ]
+      },
+      "post": {
+        "summary": "Create a new resource",
+        "operationId": "createMedication",
+        "requestBody": {
+          "description": "The new state of the resource",
+          "required": true,
+          "content": {
+            "application/fhir+json": {
+              "schema": {
+                "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Medication"
+              }
+            },
+            "application/fhir+xml": {
+              "schema": {
+                "$ref": "https://build.fhir.org/Medication.xsd"
+              }
+            }
+          }
+        },
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://build.fhir.org/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned after being updated",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Medication"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://build.fhir.org/Medication.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
       }
     },
     "/Medication/{rid}": {
@@ -482,8 +704,8 @@
       }
     },
     "/MedicationRequest": {
-      "summary": "manage the collection of resources of type MedicationRequest",
-      "description": "Access to services to manage the collection of all resources of type MedicationRequest",
+      "summary": "Manager for resources of type MedicationRequest",
+      "description": "The Manager for resources of type MedicationRequest: provides services to manage the collection of all the MedicationRequest instances",
       "get": {
         "summary": "Search all resources of type MedicationRequest based on a set of criteria",
         "operationId": "searchMedicationRequest",
@@ -729,6 +951,80 @@
             }
           }
         ]
+      },
+      "post": {
+        "summary": "Create a new resource",
+        "operationId": "createMedicationRequest",
+        "requestBody": {
+          "description": "The new state of the resource",
+          "required": true,
+          "content": {
+            "application/fhir+json": {
+              "schema": {
+                "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/MedicationRequest"
+              }
+            },
+            "application/fhir+xml": {
+              "schema": {
+                "$ref": "https://build.fhir.org/MedicationRequest.xsd"
+              }
+            }
+          }
+        },
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://build.fhir.org/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned after being updated",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/MedicationRequest"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://build.fhir.org/MedicationRequest.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
       }
     },
     "/MedicationRequest/{rid}": {
@@ -797,8 +1093,8 @@
       }
     },
     "/CarePlan": {
-      "summary": "manage the collection of resources of type CarePlan",
-      "description": "Access to services to manage the collection of all resources of type CarePlan",
+      "summary": "Manager for resources of type CarePlan",
+      "description": "The Manager for resources of type CarePlan: provides services to manage the collection of all the CarePlan instances",
       "get": {
         "summary": "Search all resources of type CarePlan based on a set of criteria",
         "operationId": "searchCarePlan",
@@ -889,6 +1185,80 @@
             }
           }
         ]
+      },
+      "post": {
+        "summary": "Create a new resource",
+        "operationId": "createCarePlan",
+        "requestBody": {
+          "description": "The new state of the resource",
+          "required": true,
+          "content": {
+            "application/fhir+json": {
+              "schema": {
+                "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/CarePlan"
+              }
+            },
+            "application/fhir+xml": {
+              "schema": {
+                "$ref": "https://build.fhir.org/CarePlan.xsd"
+              }
+            }
+          }
+        },
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://build.fhir.org/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned after being updated",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/CarePlan"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://build.fhir.org/CarePlan.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
       }
     },
     "/CarePlan/{rid}": {
@@ -957,8 +1327,8 @@
       }
     },
     "/MedicationAdministration": {
-      "summary": "manage the collection of resources of type MedicationAdministration",
-      "description": "Access to services to manage the collection of all resources of type MedicationAdministration",
+      "summary": "Manager for resources of type MedicationAdministration",
+      "description": "The Manager for resources of type MedicationAdministration: provides services to manage the collection of all the MedicationAdministration instances",
       "get": {
         "summary": "Search all resources of type MedicationAdministration based on a set of criteria",
         "operationId": "searchMedicationAdministration",
@@ -1103,6 +1473,80 @@
             "schema": {
               "type": "string"
             }
+          }
+        ]
+      },
+      "post": {
+        "summary": "Create a new resource",
+        "operationId": "createMedicationAdministration",
+        "requestBody": {
+          "description": "The new state of the resource",
+          "required": true,
+          "content": {
+            "application/fhir+json": {
+              "schema": {
+                "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/MedicationAdministration"
+              }
+            },
+            "application/fhir+xml": {
+              "schema": {
+                "$ref": "https://build.fhir.org/MedicationAdministration.xsd"
+              }
+            }
+          }
+        },
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://build.fhir.org/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned after being updated",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/MedicationAdministration"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://build.fhir.org/MedicationAdministration.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
           }
         ]
       }
