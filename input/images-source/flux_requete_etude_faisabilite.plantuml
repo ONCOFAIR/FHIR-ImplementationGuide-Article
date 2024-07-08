@@ -1,9 +1,0 @@
-@startuml
-actor "Consommateur" as C
-actor "Entrepôt de données de santé" as EDS
-
-C -> EDS: <color:blue>Flux 2.1</color> GET [Ressource]
-EDS -> EDS: Ajouter de nouveaux critères si besoin
-EDS -> EDS: Récupérer les données correspondant à la requête
-EDS --> C: <color:blue>Flux 2.2</color> 200 OK Bundle Searchset
-@enduml
