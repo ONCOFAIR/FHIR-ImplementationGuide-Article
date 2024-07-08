@@ -1,0 +1,1 @@
+<div>{%include multicentric_study_research_flow.svg%}</div>

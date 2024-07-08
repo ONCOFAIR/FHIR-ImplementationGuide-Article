@@ -1,0 +1,1 @@
+<div>{%include feasibility_study_research_flow.svg%}</div>
