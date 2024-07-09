@@ -2,8 +2,8 @@
 actor "Consummer" as C
 actor "Health data warehouse" as EDS
 
-C -> EDS: <color:blue>Flux 2.1</color> GET [Ressource]
+C -> EDS: <color:blue>Flow 2.1</color> GET [Ressource]
 EDS -> EDS: Add new criteria if necessary
 EDS -> EDS: Retrieve the data corresponding to the query
-EDS --> C: <color:blue>Flux 2.2</color> 200 OK Bundle Searchset
+EDS --> C: <color:blue>Flow 2.2</color> 200 OK Bundle Searchset
 @enduml
