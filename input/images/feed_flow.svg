@@ -3,8 +3,8 @@
 actor "Health data warehouse" as EDS
 actor "Data producer" as PD
 
-EDS -> PD: <color:blue>Flux 1.1</color> GET [Resource]
-PD - -> EDS: <color:blue>Flux 1.2</color> 200 OK Bundle Searchset
+EDS -> PD: <color:blue>Flow 1.1</color> GET [Resource]
+PD - -> EDS: <color:blue>Flow 1.2</color> 200 OK Bundle Searchset
 EDS -> EDS: Add received data to existing data
 
 @enduml
