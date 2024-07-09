@@ -12,4 +12,28 @@ The search criteria may include elements such as the patient ID, the type of che
 
 The health data warehouse receives the request and searches for data corresponding to the criteria provided. If necessary, the warehouse can add additional criteria to refine the search, for example by taking into account patients who have expressed opposition to the use of their data or who are already taking part in other clinical trials.
 
-Once the relevant data has been retrieved, the warehouse sends the aggregated results to the consumer in the form of a FHIR bundle with a 200 OK code. The response includes information on the impact of each criterion on the results obtained, enabling the consumer to understand how the inclusion and exclusion criteria have influenced the aggregated data. If necessary, the consumer can then send a new query with modified criteria to further refine the results of the feasibility study.
+Once the relevant data has been retrieved, the warehouse sends the aggregated results to the consumer in the form of a FHIR bundle = searchset with a 200 OK code. The response includes information on the impact of each criterion on the results obtained, enabling the consumer to understand how the inclusion and exclusion criteria have influenced the aggregated data. If necessary, the consumer can then send a new query with modified criteria to further refine the results of the feasibility study.
+
+### Search criteria
+
+{% sql SELECT '[' || Name ||'](SearchParameter-' || id || '.html)' as "Search criteria", Description FROM Resources WHERE Type = 'SearchParameter'%}
+
+### Examples of queries
+
+#### Scenario 1
+
+__Scenario description__ : A researcher wants to identify patients who have received a specific chemotherapy treatment for a feasibility study.
+
+__Example__ : Search for patients who have received a specific chemotherapy drug (identified by the code 387207008) 
+
+__Request__ : 
+
+
+#### Scenario 2
+
+__Scenario description__ : A researcher wants to identify patients who have particular comorbidities for a feasibility study.
+
+__Example__ : Search for patients who are on a diet (identified by the code REGIME).
+
+__Request__ : 
+
