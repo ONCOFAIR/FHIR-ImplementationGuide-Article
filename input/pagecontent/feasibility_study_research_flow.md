@@ -26,7 +26,17 @@ __Scenario description__ : A researcher wants to identify patients who have rece
 
 __Example__ : Search for patients who have received a specific chemotherapy drug (identified by the code 387207008) 
 
-__Request__ : 
+__Request__ : GET [BASE]/Medication?clinical-code=387207008
+&_revinclude=MedicationRequest:medication:medication.concept=component #inclu les MedicationRequest qui référencent les Medication
+&_include=MedicationRequest:basedOn:medication.concept=element #inclu les MRC référencées par les MRE
+&_include=MedicationRequest:basedOn:medication.concept=prescription #inclu les MRE référencées par les MRP
+&_include=MedicationRequest=encounter #inclu les MedicationRequest référencés par les Encounter
+&_include=Encounter:patient #inclu les Encouter référenceés par les Patient
+
+ou 
+
+GET [BASE]/Medication?clinical-code=387207008
+&_revinclude=MedicationRequest
 
 
 #### Scenario 2

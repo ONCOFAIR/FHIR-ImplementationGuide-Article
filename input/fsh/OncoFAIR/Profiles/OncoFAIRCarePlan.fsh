@@ -1,10 +1,11 @@
 Profile: OncoFAIRCarePlan
-Parent: CarePlan
+Parent: Treatment
 Id: oncofair-careplan
 Title: "OncoFAIR CarePlan" 
 Description : "This object describes the chaining of prescription elements attached to the prescribed protocol. Its structure enables the chaining of nested sub-protocols. \r\n
 Cet objet décrit le chaînage des éléments de prescription rattachés au protocole prescrit. Sa structure permet le chaînage de sous-protocoles imbriqués." 
 
+* category = #C3665472
 
 * partOf ^short = "Describes the reference protocol from which the prescribed protocol is derived"
 * partOf only Reference(OncoFAIRCarePlan)

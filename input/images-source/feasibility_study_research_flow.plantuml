@@ -4,6 +4,5 @@ actor "Health data warehouse" as EDS
 
 C -> EDS: <color:blue>Flow 2.1</color> GET [Resource]
 EDS -> EDS: Add new criteria if necessary
-EDS -> EDS: Retrieve the data corresponding to the query
 EDS --> C: <color:blue>Flow 2.2</color> 200 OK Bundle Searchset
 @enduml
