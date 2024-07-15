@@ -5,6 +5,7 @@ Title: "OncoFAIR CarePlan"
 Description : "This object describes the chaining of prescription elements attached to the prescribed protocol. Its structure enables the chaining of nested sub-protocols. \r\n
 Cet objet décrit le chaînage des éléments de prescription rattachés au protocole prescrit. Sa structure permet le chaînage de sous-protocoles imbriqués." 
 
+
 * category = #C3665472
 
 * partOf ^short = "Describes the reference protocol from which the prescribed protocol is derived"
@@ -40,7 +41,7 @@ Cet objet décrit le chaînage des éléments de prescription rattachés au prot
     OncoFAIRCPTreatment named oncofair-cp-treatment 1..1 MS and
     OncoFAIRPharmacistAdvice named oncofair-pharmacist-advice 0..1 MS
 
-
+/*
 Mapping:  mapping_OncoFAIRCarePlan
 Source:   OncoFAIRCarePlan
 Id:       mapping-oncofair-careplan
@@ -53,4 +54,4 @@ Title:    "Mapping du profil OncoFAIR CarePlan"
 * status -> "CreationArretModificationValidation"
 
 * note[indication] -> "indication"
-* note[comments] -> "commentaires"
+* note[comments] -> "commentaires"*/

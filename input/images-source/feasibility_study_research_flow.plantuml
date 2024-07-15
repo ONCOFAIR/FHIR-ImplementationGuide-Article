@@ -3,6 +3,5 @@ actor "Consummer" as C
 actor "Health data warehouse" as EDS
 
 C -> EDS: <color:blue>Flow 2.1</color> GET [Resource]
-EDS -> EDS: Add new criteria if necessary
 EDS --> C: <color:blue>Flow 2.2</color> 200 OK Bundle Searchset
 @enduml
