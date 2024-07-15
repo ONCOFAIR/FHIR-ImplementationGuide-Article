@@ -1,5 +1,5 @@
 Profile: OncoFAIRCarePlan
-Parent: Treatment
+Parent: CarePlan
 Id: oncofair-careplan
 Title: "OncoFAIR CarePlan" 
 Description : "This object describes the chaining of prescription elements attached to the prescribed protocol. Its structure enables the chaining of nested sub-protocols. \r\n
