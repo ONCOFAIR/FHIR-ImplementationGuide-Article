@@ -1,9 +1,9 @@
 OncoFAIR : Validation Results
 =========================================
 
-err = 0, warn = 15, info = 17
-IG Publisher Version: 1.6.15
-Generated Tue Jul 09 15:06:29 UTC 2024. FHIR version 5.0.0 for ltsi.fhir.oncofair#0.1.0 (canonical = http://ltsi.univ-rennes.fr)
+err = 0, warn = 17, info = 18
+IG Publisher Version: 1.6.18
+Generated Wed Jul 17 09:55:34 UTC 2024. FHIR version 5.0.0 for ltsi.fhir.oncofair#0.1.0 (canonical = http://ltsi.univ-rennes.fr)
  Build Errors : 0 / 2 / 0
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/CapabilityStatement-oncofair-consumer-secondary-chemotherapy-data : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/CapabilityStatement-oncofair-health-data-warehouse : 0 / 0 / 1
@@ -67,7 +67,7 @@ Generated Tue Jul 09 15:06:29 UTC 2024. FHIR version 5.0.0 for ltsi.fhir.oncofai
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/SearchParameter-oncofair-sp-mr-prescription-validation-date : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/SearchParameter-oncofair-sp-mr-type-elementprescrption : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/SearchParameter-oncofair-sp-wording : 0 / 0 / 1
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-careplan : 0 / 0 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-careplan : 0 / 2 / 2
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-cp-treatment : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-element-form : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-encounter : 0 / 0 / 1
@@ -195,6 +195,9 @@ WARNING: Observation/ExampleOncoFAIRObservation: Observation: Best Practice Reco
 == fsh-generated/resources/SearchParameter-oncofair-sp-mr-type-elementprescrption.json ==
 == fsh-generated/resources/SearchParameter-oncofair-sp-wording.json ==
 == fsh-generated/resources/StructureDefinition-oncofair-careplan.json ==
+WARNING: StructureDefinition/oncofair-careplan: StructureDefinition.snapshot.element[27].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/oncofair-careplan: StructureDefinition.differential.element[8].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+INFORMATION: StructureDefinition/oncofair-careplan: StructureDefinition.snapshot.element[27].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 == fsh-generated/resources/StructureDefinition-oncofair-cp-treatment.json ==
 == fsh-generated/resources/StructureDefinition-oncofair-element-form.json ==
 == fsh-generated/resources/StructureDefinition-oncofair-encounter.json ==
