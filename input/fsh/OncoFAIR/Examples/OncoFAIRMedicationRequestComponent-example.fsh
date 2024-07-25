@@ -2,6 +2,7 @@ Instance: ExampleOncoFAIRMedicationRequestComponent
 InstanceOf: OncoFAIRMedicationRequestComponent
 Title: "Example OncoFAIR MedicationRequest Component"
 Description: "Example instance of OncoFAIRMedicationRequestComponent"
+Usage: #example
 * status = #active
 * intent = #order
 

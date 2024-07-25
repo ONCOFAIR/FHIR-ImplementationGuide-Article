@@ -10,9 +10,14 @@ The search criteria may include elements such as the patient ID, the type of che
 
 ### Flow 2.2
 
-The health data warehouse receives the request and searches for data corresponding to the criteria provided. If necessary, the warehouse can add additional criteria to refine the search, for example by taking into account patients who have expressed opposition to the use of their data or who are already taking part in other clinical trials.
+The health data warehouse receives the request and searches for data corresponding to the criteria provided. 
 
-Once the relevant data has been retrieved, the warehouse sends the aggregated results to the consumer in the form of a FHIR bundle = searchset with a 200 OK code. The response includes information on the impact of each criterion on the results obtained, enabling the consumer to understand how the inclusion and exclusion criteria have influenced the aggregated data. If necessary, the consumer can then send a new query with modified criteria to further refine the results of the feasibility study.
+*Note : Once the request has been received, if necessary, the warehouse can add additional criteria to refine the search, for example by taking into account patients who have expressed opposition to the use of their data or who are already taking part in other clinical trials.  
+Before sending the data, the health data warehouse needs to retrieves information on the impact of each criterion on the results obtained, enabling the consumer to understand how the inclusion and exclusion criteria have influenced the aggregated data. These internal processes do not appear on the FHIR flow diagram.*
+
+Once the relevant data has been retrieved, the warehouse sends the aggregated results to the consumer in the form of a FHIR bundle = searchset with a 200 OK code. The response includes . If necessary, the consumer can then send a new query with modified criteria to further refine the results of the feasibility study.
+
+
 
 ### Search criteria
 
@@ -33,10 +38,6 @@ __Request__ : GET [BASE]/Medication?clinical-code=387207008
 &_include=MedicationRequest=encounter #inclu les MedicationRequest référencés par les Encounter
 &_include=Encounter:patient #inclu les Encouter référenceés par les Patient
 
-ou 
-
-GET [BASE]/Medication?clinical-code=387207008
-&_revinclude=MedicationRequest
 
 
 #### Scenario 2

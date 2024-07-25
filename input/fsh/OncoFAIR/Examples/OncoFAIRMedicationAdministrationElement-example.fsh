@@ -2,7 +2,7 @@ Instance: ExampleOncoFAIRMedicationAdministrationElement
 InstanceOf: OncoFAIRMedicationAdministrationElement
 Title: "Example OncoFAIR MedicationAdministration Element"
 Description: "An example instance of an OncoFAIR MedicationAdministration Element with required fields populated."
-
+Usage: #example
 * partOf = Reference(ExampleOncoFAIRMedicationAdministrationReport)
 
 

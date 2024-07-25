@@ -44,6 +44,23 @@ Usage: #definition
 * rest[0].resource[=].searchParam[=].type = #token
 * rest[0].resource[=].searchParam[=].documentation = "Identifier of the patient's stay"
 
+// Declaration for Observation
+* rest[0].resource[+].type = #Observation
+* rest[0].resource[=].profile = Canonical(oncofair-observation)
+* rest[0].resource[=].interaction[+].code = #search-type
+* rest[0].resource[=].interaction[+].code = #read
+
+* rest[0].resource[=].searchParam[+].name = "clinical-code"
+* rest[0].resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/clinical-code"
+* rest[0].resource[=].searchParam[=].type = #token
+* rest[0].resource[=].searchParam[=].documentation = "Nature of additional information representing by LOINC code"
+
+* rest[0].resource[=].searchParam[+].name = "clinical-date"
+* rest[0].resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/clinical-date"
+* rest[0].resource[=].searchParam[=].type = #date
+* rest[0].resource[=].searchParam[=].documentation = "Date and time of registration of the additional information"
+
+
 //Medication
 * rest[0].resource[+].type = #Medication
 * rest[0].resource[=].profile = Canonical(oncofair-medication)
@@ -635,6 +652,21 @@ Usage: #definition
 * rest[1].resource[=].searchParam[=].type = #reference
 * rest[1].resource[=].searchParam[=].documentation = "Identification of the person who planned, administered or monitored the administration of the medicines represented by the administration elements"
 
+// Declaration for Observation
+* rest[1].resource[+].type = #Observation
+* rest[1].resource[=].profile = Canonical(oncofair-observation)
+* rest[1].resource[=].interaction[+].code = #search-type
+* rest[1].resource[=].interaction[+].code = #read
+
+* rest[1].resource[=].searchParam[+].name = "clinical-code"
+* rest[1].resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/clinical-code"
+* rest[1].resource[=].searchParam[=].type = #token
+* rest[1].resource[=].searchParam[=].documentation = "Nature of additional information representing by LOINC code"
+
+* rest[1].resource[=].searchParam[+].name = "clinical-date"
+* rest[1].resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/clinical-date"
+* rest[1].resource[=].searchParam[=].type = #date
+* rest[1].resource[=].searchParam[=].documentation = "Date and time of registration of the additional information"
 
 
 

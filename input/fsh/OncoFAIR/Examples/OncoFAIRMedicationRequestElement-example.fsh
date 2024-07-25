@@ -2,13 +2,16 @@ Instance: ExampleOncoFAIRMedicationRequestElement
 InstanceOf: OncoFAIRMedicationRequestElement
 Title: "Example OncoFAIR MedicationRequest Element"
 Description: "Example instance of OncoFAIRMedicationRequestElement"
+Usage: #example
 
-* basedOn[prescription] = Reference(ExampleOncoFAIRMedicationRequestPrescription)
-* basedOn[element] = Reference(ExampleOncoFAIRMedicationRequestElement)
-* basedOn[protocol] = Reference(ExampleOncoFAIRCarePlan)
-* basedOn[element].extension[oncofair-mr-element-link-type].valueCodeableConcept.coding[0].system = "http://ltsi.univ-rennes.fr/CodeSystem/siph-type-liaison-oncofair-codesystem"
-* basedOn[element].extension[oncofair-mr-element-link-type].valueCodeableConcept.coding[0].code = #COMP 
-* basedOn[element].extension[oncofair-mr-element-link-type].valueCodeableConcept.coding[0].display = "Complément"
+* id = "element"
+
+* basedOn[+] = Reference(ExampleOncoFAIRMedicationRequestPrescription)
+/** basedOn[+] = Reference(ExampleOncoFAIRMedicationRequestElement)
+* basedOn[=].extension[oncofair-mr-element-link-type].valueCodeableConcept.coding[0].system = "http://ltsi.univ-rennes.fr/CodeSystem/siph-type-liaison-oncofair-codesystem"
+* basedOn[=].extension[oncofair-mr-element-link-type].valueCodeableConcept.coding[0].code = #COMP 
+* basedOn[=].extension[oncofair-mr-element-link-type].valueCodeableConcept.coding[0].display = "Complément"
+* basedOn[+] = Reference(ExampleOncoFAIRCarePlan)*/
 
 * device = Reference(ExampleOncoFAIRDeviceDefinition)
 

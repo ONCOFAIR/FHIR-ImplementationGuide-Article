@@ -10,9 +10,13 @@ Search criteria can include parameters such as patient IDs, types of chemotherap
 
 ### Flow 3.2
 
-The health data warehouse receives the request and searches for data corresponding to the criteria provided. The warehouse retrieves the relevant data by querying the databases of the various participating treatment centres.
+The health data warehouse receives the request and searches for data corresponding to the criteria provided. 
+
+*Note: Before sending the aggregated data, the data warehouse queries the databases of the various participating treatment centres. This internal process does not appear on the FHIR flow diagram.*
 
 Once the data has been collected, the warehouse sends the aggregated results to the consumer in the form of a FHIR bundle = searchset with a 200 OK code. The response contains complete patient and chemotherapy treatment information from multiple centres, enabling the consumer to perform a multi-centre analysis of the data received. The consumer receives the information and can carry out the multicentre study with the data collected.
+
+
 
 ### Search criteria
 

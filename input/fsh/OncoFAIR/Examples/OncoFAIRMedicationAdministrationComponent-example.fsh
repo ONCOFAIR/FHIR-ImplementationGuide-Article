@@ -2,10 +2,9 @@ Instance: ExampleOncoFAIRMedicationAdministrationComponent
 InstanceOf: OncoFAIRMedicationAdministrationComponent
 Title: "Example OncoFAIR MedicationAdministration Component"
 Description: "An example instance of an OncoFAIR MedicationAdministration Component with required fields populated."
+Usage: #example
 
 * partOf = Reference(ExampleOncoFAIRMedicationAdministrationElement)
-
-
 
 * medication.concept.coding[0].system = "http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem"
 * medication.concept.coding[0].display = "component"

@@ -1,0 +1,13 @@
+ValueSet: TreatmentType
+Title: "Treatment Type Value Set"
+Description:  "Treatment type"
+* UMLS#C3665472 "Chemotherapy"
+* UMLS#C0279025 "Hormone therapy"
+* UMLS#C1522449 "Therapeutic radiology procedure"
+* UMLS#C0728940 "Surgery"
+* UMLS#C0006098 "Brachytherapy"
+* UMLS#C0021083 "Immunotherapy"
+* UMLS#C0005961 "Bone marrow transplant"
+* UMLS#C0279694 "Monoclonal antibody"
+* UMLS#C93352 "Target therapy"
+* UMLS#C0439673 "Unknown"

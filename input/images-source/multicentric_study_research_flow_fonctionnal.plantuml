@@ -2,6 +2,7 @@
 actor "Consummer" as C
 actor "Health data warehouse" as EDS
 
-C -> EDS: <color:blue>Flow 3.1</color> GET [Resource]
-EDS --> C: <color:blue>Flow 3.2</color> 200 OK Bundle Searchset
+C -> EDS: <color:blue>Flux 3.1</color> Le consommateur envoie une requête à l’entrepôt \npour récupérer des données de chimiothérapie pour une étude multicentrique
+EDS-> EDS : Récupère les données pertinentes : \ninterrogation des bases de données qui participent à l'étude
+EDS --> C : <color:blue>Flux 3.2</color> L’entrepôt envoie les données au consommateur
 @enduml

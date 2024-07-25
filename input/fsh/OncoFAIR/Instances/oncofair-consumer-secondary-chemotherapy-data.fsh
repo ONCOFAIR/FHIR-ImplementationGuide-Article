@@ -43,6 +43,23 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Identifier of the patient's stay"
 
+// Declaration for Observation
+* rest.resource[+].type = #Observation
+* rest.resource[=].profile = Canonical(oncofair-observation)
+* rest.resource[=].interaction[+].code = #search-type
+* rest.resource[=].interaction[+].code = #read
+
+* rest.resource[=].searchParam[+].name = "clinical-code"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/clinical-code"
+* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].documentation = "Nature of additional information representing by LOINC code"
+
+* rest.resource[=].searchParam[+].name = "clinical-date"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/clinical-date"
+* rest.resource[=].searchParam[=].type = #date
+* rest.resource[=].searchParam[=].documentation = "Date and time of registration of the additional information"
+
+
 //Medication
 * rest.resource[+].type = #Medication
 * rest.resource[=].profile = Canonical(oncofair-medication)

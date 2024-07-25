@@ -2,7 +2,7 @@ Instance: ExampleOncoFAIRMedicationAdministrationReport
 InstanceOf: OncoFAIRMedicationAdministrationReport
 Title: "Example OncoFAIR MedicationAdministration Report"
 Description: "An example instance of an OncoFAIR MedicationAdministration Report with required fields populated."
-
+Usage: #example
 * encounter = Reference(ExampleOncoFAIREncounter)
 * performer.actor = Reference(ExampleOncoFAIRPractitioner)
 * identifier.value = "REP-123456"

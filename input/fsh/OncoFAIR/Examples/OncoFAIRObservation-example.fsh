@@ -2,6 +2,7 @@ Instance: ExampleOncoFAIRObservation
 InstanceOf: OncoFAIRObservation
 Title: "Example OncoFAIR Observation"
 Description: "An example instance of OncoFAIR Observation."
+Usage: #example
 
 * status = #final
 * code.coding[0].system = "http://ltsi.univ-rennes.fr/CodeSystem/siph-renscomplement-oncofair-codesystem"
