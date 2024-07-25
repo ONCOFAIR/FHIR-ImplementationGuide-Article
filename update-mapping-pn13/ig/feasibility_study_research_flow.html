@@ -170,9 +170,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="flow-22">Flow 2.2</h3>
 
-<p>The health data warehouse receives the request and searches for data corresponding to the criteria provided. If necessary, the warehouse can add additional criteria to refine the search, for example by taking into account patients who have expressed opposition to the use of their data or who are already taking part in other clinical trials.</p>
+<p>The health data warehouse receives the request and searches for data corresponding to the criteria provided.</p>
 
-<p>Once the relevant data has been retrieved, the warehouse sends the aggregated results to the consumer in the form of a FHIR bundle = searchset with a 200 OK code. The response includes information on the impact of each criterion on the results obtained, enabling the consumer to understand how the inclusion and exclusion criteria have influenced the aggregated data. If necessary, the consumer can then send a new query with modified criteria to further refine the results of the feasibility study.</p>
+<p><em>Note : Once the request has been received, if necessary, the warehouse can add additional criteria to refine the search, for example by taking into account patients who have expressed opposition to the use of their data or who are already taking part in other clinical trials.<br />
+Before sending the data, the health data warehouse needs to retrieves information on the impact of each criterion on the results obtained, enabling the consumer to understand how the inclusion and exclusion criteria have influenced the aggregated data. These internal processes do not appear on the FHIR flow diagram.</em></p>
+
+<p>Once the relevant data has been retrieved, the warehouse sends the aggregated results to the consumer in the form of a FHIR bundle = searchset with a 200 OK code. The response includes . If necessary, the consumer can then send a new query with modified criteria to further refine the results of the feasibility study.</p>
 
 <h3 id="search-criteria">Search criteria</h3>
 
@@ -221,11 +224,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 &amp;_include=MedicationRequest=encounter #inclu les MedicationRequest référencés par les Encounter
 &amp;_include=Encounter:patient #inclu les Encouter référenceés par les Patient</p>
 
-<p>ou</p>
-
-<p>GET [BASE]/Medication?clinical-code=387207008
-&amp;_revinclude=MedicationRequest</p>
-
 <h4 id="scenario-2">Scenario 2</h4>
 
 <p><strong>Scenario description</strong> : A researcher wants to identify patients who have particular comorbidities for a feasibility study.</p>
@@ -253,7 +251,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Jul 17, 2024 09:54+0000">2024-07-17</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Jul 25, 2024 08:23+0000">2024-07-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

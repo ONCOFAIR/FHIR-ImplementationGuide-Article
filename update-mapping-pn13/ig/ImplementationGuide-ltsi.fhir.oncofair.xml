@@ -11,7 +11,7 @@
   <name value="OncoFAIR"/>
   <title value="OncoFAIR"/>
   <status value="draft"/>
-  <date value="2024-07-17T09:54:34+00:00"/>
+  <date value="2024-07-25T08:23:41+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -30,7 +30,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r5"/>
-    <version value="6.0.0"/>
+    <version value="6.0.2"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -93,7 +93,7 @@
         <valueString value="CarePlan"/>
       </extension>
       <reference>
-        <reference value="CarePlan/ExampleOncoFAIRCarePlan"/>
+        <reference value="CarePlan/protocol"/>
       </reference>
       <name value="Example OncoFAIR CarePlan"/>
       <description value="An example instance of an OncoFAIR CarePlan with required fields populated."/>
@@ -199,7 +199,7 @@
         <valueString value="MedicationRequest"/>
       </extension>
       <reference>
-        <reference value="MedicationRequest/ExampleOncoFAIRMedicationRequestElement"/>
+        <reference value="MedicationRequest/element"/>
       </reference>
       <name value="Example OncoFAIR MedicationRequest Element"/>
       <description value="Example instance of OncoFAIRMedicationRequestElement"/>
@@ -211,7 +211,7 @@
         <valueString value="MedicationRequest"/>
       </extension>
       <reference>
-        <reference value="MedicationRequest/ExampleOncoFAIRMedicationRequestPrescription"/>
+        <reference value="MedicationRequest/prescription"/>
       </reference>
       <name value="Example OncoFAIR MedicationRequest Prescription"/>
       <description value="An example instance of OncoFAIR MedicationRequest Prescription."/>
@@ -255,6 +255,30 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/fhir-osiris-example-TumorPathologyEvent-instance-1"/>
+      </reference>
+      <name value="fhir-osiris-example-TumorPathologyEvent-instance-1"/>
+      <description value="Example of TPE from OSIRIS_pivot_TumorPathologyEvent.csv"/>
+      <isExample value="true"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/tumor-pathology-event"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/fhir-osiris-example-TumorPathologyEvent-instance-2"/>
+      </reference>
+      <name value="fhir-osiris-example-TumorPathologyEvent-instance-2"/>
+      <description value="Example of TPE from OSIRIS_pivot_TumorPathologyEvent.csv"/>
+      <isExample value="true"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/tumor-pathology-event"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -273,6 +297,28 @@
       </reference>
       <name value="goNogo Value Set"/>
       <description value="Value Set pour goNogo"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/histologygrade"/>
+      </reference>
+      <name value="Histology"/>
+      <description value="Grade of Histology"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/laterality"/>
+      </reference>
+      <name value="Laterality"/>
+      <description value="Laterality of location (if it exists)"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -339,6 +385,17 @@
       </reference>
       <name value="Medications Value Set"/>
       <description value="ValueSet for medications."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/Morphology"/>
+      </reference>
+      <name value="Morphology Value Set"/>
+      <description value="Cancer morphology"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -1025,6 +1082,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/clinical-trial"/>
+      </reference>
+      <name value="Oncology Clinical Trial"/>
+      <description value="Oncology clinical trial used to associate a Onco Patient to a Clinical Trial"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -1109,6 +1177,83 @@
       </reference>
       <name value="Statut validation pharmaceutique Value Set"/>
       <description value="Value Set pour StatutValidPharm"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/Topography"/>
+      </reference>
+      <name value="Topography Value Set"/>
+      <description value="Cancer topography"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/treatment-line"/>
+      </reference>
+      <name value="Treatment Line Number"/>
+      <description value="The treatment line number"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/TreatmentType"/>
+      </reference>
+      <name value="Treatment Type Value Set"/>
+      <description value="Treatment type"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/Laterality"/>
+      </reference>
+      <name value="Tumor Laterality Value Set"/>
+      <description value="Tumor laterality"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tumor-pathology-event"/>
+      </reference>
+      <name value="Tumor Pathology Event"/>
+      <description value="Tumor Pathology Event (TPE) Condition describing a tumoral event: reference to the parent TPE, laterality, morphology."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/dueTo-tumor-pathology-event"/>
+      </reference>
+      <name value="Tumor Pathology Event Parent"/>
+      <description value="Reference the Tumor Pathology Event from which the metastasis comes from."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/TumorPathologyEventType"/>
+      </reference>
+      <name value="Tumor Pathology Event Type Value Set"/>
+      <description value="Tumor pathology event type"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -1198,6 +1343,18 @@
       <name value="Type évènement Code System"/>
       <description value="Code system pour l'attribut TypeEvenement"/>
       <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ResearchStudy"/>
+      </extension>
+      <reference>
+        <reference value="ResearchStudy/fhir-osiris-example-researchstudy"/>
+      </reference>
+      <name value="Unknown"/>
+      <description value="Example of ResearchStudy from OSIRIS_pivot_Treatment.csv"/>
+      <isExample value="true"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/clinical-trial"/>
     </resource>
     <page>
       <sourceUrl value="toc.html"/>

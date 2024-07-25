@@ -1,6 +1,66 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/Laterality",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "Laterality",
+      "title" : "Tumor Laterality Value Set",
+      "description" : "Tumor laterality",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/umls"],
+      "uses" : {
+      },
+      "StructureDefinition-laterality.html" : "Laterality"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/Morphology",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "Morphology",
+      "title" : "Morphology Value Set",
+      "description" : "Cancer morphology",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/icd-o-3"],
+      "uses" : {
+      },
+      "StructureDefinition-tumor-pathology-event.html" : "Tumor Pathology Event"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/Topography",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "Topography",
+      "title" : "Topography Value Set",
+      "description" : "Cancer topography",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/icd-o-3"],
+      "uses" : {
+      },
+      "StructureDefinition-tumor-pathology-event.html" : "Tumor Pathology Event"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/TreatmentType",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TreatmentType",
+      "title" : "Treatment Type Value Set",
+      "description" : "Treatment type",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/umls"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-careplan.html" : "OncoFAIR CarePlan"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/TumorPathologyEventType",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TumorPathologyEventType",
+      "title" : "Tumor Pathology Event Type Value Set",
+      "description" : "Tumor pathology event type",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/umls"],
+      "uses" : {
+      },
+      "StructureDefinition-tumor-pathology-event.html" : "Tumor Pathology Event"
+    },
+    {
       "url" : "http://ltsi.univ-rennes.fr/ValueSet/concept-medication-oncofair-valueset",
       "version" : "0.1.0",
       "status" : "draft",
@@ -12,12 +72,12 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-oncofair-medicationadministration-report.html" : "OncoFAIR MedicationAdministration Report",
       "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element",
-      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
       "StructureDefinition-oncofair-medicationadministration-component.html" : "OncoFAIR MedicationAdministration Component",
-      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component",
-      "StructureDefinition-oncofair-medicationrequest-prescription.html" : "OncoFAIR MedicationRequest Prescription"
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
+      "StructureDefinition-oncofair-medicationrequest-prescription.html" : "OncoFAIR MedicationRequest Prescription",
+      "StructureDefinition-oncofair-medicationadministration-report.html" : "OncoFAIR MedicationAdministration Report",
+      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component"
     },
     {
       "url" : "http://ltsi.univ-rennes.fr/ValueSet/medical-units-oncofair-valueset",

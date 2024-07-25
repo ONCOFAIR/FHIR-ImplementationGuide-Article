@@ -170,7 +170,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="flow-32">Flow 3.2</h3>
 
-<p>The health data warehouse receives the request and searches for data corresponding to the criteria provided. The warehouse retrieves the relevant data by querying the databases of the various participating treatment centres.</p>
+<p>The health data warehouse receives the request and searches for data corresponding to the criteria provided.</p>
+
+<p><em>Note: Before sending the aggregated data, the data warehouse queries the databases of the various participating treatment centres. This internal process does not appear on the FHIR flow diagram.</em></p>
 
 <p>Once the data has been collected, the warehouse sends the aggregated results to the consumer in the form of a FHIR bundle = searchset with a 200 OK code. The response contains complete patient and chemotherapy treatment information from multiple centres, enabling the consumer to perform a multi-centre analysis of the data received. The consumer receives the information and can carry out the multicentre study with the data collected.</p>
 
@@ -241,7 +243,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Jul 17, 2024 09:54+0000">2024-07-17</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Jul 25, 2024 08:23+0000">2024-07-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

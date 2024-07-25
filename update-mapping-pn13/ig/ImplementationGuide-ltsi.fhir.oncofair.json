@@ -10,7 +10,7 @@
   "name" : "OncoFAIR",
   "title" : "OncoFAIR",
   "status" : "draft",
-  "date" : "2024-07-17T09:54:34+00:00",
+  "date" : "2024-07-25T08:23:41+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -31,7 +31,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r5",
-    "version" : "6.0.0"
+    "version" : "6.0.2"
   },
   {
     "id" : "hl7ext",
@@ -102,7 +102,7 @@
         "valueString" : "CarePlan"
       }],
       "reference" : {
-        "reference" : "CarePlan/ExampleOncoFAIRCarePlan"
+        "reference" : "CarePlan/protocol"
       },
       "name" : "Example OncoFAIR CarePlan",
       "description" : "An example instance of an OncoFAIR CarePlan with required fields populated.",
@@ -217,7 +217,7 @@
         "valueString" : "MedicationRequest"
       }],
       "reference" : {
-        "reference" : "MedicationRequest/ExampleOncoFAIRMedicationRequestElement"
+        "reference" : "MedicationRequest/element"
       },
       "name" : "Example OncoFAIR MedicationRequest Element",
       "description" : "Example instance of OncoFAIRMedicationRequestElement",
@@ -230,7 +230,7 @@
         "valueString" : "MedicationRequest"
       }],
       "reference" : {
-        "reference" : "MedicationRequest/ExampleOncoFAIRMedicationRequestPrescription"
+        "reference" : "MedicationRequest/prescription"
       },
       "name" : "Example OncoFAIR MedicationRequest Prescription",
       "description" : "An example instance of OncoFAIR MedicationRequest Prescription.",
@@ -278,6 +278,32 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/fhir-osiris-example-TumorPathologyEvent-instance-1"
+      },
+      "name" : "fhir-osiris-example-TumorPathologyEvent-instance-1",
+      "description" : "Example of TPE from OSIRIS_pivot_TumorPathologyEvent.csv",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/tumor-pathology-event"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/fhir-osiris-example-TumorPathologyEvent-instance-2"
+      },
+      "name" : "fhir-osiris-example-TumorPathologyEvent-instance-2",
+      "description" : "Example of TPE from OSIRIS_pivot_TumorPathologyEvent.csv",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/tumor-pathology-event"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -297,6 +323,30 @@
       },
       "name" : "goNogo Value Set",
       "description" : "Value Set pour goNogo",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/histologygrade"
+      },
+      "name" : "Histology",
+      "description" : "Grade of Histology",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/laterality"
+      },
+      "name" : "Laterality",
+      "description" : "Laterality of location (if it exists)",
       "isExample" : false
     },
     {
@@ -369,6 +419,18 @@
       },
       "name" : "Medications Value Set",
       "description" : "ValueSet for medications.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Morphology"
+      },
+      "name" : "Morphology Value Set",
+      "description" : "Cancer morphology",
       "isExample" : false
     },
     {
@@ -1118,6 +1180,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/clinical-trial"
+      },
+      "name" : "Oncology Clinical Trial",
+      "description" : "Oncology clinical trial used to associate a Onco Patient to a Clinical Trial",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -1209,6 +1283,90 @@
       },
       "name" : "Statut validation pharmaceutique Value Set",
       "description" : "Value Set pour StatutValidPharm",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Topography"
+      },
+      "name" : "Topography Value Set",
+      "description" : "Cancer topography",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/treatment-line"
+      },
+      "name" : "Treatment Line Number",
+      "description" : "The treatment line number",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/TreatmentType"
+      },
+      "name" : "Treatment Type Value Set",
+      "description" : "Treatment type",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Laterality"
+      },
+      "name" : "Tumor Laterality Value Set",
+      "description" : "Tumor laterality",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tumor-pathology-event"
+      },
+      "name" : "Tumor Pathology Event",
+      "description" : "Tumor Pathology Event (TPE) Condition describing a tumoral event: reference to the parent TPE, laterality, morphology.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dueTo-tumor-pathology-event"
+      },
+      "name" : "Tumor Pathology Event Parent",
+      "description" : "Reference the Tumor Pathology Event from which the metastasis comes from.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/TumorPathologyEventType"
+      },
+      "name" : "Tumor Pathology Event Type Value Set",
+      "description" : "Tumor pathology event type",
       "isExample" : false
     },
     {
@@ -1306,6 +1464,19 @@
       "name" : "Type évènement Code System",
       "description" : "Code system pour l'attribut TypeEvenement",
       "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ResearchStudy"
+      }],
+      "reference" : {
+        "reference" : "ResearchStudy/fhir-osiris-example-researchstudy"
+      },
+      "name" : "Unknown",
+      "description" : "Example of ResearchStudy from OSIRIS_pivot_Treatment.csv",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/clinical-trial"]
     }],
     "page" : {
       "sourceUrl" : "toc.html",

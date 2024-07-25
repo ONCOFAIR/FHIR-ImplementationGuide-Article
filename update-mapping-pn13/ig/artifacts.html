@@ -594,6 +594,24 @@ preparation or an infusion). </p>
 <p>Contient les informations d’identité du patient nécessaires à la bonne prise en compte de la prescription médicamenteuse.</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-clinical-trial.html"
+                  title="StructureDefinition/clinical-trial">Oncology Clinical Trial</a>
+            </td>
+            <td>
+<p>Oncology clinical trial used to associate a Onco Patient to a Clinical Trial</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tumor-pathology-event.html"
+                  title="StructureDefinition/tumor-pathology-event">Tumor Pathology Event</a>
+            </td>
+            <td>
+<p>Tumor Pathology Event (TPE) Condition describing a tumoral event: reference to the parent TPE, laterality, morphology.</p>
+</td>
+         </tr>
       </tbody>
    </table>
    <a name="4"> </a>
@@ -602,6 +620,24 @@ preparation or an infusion). </p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-histologygrade.html"
+                  title="StructureDefinition/histologygrade">Histology</a>
+            </td>
+            <td>
+<p>Grade of Histology</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-laterality.html"
+                  title="StructureDefinition/laterality">Laterality</a>
+            </td>
+            <td>
+<p>Laterality of location (if it exists)</p>
+</td>
+         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-oncofair-cp-treatment.html"
@@ -798,6 +834,24 @@ preparation or an infusion). </p>
 <p>Extension créée dans le cadre d’OncoFAIR contenant la validation et proposition pharmaceutique.</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-treatment-line.html"
+                  title="StructureDefinition/treatment-line">Treatment Line Number</a>
+            </td>
+            <td>
+<p>The treatment line number</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dueTo-tumor-pathology-event.html"
+                  title="StructureDefinition/dueTo-tumor-pathology-event">Tumor Pathology Event Parent</a>
+            </td>
+            <td>
+<p>Reference the Tumor Pathology Event from which the metastasis comes from.</p>
+</td>
+         </tr>
       </tbody>
    </table>
    <a name="5"> </a>
@@ -844,6 +898,14 @@ preparation or an infusion). </p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-Morphology.html" title="ValueSet/Morphology">Morphology Value Set</a>
+            </td>
+            <td>
+<p>Cancer morphology</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-siph-natureproppharm-oncofair-valueset.html"
                   title="ValueSet/siph-natureproppharm-oncofair-valueset">Nature proposition pharmaceutique Value Set</a>
             </td>
@@ -885,6 +947,39 @@ preparation or an infusion). </p>
             </td>
             <td>
 <p>Value Set pour StatutValidPharm</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-Topography.html" title="ValueSet/Topography">Topography Value Set</a>
+            </td>
+            <td>
+<p>Cancer topography</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-TreatmentType.html" title="ValueSet/TreatmentType">Treatment Type Value Set</a>
+            </td>
+            <td>
+<p>Treatment type</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-Laterality.html" title="ValueSet/Laterality">Tumor Laterality Value Set</a>
+            </td>
+            <td>
+<p>Tumor laterality</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-TumorPathologyEventType.html"
+                  title="ValueSet/TumorPathologyEventType">Tumor Pathology Event Type Value Set</a>
+            </td>
+            <td>
+<p>Tumor pathology event type</p>
 </td>
          </tr>
          <tr>
@@ -1094,8 +1189,7 @@ preparation or an infusion). </p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="CarePlan-ExampleOncoFAIRCarePlan.html"
-                  title="CarePlan/ExampleOncoFAIRCarePlan">Example OncoFAIR CarePlan</a>
+               <a href="CarePlan-protocol.html" title="CarePlan/protocol">Example OncoFAIR CarePlan</a>
             </td>
             <td>
 <p>An example instance of an OncoFAIR CarePlan with required fields populated.</p>
@@ -1175,8 +1269,7 @@ preparation or an infusion). </p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="MedicationRequest-ExampleOncoFAIRMedicationRequestElement.html"
-                  title="MedicationRequest/ExampleOncoFAIRMedicationRequestElement">Example OncoFAIR MedicationRequest Element</a>
+               <a href="MedicationRequest-element.html" title="MedicationRequest/element">Example OncoFAIR MedicationRequest Element</a>
             </td>
             <td>
 <p>Example instance of OncoFAIRMedicationRequestElement</p>
@@ -1184,8 +1277,8 @@ preparation or an infusion). </p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="MedicationRequest-ExampleOncoFAIRMedicationRequestPrescription.html"
-                  title="MedicationRequest/ExampleOncoFAIRMedicationRequestPrescription">Example OncoFAIR MedicationRequest Prescription</a>
+               <a href="MedicationRequest-prescription.html"
+                  title="MedicationRequest/prescription">Example OncoFAIR MedicationRequest Prescription</a>
             </td>
             <td>
 <p>An example instance of OncoFAIR MedicationRequest Prescription.</p>
@@ -1218,6 +1311,33 @@ preparation or an infusion). </p>
 <p>An example instance of an OncoFAIR practitioner with an identifier.</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ResearchStudy-fhir-osiris-example-researchstudy.html"
+                  title="ResearchStudy/fhir-osiris-example-researchstudy">Unknown</a>
+            </td>
+            <td>
+<p>Example of ResearchStudy from OSIRIS_pivot_Treatment.csv</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-fhir-osiris-example-TumorPathologyEvent-instance-1.html"
+                  title="Condition/fhir-osiris-example-TumorPathologyEvent-instance-1">fhir-osiris-example-TumorPathologyEvent-instance-1</a>
+            </td>
+            <td>
+<p>Example of TPE from OSIRIS_pivot_TumorPathologyEvent.csv</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-fhir-osiris-example-TumorPathologyEvent-instance-2.html"
+                  title="Condition/fhir-osiris-example-TumorPathologyEvent-instance-2">fhir-osiris-example-TumorPathologyEvent-instance-2</a>
+            </td>
+            <td>
+<p>Example of TPE from OSIRIS_pivot_TumorPathologyEvent.csv</p>
+</td>
+         </tr>
       </tbody>
    </table>
 </div>
@@ -1238,7 +1358,7 @@ preparation or an infusion). </p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Jul 17, 2024 09:54+0000">2024-07-17</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Jul 25, 2024 08:23+0000">2024-07-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

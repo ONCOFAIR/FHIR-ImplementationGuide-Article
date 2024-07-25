@@ -1,11 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="4a962c2f-1f13-4f74-abe0-1d0042275db0"/>
+  <id value="1a013010-eb17-4433-824a-0d1aeeb662d2"/>
   <meta>
-    <lastUpdated value="2024-07-17T09:54:34.482+00:00"/>
+    <lastUpdated value="2024-07-25T08:23:41.147+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="http://ltsi.univ-rennes.fr/ValueSet/Morphology"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #ffcccc; padding: 8px; margin-bottom: 8px">Expansion based on code system fragment http://terminology.hl7.org/CodeSystem/icd-o-3 International Classification of Diseases for Oncology, version 3. version2000</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on codesystem International Classification of Diseases for Oncology, version 3. version2000</p>
+            <p>This value set contains at least 1 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.hl7.org/CodeSystem/icd-o-3-8500/3"> </a>  8500/3
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/icd-o-3</td>
+                <td>Infiltrating duct carcinoma, NOS</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://ltsi.univ-rennes.fr/ValueSet/Morphology"/>
+        <version value="0.1.0"/>
+        <name value="Morphology"/>
+        <title value="Morphology Value Set"/>
+        <status value="draft"/>
+        <date value="2024-07-25T08:23:41+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:c67f4969-dc25-48f8-8cb3-527012e8d580"/>
+          <timestamp value="2024-07-25T08:24:26.522Z"/>
+          <total value="1"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="fragment"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/icd-o-3|2000"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/icd-o-3|2000"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/icd-o-3|2000"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/icd-o-3"/>
+            <code value="8500/3"/>
+            <display value="Infiltrating duct carcinoma, NOS"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://ltsi.univ-rennes.fr/ValueSet/Topography"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #ffcccc; padding: 8px; margin-bottom: 8px">Expansion based on code system fragment http://terminology.hl7.org/CodeSystem/icd-o-3 International Classification of Diseases for Oncology, version 3. version2000</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on codesystem International Classification of Diseases for Oncology, version 3. version2000</p>
+            <p>This value set contains at least 0 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://ltsi.univ-rennes.fr/ValueSet/Topography"/>
+        <version value="0.1.0"/>
+        <name value="Topography"/>
+        <title value="Topography Value Set"/>
+        <status value="draft"/>
+        <date value="2024-07-25T08:23:41+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:586f45d1-c3a5-49b1-a34f-a60ba16802e1"/>
+          <timestamp value="2024-07-25T08:24:26.897Z"/>
+          <total value="0"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="fragment"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/icd-o-3|2000"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/icd-o-3|2000"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/icd-o-3|2000"/>
+          </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="http://ltsi.univ-rennes.fr/ValueSet/concept-medication-oncofair-valueset"/>
     <resource>
@@ -73,10 +227,10 @@
         <title value="Concepts Medication Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-07-17T09:54:34+00:00"/>
+        <date value="2024-07-25T08:23:41+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:c60dd7bf-68a5-4b12-a09d-a16b961ab259"/>
-          <timestamp value="2024-07-17T09:55:10+00:00"/>
+          <identifier value="urn:uuid:4df5bc83-a7a7-4105-922a-a823ef921f4b"/>
+          <timestamp value="2024-07-25T08:24:27+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -3098,10 +3252,10 @@
         <title value="Medical units Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-07-17T09:54:34+00:00"/>
+        <date value="2024-07-25T08:23:41+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:36fcebfc-2bd7-422e-b02f-92d4e1749f47"/>
-          <timestamp value="2024-07-17T09:55:10+00:00"/>
+          <identifier value="urn:uuid:602de7ba-7b90-4396-aece-d958ffa3366d"/>
+          <timestamp value="2024-07-25T08:24:27+00:00"/>
           <total value="368"/>
           <offset value="0"/>
           <parameter>
@@ -5071,10 +5225,10 @@
         <title value="Medications Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-07-17T09:54:34+00:00"/>
+        <date value="2024-07-25T08:23:41+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:c20a5ac9-ea12-4621-abe1-98d6f76e40ff"/>
-          <timestamp value="2024-07-17T09:55:10+00:00"/>
+          <identifier value="urn:uuid:9b29088e-2d94-45f3-a469-4ddcc632dc51"/>
+          <timestamp value="2024-07-25T08:24:27+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -5217,10 +5371,10 @@
         <title value="goNogo Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-07-17T09:54:34+00:00"/>
+        <date value="2024-07-25T08:23:41+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:78b3f198-d755-461d-9cfa-c94be501a028"/>
-          <timestamp value="2024-07-17T09:55:10+00:00"/>
+          <identifier value="urn:uuid:5a048104-4209-4dc1-ad95-96efdb2726da"/>
+          <timestamp value="2024-07-25T08:24:27+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -5559,10 +5713,10 @@
         <title value="Liste Affectation Longue Durée Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-07-17T09:54:34+00:00"/>
+        <date value="2024-07-25T08:23:41+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:5915497d-4c90-4d22-8efd-8285241eb128"/>
-          <timestamp value="2024-07-17T09:55:10+00:00"/>
+          <identifier value="urn:uuid:f5073f31-89b0-4d24-9b7f-49898a1b4f32"/>
+          <timestamp value="2024-07-25T08:24:27+00:00"/>
           <total value="32"/>
           <offset value="0"/>
           <parameter>
@@ -5812,10 +5966,10 @@
         <title value="Nature proposition pharmaceutique Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-07-17T09:54:34+00:00"/>
+        <date value="2024-07-25T08:23:41+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:275d251f-aa1c-4b57-ab22-2398702b0438"/>
-          <timestamp value="2024-07-17T09:55:10+00:00"/>
+          <identifier value="urn:uuid:ca051548-e660-4cad-87ce-963700111ef6"/>
+          <timestamp value="2024-07-25T08:24:28+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -5949,10 +6103,10 @@
         <title value="Paramètres posologie conditionnelle"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-07-17T09:54:34+00:00"/>
+        <date value="2024-07-25T08:23:41+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:b969b576-0a5b-442d-a031-87055291f32f"/>
-          <timestamp value="2024-07-17T09:55:10+00:00"/>
+          <identifier value="urn:uuid:7b70494d-b93e-4997-a177-d005ae5a8941"/>
+          <timestamp value="2024-07-25T08:24:28+00:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -6133,10 +6287,10 @@
         <title value="Renseignement complémentaire Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-07-17T09:54:34+00:00"/>
+        <date value="2024-07-25T08:23:41+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:9a46f590-987e-4f82-b653-3a6450ace37b"/>
-          <timestamp value="2024-07-17T09:55:10+00:00"/>
+          <identifier value="urn:uuid:3ce89fda-8626-44ac-93c4-ce118d150e51"/>
+          <timestamp value="2024-07-25T08:24:28+00:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>
@@ -6329,10 +6483,10 @@
         <title value="Statut composant administré Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-07-17T09:54:34+00:00"/>
+        <date value="2024-07-25T08:23:41+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:575394d1-615f-4164-a75d-9a361d0eb6a4"/>
-          <timestamp value="2024-07-17T09:55:11+00:00"/>
+          <identifier value="urn:uuid:28bd579a-0bdb-4542-8f12-2c5b4ce8bea5"/>
+          <timestamp value="2024-07-25T08:24:28+00:00"/>
           <total value="10"/>
           <offset value="0"/>
           <parameter>
@@ -6456,10 +6610,10 @@
         <title value="Statut validation pharmaceutique Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-07-17T09:54:34+00:00"/>
+        <date value="2024-07-25T08:23:41+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:b62e7317-c348-429d-8862-6c8caf89503f"/>
-          <timestamp value="2024-07-17T09:55:11+00:00"/>
+          <identifier value="urn:uuid:ced7e1e9-7b60-4fba-9ff1-a3ddf1d5d3e5"/>
+          <timestamp value="2024-07-25T08:24:28+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -6583,10 +6737,10 @@
         <title value="Type de liaison Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-07-17T09:54:34+00:00"/>
+        <date value="2024-07-25T08:23:41+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:9f2def93-e1a9-4c3f-9b08-16a939932ec1"/>
-          <timestamp value="2024-07-17T09:55:11+00:00"/>
+          <identifier value="urn:uuid:f6538874-a6e2-4fd6-93cf-53243f47483b"/>
+          <timestamp value="2024-07-25T08:24:28+00:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -6791,10 +6945,10 @@
         <title value="Type de composant Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-07-17T09:54:34+00:00"/>
+        <date value="2024-07-25T08:23:41+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:cabbc9d0-2963-4df4-ac31-764cfe79781b"/>
-          <timestamp value="2024-07-17T09:55:11+00:00"/>
+          <identifier value="urn:uuid:fe702b32-c8a8-4206-a907-a8d6de5584c7"/>
+          <timestamp value="2024-07-25T08:24:28+00:00"/>
           <total value="14"/>
           <offset value="0"/>
           <parameter>
@@ -6994,10 +7148,10 @@
         <title value="Type de l'élément d'administration Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-07-17T09:54:34+00:00"/>
+        <date value="2024-07-25T08:23:41+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:86c2f65e-3b5c-4611-b36d-14566d5f95b2"/>
-          <timestamp value="2024-07-17T09:55:11+00:00"/>
+          <identifier value="urn:uuid:156ffc49-cb9f-40e0-bfbc-68838d89fd5b"/>
+          <timestamp value="2024-07-25T08:24:28+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -7132,10 +7286,10 @@
         <title value="Type de l'évènement Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-07-17T09:54:34+00:00"/>
+        <date value="2024-07-25T08:23:41+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:c7bdb77f-7f4e-4cb2-b57f-0f71b6a945b4"/>
-          <timestamp value="2024-07-17T09:55:11+00:00"/>
+          <identifier value="urn:uuid:ec7e5635-2d01-4aba-8ed3-b7c4e70f67bc"/>
+          <timestamp value="2024-07-25T08:24:28+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>

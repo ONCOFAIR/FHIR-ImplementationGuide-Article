@@ -272,6 +272,18 @@
       "http://hl7.org/fhir/R5/valueset-observation-triggeredbytype.html" : "triggered Bytype"
     },
     {
+      "url" : "http://hl7.org/fhir/publication-status",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "PublicationStatus",
+      "title" : "PublicationStatus",
+      "description" : "The lifecycle status of an artifact.",
+      "oids" : ["2.16.840.1.113883.4.642.4.4"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-publication-status.html" : "PublicationStatus"
+    },
+    {
       "url" : "http://hl7.org/fhir/request-intent",
       "version" : "5.0.0",
       "status" : "draft",
@@ -306,6 +318,145 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R5/valueset-request-status.html" : "RequestStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/research-study-arm-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ResearchStudyArmType",
+      "title" : "ResearchStudy Arm Type Code System",
+      "description" : "Codes for the main intent of the study.",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-research-study-arm-type.html" : "Research Study Arm Type"
+    },
+    {
+      "url" : "http://hl7.org/fhir/research-study-classifiers",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ResearchStudyClassifiers",
+      "title" : "ResearchStudy Classifiers Code System",
+      "description" : "Codes for use in ResearchStudy Resource. This resource (this entire set of content) is being used for active development of a ResearchStudyClassifiers CodeSystem for use for supporting multiple value sets in the FHIR ResearchStudy StructureDefinition.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1967"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-research-study-classifiers.html" : "Research Study Classifiers"
+    },
+    {
+      "url" : "http://hl7.org/fhir/research-study-focus-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ResearchStudyFocusType",
+      "title" : "ResearchStudy Focus Type Code System",
+      "description" : "Codes for the main intent of the study.",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-research-study-focus-type.html" : "Research Study Focus Type"
+    },
+    {
+      "url" : "http://hl7.org/fhir/research-study-objective-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ResearchStudyObjectiveType",
+      "title" : "ResearchStudy Objective Type Code System",
+      "description" : "Codes for the kind of study objective.",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-research-study-objective-type.html" : "Research Study Objective Type"
+    },
+    {
+      "url" : "http://hl7.org/fhir/research-study-party-organization-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ResearchStudyPartyOrganizationType",
+      "title" : "ResearchStudy Party Organization Type Code System",
+      "description" : "This is a ResearchStudy's party organization type.",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-research-study-party-organization-type.html" : "Research Study Party Organization Type"
+    },
+    {
+      "url" : "http://hl7.org/fhir/research-study-party-role",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ResearchStudyPartyRole",
+      "title" : "Research Study Party Role",
+      "description" : "This is a ResearchStudy's party role.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1968"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-research-study-party-role.html" : "Research Study Party Role"
+    },
+    {
+      "url" : "http://hl7.org/fhir/research-study-phase",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ResearchStudyPhase",
+      "title" : "ResearchStudy Phase Code System",
+      "description" : "Codes for the stage in the progression of a therapy from initial experimental use in humans in clinical trials to post-market evaluation.",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-research-study-phase.html" : "Research Study Phase"
+    },
+    {
+      "url" : "http://hl7.org/fhir/research-study-prim-purp-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ResearchStudyPrimaryPurposeType",
+      "title" : "ResearchStudy Primary Purpose Type Code System",
+      "description" : "Codes for the main intent of a research study.",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-research-study-prim-purp-type.html" : "Research Study Primary Purpose Type"
+    },
+    {
+      "url" : "http://hl7.org/fhir/research-study-reason-stopped",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ResearchStudyReasonStopped",
+      "title" : "ResearchStudy Reason Stopped Code System",
+      "description" : "Codes for why the study ended prematurely.",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-research-study-reason-stopped.html" : "Research Study Reason Stopped"
+    },
+    {
+      "url" : "http://hl7.org/fhir/research-study-status",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ResearchStudyStatus",
+      "title" : "Research Study Status",
+      "description" : "Codes that convey the current status of the research study.",
+      "oids" : [
+        "2.16.840.1.113883.4.642.4.820",
+        "2.16.840.1.113883.4.642.1.803"
+      ],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-research-study-status.html" : "Research Study Status"
+    },
+    {
+      "url" : "http://hl7.org/fhir/study-design",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "StudyDesign",
+      "title" : "Study Design",
+      "description" : "This is a set of terms for study design characteristics.",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-study-design.html" : "Study Design"
+    },
+    {
+      "url" : "http://hl7.org/fhir/title-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "TitleType",
+      "title" : "Title Type",
+      "description" : "Used to express the reason and specific aspect for the variant title, such as language and specific language.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1875"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-title-type.html" : "Title Type"
     },
     {
       "url" : "http://loinc.org",
@@ -486,6 +637,42 @@
       "http://hl7.org/fhir/R5/valueset-encounter-admit-source.html" : "Admit Source"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/condition-category",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ConditionCategoryCodes",
+      "title" : "Condition Category Codes",
+      "description" : "Preferred value set for Condition Categories.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1073"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-condition-category.html" : "Condition Category Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ConditionClinicalStatusCodes",
+      "title" : "Condition Clinical Status Codes",
+      "description" : "Preferred value set for Condition Clinical Status.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1074"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-condition-clinical.html" : "Condition Clinical Status Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "ConditionVerificationStatus",
+      "title" : "ConditionVerificationStatus",
+      "description" : "The verification status to support or decline the clinical status of the condition or diagnosis.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1075"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-condition-ver-status.html" : "Condition Verification Status"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
       "version" : "1.0.0",
       "status" : "active",
@@ -531,7 +718,7 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1069"],
       "uses" : {
       },
-      "http://terminology.hl7.org/6.0.0/ValueSet-dose-rate-type.html" : "DoseAndRateType"
+      "http://terminology.hl7.org/6.0.2/ValueSet-dose-rate-type.html" : "DoseAndRateType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/encounter-special-arrangements",
@@ -568,6 +755,30 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R5/valueset-encounter-type.html" : "Encounter Type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "SecurityRoleType",
+      "title" : "Security Role Type",
+      "description" : "This CodeSystem contains Additional FHIR-defined Security Role types not defined elsewhere",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-participation-role-type.html" : "Participation Role Type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "IcdO3",
+      "title" : "International Classification of Diseases for Oncology, version 3.",
+      "description" : "International Classification of Diseases for Oncology, version 3. For more information see http://www.who.int/classifications/icd/adaptations/oncology/en/.",
+      "oids" : ["2.16.840.1.113883.6.43.1"],
+      "uses" : {
+      },
+      "ValueSet-Topography.html" : "Topography Value Set",
+      "ValueSet-Morphology.html" : "Morphology Value Set"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/location-physical-type",
@@ -713,6 +924,20 @@
       "http://hl7.org/fhir/R5/valueset-timing-abbreviation.html" : "TimingAbbreviation"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/umls",
+      "version" : "2.0.1",
+      "status" : "retired",
+      "name" : "Umls",
+      "title" : "Unified Medical Language System",
+      "description" : "UMLS codes as CUIs making up the values in a coding system. More information may be found at http://www.nlm.nih.gov/research/umls/",
+      "oids" : ["2.16.840.1.113883.6.86"],
+      "uses" : {
+      },
+      "ValueSet-TreatmentType.html" : "Treatment Type Value Set",
+      "ValueSet-TumorPathologyEventType.html" : "Tumor Pathology Event Type Value Set",
+      "ValueSet-Laterality.html" : "Tumor Laterality Value Set"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0092",
       "version" : "2.0.0",
       "status" : "active",
@@ -722,7 +947,7 @@
       "oids" : ["2.16.840.1.113883.18.36"],
       "uses" : {
       },
-      "http://terminology.hl7.org/6.0.0/ValueSet-v2-0092.html" : "hl7VS-re-admissionIndicator"
+      "http://terminology.hl7.org/6.0.2/ValueSet-v2-0092.html" : "hl7VS-re-admissionIndicator"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
@@ -758,7 +983,7 @@
       "oids" : ["2.16.840.1.113883.5.4"],
       "uses" : {
       },
-      "http://terminology.hl7.org/6.0.0/ValueSet-encounter-class.html" : "Encounter class"
+      "http://terminology.hl7.org/6.0.2/ValueSet-encounter-class.html" : "Encounter class"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
@@ -770,7 +995,7 @@
       "oids" : ["2.16.840.1.113883.5.7"],
       "uses" : {
       },
-      "http://terminology.hl7.org/6.0.0/ValueSet-v3-ActPriority.html" : "ActPriority"
+      "http://terminology.hl7.org/6.0.2/ValueSet-v3-ActPriority.html" : "ActPriority"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
@@ -782,7 +1007,7 @@
       "oids" : ["2.16.840.1.113883.5.8"],
       "uses" : {
       },
-      "http://terminology.hl7.org/6.0.0/ValueSet-v3-SubstanceAdminSubstitutionReason.html" : "SubstanceAdminSubstitutionReason"
+      "http://terminology.hl7.org/6.0.2/ValueSet-v3-SubstanceAdminSubstitutionReason.html" : "SubstanceAdminSubstitutionReason"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
@@ -830,8 +1055,8 @@
       "oids" : ["2.16.840.1.113883.5.1008"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R5/valueset-marital-status.html" : "Marital Status Codes",
-      "http://hl7.org/fhir/R5/valueset-encounter-special-courtesy.html" : "Special Courtesy"
+      "http://hl7.org/fhir/R5/valueset-encounter-special-courtesy.html" : "Special Courtesy",
+      "http://hl7.org/fhir/R5/valueset-marital-status.html" : "Marital Status Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
@@ -879,7 +1104,7 @@
       "oids" : ["2.16.840.1.113883.5.1070"],
       "uses" : {
       },
-      "http://terminology.hl7.org/6.0.0/ValueSet-v3-ActSubstanceAdminSubstitutionCode.html" : "ActSubstanceAdminSubstitutionCode"
+      "http://terminology.hl7.org/6.0.2/ValueSet-v3-ActSubstanceAdminSubstitutionCode.html" : "ActSubstanceAdminSubstitutionCode"
     },
     {
       "url" : "http://unitsofmeasure.org",
@@ -905,6 +1130,30 @@
       },
       "http://hl7.org/fhir/R5/valueset-languages.html" : "Common Languages",
       "http://hl7.org/fhir/R5/valueset-all-languages.html" : "All Languages"
+    },
+    {
+      "url" : "urn:iso:std:iso:3166",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ISO3166Part1",
+      "title" : "ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code",
+      "description" : "ISO 3166-1 establishes codes that represent the current names of countries, dependencies, and other areas of particular geopolitical interest, on the basis of country names obtained from the United Nations.",
+      "oids" : ["1.0.3166.1"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-jurisdiction.html" : "Jurisdiction ValueSet"
+    },
+    {
+      "url" : "urn:iso:std:iso:3166:-2",
+      "version" : "2013-11",
+      "status" : "retired",
+      "name" : "Iso3166_2",
+      "title" : "ISO 3166 Part 2 Country Subdivision Codes",
+      "description" : "Identifies the coding system published in the ISO 3166-2 Standard for Country Subdivision codes. This standard is released periodically, and a new OID will be assigned by ISO for new editions.",
+      "oids" : ["1.0.3166.2"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-jurisdiction.html" : "Jurisdiction ValueSet"
     }
   ]
 }

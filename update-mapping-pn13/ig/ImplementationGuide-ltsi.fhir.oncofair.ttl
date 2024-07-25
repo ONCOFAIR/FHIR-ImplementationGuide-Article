@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIR"] ; # 
   fhir:title [ fhir:v "OncoFAIR"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-07-17T09:54:34+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-07-25T08:23:41+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -41,7 +41,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r5" ] ;
-     fhir:version [ fhir:v "6.0.0" ]
+     fhir:version [ fhir:v "6.0.2" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -114,8 +114,8 @@
          fhir:value [ fhir:v "CarePlan" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/CarePlan/ExampleOncoFAIRCarePlan> ;
-         fhir:reference [ fhir:v "CarePlan/ExampleOncoFAIRCarePlan" ]
+         fhir:link <http://ltsi.univ-rennes.fr/CarePlan/protocol> ;
+         fhir:reference [ fhir:v "CarePlan/protocol" ]
        ] ;
        fhir:name [ fhir:v "Example OncoFAIR CarePlan" ] ;
        fhir:description [ fhir:v "An example instance of an OncoFAIR CarePlan with required fields populated." ] ;
@@ -250,8 +250,8 @@
          fhir:value [ fhir:v "MedicationRequest" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/ExampleOncoFAIRMedicationRequestElement> ;
-         fhir:reference [ fhir:v "MedicationRequest/ExampleOncoFAIRMedicationRequestElement" ]
+         fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/element> ;
+         fhir:reference [ fhir:v "MedicationRequest/element" ]
        ] ;
        fhir:name [ fhir:v "Example OncoFAIR MedicationRequest Element" ] ;
        fhir:description [ fhir:v "Example instance of OncoFAIRMedicationRequestElement" ] ;
@@ -266,8 +266,8 @@
          fhir:value [ fhir:v "MedicationRequest" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/ExampleOncoFAIRMedicationRequestPrescription> ;
-         fhir:reference [ fhir:v "MedicationRequest/ExampleOncoFAIRMedicationRequestPrescription" ]
+         fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/prescription> ;
+         fhir:reference [ fhir:v "MedicationRequest/prescription" ]
        ] ;
        fhir:name [ fhir:v "Example OncoFAIR MedicationRequest Prescription" ] ;
        fhir:description [ fhir:v "An example instance of OncoFAIR MedicationRequest Prescription." ] ;
@@ -323,6 +323,38 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Condition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/Condition/fhir-osiris-example-TumorPathologyEvent-instance-1> ;
+         fhir:reference [ fhir:v "Condition/fhir-osiris-example-TumorPathologyEvent-instance-1" ]
+       ] ;
+       fhir:name [ fhir:v "fhir-osiris-example-TumorPathologyEvent-instance-1" ] ;
+       fhir:description [ fhir:v "Example of TPE from OSIRIS_pivot_TumorPathologyEvent.csv" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/tumor-pathology-event"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/tumor-pathology-event>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Condition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/Condition/fhir-osiris-example-TumorPathologyEvent-instance-2> ;
+         fhir:reference [ fhir:v "Condition/fhir-osiris-example-TumorPathologyEvent-instance-2" ]
+       ] ;
+       fhir:name [ fhir:v "fhir-osiris-example-TumorPathologyEvent-instance-2" ] ;
+       fhir:description [ fhir:v "Example of TPE from OSIRIS_pivot_TumorPathologyEvent.csv" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/tumor-pathology-event"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/tumor-pathology-event>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
@@ -343,6 +375,30 @@
        ] ;
        fhir:name [ fhir:v "goNogo Value Set" ] ;
        fhir:description [ fhir:v "Value Set pour goNogo" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/histologygrade> ;
+         fhir:reference [ fhir:v "StructureDefinition/histologygrade" ]
+       ] ;
+       fhir:name [ fhir:v "Histology" ] ;
+       fhir:description [ fhir:v "Grade of Histology" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/laterality> ;
+         fhir:reference [ fhir:v "StructureDefinition/laterality" ]
+       ] ;
+       fhir:name [ fhir:v "Laterality" ] ;
+       fhir:description [ fhir:v "Laterality of location (if it exists)" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -415,6 +471,18 @@
        ] ;
        fhir:name [ fhir:v "Medications Value Set" ] ;
        fhir:description [ fhir:v "ValueSet for medications." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/ValueSet/Morphology> ;
+         fhir:reference [ fhir:v "ValueSet/Morphology" ]
+       ] ;
+       fhir:name [ fhir:v "Morphology Value Set" ] ;
+       fhir:description [ fhir:v "Cancer morphology" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1163,6 +1231,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/clinical-trial> ;
+         fhir:reference [ fhir:v "StructureDefinition/clinical-trial" ]
+       ] ;
+       fhir:name [ fhir:v "Oncology Clinical Trial" ] ;
+       fhir:description [ fhir:v "Oncology clinical trial used to associate a Onco Patient to a Clinical Trial" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
@@ -1255,6 +1335,90 @@
        ] ;
        fhir:name [ fhir:v "Statut validation pharmaceutique Value Set" ] ;
        fhir:description [ fhir:v "Value Set pour StatutValidPharm" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/ValueSet/Topography> ;
+         fhir:reference [ fhir:v "ValueSet/Topography" ]
+       ] ;
+       fhir:name [ fhir:v "Topography Value Set" ] ;
+       fhir:description [ fhir:v "Cancer topography" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/treatment-line> ;
+         fhir:reference [ fhir:v "StructureDefinition/treatment-line" ]
+       ] ;
+       fhir:name [ fhir:v "Treatment Line Number" ] ;
+       fhir:description [ fhir:v "The treatment line number" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/ValueSet/TreatmentType> ;
+         fhir:reference [ fhir:v "ValueSet/TreatmentType" ]
+       ] ;
+       fhir:name [ fhir:v "Treatment Type Value Set" ] ;
+       fhir:description [ fhir:v "Treatment type" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/ValueSet/Laterality> ;
+         fhir:reference [ fhir:v "ValueSet/Laterality" ]
+       ] ;
+       fhir:name [ fhir:v "Tumor Laterality Value Set" ] ;
+       fhir:description [ fhir:v "Tumor laterality" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/tumor-pathology-event> ;
+         fhir:reference [ fhir:v "StructureDefinition/tumor-pathology-event" ]
+       ] ;
+       fhir:name [ fhir:v "Tumor Pathology Event" ] ;
+       fhir:description [ fhir:v "Tumor Pathology Event (TPE) Condition describing a tumoral event: reference to the parent TPE, laterality, morphology." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/dueTo-tumor-pathology-event> ;
+         fhir:reference [ fhir:v "StructureDefinition/dueTo-tumor-pathology-event" ]
+       ] ;
+       fhir:name [ fhir:v "Tumor Pathology Event Parent" ] ;
+       fhir:description [ fhir:v "Reference the Tumor Pathology Event from which the metastasis comes from." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/ValueSet/TumorPathologyEventType> ;
+         fhir:reference [ fhir:v "ValueSet/TumorPathologyEventType" ]
+       ] ;
+       fhir:name [ fhir:v "Tumor Pathology Event Type Value Set" ] ;
+       fhir:description [ fhir:v "Tumor pathology event type" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1352,6 +1516,22 @@
        fhir:name [ fhir:v "Type évènement Code System" ] ;
        fhir:description [ fhir:v "Code system pour l'attribut TypeEvenement" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ResearchStudy" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/ResearchStudy/fhir-osiris-example-researchstudy> ;
+         fhir:reference [ fhir:v "ResearchStudy/fhir-osiris-example-researchstudy" ]
+       ] ;
+       fhir:name [ fhir:v "Unknown" ] ;
+       fhir:description [ fhir:v "Example of ResearchStudy from OSIRIS_pivot_Treatment.csv" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/clinical-trial"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/clinical-trial>
+       ] )
      ] ) ;
      fhir:page [
        fhir:source [ fhir:v "toc.html"^^xsd:anyURI ] ;
