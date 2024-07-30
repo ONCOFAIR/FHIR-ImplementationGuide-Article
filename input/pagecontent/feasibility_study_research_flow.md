@@ -24,7 +24,7 @@ Once the relevant data has been extracted, the warehouse sends the aggregated re
 
 Search criteria applicable to the Encounter resource : 
 
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -67,6 +67,7 @@ Search criteria applicable to the Encounter resource :
 </table>
 
 Search criteria applicable to the Patient resource : 
+
 <table>
     <thead>
         <tr>
