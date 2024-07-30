@@ -1,6 +1,6 @@
 <div>{%include feasibility_study_research_flow.svg%}</div>
 
-The chemotherapy data request flow for a feasibility study and its response, is operated by the HTTP GET request on resources Patient and Encounter.
+The chemotherapy data request flow for a feasibility study and its response, is operated by the HTTP GET request on resources Patient or Encounter.
 
 ### Flow 2.1
 
@@ -20,7 +20,7 @@ Once the relevant data has been extracted, the warehouse sends the aggregated re
 
 ### Search criteria
 
-The list of applicable search criteria is available in the capability statement.
+The list of applicable search criteria is available in the [capability statement](https://oncofair.github.io/FHIR-ImplementationGuide-Article/update-mapping-pn13/ig/artifacts.html#behavior-capability-statements).
 
 
 ### Examples of queries
@@ -31,7 +31,7 @@ __Scenario description__ : A researcher wants to identify patients who have rece
 
 __Example__ : Search for patients who have received a specific chemotherapy drug (identified by the code 387207008) 
 
-__Request__ :
+__Request__ : coming soon
 
 #### Scenario 2
 
@@ -39,5 +39,5 @@ __Scenario description__ : A researcher wants to identify patients who have part
 
 __Example__ : Search for patients who are on a diet (identified by the code REGIME).
 
-__Request__ : 
+__Request__ : coming soon
 
