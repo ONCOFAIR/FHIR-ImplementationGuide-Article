@@ -5,7 +5,7 @@ Description: "An example instance of an OncoFAIR CarePlan with required fields p
 Usage: #example
 
 
-// OSIRIS
+/*// OSIRIS
 
 * subject = Reference(ExampleOncoFAIRPatient)
 * category.coding[0].system = "http://terminology.hl7.org/CodeSystem/umls"
@@ -20,12 +20,11 @@ Usage: #example
 * extension[treatment-line].valueInteger = 3
 
 * period.start = "2023-01-01"
-* period.end = "2023-01-02"
+* period.end = "2023-01-02"*/
 
 
 //OncoFAIR
 
-* id = "protocol"
 * identifier.value = "CP-123456"
 * title = "Example Prescribed Protocol"
 * status = #active

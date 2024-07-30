@@ -1,4 +1,4 @@
-Instance: ExampleOncoFAIRMedicationRequestElement
+Instance: ExampleOncoFAIRMedicationRequestElement2
 InstanceOf: OncoFAIRMedicationRequestElement
 Title: "Example OncoFAIR MedicationRequest Element"
 Description: "Example instance of OncoFAIRMedicationRequestElement"
@@ -19,9 +19,9 @@ Usage: #example
 
 * intent = #proposal
 
-* identifier.value = "123456"
+* identifier.value = "654321"
 
-* groupIdentifier.value = "303030"
+* groupIdentifier.value = "121212"
 
 * medication.concept.coding[0].system = "http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem"
 * medication.concept.coding[0].display = "element"

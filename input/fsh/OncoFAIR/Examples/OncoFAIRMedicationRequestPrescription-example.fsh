@@ -3,7 +3,6 @@ InstanceOf: OncoFAIRMedicationRequestPrescription
 Title: "Example OncoFAIR MedicationRequest Prescription"
 Description: "An example instance of OncoFAIR MedicationRequest Prescription."
 Usage: #example
-* id = "prescription"
 
 * status = #active
 * intent = #order

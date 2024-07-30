@@ -3,7 +3,6 @@ actor "Consummer" as C
 actor "Health data warehouse" as EDS
 
 C -> EDS: <color:blue>Flux 2.1</color> Le consommateur envoie une requête \navec des critères d’inclusion et d’exclusion à l’entrepôt
-EDS-> EDS : Ajoute de nouveaux critères si besoin : \ngestion de l'opposition de l'utilisation des données
 EDS-> EDS : Récupérer les informations sur l’impact de chaque critère sur le résultat
 EDS --> C: <color:blue>Flux 2.2</color> Envoie les résultats agrégés au consommateur
 @enduml

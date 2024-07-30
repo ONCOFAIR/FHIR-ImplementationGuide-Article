@@ -6,8 +6,7 @@ Description : "This object describes the chaining of prescription elements attac
 Cet objet décrit le chaînage des éléments de prescription rattachés au protocole prescrit. Sa structure permet le chaînage de sous-protocoles imbriqués." 
 
 
-
-// OSIRIS
+/*// OSIRIS
 
 * subject MS
 * subject only Reference (OncoFAIRPatient)
@@ -29,7 +28,7 @@ Cet objet décrit le chaînage des éléments de prescription rattachés au prot
 
 // Reste à savoir comment on mappe de R4 à R5 ça :
 
-/* activity ^slicing.discriminator.type = #pattern
+* activity ^slicing.discriminator.type = #pattern
 * activity ^slicing.discriminator.path = "detail.code.coding.system"
 * activity ^slicing.rules = #open
 * activity ^slicing.description = "Slice based on the activity code pattern"
@@ -40,7 +39,7 @@ Cet objet décrit le chaînage des éléments de prescription rattachés au prot
 * activity[activity-code] ^short = "Classification Commune des Actes Médicaux (CCAM) code of the medical act"
 * activity[activity-code] ^definition = "Health insurance code used to describe the location and type of medical procedure performed."
 * activity[activity-code].detail.code ^short = "CCAM code of the medical act"
-* activity[activity-code].detail.code ^definition = "Health insurance code used to describe the location and type of medical procedure performed."*/
+* activity[activity-code].detail.code ^definition = "Health insurance code used to describe the location and type of medical procedure performed."
 
 * extension contains treatment-line named treatment-line 0..1 MS
 
@@ -56,7 +55,8 @@ Cet objet décrit le chaînage des éléments de prescription rattachés au prot
 
 * period.end 1..1 MS
 * period.end ^short = "End date"
-* period.end ^definition = "End date of the treatment"
+* period.end ^definition = "End date of the treatment" 
+*/
 
 //OncoFAIR
 

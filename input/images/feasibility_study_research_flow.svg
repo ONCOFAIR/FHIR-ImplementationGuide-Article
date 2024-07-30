@@ -3,7 +3,7 @@
 actor "Consummer" as C
 actor "Health data warehouse" as EDS
 
-C -> EDS: <color:blue>Flow 2.1</color> GET [Resource]
+C -> EDS: <color:blue>Flow 2.1</color> GET [base]/Resource/?_count=0
 EDS - -> C: <color:blue>Flow 2.2</color> 200 OK Bundle Searchset
 @enduml
 
