@@ -27,10 +27,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.90", "2.16.840.1.113883.4.642.3.97"],
       "uses" : {
       },
-      "StructureDefinition-oncofair-medicationadministration-component.html" : "OncoFAIR MedicationAdministration Component",
       "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
       "StructureDefinition-oncofair-medicationadministration-report.html" : "OncoFAIR MedicationAdministration Report",
-      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component"
+      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component",
+      "StructureDefinition-oncofair-medicationadministration-component.html" : "OncoFAIR MedicationAdministration Component"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/administration-subpotent-reason",
@@ -46,9 +46,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.3128"],
       "uses" : {
       },
-      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element",
+      "StructureDefinition-oncofair-medicationadministration-report.html" : "OncoFAIR MedicationAdministration Report",
       "StructureDefinition-oncofair-medicationadministration-component.html" : "OncoFAIR MedicationAdministration Component",
-      "StructureDefinition-oncofair-medicationadministration-report.html" : "OncoFAIR MedicationAdministration Report"
+      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
@@ -77,18 +77,18 @@
       "uses" : {
       },
       "StructureDefinition-oncofair-observation.html" : "OncoFAIR Observation",
-      "StructureDefinition-oncofair-medicationadministration-component.html" : "OncoFAIR MedicationAdministration Component",
-      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
-      "StructureDefinition-oncofair-medicationrequest-prescription.html" : "OncoFAIR MedicationRequest Prescription",
+      "StructureDefinition-oncofair-patient.html" : "OncoFAIR Patient",
+      "StructureDefinition-oncofair-careplan.html" : "OncoFAIR CarePlan",
       "StructureDefinition-oncofair-medicationadministration-report.html" : "OncoFAIR MedicationAdministration Report",
       "StructureDefinition-clinical-trial.html" : "Oncology Clinical Trial",
-      "StructureDefinition-oncofair-careplan.html" : "OncoFAIR CarePlan",
-      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element",
-      "StructureDefinition-oncofair-medication.html" : "OncoFAIR Medication",
-      "StructureDefinition-oncofair-patient.html" : "OncoFAIR Patient",
-      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component",
+      "StructureDefinition-tumor-pathology-event.html" : "Tumor Pathology Event",
       "StructureDefinition-oncofair-encounter.html" : "OncoFAIR Encounter",
-      "StructureDefinition-tumor-pathology-event.html" : "Tumor Pathology Event"
+      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component",
+      "StructureDefinition-oncofair-medicationadministration-component.html" : "OncoFAIR MedicationAdministration Component",
+      "StructureDefinition-oncofair-medication.html" : "OncoFAIR Medication",
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
+      "StructureDefinition-oncofair-medicationrequest-prescription.html" : "OncoFAIR MedicationRequest Prescription",
+      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/approach-site-codes",
@@ -102,11 +102,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.346"],
       "uses" : {
       },
-      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element",
-      "StructureDefinition-oncofair-medicationadministration-component.html" : "OncoFAIR MedicationAdministration Component",
       "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
       "StructureDefinition-oncofair-medicationadministration-report.html" : "OncoFAIR MedicationAdministration Report",
-      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component"
+      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component",
+      "StructureDefinition-oncofair-medicationadministration-component.html" : "OncoFAIR MedicationAdministration Component",
+      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/body-site",
@@ -140,6 +140,28 @@
       "systems" : ["http://snomed.info/sct"],
       "oids" : ["2.16.840.1.113883.4.642.3.3000"],
       "sources" : ["2.16.840.1.113883.4.642.3.3000"],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-careplan.html" : "OncoFAIR CarePlan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-category",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "CarePlanCategory",
+      "title" : "Care Plan Category",
+      "description" : "Example codes indicating the category a care plan falls within.  Note that these are in no way complete and might not even be appropriate for some uses.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.136",
+        "2.16.840.1.113883.4.642.2.67",
+        "2.16.840.1.113883.4.642.3.148"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.136",
+        "2.16.840.1.113883.4.642.2.67",
+        "2.16.840.1.113883.4.642.3.148"
+      ],
       "uses" : {
       },
       "StructureDefinition-oncofair-careplan.html" : "OncoFAIR CarePlan"
@@ -251,11 +273,11 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-clinical-trial.html" : "Oncology Clinical Trial",
       "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
+      "StructureDefinition-clinical-trial.html" : "Oncology Clinical Trial",
       "StructureDefinition-oncofair-medicationrequest-prescription.html" : "OncoFAIR MedicationRequest Prescription",
-      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component",
-      "StructureDefinition-oncofair-encounter.html" : "OncoFAIR Encounter"
+      "StructureDefinition-oncofair-encounter.html" : "OncoFAIR Encounter",
+      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-severity",
@@ -674,9 +696,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-oncofair-careplan.html" : "OncoFAIR CarePlan",
       "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
       "StructureDefinition-oncofair-patient.html" : "OncoFAIR Patient",
+      "StructureDefinition-oncofair-careplan.html" : "OncoFAIR CarePlan",
       "StructureDefinition-oncofair-medicationrequest-prescription.html" : "OncoFAIR MedicationRequest Prescription",
       "StructureDefinition-oncofair-encounter.html" : "OncoFAIR Encounter"
     },
@@ -692,9 +714,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-oncofair-careplan.html" : "OncoFAIR CarePlan",
       "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
       "StructureDefinition-oncofair-patient.html" : "OncoFAIR Patient",
+      "StructureDefinition-oncofair-careplan.html" : "OncoFAIR CarePlan",
       "StructureDefinition-oncofair-medicationrequest-prescription.html" : "OncoFAIR MedicationRequest Prescription",
       "StructureDefinition-oncofair-encounter.html" : "OncoFAIR Encounter"
     },
@@ -735,18 +757,18 @@
       "uses" : {
       },
       "StructureDefinition-oncofair-observation.html" : "OncoFAIR Observation",
-      "StructureDefinition-oncofair-medicationadministration-component.html" : "OncoFAIR MedicationAdministration Component",
-      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
-      "StructureDefinition-oncofair-medicationrequest-prescription.html" : "OncoFAIR MedicationRequest Prescription",
+      "StructureDefinition-oncofair-patient.html" : "OncoFAIR Patient",
+      "StructureDefinition-oncofair-careplan.html" : "OncoFAIR CarePlan",
       "StructureDefinition-oncofair-medicationadministration-report.html" : "OncoFAIR MedicationAdministration Report",
       "StructureDefinition-clinical-trial.html" : "Oncology Clinical Trial",
-      "StructureDefinition-oncofair-careplan.html" : "OncoFAIR CarePlan",
-      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element",
-      "StructureDefinition-oncofair-medication.html" : "OncoFAIR Medication",
-      "StructureDefinition-oncofair-patient.html" : "OncoFAIR Patient",
-      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component",
+      "StructureDefinition-tumor-pathology-event.html" : "Tumor Pathology Event",
       "StructureDefinition-oncofair-encounter.html" : "OncoFAIR Encounter",
-      "StructureDefinition-tumor-pathology-event.html" : "Tumor Pathology Event"
+      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component",
+      "StructureDefinition-oncofair-medicationadministration-component.html" : "OncoFAIR MedicationAdministration Component",
+      "StructureDefinition-oncofair-medication.html" : "OncoFAIR Medication",
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
+      "StructureDefinition-oncofair-medicationrequest-prescription.html" : "OncoFAIR MedicationRequest Prescription",
+      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -817,9 +839,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.349"],
       "uses" : {
       },
-      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element",
+      "StructureDefinition-oncofair-medicationadministration-report.html" : "OncoFAIR MedicationAdministration Report",
       "StructureDefinition-oncofair-medicationadministration-component.html" : "OncoFAIR MedicationAdministration Component",
-      "StructureDefinition-oncofair-medicationadministration-report.html" : "OncoFAIR MedicationAdministration Report"
+      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medication-admin-location",
@@ -835,9 +857,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.3127"],
       "uses" : {
       },
-      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element",
+      "StructureDefinition-oncofair-medicationadministration-report.html" : "OncoFAIR MedicationAdministration Report",
       "StructureDefinition-oncofair-medicationadministration-component.html" : "OncoFAIR MedicationAdministration Component",
-      "StructureDefinition-oncofair-medicationadministration-report.html" : "OncoFAIR MedicationAdministration Report"
+      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medication-admin-status",
@@ -859,9 +881,9 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element",
+      "StructureDefinition-oncofair-medicationadministration-report.html" : "OncoFAIR MedicationAdministration Report",
       "StructureDefinition-oncofair-medicationadministration-component.html" : "OncoFAIR MedicationAdministration Component",
-      "StructureDefinition-oncofair-medicationadministration-report.html" : "OncoFAIR MedicationAdministration Report"
+      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medication-as-needed-reason",
@@ -1286,9 +1308,9 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element",
+      "StructureDefinition-oncofair-medicationadministration-report.html" : "OncoFAIR MedicationAdministration Report",
       "StructureDefinition-oncofair-medicationadministration-component.html" : "OncoFAIR MedicationAdministration Component",
-      "StructureDefinition-oncofair-medicationadministration-report.html" : "OncoFAIR MedicationAdministration Report"
+      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/reason-medication-not-given-codes",
@@ -1310,9 +1332,9 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element",
+      "StructureDefinition-oncofair-medicationadministration-report.html" : "OncoFAIR MedicationAdministration Report",
       "StructureDefinition-oncofair-medicationadministration-component.html" : "OncoFAIR MedicationAdministration Component",
-      "StructureDefinition-oncofair-medicationadministration-report.html" : "OncoFAIR MedicationAdministration Report"
+      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
@@ -1549,9 +1571,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.27"],
       "uses" : {
       },
-      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element",
       "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
-      "StructureDefinition-oncofair-medicationrequest-prescription.html" : "OncoFAIR MedicationRequest Prescription"
+      "StructureDefinition-oncofair-medicationrequest-prescription.html" : "OncoFAIR MedicationRequest Prescription",
+      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/route-codes",
@@ -1565,11 +1587,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.98"],
       "uses" : {
       },
-      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element",
-      "StructureDefinition-oncofair-medicationadministration-component.html" : "OncoFAIR MedicationAdministration Component",
       "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
       "StructureDefinition-oncofair-medicationadministration-report.html" : "OncoFAIR MedicationAdministration Report",
-      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component"
+      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component",
+      "StructureDefinition-oncofair-medicationadministration-component.html" : "OncoFAIR MedicationAdministration Component",
+      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/service-type",
@@ -1693,10 +1715,7 @@
       "name" : "TreatmentType",
       "title" : "Treatment Type Value Set",
       "description" : "Treatment type",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/umls"],
-      "uses" : {
-      },
-      "StructureDefinition-oncofair-careplan.html" : "OncoFAIR CarePlan"
+      "systems" : ["http://terminology.hl7.org/CodeSystem/umls"]
     },
     {
       "url" : "http://ltsi.univ-rennes.fr/ValueSet/TumorPathologyEventType",
@@ -1722,12 +1741,12 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element",
-      "StructureDefinition-oncofair-medicationadministration-component.html" : "OncoFAIR MedicationAdministration Component",
       "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
-      "StructureDefinition-oncofair-medicationrequest-prescription.html" : "OncoFAIR MedicationRequest Prescription",
       "StructureDefinition-oncofair-medicationadministration-report.html" : "OncoFAIR MedicationAdministration Report",
-      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component"
+      "StructureDefinition-oncofair-medicationrequest-prescription.html" : "OncoFAIR MedicationRequest Prescription",
+      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component",
+      "StructureDefinition-oncofair-medicationadministration-component.html" : "OncoFAIR MedicationAdministration Component",
+      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element"
     },
     {
       "url" : "http://ltsi.univ-rennes.fr/ValueSet/medical-units-oncofair-valueset",
@@ -1883,8 +1902,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element",
-      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element"
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
+      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element"
     },
     {
       "url" : "http://ltsi.univ-rennes.fr/ValueSet/siph-typeevenement-oncofair-valueset",

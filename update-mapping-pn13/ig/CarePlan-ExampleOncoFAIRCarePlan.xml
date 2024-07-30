@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <CarePlan xmlns="http://hl7.org/fhir">
-  <id value="protocol"/>
+  <id value="ExampleOncoFAIRCarePlan"/>
   <meta>
     <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-careplan"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CarePlan protocol</b></p><a name="protocol"> </a><a name="hcprotocol"> </a><a name="protocol-en-US"> </a><p><b>identifier</b>: CP-123456</p><p><b>basedOn</b>: <a href="CarePlan-protocol.html">CarePlan Example Prescribed Protocol</a></p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/umls C3665472}">Chemoterapy</span></p><p><b>title</b>: Example Prescribed Protocol</p><p><b>subject</b>: <a href="Patient-ExampleOncoFAIRPatient.html">Anonymous Patient (no stated gender), DoB Unknown ( 123456789)</a></p><p><b>period</b>: 2023-01-01 --&gt; 2023-01-02</p><p><b>supportingInfo</b>: </p><ul><li><a href="ResearchStudy-fhir-osiris-example-researchstudy.html">ResearchStudy Unknown</a></li><li><a href="Condition-fhir-osiris-example-TumorPathologyEvent-instance-1.html">Condition C0677930</a></li></ul><p><b>note</b>: Patient diagnosed with condition X requiring protocol Y., Patient responded well to previous treatments., Parent Protocol ID: CP-654321</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CarePlan ExampleOncoFAIRCarePlan</b></p><a name="ExampleOncoFAIRCarePlan"> </a><a name="hcExampleOncoFAIRCarePlan"> </a><a name="ExampleOncoFAIRCarePlan-en-US"> </a><p><b>identifier</b>: CP-123456</p><p><b>basedOn</b>: <a href="CarePlan-ExampleOncoFAIRCarePlan.html">CarePlan Example Prescribed Protocol</a></p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>title</b>: Example Prescribed Protocol</p><p><b>subject</b>: <a href="Patient-ExampleOncoFAIRPatient.html">Anonymous Patient (no stated gender), DoB Unknown ( 123456789)</a></p><p><b>note</b>: Patient diagnosed with condition X requiring protocol Y., Patient responded well to previous treatments., Parent Protocol ID: CP-654321</p></div>
   </text>
-  <extension url="http://ltsi.univ-rennes.fr/StructureDefinition/treatment-line">
-    <valueInteger value="3"/>
-  </extension>
   <extension url="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-cp-treatment">
     <extension url="treatmentRank">
       <valueInteger value="1"/>
@@ -46,31 +43,14 @@
     <value value="CP-123456"/>
   </identifier>
   <basedOn>
-    <reference value="CarePlan/protocol"/>
+    <reference value="CarePlan/ExampleOncoFAIRCarePlan"/>
   </basedOn>
   <status value="active"/>
   <intent value="order"/>
-  <category>
-    <coding>
-      <system value="http://terminology.hl7.org/CodeSystem/umls"/>
-      <code value="C3665472"/>
-      <display value="Chemoterapy"/>
-    </coding>
-  </category>
   <title value="Example Prescribed Protocol"/>
   <subject>
     <reference value="Patient/ExampleOncoFAIRPatient"/>
   </subject>
-  <period>
-    <start value="2023-01-01"/>
-    <end value="2023-01-02"/>
-  </period>
-  <supportingInfo>
-    <reference value="ResearchStudy/fhir-osiris-example-researchstudy"/>
-  </supportingInfo>
-  <supportingInfo>
-    <reference value="Condition/fhir-osiris-example-TumorPathologyEvent-instance-1"/>
-  </supportingInfo>
   <note id="indication">
     <text value="Patient diagnosed with condition X requiring protocol Y."/>
   </note>

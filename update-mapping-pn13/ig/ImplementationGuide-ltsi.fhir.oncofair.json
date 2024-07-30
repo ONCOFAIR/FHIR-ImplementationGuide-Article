@@ -10,7 +10,7 @@
   "name" : "OncoFAIR",
   "title" : "OncoFAIR",
   "status" : "draft",
-  "date" : "2024-07-25T08:23:41+00:00",
+  "date" : "2024-07-30T09:08:54+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -102,7 +102,7 @@
         "valueString" : "CarePlan"
       }],
       "reference" : {
-        "reference" : "CarePlan/protocol"
+        "reference" : "CarePlan/ExampleOncoFAIRCarePlan"
       },
       "name" : "Example OncoFAIR CarePlan",
       "description" : "An example instance of an OncoFAIR CarePlan with required fields populated.",
@@ -217,7 +217,7 @@
         "valueString" : "MedicationRequest"
       }],
       "reference" : {
-        "reference" : "MedicationRequest/element"
+        "reference" : "MedicationRequest/ExampleOncoFAIRMedicationRequestElement"
       },
       "name" : "Example OncoFAIR MedicationRequest Element",
       "description" : "Example instance of OncoFAIRMedicationRequestElement",
@@ -230,7 +230,20 @@
         "valueString" : "MedicationRequest"
       }],
       "reference" : {
-        "reference" : "MedicationRequest/prescription"
+        "reference" : "MedicationRequest/ExampleOncoFAIRMedicationRequestElement2"
+      },
+      "name" : "Example OncoFAIR MedicationRequest Element",
+      "description" : "Example instance of OncoFAIRMedicationRequestElement",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/ExampleOncoFAIRMedicationRequestPrescription"
       },
       "name" : "Example OncoFAIR MedicationRequest Prescription",
       "description" : "An example instance of OncoFAIR MedicationRequest Prescription.",

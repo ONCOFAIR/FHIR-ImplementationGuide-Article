@@ -11,7 +11,7 @@
   <name value="OncoFAIR"/>
   <title value="OncoFAIR"/>
   <status value="draft"/>
-  <date value="2024-07-25T08:23:41+00:00"/>
+  <date value="2024-07-30T09:08:54+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -93,7 +93,7 @@
         <valueString value="CarePlan"/>
       </extension>
       <reference>
-        <reference value="CarePlan/protocol"/>
+        <reference value="CarePlan/ExampleOncoFAIRCarePlan"/>
       </reference>
       <name value="Example OncoFAIR CarePlan"/>
       <description value="An example instance of an OncoFAIR CarePlan with required fields populated."/>
@@ -199,7 +199,7 @@
         <valueString value="MedicationRequest"/>
       </extension>
       <reference>
-        <reference value="MedicationRequest/element"/>
+        <reference value="MedicationRequest/ExampleOncoFAIRMedicationRequestElement"/>
       </reference>
       <name value="Example OncoFAIR MedicationRequest Element"/>
       <description value="Example instance of OncoFAIRMedicationRequestElement"/>
@@ -211,7 +211,19 @@
         <valueString value="MedicationRequest"/>
       </extension>
       <reference>
-        <reference value="MedicationRequest/prescription"/>
+        <reference value="MedicationRequest/ExampleOncoFAIRMedicationRequestElement2"/>
+      </reference>
+      <name value="Example OncoFAIR MedicationRequest Element"/>
+      <description value="Example instance of OncoFAIRMedicationRequestElement"/>
+      <isExample value="true"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/ExampleOncoFAIRMedicationRequestPrescription"/>
       </reference>
       <name value="Example OncoFAIR MedicationRequest Prescription"/>
       <description value="An example instance of OncoFAIR MedicationRequest Prescription."/>

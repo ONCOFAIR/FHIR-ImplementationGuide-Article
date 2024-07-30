@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIR"] ; # 
   fhir:title [ fhir:v "OncoFAIR"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-07-25T08:23:41+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-07-30T09:08:54+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -114,8 +114,8 @@
          fhir:value [ fhir:v "CarePlan" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/CarePlan/protocol> ;
-         fhir:reference [ fhir:v "CarePlan/protocol" ]
+         fhir:link <http://ltsi.univ-rennes.fr/CarePlan/ExampleOncoFAIRCarePlan> ;
+         fhir:reference [ fhir:v "CarePlan/ExampleOncoFAIRCarePlan" ]
        ] ;
        fhir:name [ fhir:v "Example OncoFAIR CarePlan" ] ;
        fhir:description [ fhir:v "An example instance of an OncoFAIR CarePlan with required fields populated." ] ;
@@ -250,8 +250,8 @@
          fhir:value [ fhir:v "MedicationRequest" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/element> ;
-         fhir:reference [ fhir:v "MedicationRequest/element" ]
+         fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/ExampleOncoFAIRMedicationRequestElement> ;
+         fhir:reference [ fhir:v "MedicationRequest/ExampleOncoFAIRMedicationRequestElement" ]
        ] ;
        fhir:name [ fhir:v "Example OncoFAIR MedicationRequest Element" ] ;
        fhir:description [ fhir:v "Example instance of OncoFAIRMedicationRequestElement" ] ;
@@ -266,8 +266,24 @@
          fhir:value [ fhir:v "MedicationRequest" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/prescription> ;
-         fhir:reference [ fhir:v "MedicationRequest/prescription" ]
+         fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/ExampleOncoFAIRMedicationRequestElement2> ;
+         fhir:reference [ fhir:v "MedicationRequest/ExampleOncoFAIRMedicationRequestElement2" ]
+       ] ;
+       fhir:name [ fhir:v "Example OncoFAIR MedicationRequest Element" ] ;
+       fhir:description [ fhir:v "Example instance of OncoFAIRMedicationRequestElement" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/ExampleOncoFAIRMedicationRequestPrescription> ;
+         fhir:reference [ fhir:v "MedicationRequest/ExampleOncoFAIRMedicationRequestPrescription" ]
        ] ;
        fhir:name [ fhir:v "Example OncoFAIR MedicationRequest Prescription" ] ;
        fhir:description [ fhir:v "An example instance of OncoFAIR MedicationRequest Prescription." ] ;

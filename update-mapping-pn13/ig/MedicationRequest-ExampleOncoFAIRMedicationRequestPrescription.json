@@ -1,0 +1,57 @@
+{
+  "resourceType" : "MedicationRequest",
+  "id" : "ExampleOncoFAIRMedicationRequestPrescription",
+  "meta" : {
+    "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest ExampleOncoFAIRMedicationRequestPrescription</b></p><a name=\"ExampleOncoFAIRMedicationRequestPrescription\"> </a><a name=\"hcExampleOncoFAIRMedicationRequestPrescription\"> </a><a name=\"ExampleOncoFAIRMedicationRequestPrescription-en-US\"> </a><p><b>identifier</b>: 12345</p><p><b>basedOn</b>: <a href=\"CarePlan-ExampleOncoFAIRCarePlan.html\">CarePlan Example Prescribed Protocol</a></p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem prescription}\">prescription</span></td><td><a href=\"Medication-ExampleOncoFAIRMedication.html\">Medication Ibuprofen</a></td></tr></table><p><b>subject</b>: <a href=\"Patient-ExampleOncoFAIRPatient.html\">Anonymous Patient (no stated gender), DoB Unknown ( 123456789)</a></p><p><b>encounter</b>: <a href=\"Encounter-ExampleOncoFAIREncounter.html\">Encounter: identifier = EN-987654; status = in-progress</a></p><p><b>supportingInformation</b>: </p><ul><li><a href=\"HealthcareService-ExampleHealthcareServiceAccomodation.html\">HealthcareService: identifier = A065</a></li><li><a href=\"HealthcareService-ExampleHealthcareServiceMedicalLiability.html\">HealthcareService: identifier = MD067</a></li></ul><h3>Reasons</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Observation-ExampleOncoFAIRObservation.html\">Observation Poids</a></td></tr></table><p><b>note</b>: This is a default comment on the prescription by the prescribing doctor.</p></div>"
+  },
+  "extension" : [{
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-prescription-validation-date",
+    "valueDateTime" : "2024-06-01T08:00:00Z"
+  }],
+  "identifier" : [{
+    "value" : "12345"
+  }],
+  "basedOn" : [{
+    "reference" : "CarePlan/ExampleOncoFAIRCarePlan"
+  }],
+  "status" : "active",
+  "intent" : "order",
+  "medication" : {
+    "concept" : {
+      "coding" : [{
+        "system" : "http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem",
+        "code" : "prescription",
+        "display" : "prescription"
+      }]
+    },
+    "reference" : {
+      "reference" : "Medication/ExampleOncoFAIRMedication"
+    }
+  },
+  "subject" : {
+    "reference" : "Patient/ExampleOncoFAIRPatient"
+  },
+  "encounter" : {
+    "reference" : "Encounter/ExampleOncoFAIREncounter"
+  },
+  "supportingInformation" : [{
+    "id" : "accomodationUnit",
+    "reference" : "HealthcareService/ExampleHealthcareServiceAccomodation"
+  },
+  {
+    "id" : "medicalLiabiltyUnit",
+    "reference" : "HealthcareService/ExampleHealthcareServiceMedicalLiability"
+  }],
+  "reason" : [{
+    "reference" : {
+      "reference" : "Observation/ExampleOncoFAIRObservation"
+    }
+  }],
+  "note" : [{
+    "text" : "This is a default comment on the prescription by the prescribing doctor."
+  }]
+}

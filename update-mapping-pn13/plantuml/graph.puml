@@ -22,21 +22,13 @@ package IG #DDDDDD{
         class OncoFAIRCarePlan{
 
              CarePlan.extension => [1..None]
-             CarePlan.extension:treatment-line => <&plus>[0..1]
              CarePlan.extension:oncofair-cp-treatment => <&plus>[1..1]
              CarePlan.extension:oncofair-pharmacist-advice => <&plus>[0..1]
              CarePlan.identifier => [1..1]
              CarePlan.identifier.value => [None..None]
              CarePlan.partOf => [None..None]
              CarePlan.status => [None..None]
-             CarePlan.category => [1..1]
              CarePlan.title => [1..None]
-             CarePlan.subject => [None..None]
-             CarePlan.period.start => [1..None]
-             CarePlan.period.end => [1..None]
-             CarePlan.supportingInfo => [None..None]
-             CarePlan.supportingInfo:clinical-trial => [0..1]
-             CarePlan.supportingInfo:tumor-pathology-event => [0..*]
              CarePlan.note => [None..None]
              CarePlan.note:indication => [0..1]
              CarePlan.note:indication.id => [1..None]
@@ -264,7 +256,6 @@ package IG #DDDDDD{
      }
      package extension #paleturquoise {
 
-     OncoFAIRCarePlan -[#black,dashed,thickness=2]-> TreatmentLine
      OncoFAIRCarePlan -[#black,dashed,thickness=2]-> OncoFAIRCPTreatment
      OncoFAIRCarePlan -[#black,dashed,thickness=2]-> OncoFAIRPharmacistAdvice
      OncoFAIRMedication -[#black,dashed,thickness=2]-> OncoFAIRMedicationType
@@ -466,10 +457,6 @@ package IG #DDDDDD{
         class Laterality  
 
      Laterality -[#black,dotted,thickness=2]-> Laterality
-
-        class TreatmentType  
-
-     OncoFAIRCarePlan -[#black,dotted,thickness=2]-> TreatmentType
 
         class SIPhStatutComposantAdmOncoFAIRValueSet  
 

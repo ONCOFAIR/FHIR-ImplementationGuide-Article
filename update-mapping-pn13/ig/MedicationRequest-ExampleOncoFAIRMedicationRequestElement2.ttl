@@ -6,9 +6,9 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://ltsi.univ-rennes.fr/MedicationRequest/element> a fhir:MedicationRequest ;
+<http://ltsi.univ-rennes.fr/MedicationRequest/ExampleOncoFAIRMedicationRequestElement2> a fhir:MedicationRequest ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "element"] ; # 
+  fhir:id [ fhir:v "ExampleOncoFAIRMedicationRequestElement2"] ; # 
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element"^^xsd:anyURI ;
@@ -17,7 +17,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest element</b></p><a name=\"element\"> </a><a name=\"hcelement\"> </a><a name=\"element-en-US\"> </a><p><b>identifier</b>: 123456</p><p><b>basedOn</b>: <a href=\"MedicationRequest-prescription.html\">MedicationRequest: extension = No display for Extension ; identifier = 12345; status = active; intent = order; note = This is a default comment on the prescription by the prescribing doctor.</a></p><p><b>groupIdentifier</b>: 303030</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>priority</b>: Urgent</p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem element}\">element</span></td><td><a href=\"Medication-ExampleOncoFAIRMedication.html\">Medication Ibuprofen</a></td></tr></table><p><b>subject</b>: <a href=\"Patient-ExampleOncoFAIRPatient.html\">Anonymous Patient (no stated gender), DoB Unknown ( 123456789)</a></p><p><b>requester</b>: <a href=\"Practitioner-ExampleOncoFAIRPractitioner.html\">Practitioner: identifier = 12345</a></p><h3>Devices</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"DeviceDefinition-ExampleOncoFAIRDeviceDefinition.html\">DeviceDefinition: identifier = DD02</a></td></tr></table><p><b>note</b>: Paracetamol 500mg Tablet, Prescribed for headaches, Administered after meals</p><p><b>effectiveDosePeriod</b>: 2024-06-01 08:00:00+0000 --&gt; 2024-06-01 09:00:00+0000</p><blockquote><p><b>dosageInstruction</b></p></blockquote><blockquote><p><b>dosageInstruction</b></p></blockquote></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest ExampleOncoFAIRMedicationRequestElement2</b></p><a name=\"ExampleOncoFAIRMedicationRequestElement2\"> </a><a name=\"hcExampleOncoFAIRMedicationRequestElement2\"> </a><a name=\"ExampleOncoFAIRMedicationRequestElement2-en-US\"> </a><p><b>identifier</b>: 654321</p><p><b>basedOn</b>: </p><ul><li><a href=\"MedicationRequest-ExampleOncoFAIRMedicationRequestPrescription.html\">MedicationRequest: extension = No display for Extension ; identifier = 12345; status = active; intent = order; note = This is a default comment on the prescription by the prescribing doctor.</a></li><li><a href=\"MedicationRequest-ExampleOncoFAIRMedicationRequestElement.html\">MedicationRequest: extension = No display for Extension ,No display for Extension ,No display for Extension ,No display for Extension ,No display for Extension ; identifier = 123456; groupIdentifier = 303030; status = active; intent = proposal; priority = urgent; note = Paracetamol 500mg Tablet,Prescribed for headaches,Administered after meals; effectiveDosePeriod = 2024-06-01 08:00:00+0000 --&gt; 2024-06-01 09:00:00+0000</a></li><li><a href=\"CarePlan-ExampleOncoFAIRCarePlan.html\">CarePlan Example Prescribed Protocol</a></li></ul><p><b>groupIdentifier</b>: 121212</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>priority</b>: Urgent</p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem element}\">element</span></td><td><a href=\"Medication-ExampleOncoFAIRMedication.html\">Medication Ibuprofen</a></td></tr></table><p><b>subject</b>: <a href=\"Patient-ExampleOncoFAIRPatient.html\">Anonymous Patient (no stated gender), DoB Unknown ( 123456789)</a></p><p><b>requester</b>: <a href=\"Practitioner-ExampleOncoFAIRPractitioner.html\">Practitioner: identifier = 12345</a></p><h3>Devices</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"DeviceDefinition-ExampleOncoFAIRDeviceDefinition.html\">DeviceDefinition: identifier = DD02</a></td></tr></table><p><b>note</b>: Paracetamol 500mg Tablet, Prescribed for headaches, Administered after meals</p><p><b>effectiveDosePeriod</b>: 2024-06-01 08:00:00+0000 --&gt; 2024-06-01 09:00:00+0000</p><blockquote><p><b>dosageInstruction</b></p></blockquote><blockquote><p><b>dosageInstruction</b></p></blockquote></div>"
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-element-form"^^xsd:anyURI ] ;
@@ -80,14 +80,31 @@
      fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-pharmacist-advice"^^xsd:anyURI ]
   ] ) ; # 
   fhir:identifier ( [
-     fhir:value [ fhir:v "123456" ]
+     fhir:value [ fhir:v "654321" ]
   ] ) ; # 
   fhir:basedOn ( [
-     fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/prescription> ;
-     fhir:reference [ fhir:v "MedicationRequest/prescription" ]
+     fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/ExampleOncoFAIRMedicationRequestPrescription> ;
+     fhir:reference [ fhir:v "MedicationRequest/ExampleOncoFAIRMedicationRequestPrescription" ]
+  ] [
+     fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/ExampleOncoFAIRMedicationRequestElement> ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-link-type"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/siph-type-liaison-oncofair-codesystem"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "COMP" ] ;
+           fhir:display [ fhir:v "Complément" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:reference [ fhir:v "MedicationRequest/ExampleOncoFAIRMedicationRequestElement" ]
+  ] [
+     fhir:link <http://ltsi.univ-rennes.fr/CarePlan/ExampleOncoFAIRCarePlan> ;
+     fhir:reference [ fhir:v "CarePlan/ExampleOncoFAIRCarePlan" ]
   ] ) ; # 
   fhir:groupIdentifier [
-     fhir:value [ fhir:v "303030" ]
+     fhir:value [ fhir:v "121212" ]
   ] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:intent [ fhir:v "proposal"] ; # 
