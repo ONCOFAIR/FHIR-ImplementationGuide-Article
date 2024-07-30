@@ -23,7 +23,31 @@ Once the relevant data has been extracted, the warehouse sends the aggregated re
 ### Search criteria
 
 Search criteria applicable to the Encounter resource : 
-<table border="1">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Criteria</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+<table>
     <thead>
         <tr>
             <th>Search criteria</th>
@@ -43,7 +67,7 @@ Search criteria applicable to the Encounter resource :
 </table>
 
 Search criteria applicable to the Patient resource : 
-<table border="1">
+<table>
     <thead>
         <tr>
             <th>Search criteria</th>
@@ -61,6 +85,9 @@ Search criteria applicable to the Patient resource :
         </tr>
     </tbody>
 </table>
+
+</body>
+</html>
 
 
 ### Examples of queries
