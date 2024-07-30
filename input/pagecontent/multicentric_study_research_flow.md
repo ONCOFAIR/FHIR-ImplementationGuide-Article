@@ -8,11 +8,11 @@ This flow is used to request chemotherapy data for a multicentre study, requirin
 
 Search criteria can include parameters such as patient IDs, types of chemotherapy drugs used, and other relevant clinical information. This query is constructed using appropriate FHIR search parameters to ensure accurate and comprehensive selection of the data required for the study.
 
+*Note: Before sending the aggregated data, the data warehouse queries the local database. We are conducting a multicenter study, but we are focusing on querying a local data warehouse. The data will be aggregated later, but this is not addressed here.This internal process does not appear on the FHIR flow diagram.*
+
 ### Flow 3.2
 
-The health data warehouse receives the request and searches for data corresponding to the criteria provided. 
-
-*Note: Before sending the aggregated data, the data warehouse queries the local database. We are conducting a multicenter study, but we are focusing on querying a local data warehouse. The data will be aggregated later, but this is not addressed here.This internal process does not appear on the FHIR flow diagram.*
+The health data warehouse receives the request and searches for data corresponding to the criteria provided.
 
 Once the data has been collected, the warehouse sends the results to the consumer in the form of a FHIR bundle = searchset with a 200 OK code. The response contains complete patient and chemotherapy treatment information from multiple centres, enabling the consumer to perform a multi-centre analysis of the data received. The consumer receives the information and can carry out the multicentre study with the data collected.
 
@@ -20,21 +20,14 @@ Once the data has been collected, the warehouse sends the results to the consume
 
 ### Search criteria
 
-{% sql SELECT '[' || Name ||'](SearchParameter-' || id || '.html)' as "Search criteria", Description FROM Resources WHERE Type = 'SearchParameter'%}
+The list of applicable search criteria is available in the [capability statement](https://oncofair.github.io/FHIR-ImplementationGuide-Article/update-mapping-pn13/ig/artifacts.html#behavior-capability-statements).
+
 
 ### Examples of queries
 
 #### Scenario 1
 
-__Scenario description__ : 
-__Example__ : 
-
-__Request__ : 
-
-
-#### Scenario 2
-
-__Scenario description__ : 
+__Scenario description__ : Coming soon
 __Example__ : 
 
 __Request__ : 
