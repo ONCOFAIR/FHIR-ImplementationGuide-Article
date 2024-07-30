@@ -174,78 +174,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>The health data warehouse receives the request and searches for data corresponding to the criteria provided.</p>
 
-<p><em>Note :  Before sending the data, the health data warehouse needs to retrieves information on the impact of each criterion on the results obtained, enabling the consumer to understand how the inclusion and exclusion criteria have influenced the aggregated data. These internal processes do not appear on the FHIR flow diagram.</em></p>
-
-<p>Once the relevant data has been extracted, the warehouse sends the aggregated results to the consumer in the form of an FHIR bundle = searchset with a 200 OK code which indicates the total number of resources that match in Bundle.total, but without entries or previous/next/last links. The response includes information on the impact of each criterion on results. If necessary, the consumer can then send a new query with modified criteria to further refine the results of the feasibility study.</p>
+<p>Once the relevant data has been extracted, the warehouse sends the aggregated results to the consumer in the form of an FHIR bundle = searchset with a 200 OK code which indicates the total number of resources that match in Bundle.total, but without entries or previous/next/last links. It means that, the health data warehouse will return a number of stays or patients corresponding to the request. The response includes information on the impact of each criterion on results. If necessary, the consumer can then send a new query with modified criteria to further refine the results of the feasibility study.</p>
 
 <h3 id="search-criteria">Search criteria</h3>
 
-<p>Search criteria applicable to the Encounter resource :</p>
-
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search Criteria</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-        }
-        th {
-            background-color: #f2f2f2;
-            text-align: left;
-        }
-    </style>
-</head>
-<body>
-
-<table>
-    <thead>
-        <tr>
-            <th>Search criteria</th>
-            <th>Native FHIR</th>
-            <th>Type FHIR</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>identifier</td>
-            <td>yes</td>
-            <td>token</td>
-            <td>Identifier of the patient's stay</td>
-        </tr>
-    </tbody>
-</table>
-
-Search criteria applicable to the Patient resource : 
-
-<table>
-    <thead>
-        <tr>
-            <th>Search criteria</th>
-            <th>Native FHIR</th>
-            <th>Type FHIR</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>identifier</td>
-            <td>yes</td>
-            <td>token</td>
-            <td>Identifier of the patient</td>
-        </tr>
-    </tbody>
-</table>
-
-</body>
-</html>
+<p>The list of applicable search criteria is available in the capability statement.</p>
 
 <h3 id="examples-of-queries">Examples of queries</h3>
 
@@ -255,12 +188,7 @@ Search criteria applicable to the Patient resource :
 
 <p><strong>Example</strong> : Search for patients who have received a specific chemotherapy drug (identified by the code 387207008)</p>
 
-<p><strong>Request</strong> : GET [BASE]/Medication?clinical-code=387207008
-&amp;_revinclude=MedicationRequest:medication:medication.concept=component #inclu les MedicationRequest qui référencent les Medication
-&amp;_include=MedicationRequest:basedOn:medication.concept=element #inclu les MRC référencées par les MRE
-&amp;_include=MedicationRequest:basedOn:medication.concept=prescription #inclu les MRE référencées par les MRP
-&amp;_include=MedicationRequest=encounter #inclu les MedicationRequest référencés par les Encounter
-&amp;_include=Encounter:patient #inclu les Encouter référenceés par les Patient</p>
+<p><strong>Request</strong> :</p>
 
 <h4 id="scenario-2">Scenario 2</h4>
 
@@ -289,7 +217,7 @@ Search criteria applicable to the Patient resource :
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Jul 30, 2024 09:25+0000">2024-07-30</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Jul 30, 2024 13:05+0000">2024-07-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
