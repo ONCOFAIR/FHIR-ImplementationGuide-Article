@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIRMedicationAdministrationElement"] ; # 
   fhir:title [ fhir:v "OncoFAIR MedicationAdministration Element"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-07-30T13:12:38+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-09-10T09:55:40+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -126,6 +126,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
+         fhir:map [ fhir:v "ElementAdministration" ]
+       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "Entity, Role, or Act,SubstanceAdministration" ]
        ] [
@@ -134,9 +137,6 @@
        ] [
          fhir:identity [ fhir:v "w5" ] ;
          fhir:map [ fhir:v "clinical.medication" ]
-       ] [
-         fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
-         fhir:map [ fhir:v "ElementAdministration" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.id" ] ;
@@ -652,6 +652,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
+         fhir:map [ fhir:v "idElementAdministration" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Event.identifier" ]
        ] [
@@ -660,9 +663,6 @@
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".id" ]
-       ] [
-         fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
-         fhir:map [ fhir:v "idElementAdministration" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.basedOn" ] ;
@@ -738,14 +738,14 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
+         fhir:map [ fhir:v "CompteRenduAdministration" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Event.partOf" ]
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".outboundRelationship[typeCode=COMP]/target[classCode=SBADM or PROC,moodCode=EVN]" ]
-       ] [
-         fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
-         fhir:map [ fhir:v "CompteRenduAdministration" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.status" ] ;
@@ -945,11 +945,11 @@
          ]
        ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v ".inboundRelationship[typeCode=COMP].source[classCode=OBS, moodCode=EVN, code=\"type of medication usage\"].value" ]
-       ] [
          fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
          fhir:map [ fhir:v "codeElementAdministration" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v ".inboundRelationship[typeCode=COMP].source[classCode=OBS, moodCode=EVN, code=\"type of medication usage\"].value" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.category:nature" ] ;
@@ -993,11 +993,11 @@
          ]
        ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v ".inboundRelationship[typeCode=COMP].source[classCode=OBS, moodCode=EVN, code=\"type of medication usage\"].value" ]
-       ] [
          fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
          fhir:map [ fhir:v "presentation" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v ".inboundRelationship[typeCode=COMP].source[classCode=OBS, moodCode=EVN, code=\"type of medication usage\"].value" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.medication" ] ;
@@ -1531,14 +1531,14 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
+         fhir:map [ fhir:v "dateHeureDebutEffective" ]
+       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "DR.1" ]
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "./low" ]
-       ] [
-         fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
-         fhir:map [ fhir:v "dateHeureDebutEffective" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.occurence[x]:occurencePeriod.end" ] ;
@@ -1571,14 +1571,14 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
+         fhir:map [ fhir:v "dateHeureFinEffective" ]
+       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "DR.2" ]
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "./high" ]
-       ] [
-         fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
-         fhir:map [ fhir:v "dateHeureFinEffective" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.recorded" ] ;
@@ -2028,6 +2028,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
+         fhir:map [ fhir:v "ElementPrescription" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Event.basedOn" ]
        ] [
@@ -2036,9 +2039,6 @@
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "InFullfillmentOf->SubstanceAdministration" ]
-       ] [
-         fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
-         fhir:map [ fhir:v "ElementPrescription" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.request.id" ] ;
@@ -2300,14 +2300,14 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
+         fhir:map [ fhir:v "dispositifsAssocies" ]
+       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "PRT-10 Participation Device / RXR-3 Administrative Device" ]
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "device->Access  OR device->AssignedDevice" ]
-       ] [
-         fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
-         fhir:map [ fhir:v "dispositifsAssocies" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.note" ] ;
@@ -2381,14 +2381,14 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
+         fhir:map [ fhir:v "libelleElementAdministration" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Event.note" ]
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=\"annotation\"].value" ]
-       ] [
-         fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
-         fhir:map [ fhir:v "libelleElementAdministration" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.note:wording.id" ] ;
@@ -2619,14 +2619,14 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
+         fhir:map [ fhir:v "commentaires" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Event.note" ]
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=\"annotation\"].value" ]
-       ] [
-         fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
-         fhir:map [ fhir:v "commentaires" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.note:comments.id" ] ;
@@ -3056,14 +3056,14 @@
          ]
        ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
+         fhir:map [ fhir:v "lieuAdministration" ]
+       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "RXR-2 Administration Site / RXR-6 Administration Site Modifier" ]
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".approachSiteCode" ]
-       ] [
-         fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
-         fhir:map [ fhir:v "lieuAdministration" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.dosage.route" ] ;
@@ -3106,14 +3106,14 @@
          ]
        ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
+         fhir:map [ fhir:v "voieAdministration" ]
+       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "RXR-1 Route" ]
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".routeCode" ]
-       ] [
-         fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
-         fhir:map [ fhir:v "voieAdministration" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.dosage.method" ] ;
@@ -3152,14 +3152,14 @@
          ]
        ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
+         fhir:map [ fhir:v "typeElementAdministration" ]
+       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "RXR-4 Administration Method" ]
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".methodCode" ]
-       ] [
-         fhir:identity [ fhir:v "mapping-oncofair-medicationradministration-element" ] ;
-         fhir:map [ fhir:v "typeElementAdministration" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.dosage.dose" ] ;

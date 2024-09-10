@@ -16,7 +16,7 @@
   <name value="OncoFAIRObservation"/>
   <title value="OncoFAIR Observation"/>
   <status value="draft"/>
-  <date value="2024-07-30T13:12:38+00:00"/>
+  <date value="2024-09-10T09:55:40+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -149,6 +149,10 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
+        <identity value="mapping-oncofair-observation"/>
+        <map value="RenseignementComplementaire"/>
+      </mapping>
+      <mapping>
         <identity value="rim"/>
         <map value="Entity, Role, or Act,Observation[classCode=OBS, moodCode=EVN]"/>
       </mapping>
@@ -167,10 +171,6 @@
       <mapping>
         <identity value="v2"/>
         <map value="OBX"/>
-      </mapping>
-      <mapping>
-        <identity value="mapping-oncofair-observation"/>
-        <map value="RenseignementComplementaire"/>
       </mapping>
     </element>
     <element id="Observation.id">
@@ -971,6 +971,10 @@
         <valueSet value="http://ltsi.univ-rennes.fr/ValueSet/siph-renscomplement-oncofair-valueset"/>
       </binding>
       <mapping>
+        <identity value="mapping-oncofair-observation"/>
+        <map value="codeRenseignementComplementaire"/>
+      </mapping>
+      <mapping>
         <identity value="workflow"/>
         <map value="Event.code"/>
       </mapping>
@@ -993,10 +997,6 @@
       <mapping>
         <identity value="sct-attr"/>
         <map value="116680003 |Is a|"/>
-      </mapping>
-      <mapping>
-        <identity value="mapping-oncofair-observation"/>
-        <map value="codeRenseignementComplementaire"/>
       </mapping>
     </element>
     <element id="Observation.subject">
@@ -1218,6 +1218,10 @@
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
+        <identity value="mapping-oncofair-observation"/>
+        <map value="dateHeureEnregistrementRenseignementComplementaire"/>
+      </mapping>
+      <mapping>
         <identity value="workflow"/>
         <map value="Event.occurrence[x]"/>
       </mapping>
@@ -1232,10 +1236,6 @@
       <mapping>
         <identity value="rim"/>
         <map value="effectiveTime"/>
-      </mapping>
-      <mapping>
-        <identity value="mapping-oncofair-observation"/>
-        <map value="dateHeureEnregistrementRenseignementComplementaire"/>
       </mapping>
     </element>
     <element id="Observation.issued">
@@ -1264,6 +1264,10 @@
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
+        <identity value="mapping-oncofair-observation"/>
+        <map value="dateHeureRenseignementComplementaire"/>
+      </mapping>
+      <mapping>
         <identity value="w5"/>
         <map value="FiveWs.recorded"/>
       </mapping>
@@ -1274,10 +1278,6 @@
       <mapping>
         <identity value="rim"/>
         <map value="participation[typeCode=AUT].time"/>
-      </mapping>
-      <mapping>
-        <identity value="mapping-oncofair-observation"/>
-        <map value="dateHeureRenseignementComplementaire"/>
       </mapping>
     </element>
     <element id="Observation.performer">
@@ -1394,6 +1394,10 @@
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
+        <identity value="mapping-oncofair-observation"/>
+        <map value="valeurRenseignementComplementaire"/>
+      </mapping>
+      <mapping>
         <identity value="sct-concept"/>
         <map value="&lt; 441742003 |Evaluation finding|"/>
       </mapping>
@@ -1408,10 +1412,6 @@
       <mapping>
         <identity value="sct-attr"/>
         <map value="363714003 |Interprets|"/>
-      </mapping>
-      <mapping>
-        <identity value="mapping-oncofair-observation"/>
-        <map value="valeurRenseignementComplementaire"/>
       </mapping>
     </element>
     <element id="Observation.dataAbsentReason">

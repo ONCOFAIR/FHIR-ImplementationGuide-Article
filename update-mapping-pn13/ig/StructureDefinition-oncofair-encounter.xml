@@ -14,7 +14,7 @@
   <name value="OncoFAIREncounter"/>
   <title value="OncoFAIR Encounter"/>
   <status value="draft"/>
-  <date value="2024-07-30T13:12:38+00:00"/>
+  <date value="2024-09-10T09:55:40+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -112,6 +112,10 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
+        <identity value="mapping-oncofair-encounter"/>
+        <map value="Sejour"/>
+      </mapping>
+      <mapping>
         <identity value="rim"/>
         <map value="Entity, Role, or Act,PatientEncounter[@moodCode='EVN']"/>
       </mapping>
@@ -122,10 +126,6 @@
       <mapping>
         <identity value="w5"/>
         <map value="workflow.encounter"/>
-      </mapping>
-      <mapping>
-        <identity value="mapping-oncofair-encounter"/>
-        <map value="Sejour"/>
       </mapping>
     </element>
     <element id="Encounter.id">
@@ -410,6 +410,10 @@
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
+        <identity value="mapping-oncofair-encounter"/>
+        <map value="idSejour"/>
+      </mapping>
+      <mapping>
         <identity value="workflow"/>
         <map value="Event.identifier"/>
       </mapping>
@@ -424,10 +428,6 @@
       <mapping>
         <identity value="rim"/>
         <map value=".id"/>
-      </mapping>
-      <mapping>
-        <identity value="mapping-oncofair-encounter"/>
-        <map value="idSejour"/>
       </mapping>
     </element>
     <element id="Encounter.identifier.id">
@@ -1010,6 +1010,10 @@
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
+        <identity value="mapping-oncofair-encounter"/>
+        <map value="Patient"/>
+      </mapping>
+      <mapping>
         <identity value="workflow"/>
         <map value="Event.subject"/>
       </mapping>
@@ -1024,10 +1028,6 @@
       <mapping>
         <identity value="rim"/>
         <map value=".participation[typeCode=SBJ]/role[classCode=PAT]"/>
-      </mapping>
-      <mapping>
-        <identity value="mapping-oncofair-encounter"/>
-        <map value="Patient"/>
       </mapping>
     </element>
     <element id="Encounter.subjectStatus">

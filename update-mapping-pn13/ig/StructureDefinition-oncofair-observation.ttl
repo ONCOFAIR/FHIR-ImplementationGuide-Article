@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIRObservation"] ; # 
   fhir:title [ fhir:v "OncoFAIR Observation"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-07-30T13:12:38+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-09-10T09:55:40+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -163,6 +163,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "mapping-oncofair-observation" ] ;
+         fhir:map [ fhir:v "RenseignementComplementaire" ]
+       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "Entity, Role, or Act,Observation[classCode=OBS, moodCode=EVN]" ]
        ] [
@@ -177,9 +180,6 @@
        ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "OBX" ]
-       ] [
-         fhir:identity [ fhir:v "mapping-oncofair-observation" ] ;
-         fhir:map [ fhir:v "RenseignementComplementaire" ]
        ] )
      ] [
        fhir:id [ fhir:v "Observation.id" ] ;
@@ -1079,6 +1079,9 @@
          ]
        ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "mapping-oncofair-observation" ] ;
+         fhir:map [ fhir:v "codeRenseignementComplementaire" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Event.code" ]
        ] [
@@ -1096,9 +1099,6 @@
        ] [
          fhir:identity [ fhir:v "sct-attr" ] ;
          fhir:map [ fhir:v "116680003 |Is a|" ]
-       ] [
-         fhir:identity [ fhir:v "mapping-oncofair-observation" ] ;
-         fhir:map [ fhir:v "codeRenseignementComplementaire" ]
        ] )
      ] [
        fhir:id [ fhir:v "Observation.subject" ] ;
@@ -1353,6 +1353,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "mapping-oncofair-observation" ] ;
+         fhir:map [ fhir:v "dateHeureEnregistrementRenseignementComplementaire" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Event.occurrence[x]" ]
        ] [
@@ -1364,9 +1367,6 @@
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "effectiveTime" ]
-       ] [
-         fhir:identity [ fhir:v "mapping-oncofair-observation" ] ;
-         fhir:map [ fhir:v "dateHeureEnregistrementRenseignementComplementaire" ]
        ] )
      ] [
        fhir:id [ fhir:v "Observation.issued" ] ;
@@ -1398,6 +1398,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "mapping-oncofair-observation" ] ;
+         fhir:map [ fhir:v "dateHeureRenseignementComplementaire" ]
+       ] [
          fhir:identity [ fhir:v "w5" ] ;
          fhir:map [ fhir:v "FiveWs.recorded" ]
        ] [
@@ -1406,9 +1409,6 @@
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "participation[typeCode=AUT].time" ]
-       ] [
-         fhir:identity [ fhir:v "mapping-oncofair-observation" ] ;
-         fhir:map [ fhir:v "dateHeureRenseignementComplementaire" ]
        ] )
      ] [
        fhir:id [ fhir:v "Observation.performer" ] ;
@@ -1531,6 +1531,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "mapping-oncofair-observation" ] ;
+         fhir:map [ fhir:v "valeurRenseignementComplementaire" ]
+       ] [
          fhir:identity [ fhir:v "sct-concept" ] ;
          fhir:map [ fhir:v "< 441742003 |Evaluation finding|" ]
        ] [
@@ -1542,9 +1545,6 @@
        ] [
          fhir:identity [ fhir:v "sct-attr" ] ;
          fhir:map [ fhir:v "363714003 |Interprets|" ]
-       ] [
-         fhir:identity [ fhir:v "mapping-oncofair-observation" ] ;
-         fhir:map [ fhir:v "valeurRenseignementComplementaire" ]
        ] )
      ] [
        fhir:id [ fhir:v "Observation.dataAbsentReason" ] ;

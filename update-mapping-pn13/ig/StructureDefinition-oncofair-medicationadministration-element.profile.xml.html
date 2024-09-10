@@ -46,7 +46,8 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"4.36"}
     h3,h4,h5,h6{--heading-prefix:"4.36"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
@@ -217,7 +218,7 @@
         
           Draft
           
-            as of 2024-07-30
+            as of 2024-09-10
           
         
       </td>
@@ -281,7 +282,7 @@
   &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;OncoFAIRMedicationAdministrationElement&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.title">title</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;OncoFAIR MedicationAdministration Element&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">value</a>=&quot;2024-07-30T13:12:38+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">value</a>=&quot;2024-09-10T09:55:40+00:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.publisher">publisher</a>
              <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.contact">contact</a>&gt;
@@ -401,6 +402,10 @@ Correspond à l’activité induite par un élément de prescription et sa posol
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationradministration-element&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ElementAdministration&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Entity, Role, or Act,SubstanceAdministration&quot;/&gt;
       &lt;/mapping&gt;
@@ -411,10 +416,6 @@ Correspond à l’activité induite par un élément de prescription et sa posol
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;w5&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;clinical.medication&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationradministration-element&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ElementAdministration&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;MedicationAdministration.id&quot;&gt;
@@ -927,6 +928,10 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationradministration-element&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;idElementAdministration&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;workflow&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Event.identifier&quot;/&gt;
       &lt;/mapping&gt;
@@ -937,10 +942,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;.id&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationradministration-element&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;idElementAdministration&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;MedicationAdministration.basedOn&quot;&gt;
@@ -1011,6 +1012,10 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationradministration-element&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;CompteRenduAdministration&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;workflow&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Event.partOf&quot;/&gt;
       &lt;/mapping&gt;
@@ -1018,10 +1023,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>
              <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;.outboundRelationship[typeCode=COMP]/target[classCode=SBADM or PROC,moodCode=EVN]&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationradministration-element&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;CompteRenduAdministration&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;MedicationAdministration.status&quot;&gt;
@@ -1224,13 +1225,13 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
                   <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/ValueSet/medication-admin-location&quot;/&gt;
       &lt;/binding&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationradministration-element&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;codeElementAdministration&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>
              <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;.inboundRelationship[typeCode=COMP].source[classCode=OBS, moodCode=EVN, code=&amp;quot;type of medication usage&amp;quot;].value&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationradministration-element&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;codeElementAdministration&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;MedicationAdministration.category:nature&quot;&gt;
@@ -1272,13 +1273,13 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
                   <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/ValueSet/medication-admin-location&quot;/&gt;
       &lt;/binding&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationradministration-element&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;presentation&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>
              <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;.inboundRelationship[typeCode=COMP].source[classCode=OBS, moodCode=EVN, code=&amp;quot;type of medication usage&amp;quot;].value&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationradministration-element&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;presentation&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;MedicationAdministration.medication&quot;&gt;
@@ -1819,16 +1820,16 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationradministration-element&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;dateHeureDebutEffective&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;DR.1&quot;/&gt;
       &lt;/mapping&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;./low&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationradministration-element&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;dateHeureDebutEffective&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;MedicationAdministration.occurence[x]:occurencePeriod.end&quot;&gt;
@@ -1863,16 +1864,16 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationradministration-element&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;dateHeureFinEffective&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;DR.2&quot;/&gt;
       &lt;/mapping&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;./high&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationradministration-element&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;dateHeureFinEffective&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;MedicationAdministration.recorded&quot;&gt;
@@ -2315,6 +2316,10 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationradministration-element&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ElementPrescription&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;workflow&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Event.basedOn&quot;/&gt;
       &lt;/mapping&gt;
@@ -2325,10 +2330,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;InFullfillmentOf-&amp;gt;SubstanceAdministration&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationradministration-element&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ElementPrescription&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;MedicationAdministration.request.id&quot;&gt;
@@ -2600,6 +2601,10 @@ This element only allows for a single identifier. In the case where additional i
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationradministration-element&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;dispositifsAssocies&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>
              <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;PRT-10 Participation Device / RXR-3 Administrative Device&quot;/&gt;
@@ -2607,10 +2612,6 @@ This element only allows for a single identifier. In the case where additional i
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;device-&amp;gt;Access  OR device-&amp;gt;AssignedDevice&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationradministration-element&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;dispositifsAssocies&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;MedicationAdministration.note&quot;&gt;
@@ -2684,6 +2685,10 @@ This element only allows for a single identifier. In the case where additional i
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationradministration-element&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;libelleElementAdministration&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;workflow&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Event.note&quot;/&gt;
       &lt;/mapping&gt;
@@ -2691,10 +2696,6 @@ This element only allows for a single identifier. In the case where additional i
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>
              <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;.inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=&amp;quot;annotation&amp;quot;].value&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationradministration-element&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;libelleElementAdministration&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;MedicationAdministration.note:wording.id&quot;&gt;
@@ -2919,6 +2920,10 @@ This element only allows for a single identifier. In the case where additional i
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationradministration-element&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;commentaires&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;workflow&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Event.note&quot;/&gt;
       &lt;/mapping&gt;
@@ -2926,10 +2931,6 @@ This element only allows for a single identifier. In the case where additional i
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>
              <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;.inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=&amp;quot;annotation&amp;quot;].value&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationradministration-element&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;commentaires&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;MedicationAdministration.note:comments.id&quot;&gt;
@@ -3356,6 +3357,10 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a> <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/ValueSet/approach-site-codes&quot;/&gt;
       &lt;/binding&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationradministration-element&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;lieuAdministration&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>
              <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;RXR-2 Administration Site / RXR-6 Administration Site Modifier&quot;/&gt;
@@ -3363,10 +3368,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;.approachSiteCode&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationradministration-element&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;lieuAdministration&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;MedicationAdministration.dosage.route&quot;&gt;
@@ -3407,16 +3408,16 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a> <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/ValueSet/route-codes&quot;/&gt;
       &lt;/binding&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationradministration-element&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;voieAdministration&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;RXR-1 Route&quot;/&gt;
       &lt;/mapping&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;.routeCode&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationradministration-element&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;voieAdministration&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;MedicationAdministration.dosage.method&quot;&gt;
@@ -3454,16 +3455,16 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
                   <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/ValueSet/siph-typeeltpla-oncofair-valueset&quot;/&gt;
       &lt;/binding&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationradministration-element&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;typeElementAdministration&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;RXR-4 Administration Method&quot;/&gt;
       &lt;/mapping&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;.methodCode&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationradministration-element&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;typeElementAdministration&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;MedicationAdministration.dosage.dose&quot;&gt;
@@ -3918,7 +3919,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Jul 30, 2024 13:12+0000">2024-07-30</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Sep 10, 2024 09:55+0000">2024-09-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -3935,7 +3936,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -3946,7 +3947,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>

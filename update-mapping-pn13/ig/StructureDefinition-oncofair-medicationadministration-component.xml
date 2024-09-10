@@ -30,7 +30,7 @@
   <name value="OncoFAIRMedicationAdministrationComponent"/>
   <title value="OncoFAIR MedicationAdministration Component"/>
   <status value="draft"/>
-  <date value="2024-07-30T13:12:38+00:00"/>
+  <date value="2024-09-10T09:55:40+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -127,6 +127,10 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
+        <identity value="mapping-oncofair-medicationadministration-component"/>
+        <map value="ComposantAdministre"/>
+      </mapping>
+      <mapping>
         <identity value="rim"/>
         <map value="Entity, Role, or Act,SubstanceAdministration"/>
       </mapping>
@@ -137,10 +141,6 @@
       <mapping>
         <identity value="w5"/>
         <map value="clinical.medication"/>
-      </mapping>
-      <mapping>
-        <identity value="mapping-oncofair-medicationadministration-component"/>
-        <map value="ComposantAdministre"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.id">
@@ -631,16 +631,16 @@
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
+        <identity value="mapping-oncofair-medicationadministration-component"/>
+        <map value="ElementAdministration"/>
+      </mapping>
+      <mapping>
         <identity value="workflow"/>
         <map value="Event.partOf"/>
       </mapping>
       <mapping>
         <identity value="rim"/>
         <map value=".outboundRelationship[typeCode=COMP]/target[classCode=SBADM or PROC,moodCode=EVN]"/>
-      </mapping>
-      <mapping>
-        <identity value="mapping-oncofair-medicationadministration-component"/>
-        <map value="ElementAdministration"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.status">
@@ -807,6 +807,10 @@
         <valueSet value="http://ltsi.univ-rennes.fr/ValueSet/concept-medication-oncofair-valueset"/>
       </binding>
       <mapping>
+        <identity value="mapping-oncofair-medicationadministration-component"/>
+        <map value="Composant"/>
+      </mapping>
+      <mapping>
         <identity value="workflow"/>
         <map value="Event.code"/>
       </mapping>
@@ -821,10 +825,6 @@
       <mapping>
         <identity value="rim"/>
         <map value=".participation[typeCode=CSM].role[classCode=ADMM]"/>
-      </mapping>
-      <mapping>
-        <identity value="mapping-oncofair-medicationadministration-component"/>
-        <map value="Composant"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.medication.id">
@@ -1628,16 +1628,16 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
+        <identity value="mapping-oncofair-medicationadministration-component"/>
+        <map value="commentaires"/>
+      </mapping>
+      <mapping>
         <identity value="workflow"/>
         <map value="Event.note"/>
       </mapping>
       <mapping>
         <identity value="rim"/>
         <map value=".inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=&quot;annotation&quot;].value"/>
-      </mapping>
-      <mapping>
-        <identity value="mapping-oncofair-medicationadministration-component"/>
-        <map value="commentaires"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.note:comments.id">
@@ -1844,16 +1844,16 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
+        <identity value="mapping-oncofair-medicationadministration-component"/>
+        <map value="libelleComposant"/>
+      </mapping>
+      <mapping>
         <identity value="workflow"/>
         <map value="Event.note"/>
       </mapping>
       <mapping>
         <identity value="rim"/>
         <map value=".inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=&quot;annotation&quot;].value"/>
-      </mapping>
-      <mapping>
-        <identity value="mapping-oncofair-medicationadministration-component"/>
-        <map value="libelleComposant"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.note:wording.id">
@@ -2358,16 +2358,16 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
+        <identity value="mapping-oncofair-medicationadministration-component"/>
+        <map value="quantitePrevue"/>
+      </mapping>
+      <mapping>
         <identity value="v2"/>
         <map value="RXA-6 Administered Amount / RXA-7 Administered Units"/>
       </mapping>
       <mapping>
         <identity value="rim"/>
         <map value=".doseQuantity"/>
-      </mapping>
-      <mapping>
-        <identity value="mapping-oncofair-medicationadministration-component"/>
-        <map value="quantitePrevue"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.dosage.rate[x]">
@@ -2455,16 +2455,16 @@
       <mustSupport value="true"/>
       <isModifier value="false"/>
       <mapping>
+        <identity value="mapping-oncofair-medicationadministration-component"/>
+        <map value="quantiteAdministree"/>
+      </mapping>
+      <mapping>
         <identity value="rim"/>
         <map value="n/a,PQ, IVL&lt;PQ&gt;, MO, CO, depending on the values"/>
       </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="SN (see also Range) or CQ"/>
-      </mapping>
-      <mapping>
-        <identity value="mapping-oncofair-medicationadministration-component"/>
-        <map value="quantiteAdministree"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.eventHistory">

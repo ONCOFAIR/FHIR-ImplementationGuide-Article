@@ -46,7 +46,8 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"4.41"}
     h3,h4,h5,h6{--heading-prefix:"4.41"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
@@ -217,7 +218,7 @@
         
           Draft
           
-            as of 2024-07-30
+            as of 2024-09-10
           
         
       </td>
@@ -248,7 +249,7 @@
   "<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.name">name</a>" : "OncoFAIRObservation",
   "<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.title">title</a>" : "OncoFAIR Observation",
   "<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.status">status</a>" : "draft",
-  "<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.date">date</a>" : "2024-07-30T13:12:38+00:00",
+  "<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.date">date</a>" : "2024-09-10T09:55:40+00:00",
   "<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.publisher">publisher</a>" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.contact">contact</a>" : [
     {
@@ -398,6 +399,10 @@
         "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
         "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
+            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "mapping-oncofair-observation",
+            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "RenseignementComplementaire"
+          },
+          {
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Entity, Role, or Act,Observation[classCode=OBS, moodCode=EVN]"
           },
@@ -416,10 +421,6 @@
           {
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "OBX"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "mapping-oncofair-observation",
-            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "RenseignementComplementaire"
           }
         ]
       },
@@ -1421,6 +1422,10 @@
         },
         "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
+            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "mapping-oncofair-observation",
+            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "codeRenseignementComplementaire"
+          },
+          {
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "workflow",
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Event.code"
           },
@@ -1443,10 +1448,6 @@
           {
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "sct-attr",
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "116680003 |Is a|"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "mapping-oncofair-observation",
-            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "codeRenseignementComplementaire"
           }
         ]
       },
@@ -1717,6 +1718,10 @@
         "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
         "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
+            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "mapping-oncofair-observation",
+            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "dateHeureEnregistrementRenseignementComplementaire"
+          },
+          {
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "workflow",
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Event.occurrence[x]"
           },
@@ -1731,10 +1736,6 @@
           {
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "effectiveTime"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "mapping-oncofair-observation",
-            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "dateHeureEnregistrementRenseignementComplementaire"
           }
         ]
       },
@@ -1770,6 +1771,10 @@
         "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
         "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
+            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "mapping-oncofair-observation",
+            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "dateHeureRenseignementComplementaire"
+          },
+          {
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "w5",
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "FiveWs.recorded"
           },
@@ -1780,10 +1785,6 @@
           {
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "participation[typeCode=AUT].time"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "mapping-oncofair-observation",
-            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "dateHeureRenseignementComplementaire"
           }
         ]
       },
@@ -1920,6 +1921,10 @@
         "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
         "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
+            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "mapping-oncofair-observation",
+            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "valeurRenseignementComplementaire"
+          },
+          {
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "sct-concept",
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "&lt; 441742003 |Evaluation finding|"
           },
@@ -1934,10 +1939,6 @@
           {
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "sct-attr",
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "363714003 |Interprets|"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "mapping-oncofair-observation",
-            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "valeurRenseignementComplementaire"
           }
         ]
       },
@@ -3599,7 +3600,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Jul 30, 2024 13:12+0000">2024-07-30</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Sep 10, 2024 09:55+0000">2024-09-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -3616,7 +3617,7 @@
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -3627,7 +3628,6 @@
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>

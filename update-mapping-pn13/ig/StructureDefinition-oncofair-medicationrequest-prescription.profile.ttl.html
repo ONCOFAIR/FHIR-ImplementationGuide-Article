@@ -46,7 +46,8 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"4.40"}
     h3,h4,h5,h6{--heading-prefix:"4.40"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
@@ -217,7 +218,7 @@
         
           Draft
           
-            as of 2024-07-30
+            as of 2024-09-10
           
         
       </td>
@@ -255,7 +256,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
   <a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;OncoFAIRMedicationRequestPrescription&quot;] ; # 
   <a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;OncoFAIR MedicationRequest Prescription&quot;] ; # 
   <a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;draft&quot;] ; # 
-  <a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">fhir:v</a> &quot;2024-07-30T13:12:38+00:00&quot;^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">fhir:v</a> &quot;2024-09-10T09:55:40+00:00&quot;^^xsd:dateTime] ; # 
   <a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL&quot;] ; # 
   <a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.contact">fhir:contact</a> ( [
 <a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL&quot; ] ;
@@ -355,6 +356,8 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
       ( <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">fhir:mapping</a> [
+<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;mapping-oncofair-medicationrequest-prescription&quot; ] ;
+<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Prescription&quot; ]       ] [
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;rim&quot; ] ;
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Entity, Role, or Act,CombinedMedicationRequest&quot; ]       ] [
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;workflow&quot; ] ;
@@ -362,9 +365,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;script10.6&quot; ] ;
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Message/Body/NewRx&quot; ]       ] [
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;w5&quot; ] ;
-<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;clinical.medication&quot; ]       ] [
-<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;mapping-oncofair-medicationrequest-prescription&quot; ] ;
-<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Prescription&quot; ]       ] )     ] [
+<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;clinical.medication&quot; ]       ] )     ] [
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;MedicationRequest.id&quot; ] ;
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;MedicationRequest.id&quot; ] ;
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Logical id of this artifact&quot; ] ;
@@ -654,6 +655,8 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
       ( <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">fhir:mapping</a> [
+<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;mapping-oncofair-medicationrequest-prescription&quot; ] ;
+<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;idPrescription&quot; ]       ] [
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;workflow&quot; ] ;
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Request.identifier&quot; ]       ] [
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;script10.6&quot; ] ;
@@ -663,9 +666,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;v2&quot; ] ;
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ORC-2-Placer Order Number / ORC-3-Filler Order Number&quot; ]       ] [
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;rim&quot; ] ;
-<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;.id&quot; ]       ] [
-<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;mapping-oncofair-medicationrequest-prescription&quot; ] ;
-<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;idPrescription&quot; ]       ] )     ] [
+<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;.id&quot; ]       ] )     ] [
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;MedicationRequest.identifier.id&quot; ] ;
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;MedicationRequest.identifier.id&quot; ] ;
       ( <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.representation">fhir:representation</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;xmlAttr&quot; ] ) ;
@@ -962,12 +963,12 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ] ;
       ( <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">fhir:mapping</a> [
+<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;mapping-oncofair-medicationrequest-prescription&quot; ] ;
+<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ProtocolePrescrit&quot; ]       ] [
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;workflow&quot; ] ;
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Request.basedOn&quot; ]       ] [
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;rim&quot; ] ;
-<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;.outboundRelationship[typeCode=FLFS].target[classCode=SBADM or PROC or PCPR or OBS, moodCode=RQO orPLAN or PRP]&quot; ]       ] [
-<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;mapping-oncofair-medicationrequest-prescription&quot; ] ;
-<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ProtocolePrescrit&quot; ]       ] )     ] [
+<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;.outboundRelationship[typeCode=FLFS].target[classCode=SBADM or PROC or PCPR or OBS, moodCode=RQO orPLAN or PRP]&quot; ]       ] )     ] [
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;MedicationRequest.priorPrescription&quot; ] ;
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;MedicationRequest.priorPrescription&quot; ] ;
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Reference to an order/prescription that is being replaced by this MedicationRequest&quot; ] ;
@@ -1549,6 +1550,8 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
       ( <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">fhir:mapping</a> [
+<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;mapping-oncofair-medicationrequest-prescription&quot; ] ;
+<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Sejour&quot; ]       ] [
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;workflow&quot; ] ;
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Request.encounter&quot; ]       ] [
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;script10.6&quot; ] ;
@@ -1558,9 +1561,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;v2&quot; ] ;
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;PV1-19 Visit Number&quot; ]       ] [
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;rim&quot; ] ;
-<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;.inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN, code=\&quot;type of encounter or episode\&quot;]&quot; ]       ] [
-<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;mapping-oncofair-medicationrequest-prescription&quot; ] ;
-<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Sejour&quot; ]       ] )     ] [
+<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;.inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN, code=\&quot;type of encounter or episode\&quot;]&quot; ]       ] )     ] [
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;MedicationRequest.supportingInformation&quot; ] ;
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;MedicationRequest.supportingInformation&quot; ] ;
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.slicing">fhir:slicing</a> [
@@ -1629,14 +1630,14 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
       ( <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">fhir:mapping</a> [
+<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;mapping-oncofair-medicationrequest-prescription&quot; ] ;
+<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;uniteHebergement&quot; ]       ] [
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;workflow&quot; ] ;
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Request.supportingInfo&quot; ]       ] [
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;w5&quot; ] ;
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;FiveWs.context&quot; ]       ] [
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;rim&quot; ] ;
-<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;.outboundRelationship[typeCode=PERT].target[A_SupportingClinicalStatement CMET minimal with many different choices of classCodes(ORG, ENC, PROC, SPLY, SBADM, OBS) and each of the act class codes draws from one or more of the following moodCodes (EVN, DEF, INT PRMS, RQO, PRP, APT, ARQ, GOL)]&quot; ]       ] [
-<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;mapping-oncofair-medicationrequest-prescription&quot; ] ;
-<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;uniteHebergement&quot; ]       ] )     ] [
+<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;.outboundRelationship[typeCode=PERT].target[A_SupportingClinicalStatement CMET minimal with many different choices of classCodes(ORG, ENC, PROC, SPLY, SBADM, OBS) and each of the act class codes draws from one or more of the following moodCodes (EVN, DEF, INT PRMS, RQO, PRP, APT, ARQ, GOL)]&quot; ]       ] )     ] [
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;MedicationRequest.supportingInformation:accomodationUnit.id&quot; ] ;
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;MedicationRequest.supportingInformation.id&quot; ] ;
       ( <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.representation">fhir:representation</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;xmlAttr&quot; ] ) ;
@@ -1850,14 +1851,14 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
       ( <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">fhir:mapping</a> [
+<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;mapping-oncofair-medicationrequest-prescription&quot; ] ;
+<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;uniteResponsabiliteMedicale&quot; ]       ] [
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;workflow&quot; ] ;
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Request.supportingInfo&quot; ]       ] [
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;w5&quot; ] ;
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;FiveWs.context&quot; ]       ] [
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;rim&quot; ] ;
-<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;.outboundRelationship[typeCode=PERT].target[A_SupportingClinicalStatement CMET minimal with many different choices of classCodes(ORG, ENC, PROC, SPLY, SBADM, OBS) and each of the act class codes draws from one or more of the following moodCodes (EVN, DEF, INT PRMS, RQO, PRP, APT, ARQ, GOL)]&quot; ]       ] [
-<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;mapping-oncofair-medicationrequest-prescription&quot; ] ;
-<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;uniteResponsabiliteMedicale&quot; ]       ] )     ] [
+<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;.outboundRelationship[typeCode=PERT].target[A_SupportingClinicalStatement CMET minimal with many different choices of classCodes(ORG, ENC, PROC, SPLY, SBADM, OBS) and each of the act class codes draws from one or more of the following moodCodes (EVN, DEF, INT PRMS, RQO, PRP, APT, ARQ, GOL)]&quot; ]       ] )     ] [
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;MedicationRequest.supportingInformation:medicalLiabiltyUnit.id&quot; ] ;
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;MedicationRequest.supportingInformation.id&quot; ] ;
       ( <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.representation">fhir:representation</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;xmlAttr&quot; ] ) ;
@@ -2330,6 +2331,8 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/ValueSet/condition-code&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/ValueSet/condition-code&gt;         ]       ] ;
       ( <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">fhir:mapping</a> [
+<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;mapping-oncofair-medicationrequest-prescription&quot; ] ;
+<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;RenseignementComplementaire&quot; ]       ] [
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;workflow&quot; ] ;
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Request.reason&quot; ]       ] [
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;script10.6&quot; ] ;
@@ -2339,9 +2342,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;v2&quot; ] ;
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ORC-16 Order Control Code Reason /RXE-27 Give Indication/RXO-20-Indication / RXD-21 Indication / RXG-22 Indication / RXA-19 Indication&quot; ]       ] [
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;rim&quot; ] ;
-<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;reason.observation.reasonCode | reason.observation[code=ASSERTION].value&quot; ]       ] [
-<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;mapping-oncofair-medicationrequest-prescription&quot; ] ;
-<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;RenseignementComplementaire&quot; ]       ] )     ] [
+<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;reason.observation.reasonCode | reason.observation[code=ASSERTION].value&quot; ]       ] )     ] [
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;MedicationRequest.courseOfTherapyType&quot; ] ;
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;MedicationRequest.courseOfTherapyType&quot; ] ;
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Overall pattern of medication administration&quot; ] ;
@@ -2435,14 +2436,14 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
       ( <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">fhir:mapping</a> [
+<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;mapping-oncofair-medicationrequest-prescription&quot; ] ;
+<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;commentaires&quot; ]       ] [
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;workflow&quot; ] ;
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Request.note&quot; ]       ] [
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;script10.6&quot; ] ;
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Message/Body/NewRx/MedicationPrescribed/Note&quot; ]       ] [
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;rim&quot; ] ;
-<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;.inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=\&quot;annotation\&quot;].value&quot; ]       ] [
-<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;mapping-oncofair-medicationrequest-prescription&quot; ] ;
-<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;commentaires&quot; ]       ] )     ] [
+<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;.inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=\&quot;annotation\&quot;].value&quot; ]       ] )     ] [
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;MedicationRequest.renderedDosageInstruction&quot; ] ;
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;MedicationRequest.renderedDosageInstruction&quot; ] ;
 <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Full representation of the dosage instructions&quot; ] ;
@@ -3465,7 +3466,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Jul 30, 2024 13:12+0000">2024-07-30</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Sep 10, 2024 09:55+0000">2024-09-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -3482,7 +3483,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -3493,7 +3494,6 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>

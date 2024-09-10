@@ -28,7 +28,7 @@
   <name value="OncoFAIRMedicationRequestPrescription"/>
   <title value="OncoFAIR MedicationRequest Prescription"/>
   <status value="draft"/>
-  <date value="2024-07-30T13:12:38+00:00"/>
+  <date value="2024-09-10T09:55:40+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -132,6 +132,10 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
+        <identity value="mapping-oncofair-medicationrequest-prescription"/>
+        <map value="Prescription"/>
+      </mapping>
+      <mapping>
         <identity value="rim"/>
         <map value="Entity, Role, or Act,CombinedMedicationRequest"/>
       </mapping>
@@ -146,10 +150,6 @@
       <mapping>
         <identity value="w5"/>
         <map value="clinical.medication"/>
-      </mapping>
-      <mapping>
-        <identity value="mapping-oncofair-medicationrequest-prescription"/>
-        <map value="Prescription"/>
       </mapping>
     </element>
     <element id="MedicationRequest.id">
@@ -473,6 +473,10 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
+        <identity value="mapping-oncofair-medicationrequest-prescription"/>
+        <map value="idPrescription"/>
+      </mapping>
+      <mapping>
         <identity value="workflow"/>
         <map value="Request.identifier"/>
       </mapping>
@@ -491,10 +495,6 @@
       <mapping>
         <identity value="rim"/>
         <map value=".id"/>
-      </mapping>
-      <mapping>
-        <identity value="mapping-oncofair-medicationrequest-prescription"/>
-        <map value="idPrescription"/>
       </mapping>
     </element>
     <element id="MedicationRequest.identifier.id">
@@ -838,16 +838,16 @@
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
+        <identity value="mapping-oncofair-medicationrequest-prescription"/>
+        <map value="ProtocolePrescrit"/>
+      </mapping>
+      <mapping>
         <identity value="workflow"/>
         <map value="Request.basedOn"/>
       </mapping>
       <mapping>
         <identity value="rim"/>
         <map value=".outboundRelationship[typeCode=FLFS].target[classCode=SBADM or PROC or PCPR or OBS, moodCode=RQO orPLAN or PRP]"/>
-      </mapping>
-      <mapping>
-        <identity value="mapping-oncofair-medicationrequest-prescription"/>
-        <map value="ProtocolePrescrit"/>
       </mapping>
     </element>
     <element id="MedicationRequest.priorPrescription">
@@ -1506,6 +1506,10 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
+        <identity value="mapping-oncofair-medicationrequest-prescription"/>
+        <map value="Sejour"/>
+      </mapping>
+      <mapping>
         <identity value="workflow"/>
         <map value="Request.encounter"/>
       </mapping>
@@ -1524,10 +1528,6 @@
       <mapping>
         <identity value="rim"/>
         <map value=".inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN, code=&quot;type of encounter or episode&quot;]"/>
-      </mapping>
-      <mapping>
-        <identity value="mapping-oncofair-medicationrequest-prescription"/>
-        <map value="Sejour"/>
       </mapping>
     </element>
     <element id="MedicationRequest.supportingInformation">
@@ -1604,6 +1604,10 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
+        <identity value="mapping-oncofair-medicationrequest-prescription"/>
+        <map value="uniteHebergement"/>
+      </mapping>
+      <mapping>
         <identity value="workflow"/>
         <map value="Request.supportingInfo"/>
       </mapping>
@@ -1614,10 +1618,6 @@
       <mapping>
         <identity value="rim"/>
         <map value=".outboundRelationship[typeCode=PERT].target[A_SupportingClinicalStatement CMET minimal with many different choices of classCodes(ORG, ENC, PROC, SPLY, SBADM, OBS) and each of the act class codes draws from one or more of the following moodCodes (EVN, DEF, INT PRMS, RQO, PRP, APT, ARQ, GOL)]"/>
-      </mapping>
-      <mapping>
-        <identity value="mapping-oncofair-medicationrequest-prescription"/>
-        <map value="uniteHebergement"/>
       </mapping>
     </element>
     <element id="MedicationRequest.supportingInformation:accomodationUnit.id">
@@ -1855,6 +1855,10 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
+        <identity value="mapping-oncofair-medicationrequest-prescription"/>
+        <map value="uniteResponsabiliteMedicale"/>
+      </mapping>
+      <mapping>
         <identity value="workflow"/>
         <map value="Request.supportingInfo"/>
       </mapping>
@@ -1865,10 +1869,6 @@
       <mapping>
         <identity value="rim"/>
         <map value=".outboundRelationship[typeCode=PERT].target[A_SupportingClinicalStatement CMET minimal with many different choices of classCodes(ORG, ENC, PROC, SPLY, SBADM, OBS) and each of the act class codes draws from one or more of the following moodCodes (EVN, DEF, INT PRMS, RQO, PRP, APT, ARQ, GOL)]"/>
-      </mapping>
-      <mapping>
-        <identity value="mapping-oncofair-medicationrequest-prescription"/>
-        <map value="uniteResponsabiliteMedicale"/>
       </mapping>
     </element>
     <element id="MedicationRequest.supportingInformation:medicalLiabiltyUnit.id">
@@ -2383,6 +2383,10 @@
         <valueSet value="http://hl7.org/fhir/ValueSet/condition-code"/>
       </binding>
       <mapping>
+        <identity value="mapping-oncofair-medicationrequest-prescription"/>
+        <map value="RenseignementComplementaire"/>
+      </mapping>
+      <mapping>
         <identity value="workflow"/>
         <map value="Request.reason"/>
       </mapping>
@@ -2401,10 +2405,6 @@
       <mapping>
         <identity value="rim"/>
         <map value="reason.observation.reasonCode | reason.observation[code=ASSERTION].value"/>
-      </mapping>
-      <mapping>
-        <identity value="mapping-oncofair-medicationrequest-prescription"/>
-        <map value="RenseignementComplementaire"/>
       </mapping>
     </element>
     <element id="MedicationRequest.courseOfTherapyType">
@@ -2505,6 +2505,10 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
+        <identity value="mapping-oncofair-medicationrequest-prescription"/>
+        <map value="commentaires"/>
+      </mapping>
+      <mapping>
         <identity value="workflow"/>
         <map value="Request.note"/>
       </mapping>
@@ -2515,10 +2519,6 @@
       <mapping>
         <identity value="rim"/>
         <map value=".inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=&quot;annotation&quot;].value"/>
-      </mapping>
-      <mapping>
-        <identity value="mapping-oncofair-medicationrequest-prescription"/>
-        <map value="commentaires"/>
       </mapping>
     </element>
     <element id="MedicationRequest.renderedDosageInstruction">

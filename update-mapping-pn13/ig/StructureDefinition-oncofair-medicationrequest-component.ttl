@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIRMedicationRequestComponent"] ; # 
   fhir:title [ fhir:v "OncoFAIR MedicationRequest Component"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-07-30T13:12:38+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-09-10T09:55:40+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -131,6 +131,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-component" ] ;
+         fhir:map [ fhir:v "ComposantPrescrit" ]
+       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "Entity, Role, or Act,CombinedMedicationRequest" ]
        ] [
@@ -142,9 +145,6 @@
        ] [
          fhir:identity [ fhir:v "w5" ] ;
          fhir:map [ fhir:v "clinical.medication" ]
-       ] [
-         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-component" ] ;
-         fhir:map [ fhir:v "ComposantPrescrit" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationRequest.id" ] ;
@@ -626,14 +626,14 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-component" ] ;
+         fhir:map [ fhir:v "ElementPrescription" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Request.basedOn" ]
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".outboundRelationship[typeCode=FLFS].target[classCode=SBADM or PROC or PCPR or OBS, moodCode=RQO orPLAN or PRP]" ]
-       ] [
-         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-component" ] ;
-         fhir:map [ fhir:v "ElementPrescription" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationRequest.priorPrescription" ] ;
@@ -1076,6 +1076,9 @@
          ]
        ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-component" ] ;
+         fhir:map [ fhir:v "Composant" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Request.code" ]
        ] [
@@ -1090,9 +1093,6 @@
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "consumable.administrableMedication" ]
-       ] [
-         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-component" ] ;
-         fhir:map [ fhir:v "Composant" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationRequest.medication.id" ] ;
@@ -1980,6 +1980,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-component" ] ;
+         fhir:map [ fhir:v "libelleComposant" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Request.note" ]
        ] [
@@ -1988,9 +1991,6 @@
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=\"annotation\"].value" ]
-       ] [
-         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-component" ] ;
-         fhir:map [ fhir:v "libelleComposant" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationRequest.note:wording.id" ] ;
@@ -2221,6 +2221,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-component" ] ;
+         fhir:map [ fhir:v "commentaires" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Request.note" ]
        ] [
@@ -2229,9 +2232,6 @@
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=\"annotation\"].value" ]
-       ] [
-         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-component" ] ;
-         fhir:map [ fhir:v "commentaires" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationRequest.note:comments.id" ] ;
@@ -2462,6 +2462,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-component" ] ;
+         fhir:map [ fhir:v "indication" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Request.note" ]
        ] [
@@ -2470,9 +2473,6 @@
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=\"annotation\"].value" ]
-       ] [
-         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-component" ] ;
-         fhir:map [ fhir:v "indication" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationRequest.note:indication.id" ] ;
@@ -3559,14 +3559,14 @@
        ] ) ;
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-component" ] ;
+         fhir:map [ fhir:v "quantiteComposantPrescrit" ]
+       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "n/a,PQ, IVL<PQ>, MO, CO, depending on the values" ]
        ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "SN (see also Range) or CQ" ]
-       ] [
-         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-component" ] ;
-         fhir:map [ fhir:v "quantiteComposantPrescrit" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationRequest.dosageInstruction.doseAndRate.rate[x]" ] ;
@@ -4623,6 +4623,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-component" ] ;
+         fhir:map [ fhir:v "nonSubstituable" ]
+       ] [
          fhir:identity [ fhir:v "script10.6" ] ;
          fhir:map [ fhir:v "specific values within Message/Body/NewRx/MedicationPrescribed/Substitutions" ]
        ] [
@@ -4631,9 +4634,6 @@
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "code" ]
-       ] [
-         fhir:identity [ fhir:v "mapping-oncofair-medicationrequest-component" ] ;
-         fhir:map [ fhir:v "nonSubstituable" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationRequest.substitution.reason" ] ;

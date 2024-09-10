@@ -10,7 +10,7 @@
   "name" : "OncoFAIRMedicationAdministrationReport",
   "title" : "OncoFAIR MedicationAdministration Report",
   "status" : "draft",
-  "date" : "2024-07-30T13:12:38+00:00",
+  "date" : "2024-09-10T09:55:40+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -110,6 +110,10 @@
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
+        "identity" : "mapping-oncofair-medicationadministration-report",
+        "map" : "CompteRenduAdministration"
+      },
+      {
         "identity" : "rim",
         "map" : "Entity, Role, or Act,SubstanceAdministration"
       },
@@ -120,10 +124,6 @@
       {
         "identity" : "w5",
         "map" : "clinical.medication"
-      },
-      {
-        "identity" : "mapping-oncofair-medicationadministration-report",
-        "map" : "CompteRenduAdministration"
       }]
     },
     {
@@ -420,6 +420,10 @@
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
+        "identity" : "mapping-oncofair-medicationadministration-report",
+        "map" : "idCompteRenduAdministration"
+      },
+      {
         "identity" : "workflow",
         "map" : "Event.identifier"
       },
@@ -430,10 +434,6 @@
       {
         "identity" : "rim",
         "map" : ".id"
-      },
-      {
-        "identity" : "mapping-oncofair-medicationadministration-report",
-        "map" : "idCompteRenduAdministration"
       }]
     },
     {
@@ -905,6 +905,10 @@
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
+        "identity" : "mapping-oncofair-medicationadministration-report",
+        "map" : "Sejour"
+      },
+      {
         "identity" : "workflow",
         "map" : "Event.encounter"
       },
@@ -919,10 +923,6 @@
       {
         "identity" : "rim",
         "map" : ".inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN, code=\"type of encounter or episode\"]"
-      },
-      {
-        "identity" : "mapping-oncofair-medicationadministration-report",
-        "map" : "Sejour"
       }]
     },
     {
@@ -1327,16 +1327,16 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "mapping-oncofair-medicationadministration-report",
+        "map" : "idpAdministrateur"
+      },
+      {
         "identity" : "workflow",
         "map" : "Event.performer.actor"
       },
       {
         "identity" : "rim",
         "map" : ".role"
-      },
-      {
-        "identity" : "mapping-oncofair-medicationadministration-report",
-        "map" : "idpAdministrateur"
       }]
     },
     {

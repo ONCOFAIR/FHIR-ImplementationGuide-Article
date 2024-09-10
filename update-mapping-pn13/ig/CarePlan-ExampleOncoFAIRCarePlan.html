@@ -38,7 +38,8 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"4.102"}
     h3,h4,h5,h6{--heading-prefix:"4.102"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
@@ -183,7 +184,7 @@
 
 
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CarePlan ExampleOncoFAIRCarePlan</b></p><a name="ExampleOncoFAIRCarePlan"> </a><a name="hcExampleOncoFAIRCarePlan"> </a><a name="ExampleOncoFAIRCarePlan-en-US"> </a><p><b>identifier</b>: CP-123456</p><p><b>basedOn</b>: <a href="CarePlan-ExampleOncoFAIRCarePlan.html">CarePlan Example Prescribed Protocol</a></p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>title</b>: Example Prescribed Protocol</p><p><b>subject</b>: <a href="Patient-ExampleOncoFAIRPatient.html">Anonymous Patient (no stated gender), DoB Unknown ( 123456789)</a></p><p><b>note</b>: Patient diagnosed with condition X requiring protocol Y., Patient responded well to previous treatments., Parent Protocol ID: CP-654321</p></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CarePlan ExampleOncoFAIRCarePlan</b></p><a name="ExampleOncoFAIRCarePlan"> </a><a name="hcExampleOncoFAIRCarePlan"> </a><a name="ExampleOncoFAIRCarePlan-en-US"> </a><blockquote><p><b>OncoFAIRCPTreatment</b></p><ul><li>treatmentRank: 1</li><li>dayRank: 1</li><li>dateTimeReference: 2024-05-29 10:00:00+0000</li></ul></blockquote><blockquote><p><b>OncoFAIRPharmacistAdvice</b></p><ul><li>pharmacistValidation: <span title="Codes:{http://ltsi.univ-rennes.fr/CodeSystem/siph-statutvalidpharm-oncofair-codesystem VAL}">validée</span></li><li>pharmacistProposal: <span title="Codes:{http://ltsi.univ-rennes.fr/CodeSystem/siph-natureproppharm-oncofair-codesystem SUG}">Suggestion</span></li></ul></blockquote><p><b>identifier</b>: CP-123456</p><p><b>basedOn</b>: <a href="CarePlan-ExampleOncoFAIRCarePlan.html">CarePlan Example Prescribed Protocol</a></p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>title</b>: Example Prescribed Protocol</p><p><b>subject</b>: <a href="Patient-ExampleOncoFAIRPatient.html">Anonymous Patient (no stated gender), DoB Unknown ( 123456789)</a></p><p><b>note</b>: Patient diagnosed with condition X requiring protocol Y., Patient responded well to previous treatments., Parent Protocol ID: CP-654321</p></div>
 
   
 
@@ -208,7 +209,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Jul 30, 2024 13:12+0000">2024-07-30</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Sep 10, 2024 09:55+0000">2024-09-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -225,7 +226,7 @@
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -236,7 +237,6 @@
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>

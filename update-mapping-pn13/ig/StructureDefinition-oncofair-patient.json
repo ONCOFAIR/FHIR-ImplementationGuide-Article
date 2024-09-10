@@ -10,7 +10,7 @@
   "name" : "OncoFAIRPatient",
   "title" : "OncoFAIR Patient",
   "status" : "draft",
-  "date" : "2024-07-30T13:12:38+00:00",
+  "date" : "2024-09-10T09:55:40+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -121,6 +121,10 @@
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
+        "identity" : "mapping-oncofair-patient",
+        "map" : "Patient"
+      },
+      {
         "identity" : "rim",
         "map" : "Entity, Role, or Act,Patient[classCode=PAT]"
       },
@@ -135,10 +139,6 @@
       {
         "identity" : "cda",
         "map" : "ClinicalDocument.recordTarget.patientRole"
-      },
-      {
-        "identity" : "mapping-oncofair-patient",
-        "map" : "Patient"
       }]
     },
     {
@@ -435,6 +435,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "mapping-oncofair-patient",
+        "map" : "IPP"
+      },
+      {
         "identity" : "w5",
         "map" : "FiveWs.identifier"
       },
@@ -453,10 +457,6 @@
       {
         "identity" : "cda",
         "map" : ".id"
-      },
-      {
-        "identity" : "mapping-oncofair-patient",
-        "map" : "IPP"
       }]
     },
     {

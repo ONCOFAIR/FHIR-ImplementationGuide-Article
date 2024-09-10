@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "OncoFAIRMAElementPlannedPeriod"] ; # 
   fhir:title [ fhir:v "OncoFAIRMAElementPlannedPeriod"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-07-30T13:12:38+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-09-10T09:55:40+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -323,14 +323,14 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "mapping-oncofair-ma-element-plannedperiod" ] ;
+         fhir:map [ fhir:v "dateHeureDebutPrevue" ]
+       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "DR.1" ]
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "./low" ]
-       ] [
-         fhir:identity [ fhir:v "mapping-oncofair-ma-element-plannedperiod" ] ;
-         fhir:map [ fhir:v "dateHeureDebutPrevue" ]
        ] )
      ] [
        fhir:id [ fhir:v "Extension.value[x].end" ] ;
@@ -363,14 +363,14 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "mapping-oncofair-ma-element-plannedperiod" ] ;
+         fhir:map [ fhir:v "dateHeureFinPrevue" ]
+       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "DR.2" ]
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "./high" ]
-       ] [
-         fhir:identity [ fhir:v "mapping-oncofair-ma-element-plannedperiod" ] ;
-         fhir:map [ fhir:v "dateHeureFinPrevue" ]
        ] )
      ] )
   ] ; # 

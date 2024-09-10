@@ -46,7 +46,8 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"4.39"}
     h3,h4,h5,h6{--heading-prefix:"4.39"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
@@ -217,7 +218,7 @@
         
           Draft
           
-            as of 2024-07-30
+            as of 2024-09-10
           
         
       </td>
@@ -312,7 +313,7 @@
   &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;OncoFAIRMedicationRequestElement&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.title">title</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;OncoFAIR MedicationRequest Element&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">value</a>=&quot;2024-07-30T13:12:38+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">value</a>=&quot;2024-09-10T09:55:40+00:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.publisher">publisher</a>
              <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.contact">contact</a>&gt;
@@ -444,6 +445,16 @@ Correspond à une ligne de prescription d’une ordonnance. Chacune comporte un 
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
+                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ElementPrescription&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
+                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-posologie&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ElementPosologie&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Entity, Role, or Act,CombinedMedicationRequest&quot;/&gt;
       &lt;/mapping&gt;
@@ -458,16 +469,6 @@ Correspond à une ligne de prescription d’une ordonnance. Chacune comporte un 
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;w5&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;clinical.medication&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
-                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ElementPrescription&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
-                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-posologie&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ElementPosologie&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;MedicationRequest.id&quot;&gt;
@@ -977,6 +978,11 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
+                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;idElementPrescription&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;workflow&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Request.identifier&quot;/&gt;
       &lt;/mapping&gt;
@@ -995,11 +1001,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;.id&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
-                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;idElementPrescription&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;MedicationRequest.identifier.id&quot;&gt;
@@ -1429,6 +1430,11 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
+                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Prescription&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;workflow&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Request.basedOn&quot;/&gt;
       &lt;/mapping&gt;
@@ -1436,11 +1442,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>
              <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;.outboundRelationship[typeCode=FLFS].target[classCode=SBADM or PROC or PCPR or OBS, moodCode=RQO orPLAN or PRP]&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
-                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Prescription&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;MedicationRequest.basedOn:element&quot;&gt;
@@ -1473,6 +1474,11 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
+                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ElementLie&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;workflow&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Request.basedOn&quot;/&gt;
       &lt;/mapping&gt;
@@ -1480,11 +1486,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>
              <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;.outboundRelationship[typeCode=FLFS].target[classCode=SBADM or PROC or PCPR or OBS, moodCode=RQO orPLAN or PRP]&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
-                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ElementLie&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;MedicationRequest.basedOn:element.id&quot;&gt;
@@ -1785,6 +1786,11 @@ This element only allows for a single identifier. In the case where additional i
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
+                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ProtocolePrescrit&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;workflow&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Request.basedOn&quot;/&gt;
       &lt;/mapping&gt;
@@ -1792,11 +1798,6 @@ This element only allows for a single identifier. In the case where additional i
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>
              <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;.outboundRelationship[typeCode=FLFS].target[classCode=SBADM or PROC or PCPR or OBS, moodCode=RQO orPLAN or PRP]&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
-                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ProtocolePrescrit&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;MedicationRequest.priorPrescription&quot;&gt;
@@ -1872,6 +1873,11 @@ This element only allows for a single identifier. In the case where additional i
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
+                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;idGroupe&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;workflow&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Request.groupIdentifier&quot;/&gt;
       &lt;/mapping&gt;
@@ -1879,11 +1885,6 @@ This element only allows for a single identifier. In the case where additional i
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>
              <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;.outboundRelationship(typeCode=COMP].target[classCode=SBADM, moodCode=INT].id&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
-                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;idGroupe&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;MedicationRequest.groupIdentifier.id&quot;&gt;
@@ -2276,6 +2277,11 @@ Clinical decision support systems should take the status into account when deter
                   <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/ValueSet/medicationrequest-status|5.0.0&quot;/&gt;
       &lt;/binding&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
+                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;CreationArretModificationValidation&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;workflow&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Request.status&quot;/&gt;
       &lt;/mapping&gt;
@@ -2290,11 +2296,6 @@ Clinical decision support systems should take the status into account when deter
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;.statusCode&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
-                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;CreationArretModificationValidation&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;MedicationRequest.statusReason&quot;&gt;
@@ -2524,6 +2525,11 @@ Clinical decision support systems should take the status into account when deter
                   <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/ValueSet/request-priority|5.0.0&quot;/&gt;
       &lt;/binding&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
+                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;urgent&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;workflow&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Request.priority&quot;/&gt;
       &lt;/mapping&gt;
@@ -2534,11 +2540,6 @@ Clinical decision support systems should take the status into account when deter
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;.priorityCode&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
-                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;urgent&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;MedicationRequest.doNotPerform&quot;&gt;
@@ -3047,6 +3048,11 @@ Clinical decision support systems should take the status into account when deter
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
+                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;idpPrescripteur&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;workflow&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Request.requester&quot;/&gt;
       &lt;/mapping&gt;
@@ -3057,11 +3063,6 @@ Clinical decision support systems should take the status into account when deter
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;.participation[typeCode=AUT].role&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
-                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;idpPrescripteur&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;MedicationRequest.reported&quot;&gt;
@@ -3233,14 +3234,14 @@ Clinical decision support systems should take the status into account when deter
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>
-             <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;.participation[typeCode=PRF].role[scoper.determinerCode=INSTANCE]&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
                   <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;dispostifsAssocies&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>
+             <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;.participation[typeCode=PRF].role[scoper.determinerCode=INSTANCE]&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;MedicationRequest.recorder&quot;&gt;
@@ -3508,6 +3509,11 @@ Clinical decision support systems should take the status into account when deter
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
+                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;libelleElementPrescription&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;workflow&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Request.note&quot;/&gt;
       &lt;/mapping&gt;
@@ -3519,11 +3525,6 @@ Clinical decision support systems should take the status into account when deter
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>
              <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;.inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=&amp;quot;annotation&amp;quot;].value&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
-                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;libelleElementPrescription&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;MedicationRequest.note:wording.id&quot;&gt;
@@ -3749,6 +3750,11 @@ Clinical decision support systems should take the status into account when deter
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
+                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;indication&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;workflow&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Request.note&quot;/&gt;
       &lt;/mapping&gt;
@@ -3760,11 +3766,6 @@ Clinical decision support systems should take the status into account when deter
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>
              <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;.inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=&amp;quot;annotation&amp;quot;].value&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
-                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;indication&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;MedicationRequest.note:indication.id&quot;&gt;
@@ -3990,6 +3991,11 @@ Clinical decision support systems should take the status into account when deter
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
+                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;commentaires&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;workflow&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Request.note&quot;/&gt;
       &lt;/mapping&gt;
@@ -4001,11 +4007,6 @@ Clinical decision support systems should take the status into account when deter
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>
              <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;.inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=&amp;quot;annotation&amp;quot;].value&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
-                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;commentaires&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;MedicationRequest.note:comments.id&quot;&gt;
@@ -4373,17 +4374,17 @@ Clinical decision support systems should take the status into account when deter
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
+                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;dateHeureDebutPrescription&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;DR.1&quot;/&gt;
       &lt;/mapping&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;./low&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
-                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;dateHeureDebutPrescription&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;MedicationRequest.effectiveDosePeriod.end&quot;&gt;
@@ -4417,17 +4418,17 @@ Clinical decision support systems should take the status into account when deter
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
+                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;dateHeureFinPrescription&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;DR.2&quot;/&gt;
       &lt;/mapping&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;./high&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
-                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;dateHeureFinPrescription&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;MedicationRequest.dosageInstruction&quot;&gt;
@@ -4714,17 +4715,17 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
+                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;posologie&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;RXO-6; RXE-21&quot;/&gt;
       &lt;/mapping&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;.text&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
-                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;posologie&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a>
@@ -4771,17 +4772,17 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
                   <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/ValueSet/additional-instruction-codes&quot;/&gt;
       &lt;/binding&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
+                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;conditionsApplication&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;RXO-7&quot;/&gt;
       &lt;/mapping&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;.text&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
-                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;conditionsApplication&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a>
@@ -5381,17 +5382,17 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
+                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;dateHeureDebutPrescrite&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;DR.1&quot;/&gt;
       &lt;/mapping&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;./low&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
-                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;dateHeureDebutPrescrite&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a>
@@ -5427,17 +5428,17 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
+                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;dateHeureFinPrescrite&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;DR.2&quot;/&gt;
       &lt;/mapping&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;./high&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
-                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;dateHeureFinPrescrite&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a>
@@ -5957,13 +5958,13 @@ Normal practice is to use the 'mo' code as a calendar month when calculating the
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EIVL.offset&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
                   <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;deltaDateHeureReference&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EIVL.offset&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;MedicationRequest.dosageInstruction:element.timing.code&quot;&gt;
@@ -6134,17 +6135,17 @@ Normal practice is to use the 'mo' code as a calendar month when calculating the
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a> <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/ValueSet/approach-site-codes&quot;/&gt;
       &lt;/binding&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
+                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;lieuAdministration&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;RXR-2&quot;/&gt;
       &lt;/mapping&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;.approachSiteCode&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
-                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;lieuAdministration&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;MedicationRequest.dosageInstruction:element.route&quot;&gt;
@@ -6184,17 +6185,17 @@ Normal practice is to use the 'mo' code as a calendar month when calculating the
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a> <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/ValueSet/route-codes&quot;/&gt;
       &lt;/binding&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
+                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;voieAdministration&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;RXR-1&quot;/&gt;
       &lt;/mapping&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;.routeCode&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
-                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;voieAdministration&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;MedicationRequest.dosageInstruction:element.method&quot;&gt;
@@ -6231,17 +6232,17 @@ Normal practice is to use the 'mo' code as a calendar month when calculating the
                   <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/ValueSet/siph-typeeltpla-oncofair-valueset&quot;/&gt;
       &lt;/binding&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
+                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;typeElementPrescription&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;RXR-4&quot;/&gt;
       &lt;/mapping&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;SubstanceAdministration.methodCode&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
-                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;typeElementPrescription&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;MedicationRequest.dosageInstruction:element.doseAndRate&quot;&gt;
@@ -7442,13 +7443,13 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;PIVL.phase&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
                   <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-posologie&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;duree&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;PIVL.phase&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a>
@@ -7562,13 +7563,13 @@ Normal practice is to use the 'mo' code as a calendar month when calculating the
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;PIVL.phase&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
                   <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-posologie&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;frequence&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;PIVL.phase&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a>
@@ -8393,17 +8394,17 @@ Normal practice is to use the 'mo' code as a calendar month when calculating the
       &lt;/constraint&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
+                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-posologie&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;quantite&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;n/a,PQ, IVL&amp;lt;PQ&amp;gt;, MO, CO, depending on the values&quot;/&gt;
       &lt;/mapping&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;SN (see also Range) or CQ&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
-                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-posologie&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;quantite&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a>
@@ -8508,17 +8509,17 @@ Normal practice is to use the 'mo' code as a calendar month when calculating the
       &lt;/constraint&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
+                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-posologie&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;debit&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;n/a,PQ, IVL&amp;lt;PQ&amp;gt;, MO, CO, depending on the values&quot;/&gt;
       &lt;/mapping&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;SN (see also Range) or CQ&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
-                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-posologie&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;debit&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a>
@@ -9329,6 +9330,11 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
+                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;propostionPharmaceutique&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;script10.6&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>
              <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;specific values within Message/Body/NewRx/MedicationPrescribed/Substitutions&quot;/&gt;
@@ -9336,11 +9342,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;subjectOf.substitutionPersmission&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>
-                  <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-medicationrequest-element-prescription&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;propostionPharmaceutique&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;MedicationRequest.substitution.id&quot;&gt;
@@ -10220,7 +10221,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Jul 30, 2024 13:12+0000">2024-07-30</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Sep 10, 2024 09:55+0000">2024-09-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -10237,7 +10238,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -10248,7 +10249,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>

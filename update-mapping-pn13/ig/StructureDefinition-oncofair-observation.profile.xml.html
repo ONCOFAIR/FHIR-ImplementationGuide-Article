@@ -46,7 +46,8 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"4.41"}
     h3,h4,h5,h6{--heading-prefix:"4.41"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
@@ -217,7 +218,7 @@
         
           Draft
           
-            as of 2024-07-30
+            as of 2024-09-10
           
         
       </td>
@@ -255,7 +256,7 @@
   &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;OncoFAIRObservation&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.title">title</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;OncoFAIR Observation&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">value</a>=&quot;2024-07-30T13:12:38+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">value</a>=&quot;2024-09-10T09:55:40+00:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.publisher">publisher</a>
              <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.contact">contact</a>&gt;
@@ -415,6 +416,10 @@ Permet d’indiquer les informations relatives au patient qui complètent celles
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-observation&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;RenseignementComplementaire&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>
              <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Entity, Role, or Act,Observation[classCode=OBS, moodCode=EVN]&quot;/&gt;
@@ -434,10 +439,6 @@ Permet d’indiquer les informations relatives au patient qui complètent celles
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;OBX&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-observation&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;RenseignementComplementaire&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;Observation.id&quot;&gt;
@@ -1337,6 +1338,10 @@ Reflex | Repeat | Re-run.&quot;/&gt;
                   <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/ValueSet/siph-renscomplement-oncofair-valueset&quot;/&gt;
       &lt;/binding&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-observation&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;codeRenseignementComplementaire&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;workflow&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Event.code&quot;/&gt;
       &lt;/mapping&gt;
@@ -1360,10 +1365,6 @@ Reflex | Repeat | Re-run.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;sct-attr&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;116680003 |Is a|&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-observation&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;codeRenseignementComplementaire&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;Observation.subject&quot;&gt;
@@ -1620,6 +1621,10 @@ Reflex | Repeat | Re-run.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-observation&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;dateHeureEnregistrementRenseignementComplementaire&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;workflow&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Event.occurrence[x]&quot;/&gt;
       &lt;/mapping&gt;
@@ -1635,10 +1640,6 @@ Reflex | Repeat | Re-run.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;effectiveTime&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-observation&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;dateHeureEnregistrementRenseignementComplementaire&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;Observation.issued&quot;&gt;
@@ -1671,6 +1672,10 @@ Reflex | Repeat | Re-run.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-observation&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;dateHeureRenseignementComplementaire&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;w5&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;FiveWs.recorded&quot;/&gt;
       &lt;/mapping&gt;
@@ -1682,10 +1687,6 @@ Reflex | Repeat | Re-run.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;participation[typeCode=AUT].time&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-observation&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;dateHeureRenseignementComplementaire&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;Observation.performer&quot;&gt;
@@ -1825,6 +1826,10 @@ Reflex | Repeat | Re-run.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-observation&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;valeurRenseignementComplementaire&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;sct-concept&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;&amp;lt; 441742003 |Evaluation finding|&quot;/&gt;
       &lt;/mapping&gt;
@@ -1839,10 +1844,6 @@ Reflex | Repeat | Re-run.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;sct-attr&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;363714003 |Interprets|&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;mapping-oncofair-observation&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;valeurRenseignementComplementaire&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a>=&quot;Observation.dataAbsentReason&quot;&gt;
@@ -3359,7 +3360,7 @@ The alternate way is to use the value element for actual observations and use th
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Jul 30, 2024 13:12+0000">2024-07-30</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Sep 10, 2024 09:55+0000">2024-09-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -3376,7 +3377,7 @@ The alternate way is to use the value element for actual observations and use th
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -3387,7 +3388,6 @@ The alternate way is to use the value element for actual observations and use th
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>

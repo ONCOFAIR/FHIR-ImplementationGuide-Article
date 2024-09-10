@@ -46,7 +46,8 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"4.40"}
     h3,h4,h5,h6{--heading-prefix:"4.40"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
@@ -217,7 +218,7 @@
         
           Draft
           
-            as of 2024-07-30
+            as of 2024-09-10
           
         
       </td>
@@ -248,7 +249,7 @@
   "<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.name">name</a>" : "OncoFAIRMedicationRequestPrescription",
   "<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.title">title</a>" : "OncoFAIR MedicationRequest Prescription",
   "<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.status">status</a>" : "draft",
-  "<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.date">date</a>" : "2024-07-30T13:12:38+00:00",
+  "<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.date">date</a>" : "2024-09-10T09:55:40+00:00",
   "<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.publisher">publisher</a>" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "<a href="http://hl7.org/fhir/R5/structuredefinition.html#StructureDefinition.contact">contact</a>" : [
     {
@@ -369,6 +370,10 @@
         "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
         "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
+            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "mapping-oncofair-medicationrequest-prescription",
+            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Prescription"
+          },
+          {
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Entity, Role, or Act,CombinedMedicationRequest"
           },
@@ -383,10 +388,6 @@
           {
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "w5",
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "clinical.medication"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "mapping-oncofair-medicationrequest-prescription",
-            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Prescription"
           }
         ]
       },
@@ -788,6 +789,10 @@
         "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
         "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
+            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "mapping-oncofair-medicationrequest-prescription",
+            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "idPrescription"
+          },
+          {
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "workflow",
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Request.identifier"
           },
@@ -806,10 +811,6 @@
           {
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : ".id"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "mapping-oncofair-medicationrequest-prescription",
-            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "idPrescription"
           }
         ]
       },
@@ -1241,16 +1242,16 @@
         "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
         "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
+            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "mapping-oncofair-medicationrequest-prescription",
+            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "ProtocolePrescrit"
+          },
+          {
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "workflow",
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Request.basedOn"
           },
           {
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : ".outboundRelationship[typeCode=FLFS].target[classCode=SBADM or PROC or PCPR or OBS, moodCode=RQO orPLAN or PRP]"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "mapping-oncofair-medicationrequest-prescription",
-            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "ProtocolePrescrit"
           }
         ]
       },
@@ -2064,6 +2065,10 @@
         "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
         "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
+            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "mapping-oncofair-medicationrequest-prescription",
+            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Sejour"
+          },
+          {
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "workflow",
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Request.encounter"
           },
@@ -2082,10 +2087,6 @@
           {
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : ".inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN, code=\&quot;type of encounter or episode\&quot;]"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "mapping-oncofair-medicationrequest-prescription",
-            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Sejour"
           }
         ]
       },
@@ -2182,6 +2183,10 @@
         "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
         "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
+            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "mapping-oncofair-medicationrequest-prescription",
+            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "uniteHebergement"
+          },
+          {
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "workflow",
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Request.supportingInfo"
           },
@@ -2192,10 +2197,6 @@
           {
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : ".outboundRelationship[typeCode=PERT].target[A_SupportingClinicalStatement CMET minimal with many different choices of classCodes(ORG, ENC, PROC, SPLY, SBADM, OBS) and each of the act class codes draws from one or more of the following moodCodes (EVN, DEF, INT PRMS, RQO, PRP, APT, ARQ, GOL)]"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "mapping-oncofair-medicationrequest-prescription",
-            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "uniteHebergement"
           }
         ]
       },
@@ -2506,6 +2507,10 @@
         "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
         "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
+            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "mapping-oncofair-medicationrequest-prescription",
+            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "uniteResponsabiliteMedicale"
+          },
+          {
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "workflow",
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Request.supportingInfo"
           },
@@ -2516,10 +2521,6 @@
           {
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : ".outboundRelationship[typeCode=PERT].target[A_SupportingClinicalStatement CMET minimal with many different choices of classCodes(ORG, ENC, PROC, SPLY, SBADM, OBS) and each of the act class codes draws from one or more of the following moodCodes (EVN, DEF, INT PRMS, RQO, PRP, APT, ARQ, GOL)]"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "mapping-oncofair-medicationrequest-prescription",
-            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "uniteResponsabiliteMedicale"
           }
         ]
       },
@@ -3170,6 +3171,10 @@
         },
         "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
+            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "mapping-oncofair-medicationrequest-prescription",
+            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "RenseignementComplementaire"
+          },
+          {
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "workflow",
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Request.reason"
           },
@@ -3188,10 +3193,6 @@
           {
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "reason.observation.reasonCode | reason.observation[code=ASSERTION].value"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "mapping-oncofair-medicationrequest-prescription",
-            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "RenseignementComplementaire"
           }
         ]
       },
@@ -3318,6 +3319,10 @@
         "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
         "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
+            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "mapping-oncofair-medicationrequest-prescription",
+            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "commentaires"
+          },
+          {
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "workflow",
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Request.note"
           },
@@ -3328,10 +3333,6 @@
           {
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
             "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : ".inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=\&quot;annotation\&quot;].value"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "mapping-oncofair-medicationrequest-prescription",
-            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "commentaires"
           }
         ]
       },
@@ -4799,7 +4800,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Jul 30, 2024 13:12+0000">2024-07-30</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Sep 10, 2024 09:55+0000">2024-09-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -4816,7 +4817,7 @@
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -4827,7 +4828,6 @@
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>

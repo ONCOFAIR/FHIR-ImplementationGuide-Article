@@ -10,7 +10,7 @@
   "name" : "OncoFAIRObservation",
   "title" : "OncoFAIR Observation",
   "status" : "draft",
-  "date" : "2024-07-30T13:12:38+00:00",
+  "date" : "2024-09-10T09:55:40+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -146,6 +146,10 @@
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
+        "identity" : "mapping-oncofair-observation",
+        "map" : "RenseignementComplementaire"
+      },
+      {
         "identity" : "rim",
         "map" : "Entity, Role, or Act,Observation[classCode=OBS, moodCode=EVN]"
       },
@@ -164,10 +168,6 @@
       {
         "identity" : "v2",
         "map" : "OBX"
-      },
-      {
-        "identity" : "mapping-oncofair-observation",
-        "map" : "RenseignementComplementaire"
       }]
     },
     {
@@ -997,6 +997,10 @@
         "valueSet" : "http://ltsi.univ-rennes.fr/ValueSet/siph-renscomplement-oncofair-valueset"
       },
       "mapping" : [{
+        "identity" : "mapping-oncofair-observation",
+        "map" : "codeRenseignementComplementaire"
+      },
+      {
         "identity" : "workflow",
         "map" : "Event.code"
       },
@@ -1019,10 +1023,6 @@
       {
         "identity" : "sct-attr",
         "map" : "116680003 |Is a|"
-      },
-      {
-        "identity" : "mapping-oncofair-observation",
-        "map" : "codeRenseignementComplementaire"
       }]
     },
     {
@@ -1249,6 +1249,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "mapping-oncofair-observation",
+        "map" : "dateHeureEnregistrementRenseignementComplementaire"
+      },
+      {
         "identity" : "workflow",
         "map" : "Event.occurrence[x]"
       },
@@ -1263,10 +1267,6 @@
       {
         "identity" : "rim",
         "map" : "effectiveTime"
-      },
-      {
-        "identity" : "mapping-oncofair-observation",
-        "map" : "dateHeureEnregistrementRenseignementComplementaire"
       }]
     },
     {
@@ -1296,6 +1296,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "mapping-oncofair-observation",
+        "map" : "dateHeureRenseignementComplementaire"
+      },
+      {
         "identity" : "w5",
         "map" : "FiveWs.recorded"
       },
@@ -1306,10 +1310,6 @@
       {
         "identity" : "rim",
         "map" : "participation[typeCode=AUT].time"
-      },
-      {
-        "identity" : "mapping-oncofair-observation",
-        "map" : "dateHeureRenseignementComplementaire"
       }]
     },
     {
@@ -1428,6 +1428,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "mapping-oncofair-observation",
+        "map" : "valeurRenseignementComplementaire"
+      },
+      {
         "identity" : "sct-concept",
         "map" : "< 441742003 |Evaluation finding|"
       },
@@ -1442,10 +1446,6 @@
       {
         "identity" : "sct-attr",
         "map" : "363714003 |Interprets|"
-      },
-      {
-        "identity" : "mapping-oncofair-observation",
-        "map" : "valeurRenseignementComplementaire"
       }]
     },
     {

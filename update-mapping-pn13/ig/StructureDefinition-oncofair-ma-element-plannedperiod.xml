@@ -21,7 +21,7 @@ Extension créée dans le cadre d'OncoFAIR contenant la date de début et de fin
   <name value="OncoFAIRMAElementPlannedPeriod"/>
   <title value="OncoFAIRMAElementPlannedPeriod"/>
   <status value="draft"/>
-  <date value="2024-07-30T13:12:38+00:00"/>
+  <date value="2024-09-10T09:55:40+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -297,16 +297,16 @@ Extension créée dans le cadre d'OncoFAIR contenant la date de début et de fin
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
+        <identity value="mapping-oncofair-ma-element-plannedperiod"/>
+        <map value="dateHeureDebutPrevue"/>
+      </mapping>
+      <mapping>
         <identity value="v2"/>
         <map value="DR.1"/>
       </mapping>
       <mapping>
         <identity value="rim"/>
         <map value="./low"/>
-      </mapping>
-      <mapping>
-        <identity value="mapping-oncofair-ma-element-plannedperiod"/>
-        <map value="dateHeureDebutPrevue"/>
       </mapping>
     </element>
     <element id="Extension.value[x].end">
@@ -336,16 +336,16 @@ Extension créée dans le cadre d'OncoFAIR contenant la date de début et de fin
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
+        <identity value="mapping-oncofair-ma-element-plannedperiod"/>
+        <map value="dateHeureFinPrevue"/>
+      </mapping>
+      <mapping>
         <identity value="v2"/>
         <map value="DR.2"/>
       </mapping>
       <mapping>
         <identity value="rim"/>
         <map value="./high"/>
-      </mapping>
-      <mapping>
-        <identity value="mapping-oncofair-ma-element-plannedperiod"/>
-        <map value="dateHeureFinPrevue"/>
       </mapping>
     </element>
   </snapshot>

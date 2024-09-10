@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIRMedicationAdministrationReport"] ; # 
   fhir:title [ fhir:v "OncoFAIR MedicationAdministration Report"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-07-30T13:12:38+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-09-10T09:55:40+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -126,6 +126,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "mapping-oncofair-medicationadministration-report" ] ;
+         fhir:map [ fhir:v "CompteRenduAdministration" ]
+       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "Entity, Role, or Act,SubstanceAdministration" ]
        ] [
@@ -134,9 +137,6 @@
        ] [
          fhir:identity [ fhir:v "w5" ] ;
          fhir:map [ fhir:v "clinical.medication" ]
-       ] [
-         fhir:identity [ fhir:v "mapping-oncofair-medicationadministration-report" ] ;
-         fhir:map [ fhir:v "CompteRenduAdministration" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.id" ] ;
@@ -445,6 +445,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "mapping-oncofair-medicationadministration-report" ] ;
+         fhir:map [ fhir:v "idCompteRenduAdministration" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Event.identifier" ]
        ] [
@@ -453,9 +456,6 @@
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".id" ]
-       ] [
-         fhir:identity [ fhir:v "mapping-oncofair-medicationadministration-report" ] ;
-         fhir:map [ fhir:v "idCompteRenduAdministration" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.basedOn" ] ;
@@ -971,6 +971,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "mapping-oncofair-medicationadministration-report" ] ;
+         fhir:map [ fhir:v "Sejour" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Event.encounter" ]
        ] [
@@ -982,9 +985,6 @@
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN, code=\"type of encounter or episode\"]" ]
-       ] [
-         fhir:identity [ fhir:v "mapping-oncofair-medicationadministration-report" ] ;
-         fhir:map [ fhir:v "Sejour" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.supportingInformation" ] ;
@@ -1418,14 +1418,14 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "mapping-oncofair-medicationadministration-report" ] ;
+         fhir:map [ fhir:v "idpAdministrateur" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Event.performer.actor" ]
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".role" ]
-       ] [
-         fhir:identity [ fhir:v "mapping-oncofair-medicationadministration-report" ] ;
-         fhir:map [ fhir:v "idpAdministrateur" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationAdministration.reason" ] ;

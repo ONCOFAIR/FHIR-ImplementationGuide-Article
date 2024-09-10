@@ -10,7 +10,7 @@
   "name" : "OncoFAIRMedication",
   "title" : "OncoFAIR Medication",
   "status" : "draft",
-  "date" : "2024-07-30T13:12:38+00:00",
+  "date" : "2024-09-10T09:55:40+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -110,6 +110,10 @@
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
+        "identity" : "mapping-oncofair-medication",
+        "map" : "Composant"
+      },
+      {
         "identity" : "rim",
         "map" : "Entity, Role, or Act,ManufacturedProduct[classCode=ADMM]"
       },
@@ -120,10 +124,6 @@
       {
         "identity" : "w5",
         "map" : "clinical.medication"
-      },
-      {
-        "identity" : "mapping-oncofair-medication",
-        "map" : "Composant"
       }]
     },
     {
@@ -499,6 +499,10 @@
         "valueSet" : "http://hl7.org/fhir/ValueSet/medication-codes"
       },
       "mapping" : [{
+        "identity" : "mapping-oncofair-medication",
+        "map" : "codeComposant"
+      },
+      {
         "identity" : "script10.6",
         "map" : "coding.code = //element(*,MedicationType)/DrugCoded/ProductCode\r\rcoding.system = //element(*,MedicationType)/DrugCoded/ProductCodeQualifier\r\rcoding.display = //element(*,MedicationType)/DrugDescription"
       },
@@ -513,10 +517,6 @@
       {
         "identity" : "rim",
         "map" : ".code"
-      },
-      {
-        "identity" : "mapping-oncofair-medication",
-        "map" : "codeComposant"
       }]
     },
     {

@@ -10,7 +10,7 @@
   "name" : "OncoFAIRMedicationRequestComponent",
   "title" : "OncoFAIR MedicationRequest Component",
   "status" : "draft",
-  "date" : "2024-07-30T13:12:38+00:00",
+  "date" : "2024-09-10T09:55:40+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -117,6 +117,10 @@
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
+        "identity" : "mapping-oncofair-medicationrequest-component",
+        "map" : "ComposantPrescrit"
+      },
+      {
         "identity" : "rim",
         "map" : "Entity, Role, or Act,CombinedMedicationRequest"
       },
@@ -131,10 +135,6 @@
       {
         "identity" : "w5",
         "map" : "clinical.medication"
-      },
-      {
-        "identity" : "mapping-oncofair-medicationrequest-component",
-        "map" : "ComposantPrescrit"
       }]
     },
     {
@@ -581,16 +581,16 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "mapping-oncofair-medicationrequest-component",
+        "map" : "ElementPrescription"
+      },
+      {
         "identity" : "workflow",
         "map" : "Request.basedOn"
       },
       {
         "identity" : "rim",
         "map" : ".outboundRelationship[typeCode=FLFS].target[classCode=SBADM or PROC or PCPR or OBS, moodCode=RQO orPLAN or PRP]"
-      },
-      {
-        "identity" : "mapping-oncofair-medicationrequest-component",
-        "map" : "ElementPrescription"
       }]
     },
     {
@@ -1002,6 +1002,10 @@
         "valueSet" : "http://ltsi.univ-rennes.fr/ValueSet/concept-medication-oncofair-valueset"
       },
       "mapping" : [{
+        "identity" : "mapping-oncofair-medicationrequest-component",
+        "map" : "Composant"
+      },
+      {
         "identity" : "workflow",
         "map" : "Request.code"
       },
@@ -1020,10 +1024,6 @@
       {
         "identity" : "rim",
         "map" : "consumable.administrableMedication"
-      },
-      {
-        "identity" : "mapping-oncofair-medicationrequest-component",
-        "map" : "Composant"
       }]
     },
     {
@@ -1820,6 +1820,10 @@
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
+        "identity" : "mapping-oncofair-medicationrequest-component",
+        "map" : "libelleComposant"
+      },
+      {
         "identity" : "workflow",
         "map" : "Request.note"
       },
@@ -1830,10 +1834,6 @@
       {
         "identity" : "rim",
         "map" : ".inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=\"annotation\"].value"
-      },
-      {
-        "identity" : "mapping-oncofair-medicationrequest-component",
-        "map" : "libelleComposant"
       }]
     },
     {
@@ -2047,6 +2047,10 @@
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
+        "identity" : "mapping-oncofair-medicationrequest-component",
+        "map" : "commentaires"
+      },
+      {
         "identity" : "workflow",
         "map" : "Request.note"
       },
@@ -2057,10 +2061,6 @@
       {
         "identity" : "rim",
         "map" : ".inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=\"annotation\"].value"
-      },
-      {
-        "identity" : "mapping-oncofair-medicationrequest-component",
-        "map" : "commentaires"
       }]
     },
     {
@@ -2274,6 +2274,10 @@
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
+        "identity" : "mapping-oncofair-medicationrequest-component",
+        "map" : "indication"
+      },
+      {
         "identity" : "workflow",
         "map" : "Request.note"
       },
@@ -2284,10 +2288,6 @@
       {
         "identity" : "rim",
         "map" : ".inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=\"annotation\"].value"
-      },
-      {
-        "identity" : "mapping-oncofair-medicationrequest-component",
-        "map" : "indication"
       }]
     },
     {
@@ -3302,16 +3302,16 @@
       }],
       "isModifier" : false,
       "mapping" : [{
+        "identity" : "mapping-oncofair-medicationrequest-component",
+        "map" : "quantiteComposantPrescrit"
+      },
+      {
         "identity" : "rim",
         "map" : "n/a,PQ, IVL<PQ>, MO, CO, depending on the values"
       },
       {
         "identity" : "v2",
         "map" : "SN (see also Range) or CQ"
-      },
-      {
-        "identity" : "mapping-oncofair-medicationrequest-component",
-        "map" : "quantiteComposantPrescrit"
       }]
     },
     {
@@ -4310,6 +4310,10 @@
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
+        "identity" : "mapping-oncofair-medicationrequest-component",
+        "map" : "nonSubstituable"
+      },
+      {
         "identity" : "script10.6",
         "map" : "specific values within Message/Body/NewRx/MedicationPrescribed/Substitutions"
       },
@@ -4320,10 +4324,6 @@
       {
         "identity" : "rim",
         "map" : "code"
-      },
-      {
-        "identity" : "mapping-oncofair-medicationrequest-component",
-        "map" : "nonSubstituable"
       }]
     },
     {
