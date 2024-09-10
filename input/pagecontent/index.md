@@ -1,6 +1,6 @@
 ### Introduction
 
-The Onco-FAIR project is designed to improve the interoperability and reuse of healthcare data in oncology, focusing on chemotherapy. This guide details the use of FHIR standards to optimize prescribing and medication administration for oncology patients.
+The OncoFAIR project is designed to improve the interoperability and reuse of healthcare data in oncology, focusing on chemotherapy. This guide details the use of FHIR standards to optimize prescribing and medication administration for oncology patients.
 
 #### Objectives
 
@@ -16,235 +16,116 @@ Supported by the Brittany Region and Biotech Santé Bretagne, this project benef
 
 This guide is intended for developers, healthcare professionals and researchers involved in managing and modeling healthcare data in oncology. It is assumed that the reader is familiar with the FHIR standard.
 
-### UML diagram
+<!--### UML diagram
 
 This UML diagram provides an overview of the data structures, and is essential for understanding the relationships between the various FHIR resources used in the project.
 
 <div align="center;"> 
 <img src="uml_oncofair_english.svg" alt="UML class diagram representing the FHIR R5 medication prescription and administration use case" width="100%"/>
 
-</div>
+</div>-->
 
 ### Profiled FHIR resources
 
-Each FHIR resource has been tailored to meet the specific requirements of the Onco-FAIR project, with constraints on cardinalities and extensions to capture critical oncology data:
+The following is a list of generic profiles :
 
-#### Profiles 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau HL7</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
 
-<table style="width: 100%; margin-left: auto; margin-right: auto; border-collapse: collapse; border: none;">
+<table>
+    <thead>
+        <tr>
+            <th>Resource</th>
+            <th>Profile</th>
+            <th>Description</th>
+        </tr>
+    </thead>
     <tbody>
         <tr>
-            <td style="width:102.8pt;border:solid gray 1.0pt;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin:0cm;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;color:red;font-style:italic;'><strong><span style="color: rgb(0, 0, 0);">Resource name</span></strong></p>
-            </td>
-            <td style="width:216.2pt;border:solid gray 1.0pt;border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin:0cm;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;color:red;font-style:italic;'><strong><span style="color: rgb(0, 0, 0);">Changes made</span></strong></p>
-            </td>
-            <td style="width:240.95pt;border:solid gray 1.0pt;border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin:0cm;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;color:red;font-style:italic;'><strong><span style="color: rgb(0, 0, 0);">Profile</span></strong></p>
-            </td>
+            <td><a href="https://hl7.org/fhir/R5/careplan.html">CarePlan</a></td>
+            <td><a href="StructureDefinition-oncofair-careplan.html">OncoFAIRCarePlan</a></td>
+            <td>This object describes the chaining of prescription elements attached to the prescribed protocol. Its structure enables the chaining of nested sub-protocols.</td>
         </tr>
         <tr>
-            <td style="width:102.8pt;border:solid gray 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="font-size:13px;line-height:115%;color:black;">Patient</span></p>
-            </td>
-            <td style="width:216.2pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
-                    <ul>
-                        <li>Constraint on some cardinalities</li>
-                    </ul>
-                </div>
-            </td>
-            <td style="width:240.95pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="font-size:13px;line-height:115%;color:black;">Create profile OncologyPatient</span></p>
-            </td>
-        </tr>
-                <tr>
-            <td style="width:102.8pt;border:solid gray 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="font-size:13px;line-height:115%;color:black;">Observation</span></p>
-            </td>
-            <td style="width:216.2pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
-                    <ul>
-                        <li>Constraint on some cardinalities</li>
-                    </ul>
-                </div>
-            </td>
-            <td style="width:240.95pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="font-size:13px;line-height:115%;color:black;">Create profile AdditionalInformation</span></p>
-            </td>
-        </tr>
-                <tr>
-            <td style="width:102.8pt;border:solid gray 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="font-size:13px;line-height:115%;color:black;">Practitioner</span></p>
-            </td>
-            <td style="width:216.2pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
-                    <ul>
-                        <li>Constraint on some cardinalities</li>
-                    </ul>
-                </div>
-            </td>
-            <td style="width:240.95pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="font-size:13px;line-height:115%;color:black;">Create profile OncologyPractitioner</span></p>
-            </td>
+            <td><a href="https://hl7.org/fhir/R5/encounter.html">Encounter</a></td>
+            <td><a href="StructureDefinition-oncofair-encounter.html">OncoFAIREncounter</a></td>
+            <td>Must be taken in the generic sense, i.e. it goes beyond hospital admissions, outpatient consultations, dialysis sessions, day hospitals, etc.</td>
         </tr>
         <tr>
-            <td style="width:102.8pt;border:solid gray 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="font-size:13px;line-height:115%;color:black;">Encounter</span></p>
-            </td>
-            <td style="width:216.2pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
-                    <ul>
-                        <li>Constraint on some cardinalities</li>
-                        <li>Constraint reference on subject</li>
-                        <li>Constraint on location</li>
-                    </ul>
-                </div>
-            </td>
-            <td style="width:240.95pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="font-size:13px;line-height:115%;color:black;">Create profile Stay</span></p>
-            </td>
+            <td><a href="https://hl7.org/fhir/R5/medication.html">Medication</a></td>
+            <td><a href="StructureDefinition-oncofair-medication.html">OncoFAIRMedication</a></td>
+            <td>TO DO</td>
         </tr>
         <tr>
-            <td style="width:102.8pt;border:solid gray 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="font-size:13px;line-height:115%;color:black;">Location</span></p>
-            </td>
-            <td style="width:216.2pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
-                    <ul>
-                        <li>Constraint on some cardinalities</li>
-                        <li>Constraint on managingOrganization</li>
-                    </ul>
-                </div>
-            </td>
-            <td style="width:240.95pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="font-size:13px;line-height:115%;color:black;">Create profile AccomodationUnit</span></p>
-            </td>
+            <td><a href="https://hl7.org/fhir/R5/medicationadministration.html">MedicationAdministration</a></td>
+            <td><a href="StructureDefinition-oncofair-medicationadministration-component.html">OncoFAIRMedicationAdministrationComponent</a></td>
+            <td>This object corresponds to a product that belongs to the nomenclature of medicines used in the hospital.</td>
         </tr>
         <tr>
-            <td style="width:102.8pt;border:solid gray 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="font-size:13px;line-height:115%;color:black;">Organization</span></p>
-            </td>
-            <td style="width:216.2pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
-                    <ul>
-                        <li>Constraint on some cardinalities</li>
-                    </ul>
-                </div>
-            </td>
-            <td style="width:240.95pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="font-size:13px;line-height:115%;color:black;">Create profile MedicalLiabilityUnit</span></p>
-            </td>
+            <td><a href="https://hl7.org/fhir/R5/medicationadministration.html">MedicationAdministration</a></td>
+            <td><a href="StructureDefinition-oncofair-medicationadministration-element.html">OncoFAIRMedicationAdministrationElement</a></td>
+            <td>Corresponds to the activity induced by a prescription item and its dosage (structured or unstructured), and carried out at a given moment.</td>
         </tr>
         <tr>
-            <td style="width:102.8pt;border:solid gray 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="font-size:13px;line-height:115%;color:black;">Medication</span></p>
-            </td>
-            <td style="width:216.2pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
-                    <ul>
-                        <li>Constraint on some cardinalities</li>
-                    </ul>
-                </div>
-            </td>
-            <td style="width:240.95pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="font-size:13px;line-height:115%;color:black;">Create profile OncologyMedication</span></p>
-            </td>
+            <td><a href="https://hl7.org/fhir/R5/medicationadministration.html">MedicationAdministration</a></td>
+            <td><a href="StructureDefinition-oncofair-medicationadministration-report.html">OncoFAIRMedicationAdministrationReport</a></td>
+            <td>Regroups all the prescription elements received on which the pharmacist expresses his validation. It also includes items suggested or resulting from a replacement proposed by the pharmacist.</td>
         </tr>
         <tr>
-            <td style="width:102.8pt;border:solid gray 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="font-size:13px;line-height:115%;color:black;">DeviceDefinition</span></p>
-            </td>
-            <td style="width:216.2pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
-                    <ul>
-                        <li>Constraint on some cardinalities</li>
-                    </ul>
-                </div>
-            </td>
-            <td style="width:240.95pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="font-size:13px;line-height:115%;color:black;">Create profile AssociatedDevice</span></p>
-            </td>
+            <td><a href="https://hl7.org/fhir/R5/medicationrequest.html">MedicationRequest</a></td>
+            <td><a href="StructureDefinition-oncofair-medicationrequest-component.html">OncoFAIRMedicationRequestComponent</a></td>
+            <td>Is a product that belongs to the nomenclature of medicines used. It may, for example, be a speciality, a product defined by its common name or a pharmacopoeial product.</td>
         </tr>
         <tr>
-            <td style="width:102.8pt;border:solid gray 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="font-size:13px;line-height:115%;color:black;">PlanDefinition</span></p>
-            </td>
-            <td style="width:216.2pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
-                    <ul>
-                        <li>Constraint on some cardinalities</li>
-                        <li>Add extension TreatmentCycleNumber</li>
-                        <li>Add extension TreatmentDayNumber</li>
-                    </ul>
-                </div>
-            </td>
-            <td style="width:240.95pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="font-size:13px;line-height:115%;color:black;">Create profile Protocol</span></p>
-            </td>
+            <td><a href="https://hl7.org/fhir/R5/medicationrequest.html">MedicationRequest</a></td>
+            <td><a href="StructureDefinition-oncofair-medicationrequest-element.html">OncoFAIRMedicationRequestElement</a></td>
+            <td>Corresponds to a prescription line on a prescription. Each item contains one or more components (in the case of a magistral preparation or an infusion).</td>
         </tr>
         <tr>
-            <td style="width:102.8pt;border:solid gray 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="font-size:13px;line-height:115%;color:black;">Careplan</span></p>
-            </td>
-            <td style="width:216.2pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
-                    <ul>
-                        <li>Constraint on some cardinalities</li>
-                        <li>Constraint on subject</li>
-                        <li>Constraint on encounter</li>
-                        <li>Constraint on activity.plannedActivityReference</li>
-                    </ul>
-                </div>
-            </td>
-            <td style="width:240.95pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="font-size:13px;line-height:115%;color:black;">Create profile Prescription</span></p>
-            </td>
+            <td><a href="https://hl7.org/fhir/R5/medicationrequest.html">MedicationRequest</a></td>
+            <td><a href="StructureDefinition-oncofair-medicationrequest-prescription.html">OncoFAIRMedicationRequestPrescription</a></td>
+            <td>Groups together all the prescription elements validated simultaneously by the same prescriber.</td>
         </tr>
         <tr>
-            <td style="width:102.8pt;border:solid gray 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="font-size:13px;line-height:115%;color:black;">MedicationRequest</span></p>
-            </td>
-            <td style="width:216.2pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
-                    <ul>
-                        <li>Constraint on some cardinalities</li>
-                        <li>Constraint on basedOn</li>
-                        <li>Constraint on requester</li>
-                        <li>Constraint on medication</li>
-                    </ul>
-                </div>
-            </td>
-            <td style="width:240.95pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="font-size:13px;line-height:115%;color:black;">Create profile PrescriptionItem</span></p>
-            </td>
+            <td><a href="https://hl7.org/fhir/R5/observation.html">Observation</a></td>
+            <td><a href="StructureDefinition-oncofair-observation.html">OncoFAIRObservation</a></td>
+            <td>Allows you to enter information about the patient in addition to that described in the prescription elements.</td>
         </tr>
         <tr>
-            <td style="width:102.8pt;border:solid gray 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="font-size:13px;line-height:115%;color:black;">MedicationAdministration</span></p>
-            </td>
-            <td style="width:216.2pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
-                    <ul>
-                        <li>Constraint on some cardinalities</li>
-                        <li>Constraint on encounter</li>
-                        <li>Constraint on basedOn</li>
-                        <li>Constraint on request</li>
-                        <li>Constraint on medication</li>
-                    </ul>
-                </div>
-            </td>
-            <td style="width:240.95pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="font-size:13px;line-height:115%;color:black;">Create profile AdministrationReport</span></p>
-            </td>
+            <td><a href="https://hl7.org/fhir/R5/patient.html">Patient</a></td>
+            <td><a href="StructureDefinition-oncofair-patient.html">OncoFAIRPatient</a></td>
+            <td>Contains the patient’s identity details needed to ensure that the prescription is properly taken into account.</td>
         </tr>
     </tbody>
 </table>
 
-#### Extensions 
+</body>
+</html>
 
-FHIR extensions such as `TreatmentCycleNumber` and `TreatmentDayNumber` are used for oncology treatment-specific information.
+<div>{%include mapping_global.svg%}</div>
+
+### Dependencies
+
+{% include dependency-table.xhtml %}
 
 ### FHIR interaction
 
@@ -255,8 +136,10 @@ The following interactions can be applied:
 * *Create* method to add a new resource to the server. Uses the `HTTP POST` method.
 * *Update* to update an existing resource. Use the `HTTP PUT` method.
 
-Finally, the body of HTTP requests is a FHIR resource that can be formatted in XML, JSON or RDF.
+<!--Finally, the body of HTTP requests is a FHIR resource that can be formatted in XML, JSON or RDF.
+{% sql SELECT '[' || Name ||'](StructureDefinition-' || id || '.html)' as "Titre du profil", Title FROM Resources WHERE Type = 'StructureDefinition'%}
+
 
 ---
 
-[Return to contents](file:///D:/Home/bguilbert/Documents/fhir/oncofair/output/toc.html "Return to contents")
+[Return to contents](file:///D:/Home/bguilbert/Documents/fhir/oncofair/output/toc.html "Return to contents") -->

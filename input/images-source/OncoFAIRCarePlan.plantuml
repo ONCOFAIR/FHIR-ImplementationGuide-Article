@@ -1,0 +1,32 @@
+@startuml
+
+scale 1000 width
+
+object "**OncoFAIRCarePlan**" as OncoFAIRCarePlan #Gold {
+    ProtocolePrescrit
+}
+
+map "<&plus> oncofair-cp-treatment" as oncofaircptreatment #back:WhiteSmoke;header:LightGray {
+    numeroCure => treatmentRank
+    numeroJour => dayRank
+    dateHeureReference => dateTimeReference
+}
+
+map "<&plus> oncofair-pharmacist-advice" as oncofairpharmacistadvice #back:WhiteSmoke;header:LightGray {
+    validationPharmaceutique => pharmacistValidation
+    propositionPharmaceutique => pharmacistProposal
+}
+
+map "**ProtocolePrescrit : OncoFAIRCarePlan**" as ProtocolePrescrit #back:LightGoldenRodYellow;header:Gold {
+    idProtocolePrescrit => identifier
+    CreationArretModificationValidation => status
+    libelleProtocolePrescrit => title
+    indication => <&layers> note:indication
+    commentaires => <&layers> note:comments
+    oncofair-cp-treatment *-> oncofaircptreatment
+    oncofair-pharmacist-advice *-> oncofairpharmacistadvice
+}
+
+ProtocolePrescrit -u-> OncoFAIRCarePlan : basedOn
+
+@enduml

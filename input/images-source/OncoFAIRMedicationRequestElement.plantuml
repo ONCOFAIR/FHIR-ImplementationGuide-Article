@@ -1,0 +1,93 @@
+@startuml
+
+scale 2000 width
+
+map "timing" as timing #back:WhiteSmoke;header:LightGray {
+    dateHeureDebutPrescrite => repeat.bounds[x]:boundsPeriod.start
+    dateHeureFinPrescrite => repeat.bounds[x]:boundsPeriod.end
+    deltaDateHeureReference => repeat.offset
+    duree => repeat.duration
+    frequence => repeat.frequency
+
+}
+
+map "effectiveDosePeriod" as effectiveDosePeriod #back:WhiteSmoke;header:LightGray {
+    dateHeureDebutPrescription => start
+    dateHeureFinPrescription => end
+}
+
+map "<&layers> dosageInstruction:element" as dosageInstructionelement #back:WhiteSmoke;header:LightGray {
+    posologie => text
+    conditionsApplication => additionalInstruction
+    timing *--> timing
+    lieuAdministration => site
+    voieAdministration => route
+    typeElementPrescription => method
+}
+
+object "**OncoFAIRMedicationRequestPrescription**" as OncoFAIRMedicationRequestPrescription #LightSkyBlue {
+    Prescription
+}
+
+object "**OncoFAIRMedicationRequestElement**" as OncoFAIRMedicationRequestElement #LightSkyBlue {
+    ElementLie
+}
+
+object "**OncoFAIRCarePlan**" as OncoFAIRCarePlan #Gold {
+    ProtocolePrescrit
+}
+
+object "**Practitioner**" as Practitioner {
+    idpPrescripteur
+}
+
+map "<&plus> oncofair-mr-element-go-nogo" as oncofairmrelementgonogo #back:WhiteSmoke;header:LightGray {
+    GoNogo => GoNogoStatus
+    motifAttente => GoNogoReasonWaiting
+}
+
+map "<&plus> oncofair-pharmacist-advice" as oncofairpharmacistadvice #back:WhiteSmoke;header:LightGray {
+    validationPharmaceutique => pharmacistValidation
+    propositionPharmaceutique => pharmacistProposal
+}
+
+map "**ElementPrescription : OncoFAIRMedicationRequestElement**" as ElementPrescription #back:AliceBlue;header:LightSkyBlue {
+    idElementPrescription => identifier
+    idGroupe => groupIdentifier
+    CreationArretModificationValidation => status
+    urgent => priority
+    dispostifsAssocies => device
+    libelleElementPrescription => <&layers> note:wording
+    indication => <&layers> note:indication
+    commentaires => <&layers> note:comments
+    propostionPharmaceutique => substitution
+    effectiveDosePeriod *-> effectiveDosePeriod
+    <&layers> dosageInstruction:element *-> dosageInstructionelement
+    forme => <&plus> oncofair-element-form
+    fourniture => <&plus> oncofair-mr-element-supply
+    rangElementPrescription => <&plus> oncofair-mr-element-rank
+    oncofair-mr-element-go-nogo *-> oncofairmrelementgonogo
+    oncofair-pharmacist-advice *-> oncofairpharmacistadvice
+}
+
+map "doseAndRate" as doseAndRate #back:WhiteSmoke;header:LightGray {
+    quantite => dose[x]:doseQuantity
+    debit => rate[x]:rateQuantity
+}
+
+map "<&layers> dosageInstruction:posology" as dosageInstructionposology #back:WhiteSmoke;header:LightGray {
+    timing *--> timing
+    doseAndRate *--> doseAndRate
+}
+
+map "**ElementPosologie : OncoFAIRMedicationRequestElement**" as ElementPosologie #back:AliceBlue;header:LightSkyBlue {
+    <&layers> dosageInstruction:posology *-> dosageInstructionposology
+
+}
+
+ElementPrescription -u-> OncoFAIRMedicationRequestPrescription : basedOn:prescription
+ElementPrescription -d-> OncoFAIRMedicationRequestElement : basedOn:element
+ElementPrescription -l-> OncoFAIRCarePlan : basedOn:protocol
+ElementPrescription -r-> Practitioner : requester
+
+@enduml

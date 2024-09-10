@@ -1,0 +1,37 @@
+@startuml
+
+scale 700 width
+
+object "**OncoFAIRCarePlan**" as OncoFAIRCarePlan #Gold {
+    ProtocolePrescrit
+}
+
+object "**OncoFAIREncounter**" as OncoFAIREncounter #SlateGray {
+    Sejour
+}
+
+object "**HealthcareService**" as HealthcareService {
+    uniteHebergement
+}
+
+object "**HealthcareService**" as HealthcareService {
+    uniteResponsabiliteMedicale
+}
+
+object "**OncoFAIRObservation**" as OncoFAIRObservation #Orange {
+    RenseignementComplementaire
+}
+
+map "**Prescription : OncoFAIRMedicationRequestPrescription**" as Prescription #back:AliceBlue;header:LightSkyBlue {
+    idPrescription => identifier
+    commentaires => note
+    dateHeurePrescription => <&plus> oncofair-mr-prescription-validation-date
+}
+
+Prescription -u-> OncoFAIRCarePlan : basedOn
+Prescription -d-> OncoFAIREncounter : encounter
+Prescription -l-> HealthcareService : supportingInformation:accomodationUnit
+Prescription -r-> HealthcareService : supportingInformation:medicalLiabiltyUnit
+Prescription -u-> OncoFAIRObservation : reason
+
+@enduml

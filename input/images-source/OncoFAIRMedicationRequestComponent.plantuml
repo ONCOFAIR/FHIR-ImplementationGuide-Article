@@ -1,0 +1,39 @@
+@startuml
+
+scale 1000 width
+
+map "doseAndRate" as doseAndRate #back:WhiteSmoke;header:LightGray {
+    quantiteComposantPrescrit => dose[x]:doseQuantity
+}
+
+map "dosageInstruction" as dosageInstruction #back:WhiteSmoke;header:LightGray {
+    doseAndRate *--> doseAndRate
+}
+
+map "substitution" as substitution #back:WhiteSmoke;header:LightGray {
+    nonSubstituable => <&layers> allowed[x]:allowedBoolean
+}
+
+object "**OncoFAIRMedicationRequestElement**" as OncoFAIRMedicationRequestElement #LightSkyBlue {
+    ElementPrescription
+}
+
+object "**OncoFAIRMedication**" as OncoFAIRMedication #LimeGreen {
+    Composant
+}
+
+map "**ComposantPrescrit : OncoFAIRMedicationRequestComponent**" as ComposantPrescrit #back:AliceBlue;header:LightSkyBlue {
+    libelleComposant => <&layers> note:wording
+    commentaires => <&layers> note:comments
+    indication => <&layers> note:indication
+    dosageInstruction *-> dosageInstruction
+    substitution *-> substitution
+    ALDExonerante => <&plus> oncofair-mr-exempt-ltc
+    estVehicule => <&plus> oncofair-mr-component-solute
+    estReferentPoso => <&plus> oncofair-mr-is-dosage-referent
+}
+
+ComposantPrescrit -u-> OncoFAIRMedicationRequestElement : basedOn
+ComposantPrescrit -d-> OncoFAIRMedication : medication
+
+@enduml

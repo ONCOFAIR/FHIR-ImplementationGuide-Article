@@ -12,7 +12,7 @@ Ce projet vise à développer un cadre d'interopérabilité autour des entrepôt
 
 L'objectif de ce projet est de définir les spécifications de l’API REST (FHIR) pour interroger et alimenter l'entrepôt de données de santé qui recensera les données de chimiothérapie. 
 
-Les ressources FHIR utilisées dans cet IG sont : Patient, Observation, Practitioner, Encounter, Location, Organization, Medication, DeviceDefinition, PlanDefinition, Careplan, MedicationRequest, MedicationAdministration.
+Les ressources FHIR utilisées dans cet IG sont : Patient, Observation, Practitioner, Encounter, HealthcareService, Medication, DeviceDefinition, Careplan, MedicationRequest, MedicationAdministration.
 
 # CI/CD
 

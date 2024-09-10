@@ -1,0 +1,45 @@
+@startuml
+
+scale 700 width
+
+rectangle "ProtocolePrescrit \n [[StructureDefinition-oncofair-careplan.html OncoFAIRCarePlan]]" as ProtocolePrescrit #Gold 
+
+rectangle "Sejour \n [[StructureDefinition-oncofair-encounter.html OncoFAIREncounter]]" as Sejour #SlateGray 
+
+rectangle "Composant \n [[StructureDefinition-oncofair-medication.html OncoFAIRMedication]]" as Composant #LimeGreen 
+
+rectangle "ComposantAdministre \n [[StructureDefinition-oncofair-medicationadministration-component.html OncoFAIRMedicationAdministrationComponent]]" as ComposantAdministre #LightSeaGreen 
+
+rectangle "ElementAdministration \n [[StructureDefinition-oncofair-medicationadministration-element.html OncoFAIRMedicationAdministrationElement]]" as ElementAdministration #LightSeaGreen 
+
+rectangle "CompteRenduAdministration \n [[StructureDefinition-oncofair-medicationadministration-report.html OncoFAIRMedicationAdministrationReport]]" as CompteRenduAdministration #LightSeaGreen 
+
+rectangle "ComposantPrescrit \n [[StructureDefinition-oncofair-medicationrequest-component.html OncoFAIRMedicationRequestComponent]]" as ComposantPrescrit #LightSkyBlue 
+
+rectangle "ElementPrescription \nElementPosologie \n [[StructureDefinition-oncofair-medicationrequest-element.html OncoFAIRMedicationRequestElement]]" as ElementPrescription #LightSkyBlue
+
+
+
+rectangle "Prescription \n [[StructureDefinition-oncofair-medicationrequest-prescription.html OncoFAIRMedicationRequestPrescription]]" as Prescription #LightSkyBlue 
+
+rectangle "RenseignementComplementaire \n [[StructureDefinition-oncofair-observation.html OncoFAIRObservation]]" as RenseignementComplementaire #Orange 
+
+rectangle "Patient \n [[StructureDefinition-oncofair-patient.html OncoFAIRPatient]]" as Patient #DarkGray 
+
+ProtocolePrescrit --> ProtocolePrescrit : "basedOn" 0..*
+Sejour --> Patient : "subject" 1..1
+ComposantAdministre --> ElementAdministration : "partOf" 1..1
+ComposantAdministre -u-> Composant : "medication" 1..1
+ElementAdministration --> CompteRenduAdministration : "partOf" 1..1
+CompteRenduAdministration --> Sejour : "encounter" 1..1
+ComposantPrescrit --> ElementPrescription : "basedOn" 1..1
+ComposantPrescrit -u-> Composant : "medication" 1..1
+ElementPrescription --> Prescription : "basedOn" 1..1
+ElementPrescription --> ElementPrescription : "basedOn" 0..*
+ElementPrescription --> ProtocolePrescrit : "basedOn" 0..1
+
+Prescription --> ProtocolePrescrit : "basedOn" 0..*
+Prescription --> Sejour : "encounter" 1..1
+Prescription --> RenseignementComplementaire : "reason" 0..*
+
+@enduml

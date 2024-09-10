@@ -1,11 +1,3 @@
-Alias: $CommunicationModes = http://ltsi.univ-rennes.fr/CodeSystem/CSCommunicationModes
-Alias: $PrescriptionCategory = http://ltsi.univ-rennes.fr/CodeSystem/CSPrescriptionCategory
-Alias: $MedicalUnits = http://ltsi.univ-rennes.fr/CodeSystem/CSMedicalUnits
-Alias: $LOINC = http://ltsi.univ-rennes.fr/CodeSystem/CSLOINC //https://loinc.org
-Alias: $SCT = http://ltsi.univ-rennes.fr/CodeSystem/CSSCT //http://snomed.info/sct	
-Alias: $Medications = http://ltsi.univ-rennes.fr/CodeSystem/CSMedications
-Alias: $MedicationTypes = http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes
-Alias: $MedicationItemProvenance = http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationItemProvenance
-Alias: $MedicationStatus = http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationStatus
-Alias: $MedicationLTIExemption = http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationLTIExemption
-Alias: $EventTypeData = http://ltsi.univ-rennes.fr/CodeSystem/CSEventTypeData
+Alias: $restful-security-service = http://terminology.hl7.org/CodeSystem/restful-security-service
+Alias: UMLS = http://terminology.hl7.org/CodeSystem/umls
+Alias: ICDO3 = http://terminology.hl7.org/CodeSystem/icd-o-3

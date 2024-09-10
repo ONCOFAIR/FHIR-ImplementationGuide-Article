@@ -6,8 +6,8 @@
 id: ltsi.fhir.oncofair
 canonical: http://ltsi.univ-rennes.fr
 name: OncoFAIR
-title: Onco-FAIR
-description: The Onco-FAIR implementation guide reports on the implementation of prescribing and medication administration in oncology.
+title: OncoFAIR
+description: The OncoFAIR implementation guide reports on the implementation of prescribing and medication administration in oncology.
 status: draft # draft | active | retired | unknown
 version: 0.1.0
 fhirVersion: 5.0.0 # https://www.hl7.org/fhir/valueset-FHIR-version.html
@@ -20,16 +20,37 @@ publisher:
   url: https://ltsi.univ-rennes.fr
   # email: test@example.org
 
+pages:
+  index.md:
+    title: Home
+  mapping.md:
+    title: Mapping PN13/FHIR R5
+  technical_specifications.md : 
+      feed_flow.md:
+          title : Flow 01 - Using queries to populate an HDW with chemotherapy data
+      feasibility_study_research_flow.md:
+          title : Flow 02 - Request chemotherapy data for a feasibility study
+      multicentric_study_research_flow.md:
+          title : Flow 03 - Request chemotherapy data for a multicentric study
+    
+     
+
+menu:
+  Home: index.html
+  Mapping: mapping.html
+  Compliance resources: artifacts.html
+  Description of flows :
+      Flow 01 - Using queries to populate an HDW with chemotherapy data : feed_flow.html
+      Flow 02 - Request chemotherapy data for a feasibility study : feasibility_study_research_flow.html
+      Flow 03 - Request chemotherapy data for a multicentric study : multicentric_study_research_flow.html
+
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for id, uri, and version.
 #
-# dependencies:
-#   hl7.fhir.us.core: 3.1.0
-#   hl7.fhir.us.mcode:
-#     id: mcode
-#     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
-#     version: 1.0.0
+#dependencies:
+#   arkhn.fhir.uv.osiris: 2.1.0
+    
 #
 #
 # The pages property corresponds to IG.definition.page. SUSHI can
@@ -43,14 +64,7 @@ publisher:
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 #
-# pages:
-#   index.md:
-#     title: Example Home
-#   implementation.xml:
-#   examples.xml:
-#     title: Examples Overview
-#     simpleExamples.xml:
-#     complexExamples.xml:
+
 #
 #
 # The parameters property represents IG.definition.parameter. Rather
@@ -74,9 +88,7 @@ publisher:
 # │ input/includes. To use a provided input/includes/menu.xml file, delete the "menu"              │
 # │ property below.                                                                                │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-menu:
-  Accueil: index.html
-  Artifacts: artifacts.html
+
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

@@ -1,0 +1,15 @@
+@startuml
+
+scale 200 width
+
+object "**OncoFAIRPatient**" as OncoFAIRPatient #DarkGray {
+    Patient
+}
+
+map "**Sejour : OncoFAIREncounter**" as Sejour #back:LightSlateGray;header:SlateGray {
+    idSejour => identifier
+}
+
+Sejour -u-> OncoFAIRPatient : subject
+
+@enduml

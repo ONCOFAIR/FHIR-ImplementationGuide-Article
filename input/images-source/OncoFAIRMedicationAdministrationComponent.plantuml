@@ -1,0 +1,34 @@
+@startuml
+
+map "dosage" as dosage #back:WhiteSmoke;header:LightGray {
+    quantitePrevue => dose
+    quantiteAdministree => <&layers> rate[x]:rateQuantity
+}
+
+object "**OncoFAIRMedicationAdministrationElement**" as OncoFAIRMedicationAdministrationElement #LightSeaGreen {
+    ElementAdministration
+}
+
+object "**OncoFAIRMedication**" as OncoFAIRMedication #LimeGreen {
+    Composant
+}
+
+map "<&plus> oncofair-ma-element-traceability" as oncofairmaelementtraceability #back:WhiteSmoke;header:LightGray {
+    lot => batchNumber
+    serie => serialNumber
+}
+
+map "**ComposantAdministre : OncoFAIRMedicationAdministrationComponent**" as ComposantAdministre #back:MintCream;header:LightSeaGreen {
+    commentaires => <&layers> note:comments
+    libelleComposant => <&layers> note:wording
+    dosage *-> dosage
+    oncofair-ma-element-traceability *-> oncofairmaelementtraceability
+    datePeremption => <&plus> oncofair-ma-element-expirationdate
+    provenance => <&plus> oncofair-ma-component-origin
+    statut => <&plus> oncofair-ma-component-administration-status
+}
+
+ComposantAdministre -u-> OncoFAIRMedicationAdministrationElement : partOf
+ComposantAdministre -d-> OncoFAIRMedication : medication
+
+@enduml

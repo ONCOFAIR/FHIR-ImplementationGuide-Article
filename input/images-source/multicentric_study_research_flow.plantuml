@@ -1,0 +1,7 @@
+@startuml
+actor "Consummer" as C
+actor "Health data warehouse" as EDS
+
+C -> EDS: <color:blue>Flow 3.1</color> GET [Resource]
+EDS --> C: <color:blue>Flow 3.2</color> 200 OK Bundle Searchset
+@enduml
