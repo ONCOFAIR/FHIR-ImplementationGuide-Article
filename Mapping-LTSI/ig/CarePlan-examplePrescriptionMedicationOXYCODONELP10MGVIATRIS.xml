@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CarePlan xmlns="http://hl7.org/fhir">
+  <id value="examplePrescriptionMedicationOXYCODONELP10MGVIATRIS"/>
+  <meta>
+    <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/prescription"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CarePlan examplePrescriptionMedicationOXYCODONELP10MGVIATRIS</b></p><a name="examplePrescriptionMedicationOXYCODONELP10MGVIATRIS"> </a><a name="hcexamplePrescriptionMedicationOXYCODONELP10MGVIATRIS"> </a><a name="examplePrescriptionMedicationOXYCODONELP10MGVIATRIS-en-US"> </a><p><b>Date and time</b>: 2023-01-01 00:00:00+0000</p><p><b>instantiatesCanonical</b>: <a href="PlanDefinition-exampleProtocolMISCELLANEOUS.html">Protocol - Miscellaneous protocol</a></p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>subject</b>: <a href="Patient-exampleOncologyPatient.html">John DOE (official) Male, DoB: 1991-11-23 ( Permanent Patient Identifier (IPP): 6564415 (use: usual, ))</a></p><p><b>encounter</b>: <a href="Encounter-exampleStayMISCELLANEOUS.html">Encounter: identifier = 98456; status = completed</a></p><p><b>period</b>: 2023-01-01 09:00:00+0000 --&gt; 2023-01-01 11:35:00+0000</p><p><b>supportingInfo</b>: </p><ul><li><a href="Observation-exampleAdditionalInformationHeight.html">Height</a></li><li><a href="Observation-exampleAdditionalInformationWeight.html">Weight</a></li></ul><h3>Activities</h3><table class="grid"><tr><td style="display: none">-</td><td><b>PlannedActivityReference</b></td></tr><tr><td style="display: none">*</td><td><a href="MedicationRequest-examplePrescriptionItemOXYCODONELP10MGVIATRIS.html">MedicationRequest: extension = Pharmacie; identifier = 28728; groupIdentifier = 52427; status = completed; intent = order; category = Arrêt; effectiveDosePeriod = 2023-01-01 09:00:00+0000 --&gt; 2023-10-19 14:32:00+0000</a></td></tr></table></div>
+  </text>
+  <extension url="http://ltsi.univ-rennes.fr/StructureDefinition/date-time">
+    <valueDateTime value="2023-01-01T00:00:00.0000Z"/>
+  </extension>
+  <instantiatesCanonical value="http://ltsi.univ-rennes.fr/PlanDefinition/exampleProtocolMISCELLANEOUS"/>
+  <status value="completed"/>
+  <intent value="order"/>
+  <subject>
+    <reference value="Patient/exampleOncologyPatient"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/exampleStayMISCELLANEOUS"/>
+  </encounter>
+  <period>
+    <start value="2023-01-01T09:00:00.0000Z"/>
+    <end value="2023-01-01T11:35:00.0000Z"/>
+  </period>
+  <supportingInfo>
+    <reference value="Observation/exampleAdditionalInformationHeight"/>
+    <display value="Height"/>
+  </supportingInfo>
+  <supportingInfo>
+    <reference value="Observation/exampleAdditionalInformationWeight"/>
+    <display value="Weight"/>
+  </supportingInfo>
+  <activity>
+    <plannedActivityReference>
+      <reference value="MedicationRequest/examplePrescriptionItemOXYCODONELP10MGVIATRIS"/>
+    </plannedActivityReference>
+  </activity>
+</CarePlan>

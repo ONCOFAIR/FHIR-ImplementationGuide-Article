@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="examplePrescriptionItemInfusionMETHYLPREDNISOLONE"/>
+  <meta>
+    <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MedicationRequest examplePrescriptionItemInfusionMETHYLPREDNISOLONE</b></p><a name="examplePrescriptionItemInfusionMETHYLPREDNISOLONE"> </a><a name="hcexamplePrescriptionItemInfusionMETHYLPREDNISOLONE"> </a><a name="examplePrescriptionItemInfusionMETHYLPREDNISOLONE-en-US"> </a><p><b>Medication item provenance</b>: <span title="Codes:{http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationItemProvenance 1}">Pharmacie</span></p><p><b>Event Type Data</b>: <span title="Codes:{http://ltsi.univ-rennes.fr/CodeSystem/CSEventTypeData 6}">PHE - Plage horaire</span></p><p><b>Event Time Min</b>: 2023-01-15 09:03:00+0000</p><p><b>Event Time Max</b>: 2023-01-15 09:03:00+0000</p><p><b>identifier</b>: 565656</p><p><b>basedOn</b>: <a href="examplePrescriptionINFUSION">examplePrescriptionINFUSION</a></p><p><b>groupIdentifier</b>: 589127</p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title="Codes:{http://ltsi.univ-rennes.fr/CodeSystem/CSPrescriptionCategory C}">Création</span></p><h3>Medications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Reference</b></td></tr><tr><td style="display: none">*</td><td><a href="Medication-exampleOncologyMedicationMETHYLPREDNISOLONE.html">Medication METHYLPREDNISOLONE</a></td></tr></table><p><b>subject</b>: <a href="Patient-exampleOncologyPatient.html">John DOE (official) Male, DoB: 1991-11-23 ( Permanent Patient Identifier (IPP): 6564415 (use: usual, ))</a></p><p><b>requester</b>: <a href="Practitioner-exampleOncologyPractitioner.html">Practitioner: identifier = SR156518</a></p><p><b>effectiveDosePeriod</b>: 2023-01-01 09:00:00+0000 --&gt; 2023-01-01 11:35:00+0000</p><blockquote><p><b>dosageInstruction</b></p></blockquote></div>
+  </text>
+  <extension url="http://ltsi.univ-rennes.fr/StructureDefinition/medication-item-provenance">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationItemProvenance"/>
+        <code value="1"/>
+        <display value="Pharmacie"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://ltsi.univ-rennes.fr/StructureDefinition/eventTypeData">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSEventTypeData"/>
+        <code value="6"/>
+        <display value="PHE - Plage horaire"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://ltsi.univ-rennes.fr/StructureDefinition/eventTimeMin">
+    <valueDateTime value="2023-01-15T09:03:00.0000Z"/>
+  </extension>
+  <extension url="http://ltsi.univ-rennes.fr/StructureDefinition/eventTimeMax">
+    <valueDateTime value="2023-01-15T09:03:00.0000Z"/>
+  </extension>
+  <identifier>
+    <value value="565656"/>
+  </identifier>
+  <basedOn>
+    <reference value="examplePrescriptionINFUSION"/>
+  </basedOn>
+  <groupIdentifier>
+    <value value="589127"/>
+  </groupIdentifier>
+  <status value="completed"/>
+  <intent value="order"/>
+  <category>
+    <coding>
+      <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSPrescriptionCategory"/>
+      <code value="C"/>
+      <display value="Création"/>
+    </coding>
+  </category>
+  <medication>
+    <reference>
+      <reference value="Medication/exampleOncologyMedicationMETHYLPREDNISOLONE"/>
+    </reference>
+  </medication>
+  <subject>
+    <reference value="Patient/exampleOncologyPatient"/>
+  </subject>
+  <requester>
+    <reference value="Practitioner/exampleOncologyPractitioner"/>
+  </requester>
+  <effectiveDosePeriod>
+    <start value="2023-01-01T09:00:00.0000Z"/>
+    <end value="2023-01-01T11:35:00.0000Z"/>
+  </effectiveDosePeriod>
+  <dosageInstruction>
+    <text value="Administer 1 dose of 120 mg METHYLPREDNISOLONE in 1 min."/>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2023-01-01T09:00:00.0000Z"/>
+          <end value="2023-01-01T11:35:00.0000Z"/>
+        </boundsPeriod>
+        <frequency value="1"/>
+        <period value="1"/>
+        <periodUnit value="d"/>
+      </repeat>
+    </timing>
+    <route>
+      <coding>
+        <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSSCT"/>
+        <code value="47625008"/>
+        <display value="Intravenous route"/>
+      </coding>
+    </route>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="120"/>
+        <unit value="mg"/>
+      </doseQuantity>
+      <rateRatio>
+        <numerator>
+          <value value="1"/>
+          <unit value="dose(s)"/>
+        </numerator>
+        <denominator>
+          <value value="1"/>
+          <unit value="min"/>
+        </denominator>
+      </rateRatio>
+    </doseAndRate>
+  </dosageInstruction>
+</MedicationRequest>

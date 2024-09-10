@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="examplePrescriptionItemBACTRIMFORTE"/>
+  <meta>
+    <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MedicationRequest examplePrescriptionItemBACTRIMFORTE</b></p><a name="examplePrescriptionItemBACTRIMFORTE"> </a><a name="hcexamplePrescriptionItemBACTRIMFORTE"> </a><a name="examplePrescriptionItemBACTRIMFORTE-en-US"> </a><p><b>Medication item provenance</b>: <span title="Codes:{http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationItemProvenance 1}">Pharmacie</span></p><p><b>identifier</b>: 87823</p><p><b>basedOn</b>: <a href="examplePrescriptionBACTRIMFORTE">examplePrescriptionBACTRIMFORTE</a></p><p><b>groupIdentifier</b>: 897867254</p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title="Codes:{http://ltsi.univ-rennes.fr/CodeSystem/CSPrescriptionCategory A}">Arrêt</span></p><h3>Medications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Reference</b></td></tr><tr><td style="display: none">*</td><td><a href="Medication-exampleOncologyMedicationBACTRIMFORTE.html">Medication BACTRIM FORTE 800MG/160MG CPR</a></td></tr></table><p><b>subject</b>: <a href="Patient-exampleOncologyPatient.html">John DOE (official) Male, DoB: 1991-11-23 ( Permanent Patient Identifier (IPP): 6564415 (use: usual, ))</a></p><p><b>requester</b>: <a href="Practitioner-exampleOncologyPractitioner.html">Practitioner: identifier = SR156518</a></p><p><b>note</b>: 2 cpr at 8am orally, for 2 days, 1 day / 2, Monday / Wednesday / Friday (By [SR156518] @2020-07-18 03:13:00+0000)</p><p><b>effectiveDosePeriod</b>: 2020-07-18 08:00:00+0000 --&gt; 2020-07-18 08:34:00+0000</p><blockquote><p><b>dosageInstruction</b></p></blockquote></div>
+  </text>
+  <extension url="http://ltsi.univ-rennes.fr/StructureDefinition/medication-item-provenance">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationItemProvenance"/>
+        <code value="1"/>
+        <display value="Pharmacie"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <value value="87823"/>
+  </identifier>
+  <basedOn>
+    <reference value="examplePrescriptionBACTRIMFORTE"/>
+  </basedOn>
+  <groupIdentifier>
+    <value value="897867254"/>
+  </groupIdentifier>
+  <status value="completed"/>
+  <intent value="order"/>
+  <category>
+    <coding>
+      <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSPrescriptionCategory"/>
+      <code value="A"/>
+      <display value="Arrêt"/>
+    </coding>
+  </category>
+  <medication>
+    <reference>
+      <reference value="Medication/exampleOncologyMedicationBACTRIMFORTE"/>
+    </reference>
+  </medication>
+  <subject>
+    <reference value="Patient/exampleOncologyPatient"/>
+  </subject>
+  <requester>
+    <reference value="Practitioner/exampleOncologyPractitioner"/>
+  </requester>
+  <note>
+    <authorString value="[SR156518]"/>
+    <time value="2020-07-18T03:13:00.0000Z"/>
+    <text value="2 cpr at 8am orally, for 2 days, 1 day / 2, Monday / Wednesday / Friday"/>
+  </note>
+  <effectiveDosePeriod>
+    <start value="2020-07-18T08:00:00.0000Z"/>
+    <end value="2020-07-18T08:34:00.0000Z"/>
+  </effectiveDosePeriod>
+  <dosageInstruction>
+    <text value="Administer 2 tablets of BACTRIM FORTE 800MG/160MG, 1 time daily on Mondays, Wednesdays and Fridays."/>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2020-07-01T08:00:00.0000Z"/>
+          <end value="2020-07-20T08:00:00.0000Z"/>
+        </boundsPeriod>
+        <frequency value="1"/>
+        <period value="2"/>
+        <periodUnit value="d"/>
+        <dayOfWeek value="mon"/>
+        <dayOfWeek value="wed"/>
+        <dayOfWeek value="fri"/>
+      </repeat>
+    </timing>
+    <route>
+      <coding>
+        <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSSCT"/>
+        <code value="26643006"/>
+        <display value="Oral route"/>
+      </coding>
+    </route>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="2"/>
+        <unit value="tablet(s)"/>
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+</MedicationRequest>

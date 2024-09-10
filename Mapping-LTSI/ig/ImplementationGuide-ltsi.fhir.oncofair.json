@@ -1,0 +1,1398 @@
+{
+  "resourceType" : "ImplementationGuide",
+  "id" : "ltsi.fhir.oncofair",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ltsi.fhir.oncofair</b></p><a name=\"ltsi.fhir.oncofair\"> </a><a name=\"hcltsi.fhir.oncofair\"> </a><a name=\"ltsi.fhir.oncofair-en-US\"> </a><h2>OncoFAIR</h2><p>The official URL for this implementation guide is: </p><pre>http://ltsi.univ-rennes.fr/ImplementationGuide/ltsi.fhir.oncofair</pre><div><p>The Onco-FAIR implementation guide reports on the implementation of prescribing and medication administration in oncology.</p>\n</div></div>"
+  },
+  "url" : "http://ltsi.univ-rennes.fr/ImplementationGuide/ltsi.fhir.oncofair",
+  "version" : "0.1.0",
+  "name" : "OncoFAIR",
+  "title" : "Onco-FAIR",
+  "status" : "draft",
+  "date" : "2024-09-10T09:36:14+00:00",
+  "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
+  "contact" : [{
+    "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://ltsi.univ-rennes.fr"
+    }]
+  }],
+  "description" : "The Onco-FAIR implementation guide reports on the implementation of prescribing and medication administration in oncology.",
+  "packageId" : "ltsi.fhir.oncofair",
+  "license" : "CC0-1.0",
+  "fhirVersion" : ["5.0.0"],
+  "dependsOn" : [{
+    "id" : "hl7tx",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+    }],
+    "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+    "packageId" : "hl7.terminology.r5",
+    "version" : "6.0.2"
+  },
+  {
+    "id" : "hl7ext",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+    }],
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions.r5",
+    "version" : "5.1.0"
+  }],
+  "definition" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
+      "valueCode" : "hl7.fhir.uv.tools#0.2.0"
+    }],
+    "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/accomodation-unit"
+      },
+      "name" : "Accomodation Unit",
+      "description" : "Accomodation unit.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/additional-information"
+      },
+      "name" : "Additional Information",
+      "description" : "Additional information, such as height or weight.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/medication-administered-quantity"
+      },
+      "name" : "Administered quantity of medication",
+      "description" : "The administered quantity of medication.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/administration-report"
+      },
+      "name" : "Administration Report",
+      "description" : "Prescribed medication administration report.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/associated-device"
+      },
+      "name" : "Associated Device",
+      "description" : "A device associated with a medication for its administration.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vsCommunicationModes"
+      },
+      "name" : "Communication modes",
+      "description" : "ValueSet for communication modes (Incrémental, Récapitulatif).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/CSCommunicationModes"
+      },
+      "name" : "Communication modes",
+      "description" : "CodeSystem for french communication modes (Incrémental, Récapitulatif).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/date-time"
+      },
+      "name" : "Date and time",
+      "description" : "Date and time.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/date-time-end"
+      },
+      "name" : "End date and time",
+      "description" : "End date and time.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/eventTimeMax"
+      },
+      "name" : "Event Time Max",
+      "description" : "Represents the maximum time for the event.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/eventTimeMin"
+      },
+      "name" : "Event Time Min",
+      "description" : "Represents the minimum time for the event.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/eventTypeData"
+      },
+      "name" : "Event Type Data",
+      "description" : "Represents the type of logical data for an event.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/CSEventTypeData"
+      },
+      "name" : "Event Types",
+      "description" : "CodeSystem for various event types used in French healthcare systems, identified by number, abbreviation, and full name.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/VSEventTypeData"
+      },
+      "name" : "Event Types Data",
+      "description" : "ValueSet for various event types used in French healthcare systems.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/exampleAdditionalInformationHeight"
+      },
+      "name" : "exampleAdditionalInformationHeight",
+      "description" : "Additional information about height.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/additional-information"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/exampleAdditionalInformationWeight"
+      },
+      "name" : "exampleAdditionalInformationWeight",
+      "description" : "Additional information about weight.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/additional-information"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationAdministration"
+      }],
+      "reference" : {
+        "reference" : "MedicationAdministration/exampleAdministrationReportBACTRIMFORTE"
+      },
+      "name" : "exampleAdministrationReportBACTRIMFORTE",
+      "description" : "BACTRIMFORTE medication administration report.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/administration-report"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DeviceDefinition"
+      }],
+      "reference" : {
+        "reference" : "DeviceDefinition/exampleAssociatedDeviceNEBUL"
+      },
+      "name" : "exampleAssociatedDeviceNEBUL",
+      "description" : "Associated device: NEBUL.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/associated-device"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "HealthcareService"
+      }],
+      "reference" : {
+        "reference" : "HealthcareService/exampleHealthcareServiceHCMED"
+      },
+      "name" : "exampleHealthcareServiceHCMED",
+      "description" : "HCMED healthcare service.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-healthcare-service"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "HealthcareService"
+      }],
+      "reference" : {
+        "reference" : "HealthcareService/exampleHealthcareServiceSAB"
+      },
+      "name" : "exampleHealthcareServiceSAB",
+      "description" : "SAB healthcare service.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-healthcare-service"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/exampleOncologyMedication5FLUOROURACILE5g"
+      },
+      "name" : "exampleOncologyMedication5FLUOROURACILE5g",
+      "description" : "Medication: 5-FLUOROURACILE 5 g.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/exampleOncologyMedicationBACTRIMFORTE"
+      },
+      "name" : "exampleOncologyMedicationBACTRIMFORTE",
+      "description" : "Medication: BACTRIM FORTE 800MG/160MG CPR.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/exampleOncologyMedicationG5pourcent100MLPOCHE"
+      },
+      "name" : "exampleOncologyMedicationG5pourcent100MLPOCHE",
+      "description" : "Medication: G5% 100ML POCHE.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/exampleOncologyMedicationLEVOFOLINATEDECALCIUM"
+      },
+      "name" : "exampleOncologyMedicationLEVOFOLINATEDECALCIUM",
+      "description" : "Medication: LEVOFOLINATE DE CALCIUM.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/exampleOncologyMedicationMETHYLPREDNISOLONE"
+      },
+      "name" : "exampleOncologyMedicationMETHYLPREDNISOLONE",
+      "description" : "Medication: METHYLPREDNISOLONE.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/exampleOncologyMedicationONDANSETRON"
+      },
+      "name" : "exampleOncologyMedicationONDANSETRON",
+      "description" : "Medication: ONDANSETRON.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/exampleOncologyMedicationOXALIPLATINE200mg"
+      },
+      "name" : "exampleOncologyMedicationOXALIPLATINE200mg",
+      "description" : "Medication: OXALIPLATINE 200 mg.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/exampleOncologyMedicationOXYCODONELP10MGVIATRIS"
+      },
+      "name" : "exampleOncologyMedicationOXYCODONELP10MGVIATRIS",
+      "description" : "Medication: OXYCODONE LP 10 MG VIATRIS, CPR À LIBÉRATION PROLONGÉE.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/exampleOncologyMedicationPENTACARINAT300MG"
+      },
+      "name" : "exampleOncologyMedicationPENTACARINAT300MG",
+      "description" : "Medication: PENTACARINAT 300MG PDR INJ.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/exampleOncologyPatient"
+      },
+      "name" : "exampleOncologyPatient",
+      "description" : "Patient of IPP 6564415.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-patient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/exampleOncologyPractitioner"
+      },
+      "name" : "exampleOncologyPractitioner",
+      "description" : "The responsible practitioner.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-practitioner"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/examplePrescriptionItemBACTRIMFORTE"
+      },
+      "name" : "examplePrescriptionItemBACTRIMFORTE",
+      "description" : "Prescription item related to the medication BACTRIM FORTE 800MG/160MG CPR.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/examplePrescriptionItemInfusion5FLUOROURACILE5g"
+      },
+      "name" : "examplePrescriptionItemInfusion5FLUOROURACILE5g",
+      "description" : "Prescription item related to the medication 5-FLUOROURACILE 5 g.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/examplePrescriptionItemInfusionG5percent100MLPOCHE"
+      },
+      "name" : "examplePrescriptionItemInfusionG5percent100MLPOCHE",
+      "description" : "Prescription item related to the medication G5percent100MLPOCHE.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/examplePrescriptionItemInfusionLEVOFOLINATEDECALCIUM"
+      },
+      "name" : "examplePrescriptionItemInfusionLEVOFOLINATEDECALCIUM",
+      "description" : "Prescription item related to the medication LEVOFOLINATE DE CALCIUM.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/examplePrescriptionItemInfusionMETHYLPREDNISOLONE"
+      },
+      "name" : "examplePrescriptionItemInfusionMETHYLPREDNISOLONE",
+      "description" : "Prescription item related to the medication METHYLPREDNISOLONE.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/examplePrescriptionItemInfusionONDANSETRON"
+      },
+      "name" : "examplePrescriptionItemInfusionONDANSETRON",
+      "description" : "Prescription item related to the medication ONDANSETRON.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/examplePrescriptionItemInfusionOXALIPLATINE200mg"
+      },
+      "name" : "examplePrescriptionItemInfusionOXALIPLATINE200mg",
+      "description" : "Prescription item related to the medication OXALIPLATINE 200 mg.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/examplePrescriptionItemOXYCODONELP10MGVIATRIS"
+      },
+      "name" : "examplePrescriptionItemOXYCODONELP10MGVIATRIS",
+      "description" : "Prescription item related to the medication OXYCODONE LP 10 MG VIATRIS.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/examplePrescriptionItemPENTACARINAT300MG"
+      },
+      "name" : "examplePrescriptionItemPENTACARINAT300MG",
+      "description" : "Prescription item related to the medication PENTACARINAT 300MG PDR INJ.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CarePlan"
+      }],
+      "reference" : {
+        "reference" : "CarePlan/examplePrescriptionMedicationBACTRIMFORTE"
+      },
+      "name" : "examplePrescriptionMedicationBACTRIMFORTE",
+      "description" : "BACTRIMFORTE medication prescription.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CarePlan"
+      }],
+      "reference" : {
+        "reference" : "CarePlan/examplePrescriptionMedicationINFUSION"
+      },
+      "name" : "examplePrescriptionMedicationINFUSION",
+      "description" : "Medications prescription (infusion).",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CarePlan"
+      }],
+      "reference" : {
+        "reference" : "CarePlan/examplePrescriptionMedicationOXYCODONELP10MGVIATRIS"
+      },
+      "name" : "examplePrescriptionMedicationOXYCODONELP10MGVIATRIS",
+      "description" : "OXYCODONE medication prescription.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CarePlan"
+      }],
+      "reference" : {
+        "reference" : "CarePlan/examplePrescriptionMedicationPENTACARINAT300MG"
+      },
+      "name" : "examplePrescriptionMedicationPENTACARINAT300MG",
+      "description" : "PENTACARINAT medication prescription.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/exampleStayFOLFOX4"
+      },
+      "name" : "exampleStayFOLFOX4",
+      "description" : "Stay of ID 15461.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/stay"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/exampleStayMISCELLANEOUS"
+      },
+      "name" : "exampleStayMISCELLANEOUS",
+      "description" : "Stay of ID 98456.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/stay"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vsLOINC"
+      },
+      "name" : "LOINC codes",
+      "description" : "ValueSet of LOINC codes.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/CSLOINC"
+      },
+      "name" : "LOINC codes",
+      "description" : "LOINC CodeSystem.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/medication-lti-exemption"
+      },
+      "name" : "LTI Detailed Descriptions",
+      "description" : "Detailed list of long-term illness (LTI).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/Medical-liability-unit"
+      },
+      "name" : "Medical Liability Unit",
+      "description" : "Medical liability unit.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vsMedicalUnits"
+      },
+      "name" : "Medical units",
+      "description" : "ValueSet for medical units (accommodation, medical liability unit).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/CSMedicalUnits"
+      },
+      "name" : "Medical units",
+      "description" : "CodeSystem for french medical units (accommodation, medical liability unit).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/medication-comment"
+      },
+      "name" : "Medication comment",
+      "description" : "Adds a comment to a Medication resource.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/medication-is-vehicle"
+      },
+      "name" : "Medication Is Vehicle",
+      "description" : "Indicates whether the medication is a vehicle.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/medication-item-provenance"
+      },
+      "name" : "Medication item provenance",
+      "description" : "Adds a provenance to a MedicationItem resource",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vsMedicationItemProvenance"
+      },
+      "name" : "Medication item provenance",
+      "description" : "ValueSet for medication item provenance.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/CSMedicationItemProvenance"
+      },
+      "name" : "Medication item provenance",
+      "description" : "CodeSystem for french medication item provenance.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/medication-lti-exemption"
+      },
+      "name" : "Medication LTI exemption",
+      "description" : "Long-term illness (LTI) for which the patient can benefit from an exemption.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vsMedicationLTIExemption"
+      },
+      "name" : "Medication LTI Exemption",
+      "description" : "ValueSet for medication LTI exemption.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/medication-status"
+      },
+      "name" : "Medication status",
+      "description" : "Adds a status to a Medication resource",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vsMedicationStatus"
+      },
+      "name" : "Medication status",
+      "description" : "ValueSet for medication status.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/CSMedicationStatus"
+      },
+      "name" : "Medication status",
+      "description" : "CodeSystem for french medication status.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/medication-type"
+      },
+      "name" : "Medication type",
+      "description" : "Adds a type to a Medication resource",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vsMedicationTypes"
+      },
+      "name" : "Medication types",
+      "description" : "ValueSet for medication types.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/CSMedicationTypes"
+      },
+      "name" : "Medication types",
+      "description" : "CodeSystem for french medication types.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vsMedications"
+      },
+      "name" : "Medications",
+      "description" : "ValueSet for medications.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/CSMedications"
+      },
+      "name" : "Medications",
+      "description" : "CodeSystem for french medications.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncology-medication"
+      },
+      "name" : "Oncology Medication",
+      "description" : "Medication used in oncology.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncology-patient"
+      },
+      "name" : "Oncology Patient",
+      "description" : "Patient receiving medical treatment in oncology.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncology-practitioner"
+      },
+      "name" : "Oncology Practitioner",
+      "description" : "Oncology practitioner.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncology-healthcare-service"
+      },
+      "name" : "OncologyHealthcareService",
+      "description" : "Healthcare service(s).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/medication-administered-planned-quantity"
+      },
+      "name" : "Planned quantity of medication",
+      "description" : "The planned quantity of medication administered.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/prescription"
+      },
+      "name" : "Prescription",
+      "description" : "Medication prescription.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/CSPrescriptionCategory"
+      },
+      "name" : "Prescription category",
+      "description" : "CodeSystem for french prescription category (Création, Arrêt, Modification, Validation).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/prescription-item"
+      },
+      "name" : "Prescription Item",
+      "description" : "Prescription item.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vsPrescriptionCategory"
+      },
+      "name" : "Prescription status",
+      "description" : "ValueSet for PlanDefinition types, extended to include Création, Arrêt, Modification and Validation.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/protocol"
+      },
+      "name" : "Protocol",
+      "description" : "Protocol.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/exampleProtocolInfusionFOLFOX4"
+      },
+      "name" : "Protocol - FOLFOX 4",
+      "description" : "Prescribed protocol.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/protocol"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/exampleProtocolMISCELLANEOUS"
+      },
+      "name" : "Protocol - Miscellaneous protocol",
+      "description" : "Prescribed protocol.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/protocol"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vsSCT"
+      },
+      "name" : "SNOMED CT codes",
+      "description" : "ValueSet of SNOMED CT codes.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/CSSCT"
+      },
+      "name" : "SNOMED CT Codes",
+      "description" : "SNOMED CT code system.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/date-time-start"
+      },
+      "name" : "Start date and time",
+      "description" : "Start date and time.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/stay"
+      },
+      "name" : "Stay",
+      "description" : "Stay.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/treatment-cycle-number"
+      },
+      "name" : "Treatment cycle number",
+      "description" : "Treatment cycle number.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/treatment-day-number"
+      },
+      "name" : "Treatment day number",
+      "description" : "Treatment day number.",
+      "isExample" : false
+    }],
+    "page" : {
+      "sourceUrl" : "toc.html",
+      "name" : "toc.html",
+      "title" : "Table of Contents",
+      "generation" : "html",
+      "page" : [{
+        "sourceUrl" : "index.html",
+        "name" : "index.html",
+        "title" : "Home",
+        "generation" : "markdown"
+      }]
+    },
+    "parameter" : [{
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "copyrightyear"
+      },
+      "value" : "2023+"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "releaselabel"
+      },
+      "value" : "ci-build"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "autoload-resources"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/capabilities"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/examples"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/extensions"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/models"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/operations"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/profiles"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/resources"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/vocabulary"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/maps"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/testing"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/history"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "fsh-generated/resources"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-pages"
+      },
+      "value" : "template/config"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-pages"
+      },
+      "value" : "input/images"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-liquid"
+      },
+      "value" : "template/liquid"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-liquid"
+      },
+      "value" : "input/liquid"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-qa"
+      },
+      "value" : "temp/qa"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-temp"
+      },
+      "value" : "temp/pages"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-output"
+      },
+      "value" : "output"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-tx-cache"
+      },
+      "value" : "input-cache/txcache"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-suppressed-warnings"
+      },
+      "value" : "input/ignoreWarnings.txt"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-history"
+      },
+      "value" : "http://ltsi.univ-rennes.fr/history.html"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "template-html"
+      },
+      "value" : "template-page.html"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "template-md"
+      },
+      "value" : "template-page-md.html"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-contact"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-context"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-copyright"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-jurisdiction"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-license"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-publisher"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-version"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-wg"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "active-tables"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "fmm-definition"
+      },
+      "value" : "http://hl7.org/fhir/versions.html#maturity"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "propagate-status"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "excludelogbinaryformat"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "tabbed-snapshots"
+      },
+      "value" : "true"
+    }]
+  }
+}

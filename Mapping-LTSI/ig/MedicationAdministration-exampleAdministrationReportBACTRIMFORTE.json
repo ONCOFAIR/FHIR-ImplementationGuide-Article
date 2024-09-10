@@ -1,0 +1,69 @@
+{
+  "resourceType" : "MedicationAdministration",
+  "id" : "exampleAdministrationReportBACTRIMFORTE",
+  "meta" : {
+    "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/administration-report"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationAdministration exampleAdministrationReportBACTRIMFORTE</b></p><a name=\"exampleAdministrationReportBACTRIMFORTE\"> </a><a name=\"hcexampleAdministrationReportBACTRIMFORTE\"> </a><a name=\"exampleAdministrationReportBACTRIMFORTE-en-US\"> </a><p><b>Start date and time</b>: 2023-01-01 08:00:00+0000</p><p><b>End date and time</b>: 2023-01-01 08:00:00+0000</p><p><b>Planned quantity of medication</b>: 2 tablet(s)</p><p><b>Administered quantity of medication</b>: 2 tablet(s)</p><p><b>basedOn</b>: <a href=\"examplePrescriptionINFUSION\">examplePrescriptionINFUSION</a></p><p><b>status</b>: Completed</p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Medication-exampleOncologyMedicationBACTRIMFORTE.html\">Medication BACTRIM FORTE 800MG/160MG CPR</a></td></tr></table><p><b>subject</b>: <a href=\"Patient-exampleOncologyPatient.html\">John DOE (official) Male, DoB: 1991-11-23 ( Permanent Patient Identifier (IPP):\u00a06564415\u00a0(use:\u00a0usual,\u00a0))</a></p><p><b>encounter</b>: <a href=\"Encounter-exampleStayFOLFOX4.html\">Encounter: identifier = 15461; status = completed</a></p><p><b>occurence</b>: 2020-06-18 08:00:00+0000 --&gt; 2020-06-18 08:34:00+0000</p><blockquote><p><b>performer</b></p><h3>Actors</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Practitioner-exampleOncologyPractitioner.html\">Practitioner: identifier = SR156518</a></td></tr></table></blockquote><p><b>request</b>: <a href=\"MedicationRequest-examplePrescriptionItemBACTRIMFORTE.html\">MedicationRequest: extension = Pharmacie; identifier = 87823; groupIdentifier = 897867254; status = completed; intent = order; category = Arrêt; note = 2 cpr at 8am orally, for 2 days, 1 day / 2, Monday / Wednesday / Friday; effectiveDosePeriod = 2020-07-18 08:00:00+0000 --&gt; 2020-07-18 08:34:00+0000</a></p><p><b>note</b>: BACTRIM FORTE 800MG/160MG CPR, PO</p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Dose</b></td></tr><tr><td style=\"display: none\">*</td><td>Planned quantity: 2 tablet(s)</td><td>2 tablet(s)</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/date-time-start",
+    "valueDateTime" : "2023-01-01T08:00:00.0000Z"
+  },
+  {
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/date-time-end",
+    "valueDateTime" : "2023-01-01T08:00:00.0000Z"
+  },
+  {
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/medication-administered-planned-quantity",
+    "valueString" : "2 tablet(s)"
+  },
+  {
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/medication-administered-quantity",
+    "valueString" : "2 tablet(s)"
+  }],
+  "basedOn" : [{
+    "reference" : "examplePrescriptionINFUSION"
+  }],
+  "status" : "completed",
+  "medication" : {
+    "reference" : {
+      "reference" : "Medication/exampleOncologyMedicationBACTRIMFORTE"
+    }
+  },
+  "subject" : {
+    "reference" : "Patient/exampleOncologyPatient"
+  },
+  "encounter" : {
+    "reference" : "Encounter/exampleStayFOLFOX4"
+  },
+  "occurencePeriod" : {
+    "start" : "2020-06-18T08:00:00.0000Z",
+    "end" : "2020-06-18T08:34:00.0000Z"
+  },
+  "performer" : [{
+    "actor" : {
+      "reference" : {
+        "reference" : "Practitioner/exampleOncologyPractitioner"
+      }
+    }
+  }],
+  "request" : {
+    "reference" : "MedicationRequest/examplePrescriptionItemBACTRIMFORTE"
+  },
+  "note" : [{
+    "text" : "BACTRIM FORTE 800MG/160MG CPR"
+  },
+  {
+    "text" : "PO"
+  }],
+  "dosage" : {
+    "text" : "Planned quantity: 2 tablet(s)",
+    "dose" : {
+      "value" : 2,
+      "unit" : "tablet(s)"
+    }
+  }
+}

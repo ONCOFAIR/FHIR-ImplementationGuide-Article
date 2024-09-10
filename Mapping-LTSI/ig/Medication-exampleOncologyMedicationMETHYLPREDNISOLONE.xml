@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="exampleOncologyMedicationMETHYLPREDNISOLONE"/>
+  <meta>
+    <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Medication exampleOncologyMedicationMETHYLPREDNISOLONE</b></p><a name="exampleOncologyMedicationMETHYLPREDNISOLONE"> </a><a name="hcexampleOncologyMedicationMETHYLPREDNISOLONE"> </a><a name="exampleOncologyMedicationMETHYLPREDNISOLONE-en-US"> </a><p><b>Medication type</b>: <span title="Codes:{http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes 3}">principe actif</span></p><p><b>Medication Is Vehicle</b>: false</p><p><b>identifier</b>: METHYLPREDNISOLONE</p><p><b>code</b>: <span title="Codes:{http://ltsi.univ-rennes.fr/CodeSystem/CSMedications 5}">METHYLPREDNISOLONE</span></p></div>
+  </text>
+  <extension url="http://ltsi.univ-rennes.fr/StructureDefinition/medication-type">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes"/>
+        <code value="3"/>
+        <display value="principe actif"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://ltsi.univ-rennes.fr/StructureDefinition/medication-is-vehicle">
+    <valueBoolean value="false"/>
+  </extension>
+  <identifier>
+    <value value="METHYLPREDNISOLONE"/>
+  </identifier>
+  <code>
+    <coding>
+      <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedications"/>
+      <code value="5"/>
+      <display value="METHYLPREDNISOLONE"/>
+    </coding>
+  </code>
+</Medication>

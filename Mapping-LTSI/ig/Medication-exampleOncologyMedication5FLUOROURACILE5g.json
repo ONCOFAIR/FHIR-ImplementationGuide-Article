@@ -1,0 +1,35 @@
+{
+  "resourceType" : "Medication",
+  "id" : "exampleOncologyMedication5FLUOROURACILE5g",
+  "meta" : {
+    "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication exampleOncologyMedication5FLUOROURACILE5g</b></p><a name=\"exampleOncologyMedication5FLUOROURACILE5g\"> </a><a name=\"hcexampleOncologyMedication5FLUOROURACILE5g\"> </a><a name=\"exampleOncologyMedication5FLUOROURACILE5g-en-US\"> </a><p><b>Medication type</b>: <span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes 3}\">principe actif</span></p><p><b>Medication Is Vehicle</b>: false</p><p><b>identifier</b>: 5-FLUOROURACILE 5 g</p><p><b>code</b>: <span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/CSMedications 9334872}\">5-FLUOROURACILE 5 g</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/medication-type",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes",
+        "code" : "3",
+        "display" : "principe actif"
+      }]
+    }
+  },
+  {
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/medication-is-vehicle",
+    "valueBoolean" : false
+  }],
+  "identifier" : [{
+    "value" : "5-FLUOROURACILE 5 g"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://ltsi.univ-rennes.fr/CodeSystem/CSMedications",
+      "code" : "9334872",
+      "display" : "5-FLUOROURACILE 5 g"
+    }]
+  }
+}

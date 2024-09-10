@@ -1,0 +1,125 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/VSEventTypeData",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSEventTypeData",
+      "title" : "Event Types Data",
+      "description" : "ValueSet for various event types used in French healthcare systems.",
+      "systems" : ["http://ltsi.univ-rennes.fr/CodeSystem/CSEventTypeData"],
+      "uses" : {
+      },
+      "StructureDefinition-eventTypeData.html" : "Event Type Data"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/vsCommunicationModes",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSCommunicationModes",
+      "title" : "Communication modes",
+      "description" : "ValueSet for communication modes (Incrémental, Récapitulatif).",
+      "systems" : ["http://ltsi.univ-rennes.fr/CodeSystem/CSCommunicationModes"]
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/vsLOINC",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSLOINC",
+      "title" : "LOINC codes",
+      "description" : "ValueSet of LOINC codes.",
+      "systems" : ["http://ltsi.univ-rennes.fr/CodeSystem/CSLOINC"]
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/vsMedicalUnits",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSMedicalUnits",
+      "title" : "Medical units",
+      "description" : "ValueSet for medical units (accommodation, medical liability unit).",
+      "systems" : ["http://ltsi.univ-rennes.fr/CodeSystem/CSMedicalUnits"]
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/vsMedicationItemProvenance",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSMedicationItemProvenance",
+      "title" : "Medication item provenance",
+      "description" : "ValueSet for medication item provenance.",
+      "systems" : [
+        "http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationItemProvenance"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-medication-item-provenance.html" : "Medication item provenance"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/vsMedicationLTIExemption",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSMedicationLTIExemption",
+      "title" : "Medication LTI Exemption",
+      "description" : "ValueSet for medication LTI exemption.",
+      "systems" : [
+        "http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-medication-lti-exemption.html" : "Medication LTI exemption"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/vsMedicationStatus",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSMedicationStatus",
+      "title" : "Medication status",
+      "description" : "ValueSet for medication status.",
+      "systems" : ["http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationStatus"],
+      "uses" : {
+      },
+      "StructureDefinition-medication-status.html" : "Medication status"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/vsMedicationTypes",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSMedicationTypes",
+      "title" : "Medication types",
+      "description" : "ValueSet for medication types.",
+      "systems" : ["http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes"],
+      "uses" : {
+      },
+      "StructureDefinition-medication-type.html" : "Medication type"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/vsMedications",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSMedications",
+      "title" : "Medications",
+      "description" : "ValueSet for medications.",
+      "systems" : ["http://ltsi.univ-rennes.fr/CodeSystem/CSMedications"]
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/vsPrescriptionCategory",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSPrescriptionCategory",
+      "title" : "Prescription status",
+      "description" : "ValueSet for PlanDefinition types, extended to include Création, Arrêt, Modification and Validation.",
+      "systems" : [
+        "http://hl7.org/fhir/ValueSet/plan-definition-type",
+        "http://ltsi.univ-rennes.fr/CodeSystem/CSPrescriptionCategory"
+      ]
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/vsSCT",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSSCT",
+      "title" : "SNOMED CT codes",
+      "description" : "ValueSet of SNOMED CT codes.",
+      "systems" : ["http://ltsi.univ-rennes.fr/CodeSystem/CSSCT"]
+    }
+  ]
+}

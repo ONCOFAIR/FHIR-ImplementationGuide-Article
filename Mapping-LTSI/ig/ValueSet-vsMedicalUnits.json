@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vsMedicalUnits",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vsMedicalUnits</b></p><a name=\"vsMedicalUnits\"> </a><a name=\"hcvsMedicalUnits\"> </a><a name=\"vsMedicalUnits-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-CSMedicalUnits.html\"><code>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicalUnits</code></a></li></ul></div>"
+  },
+  "url" : "http://ltsi.univ-rennes.fr/ValueSet/vsMedicalUnits",
+  "version" : "0.1.0",
+  "name" : "VSMedicalUnits",
+  "title" : "Medical units",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-09-10T09:36:14+00:00",
+  "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
+  "contact" : [{
+    "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://ltsi.univ-rennes.fr"
+    }]
+  }],
+  "description" : "ValueSet for medical units (accommodation, medical liability unit).",
+  "compose" : {
+    "include" : [{
+      "system" : "http://ltsi.univ-rennes.fr/CodeSystem/CSMedicalUnits"
+    }]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "resourceType" : "Medication",
+  "id" : "exampleOncologyMedicationPENTACARINAT300MG",
+  "meta" : {
+    "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication exampleOncologyMedicationPENTACARINAT300MG</b></p><a name=\"exampleOncologyMedicationPENTACARINAT300MG\"> </a><a name=\"hcexampleOncologyMedicationPENTACARINAT300MG\"> </a><a name=\"exampleOncologyMedicationPENTACARINAT300MG-en-US\"> </a><p><b>Medication type</b>: <span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes 3}\">principe actif</span></p><p><b>Medication Is Vehicle</b>: false</p><p><b>identifier</b>: PENTACARINAT 300MG PDR INJ</p><p><b>code</b>: <span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/CSMedications 9137249}\">PENTACARINAT 300MG PDR INJ</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/medication-type",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes",
+        "code" : "3",
+        "display" : "principe actif"
+      }]
+    }
+  },
+  {
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/medication-is-vehicle",
+    "valueBoolean" : false
+  }],
+  "identifier" : [{
+    "value" : "PENTACARINAT 300MG PDR INJ"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://ltsi.univ-rennes.fr/CodeSystem/CSMedications",
+      "code" : "9137249",
+      "display" : "PENTACARINAT 300MG PDR INJ"
+    }]
+  }
+}

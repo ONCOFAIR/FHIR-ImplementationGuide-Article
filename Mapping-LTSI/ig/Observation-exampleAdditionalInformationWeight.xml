@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="exampleAdditionalInformationWeight"/>
+  <meta>
+    <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/additional-information"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation exampleAdditionalInformationWeight</b></p><a name="exampleAdditionalInformationWeight"> </a><a name="hcexampleAdditionalInformationWeight"> </a><a name="exampleAdditionalInformationWeight-en-US"> </a><p><b>status</b>: Registered</p><p><b>code</b>: <span title="Codes:{http://ltsi.univ-rennes.fr/CodeSystem/CSLOINC 29463-7}">Weight</span></p><p><b>subject</b>: <a href="Patient-exampleOncologyPatient.html">John DOE (official) Male, DoB: 1991-11-23 ( Permanent Patient Identifier (IPP): 6564415 (use: usual, ))</a></p><p><b>issued</b>: 2023-01-01 00:00:00+0000</p><p><b>value</b>: 80 kg</p></div>
+  </text>
+  <status value="registered"/>
+  <code>
+    <coding>
+      <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSLOINC"/>
+      <code value="29463-7"/>
+      <display value="Weight"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/exampleOncologyPatient"/>
+  </subject>
+  <issued value="2023-01-01T00:00:00.0000Z"/>
+  <valueQuantity>
+    <value value="80"/>
+    <unit value="kg"/>
+  </valueQuantity>
+</Observation>

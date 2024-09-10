@@ -1,0 +1,26 @@
+{
+  "resourceType" : "Patient",
+  "id" : "exampleOncologyPatient",
+  "meta" : {
+    "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-patient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient exampleOncologyPatient</b></p><a name=\"exampleOncologyPatient\"> </a><a name=\"hcexampleOncologyPatient\"> </a><a name=\"exampleOncologyPatient-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">John DOE (official) Male, DoB: 1991-11-23 ( Permanent Patient Identifier (IPP):\u00a06564415\u00a0(use:\u00a0usual,\u00a0))</p><hr/></div>"
+  },
+  "identifier" : [{
+    "use" : "usual",
+    "type" : {
+      "text" : "Permanent Patient Identifier (IPP)"
+    },
+    "system" : "http://ltsi.univ-rennes.fr/fhir/identifier/ipp",
+    "value" : "6564415"
+  }],
+  "name" : [{
+    "use" : "official",
+    "family" : "DOE",
+    "given" : ["John"]
+  }],
+  "gender" : "male",
+  "birthDate" : "1991-11-23"
+}

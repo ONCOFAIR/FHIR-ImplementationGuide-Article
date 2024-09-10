@@ -1,0 +1,27 @@
+{
+  "resourceType" : "Observation",
+  "id" : "exampleAdditionalInformationWeight",
+  "meta" : {
+    "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/additional-information"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation exampleAdditionalInformationWeight</b></p><a name=\"exampleAdditionalInformationWeight\"> </a><a name=\"hcexampleAdditionalInformationWeight\"> </a><a name=\"exampleAdditionalInformationWeight-en-US\"> </a><p><b>status</b>: Registered</p><p><b>code</b>: <span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/CSLOINC 29463-7}\">Weight</span></p><p><b>subject</b>: <a href=\"Patient-exampleOncologyPatient.html\">John DOE (official) Male, DoB: 1991-11-23 ( Permanent Patient Identifier (IPP):\u00a06564415\u00a0(use:\u00a0usual,\u00a0))</a></p><p><b>issued</b>: 2023-01-01 00:00:00+0000</p><p><b>value</b>: 80 kg</p></div>"
+  },
+  "status" : "registered",
+  "code" : {
+    "coding" : [{
+      "system" : "http://ltsi.univ-rennes.fr/CodeSystem/CSLOINC",
+      "code" : "29463-7",
+      "display" : "Weight"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/exampleOncologyPatient"
+  },
+  "issued" : "2023-01-01T00:00:00.0000Z",
+  "valueQuantity" : {
+    "value" : 80,
+    "unit" : "kg"
+  }
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="exampleOncologyMedicationOXALIPLATINE200mg"/>
+  <meta>
+    <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Medication exampleOncologyMedicationOXALIPLATINE200mg</b></p><a name="exampleOncologyMedicationOXALIPLATINE200mg"> </a><a name="hcexampleOncologyMedicationOXALIPLATINE200mg"> </a><a name="exampleOncologyMedicationOXALIPLATINE200mg-en-US"> </a><p><b>Medication type</b>: <span title="Codes:{http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes 3}">principe actif</span></p><p><b>Medication Is Vehicle</b>: false</p><p><b>identifier</b>: OXALIPLATINE 200 mg</p><p><b>code</b>: <span title="Codes:{http://ltsi.univ-rennes.fr/CodeSystem/CSMedications 9365536}">OXALIPLATINE 200 mg</span></p></div>
+  </text>
+  <extension url="http://ltsi.univ-rennes.fr/StructureDefinition/medication-type">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes"/>
+        <code value="3"/>
+        <display value="principe actif"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://ltsi.univ-rennes.fr/StructureDefinition/medication-is-vehicle">
+    <valueBoolean value="false"/>
+  </extension>
+  <identifier>
+    <value value="OXALIPLATINE 200 mg"/>
+  </identifier>
+  <code>
+    <coding>
+      <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedications"/>
+      <code value="9365536"/>
+      <display value="OXALIPLATINE 200 mg"/>
+    </coding>
+  </code>
+</Medication>

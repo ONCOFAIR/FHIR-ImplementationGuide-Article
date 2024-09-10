@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/Medication/exampleOncologyMedicationG5pourcent100MLPOCHE> a fhir:Medication ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "exampleOncologyMedicationG5pourcent100MLPOCHE"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"^^xsd:anyURI ;
+       fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication exampleOncologyMedicationG5pourcent100MLPOCHE</b></p><a name=\"exampleOncologyMedicationG5pourcent100MLPOCHE\"> </a><a name=\"hcexampleOncologyMedicationG5pourcent100MLPOCHE\"> </a><a name=\"exampleOncologyMedicationG5pourcent100MLPOCHE-en-US\"> </a><p><b>Medication type</b>: <span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes 3}\">principe actif</span></p><p><b>Medication Is Vehicle</b>: false</p><p><b>identifier</b>: G5% 100ML POCHE</p><p><b>code</b>: <span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/CSMedications 9279854}\">G5% 100ML POCHE</span></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/medication-type"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "3" ] ;
+         fhir:display [ fhir:v "principe actif" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/medication-is-vehicle"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "G5% 100ML POCHE" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/CSMedications"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "9279854" ] ;
+       fhir:display [ fhir:v "G5% 100ML POCHE" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

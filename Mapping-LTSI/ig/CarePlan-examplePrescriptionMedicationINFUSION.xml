@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CarePlan xmlns="http://hl7.org/fhir">
+  <id value="examplePrescriptionMedicationINFUSION"/>
+  <meta>
+    <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/prescription"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CarePlan examplePrescriptionMedicationINFUSION</b></p><a name="examplePrescriptionMedicationINFUSION"> </a><a name="hcexamplePrescriptionMedicationINFUSION"> </a><a name="examplePrescriptionMedicationINFUSION-en-US"> </a><p><b>Date and time</b>: 2023-01-01 00:00:00+0000</p><p><b>instantiatesCanonical</b>: <a href="PlanDefinition-exampleProtocolInfusionFOLFOX4.html">Protocol - FOLFOX 4</a></p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>subject</b>: <a href="Patient-exampleOncologyPatient.html">John DOE (official) Male, DoB: 1991-11-23 ( Permanent Patient Identifier (IPP): 6564415 (use: usual, ))</a></p><p><b>encounter</b>: <a href="Encounter-exampleStayFOLFOX4.html">Encounter: identifier = 15461; status = completed</a></p><p><b>period</b>: 2023-01-01 09:00:00+0000 --&gt; 2023-01-01 11:35:00+0000</p><p><b>supportingInfo</b>: </p><ul><li><a href="Observation-exampleAdditionalInformationHeight.html">Height</a></li><li><a href="Observation-exampleAdditionalInformationWeight.html">Weight</a></li></ul><blockquote><p><b>activity</b></p><p><b>plannedActivityReference</b>: <a href="MedicationRequest-examplePrescriptionItemInfusionOXALIPLATINE200mg.html">MedicationRequest: extension = Pharmacie,PHE - Plage horaire,2023-01-01 11:30:00+0000,2023-01-01 11:30:00+0000; identifier = 121212; groupIdentifier = 589127; status = completed; intent = order; category = Création; effectiveDosePeriod = 2023-01-01 09:00:00+0000 --&gt; 2023-01-01 11:35:00+0000</a></p></blockquote><blockquote><p><b>activity</b></p><p><b>plannedActivityReference</b>: <a href="MedicationRequest-examplePrescriptionItemInfusion5FLUOROURACILE5g.html">MedicationRequest: extension = Pharmacie,PHE - Plage horaire,2023-01-01 11:35:00+0000,2023-01-01 11:35:00+0000; identifier = 232323; groupIdentifier = 589127; status = completed; intent = order; category = Création; effectiveDosePeriod = 2023-01-01 09:00:00+0000 --&gt; 2023-01-01 11:35:00+0000</a></p></blockquote><blockquote><p><b>activity</b></p><p><b>plannedActivityReference</b>: <a href="MedicationRequest-examplePrescriptionItemInfusionLEVOFOLINATEDECALCIUM.html">MedicationRequest: extension = Pharmacie,PHE - Plage horaire,2023-01-15 11:30:00+0000,2023-01-15 11:30:00+0000; identifier = 343434; groupIdentifier = 589127; status = completed; intent = order; category = Création; effectiveDosePeriod = 2023-01-01 09:00:00+0000 --&gt; 2023-01-01 11:35:00+0000</a></p></blockquote><blockquote><p><b>activity</b></p><p><b>plannedActivityReference</b>: <a href="MedicationRequest-examplePrescriptionItemInfusionONDANSETRON.html">MedicationRequest: extension = Pharmacie,PHE - Plage horaire,2023-01-15 09:02:00+0000,2023-01-15 09:02:00+0000; identifier = 454545; groupIdentifier = 589127; status = completed; intent = order; category = Création; effectiveDosePeriod = 2023-01-01 09:00:00+0000 --&gt; 2023-01-01 11:35:00+0000</a></p></blockquote><blockquote><p><b>activity</b></p><p><b>plannedActivityReference</b>: <a href="MedicationRequest-examplePrescriptionItemInfusionMETHYLPREDNISOLONE.html">MedicationRequest: extension = Pharmacie,PHE - Plage horaire,2023-01-15 09:03:00+0000,2023-01-15 09:03:00+0000; identifier = 565656; groupIdentifier = 589127; status = completed; intent = order; category = Création; effectiveDosePeriod = 2023-01-01 09:00:00+0000 --&gt; 2023-01-01 11:35:00+0000</a></p></blockquote><blockquote><p><b>activity</b></p><p><b>plannedActivityReference</b>: <a href="examplePrescriptionItemInfusionG5pourcent100MLPOCHE">examplePrescriptionItemInfusionG5pourcent100MLPOCHE</a></p></blockquote></div>
+  </text>
+  <extension url="http://ltsi.univ-rennes.fr/StructureDefinition/date-time">
+    <valueDateTime value="2023-01-01T00:00:00.0000Z"/>
+  </extension>
+  <instantiatesCanonical value="http://ltsi.univ-rennes.fr/PlanDefinition/exampleProtocolInfusionFOLFOX4"/>
+  <status value="completed"/>
+  <intent value="order"/>
+  <subject>
+    <reference value="Patient/exampleOncologyPatient"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/exampleStayFOLFOX4"/>
+  </encounter>
+  <period>
+    <start value="2023-01-01T09:00:00.0000Z"/>
+    <end value="2023-01-01T11:35:00.0000Z"/>
+  </period>
+  <supportingInfo>
+    <reference value="Observation/exampleAdditionalInformationHeight"/>
+    <display value="Height"/>
+  </supportingInfo>
+  <supportingInfo>
+    <reference value="Observation/exampleAdditionalInformationWeight"/>
+    <display value="Weight"/>
+  </supportingInfo>
+  <activity>
+    <plannedActivityReference>
+      <reference value="MedicationRequest/examplePrescriptionItemInfusionOXALIPLATINE200mg"/>
+    </plannedActivityReference>
+  </activity>
+  <activity>
+    <plannedActivityReference>
+      <reference value="MedicationRequest/examplePrescriptionItemInfusion5FLUOROURACILE5g"/>
+    </plannedActivityReference>
+  </activity>
+  <activity>
+    <plannedActivityReference>
+      <reference value="MedicationRequest/examplePrescriptionItemInfusionLEVOFOLINATEDECALCIUM"/>
+    </plannedActivityReference>
+  </activity>
+  <activity>
+    <plannedActivityReference>
+      <reference value="MedicationRequest/examplePrescriptionItemInfusionONDANSETRON"/>
+    </plannedActivityReference>
+  </activity>
+  <activity>
+    <plannedActivityReference>
+      <reference value="MedicationRequest/examplePrescriptionItemInfusionMETHYLPREDNISOLONE"/>
+    </plannedActivityReference>
+  </activity>
+  <activity>
+    <plannedActivityReference>
+      <reference value="examplePrescriptionItemInfusionG5pourcent100MLPOCHE"/>
+    </plannedActivityReference>
+  </activity>
+</CarePlan>

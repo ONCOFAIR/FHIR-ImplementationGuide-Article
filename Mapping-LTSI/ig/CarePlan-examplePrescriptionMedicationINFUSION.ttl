@@ -1,0 +1,84 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/CarePlan/examplePrescriptionMedicationINFUSION> a fhir:CarePlan ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "examplePrescriptionMedicationINFUSION"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/prescription"^^xsd:anyURI ;
+       fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/prescription>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CarePlan examplePrescriptionMedicationINFUSION</b></p><a name=\"examplePrescriptionMedicationINFUSION\"> </a><a name=\"hcexamplePrescriptionMedicationINFUSION\"> </a><a name=\"examplePrescriptionMedicationINFUSION-en-US\"> </a><p><b>Date and time</b>: 2023-01-01 00:00:00+0000</p><p><b>instantiatesCanonical</b>: <a href=\"PlanDefinition-exampleProtocolInfusionFOLFOX4.html\">Protocol - FOLFOX 4</a></p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>subject</b>: <a href=\"Patient-exampleOncologyPatient.html\">John DOE (official) Male, DoB: 1991-11-23 ( Permanent Patient Identifier (IPP): 6564415 (use: usual, ))</a></p><p><b>encounter</b>: <a href=\"Encounter-exampleStayFOLFOX4.html\">Encounter: identifier = 15461; status = completed</a></p><p><b>period</b>: 2023-01-01 09:00:00+0000 --&gt; 2023-01-01 11:35:00+0000</p><p><b>supportingInfo</b>: </p><ul><li><a href=\"Observation-exampleAdditionalInformationHeight.html\">Height</a></li><li><a href=\"Observation-exampleAdditionalInformationWeight.html\">Weight</a></li></ul><blockquote><p><b>activity</b></p><p><b>plannedActivityReference</b>: <a href=\"MedicationRequest-examplePrescriptionItemInfusionOXALIPLATINE200mg.html\">MedicationRequest: extension = Pharmacie,PHE - Plage horaire,2023-01-01 11:30:00+0000,2023-01-01 11:30:00+0000; identifier = 121212; groupIdentifier = 589127; status = completed; intent = order; category = Création; effectiveDosePeriod = 2023-01-01 09:00:00+0000 --&gt; 2023-01-01 11:35:00+0000</a></p></blockquote><blockquote><p><b>activity</b></p><p><b>plannedActivityReference</b>: <a href=\"MedicationRequest-examplePrescriptionItemInfusion5FLUOROURACILE5g.html\">MedicationRequest: extension = Pharmacie,PHE - Plage horaire,2023-01-01 11:35:00+0000,2023-01-01 11:35:00+0000; identifier = 232323; groupIdentifier = 589127; status = completed; intent = order; category = Création; effectiveDosePeriod = 2023-01-01 09:00:00+0000 --&gt; 2023-01-01 11:35:00+0000</a></p></blockquote><blockquote><p><b>activity</b></p><p><b>plannedActivityReference</b>: <a href=\"MedicationRequest-examplePrescriptionItemInfusionLEVOFOLINATEDECALCIUM.html\">MedicationRequest: extension = Pharmacie,PHE - Plage horaire,2023-01-15 11:30:00+0000,2023-01-15 11:30:00+0000; identifier = 343434; groupIdentifier = 589127; status = completed; intent = order; category = Création; effectiveDosePeriod = 2023-01-01 09:00:00+0000 --&gt; 2023-01-01 11:35:00+0000</a></p></blockquote><blockquote><p><b>activity</b></p><p><b>plannedActivityReference</b>: <a href=\"MedicationRequest-examplePrescriptionItemInfusionONDANSETRON.html\">MedicationRequest: extension = Pharmacie,PHE - Plage horaire,2023-01-15 09:02:00+0000,2023-01-15 09:02:00+0000; identifier = 454545; groupIdentifier = 589127; status = completed; intent = order; category = Création; effectiveDosePeriod = 2023-01-01 09:00:00+0000 --&gt; 2023-01-01 11:35:00+0000</a></p></blockquote><blockquote><p><b>activity</b></p><p><b>plannedActivityReference</b>: <a href=\"MedicationRequest-examplePrescriptionItemInfusionMETHYLPREDNISOLONE.html\">MedicationRequest: extension = Pharmacie,PHE - Plage horaire,2023-01-15 09:03:00+0000,2023-01-15 09:03:00+0000; identifier = 565656; groupIdentifier = 589127; status = completed; intent = order; category = Création; effectiveDosePeriod = 2023-01-01 09:00:00+0000 --&gt; 2023-01-01 11:35:00+0000</a></p></blockquote><blockquote><p><b>activity</b></p><p><b>plannedActivityReference</b>: <a href=\"examplePrescriptionItemInfusionG5pourcent100MLPOCHE\">examplePrescriptionItemInfusionG5pourcent100MLPOCHE</a></p></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/date-time"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2023-01-01T00:00:00.0000Z"^^xsd:dateTime ]
+  ] ) ; # 
+  fhir:instantiatesCanonical ( [
+     fhir:v "http://ltsi.univ-rennes.fr/PlanDefinition/exampleProtocolInfusionFOLFOX4"^^xsd:anyURI ;
+     fhir:link <http://ltsi.univ-rennes.fr/PlanDefinition/exampleProtocolInfusionFOLFOX4>
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:subject [
+     fhir:link <http://ltsi.univ-rennes.fr/Patient/exampleOncologyPatient> ;
+     fhir:reference [ fhir:v "Patient/exampleOncologyPatient" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://ltsi.univ-rennes.fr/Encounter/exampleStayFOLFOX4> ;
+     fhir:reference [ fhir:v "Encounter/exampleStayFOLFOX4" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2023-01-01T09:00:00.0000Z"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2023-01-01T11:35:00.0000Z"^^xsd:dateTime ]
+  ] ; # 
+  fhir:supportingInfo ( [
+     fhir:link <http://ltsi.univ-rennes.fr/Observation/exampleAdditionalInformationHeight> ;
+     fhir:reference [ fhir:v "Observation/exampleAdditionalInformationHeight" ] ;
+     fhir:display [ fhir:v "Height" ]
+  ] [
+     fhir:link <http://ltsi.univ-rennes.fr/Observation/exampleAdditionalInformationWeight> ;
+     fhir:reference [ fhir:v "Observation/exampleAdditionalInformationWeight" ] ;
+     fhir:display [ fhir:v "Weight" ]
+  ] ) ; # 
+  fhir:activity ( [
+     fhir:plannedActivityReference [
+       fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/examplePrescriptionItemInfusionOXALIPLATINE200mg> ;
+       fhir:reference [ fhir:v "MedicationRequest/examplePrescriptionItemInfusionOXALIPLATINE200mg" ]
+     ]
+  ] [
+     fhir:plannedActivityReference [
+       fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/examplePrescriptionItemInfusion5FLUOROURACILE5g> ;
+       fhir:reference [ fhir:v "MedicationRequest/examplePrescriptionItemInfusion5FLUOROURACILE5g" ]
+     ]
+  ] [
+     fhir:plannedActivityReference [
+       fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/examplePrescriptionItemInfusionLEVOFOLINATEDECALCIUM> ;
+       fhir:reference [ fhir:v "MedicationRequest/examplePrescriptionItemInfusionLEVOFOLINATEDECALCIUM" ]
+     ]
+  ] [
+     fhir:plannedActivityReference [
+       fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/examplePrescriptionItemInfusionONDANSETRON> ;
+       fhir:reference [ fhir:v "MedicationRequest/examplePrescriptionItemInfusionONDANSETRON" ]
+     ]
+  ] [
+     fhir:plannedActivityReference [
+       fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/examplePrescriptionItemInfusionMETHYLPREDNISOLONE> ;
+       fhir:reference [ fhir:v "MedicationRequest/examplePrescriptionItemInfusionMETHYLPREDNISOLONE" ]
+     ]
+  ] [
+     fhir:plannedActivityReference [
+       fhir:reference [ fhir:v "examplePrescriptionItemInfusionG5pourcent100MLPOCHE" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

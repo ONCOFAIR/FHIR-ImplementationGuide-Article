@@ -1,0 +1,126 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/MedicationRequest/examplePrescriptionItemInfusionLEVOFOLINATEDECALCIUM> a fhir:MedicationRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "examplePrescriptionItemInfusionLEVOFOLINATEDECALCIUM"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"^^xsd:anyURI ;
+       fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest examplePrescriptionItemInfusionLEVOFOLINATEDECALCIUM</b></p><a name=\"examplePrescriptionItemInfusionLEVOFOLINATEDECALCIUM\"> </a><a name=\"hcexamplePrescriptionItemInfusionLEVOFOLINATEDECALCIUM\"> </a><a name=\"examplePrescriptionItemInfusionLEVOFOLINATEDECALCIUM-en-US\"> </a><p><b>Medication item provenance</b>: <span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationItemProvenance 1}\">Pharmacie</span></p><p><b>Event Type Data</b>: <span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/CSEventTypeData 6}\">PHE - Plage horaire</span></p><p><b>Event Time Min</b>: 2023-01-15 11:30:00+0000</p><p><b>Event Time Max</b>: 2023-01-15 11:30:00+0000</p><p><b>identifier</b>: 343434</p><p><b>basedOn</b>: <a href=\"examplePrescriptionINFUSION\">examplePrescriptionINFUSION</a></p><p><b>groupIdentifier</b>: 589127</p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/CSPrescriptionCategory C}\">Création</span></p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Medication-exampleOncologyMedicationLEVOFOLINATEDECALCIUM.html\">Medication LEVOFOLINATE DE CALCIUM</a></td></tr></table><p><b>subject</b>: <a href=\"Patient-exampleOncologyPatient.html\">John DOE (official) Male, DoB: 1991-11-23 ( Permanent Patient Identifier (IPP): 6564415 (use: usual, ))</a></p><p><b>requester</b>: <a href=\"Practitioner-exampleOncologyPractitioner.html\">Practitioner: identifier = SR156518</a></p><p><b>effectiveDosePeriod</b>: 2023-01-01 09:00:00+0000 --&gt; 2023-01-01 11:35:00+0000</p><blockquote><p><b>dosageInstruction</b></p></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/medication-item-provenance"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationItemProvenance"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1" ] ;
+         fhir:display [ fhir:v "Pharmacie" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/eventTypeData"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/CSEventTypeData"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "6" ] ;
+         fhir:display [ fhir:v "PHE - Plage horaire" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/eventTimeMin"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2023-01-15T11:30:00.0000Z"^^xsd:dateTime ]
+  ] [
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/eventTimeMax"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2023-01-15T11:30:00.0000Z"^^xsd:dateTime ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "343434" ]
+  ] ) ; # 
+  fhir:basedOn ( [
+     fhir:reference [ fhir:v "examplePrescriptionINFUSION" ]
+  ] ) ; # 
+  fhir:groupIdentifier [
+     fhir:value [ fhir:v "589127" ]
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/CSPrescriptionCategory"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "C" ] ;
+       fhir:display [ fhir:v "Création" ]
+     ] )
+  ] ) ; # 
+  fhir:medication [
+     fhir:reference [
+       fhir:link <http://ltsi.univ-rennes.fr/Medication/exampleOncologyMedicationLEVOFOLINATEDECALCIUM> ;
+       fhir:reference [ fhir:v "Medication/exampleOncologyMedicationLEVOFOLINATEDECALCIUM" ]
+     ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://ltsi.univ-rennes.fr/Patient/exampleOncologyPatient> ;
+     fhir:reference [ fhir:v "Patient/exampleOncologyPatient" ]
+  ] ; # 
+  fhir:requester [
+     fhir:link <http://ltsi.univ-rennes.fr/Practitioner/exampleOncologyPractitioner> ;
+     fhir:reference [ fhir:v "Practitioner/exampleOncologyPractitioner" ]
+  ] ; # 
+  fhir:effectiveDosePeriod [
+     fhir:start [ fhir:v "2023-01-01T09:00:00.0000Z"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2023-01-01T11:35:00.0000Z"^^xsd:dateTime ]
+  ] ; # 
+  fhir:dosageInstruction ( [
+     fhir:text [ fhir:v "Administer 1 dose of 35 mg LEVOFOLINATE DE CALCIUM in 10 min." ] ;
+     fhir:timing [
+       fhir:repeat [
+         fhir:bounds [
+           a fhir:Period ;
+           fhir:start [ fhir:v "2023-01-01T09:00:00.0000Z"^^xsd:dateTime ] ;
+           fhir:end [ fhir:v "2023-01-01T11:35:00.0000Z"^^xsd:dateTime ]
+         ] ;
+         fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+         fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:periodUnit [ fhir:v "d" ]
+       ]
+     ] ;
+     fhir:route [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/CSSCT"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "47625008" ] ;
+         fhir:display [ fhir:v "Intravenous route" ]
+       ] )
+     ] ;
+     fhir:doseAndRate ( [
+       fhir:dose [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "35"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "mg" ]
+       ] ;
+       fhir:rate [
+         a fhir:Ratio ;
+         fhir:numerator [
+           fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "dose(s)" ]
+         ] ;
+         fhir:denominator [
+           fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "min" ]
+         ]
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

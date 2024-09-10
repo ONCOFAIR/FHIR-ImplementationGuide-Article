@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="examplePrescriptionItemOXYCODONELP10MGVIATRIS"/>
+  <meta>
+    <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MedicationRequest examplePrescriptionItemOXYCODONELP10MGVIATRIS</b></p><a name="examplePrescriptionItemOXYCODONELP10MGVIATRIS"> </a><a name="hcexamplePrescriptionItemOXYCODONELP10MGVIATRIS"> </a><a name="examplePrescriptionItemOXYCODONELP10MGVIATRIS-en-US"> </a><p><b>Medication item provenance</b>: <span title="Codes:{http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationItemProvenance 1}">Pharmacie</span></p><p><b>identifier</b>: 28728</p><p><b>basedOn</b>: <a href="examplePrescriptionOXYCODONELP10MGVIATRIS">examplePrescriptionOXYCODONELP10MGVIATRIS</a></p><p><b>groupIdentifier</b>: 52427</p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title="Codes:{http://ltsi.univ-rennes.fr/CodeSystem/CSPrescriptionCategory A}">Arrêt</span></p><h3>Medications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Reference</b></td></tr><tr><td style="display: none">*</td><td><a href="Medication-exampleOncologyMedicationOXYCODONELP10MGVIATRIS.html">Medication OXYCODONE LP 10 MG VIATRIS, CPR À LIBÉRATION PROLONGÉE</a></td></tr></table><p><b>subject</b>: <a href="Patient-exampleOncologyPatient.html">John DOE (official) Male, DoB: 1991-11-23 ( Permanent Patient Identifier (IPP): 6564415 (use: usual, ))</a></p><p><b>requester</b>: <a href="Practitioner-exampleOncologyPractitioner.html">Practitioner: identifier = SR156518</a></p><p><b>effectiveDosePeriod</b>: 2023-01-01 09:00:00+0000 --&gt; 2023-10-19 14:32:00+0000</p><blockquote><p><b>dosageInstruction</b></p></blockquote></div>
+  </text>
+  <extension url="http://ltsi.univ-rennes.fr/StructureDefinition/medication-item-provenance">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationItemProvenance"/>
+        <code value="1"/>
+        <display value="Pharmacie"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <value value="28728"/>
+  </identifier>
+  <basedOn>
+    <reference value="examplePrescriptionOXYCODONELP10MGVIATRIS"/>
+  </basedOn>
+  <groupIdentifier>
+    <value value="52427"/>
+  </groupIdentifier>
+  <status value="completed"/>
+  <intent value="order"/>
+  <category>
+    <coding>
+      <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSPrescriptionCategory"/>
+      <code value="A"/>
+      <display value="Arrêt"/>
+    </coding>
+  </category>
+  <medication>
+    <reference>
+      <reference value="Medication/exampleOncologyMedicationOXYCODONELP10MGVIATRIS"/>
+    </reference>
+  </medication>
+  <subject>
+    <reference value="Patient/exampleOncologyPatient"/>
+  </subject>
+  <requester>
+    <reference value="Practitioner/exampleOncologyPractitioner"/>
+  </requester>
+  <effectiveDosePeriod>
+    <start value="2023-01-01T09:00:00.0000Z"/>
+    <end value="2023-10-19T14:32:00.0000Z"/>
+  </effectiveDosePeriod>
+  <dosageInstruction>
+    <text value="Administer 1 OXYCODONE LP 10 MG VIATRIS extended-release tablet, 2 times daily at 8am and 8pm."/>
+    <timing>
+      <repeat>
+        <frequency value="2"/>
+        <period value="1"/>
+        <periodUnit value="d"/>
+        <timeOfDay value="08:00:00"/>
+        <timeOfDay value="20:00:00"/>
+      </repeat>
+    </timing>
+    <route>
+      <coding>
+        <system value="http://ltsi.univ-rennes.fr/CodeSystem/CSSCT"/>
+        <code value="26643006"/>
+        <display value="Oral route"/>
+      </coding>
+    </route>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="1"/>
+        <unit value="tablet(s)"/>
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+</MedicationRequest>

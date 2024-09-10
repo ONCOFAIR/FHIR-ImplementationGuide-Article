@@ -1,0 +1,89 @@
+{
+  "resourceType" : "MedicationRequest",
+  "id" : "examplePrescriptionItemBACTRIMFORTE",
+  "meta" : {
+    "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest examplePrescriptionItemBACTRIMFORTE</b></p><a name=\"examplePrescriptionItemBACTRIMFORTE\"> </a><a name=\"hcexamplePrescriptionItemBACTRIMFORTE\"> </a><a name=\"examplePrescriptionItemBACTRIMFORTE-en-US\"> </a><p><b>Medication item provenance</b>: <span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationItemProvenance 1}\">Pharmacie</span></p><p><b>identifier</b>: 87823</p><p><b>basedOn</b>: <a href=\"examplePrescriptionBACTRIMFORTE\">examplePrescriptionBACTRIMFORTE</a></p><p><b>groupIdentifier</b>: 897867254</p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/CSPrescriptionCategory A}\">Arrêt</span></p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Medication-exampleOncologyMedicationBACTRIMFORTE.html\">Medication BACTRIM FORTE 800MG/160MG CPR</a></td></tr></table><p><b>subject</b>: <a href=\"Patient-exampleOncologyPatient.html\">John DOE (official) Male, DoB: 1991-11-23 ( Permanent Patient Identifier (IPP):\u00a06564415\u00a0(use:\u00a0usual,\u00a0))</a></p><p><b>requester</b>: <a href=\"Practitioner-exampleOncologyPractitioner.html\">Practitioner: identifier = SR156518</a></p><p><b>note</b>: 2 cpr at 8am orally, for 2 days, 1 day / 2, Monday / Wednesday / Friday (By [SR156518] @2020-07-18 03:13:00+0000)</p><p><b>effectiveDosePeriod</b>: 2020-07-18 08:00:00+0000 --&gt; 2020-07-18 08:34:00+0000</p><blockquote><p><b>dosageInstruction</b></p></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/medication-item-provenance",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationItemProvenance",
+        "code" : "1",
+        "display" : "Pharmacie"
+      }]
+    }
+  }],
+  "identifier" : [{
+    "value" : "87823"
+  }],
+  "basedOn" : [{
+    "reference" : "examplePrescriptionBACTRIMFORTE"
+  }],
+  "groupIdentifier" : {
+    "value" : "897867254"
+  },
+  "status" : "completed",
+  "intent" : "order",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://ltsi.univ-rennes.fr/CodeSystem/CSPrescriptionCategory",
+      "code" : "A",
+      "display" : "Arrêt"
+    }]
+  }],
+  "medication" : {
+    "reference" : {
+      "reference" : "Medication/exampleOncologyMedicationBACTRIMFORTE"
+    }
+  },
+  "subject" : {
+    "reference" : "Patient/exampleOncologyPatient"
+  },
+  "requester" : {
+    "reference" : "Practitioner/exampleOncologyPractitioner"
+  },
+  "note" : [{
+    "authorString" : "[SR156518]",
+    "time" : "2020-07-18T03:13:00.0000Z",
+    "text" : "2 cpr at 8am orally, for 2 days, 1 day / 2, Monday / Wednesday / Friday"
+  }],
+  "effectiveDosePeriod" : {
+    "start" : "2020-07-18T08:00:00.0000Z",
+    "end" : "2020-07-18T08:34:00.0000Z"
+  },
+  "dosageInstruction" : [{
+    "text" : "Administer 2 tablets of BACTRIM FORTE 800MG/160MG, 1 time daily on Mondays, Wednesdays and Fridays.",
+    "timing" : {
+      "repeat" : {
+        "boundsPeriod" : {
+          "start" : "2020-07-01T08:00:00.0000Z",
+          "end" : "2020-07-20T08:00:00.0000Z"
+        },
+        "frequency" : 1,
+        "period" : 2,
+        "periodUnit" : "d",
+        "dayOfWeek" : ["mon",
+        "wed",
+        "fri"]
+      }
+    },
+    "route" : {
+      "coding" : [{
+        "system" : "http://ltsi.univ-rennes.fr/CodeSystem/CSSCT",
+        "code" : "26643006",
+        "display" : "Oral route"
+      }]
+    },
+    "doseAndRate" : [{
+      "doseQuantity" : {
+        "value" : 2,
+        "unit" : "tablet(s)"
+      }
+    }]
+  }]
+}

@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vsSCT",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vsSCT</b></p><a name=\"vsSCT\"> </a><a name=\"hcvsSCT\"> </a><a name=\"vsSCT-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-CSSCT.html\"><code>http://ltsi.univ-rennes.fr/CodeSystem/CSSCT</code></a></li></ul></div>"
+  },
+  "url" : "http://ltsi.univ-rennes.fr/ValueSet/vsSCT",
+  "version" : "0.1.0",
+  "name" : "VSSCT",
+  "title" : "SNOMED CT codes",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-09-10T09:36:14+00:00",
+  "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
+  "contact" : [{
+    "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://ltsi.univ-rennes.fr"
+    }]
+  }],
+  "description" : "ValueSet of SNOMED CT codes.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://ltsi.univ-rennes.fr/CodeSystem/CSSCT"
+    }]
+  }
+}

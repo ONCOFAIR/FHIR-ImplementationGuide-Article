@@ -1,0 +1,28 @@
+{
+  "resourceType" : "Encounter",
+  "id" : "exampleStayMISCELLANEOUS",
+  "meta" : {
+    "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/stay"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter exampleStayMISCELLANEOUS</b></p><a name=\"exampleStayMISCELLANEOUS\"> </a><a name=\"hcexampleStayMISCELLANEOUS\"> </a><a name=\"exampleStayMISCELLANEOUS-en-US\"> </a><p><b>identifier</b>: 98456</p><p><b>status</b>: Completed</p><h3>ServiceTypes</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"HealthcareService-exampleHealthcareServiceSAB.html\">HealthcareService SAB</a></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"HealthcareService-exampleHealthcareServiceHCMED.html\">HealthcareService HCMED</a></td></tr></table><p><b>subject</b>: <a href=\"Patient-exampleOncologyPatient.html\">John DOE (official) Male, DoB: 1991-11-23 ( Permanent Patient Identifier (IPP):\u00a06564415\u00a0(use:\u00a0usual,\u00a0))</a></p></div>"
+  },
+  "identifier" : [{
+    "value" : "98456"
+  }],
+  "status" : "completed",
+  "serviceType" : [{
+    "reference" : {
+      "reference" : "HealthcareService/exampleHealthcareServiceSAB"
+    }
+  },
+  {
+    "reference" : {
+      "reference" : "HealthcareService/exampleHealthcareServiceHCMED"
+    }
+  }],
+  "subject" : {
+    "reference" : "Patient/exampleOncologyPatient"
+  }
+}

@@ -1,0 +1,105 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/MedicationRequest/examplePrescriptionItemBACTRIMFORTE> a fhir:MedicationRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "examplePrescriptionItemBACTRIMFORTE"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"^^xsd:anyURI ;
+       fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest examplePrescriptionItemBACTRIMFORTE</b></p><a name=\"examplePrescriptionItemBACTRIMFORTE\"> </a><a name=\"hcexamplePrescriptionItemBACTRIMFORTE\"> </a><a name=\"examplePrescriptionItemBACTRIMFORTE-en-US\"> </a><p><b>Medication item provenance</b>: <span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationItemProvenance 1}\">Pharmacie</span></p><p><b>identifier</b>: 87823</p><p><b>basedOn</b>: <a href=\"examplePrescriptionBACTRIMFORTE\">examplePrescriptionBACTRIMFORTE</a></p><p><b>groupIdentifier</b>: 897867254</p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/CSPrescriptionCategory A}\">Arrêt</span></p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Medication-exampleOncologyMedicationBACTRIMFORTE.html\">Medication BACTRIM FORTE 800MG/160MG CPR</a></td></tr></table><p><b>subject</b>: <a href=\"Patient-exampleOncologyPatient.html\">John DOE (official) Male, DoB: 1991-11-23 ( Permanent Patient Identifier (IPP): 6564415 (use: usual, ))</a></p><p><b>requester</b>: <a href=\"Practitioner-exampleOncologyPractitioner.html\">Practitioner: identifier = SR156518</a></p><p><b>note</b>: 2 cpr at 8am orally, for 2 days, 1 day / 2, Monday / Wednesday / Friday (By [SR156518] @2020-07-18 03:13:00+0000)</p><p><b>effectiveDosePeriod</b>: 2020-07-18 08:00:00+0000 --&gt; 2020-07-18 08:34:00+0000</p><blockquote><p><b>dosageInstruction</b></p></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/medication-item-provenance"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationItemProvenance"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1" ] ;
+         fhir:display [ fhir:v "Pharmacie" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "87823" ]
+  ] ) ; # 
+  fhir:basedOn ( [
+     fhir:reference [ fhir:v "examplePrescriptionBACTRIMFORTE" ]
+  ] ) ; # 
+  fhir:groupIdentifier [
+     fhir:value [ fhir:v "897867254" ]
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/CSPrescriptionCategory"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "A" ] ;
+       fhir:display [ fhir:v "Arrêt" ]
+     ] )
+  ] ) ; # 
+  fhir:medication [
+     fhir:reference [
+       fhir:link <http://ltsi.univ-rennes.fr/Medication/exampleOncologyMedicationBACTRIMFORTE> ;
+       fhir:reference [ fhir:v "Medication/exampleOncologyMedicationBACTRIMFORTE" ]
+     ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://ltsi.univ-rennes.fr/Patient/exampleOncologyPatient> ;
+     fhir:reference [ fhir:v "Patient/exampleOncologyPatient" ]
+  ] ; # 
+  fhir:requester [
+     fhir:link <http://ltsi.univ-rennes.fr/Practitioner/exampleOncologyPractitioner> ;
+     fhir:reference [ fhir:v "Practitioner/exampleOncologyPractitioner" ]
+  ] ; # 
+  fhir:note ( [
+     fhir:author [ fhir:v "[SR156518]" ] ;
+     fhir:time [ fhir:v "2020-07-18T03:13:00.0000Z"^^xsd:dateTime ] ;
+     fhir:text [ fhir:v "2 cpr at 8am orally, for 2 days, 1 day / 2, Monday / Wednesday / Friday" ]
+  ] ) ; # 
+  fhir:effectiveDosePeriod [
+     fhir:start [ fhir:v "2020-07-18T08:00:00.0000Z"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2020-07-18T08:34:00.0000Z"^^xsd:dateTime ]
+  ] ; # 
+  fhir:dosageInstruction ( [
+     fhir:text [ fhir:v "Administer 2 tablets of BACTRIM FORTE 800MG/160MG, 1 time daily on Mondays, Wednesdays and Fridays." ] ;
+     fhir:timing [
+       fhir:repeat [
+         fhir:bounds [
+           a fhir:Period ;
+           fhir:start [ fhir:v "2020-07-01T08:00:00.0000Z"^^xsd:dateTime ] ;
+           fhir:end [ fhir:v "2020-07-20T08:00:00.0000Z"^^xsd:dateTime ]
+         ] ;
+         fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+         fhir:period [ fhir:v "2"^^xsd:decimal ] ;
+         fhir:periodUnit [ fhir:v "d" ] ;
+         fhir:dayOfWeek ( [ fhir:v "mon" ] [ fhir:v "wed" ] [ fhir:v "fri" ] )
+       ]
+     ] ;
+     fhir:route [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/CSSCT"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "26643006" ] ;
+         fhir:display [ fhir:v "Oral route" ]
+       ] )
+     ] ;
+     fhir:doseAndRate ( [
+       fhir:dose [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "2"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "tablet(s)" ]
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

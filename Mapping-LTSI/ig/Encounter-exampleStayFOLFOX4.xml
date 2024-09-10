@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="exampleStayFOLFOX4"/>
+  <meta>
+    <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/stay"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Encounter exampleStayFOLFOX4</b></p><a name="exampleStayFOLFOX4"> </a><a name="hcexampleStayFOLFOX4"> </a><a name="exampleStayFOLFOX4-en-US"> </a><p><b>identifier</b>: 15461</p><p><b>status</b>: Completed</p><h3>ServiceTypes</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Reference</b></td></tr><tr><td style="display: none">*</td><td><a href="HealthcareService-exampleHealthcareServiceSAB.html">HealthcareService SAB</a></td></tr><tr><td style="display: none">*</td><td><a href="HealthcareService-exampleHealthcareServiceHCMED.html">HealthcareService HCMED</a></td></tr></table><p><b>subject</b>: <a href="Patient-exampleOncologyPatient.html">John DOE (official) Male, DoB: 1991-11-23 ( Permanent Patient Identifier (IPP): 6564415 (use: usual, ))</a></p></div>
+  </text>
+  <identifier>
+    <value value="15461"/>
+  </identifier>
+  <status value="completed"/>
+  <serviceType>
+    <reference>
+      <reference value="HealthcareService/exampleHealthcareServiceSAB"/>
+    </reference>
+  </serviceType>
+  <serviceType>
+    <reference>
+      <reference value="HealthcareService/exampleHealthcareServiceHCMED"/>
+    </reference>
+  </serviceType>
+  <subject>
+    <reference value="Patient/exampleOncologyPatient"/>
+  </subject>
+</Encounter>

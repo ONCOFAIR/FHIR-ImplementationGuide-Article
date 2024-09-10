@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/Medication/exampleOncologyMedicationOXALIPLATINE200mg> a fhir:Medication ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "exampleOncologyMedicationOXALIPLATINE200mg"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"^^xsd:anyURI ;
+       fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication exampleOncologyMedicationOXALIPLATINE200mg</b></p><a name=\"exampleOncologyMedicationOXALIPLATINE200mg\"> </a><a name=\"hcexampleOncologyMedicationOXALIPLATINE200mg\"> </a><a name=\"exampleOncologyMedicationOXALIPLATINE200mg-en-US\"> </a><p><b>Medication type</b>: <span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes 3}\">principe actif</span></p><p><b>Medication Is Vehicle</b>: false</p><p><b>identifier</b>: OXALIPLATINE 200 mg</p><p><b>code</b>: <span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/CSMedications 9365536}\">OXALIPLATINE 200 mg</span></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/medication-type"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "3" ] ;
+         fhir:display [ fhir:v "principe actif" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/medication-is-vehicle"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "OXALIPLATINE 200 mg" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/CSMedications"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "9365536" ] ;
+       fhir:display [ fhir:v "OXALIPLATINE 200 mg" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

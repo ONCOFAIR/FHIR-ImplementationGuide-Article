@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/CarePlan/examplePrescriptionMedicationOXYCODONELP10MGVIATRIS> a fhir:CarePlan ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "examplePrescriptionMedicationOXYCODONELP10MGVIATRIS"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/prescription"^^xsd:anyURI ;
+       fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/prescription>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CarePlan examplePrescriptionMedicationOXYCODONELP10MGVIATRIS</b></p><a name=\"examplePrescriptionMedicationOXYCODONELP10MGVIATRIS\"> </a><a name=\"hcexamplePrescriptionMedicationOXYCODONELP10MGVIATRIS\"> </a><a name=\"examplePrescriptionMedicationOXYCODONELP10MGVIATRIS-en-US\"> </a><p><b>Date and time</b>: 2023-01-01 00:00:00+0000</p><p><b>instantiatesCanonical</b>: <a href=\"PlanDefinition-exampleProtocolMISCELLANEOUS.html\">Protocol - Miscellaneous protocol</a></p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>subject</b>: <a href=\"Patient-exampleOncologyPatient.html\">John DOE (official) Male, DoB: 1991-11-23 ( Permanent Patient Identifier (IPP): 6564415 (use: usual, ))</a></p><p><b>encounter</b>: <a href=\"Encounter-exampleStayMISCELLANEOUS.html\">Encounter: identifier = 98456; status = completed</a></p><p><b>period</b>: 2023-01-01 09:00:00+0000 --&gt; 2023-01-01 11:35:00+0000</p><p><b>supportingInfo</b>: </p><ul><li><a href=\"Observation-exampleAdditionalInformationHeight.html\">Height</a></li><li><a href=\"Observation-exampleAdditionalInformationWeight.html\">Weight</a></li></ul><h3>Activities</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>PlannedActivityReference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"MedicationRequest-examplePrescriptionItemOXYCODONELP10MGVIATRIS.html\">MedicationRequest: extension = Pharmacie; identifier = 28728; groupIdentifier = 52427; status = completed; intent = order; category = Arrêt; effectiveDosePeriod = 2023-01-01 09:00:00+0000 --&gt; 2023-10-19 14:32:00+0000</a></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/date-time"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2023-01-01T00:00:00.0000Z"^^xsd:dateTime ]
+  ] ) ; # 
+  fhir:instantiatesCanonical ( [
+     fhir:v "http://ltsi.univ-rennes.fr/PlanDefinition/exampleProtocolMISCELLANEOUS"^^xsd:anyURI ;
+     fhir:link <http://ltsi.univ-rennes.fr/PlanDefinition/exampleProtocolMISCELLANEOUS>
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:subject [
+     fhir:link <http://ltsi.univ-rennes.fr/Patient/exampleOncologyPatient> ;
+     fhir:reference [ fhir:v "Patient/exampleOncologyPatient" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://ltsi.univ-rennes.fr/Encounter/exampleStayMISCELLANEOUS> ;
+     fhir:reference [ fhir:v "Encounter/exampleStayMISCELLANEOUS" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2023-01-01T09:00:00.0000Z"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2023-01-01T11:35:00.0000Z"^^xsd:dateTime ]
+  ] ; # 
+  fhir:supportingInfo ( [
+     fhir:link <http://ltsi.univ-rennes.fr/Observation/exampleAdditionalInformationHeight> ;
+     fhir:reference [ fhir:v "Observation/exampleAdditionalInformationHeight" ] ;
+     fhir:display [ fhir:v "Height" ]
+  ] [
+     fhir:link <http://ltsi.univ-rennes.fr/Observation/exampleAdditionalInformationWeight> ;
+     fhir:reference [ fhir:v "Observation/exampleAdditionalInformationWeight" ] ;
+     fhir:display [ fhir:v "Weight" ]
+  ] ) ; # 
+  fhir:activity ( [
+     fhir:plannedActivityReference [
+       fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/examplePrescriptionItemOXYCODONELP10MGVIATRIS> ;
+       fhir:reference [ fhir:v "MedicationRequest/examplePrescriptionItemOXYCODONELP10MGVIATRIS" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
