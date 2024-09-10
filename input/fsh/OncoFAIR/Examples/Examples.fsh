@@ -48,22 +48,18 @@ Description : "The responsible practitioner."
 * identifier.value = "SR156518"
 
 
-//Medical Liability Unit
-Instance: exampleMedicalLiabilityUnit
-InstanceOf: MedicalLiabilityUnit
+//Oncology Healthcare Services
+Instance: exampleHealthcareServiceSAB
+InstanceOf: OncologyHealthcareService
 Usage: #example 
-Description: "HCMED Medical liability unit."
-* name = "HCMED"
-
-
-//Accomodation Unit
-Instance: exampleAccomodationUnit
-InstanceOf: AccomodationUnit
-Usage: #example 
-Description: "SAB accomodation unit."
+Description: "SAB healthcare service."
 * name = "SAB"
-* managingOrganization = Reference(exampleMedicalLiabilityUnit)
 
+Instance: exampleHealthcareServiceHCMED
+InstanceOf: OncologyHealthcareService
+Usage: #example 
+Description: "HCMED healthcare service."
+* name = "HCMED"
 
 //Stays
 Instance: exampleStayFOLFOX4
@@ -73,7 +69,8 @@ Description: "Stay of ID 15461."
 * identifier.value = "15461"
 * status = #completed
 * subject = Reference(exampleOncologyPatient)
-* location.location = Reference(exampleAccomodationUnit)
+* serviceType[0] = Reference(exampleHealthcareServiceSAB)
+* serviceType[+] = Reference(exampleHealthcareServiceHCMED)
 
 Instance: exampleStayMISCELLANEOUS
 InstanceOf: Stay
@@ -82,8 +79,8 @@ Description: "Stay of ID 98456."
 * identifier.value = "98456"
 * status = #completed
 * subject = Reference(exampleOncologyPatient)
-* location.location = Reference(exampleAccomodationUnit)
-
+* serviceType[0].reference = Reference(exampleHealthcareServiceSAB)
+* serviceType[+].reference = Reference(exampleHealthcareServiceHCMED)
 
 //Protocols
 Instance: exampleProtocolInfusionFOLFOX4
@@ -94,7 +91,7 @@ Description: "Prescribed protocol."
 * identifier.value = "6"
 * name = "FOLFOX 4"
 * title = "Protocol - FOLFOX 4"
-* date = "2023-01-01T09:00:00.0000Z"
+* effectivePeriod.start = "2023-01-01T09:00:00.0000Z"
 * extension[treatmentCycleNumber].valueInteger = 1
 * extension[treatmentDayNumber].valueInteger = 1
 
@@ -106,7 +103,7 @@ Description: "Prescribed protocol."
 * identifier.value = "5"
 * name = "Miscellaneous protocol"
 * title = "Protocol - Miscellaneous protocol"
-* date = "2023-01-01T09:00:00.0000Z"
+* effectivePeriod.start = "2023-01-01T09:00:00.0000Z"
 * extension[treatmentCycleNumber].valueInteger = 2
 * extension[treatmentDayNumber].valueInteger = 3
 
@@ -118,6 +115,8 @@ Usage: #example
 Description: "Medication: OXALIPLATINE 200 mg."
 * identifier.value = "OXALIPLATINE 200 mg"
 * code.coding = $Medications#9365536 "OXALIPLATINE 200 mg"
+* extension[medicationType].valueCodeableConcept = $MedicationTypes#3 "principe actif"
+* extension[medicationIsVehicle].valueBoolean = false
 
 Instance: exampleOncologyMedication5FLUOROURACILE5g
 InstanceOf: OncologyMedication
@@ -125,6 +124,8 @@ Usage: #example
 Description: "Medication: 5-FLUOROURACILE 5 g."
 * identifier.value = "5-FLUOROURACILE 5 g"
 * code.coding = $Medications#9334872 "5-FLUOROURACILE 5 g"
+* extension[medicationType].valueCodeableConcept = $MedicationTypes#3 "principe actif"
+* extension[medicationIsVehicle].valueBoolean = false
 
 Instance: exampleOncologyMedicationLEVOFOLINATEDECALCIUM
 InstanceOf: OncologyMedication
@@ -132,6 +133,8 @@ Usage: #example
 Description: "Medication: LEVOFOLINATE DE CALCIUM."
 * identifier.value = "LEVOFOLINATE DE CALCIUM"
 * code.coding = $Medications#9314929 "LEVOFOLINATE DE CALCIUM"
+* extension[medicationType].valueCodeableConcept = $MedicationTypes#3 "principe actif"
+* extension[medicationIsVehicle].valueBoolean = false
 
 Instance: exampleOncologyMedicationONDANSETRON
 InstanceOf: OncologyMedication
@@ -139,6 +142,8 @@ Usage: #example
 Description: "Medication: ONDANSETRON."
 * identifier.value = "ONDANSETRON"
 * code.coding = $Medications#9296278 "ONDANSETRON"
+* extension[medicationType].valueCodeableConcept = $MedicationTypes#3 "principe actif"
+* extension[medicationIsVehicle].valueBoolean = false
 
 Instance: exampleOncologyMedicationMETHYLPREDNISOLONE
 InstanceOf: OncologyMedication
@@ -146,6 +151,8 @@ Usage: #example
 Description: "Medication: METHYLPREDNISOLONE."
 * identifier.value = "METHYLPREDNISOLONE"
 * code.coding = $Medications#5 "METHYLPREDNISOLONE"
+* extension[medicationType].valueCodeableConcept = $MedicationTypes#3 "principe actif"
+* extension[medicationIsVehicle].valueBoolean = false
 
 Instance: exampleOncologyMedicationG5pourcent100MLPOCHE
 InstanceOf: OncologyMedication
@@ -153,6 +160,8 @@ Usage: #example
 Description: "Medication: G5% 100ML POCHE."
 * identifier.value = "G5% 100ML POCHE"
 * code.coding = $Medications#9279854 "G5% 100ML POCHE"
+* extension[medicationType].valueCodeableConcept = $MedicationTypes#3 "principe actif"
+* extension[medicationIsVehicle].valueBoolean = false
 
 Instance: exampleOncologyMedicationOXYCODONELP10MGVIATRIS
 InstanceOf: OncologyMedication
@@ -160,6 +169,8 @@ Usage: #example
 Description: "Medication: OXYCODONE LP 10 MG VIATRIS, CPR À LIBÉRATION PROLONGÉE."
 * identifier.value = "OXYCODONE LP 10 MG VIATRIS, CPR À LIBÉRATION PROLONGÉE"
 * code.coding = $Medications#9403863 "OXYCODONE LP 10 MG VIATRIS, CPR À LIBÉRATION PROLONGÉE"
+* extension[medicationType].valueCodeableConcept = $MedicationTypes#3 "principe actif"
+* extension[medicationIsVehicle].valueBoolean = false
 
 Instance: exampleOncologyMedicationBACTRIMFORTE
 InstanceOf: OncologyMedication
@@ -167,6 +178,8 @@ Usage: #example
 Description: "Medication: BACTRIM FORTE 800MG/160MG CPR."
 * identifier.value = "BACTRIM FORTE 800MG/160MG CPR"
 * code.coding = $Medications#9009043 "BACTRIM FORTE 800MG/160MG CPR"
+* extension[medicationType].valueCodeableConcept = $MedicationTypes#3 "principe actif"
+* extension[medicationIsVehicle].valueBoolean = false
 
 Instance: exampleOncologyMedicationPENTACARINAT300MG
 InstanceOf: OncologyMedication
@@ -174,6 +187,8 @@ Usage: #example
 Description: "Medication: PENTACARINAT 300MG PDR INJ."
 * identifier.value = "PENTACARINAT 300MG PDR INJ"
 * code.coding = $Medications#9137249 "PENTACARINAT 300MG PDR INJ"
+* extension[medicationType].valueCodeableConcept = $MedicationTypes#3 "principe actif"
+* extension[medicationIsVehicle].valueBoolean = false
 
 
 //Associated device
@@ -194,10 +209,8 @@ Description: "Medications prescription (infusion)."
 * intent = #order
 * subject = Reference(exampleOncologyPatient)
 * encounter = Reference(exampleStayFOLFOX4)
-* created = "2023-01-01T00:00:00.0000Z"
 * period.start = "2023-01-01T09:00:00.0000Z"
 * period.end = "2023-01-01T11:35:00.0000Z"
-* category.coding = $CommunicationModes#I "Incremental"
 * supportingInfo[0] = Reference(exampleAdditionalInformationHeight)
 * supportingInfo[=].display = "Height"
 * supportingInfo[+] = Reference(exampleAdditionalInformationWeight)
@@ -209,6 +222,7 @@ Description: "Medications prescription (infusion)."
 * activity[+].plannedActivityReference = Reference(examplePrescriptionItemInfusionMETHYLPREDNISOLONE)
 * activity[+].plannedActivityReference = Reference(examplePrescriptionItemInfusionG5pourcent100MLPOCHE)
 * instantiatesCanonical = "http://ltsi.univ-rennes.fr/PlanDefinition/exampleProtocolInfusionFOLFOX4"
+* extension[dateTimePrescription].valueDateTime = "2023-01-01T00:00:00.0000Z"
 
 Instance: examplePrescriptionMedicationOXYCODONELP10MGVIATRIS
 InstanceOf: Prescription
@@ -218,16 +232,15 @@ Description: "OXYCODONE medication prescription."
 * intent = #order
 * subject = Reference(exampleOncologyPatient)
 * encounter = Reference(exampleStayMISCELLANEOUS)
-* created = "2023-01-01T00:00:00.0000Z"
 * period.start = "2023-01-01T09:00:00.0000Z"
 * period.end = "2023-01-01T11:35:00.0000Z"
-* category.coding = $CommunicationModes#I "Incremental"
 * supportingInfo[0] = Reference(exampleAdditionalInformationHeight)
 * supportingInfo[=].display = "Height"
 * supportingInfo[+] = Reference(exampleAdditionalInformationWeight)
 * supportingInfo[=].display = "Weight"
 * activity[0].plannedActivityReference = Reference(examplePrescriptionItemOXYCODONELP10MGVIATRIS)
 * instantiatesCanonical = "http://ltsi.univ-rennes.fr/PlanDefinition/exampleProtocolMISCELLANEOUS"
+* extension[dateTimePrescription].valueDateTime = "2023-01-01T00:00:00.0000Z"
 
 Instance: examplePrescriptionMedicationBACTRIMFORTE
 InstanceOf: Prescription
@@ -237,16 +250,15 @@ Description: "BACTRIMFORTE medication prescription."
 * intent = #order
 * subject = Reference(exampleOncologyPatient)
 * encounter = Reference(exampleStayMISCELLANEOUS)
-* created = "2023-01-01T00:00:00.0000Z"
 * period.start = "2023-01-01T09:00:00.0000Z"
 * period.end = "2023-01-01T11:35:00.0000Z"
-* category.coding = $CommunicationModes#I "Incremental"
 * supportingInfo[0] = Reference(exampleAdditionalInformationHeight)
 * supportingInfo[=].display = "Height"
 * supportingInfo[+] = Reference(exampleAdditionalInformationWeight)
 * supportingInfo[=].display = "Weight"
 * activity[0].plannedActivityReference = Reference(examplePrescriptionItemBACTRIMFORTE)
 * instantiatesCanonical = "http://ltsi.univ-rennes.fr/PlanDefinition/exampleProtocolMISCELLANEOUS"
+* extension[dateTimePrescription].valueDateTime = "2023-01-01T00:00:00.0000Z"
 
 Instance: examplePrescriptionMedicationPENTACARINAT300MG
 InstanceOf: Prescription
@@ -256,16 +268,15 @@ Description: "PENTACARINAT medication prescription."
 * intent = #order
 * subject = Reference(exampleOncologyPatient)
 * encounter = Reference(exampleStayMISCELLANEOUS)
-* created = "2023-01-01T00:00:00.0000Z"
 * period.start = "2023-01-01T09:00:00.0000Z"
 * period.end = "2023-01-01T11:35:00.0000Z"
-* category.coding = $CommunicationModes#I "Incremental"
 * supportingInfo[0] = Reference(exampleAdditionalInformationHeight)
 * supportingInfo[=].display = "Height"
 * supportingInfo[+] = Reference(exampleAdditionalInformationWeight)
 * supportingInfo[=].display = "Weight"
 * activity[0].plannedActivityReference = Reference(examplePrescriptionItemPENTACARINAT300MG)
 * instantiatesCanonical = "http://ltsi.univ-rennes.fr/PlanDefinition/exampleProtocolMISCELLANEOUS"
+* extension[dateTimePrescription].valueDateTime = "2023-01-01T00:00:00.0000Z"
 
 
 //Prescription items 
@@ -278,17 +289,16 @@ Description: "Prescription item related to the medication OXALIPLATINE 200 mg."
 * groupIdentifier.value = "589127"
 * basedOn = Reference(examplePrescriptionINFUSION)
 * identifier.value = "121212"
-* category.coding = $PrescriptionCategory#C "Creation"
+* category.coding = $PrescriptionCategory#C "Création"
 * subject = Reference(exampleOncologyPatient)
-* dispenseRequest.initialFill.quantity.value = 1 
 * requester = Reference(exampleOncologyPractitioner)
 * effectiveDosePeriod.start = "2023-01-01T09:00:00.0000Z" 
 * effectiveDosePeriod.end = "2023-01-01T11:35:00.0000Z" 
 * dosageInstruction.route.coding = $SCT#47625008 "Intravenous route"
 * medication.reference = Reference(exampleOncologyMedicationOXALIPLATINE200mg) 
 * dosageInstruction[0].text = "Administer 1 dose of 142.5 mg OXALIPLATINE 200 mg in 0 min."
-* dosageInstruction[=].timing.repeat.boundsPeriod.start = "2023-01-01T11:30:00.0000Z"
-* dosageInstruction[=].timing.repeat.boundsPeriod.end = "2023-01-01T11:30:00.0000Z"
+* dosageInstruction[=].timing.repeat.boundsPeriod.start = "2023-01-01T09:00:00.0000Z" 
+* dosageInstruction[=].timing.repeat.boundsPeriod.end = "2023-01-01T11:35:00.0000Z"
 * dosageInstruction[=].timing.repeat.frequency = 1
 * dosageInstruction[=].timing.repeat.period = 1
 * dosageInstruction[=].timing.repeat.periodUnit = #d 
@@ -298,6 +308,10 @@ Description: "Prescription item related to the medication OXALIPLATINE 200 mg."
 * dosageInstruction[=].doseAndRate[=].rateRatio.numerator.unit = "dose(s)"
 * dosageInstruction[=].doseAndRate[=].rateRatio.denominator.value = 0
 * dosageInstruction[=].doseAndRate[=].rateRatio.denominator.unit = "min" 
+* extension[medicationItemProvenance].valueCodeableConcept = $MedicationItemProvenance#1 "Pharmacie"
+* extension[eventTypeData].valueCodeableConcept = $EventTypeData#6 "PHE - Plage horaire"
+* extension[eventTimeMin].valueDateTime = "2023-01-01T11:30:00.0000Z"
+* extension[eventTimeMax].valueDateTime = "2023-01-01T11:30:00.0000Z"
 
 Instance: examplePrescriptionItemInfusion5FLUOROURACILE5g
 InstanceOf: PrescriptionItem
@@ -308,16 +322,15 @@ Description: "Prescription item related to the medication 5-FLUOROURACILE 5 g."
 * groupIdentifier.value = "589127"
 * basedOn = Reference(examplePrescriptionINFUSION)
 * identifier.value = "232323"
-* category.coding = $PrescriptionCategory#C "Creation"
+* category.coding = $PrescriptionCategory#C "Création"
 * subject = Reference(exampleOncologyPatient)
-* dispenseRequest.initialFill.quantity.value = 1 
 * requester = Reference(exampleOncologyPractitioner)
 * effectiveDosePeriod.start = "2023-01-01T09:00:00.0000Z" 
 * effectiveDosePeriod.end = "2023-01-01T11:35:00.0000Z" 
 * dosageInstruction.route.coding = $SCT#47625008 "Intravenous route"
 * medication.reference = Reference(exampleOncologyMedication5FLUOROURACILE5g) 
 * dosageInstruction[0].text = "Administer 1 dose of 675 mg 5-FLUOROURACILE 5 g in 5 min."
-* dosageInstruction[=].timing.repeat.boundsPeriod.start = "2023-01-01T11:35:00.0000Z"
+* dosageInstruction[=].timing.repeat.boundsPeriod.start = "2023-01-01T09:00:00.0000Z"
 * dosageInstruction[=].timing.repeat.boundsPeriod.end = "2023-01-01T11:35:00.0000Z"
 * dosageInstruction[=].timing.repeat.frequency = 1
 * dosageInstruction[=].timing.repeat.period = 1
@@ -328,6 +341,10 @@ Description: "Prescription item related to the medication 5-FLUOROURACILE 5 g."
 * dosageInstruction[=].doseAndRate[=].rateRatio.numerator.unit = "dose(s)"
 * dosageInstruction[=].doseAndRate[=].rateRatio.denominator.value = 5
 * dosageInstruction[=].doseAndRate[=].rateRatio.denominator.unit = "min"
+* extension[medicationItemProvenance].valueCodeableConcept = $MedicationItemProvenance#1 "Pharmacie"
+* extension[eventTypeData].valueCodeableConcept = $EventTypeData#6 "PHE - Plage horaire"
+* extension[eventTimeMin].valueDateTime = "2023-01-01T11:35:00.0000Z"
+* extension[eventTimeMax].valueDateTime = "2023-01-01T11:35:00.0000Z"
 
 Instance: examplePrescriptionItemInfusionLEVOFOLINATEDECALCIUM
 InstanceOf: PrescriptionItem
@@ -338,17 +355,16 @@ Description: "Prescription item related to the medication LEVOFOLINATE DE CALCIU
 * groupIdentifier.value = "589127"
 * basedOn = Reference(examplePrescriptionINFUSION)
 * identifier.value = "343434"
-* category.coding = $PrescriptionCategory#C "Creation"
+* category.coding = $PrescriptionCategory#C "Création"
 * subject = Reference(exampleOncologyPatient)
-* dispenseRequest.initialFill.quantity.value = 1 
 * requester = Reference(exampleOncologyPractitioner)
 * effectiveDosePeriod.start = "2023-01-01T09:00:00.0000Z" 
 * effectiveDosePeriod.end = "2023-01-01T11:35:00.0000Z" 
 * dosageInstruction.route.coding = $SCT#47625008 "Intravenous route"
 * medication.reference = Reference(exampleOncologyMedicationLEVOFOLINATEDECALCIUM) 
 * dosageInstruction[0].text = "Administer 1 dose of 35 mg LEVOFOLINATE DE CALCIUM in 10 min."
-* dosageInstruction[=].timing.repeat.boundsPeriod.start = "2023-01-15T11:30:00.0000Z"
-* dosageInstruction[=].timing.repeat.boundsPeriod.end = "2023-01-15T11:30:00.0000Z"
+* dosageInstruction[=].timing.repeat.boundsPeriod.start = "2023-01-01T09:00:00.0000Z" 
+* dosageInstruction[=].timing.repeat.boundsPeriod.end = "2023-01-01T11:35:00.0000Z" 
 * dosageInstruction[=].timing.repeat.frequency = 1
 * dosageInstruction[=].timing.repeat.period = 1
 * dosageInstruction[=].timing.repeat.periodUnit = #d 
@@ -358,6 +374,10 @@ Description: "Prescription item related to the medication LEVOFOLINATE DE CALCIU
 * dosageInstruction[=].doseAndRate[=].rateRatio.numerator.unit = "dose(s)"
 * dosageInstruction[=].doseAndRate[=].rateRatio.denominator.value = 10
 * dosageInstruction[=].doseAndRate[=].rateRatio.denominator.unit = "min" 
+* extension[medicationItemProvenance].valueCodeableConcept = $MedicationItemProvenance#1 "Pharmacie"
+* extension[eventTypeData].valueCodeableConcept = $EventTypeData#6 "PHE - Plage horaire"
+* extension[eventTimeMin].valueDateTime = "2023-01-15T11:30:00.0000Z"
+* extension[eventTimeMax].valueDateTime = "2023-01-15T11:30:00.0000Z"
 
 Instance: examplePrescriptionItemInfusionONDANSETRON
 InstanceOf: PrescriptionItem
@@ -368,17 +388,16 @@ Description: "Prescription item related to the medication ONDANSETRON."
 * groupIdentifier.value = "589127"
 * basedOn = Reference(examplePrescriptionINFUSION)
 * identifier.value = "454545"
-* category.coding = $PrescriptionCategory#C "Creation"
+* category.coding = $PrescriptionCategory#C "Création"
 * subject = Reference(exampleOncologyPatient)
-* dispenseRequest.initialFill.quantity.value = 1 
 * requester = Reference(exampleOncologyPractitioner)
 * effectiveDosePeriod.start = "2023-01-01T09:00:00.0000Z" 
 * effectiveDosePeriod.end = "2023-01-01T11:35:00.0000Z" 
 * dosageInstruction.route.coding = $SCT#47625008 "Intravenous route"
 * medication.reference = Reference(exampleOncologyMedicationONDANSETRON) 
 * dosageInstruction[0].text = "Administer 1 dose of 8 mg ONDANSETRON in 1 min."
-* dosageInstruction[=].timing.repeat.boundsPeriod.start = "2023-01-15T09:02:00.0000Z"
-* dosageInstruction[=].timing.repeat.boundsPeriod.end = "2023-01-15T09:02:00.0000Z"
+* dosageInstruction[=].timing.repeat.boundsPeriod.start = "2023-01-01T09:00:00.0000Z" 
+* dosageInstruction[=].timing.repeat.boundsPeriod.end = "2023-01-01T11:35:00.0000Z" 
 * dosageInstruction[=].timing.repeat.frequency = 1
 * dosageInstruction[=].timing.repeat.period = 1
 * dosageInstruction[=].timing.repeat.periodUnit = #d 
@@ -388,6 +407,10 @@ Description: "Prescription item related to the medication ONDANSETRON."
 * dosageInstruction[=].doseAndRate[=].rateRatio.numerator.unit = "dose(s)"
 * dosageInstruction[=].doseAndRate[=].rateRatio.denominator.value = 1
 * dosageInstruction[=].doseAndRate[=].rateRatio.denominator.unit = "min" 
+* extension[medicationItemProvenance].valueCodeableConcept = $MedicationItemProvenance#1 "Pharmacie"
+* extension[eventTypeData].valueCodeableConcept = $EventTypeData#6 "PHE - Plage horaire"
+* extension[eventTimeMin].valueDateTime = "2023-01-15T09:02:00.0000Z"
+* extension[eventTimeMax].valueDateTime = "2023-01-15T09:02:00.0000Z"
 
 Instance: examplePrescriptionItemInfusionMETHYLPREDNISOLONE
 InstanceOf: PrescriptionItem
@@ -398,17 +421,16 @@ Description: "Prescription item related to the medication METHYLPREDNISOLONE."
 * groupIdentifier.value = "589127"
 * basedOn = Reference(examplePrescriptionINFUSION)
 * identifier.value = "565656"
-* category.coding = $PrescriptionCategory#C "Creation"
+* category.coding = $PrescriptionCategory#C "Création"
 * subject = Reference(exampleOncologyPatient)
-* dispenseRequest.initialFill.quantity.value = 1 
 * requester = Reference(exampleOncologyPractitioner)
 * effectiveDosePeriod.start = "2023-01-01T09:00:00.0000Z" 
 * effectiveDosePeriod.end = "2023-01-01T11:35:00.0000Z" 
 * dosageInstruction.route.coding = $SCT#47625008 "Intravenous route"
 * medication.reference = Reference(exampleOncologyMedicationMETHYLPREDNISOLONE) 
 * dosageInstruction[0].text = "Administer 1 dose of 120 mg METHYLPREDNISOLONE in 1 min."
-* dosageInstruction[=].timing.repeat.boundsPeriod.start = "2023-01-15T09:03:00.0000Z"
-* dosageInstruction[=].timing.repeat.boundsPeriod.end = "2023-01-15T09:03:00.0000Z"
+* dosageInstruction[=].timing.repeat.boundsPeriod.start = "2023-01-01T09:00:00.0000Z"
+* dosageInstruction[=].timing.repeat.boundsPeriod.end = "2023-01-01T11:35:00.0000Z" 
 * dosageInstruction[=].timing.repeat.frequency = 1
 * dosageInstruction[=].timing.repeat.period = 1
 * dosageInstruction[=].timing.repeat.periodUnit = #d 
@@ -418,6 +440,10 @@ Description: "Prescription item related to the medication METHYLPREDNISOLONE."
 * dosageInstruction[=].doseAndRate[=].rateRatio.numerator.unit = "dose(s)"
 * dosageInstruction[=].doseAndRate[=].rateRatio.denominator.value = 1
 * dosageInstruction[=].doseAndRate[=].rateRatio.denominator.unit = "min" 
+* extension[medicationItemProvenance].valueCodeableConcept = $MedicationItemProvenance#1 "Pharmacie"
+* extension[eventTypeData].valueCodeableConcept = $EventTypeData#6 "PHE - Plage horaire"
+* extension[eventTimeMin].valueDateTime = "2023-01-15T09:03:00.0000Z"
+* extension[eventTimeMax].valueDateTime = "2023-01-15T09:03:00.0000Z"
 
 Instance: examplePrescriptionItemInfusionG5percent100MLPOCHE
 InstanceOf: PrescriptionItem
@@ -428,17 +454,16 @@ Description: "Prescription item related to the medication G5percent100MLPOCHE."
 * groupIdentifier.value = "25428"
 * basedOn = Reference(examplePrescriptionINFUSION)
 * identifier.value = "7827"
-* category.coding = $PrescriptionCategory#C "Creation"
+* category.coding = $PrescriptionCategory#C "Création"
 * subject = Reference(exampleOncologyPatient)
-* dispenseRequest.initialFill.quantity.value = 1 
 * requester = Reference(exampleOncologyPractitioner)
 * effectiveDosePeriod.start = "2023-01-01T09:00:00.0000Z" 
 * effectiveDosePeriod.end = "2023-01-01T11:35:00.0000Z" 
 * dosageInstruction.route.coding = $SCT#47625008 "Intravenous route"
 * medication.reference = Reference(exampleOncologyMedicationG5percent100MLPOCHE) 
 * dosageInstruction[0].text = "Administer 1 dose of 100 mL G5percent100MLPOCHE in 30 min."
-* dosageInstruction[=].timing.repeat.boundsPeriod.start = "2023-01-15T11:30:00.0000Z"
-* dosageInstruction[=].timing.repeat.boundsPeriod.end = "2023-01-15T11:30:00.0000Z"
+* dosageInstruction[=].timing.repeat.boundsPeriod.start = "2023-01-01T09:00:00.0000Z"
+* dosageInstruction[=].timing.repeat.boundsPeriod.end = "2023-01-01T11:35:00.0000Z"
 * dosageInstruction[=].timing.repeat.frequency = 1
 * dosageInstruction[=].timing.repeat.period = 1
 * dosageInstruction[=].timing.repeat.periodUnit = #d 
@@ -448,7 +473,10 @@ Description: "Prescription item related to the medication G5percent100MLPOCHE."
 * dosageInstruction[=].doseAndRate[=].rateRatio.numerator.unit = "dose(s)"
 * dosageInstruction[=].doseAndRate[=].rateRatio.denominator.value = 30
 * dosageInstruction[=].doseAndRate[=].rateRatio.denominator.unit = "min" 
-
+* extension[medicationItemProvenance].valueCodeableConcept = $MedicationItemProvenance#1 "Pharmacie"
+* extension[eventTypeData].valueCodeableConcept = $EventTypeData#6 "PHE - Plage horaire"
+* extension[eventTimeMin].valueDateTime = "2023-01-15T11:30:00.0000Z"
+* extension[eventTimeMax].valueDateTime = "2023-01-15T11:30:00.0000Z"
 
 Instance: examplePrescriptionItemOXYCODONELP10MGVIATRIS
 InstanceOf: PrescriptionItem
@@ -459,9 +487,8 @@ Description: "Prescription item related to the medication OXYCODONE LP 10 MG VIA
 * groupIdentifier.value = "52427"
 * basedOn = Reference(examplePrescriptionOXYCODONELP10MGVIATRIS)
 * identifier.value = "28728"
-* category.coding = $PrescriptionCategory#S "Stop"
+* category.coding = $PrescriptionCategory#A "Arrêt"
 * subject = Reference(exampleOncologyPatient)
-* dispenseRequest.initialFill.quantity.value = 1 
 * requester = Reference(exampleOncologyPractitioner)
 * effectiveDosePeriod.start = "2023-01-01T09:00:00.0000Z" 
 * effectiveDosePeriod.end = "2023-10-19T14:32:00.0000Z" 
@@ -475,6 +502,7 @@ Description: "Prescription item related to the medication OXYCODONE LP 10 MG VIA
 * dosageInstruction[=].timing.repeat.timeOfDay[1] = "20:00:00" 
 * dosageInstruction[=].doseAndRate[0].doseQuantity.value = 1
 * dosageInstruction[=].doseAndRate[=].doseQuantity.unit = "tablet(s)"
+* extension[medicationItemProvenance].valueCodeableConcept = $MedicationItemProvenance#1 "Pharmacie"
 
 Instance: examplePrescriptionItemBACTRIMFORTE
 InstanceOf: PrescriptionItem
@@ -485,9 +513,8 @@ Description: "Prescription item related to the medication BACTRIM FORTE 800MG/16
 * groupIdentifier.value = "897867254"
 * basedOn = Reference(examplePrescriptionBACTRIMFORTE)
 * identifier.value = "87823"
-* category.coding = $PrescriptionCategory#S "Stop"
+* category.coding = $PrescriptionCategory#A "Arrêt"
 * subject = Reference(exampleOncologyPatient)
-* dispenseRequest.initialFill.quantity.value = 1 
 * requester = Reference(exampleOncologyPractitioner)
 * effectiveDosePeriod.start = "2020-07-18T08:00:00.0000Z"
 * effectiveDosePeriod.end = "2020-07-18T08:34:00.0000Z"
@@ -507,6 +534,7 @@ Description: "Prescription item related to the medication BACTRIM FORTE 800MG/16
 * dosageInstruction[=].timing.repeat.dayOfWeek[2] = #fri
 * dosageInstruction[=].doseAndRate[0].doseQuantity.value = 2
 * dosageInstruction[=].doseAndRate[=].doseQuantity.unit = "tablet(s)"
+* extension[medicationItemProvenance].valueCodeableConcept = $MedicationItemProvenance#1 "Pharmacie"
 
 Instance: examplePrescriptionItemPENTACARINAT300MG
 InstanceOf: PrescriptionItem
@@ -517,10 +545,9 @@ Description: "Prescription item related to the medication PENTACARINAT 300MG PDR
 * groupIdentifier.value = "9412664"
 * basedOn = Reference(examplePrescriptionPENTACARINAT300MG)
 * identifier.value = "15641"
-* category.coding = $PrescriptionCategory#S "Stop"
+* category.coding = $PrescriptionCategory#A "Arrêt"
 * subject = Reference(exampleOncologyPatient)
 * device.reference = Reference(exampleAssociatedDeviceNEBUL)
-* dispenseRequest.initialFill.quantity.value = 1 
 * requester = Reference(exampleOncologyPractitioner)
 * effectiveDosePeriod.start = "2020-06-18T07:00:00.0000Z"
 * effectiveDosePeriod.end = "2020-06-18T07:00:00.0000Z"
@@ -542,6 +569,7 @@ Description: "Prescription item related to the medication PENTACARINAT 300MG PDR
 * dosageInstruction[=].doseAndRate[=].rateRatio.denominator.unit = "min"
 * dosageInstruction[=].timing.repeat.duration = 20 
 * dosageInstruction[=].timing.repeat.durationUnit = #min 
+* extension[medicationItemProvenance].valueCodeableConcept = $MedicationItemProvenance#1 "Pharmacie"
 
 
 //Administration report
