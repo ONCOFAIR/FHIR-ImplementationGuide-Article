@@ -1,7 +1,6 @@
 CodeSystem: CSMedicationStatus
 Title: "Medication status"
 Description: "CodeSystem for french medication status."
-* ^url = $MedicationStatus
 * ^experimental = true
 * ^caseSensitive = true
 

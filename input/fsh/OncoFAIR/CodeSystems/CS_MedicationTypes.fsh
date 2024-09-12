@@ -1,7 +1,6 @@
 CodeSystem: CSMedicationTypes
 Title: "Medication types"
 Description: "CodeSystem for french medication types."
-* ^url = $MedicationTypes
 * ^experimental = true
 * ^caseSensitive = true
 

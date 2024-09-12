@@ -1,7 +1,6 @@
 CodeSystem: CSMedicationItemProvenance
 Title: "Medication item provenance"
 Description: "CodeSystem for french medication item provenance."
-* ^url = $MedicationItemProvenance
 * ^experimental = true
 * ^caseSensitive = true
 
