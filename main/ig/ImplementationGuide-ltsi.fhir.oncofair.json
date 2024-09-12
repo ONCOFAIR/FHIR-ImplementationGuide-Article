@@ -2,15 +2,15 @@
   "resourceType" : "ImplementationGuide",
   "id" : "ltsi.fhir.oncofair",
   "text" : {
-    "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>OncoFAIR</h2><p>The official URL for this implementation guide is: </p><pre>http://ltsi.univ-rennes.fr/ImplementationGuide/ltsi.fhir.oncofair</pre><div><p>The Onco-FAIR implementation guide reports on the implementation of prescribing and medication administration in oncology.</p>\n</div></div>"
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ltsi.fhir.oncofair</b></p><a name=\"ltsi.fhir.oncofair\"> </a><a name=\"hcltsi.fhir.oncofair\"> </a><a name=\"ltsi.fhir.oncofair-en-US\"> </a><h2>OncoFAIR</h2><p>The official URL for this implementation guide is: </p><pre>http://ltsi.univ-rennes.fr/ImplementationGuide/ltsi.fhir.oncofair</pre><div><p>The OncoFAIR implementation guide reports on the implementation of prescribing and medication administration in oncology.</p>\n</div></div>"
   },
   "url" : "http://ltsi.univ-rennes.fr/ImplementationGuide/ltsi.fhir.oncofair",
   "version" : "0.1.0",
   "name" : "OncoFAIR",
-  "title" : "Onco-FAIR",
+  "title" : "OncoFAIR",
   "status" : "draft",
-  "date" : "2024-06-11T08:08:31+00:00",
+  "date" : "2024-09-12T14:01:50+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -19,7 +19,7 @@
       "value" : "https://ltsi.univ-rennes.fr"
     }]
   }],
-  "description" : "The Onco-FAIR implementation guide reports on the implementation of prescribing and medication administration in oncology.",
+  "description" : "The OncoFAIR implementation guide reports on the implementation of prescribing and medication administration in oncology.",
   "packageId" : "ltsi.fhir.oncofair",
   "license" : "CC0-1.0",
   "fhirVersion" : ["5.0.0"],
@@ -31,7 +31,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r5",
-    "version" : "5.5.0"
+    "version" : "6.0.2"
   },
   {
     "id" : "hl7ext",
@@ -46,33 +46,9 @@
   "definition" : {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools#0.1.0"
+      "valueCode" : "hl7.fhir.uv.tools#0.2.0"
     }],
     "resource" : [{
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/accomodation-unit"
-      },
-      "name" : "Accomodation Unit",
-      "description" : "Accomodation unit.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/additional-information"
-      },
-      "name" : "Additional Information",
-      "description" : "Additional information, such as height or weight.",
-      "isExample" : false
-    },
-    {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
@@ -87,25 +63,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+        "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/administration-report"
+        "reference" : "CodeSystem/concept-medication-oncofair-codesystem"
       },
-      "name" : "Administration Report",
-      "description" : "Prescribed medication administration report.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/associated-device"
-      },
-      "name" : "Associated Device",
-      "description" : "A device associated with a medication for its administration.",
+      "name" : "Concepts Medication Code System",
+      "description" : "Code system pour différiencier les niveaux de MR/MA",
       "isExample" : false
     },
     {
@@ -114,22 +78,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vsCommunicationModes"
+        "reference" : "ValueSet/concept-medication-oncofair-valueset"
       },
-      "name" : "Communication modes",
-      "description" : "ValueSet for communication modes (Incrémental, Récapitulatif).",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/CSCommunicationModes"
-      },
-      "name" : "Communication modes",
-      "description" : "CodeSystem for french communication modes (Incrémental, Récapitulatif).",
+      "name" : "Concepts Medication Value Set",
+      "description" : "Value Set pour différiencier les niveaux de MR/MA",
       "isExample" : false
     },
     {
@@ -219,41 +171,51 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
+        "valueString" : "HealthcareService"
       }],
       "reference" : {
-        "reference" : "Observation/exampleAdditionalInformationHeight"
+        "reference" : "HealthcareService/ExampleHealthcareServiceAccomodation"
       },
-      "name" : "exampleAdditionalInformationHeight",
-      "description" : "Additional information about height.",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/additional-information"]
+      "name" : "Example HealthcareServiceAccomodation",
+      "description" : "An example instance of an OncoFAIR HealthcareServiceAccomodation",
+      "isExample" : true
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
+        "valueString" : "HealthcareService"
       }],
       "reference" : {
-        "reference" : "Observation/exampleAdditionalInformationWeight"
+        "reference" : "HealthcareService/ExampleHealthcareServiceMedicalLiability"
       },
-      "name" : "exampleAdditionalInformationWeight",
-      "description" : "Additional information about weight.",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/additional-information"]
+      "name" : "Example HealthcareServiceMedicalLiability",
+      "description" : "An example instance of an OncoFAIR HealthcareServiceMedicalLiability",
+      "isExample" : true
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationAdministration"
+        "valueString" : "CarePlan"
       }],
       "reference" : {
-        "reference" : "MedicationAdministration/exampleAdministrationReportBACTRIMFORTE"
+        "reference" : "CarePlan/ExampleOncoFAIRCarePlan"
       },
-      "name" : "exampleAdministrationReportBACTRIMFORTE",
-      "description" : "BACTRIMFORTE medication administration report.",
+      "name" : "Example OncoFAIR CarePlan",
+      "description" : "An example instance of an OncoFAIR CarePlan with required fields populated.",
       "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/administration-report"]
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-careplan"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Device"
+      }],
+      "reference" : {
+        "reference" : "Device/ExampleOncoFAIRDevice"
+      },
+      "name" : "Example OncoFAIR Device",
+      "description" : "An example instance of an OncoFAIR Device",
+      "isExample" : true
     },
     {
       "extension" : [{
@@ -261,38 +223,24 @@
         "valueString" : "DeviceDefinition"
       }],
       "reference" : {
-        "reference" : "DeviceDefinition/exampleAssociatedDeviceNEBUL"
+        "reference" : "DeviceDefinition/ExampleOncoFAIRDeviceDefinition"
       },
-      "name" : "exampleAssociatedDeviceNEBUL",
-      "description" : "Associated device: NEBUL.",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/associated-device"]
+      "name" : "Example OncoFAIR Device Definition",
+      "description" : "An example instance of an OncoFAIR Device Definition.",
+      "isExample" : true
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "HealthcareService"
+        "valueString" : "Encounter"
       }],
       "reference" : {
-        "reference" : "HealthcareService/exampleHealthcareServiceHCMED"
+        "reference" : "Encounter/ExampleOncoFAIREncounter"
       },
-      "name" : "exampleHealthcareServiceHCMED",
-      "description" : "HCMED healthcare service.",
+      "name" : "Example OncoFAIR Encounter",
+      "description" : "An example instance of an OncoFAIR Encounter with required fields populated.",
       "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-healthcare-service"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "HealthcareService"
-      }],
-      "reference" : {
-        "reference" : "HealthcareService/exampleHealthcareServiceSAB"
-      },
-      "name" : "exampleHealthcareServiceSAB",
-      "description" : "SAB healthcare service.",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-healthcare-service"]
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-encounter"]
     },
     {
       "extension" : [{
@@ -300,116 +248,116 @@
         "valueString" : "Medication"
       }],
       "reference" : {
-        "reference" : "Medication/exampleOncologyMedication5FLUOROURACILE5g"
+        "reference" : "Medication/ExampleOncoFAIRMedication"
       },
-      "name" : "exampleOncologyMedication5FLUOROURACILE5g",
-      "description" : "Medication: 5-FLUOROURACILE 5 g.",
+      "name" : "Example OncoFAIR Medication",
+      "description" : "An example instance of an OncoFAIR Medication with required fields populated.",
       "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"]
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication"]
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Medication"
+        "valueString" : "MedicationAdministration"
       }],
       "reference" : {
-        "reference" : "Medication/exampleOncologyMedicationBACTRIMFORTE"
+        "reference" : "MedicationAdministration/ExampleOncoFAIRMedicationAdministrationComponent"
       },
-      "name" : "exampleOncologyMedicationBACTRIMFORTE",
-      "description" : "Medication: BACTRIM FORTE 800MG/160MG CPR.",
+      "name" : "Example OncoFAIR MedicationAdministration Component",
+      "description" : "An example instance of an OncoFAIR MedicationAdministration Component with required fields populated.",
       "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"]
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationadministration-component"]
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Medication"
+        "valueString" : "MedicationAdministration"
       }],
       "reference" : {
-        "reference" : "Medication/exampleOncologyMedicationG5pourcent100MLPOCHE"
+        "reference" : "MedicationAdministration/ExampleOncoFAIRMedicationAdministrationElement"
       },
-      "name" : "exampleOncologyMedicationG5pourcent100MLPOCHE",
-      "description" : "Medication: G5% 100ML POCHE.",
+      "name" : "Example OncoFAIR MedicationAdministration Element",
+      "description" : "An example instance of an OncoFAIR MedicationAdministration Element with required fields populated.",
       "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"]
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationadministration-element"]
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Medication"
+        "valueString" : "MedicationAdministration"
       }],
       "reference" : {
-        "reference" : "Medication/exampleOncologyMedicationLEVOFOLINATEDECALCIUM"
+        "reference" : "MedicationAdministration/ExampleOncoFAIRMedicationAdministrationReport"
       },
-      "name" : "exampleOncologyMedicationLEVOFOLINATEDECALCIUM",
-      "description" : "Medication: LEVOFOLINATE DE CALCIUM.",
+      "name" : "Example OncoFAIR MedicationAdministration Report",
+      "description" : "An example instance of an OncoFAIR MedicationAdministration Report with required fields populated.",
       "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"]
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationadministration-report"]
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Medication"
+        "valueString" : "MedicationRequest"
       }],
       "reference" : {
-        "reference" : "Medication/exampleOncologyMedicationMETHYLPREDNISOLONE"
+        "reference" : "MedicationRequest/ExampleOncoFAIRMedicationRequestComponent"
       },
-      "name" : "exampleOncologyMedicationMETHYLPREDNISOLONE",
-      "description" : "Medication: METHYLPREDNISOLONE.",
+      "name" : "Example OncoFAIR MedicationRequest Component",
+      "description" : "Example instance of OncoFAIRMedicationRequestComponent",
       "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"]
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component"]
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Medication"
+        "valueString" : "MedicationRequest"
       }],
       "reference" : {
-        "reference" : "Medication/exampleOncologyMedicationONDANSETRON"
+        "reference" : "MedicationRequest/ExampleOncoFAIRMedicationRequestElement"
       },
-      "name" : "exampleOncologyMedicationONDANSETRON",
-      "description" : "Medication: ONDANSETRON.",
+      "name" : "Example OncoFAIR MedicationRequest Element",
+      "description" : "Example instance of OncoFAIRMedicationRequestElement",
       "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"]
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element"]
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Medication"
+        "valueString" : "MedicationRequest"
       }],
       "reference" : {
-        "reference" : "Medication/exampleOncologyMedicationOXALIPLATINE200mg"
+        "reference" : "MedicationRequest/ExampleOncoFAIRMedicationRequestElement2"
       },
-      "name" : "exampleOncologyMedicationOXALIPLATINE200mg",
-      "description" : "Medication: OXALIPLATINE 200 mg.",
+      "name" : "Example OncoFAIR MedicationRequest Element",
+      "description" : "Example instance of OncoFAIRMedicationRequestElement",
       "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"]
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element"]
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Medication"
+        "valueString" : "MedicationRequest"
       }],
       "reference" : {
-        "reference" : "Medication/exampleOncologyMedicationOXYCODONELP10MGVIATRIS"
+        "reference" : "MedicationRequest/ExampleOncoFAIRMedicationRequestPrescription"
       },
-      "name" : "exampleOncologyMedicationOXYCODONELP10MGVIATRIS",
-      "description" : "Medication: OXYCODONE LP 10 MG VIATRIS, CPR À LIBÉRATION PROLONGÉE.",
+      "name" : "Example OncoFAIR MedicationRequest Prescription",
+      "description" : "An example instance of OncoFAIR MedicationRequest Prescription.",
       "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"]
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription"]
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Medication"
+        "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Medication/exampleOncologyMedicationPENTACARINAT300MG"
+        "reference" : "Observation/ExampleOncoFAIRObservation"
       },
-      "name" : "exampleOncologyMedicationPENTACARINAT300MG",
-      "description" : "Medication: PENTACARINAT 300MG PDR INJ.",
+      "name" : "Example OncoFAIR Observation",
+      "description" : "An example instance of OncoFAIR Observation.",
       "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-medication"]
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-observation"]
     },
     {
       "extension" : [{
@@ -417,12 +365,12 @@
         "valueString" : "Patient"
       }],
       "reference" : {
-        "reference" : "Patient/exampleOncologyPatient"
+        "reference" : "Patient/ExampleOncoFAIRPatient"
       },
-      "name" : "exampleOncologyPatient",
-      "description" : "Patient of IPP 6564415.",
+      "name" : "Example OncoFAIR Patient",
+      "description" : "An example instance of an OncoFAIR patient with a permanent patient identifier.",
       "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-patient"]
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-patient"]
     },
     {
       "extension" : [{
@@ -430,207 +378,49 @@
         "valueString" : "Practitioner"
       }],
       "reference" : {
-        "reference" : "Practitioner/exampleOncologyPractitioner"
+        "reference" : "Practitioner/ExampleOncoFAIRPractitioner"
       },
-      "name" : "exampleOncologyPractitioner",
-      "description" : "The responsible practitioner.",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncology-practitioner"]
+      "name" : "Example OncoFAIR Practitioner",
+      "description" : "An example instance of an OncoFAIR practitioner with an identifier.",
+      "isExample" : true
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationRequest"
+        "valueString" : "Condition"
       }],
       "reference" : {
-        "reference" : "MedicationRequest/examplePrescriptionItemBACTRIMFORTE"
+        "reference" : "Condition/fhir-osiris-example-TumorPathologyEvent-instance-1"
       },
-      "name" : "examplePrescriptionItemBACTRIMFORTE",
-      "description" : "Prescription item related to the medication BACTRIM FORTE 800MG/160MG CPR.",
+      "name" : "fhir-osiris-example-TumorPathologyEvent-instance-1",
+      "description" : "Example of TPE from OSIRIS_pivot_TumorPathologyEvent.csv",
       "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"]
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/tumor-pathology-event"]
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationRequest"
+        "valueString" : "Condition"
       }],
       "reference" : {
-        "reference" : "MedicationRequest/examplePrescriptionItemInfusion5FLUOROURACILE5g"
+        "reference" : "Condition/fhir-osiris-example-TumorPathologyEvent-instance-2"
       },
-      "name" : "examplePrescriptionItemInfusion5FLUOROURACILE5g",
-      "description" : "Prescription item related to the medication 5-FLUOROURACILE 5 g.",
+      "name" : "fhir-osiris-example-TumorPathologyEvent-instance-2",
+      "description" : "Example of TPE from OSIRIS_pivot_TumorPathologyEvent.csv",
       "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"]
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/tumor-pathology-event"]
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationRequest"
+        "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "MedicationRequest/examplePrescriptionItemInfusionG5percent100MLPOCHE"
+        "reference" : "CodeSystem/siph-gonogo-oncofair-codesystem"
       },
-      "name" : "examplePrescriptionItemInfusionG5percent100MLPOCHE",
-      "description" : "Prescription item related to the medication G5percent100MLPOCHE.",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationRequest"
-      }],
-      "reference" : {
-        "reference" : "MedicationRequest/examplePrescriptionItemInfusionLEVOFOLINATEDECALCIUM"
-      },
-      "name" : "examplePrescriptionItemInfusionLEVOFOLINATEDECALCIUM",
-      "description" : "Prescription item related to the medication LEVOFOLINATE DE CALCIUM.",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationRequest"
-      }],
-      "reference" : {
-        "reference" : "MedicationRequest/examplePrescriptionItemInfusionMETHYLPREDNISOLONE"
-      },
-      "name" : "examplePrescriptionItemInfusionMETHYLPREDNISOLONE",
-      "description" : "Prescription item related to the medication METHYLPREDNISOLONE.",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationRequest"
-      }],
-      "reference" : {
-        "reference" : "MedicationRequest/examplePrescriptionItemInfusionONDANSETRON"
-      },
-      "name" : "examplePrescriptionItemInfusionONDANSETRON",
-      "description" : "Prescription item related to the medication ONDANSETRON.",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationRequest"
-      }],
-      "reference" : {
-        "reference" : "MedicationRequest/examplePrescriptionItemInfusionOXALIPLATINE200mg"
-      },
-      "name" : "examplePrescriptionItemInfusionOXALIPLATINE200mg",
-      "description" : "Prescription item related to the medication OXALIPLATINE 200 mg.",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationRequest"
-      }],
-      "reference" : {
-        "reference" : "MedicationRequest/examplePrescriptionItemOXYCODONELP10MGVIATRIS"
-      },
-      "name" : "examplePrescriptionItemOXYCODONELP10MGVIATRIS",
-      "description" : "Prescription item related to the medication OXYCODONE LP 10 MG VIATRIS.",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationRequest"
-      }],
-      "reference" : {
-        "reference" : "MedicationRequest/examplePrescriptionItemPENTACARINAT300MG"
-      },
-      "name" : "examplePrescriptionItemPENTACARINAT300MG",
-      "description" : "Prescription item related to the medication PENTACARINAT 300MG PDR INJ.",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription-item"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CarePlan"
-      }],
-      "reference" : {
-        "reference" : "CarePlan/examplePrescriptionMedicationBACTRIMFORTE"
-      },
-      "name" : "examplePrescriptionMedicationBACTRIMFORTE",
-      "description" : "BACTRIMFORTE medication prescription.",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CarePlan"
-      }],
-      "reference" : {
-        "reference" : "CarePlan/examplePrescriptionMedicationINFUSION"
-      },
-      "name" : "examplePrescriptionMedicationINFUSION",
-      "description" : "Medications prescription (infusion).",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CarePlan"
-      }],
-      "reference" : {
-        "reference" : "CarePlan/examplePrescriptionMedicationOXYCODONELP10MGVIATRIS"
-      },
-      "name" : "examplePrescriptionMedicationOXYCODONELP10MGVIATRIS",
-      "description" : "OXYCODONE medication prescription.",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CarePlan"
-      }],
-      "reference" : {
-        "reference" : "CarePlan/examplePrescriptionMedicationPENTACARINAT300MG"
-      },
-      "name" : "examplePrescriptionMedicationPENTACARINAT300MG",
-      "description" : "PENTACARINAT medication prescription.",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/prescription"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Encounter"
-      }],
-      "reference" : {
-        "reference" : "Encounter/exampleStayFOLFOX4"
-      },
-      "name" : "exampleStayFOLFOX4",
-      "description" : "Stay of ID 15461.",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/stay"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Encounter"
-      }],
-      "reference" : {
-        "reference" : "Encounter/exampleStayMISCELLANEOUS"
-      },
-      "name" : "exampleStayMISCELLANEOUS",
-      "description" : "Stay of ID 98456.",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/stay"]
+      "name" : "goNogo Code System",
+      "description" : "Code system pour l'attribut goNogo",
+      "isExample" : false
     },
     {
       "extension" : [{
@@ -638,10 +428,46 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vsLOINC"
+        "reference" : "ValueSet/siph-gonogo-oncofair-valueset"
       },
-      "name" : "LOINC codes",
-      "description" : "ValueSet of LOINC codes.",
+      "name" : "goNogo Value Set",
+      "description" : "Value Set pour goNogo",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/histologygrade"
+      },
+      "name" : "Histology",
+      "description" : "Grade of Histology",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/laterality"
+      },
+      "name" : "Laterality",
+      "description" : "Laterality of location (if it exists)",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/siph-listeald-oncofair-valueset"
+      },
+      "name" : "Liste Affectation Longue Durée Value Set",
+      "description" : "Value Set pour ListeALD",
       "isExample" : false
     },
     {
@@ -650,10 +476,10 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/CSLOINC"
+        "reference" : "CodeSystem/siph-listeald-oncofair-codesystem"
       },
-      "name" : "LOINC codes",
-      "description" : "LOINC CodeSystem.",
+      "name" : "Liste ALD Code System",
+      "description" : "Code system pour l'attribut ListeALD",
       "isExample" : false
     },
     {
@@ -671,13 +497,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+        "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/Medical-liability-unit"
+        "reference" : "CodeSystem/medical-units-oncofair-codesystem"
       },
-      "name" : "Medical Liability Unit",
-      "description" : "Medical liability unit.",
+      "name" : "Medical units",
+      "description" : "CodeSystem for french medical units (accommodation, medical liability unit).",
       "isExample" : false
     },
     {
@@ -686,22 +512,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vsMedicalUnits"
+        "reference" : "ValueSet/medical-units-oncofair-valueset"
       },
-      "name" : "Medical units",
+      "name" : "Medical units Value Set",
       "description" : "ValueSet for medical units (accommodation, medical liability unit).",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/CSMedicalUnits"
-      },
-      "name" : "Medical units",
-      "description" : "CodeSystem for french medical units (accommodation, medical liability unit).",
       "isExample" : false
     },
     {
@@ -863,22 +677,10 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vsMedications"
-      },
-      "name" : "Medications",
-      "description" : "ValueSet for medications.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/CSMedications"
+        "reference" : "CodeSystem/medications-oncofair-codesystem"
       },
       "name" : "Medications",
       "description" : "CodeSystem for french medications.",
@@ -887,13 +689,49 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+        "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/oncology-medication"
+        "reference" : "ValueSet/medications-oncofair-valueset"
       },
-      "name" : "Oncology Medication",
-      "description" : "Medication used in oncology.",
+      "name" : "Medications Value Set",
+      "description" : "ValueSet for medications.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Morphology"
+      },
+      "name" : "Morphology Value Set",
+      "description" : "Cancer morphology",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/siph-natureproppharm-oncofair-codesystem"
+      },
+      "name" : "Nature proposition pharmaceutique Code System",
+      "description" : "Code system pour l'attribut NaturePropPharm",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/siph-natureproppharm-oncofair-valueset"
+      },
+      "name" : "Nature proposition pharmaceutique Value Set",
+      "description" : "Value Set pour NaturePropPharm",
       "isExample" : false
     },
     {
@@ -902,10 +740,22 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/oncology-patient"
+        "reference" : "StructureDefinition/oncofair-careplan"
       },
-      "name" : "Oncology Patient",
-      "description" : "Patient receiving medical treatment in oncology.",
+      "name" : "OncoFAIR CarePlan",
+      "description" : "This object describes the chaining of prescription elements attached to the prescribed protocol. Its structure enables the chaining of nested sub-protocols. \r\n\nCet objet décrit le chaînage des éléments de prescription rattachés au protocole prescrit. Sa structure permet le chaînage de sous-protocoles imbriqués.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CapabilityStatement"
+      }],
+      "reference" : {
+        "reference" : "CapabilityStatement/oncofair-consumer-secondary-chemotherapy-data"
+      },
+      "name" : "OncoFAIR Consumer secondary chemotherapy data",
+      "description" : "A structure or professional using chemotherapy data (complete or aggregated). These data may be used for a variety of purposes (pharmacovigilance, clinical studies, etc.).",
       "isExample" : false
     },
     {
@@ -914,10 +764,706 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/oncology-practitioner"
+        "reference" : "StructureDefinition/oncofair-encounter"
       },
-      "name" : "Oncology Practitioner",
-      "description" : "Oncology practitioner.",
+      "name" : "OncoFAIR Encounter",
+      "description" : "Must be taken in the generic sense, i.e. it goes beyond hospital admissions, outpatient consultations, dialysis sessions, day hospitals, etc. \r\n\nDoit être pris au sens générique, c’est-à-dire que cela dépasse les hospitalisations, consultations externes, séances de dialyse, hôpitaux de jour, etc …",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CapabilityStatement"
+      }],
+      "reference" : {
+        "reference" : "CapabilityStatement/oncofair-health-data-warehouse"
+      },
+      "name" : "OncoFAIR Health Data Warehouse",
+      "description" : "A database intended to be used for research, studies or evaluation in the field of health.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-medication"
+      },
+      "name" : "OncoFAIR Medication",
+      "description" : "This object describes the medication. \r\n\nCet objet décrit le médicament",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-medicationadministration-component"
+      },
+      "name" : "OncoFAIR MedicationAdministration Component",
+      "description" : "This object corresponds to a product that belongs to the nomenclature of medicines used in the hospital. \r\n\nCet objet correspond à un produit qui appartient à la nomenclature de médicaments utilisée dans l’hôpital.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-medicationadministration-element"
+      },
+      "name" : "OncoFAIR MedicationAdministration Element",
+      "description" : "Corresponds to the activity induced by a prescription item and its dosage (structured or unstructured), and carried out at a given moment. \r\n\nCorrespond à l’activité induite par un élément de prescription et sa posologie (structurée ou non), et réalisée à un instant donné.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-medicationadministration-report"
+      },
+      "name" : "OncoFAIR MedicationAdministration Report",
+      "description" : "Regroups all the prescription elements received on which the pharmacist expresses his validation. It also includes items suggested or resulting from a replacement proposed by the pharmacist. \r\n\nRegroupe l’ensemble des éléments de prescription reçus sur lesquels le pharmacien exprime sa validation. S’y ajoutent les éléments suggérés ou issus d’un remplacement proposé par le pharmacien.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-medicationrequest-component"
+      },
+      "name" : "OncoFAIR MedicationRequest Component",
+      "description" : "Is a product that belongs to the nomenclature of medicines used. It may, for example, be a speciality, a product defined by its common name or a pharmacopoeial product. \r\n\nEst un produit qui appartient à la nomenclature de médicaments utilisée. Il peut s’agir par exemple d’une spécialité, d’un produit défini par sa DC ou d’un produit de la pharmacopée.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-medicationrequest-element"
+      },
+      "name" : "OncoFAIR MedicationRequest Element",
+      "description" : "Corresponds to a prescription line on a prescription. Each item contains one or more components (in the case of a magistral\npreparation or an infusion). \r\n\nCorrespond à une ligne de prescription d’une ordonnance. Chacune comporte un ou plusieurs composants (lorsqu’il s’agit d’une préparation magistrale ou d’une perfusion).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-medicationrequest-prescription"
+      },
+      "name" : "OncoFAIR MedicationRequest Prescription",
+      "description" : "Groups together all the prescription elements validated simultaneously by the same prescriber. \r\n\nRegroupe l’ensemble des éléments de prescription validés simultanément par un même prescripteur.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-observation"
+      },
+      "name" : "OncoFAIR Observation",
+      "description" : "Allows you to enter information about the patient in addition to that described in the prescription elements. \r\n\nPermet d’indiquer les informations relatives au patient qui complètent celles décrites par les éléments de prescription",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-patient"
+      },
+      "name" : "OncoFAIR Patient",
+      "description" : "Contains the patient's identity details needed to ensure that the prescription is properly taken into account. \r\n\nContient les informations d’identité du patient nécessaires à la bonne prise en compte de la prescription médicamenteuse.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CapabilityStatement"
+      }],
+      "reference" : {
+        "reference" : "CapabilityStatement/oncofair-producer-chemotherapy-data"
+      },
+      "name" : "OncoFAIR Producer Chemotherapy Data",
+      "description" : "Software for tracking chemotherapy information relating to a patient. The software generates chemotherapy data by means of data updates by medical staff.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-cp-date-time-reference"
+      },
+      "name" : "oncofair-sp-cp-date-time-reference",
+      "description" : "Search for the reference date and time of the prescribed protocol",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-cp-title"
+      },
+      "name" : "oncofair-sp-cp-title",
+      "description" : "Search for the title of the prescribed protocol",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-element-form"
+      },
+      "name" : "oncofair-sp-element-form",
+      "description" : "Search for the pharmaceutical form of the prescription/administration item",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-element-route"
+      },
+      "name" : "oncofair-sp-element-route",
+      "description" : "Search for the route of administration element",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-element-site"
+      },
+      "name" : "oncofair-sp-element-site",
+      "description" : "Search on the administration site of the element",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-indication"
+      },
+      "name" : "oncofair-sp-indication",
+      "description" : "Search for indications concerning the prescription item and the component prescribed or prescribed protocol",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-ma-category"
+      },
+      "name" : "oncofair-sp-ma-category",
+      "description" : "Search for code identifying the nature of the administration element",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-ma-comments"
+      },
+      "name" : "oncofair-sp-ma-comments",
+      "description" : "Search for comments on the administration element",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-ma-method"
+      },
+      "name" : "oncofair-sp-ma-method",
+      "description" : "Search for type of administration element",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-ma-planned-quantity"
+      },
+      "name" : "oncofair-sp-ma-planned-quantity",
+      "description" : "Search for the expected quantity of the administration element",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-ma-prescribed-quantity"
+      },
+      "name" : "oncofair-sp-ma-prescribed-quantity",
+      "description" : "Search for the prescribed quantity of the administration element",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-medication-type"
+      },
+      "name" : "oncofair-sp-medication-type",
+      "description" : "Search for type of medication",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-mr-component-solute"
+      },
+      "name" : "oncofair-sp-mr-component-solute",
+      "description" : "Search to find out if the component prescribed is solute in the prescription element",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-mr-component-substitution"
+      },
+      "name" : "oncofair-sp-mr-component-substitution",
+      "description" : "Search to find out if the component prescribed is declared non-substitutable in the prescription element",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-mr-date-time-prescription-end"
+      },
+      "name" : "oncofair-sp-mr-date-time-prescription-end",
+      "description" : "Search for the the date/time prescription end",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-mr-date-time-prescription-start"
+      },
+      "name" : "oncofair-sp-mr-date-time-prescription-start",
+      "description" : "Search for the date/time prescription start",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-mr-element-duration-posology"
+      },
+      "name" : "oncofair-sp-mr-element-duration-posology",
+      "description" : "Search for duration of administration",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-mr-element-frequency-posology"
+      },
+      "name" : "oncofair-sp-mr-element-frequency-posology",
+      "description" : "Search for the frequency of the dosage element",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-mr-element-gonogo-reasonwaiting"
+      },
+      "name" : "oncofair-sp-mr-element-gonogo-reasonwaiting",
+      "description" : "Search for the element goNogo reason waiting",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-mr-element-gonogo-status"
+      },
+      "name" : "oncofair-sp-mr-element-gonogo-status",
+      "description" : "Search for the element goNogo status",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-mr-element-quantity-posology"
+      },
+      "name" : "oncofair-sp-mr-element-quantity-posology",
+      "description" : "Search for quantity of the prescription element in the dosage",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-mr-element-rate-posology"
+      },
+      "name" : "oncofair-sp-mr-element-rate-posology",
+      "description" : "Search for rate of administration in the case of injection",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-mr-exempt-ltc"
+      },
+      "name" : "oncofair-sp-mr-exempt-ltc",
+      "description" : "Search for identifier of the ALD for which the component prescribed is prescribed for one of the reasons for which the patient benefits from an exemption under article L324-1 of the CSS.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-mr-is-dosage-referent"
+      },
+      "name" : "oncofair-sp-mr-is-dosage-referent",
+      "description" : "Search to find out if the component prescribed is the component that refers to the quantity or flow rate expressed in the dosage element when these are gravimetric (for example, mg or mg/h).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-mr-prescribed-component-quantity"
+      },
+      "name" : "oncofair-sp-mr-prescribed-component-quantity",
+      "description" : "Search for the prescribed component quantity",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-mr-prescription-validation-date"
+      },
+      "name" : "oncofair-sp-mr-prescription-validation-date",
+      "description" : "Search for the prescription validation date of the prescription",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-mr-type-elementprescrption"
+      },
+      "name" : "oncofair-sp-mr-type-elementprescrption",
+      "description" : "Search for the type of element prescription",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/oncofair-sp-wording"
+      },
+      "name" : "oncofair-sp-wording",
+      "description" : "Search for wording on the administration/prescribed element",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-cp-treatment"
+      },
+      "name" : "OncoFAIRCPTreatment",
+      "description" : "Extension created as part of OncoFAIR grouping together the treatment number, the day number and the reference date and time of the prescribed protocol. \r\n \nExtension créée dans le cadre d'OncoFAIR regroupant le numéro de cure, le numéro de jour ainsi que la date et heure de référence du protocole prescrit.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-element-form"
+      },
+      "name" : "OncoFAIRElementForm",
+      "description" : "Extension created as part of OncoFair containing the drug form. \r\n\nExtension créée dans le cadre d'OncoFair contenant la forme du médicament.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-ma-component-administration-status"
+      },
+      "name" : "OncoFAIRMAComponentAdministrationStatus",
+      "description" : "Extension created as part of OncoFAIR containing the administration status of the administered component. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant le statut d'administration du composant administré.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-ma-component-origin"
+      },
+      "name" : "OncoFAIRMAComponentOrigin",
+      "description" : "Extension created as part of OncoFAIR containing the origin of the administered component. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant la provenance du composant administré.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-ma-element-expirationdate"
+      },
+      "name" : "OncoFAIRMAElementExpirationDate",
+      "description" : "Extension created as part of OncoFAIR containing the expiry date of the component administered. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant la date de péremption du composant administré.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-ma-element-plannedperiod"
+      },
+      "name" : "OncoFAIRMAElementPlannedPeriod",
+      "description" : "Extension created as part of OncoFAIR containing the planned start and end date of administration. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant la date de début et de fin prévue de l'administration.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-ma-element-traceability"
+      },
+      "name" : "OncoFAIRMAElementTraceability",
+      "description" : "Extension created as part of OncoFAIR containing the batch and serial number of the administered component/administration element. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant le numéro de lot et de série du composant administré/élément d'administration.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-ma-element-urgent"
+      },
+      "name" : "OncoFAIRMAElementUrgent",
+      "description" : "Extension created as part of OncoFAIR containing the notion of emergency. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant la notion d'urgence.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-medication-type"
+      },
+      "name" : "OncoFAIRMedicationType",
+      "description" : "Extension created as part of OncoFAIR containing the type of component. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant le type de composant.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-mr-component-solute"
+      },
+      "name" : "OncoFAIRMRComponentSolute",
+      "description" : "Extension created as part of OncoFAIR containing the notion of solute. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant la notion de soluté.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-mr-element-go-nogo"
+      },
+      "name" : "OncoFAIRMRElementGoNogo",
+      "description" : "Extension created as part of OncoFAIR containing the concept of GoNogo. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant la notion de GoNogo.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-mr-element-link-type"
+      },
+      "name" : "OncoFAIRMRElementLinkType",
+      "description" : "Extension created as part of OncoFAIR containing the element's type of link. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant le type de liaison de l'élément.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-mr-element-rank"
+      },
+      "name" : "OncoFAIRMRElementRank",
+      "description" : "Extension created as part of OncoFAIR containing the prescription element rank. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant le rangd d'élement de la prescription.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-mr-element-supply"
+      },
+      "name" : "OncoFAIRMRElementSupply",
+      "description" : "Extension created as part of OncoFAIR containing the concept of supply. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant la notion de fourniture.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-mr-exempt-ltc"
+      },
+      "name" : "OncoFAIRMRExemptLTC",
+      "description" : "Extension created as part of OncoFAIR containing the notion of exemption. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant la notion d'exonération.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-mr-is-dosage-referent"
+      },
+      "name" : "OncoFAIRMRIsDosageReferent",
+      "description" : "Extension created as part of OncoFAIR containing the notion of a posology reference. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant la notion de référence posologie.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-mr-prescription-validation-date"
+      },
+      "name" : "OncoFAIRMRPrescriptionValidationDate",
+      "description" : "Extension créée dans le cadre d'OncoFAIR contenant la date et heure de la prescription",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oncofair-pharmacist-advice"
+      },
+      "name" : "OncoFAIRPharmacistAdvice",
+      "description" : "Extension created as part of OncoFAIR containing the validation and pharmaceutical proposal. \r\n\nExtension créée dans le cadre d'OncoFAIR contenant la validation et proposition pharmaceutique.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/clinical-trial"
+      },
+      "name" : "Oncology Clinical Trial",
+      "description" : "Oncology clinical trial used to associate a Onco Patient to a Clinical Trial",
       "isExample" : false
     },
     {
@@ -935,6 +1481,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/siph-paramposoconditionnelle-oncofair-valueset"
+      },
+      "name" : "Paramètres posologie conditionnelle",
+      "description" : "Value Set pour ParamPosoConditionnelle",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/siph-paramposoconditionnelle-oncofair-codesystem"
+      },
+      "name" : "Paremètres posologie conditionnelle Code System",
+      "description" : "Code system pour l'attribut ParamPosoConditionnelle",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -947,37 +1517,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/prescription"
-      },
-      "name" : "Prescription",
-      "description" : "Medication prescription.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/CSPrescriptionCategory"
+        "reference" : "CodeSystem/siph-renscomplement-oncofair-codesystem"
       },
-      "name" : "Prescription category",
-      "description" : "CodeSystem for french prescription category (Création, Arrêt, Modification, Validation).",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/prescription-item"
-      },
-      "name" : "Prescription Item",
-      "description" : "Prescription item.",
+      "name" : "Renseignement complémentaire Code System",
+      "description" : "Code system pour l'attribut RensComplement",
       "isExample" : false
     },
     {
@@ -986,72 +1532,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vsPrescriptionCategory"
+        "reference" : "ValueSet/siph-renscomplement-oncofair-valueset"
       },
-      "name" : "Prescription status",
-      "description" : "ValueSet for PlanDefinition types, extended to include Création, Arrêt, Modification and Validation.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/protocol"
-      },
-      "name" : "Protocol",
-      "description" : "Protocol.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "PlanDefinition"
-      }],
-      "reference" : {
-        "reference" : "PlanDefinition/exampleProtocolInfusionFOLFOX4"
-      },
-      "name" : "Protocol - FOLFOX 4",
-      "description" : "Prescribed protocol.",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/protocol"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "PlanDefinition"
-      }],
-      "reference" : {
-        "reference" : "PlanDefinition/exampleProtocolMISCELLANEOUS"
-      },
-      "name" : "Protocol - Miscellaneous protocol",
-      "description" : "Prescribed protocol.",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/protocol"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vsSCT"
-      },
-      "name" : "SNOMED CT codes",
-      "description" : "ValueSet of SNOMED CT codes.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/CSSCT"
-      },
-      "name" : "SNOMED CT Codes",
-      "description" : "SNOMED CT code system.",
+      "name" : "Renseignement complémentaire Value Set",
+      "description" : "Value Set pour RensComplement",
       "isExample" : false
     },
     {
@@ -1069,13 +1553,109 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/siph-statutcomposantadm-oncofair-codesystem"
+      },
+      "name" : "Statut composant administré Code System",
+      "description" : "Code system pour l'attribut StatutComposantAdm",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/siph-statutcomposantadm-oncofair-valueset"
+      },
+      "name" : "Statut composant administré Value Set",
+      "description" : "Value Set pour StatutComposantAdm",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/siph-statutvalidpharm-oncofair-codesystem"
+      },
+      "name" : "Statut validation pharmaceutique Code System",
+      "description" : "Code system pour l'attribut StatutValidPharm",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/siph-statutvalidpharm-oncofair-valueset"
+      },
+      "name" : "Statut validation pharmaceutique Value Set",
+      "description" : "Value Set pour StatutValidPharm",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Topography"
+      },
+      "name" : "Topography Value Set",
+      "description" : "Cancer topography",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/treatment-line"
+      },
+      "name" : "Treatment Line Number",
+      "description" : "The treatment line number",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/TreatmentType"
+      },
+      "name" : "Treatment Type Value Set",
+      "description" : "Treatment type",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Laterality"
+      },
+      "name" : "Tumor Laterality Value Set",
+      "description" : "Tumor laterality",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/stay"
+        "reference" : "StructureDefinition/tumor-pathology-event"
       },
-      "name" : "Stay",
-      "description" : "Stay.",
+      "name" : "Tumor Pathology Event",
+      "description" : "Tumor Pathology Event (TPE) Condition describing a tumoral event: reference to the parent TPE, laterality, morphology.",
       "isExample" : false
     },
     {
@@ -1084,23 +1664,132 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/treatment-cycle-number"
+        "reference" : "StructureDefinition/dueTo-tumor-pathology-event"
       },
-      "name" : "Treatment cycle number",
-      "description" : "Treatment cycle number.",
+      "name" : "Tumor Pathology Event Parent",
+      "description" : "Reference the Tumor Pathology Event from which the metastasis comes from.",
       "isExample" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
+        "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/treatment-day-number"
+        "reference" : "ValueSet/TumorPathologyEventType"
       },
-      "name" : "Treatment day number",
-      "description" : "Treatment day number.",
+      "name" : "Tumor Pathology Event Type Value Set",
+      "description" : "Tumor pathology event type",
       "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/siph-typecomposant-oncofair-codesystem"
+      },
+      "name" : "Type de composant Code System",
+      "description" : "Code system pour l'attribut TypeComposant",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/siph-typecomposant-oncofair-valueset"
+      },
+      "name" : "Type de composant Value Set",
+      "description" : "Value Set pour TypeComposant",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/siph-typeeltpla-oncofair-codesystem"
+      },
+      "name" : "Type de l'élément d'administration Code System",
+      "description" : "Code system pour l'attribut TypeEltPLA",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/siph-typeeltpla-oncofair-valueset"
+      },
+      "name" : "Type de l'élément d'administration Value Set",
+      "description" : "Value Set pour TypeEltPLA",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/siph-typeevenement-oncofair-valueset"
+      },
+      "name" : "Type de l'évènement Value Set",
+      "description" : "Value Set pour TypeEvenement",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/siph-type-liaison-oncofair-codesystem"
+      },
+      "name" : "Type de liaison Code System",
+      "description" : "Code system pour l'attribut TypeLiaison",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/siph-type-liasion-oncofair-valueset"
+      },
+      "name" : "Type de liaison Value Set",
+      "description" : "Value Set pour Type Liaison",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/siph-typeevenement-oncofair-codesystem"
+      },
+      "name" : "Type évènement Code System",
+      "description" : "Code system pour l'attribut TypeEvenement",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ResearchStudy"
+      }],
+      "reference" : {
+        "reference" : "ResearchStudy/fhir-osiris-example-researchstudy"
+      },
+      "name" : "Unknown",
+      "description" : "Example of ResearchStudy from OSIRIS_pivot_Treatment.csv",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/clinical-trial"]
     }],
     "page" : {
       "sourceUrl" : "toc.html",
@@ -1112,6 +1801,36 @@
         "name" : "index.html",
         "title" : "Home",
         "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "mapping.html",
+        "name" : "mapping.html",
+        "title" : "Mapping PN13/FHIR R5",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "technical_specifications.html",
+        "name" : "technical_specifications.html",
+        "title" : "Technical Specifications",
+        "generation" : "markdown",
+        "page" : [{
+          "sourceUrl" : "feed_flow.html",
+          "name" : "feed_flow.html",
+          "title" : "Flow 01 - Using queries to populate an HDW with chemotherapy data",
+          "generation" : "markdown"
+        },
+        {
+          "sourceUrl" : "feasibility_study_research_flow.html",
+          "name" : "feasibility_study_research_flow.html",
+          "title" : "Flow 02 - Request chemotherapy data for a feasibility study",
+          "generation" : "markdown"
+        },
+        {
+          "sourceUrl" : "multicentric_study_research_flow.html",
+          "name" : "multicentric_study_research_flow.html",
+          "title" : "Flow 03 - Request chemotherapy data for a multicentric study",
+          "generation" : "markdown"
+        }]
       }]
     },
     "parameter" : [{

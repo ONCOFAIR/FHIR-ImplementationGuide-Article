@@ -1,0 +1,133 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/CodeSystem/siph-listeald-oncofair-codesystem> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "siph-listeald-oncofair-codesystem"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem siph-listeald-oncofair-codesystem</b></p><a name=\"siph-listeald-oncofair-codesystem\"> </a><a name=\"hcsiph-listeald-oncofair-codesystem\"> </a><a name=\"siph-listeald-oncofair-codesystem-en-US\"> </a><p>This case-sensitive code system <code>http://ltsi.univ-rennes.fr/CodeSystem/siph-listeald-oncofair-codesystem</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">ALD1<a name=\"siph-listeald-oncofair-codesystem-ALD1\"> </a></td><td>Accident vasculaire cérébral invalidant</td></tr><tr><td style=\"white-space:nowrap\">ALD2<a name=\"siph-listeald-oncofair-codesystem-ALD2\"> </a></td><td>Insuffisances médullaires et autres cytopénies chroniques</td></tr><tr><td style=\"white-space:nowrap\">ALD3<a name=\"siph-listeald-oncofair-codesystem-ALD3\"> </a></td><td>Artériopathies chroniques avec manifestations ischémiques</td></tr><tr><td style=\"white-space:nowrap\">ALD4<a name=\"siph-listeald-oncofair-codesystem-ALD4\"> </a></td><td>Bilharziose compliquée</td></tr><tr><td style=\"white-space:nowrap\">ALD5<a name=\"siph-listeald-oncofair-codesystem-ALD5\"> </a></td><td>Insuffisance cardiaque grave, troubles du rythme graves, cardiopathies valvulaires graves ; cardiopathies congénitales graves</td></tr><tr><td style=\"white-space:nowrap\">ALD6<a name=\"siph-listeald-oncofair-codesystem-ALD6\"> </a></td><td>Maladies chroniques actives du foie et cirrhoses</td></tr><tr><td style=\"white-space:nowrap\">ALD7<a name=\"siph-listeald-oncofair-codesystem-ALD7\"> </a></td><td>Déficit immunitaire primitif grave nécessitant un traitement prolongé, infection par le virus de limmuno-déficience humaine</td></tr><tr><td style=\"white-space:nowrap\">ALD8<a name=\"siph-listeald-oncofair-codesystem-ALD8\"> </a></td><td>Diabète de type 1 et diabète de type 2</td></tr><tr><td style=\"white-space:nowrap\">ALD9<a name=\"siph-listeald-oncofair-codesystem-ALD9\"> </a></td><td>Forme grave des affections neurologiques et musculaires (dont myopathie), épilepsie grave</td></tr><tr><td style=\"white-space:nowrap\">ALD10<a name=\"siph-listeald-oncofair-codesystem-ALD10\"> </a></td><td>Hémoglobinopathies, hémolyses, chroniques constitutionnelles et acquises sévères</td></tr><tr><td style=\"white-space:nowrap\">ALD11<a name=\"siph-listeald-oncofair-codesystem-ALD11\"> </a></td><td>Hémophilies et affections constitutionnelles de lhémostase graves</td></tr><tr><td style=\"white-space:nowrap\">ALD12<a name=\"siph-listeald-oncofair-codesystem-ALD12\"> </a></td><td>Hypertension artérielle sévère</td></tr><tr><td style=\"white-space:nowrap\">ALD13<a name=\"siph-listeald-oncofair-codesystem-ALD13\"> </a></td><td>Maladie coronaire</td></tr><tr><td style=\"white-space:nowrap\">ALD14<a name=\"siph-listeald-oncofair-codesystem-ALD14\"> </a></td><td>Insuffisance respiratoire chronique grave</td></tr><tr><td style=\"white-space:nowrap\">ALD15<a name=\"siph-listeald-oncofair-codesystem-ALD15\"> </a></td><td>Lèpre</td></tr><tr><td style=\"white-space:nowrap\">ALD16<a name=\"siph-listeald-oncofair-codesystem-ALD16\"> </a></td><td>Maladie de Parkinson</td></tr><tr><td style=\"white-space:nowrap\">ALD17<a name=\"siph-listeald-oncofair-codesystem-ALD17\"> </a></td><td>Maladies métaboliques héréditaires nécessitant un traitement prolongé spécialisé</td></tr><tr><td style=\"white-space:nowrap\">ALD18<a name=\"siph-listeald-oncofair-codesystem-ALD18\"> </a></td><td>Mucoviscidose</td></tr><tr><td style=\"white-space:nowrap\">ALD19<a name=\"siph-listeald-oncofair-codesystem-ALD19\"> </a></td><td>Néphropathie chronique grave et syndrome néphrotique primitif</td></tr><tr><td style=\"white-space:nowrap\">ALD20<a name=\"siph-listeald-oncofair-codesystem-ALD20\"> </a></td><td>Paraplégie</td></tr><tr><td style=\"white-space:nowrap\">ALD21<a name=\"siph-listeald-oncofair-codesystem-ALD21\"> </a></td><td>Péri-artérite noueuse, lupus érythémateux aigu disséminé, sclérodermie généralisée évolutive</td></tr><tr><td style=\"white-space:nowrap\">ALD22<a name=\"siph-listeald-oncofair-codesystem-ALD22\"> </a></td><td>Polyarthrite rhumatoïde évolutive grave</td></tr><tr><td style=\"white-space:nowrap\">ALD23<a name=\"siph-listeald-oncofair-codesystem-ALD23\"> </a></td><td>Psychose, trouble grave de la personnalité, arriération mentale</td></tr><tr><td style=\"white-space:nowrap\">ALD24<a name=\"siph-listeald-oncofair-codesystem-ALD24\"> </a></td><td>Rectocolite hémorragique et maladie de Crohn évolutives</td></tr><tr><td style=\"white-space:nowrap\">ALD25<a name=\"siph-listeald-oncofair-codesystem-ALD25\"> </a></td><td>Sclérose en plaques</td></tr><tr><td style=\"white-space:nowrap\">ALD26<a name=\"siph-listeald-oncofair-codesystem-ALD26\"> </a></td><td>Scoliose structurale évolutive (dont langle est égal ou supérieur à 25 degrés) jusquà maturation rachidienne</td></tr><tr><td style=\"white-space:nowrap\">ALD27<a name=\"siph-listeald-oncofair-codesystem-ALD27\"> </a></td><td>Spondylarthrite ankylosante grave</td></tr><tr><td style=\"white-space:nowrap\">ALD28<a name=\"siph-listeald-oncofair-codesystem-ALD28\"> </a></td><td>Suites de transplantation dorgane</td></tr><tr><td style=\"white-space:nowrap\">ALD29<a name=\"siph-listeald-oncofair-codesystem-ALD29\"> </a></td><td>Tuberculose active</td></tr><tr><td style=\"white-space:nowrap\">ALD30<a name=\"siph-listeald-oncofair-codesystem-ALD30\"> </a></td><td>Tumeur maligne, affection maligne du tissu lymphatique ou hématopoïétique</td></tr><tr><td style=\"white-space:nowrap\">ALD31<a name=\"siph-listeald-oncofair-codesystem-ALD31\"> </a></td><td>Affections dites « hors liste »</td></tr><tr><td style=\"white-space:nowrap\">ALD32<a name=\"siph-listeald-oncofair-codesystem-ALD32\"> </a></td><td>Plusieurs affections entraînant un état pathologique invalidant</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/siph-listeald-oncofair-codesystem"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "SIPhListeALDOncoFAIRCodeSystem"] ; # 
+  fhir:title [ fhir:v "Liste ALD Code System"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-09-12T14:01:50+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://ltsi.univ-rennes.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Code system pour l'attribut ListeALD"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "32"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "ALD1" ] ;
+     fhir:display [ fhir:v "Accident vasculaire cérébral invalidant" ]
+  ] [
+     fhir:code [ fhir:v "ALD2" ] ;
+     fhir:display [ fhir:v "Insuffisances médullaires et autres cytopénies chroniques" ]
+  ] [
+     fhir:code [ fhir:v "ALD3" ] ;
+     fhir:display [ fhir:v "Artériopathies chroniques avec manifestations ischémiques" ]
+  ] [
+     fhir:code [ fhir:v "ALD4" ] ;
+     fhir:display [ fhir:v "Bilharziose compliquée" ]
+  ] [
+     fhir:code [ fhir:v "ALD5" ] ;
+     fhir:display [ fhir:v "Insuffisance cardiaque grave, troubles du rythme graves, cardiopathies valvulaires graves ; cardiopathies congénitales graves" ]
+  ] [
+     fhir:code [ fhir:v "ALD6" ] ;
+     fhir:display [ fhir:v "Maladies chroniques actives du foie et cirrhoses" ]
+  ] [
+     fhir:code [ fhir:v "ALD7" ] ;
+     fhir:display [ fhir:v "Déficit immunitaire primitif grave nécessitant un traitement prolongé, infection par le virus de limmuno-déficience humaine" ]
+  ] [
+     fhir:code [ fhir:v "ALD8" ] ;
+     fhir:display [ fhir:v "Diabète de type 1 et diabète de type 2" ]
+  ] [
+     fhir:code [ fhir:v "ALD9" ] ;
+     fhir:display [ fhir:v "Forme grave des affections neurologiques et musculaires (dont myopathie), épilepsie grave" ]
+  ] [
+     fhir:code [ fhir:v "ALD10" ] ;
+     fhir:display [ fhir:v "Hémoglobinopathies, hémolyses, chroniques constitutionnelles et acquises sévères" ]
+  ] [
+     fhir:code [ fhir:v "ALD11" ] ;
+     fhir:display [ fhir:v "Hémophilies et affections constitutionnelles de lhémostase graves" ]
+  ] [
+     fhir:code [ fhir:v "ALD12" ] ;
+     fhir:display [ fhir:v "Hypertension artérielle sévère" ]
+  ] [
+     fhir:code [ fhir:v "ALD13" ] ;
+     fhir:display [ fhir:v "Maladie coronaire" ]
+  ] [
+     fhir:code [ fhir:v "ALD14" ] ;
+     fhir:display [ fhir:v "Insuffisance respiratoire chronique grave" ]
+  ] [
+     fhir:code [ fhir:v "ALD15" ] ;
+     fhir:display [ fhir:v "Lèpre" ]
+  ] [
+     fhir:code [ fhir:v "ALD16" ] ;
+     fhir:display [ fhir:v "Maladie de Parkinson" ]
+  ] [
+     fhir:code [ fhir:v "ALD17" ] ;
+     fhir:display [ fhir:v "Maladies métaboliques héréditaires nécessitant un traitement prolongé spécialisé" ]
+  ] [
+     fhir:code [ fhir:v "ALD18" ] ;
+     fhir:display [ fhir:v "Mucoviscidose" ]
+  ] [
+     fhir:code [ fhir:v "ALD19" ] ;
+     fhir:display [ fhir:v "Néphropathie chronique grave et syndrome néphrotique primitif" ]
+  ] [
+     fhir:code [ fhir:v "ALD20" ] ;
+     fhir:display [ fhir:v "Paraplégie" ]
+  ] [
+     fhir:code [ fhir:v "ALD21" ] ;
+     fhir:display [ fhir:v "Péri-artérite noueuse, lupus érythémateux aigu disséminé, sclérodermie généralisée évolutive" ]
+  ] [
+     fhir:code [ fhir:v "ALD22" ] ;
+     fhir:display [ fhir:v "Polyarthrite rhumatoïde évolutive grave" ]
+  ] [
+     fhir:code [ fhir:v "ALD23" ] ;
+     fhir:display [ fhir:v "Psychose, trouble grave de la personnalité, arriération mentale" ]
+  ] [
+     fhir:code [ fhir:v "ALD24" ] ;
+     fhir:display [ fhir:v "Rectocolite hémorragique et maladie de Crohn évolutives" ]
+  ] [
+     fhir:code [ fhir:v "ALD25" ] ;
+     fhir:display [ fhir:v "Sclérose en plaques" ]
+  ] [
+     fhir:code [ fhir:v "ALD26" ] ;
+     fhir:display [ fhir:v "Scoliose structurale évolutive (dont langle est égal ou supérieur à 25 degrés) jusquà maturation rachidienne" ]
+  ] [
+     fhir:code [ fhir:v "ALD27" ] ;
+     fhir:display [ fhir:v "Spondylarthrite ankylosante grave" ]
+  ] [
+     fhir:code [ fhir:v "ALD28" ] ;
+     fhir:display [ fhir:v "Suites de transplantation dorgane" ]
+  ] [
+     fhir:code [ fhir:v "ALD29" ] ;
+     fhir:display [ fhir:v "Tuberculose active" ]
+  ] [
+     fhir:code [ fhir:v "ALD30" ] ;
+     fhir:display [ fhir:v "Tumeur maligne, affection maligne du tissu lymphatique ou hématopoïétique" ]
+  ] [
+     fhir:code [ fhir:v "ALD31" ] ;
+     fhir:display [ fhir:v "Affections dites « hors liste »" ]
+  ] [
+     fhir:code [ fhir:v "ALD32" ] ;
+     fhir:display [ fhir:v "Plusieurs affections entraînant un état pathologique invalidant" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

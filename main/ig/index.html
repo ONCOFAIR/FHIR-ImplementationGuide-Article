@@ -1,53 +1,54 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Home - Onco-FAIR v0.1.0</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Home - OncoFAIR v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link rel="stylesheet" href="fhir.css"/>
+    <link href="fhir.css" rel="stylesheet"/>
 
-      <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
 
-      <!-- Project extras -->
-    <link rel="stylesheet" href="assets/css/project.css"/>
-    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
-    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
-  	<link rel="stylesheet" href="assets/css/prism.css"/>
-      <!-- Placeholder for child template CSS declarations -->
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
 
-    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
-      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!-- [if lt IE 9]>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
-    <![endif] -->
+    <![endif]-->
 
-      <!-- Favicons -->
-    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
-    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
-    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
     <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"1"}
     h3,h4,h5,h6{--heading-prefix:"1"}</style>
-    <div id="segment-header" class="segment">    <!-- segment-header -->
-      <div class="container">    <!-- container -->
-          <!-- Placeholder for child template header declarations -->
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Onco-FAIR</span>
+          <p><span style="font-size:12pt;font-weight:bold">OncoFAIR</span>
             <br/>
             <span style="display:inline-block;">0.1.0 - ci-build
 
@@ -55,54 +56,73 @@
             </span>
           </p>
         </div>
-      </div>   <!-- /container -->
-    </div>    <!-- /segment-header -->
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
 
-    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
       <div id="stripe"> </div>
-      <div class="container">    <!-- container -->
-          <!-- HEADER CONTENT -->
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
 
         <nav class="navbar navbar-inverse">
-            <!-- status-bar -->
+          <!--status-bar-->
           <div class="container">
-            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a href="http://hl7.org/fhir/R5/index.html" class="navbar-brand hidden">FHIR</a>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-                <!-- menu.xml -->
+              <!-- menu.xml  -->
 
-<ul class="nav navbar-nav">
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
-    <a href="index.html">Accueil</a>
+    <a href="index.html">Home</a>
   </li>
   <li>
-    <a href="artifacts.html">Artifacts</a>
+    <a href="mapping.html">Mapping</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Compliance resources</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Description of flows
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="feed_flow.html">Flow 01 - Using queries to populate an HDW with chemotherapy data</a>
+      </li>
+      <li>
+        <a href="feasibility_study_research_flow.html">Flow 02 - Request chemotherapy data for a feasibility study</a>
+      </li>
+      <li>
+        <a href="multicentric_study_research_flow.html">Flow 03 - Request chemotherapy data for a multicentric study</a>
+      </li>
+    </ul>
   </li>
 </ul>
-            </div>    <!-- /.nav-collapse -->
-          </div>    <!-- /.container -->
-        </nav>    <!-- /.navbar -->
-        <!-- /HEADER CONTENT -->
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-navbar -->
-      <!-- status-bar -->
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
 
-    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
-      <div class="container">    <!-- container -->
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Home</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Home</b></li>
 
         </ul>
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-breadcrumb -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
 
     <a name="top"> </a>
-    <div id="segment-content" class="segment">    <!-- segment-content -->
-      <div class="container">    <!-- container -->
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
@@ -114,7 +134,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">Onco-FAIR - Local Development build (v0.1.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="http://ltsi.univ-rennes.fr/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <!--ReleaseHeader--><p id="publish-box">OncoFAIR - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://ltsi.univ-rennes.fr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Home</h2>
   
 
@@ -126,10 +146,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <table class="colsd">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://ltsi.univ-rennes.fr/ImplementationGuide/ltsi.fhir.oncofair<button data-clipboard-text="http://ltsi.univ-rennes.fr/ImplementationGuide/ltsi.fhir.oncofair" title="Click to copy URL" class="btn-copy"></button></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://ltsi.univ-rennes.fr/ImplementationGuide/ltsi.fhir.oncofair<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://ltsi.univ-rennes.fr/ImplementationGuide/ltsi.fhir.oncofair"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.0<button data-clipboard-text="http://ltsi.univ-rennes.fr/ImplementationGuide/ltsi.fhir.oncofair|0.1.0" title="Click to copy versioned URL" class="btn-copy"></button></span>
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://ltsi.univ-rennes.fr/ImplementationGuide/ltsi.fhir.oncofair|0.1.0"/></span>
       </td>
     </tr>
 
@@ -145,7 +165,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2024-06-11
+            as of 2024-09-12
           
         
       </td>
@@ -168,20 +188,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
-    <p>  <!-- white space is critical inside of capture --></p>
+    <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
   <li><a href="#target-audience" id="markdown-toc-target-audience">Target audience</a></li>
-  <li><a href="#uml-diagram" id="markdown-toc-uml-diagram">UML diagram</a></li>
   <li><a href="#profiled-fhir-resources" id="markdown-toc-profiled-fhir-resources">Profiled FHIR resources</a></li>
+  <li><a href="#dependencies" id="markdown-toc-dependencies">Dependencies</a></li>
   <li><a href="#fhir-interaction" id="markdown-toc-fhir-interaction">FHIR interaction</a></li>
 </ul>
 
 </div>
 <h3 id="introduction">Introduction</h3>
 
-<p>The Onco-FAIR project is designed to improve the interoperability and reuse of healthcare data in oncology, focusing on chemotherapy. This guide details the use of FHIR standards to optimize prescribing and medication administration for oncology patients.</p>
+<p>The OncoFAIR project is designed to improve the interoperability and reuse of healthcare data in oncology, focusing on chemotherapy. This guide details the use of FHIR standards to optimize prescribing and medication administration for oncology patients.</p>
 
 <h4 id="objectives">Objectives</h4>
 
@@ -199,235 +219,123 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>This guide is intended for developers, healthcare professionals and researchers involved in managing and modeling healthcare data in oncology. It is assumed that the reader is familiar with the FHIR standard.</p>
 
-<h3 id="uml-diagram">UML diagram</h3>
+<!--### UML diagram
 
-<p>This UML diagram provides an overview of the data structures, and is essential for understanding the relationships between the various FHIR resources used in the project.</p>
+This UML diagram provides an overview of the data structures, and is essential for understanding the relationships between the various FHIR resources used in the project.
 
 <div align="center;"> 
 <img src="uml_oncofair_english.svg" alt="UML class diagram representing the FHIR R5 medication prescription and administration use case" width="100%"/>
 
-</div>
+</div>-->
 
 <h3 id="profiled-fhir-resources">Profiled FHIR resources</h3>
 
-<p>Each FHIR resource has been tailored to meet the specific requirements of the Onco-FAIR project, with constraints on cardinalities and extensions to capture critical oncology data:</p>
+<p>The following is a list of generic profiles :</p>
 
-<h4 id="profiles">Profiles</h4>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tableau HL7</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
 
-<table style="width: 100%; margin-left: auto; margin-right: auto; border-collapse: collapse; border: none;">
+<table>
+    <thead>
+        <tr>
+            <th>Resource</th>
+            <th>Profile</th>
+            <th>Description</th>
+        </tr>
+    </thead>
     <tbody>
         <tr>
-            <td style="width:102.8pt;border:solid gray 1.0pt;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin:0cm;line-height:115%;font-size:12px;font-family:&quot;Arial&quot;,sans-serif;color:red;font-style:italic;"><strong><span style="color: rgb(0, 0, 0);">Resource name</span></strong></p>
-            </td>
-            <td style="width:216.2pt;border:solid gray 1.0pt;border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin:0cm;line-height:115%;font-size:12px;font-family:&quot;Arial&quot;,sans-serif;color:red;font-style:italic;"><strong><span style="color: rgb(0, 0, 0);">Changes made</span></strong></p>
-            </td>
-            <td style="width:240.95pt;border:solid gray 1.0pt;border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin:0cm;line-height:115%;font-size:12px;font-family:&quot;Arial&quot;,sans-serif;color:red;font-style:italic;"><strong><span style="color: rgb(0, 0, 0);">Profile</span></strong></p>
-            </td>
+            <td><a href="https://hl7.org/fhir/R5/careplan.html">CarePlan</a></td>
+            <td><a href="StructureDefinition-oncofair-careplan.html">OncoFAIRCarePlan</a></td>
+            <td>This object describes the chaining of prescription elements attached to the prescribed protocol. Its structure enables the chaining of nested sub-protocols.</td>
         </tr>
         <tr>
-            <td style="width:102.8pt;border:solid gray 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:&quot;Arial&quot;,sans-serif;"><span style="font-size:13px;line-height:115%;color:black;">Patient</span></p>
-            </td>
-            <td style="width:216.2pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <div style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">
-                    <ul>
-                        <li>Constraint on some cardinalities</li>
-                    </ul>
-                </div>
-            </td>
-            <td style="width:240.95pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:12px;font-family:&quot;Arial&quot;,sans-serif;"><span style="font-size:13px;line-height:115%;color:black;">Create profile OncologyPatient</span></p>
-            </td>
-        </tr>
-                <tr>
-            <td style="width:102.8pt;border:solid gray 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:&quot;Arial&quot;,sans-serif;"><span style="font-size:13px;line-height:115%;color:black;">Observation</span></p>
-            </td>
-            <td style="width:216.2pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <div style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">
-                    <ul>
-                        <li>Constraint on some cardinalities</li>
-                    </ul>
-                </div>
-            </td>
-            <td style="width:240.95pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:12px;font-family:&quot;Arial&quot;,sans-serif;"><span style="font-size:13px;line-height:115%;color:black;">Create profile AdditionalInformation</span></p>
-            </td>
-        </tr>
-                <tr>
-            <td style="width:102.8pt;border:solid gray 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:&quot;Arial&quot;,sans-serif;"><span style="font-size:13px;line-height:115%;color:black;">Practitioner</span></p>
-            </td>
-            <td style="width:216.2pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <div style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">
-                    <ul>
-                        <li>Constraint on some cardinalities</li>
-                    </ul>
-                </div>
-            </td>
-            <td style="width:240.95pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:12px;font-family:&quot;Arial&quot;,sans-serif;"><span style="font-size:13px;line-height:115%;color:black;">Create profile OncologyPractitioner</span></p>
-            </td>
+            <td><a href="https://hl7.org/fhir/R5/encounter.html">Encounter</a></td>
+            <td><a href="StructureDefinition-oncofair-encounter.html">OncoFAIREncounter</a></td>
+            <td>Must be taken in the generic sense, i.e. it goes beyond hospital admissions, outpatient consultations, dialysis sessions, day hospitals, etc.</td>
         </tr>
         <tr>
-            <td style="width:102.8pt;border:solid gray 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:&quot;Arial&quot;,sans-serif;"><span style="font-size:13px;line-height:115%;color:black;">Encounter</span></p>
-            </td>
-            <td style="width:216.2pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <div style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">
-                    <ul>
-                        <li>Constraint on some cardinalities</li>
-                        <li>Constraint reference on subject</li>
-                        <li>Constraint on location</li>
-                    </ul>
-                </div>
-            </td>
-            <td style="width:240.95pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:12px;font-family:&quot;Arial&quot;,sans-serif;"><span style="font-size:13px;line-height:115%;color:black;">Create profile Stay</span></p>
-            </td>
+            <td><a href="https://hl7.org/fhir/R5/medication.html">Medication</a></td>
+            <td><a href="StructureDefinition-oncofair-medication.html">OncoFAIRMedication</a></td>
+            <td>TO DO</td>
         </tr>
         <tr>
-            <td style="width:102.8pt;border:solid gray 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:&quot;Arial&quot;,sans-serif;"><span style="font-size:13px;line-height:115%;color:black;">Location</span></p>
-            </td>
-            <td style="width:216.2pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <div style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">
-                    <ul>
-                        <li>Constraint on some cardinalities</li>
-                        <li>Constraint on managingOrganization</li>
-                    </ul>
-                </div>
-            </td>
-            <td style="width:240.95pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:12px;font-family:&quot;Arial&quot;,sans-serif;"><span style="font-size:13px;line-height:115%;color:black;">Create profile AccomodationUnit</span></p>
-            </td>
+            <td><a href="https://hl7.org/fhir/R5/medicationadministration.html">MedicationAdministration</a></td>
+            <td><a href="StructureDefinition-oncofair-medicationadministration-component.html">OncoFAIRMedicationAdministrationComponent</a></td>
+            <td>This object corresponds to a product that belongs to the nomenclature of medicines used in the hospital.</td>
         </tr>
         <tr>
-            <td style="width:102.8pt;border:solid gray 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:&quot;Arial&quot;,sans-serif;"><span style="font-size:13px;line-height:115%;color:black;">Organization</span></p>
-            </td>
-            <td style="width:216.2pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <div style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">
-                    <ul>
-                        <li>Constraint on some cardinalities</li>
-                    </ul>
-                </div>
-            </td>
-            <td style="width:240.95pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:12px;font-family:&quot;Arial&quot;,sans-serif;"><span style="font-size:13px;line-height:115%;color:black;">Create profile MedicalLiabilityUnit</span></p>
-            </td>
+            <td><a href="https://hl7.org/fhir/R5/medicationadministration.html">MedicationAdministration</a></td>
+            <td><a href="StructureDefinition-oncofair-medicationadministration-element.html">OncoFAIRMedicationAdministrationElement</a></td>
+            <td>Corresponds to the activity induced by a prescription item and its dosage (structured or unstructured), and carried out at a given moment.</td>
         </tr>
         <tr>
-            <td style="width:102.8pt;border:solid gray 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:&quot;Arial&quot;,sans-serif;"><span style="font-size:13px;line-height:115%;color:black;">Medication</span></p>
-            </td>
-            <td style="width:216.2pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <div style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">
-                    <ul>
-                        <li>Constraint on some cardinalities</li>
-                    </ul>
-                </div>
-            </td>
-            <td style="width:240.95pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:12px;font-family:&quot;Arial&quot;,sans-serif;"><span style="font-size:13px;line-height:115%;color:black;">Create profile OncologyMedication</span></p>
-            </td>
+            <td><a href="https://hl7.org/fhir/R5/medicationadministration.html">MedicationAdministration</a></td>
+            <td><a href="StructureDefinition-oncofair-medicationadministration-report.html">OncoFAIRMedicationAdministrationReport</a></td>
+            <td>Regroups all the prescription elements received on which the pharmacist expresses his validation. It also includes items suggested or resulting from a replacement proposed by the pharmacist.</td>
         </tr>
         <tr>
-            <td style="width:102.8pt;border:solid gray 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:&quot;Arial&quot;,sans-serif;"><span style="font-size:13px;line-height:115%;color:black;">DeviceDefinition</span></p>
-            </td>
-            <td style="width:216.2pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <div style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">
-                    <ul>
-                        <li>Constraint on some cardinalities</li>
-                    </ul>
-                </div>
-            </td>
-            <td style="width:240.95pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:12px;font-family:&quot;Arial&quot;,sans-serif;"><span style="font-size:13px;line-height:115%;color:black;">Create profile AssociatedDevice</span></p>
-            </td>
+            <td><a href="https://hl7.org/fhir/R5/medicationrequest.html">MedicationRequest</a></td>
+            <td><a href="StructureDefinition-oncofair-medicationrequest-component.html">OncoFAIRMedicationRequestComponent</a></td>
+            <td>Is a product that belongs to the nomenclature of medicines used. It may, for example, be a speciality, a product defined by its common name or a pharmacopoeial product.</td>
         </tr>
         <tr>
-            <td style="width:102.8pt;border:solid gray 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:&quot;Arial&quot;,sans-serif;"><span style="font-size:13px;line-height:115%;color:black;">PlanDefinition</span></p>
-            </td>
-            <td style="width:216.2pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <div style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">
-                    <ul>
-                        <li>Constraint on some cardinalities</li>
-                        <li>Add extension TreatmentCycleNumber</li>
-                        <li>Add extension TreatmentDayNumber</li>
-                    </ul>
-                </div>
-            </td>
-            <td style="width:240.95pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:12px;font-family:&quot;Arial&quot;,sans-serif;"><span style="font-size:13px;line-height:115%;color:black;">Create profile Protocol</span></p>
-            </td>
+            <td><a href="https://hl7.org/fhir/R5/medicationrequest.html">MedicationRequest</a></td>
+            <td><a href="StructureDefinition-oncofair-medicationrequest-element.html">OncoFAIRMedicationRequestElement</a></td>
+            <td>Corresponds to a prescription line on a prescription. Each item contains one or more components (in the case of a magistral preparation or an infusion).</td>
         </tr>
         <tr>
-            <td style="width:102.8pt;border:solid gray 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:&quot;Arial&quot;,sans-serif;"><span style="font-size:13px;line-height:115%;color:black;">Careplan</span></p>
-            </td>
-            <td style="width:216.2pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <div style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">
-                    <ul>
-                        <li>Constraint on some cardinalities</li>
-                        <li>Constraint on subject</li>
-                        <li>Constraint on encounter</li>
-                        <li>Constraint on activity.plannedActivityReference</li>
-                    </ul>
-                </div>
-            </td>
-            <td style="width:240.95pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:12px;font-family:&quot;Arial&quot;,sans-serif;"><span style="font-size:13px;line-height:115%;color:black;">Create profile Prescription</span></p>
-            </td>
+            <td><a href="https://hl7.org/fhir/R5/medicationrequest.html">MedicationRequest</a></td>
+            <td><a href="StructureDefinition-oncofair-medicationrequest-prescription.html">OncoFAIRMedicationRequestPrescription</a></td>
+            <td>Groups together all the prescription elements validated simultaneously by the same prescriber.</td>
         </tr>
         <tr>
-            <td style="width:102.8pt;border:solid gray 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:&quot;Arial&quot;,sans-serif;"><span style="font-size:13px;line-height:115%;color:black;">MedicationRequest</span></p>
-            </td>
-            <td style="width:216.2pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <div style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">
-                    <ul>
-                        <li>Constraint on some cardinalities</li>
-                        <li>Constraint on basedOn</li>
-                        <li>Constraint on requester</li>
-                        <li>Constraint on medication</li>
-                    </ul>
-                </div>
-            </td>
-            <td style="width:240.95pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:12px;font-family:&quot;Arial&quot;,sans-serif;"><span style="font-size:13px;line-height:115%;color:black;">Create profile PrescriptionItem</span></p>
-            </td>
+            <td><a href="https://hl7.org/fhir/R5/observation.html">Observation</a></td>
+            <td><a href="StructureDefinition-oncofair-observation.html">OncoFAIRObservation</a></td>
+            <td>Allows you to enter information about the patient in addition to that described in the prescription elements.</td>
         </tr>
         <tr>
-            <td style="width:102.8pt;border:solid gray 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:&quot;Arial&quot;,sans-serif;"><span style="font-size:13px;line-height:115%;color:black;">MedicationAdministration</span></p>
-            </td>
-            <td style="width:216.2pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <div style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">
-                    <ul>
-                        <li>Constraint on some cardinalities</li>
-                        <li>Constraint on encounter</li>
-                        <li>Constraint on basedOn</li>
-                        <li>Constraint on request</li>
-                        <li>Constraint on medication</li>
-                    </ul>
-                </div>
-            </td>
-            <td style="width:240.95pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:12px;font-family:&quot;Arial&quot;,sans-serif;"><span style="font-size:13px;line-height:115%;color:black;">Create profile AdministrationReport</span></p>
-            </td>
+            <td><a href="https://hl7.org/fhir/R5/patient.html">Patient</a></td>
+            <td><a href="StructureDefinition-oncofair-patient.html">OncoFAIRPatient</a></td>
+            <td>Contains the patient’s identity details needed to ensure that the prescription is properly taken into account.</td>
         </tr>
     </tbody>
 </table>
 
-<h4 id="extensions">Extensions</h4>
+</body>
+</html>
 
-<p>FHIR extensions such as <code class="language-plaintext highlighter-rouge">TreatmentCycleNumber</code> and <code class="language-plaintext highlighter-rouge">TreatmentDayNumber</code> are used for oncology treatment-specific information.</p>
+<div><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="569.188px" preserveAspectRatio="none" style="width:700px;height:569px;background:#FFFFFF;" version="1.1" viewBox="0 0 700 569" width="700.7786px" zoomAndPan="magnify"><defs /><g><!--entity ProtocolePrescrit--><g id="elem_ProtocolePrescrit"><rect fill="#FFD700" height="40.9518" rx="1.9466" ry="1.9466" style="stroke:#181818;stroke-width:0.389321468298109;" width="118.3537" x="522.4694" y="422.8031" /><text fill="#000000" font-family="sans-serif" font-size="10.901" lengthAdjust="spacing" textLength="91.8799" x="530.2558" y="440.7081">ProtocolePrescrit</text><text fill="#000000" font-family="sans-serif" font-size="10.901" lengthAdjust="spacing" textLength="3.1146" x="530.2558" y="453.3975">&#160;</text><a href="StructureDefinition-oncofair-careplan.html" target="_top" title="StructureDefinition-oncofair-careplan.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-oncofair-careplan.html" xlink:show="new" xlink:title="StructureDefinition-oncofair-careplan.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="10.901" lengthAdjust="spacing" text-decoration="underline" textLength="99.6663" x="533.3704" y="453.3975">OncoFAIRCarePlan</text></a></g><!--entity Sejour--><g id="elem_Sejour"><rect fill="#708090" height="40.9518" rx="1.9466" ry="1.9466" style="stroke:#181818;stroke-width:0.389321468298109;" width="126.9188" x="129.644" y="422.8031" /><text fill="#000000" font-family="sans-serif" font-size="10.901" lengthAdjust="spacing" textLength="34.2603" x="137.4305" y="440.7081">Sejour</text><text fill="#000000" font-family="sans-serif" font-size="10.901" lengthAdjust="spacing" textLength="3.1146" x="137.4305" y="453.3975">&#160;</text><a href="StructureDefinition-oncofair-encounter.html" target="_top" title="StructureDefinition-oncofair-encounter.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-oncofair-encounter.html" xlink:show="new" xlink:title="StructureDefinition-oncofair-encounter.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="10.901" lengthAdjust="spacing" text-decoration="underline" textLength="108.2314" x="140.5451" y="453.3975">OncoFAIREncounter</text></a></g><!--entity Composant--><g id="elem_Composant"><rect fill="#32CD32" height="40.9518" rx="1.9466" ry="1.9466" style="stroke:#181818;stroke-width:0.389321468298109;" width="129.2547" x="216.4627" y="5.4505" /><text fill="#000000" font-family="sans-serif" font-size="10.901" lengthAdjust="spacing" textLength="62.2914" x="224.2492" y="23.3555">Composant</text><text fill="#000000" font-family="sans-serif" font-size="10.901" lengthAdjust="spacing" textLength="3.1146" x="224.2492" y="36.0449">&#160;</text><a href="StructureDefinition-oncofair-medication.html" target="_top" title="StructureDefinition-oncofair-medication.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-oncofair-medication.html" xlink:show="new" xlink:title="StructureDefinition-oncofair-medication.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="10.901" lengthAdjust="spacing" text-decoration="underline" textLength="110.5673" x="227.3637" y="36.0449">OncoFAIRMedication</text></a></g><!--entity ComposantAdministre--><g id="elem_ComposantAdministre"><rect fill="#20B2AA" height="40.9518" rx="1.9466" ry="1.9466" style="stroke:#181818;stroke-width:0.389321468298109;" width="269.4105" x="5.4505" y="106.6741" /><text fill="#000000" font-family="sans-serif" font-size="10.901" lengthAdjust="spacing" textLength="119.1324" x="13.2369" y="124.5791">ComposantAdministre</text><text fill="#000000" font-family="sans-serif" font-size="10.901" lengthAdjust="spacing" textLength="3.1146" x="13.2369" y="137.2685">&#160;</text><a href="StructureDefinition-oncofair-medicationadministration-component.html" target="_top" title="StructureDefinition-oncofair-medicationadministration-component.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-oncofair-medicationadministration-component.html" xlink:show="new" xlink:title="StructureDefinition-oncofair-medicationadministration-component.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="10.901" lengthAdjust="spacing" text-decoration="underline" textLength="250.723" x="16.3515" y="137.2685">OncoFAIRMedicationAdministrationComponent</text></a></g><!--entity ElementAdministration--><g id="elem_ElementAdministration"><rect fill="#20B2AA" height="40.9518" rx="1.9466" ry="1.9466" style="stroke:#181818;stroke-width:0.389321468298109;" width="249.9444" x="15.1835" y="214.1268" /><text fill="#000000" font-family="sans-serif" font-size="10.901" lengthAdjust="spacing" textLength="120.6897" x="22.97" y="232.0318">ElementAdministration</text><text fill="#000000" font-family="sans-serif" font-size="10.901" lengthAdjust="spacing" textLength="3.1146" x="22.97" y="244.7212">&#160;</text><a href="StructureDefinition-oncofair-medicationadministration-element.html" target="_top" title="StructureDefinition-oncofair-medicationadministration-element.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-oncofair-medicationadministration-element.html" xlink:show="new" xlink:title="StructureDefinition-oncofair-medicationadministration-element.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="10.901" lengthAdjust="spacing" text-decoration="underline" textLength="231.257" x="26.0845" y="244.7212">OncoFAIRMedicationAdministrationElement</text></a></g><!--entity CompteRenduAdministration--><g id="elem_CompteRenduAdministration"><rect fill="#20B2AA" height="40.9518" rx="1.9466" ry="1.9466" style="stroke:#181818;stroke-width:0.389321468298109;" width="242.158" x="19.0768" y="321.5795" /><text fill="#000000" font-family="sans-serif" font-size="10.901" lengthAdjust="spacing" textLength="154.9499" x="26.8632" y="339.4845">CompteRenduAdministration</text><text fill="#000000" font-family="sans-serif" font-size="10.901" lengthAdjust="spacing" textLength="3.1146" x="26.8632" y="352.174">&#160;</text><a href="StructureDefinition-oncofair-medicationadministration-report.html" target="_top" title="StructureDefinition-oncofair-medicationadministration-report.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-oncofair-medicationadministration-report.html" xlink:show="new" xlink:title="StructureDefinition-oncofair-medicationadministration-report.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="10.901" lengthAdjust="spacing" text-decoration="underline" textLength="223.4705" x="29.9778" y="352.174">OncoFAIRMedicationAdministrationReport</text></a></g><!--entity ComposantPrescrit--><g id="elem_ComposantPrescrit"><rect fill="#87CEFA" height="40.9518" rx="1.9466" ry="1.9466" style="stroke:#181818;stroke-width:0.389321468298109;" width="239.0434" x="302.5028" y="106.6741" /><text fill="#000000" font-family="sans-serif" font-size="10.901" lengthAdjust="spacing" textLength="102.7809" x="310.2892" y="124.5791">ComposantPrescrit</text><text fill="#000000" font-family="sans-serif" font-size="10.901" lengthAdjust="spacing" textLength="3.1146" x="310.2892" y="137.2685">&#160;</text><a href="StructureDefinition-oncofair-medicationrequest-component.html" target="_top" title="StructureDefinition-oncofair-medicationrequest-component.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-oncofair-medicationrequest-component.html" xlink:show="new" xlink:title="StructureDefinition-oncofair-medicationrequest-component.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="10.901" lengthAdjust="spacing" text-decoration="underline" textLength="220.356" x="313.4038" y="137.2685">OncoFAIRMedicationRequestComponent</text></a></g><!--entity ElementPrescription--><g id="elem_ElementPrescription"><rect fill="#87CEFA" height="53.6412" rx="1.9466" ry="1.9466" style="stroke:#181818;stroke-width:0.389321468298109;" width="219.5773" x="312.2358" y="207.8977" /><text fill="#000000" font-family="sans-serif" font-size="10.901" lengthAdjust="spacing" textLength="108.2314" x="320.0222" y="225.8026">ElementPrescription</text><text fill="#000000" font-family="sans-serif" font-size="10.901" lengthAdjust="spacing" textLength="97.3304" x="320.0222" y="238.4921">ElementPosologie</text><text fill="#000000" font-family="sans-serif" font-size="10.901" lengthAdjust="spacing" textLength="3.1146" x="320.0222" y="251.1815">&#160;</text><a href="StructureDefinition-oncofair-medicationrequest-element.html" target="_top" title="StructureDefinition-oncofair-medicationrequest-element.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-oncofair-medicationrequest-element.html" xlink:show="new" xlink:title="StructureDefinition-oncofair-medicationrequest-element.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="10.901" lengthAdjust="spacing" text-decoration="underline" textLength="200.8899" x="323.1368" y="251.1815">OncoFAIRMedicationRequestElement</text></a></g><!--entity Prescription--><g id="elem_Prescription"><rect fill="#87CEFA" height="40.9518" rx="1.9466" ry="1.9466" style="stroke:#181818;stroke-width:0.389321468298109;" width="239.0434" x="288.4872" y="321.5795" /><text fill="#000000" font-family="sans-serif" font-size="10.901" lengthAdjust="spacing" textLength="63.8487" x="296.2736" y="339.4845">Prescription</text><text fill="#000000" font-family="sans-serif" font-size="10.901" lengthAdjust="spacing" textLength="3.1146" x="296.2736" y="352.174">&#160;</text><a href="StructureDefinition-oncofair-medicationrequest-prescription.html" target="_top" title="StructureDefinition-oncofair-medicationrequest-prescription.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-oncofair-medicationrequest-prescription.html" xlink:show="new" xlink:title="StructureDefinition-oncofair-medicationrequest-prescription.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="10.901" lengthAdjust="spacing" text-decoration="underline" textLength="220.356" x="299.3882" y="352.174">OncoFAIRMedicationRequestPrescription</text></a></g><!--entity RenseignementComplementaire--><g id="elem_RenseignementComplementaire"><rect fill="#FFA500" height="40.9518" rx="1.9466" ry="1.9466" style="stroke:#181818;stroke-width:0.389321468298109;" width="193.8821" x="300.9455" y="422.8031" /><text fill="#000000" font-family="sans-serif" font-size="10.901" lengthAdjust="spacing" textLength="175.1947" x="308.7319" y="440.7081">RenseignementComplementaire</text><text fill="#000000" font-family="sans-serif" font-size="10.901" lengthAdjust="spacing" textLength="3.1146" x="308.7319" y="453.3975">&#160;</text><a href="StructureDefinition-oncofair-observation.html" target="_top" title="StructureDefinition-oncofair-observation.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-oncofair-observation.html" xlink:show="new" xlink:title="StructureDefinition-oncofair-observation.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="10.901" lengthAdjust="spacing" text-decoration="underline" textLength="116.7964" x="311.8465" y="453.3975">OncoFAIRObservation</text></a></g><!--entity Patient--><g id="elem_Patient"><rect fill="#A9A9A9" height="40.9518" rx="1.9466" ry="1.9466" style="stroke:#181818;stroke-width:0.389321468298109;" width="108.2314" x="138.9878" y="524.0267" /><text fill="#000000" font-family="sans-serif" font-size="10.901" lengthAdjust="spacing" textLength="37.3749" x="146.7742" y="541.9317">Patient</text><text fill="#000000" font-family="sans-serif" font-size="10.901" lengthAdjust="spacing" textLength="3.1146" x="146.7742" y="554.6211">&#160;</text><a href="StructureDefinition-oncofair-patient.html" target="_top" title="StructureDefinition-oncofair-patient.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-oncofair-patient.html" xlink:show="new" xlink:title="StructureDefinition-oncofair-patient.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="10.901" lengthAdjust="spacing" text-decoration="underline" textLength="89.5439" x="149.8888" y="554.6211">OncoFAIRPatient</text></a></g><!--link ProtocolePrescrit to ProtocolePrescrit--><g id="link_ProtocolePrescrit_ProtocolePrescrit"><path d="M640.8231,434.1791 C656.3493,434.7319 668.0756,437.8154 668.0756,443.4372 C668.0756,448.5762 658.2725,451.5973 644.7397,452.4928 " fill="none" id="ProtocolePrescrit-to-ProtocolePrescrit" style="stroke:#181818;stroke-width:0.778642936596218;" /><polygon fill="#181818" points="640.8231,452.6952,647.982,455.4447,644.7112,452.4947,647.6612,449.2238,640.8231,452.6952" style="stroke:#181818;stroke-width:0.778642936596218;" /><text fill="#000000" font-family="sans-serif" font-size="10.1224" lengthAdjust="spacing" textLength="17.9088" x="672.7475" y="446.9931">0..*</text><text fill="#000000" font-family="sans-serif" font-size="10.1224" lengthAdjust="spacing" textLength="44.3826" x="647.0529" y="430.7554">basedOn</text></g><!--link Sejour to Patient--><g id="link_Sejour_Patient"><path d="M193.1034,464.1491 C193.1034,480.2358 193.1034,502.9333 193.1034,520.0011 " fill="none" id="Sejour-to-Patient" style="stroke:#181818;stroke-width:0.778642936596218;" /><polygon fill="#181818" points="193.1034,523.9878,196.218,516.98,193.1034,520.0945,189.9889,516.98,193.1034,523.9878" style="stroke:#181818;stroke-width:0.778642936596218;" /><text fill="#000000" font-family="sans-serif" font-size="10.1224" lengthAdjust="spacing" textLength="18.6874" x="193.8821" y="497.6049">1..1</text><text fill="#000000" font-family="sans-serif" font-size="10.1224" lengthAdjust="spacing" textLength="35.8176" x="153.3683" y="479.399">subject</text></g><!--link ComposantAdministre to ElementAdministration--><g id="link_ComposantAdministre_ElementAdministration"><path d="M140.1557,148.0044 C140.1557,165.4928 140.1557,190.9933 140.1557,209.673 " fill="none" id="ComposantAdministre-to-ElementAdministration" style="stroke:#181818;stroke-width:0.778642936596218;" /><polygon fill="#181818" points="140.1557,213.792,143.2703,206.7842,140.1557,209.8988,137.0412,206.7842,140.1557,213.792" style="stroke:#181818;stroke-width:0.778642936596218;" /><text fill="#000000" font-family="sans-serif" font-size="10.1224" lengthAdjust="spacing" textLength="18.6874" x="140.9344" y="181.4759">1..1</text><text fill="#000000" font-family="sans-serif" font-size="10.1224" lengthAdjust="spacing" textLength="31.1457" x="105.6034" y="163.2509">partOf</text></g><!--reverse link Composant to ComposantAdministre--><g id="link_Composant_ComposantAdministre"><path d="M249.6796,49.0779 C225.3003,66.317 191.7953,90.0111 168.2881,106.6352 " fill="none" id="Composant-backto-ComposantAdministre" style="stroke:#181818;stroke-width:0.778642936596218;" /><polygon fill="#181818" points="252.911,46.7964,245.3937,48.3128,249.7362,49.0499,248.9992,53.3924,252.911,46.7964" style="stroke:#181818;stroke-width:0.778642936596218;" /><text fill="#000000" font-family="sans-serif" font-size="10.1224" lengthAdjust="spacing" textLength="18.6874" x="220.356" y="80.2523">1..1</text><text fill="#000000" font-family="sans-serif" font-size="10.1224" lengthAdjust="spacing" textLength="55.2836" x="113.124" y="97.94">medication</text></g><!--link ElementAdministration to CompteRenduAdministration--><g id="link_ElementAdministration_CompteRenduAdministration"><path d="M140.1557,255.4572 C140.1557,272.9455 140.1557,298.4461 140.1557,317.1257 " fill="none" id="ElementAdministration-to-CompteRenduAdministration" style="stroke:#181818;stroke-width:0.778642936596218;" /><polygon fill="#181818" points="140.1557,321.2447,143.2703,314.2369,140.1557,317.3515,137.0412,314.2369,140.1557,321.2447" style="stroke:#181818;stroke-width:0.778642936596218;" /><text fill="#000000" font-family="sans-serif" font-size="10.1224" lengthAdjust="spacing" textLength="18.6874" x="140.9344" y="295.1578">1..1</text><text fill="#000000" font-family="sans-serif" font-size="10.1224" lengthAdjust="spacing" textLength="31.1457" x="105.6034" y="270.7037">partOf</text></g><!--link CompteRenduAdministration to Sejour--><g id="link_CompteRenduAdministration_Sejour"><path d="M150.7453,362.9255 C159.3648,379.1524 171.5506,402.0912 180.6452,419.2058 " fill="none" id="CompteRenduAdministration-to-Sejour" style="stroke:#181818;stroke-width:0.778642936596218;" /><polygon fill="#181818" points="182.5373,422.7642,182.0133,415.1134,180.7167,419.3229,176.5072,418.0263,182.5373,422.7642" style="stroke:#181818;stroke-width:0.778642936596218;" /><text fill="#000000" font-family="sans-serif" font-size="10.1224" lengthAdjust="spacing" textLength="18.6874" x="171.3014" y="396.3813">1..1</text><text fill="#000000" font-family="sans-serif" font-size="10.1224" lengthAdjust="spacing" textLength="50.6118" x="96.9143" y="378.1754">encounter</text></g><!--link ComposantPrescrit to ElementPrescription--><g id="link_ComposantPrescrit_ElementPrescription"><path d="M422.0245,148.0044 C422.0245,163.7097 422.0245,185.8776 422.0245,203.7709 " fill="none" id="ComposantPrescrit-to-ElementPrescription" style="stroke:#181818;stroke-width:0.778642936596218;" /><polygon fill="#181818" points="422.0245,207.7497,425.139,200.7419,422.0245,203.8565,418.9099,200.7419,422.0245,207.7497" style="stroke:#181818;stroke-width:0.778642936596218;" /><text fill="#000000" font-family="sans-serif" font-size="10.1224" lengthAdjust="spacing" textLength="18.6874" x="422.8031" y="181.4759">1..1</text><text fill="#000000" font-family="sans-serif" font-size="10.1224" lengthAdjust="spacing" textLength="44.3826" x="372.7875" y="163.2509">basedOn</text></g><!--reverse link Composant to ComposantPrescrit--><g id="link_Composant_ComposantPrescrit"><path d="M312.5006,49.0779 C336.8799,66.317 370.3849,90.0111 393.8921,106.6352 " fill="none" id="Composant-backto-ComposantPrescrit" style="stroke:#181818;stroke-width:0.778642936596218;" /><polygon fill="#181818" points="309.2692,46.7964,313.181,53.3924,312.444,49.0499,316.7865,48.3128,309.2692,46.7964" style="stroke:#181818;stroke-width:0.778642936596218;" /><text fill="#000000" font-family="sans-serif" font-size="10.1224" lengthAdjust="spacing" textLength="18.6874" x="360.5117" y="80.2523">1..1</text><text fill="#000000" font-family="sans-serif" font-size="10.1224" lengthAdjust="spacing" textLength="55.2836" x="325.0135" y="97.94">medication</text></g><!--link ElementPrescription to Prescription--><g id="link_ElementPrescription_Prescription"><path d="M418.5595,261.7175 C416.2937,278.8398 413.3582,301.0311 411.1546,317.6552 " fill="none" id="ElementPrescription-to-Prescription" style="stroke:#181818;stroke-width:0.778642936596218;" /><polygon fill="#181818" points="410.6407,321.5406,414.6492,315.0029,411.1523,317.6812,408.4741,314.1843,410.6407,321.5406" style="stroke:#181818;stroke-width:0.778642936596218;" /><text fill="#000000" font-family="sans-serif" font-size="10.1224" lengthAdjust="spacing" textLength="18.6874" x="415.7953" y="295.1578">1..1</text><text fill="#000000" font-family="sans-serif" font-size="10.1224" lengthAdjust="spacing" textLength="44.3826" x="369.4465" y="277.1775">basedOn</text></g><!--link ElementPrescription to ElementPrescription--><g id="link_ElementPrescription_ElementPrescription"><path d="M531.9689,225.2536 C548.1491,226.7486 559.0656,229.9177 559.0656,234.7608 C559.0656,239.1913 549.9399,242.2202 536.0256,243.8476 " fill="none" id="ElementPrescription-to-ElementPrescription" style="stroke:#181818;stroke-width:0.778642936596218;" /><polygon fill="#181818" points="531.9689,244.2681,539.2592,246.6472,535.8415,243.8686,538.6201,240.4509,531.9689,244.2681" style="stroke:#181818;stroke-width:0.778642936596218;" /><text fill="#000000" font-family="sans-serif" font-size="10.1224" lengthAdjust="spacing" textLength="17.9088" x="563.7375" y="238.3168">0..*</text><text fill="#000000" font-family="sans-serif" font-size="10.1224" lengthAdjust="spacing" textLength="44.3826" x="537.9563" y="222.2786">basedOn</text></g><!--link ElementPrescription to ProtocolePrescrit--><g id="link_ElementPrescription_ProtocolePrescrit"><path d="M471.8109,261.7019 C495.7075,276.465 523.0222,296.9121 541.1568,321.5795 C562.7798,350.9889 573.3382,392.6696 578.119,418.6607 " fill="none" id="ElementPrescription-to-ProtocolePrescrit" style="stroke:#181818;stroke-width:0.778642936596218;" /><polygon fill="#181818" points="578.8354,422.6941,580.6822,415.2511,578.1575,418.8604,574.5482,416.3356,578.8354,422.6941" style="stroke:#181818;stroke-width:0.778642936596218;" /><text fill="#000000" font-family="sans-serif" font-size="10.1224" lengthAdjust="spacing" textLength="18.6874" x="562.9588" y="345.7696">0..1</text><text fill="#000000" font-family="sans-serif" font-size="10.1224" lengthAdjust="spacing" textLength="44.3826" x="432.5161" y="277.1591">basedOn</text></g><!--link Prescription to ProtocolePrescrit--><g id="link_Prescription_ProtocolePrescrit"><path d="M442.7286,362.9255 C471.8343,379.6274 513.3281,403.4461 543.376,420.693 " fill="none" id="Prescription-to-ProtocolePrescrit" style="stroke:#181818;stroke-width:0.778642936596218;" /><polygon fill="#181818" points="546.9889,422.7642,542.4541,416.5799,543.61,420.8302,539.3597,421.9861,546.9889,422.7642" style="stroke:#181818;stroke-width:0.778642936596218;" /><text fill="#000000" font-family="sans-serif" font-size="10.1224" lengthAdjust="spacing" textLength="17.9088" x="505.3393" y="396.3813">0..*</text><text fill="#000000" font-family="sans-serif" font-size="10.1224" lengthAdjust="spacing" textLength="44.3826" x="401.0865" y="378.1754">basedOn</text></g><!--link Prescription to Sejour--><g id="link_Prescription_Sejour"><path d="M365.0356,362.9255 C328.7275,379.7597 276.8231,403.8276 239.5651,421.1135 " fill="none" id="Prescription-to-Sejour" style="stroke:#181818;stroke-width:0.778642936596218;" /><polygon fill="#181818" points="235.9989,422.7642,243.6663,422.6217,239.5266,421.1172,241.0311,416.9774,235.9989,422.7642" style="stroke:#181818;stroke-width:0.778642936596218;" /><text fill="#000000" font-family="sans-serif" font-size="10.1224" lengthAdjust="spacing" textLength="18.6874" x="314.5717" y="396.3813">1..1</text><text fill="#000000" font-family="sans-serif" font-size="10.1224" lengthAdjust="spacing" textLength="50.6118" x="299.4877" y="378.1754">encounter</text></g><!--link Prescription to RenseignementComplementaire--><g id="link_Prescription_RenseignementComplementaire"><path d="M405.9844,362.9255 C404.3493,379.0122 402.0445,401.7097 400.3159,418.7775 " fill="none" id="Prescription-to-RenseignementComplementaire" style="stroke:#181818;stroke-width:0.778642936596218;" /><polygon fill="#181818" points="399.9032,422.7642,403.7034,416.1032,400.2928,418.8905,397.5056,415.4799,399.9032,422.7642" style="stroke:#181818;stroke-width:0.778642936596218;" /><text fill="#000000" font-family="sans-serif" font-size="10.1224" lengthAdjust="spacing" textLength="17.9088" x="404.1157" y="396.3813">0..*</text><text fill="#000000" font-family="sans-serif" font-size="10.1224" lengthAdjust="spacing" textLength="34.2603" x="367.5341" y="378.1754">reason</text></g></g></svg></div>
+
+<h3 id="dependencies">Dependencies</h3>
+
+<div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Implementation Guide Reference">IG</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Explains why this dependency exists">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/temp/pagesdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy" /> <span title="Canonical: http://ltsi.univ-rennes.fr">OncoFAIR</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/packages/ltsi.fhir.oncofair/0.1.0">ltsi.fhir.oncofair#0.1.0</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5">R5</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/temp/pagesdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy" /> <a href="http://terminology.hl7.org/6.0.2" title="Canonical: http://terminology.hl7.org">HL7 Terminology (THO)</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/packages/hl7.terminology.r5/6.0.2">hl7.terminology.r5#6.0.2</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5">R5</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Automatically added as a dependency - all IGs depend on HL7 Terminology</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/temp/pagesdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy" /> <a href="http://hl7.org/fhir/extensions/5.1.0" title="Canonical: http://hl7.org/fhir/extensions">FHIR Extensions Pack</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/packages/hl7.fhir.uv.extensions.r5/5.1.0">hl7.fhir.uv.extensions.r5#5.1.0</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5">R5</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Automatically added as a dependency - all IGs depend on the HL7 Extension Pack</td></tr>
+</table></div>
+<table class="grid"><tr><td><p><b>Package hl7.fhir.uv.extensions.r5#5.1.0</b></p>
+<p>This IG defines the global extensions - the ones defined for everyone. These extensions are always in scope wherever FHIR is being used (built Sat, Apr 27, 2024 18:39+1000+10:00)</p>
+</td></tr></table>
+<!--$$3$$-->
 
 <h3 id="fhir-interaction">FHIR interaction</h3>
 
@@ -440,32 +348,84 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><em>Update</em> to update an existing resource. Use the <code class="language-plaintext highlighter-rouge">HTTP PUT</code> method.</li>
 </ul>
 
-<p>Finally, the body of HTTP requests is a FHIR resource that can be formatted in XML, JSON or RDF.</p>
+<!--Finally, the body of HTTP requests is a FHIR resource that can be formatted in XML, JSON or RDF.
+<table class="grid"><tr><td style="background-color: #eeeeee">Titre du profil</td><td style="background-color: #eeeeee">Title</td></tr><tr><td><div><p><a href="StructureDefinition-clinical-trial.html">ClinicalTrial</a></p>
+</div></td><td>Oncology Clinical Trial</td></tr><tr><td><div><p><a href="StructureDefinition-date-time-end.html">DateTimeEnd</a></p>
+</div></td><td>End date and time</td></tr><tr><td><div><p><a href="StructureDefinition-date-time-start.html">DateTimeStart</a></p>
+</div></td><td>Start date and time</td></tr><tr><td><div><p><a href="StructureDefinition-date-time.html">DateTime</a></p>
+</div></td><td>Date and time</td></tr><tr><td><div><p><a href="StructureDefinition-dueTo-tumor-pathology-event.html">DueToTumorPathologyEvent</a></p>
+</div></td><td>Tumor Pathology Event Parent</td></tr><tr><td><div><p><a href="StructureDefinition-eventTimeMax.html">EventTimeMax</a></p>
+</div></td><td>Event Time Max</td></tr><tr><td><div><p><a href="StructureDefinition-eventTimeMin.html">EventTimeMin</a></p>
+</div></td><td>Event Time Min</td></tr><tr><td><div><p><a href="StructureDefinition-eventTypeData.html">EventTypeData</a></p>
+</div></td><td>Event Type Data</td></tr><tr><td><div><p><a href="StructureDefinition-histologygrade.html">Histology_Grade</a></p>
+</div></td><td>Histology</td></tr><tr><td><div><p><a href="StructureDefinition-laterality.html">Laterality</a></p>
+</div></td><td>Laterality</td></tr><tr><td><div><p><a href="StructureDefinition-medication-administered-planned-quantity.html">MedicationPlannedQuantity</a></p>
+</div></td><td>Planned quantity of medication</td></tr><tr><td><div><p><a href="StructureDefinition-medication-administered-quantity.html">MedicationAdministeredQuantity</a></p>
+</div></td><td>Administered quantity of medication</td></tr><tr><td><div><p><a href="StructureDefinition-medication-comment.html">MedicationComment</a></p>
+</div></td><td>Medication comment</td></tr><tr><td><div><p><a href="StructureDefinition-medication-is-vehicle.html">MedicationIsVehicle</a></p>
+</div></td><td>Medication Is Vehicle</td></tr><tr><td><div><p><a href="StructureDefinition-medication-item-provenance.html">MedicationItemProvenance</a></p>
+</div></td><td>Medication item provenance</td></tr><tr><td><div><p><a href="StructureDefinition-medication-lti-exemption.html">MedicationLTIExemption</a></p>
+</div></td><td>Medication LTI exemption</td></tr><tr><td><div><p><a href="StructureDefinition-medication-status.html">MedicationStatus</a></p>
+</div></td><td>Medication status</td></tr><tr><td><div><p><a href="StructureDefinition-medication-type.html">MedicationType</a></p>
+</div></td><td>Medication type</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-careplan.html">OncoFAIRCarePlan</a></p>
+</div></td><td>OncoFAIR CarePlan</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-cp-treatment.html">OncoFAIRCPTreatment</a></p>
+</div></td><td>OncoFAIRCPTreatment</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-element-form.html">OncoFAIRElementForm</a></p>
+</div></td><td>OncoFAIRElementForm</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-encounter.html">OncoFAIREncounter</a></p>
+</div></td><td>OncoFAIR Encounter</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-ma-component-administration-status.html">OncoFAIRMAComponentAdministrationStatus</a></p>
+</div></td><td>OncoFAIRMAComponentAdministrationStatus</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-ma-component-origin.html">OncoFAIRMAComponentOrigin</a></p>
+</div></td><td>OncoFAIRMAComponentOrigin</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-ma-element-expirationdate.html">OncoFAIRMAElementExpirationDate</a></p>
+</div></td><td>OncoFAIRMAElementExpirationDate</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-ma-element-plannedperiod.html">OncoFAIRMAElementPlannedPeriod</a></p>
+</div></td><td>OncoFAIRMAElementPlannedPeriod</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-ma-element-traceability.html">OncoFAIRMAElementTraceability</a></p>
+</div></td><td>OncoFAIRMAElementTraceability</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-ma-element-urgent.html">OncoFAIRMAElementUrgent</a></p>
+</div></td><td>OncoFAIRMAElementUrgent</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-medication-type.html">OncoFAIRMedicationType</a></p>
+</div></td><td>OncoFAIRMedicationType</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-medication.html">OncoFAIRMedication</a></p>
+</div></td><td>OncoFAIR Medication</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-medicationadministration-component.html">OncoFAIRMedicationAdministrationComponent</a></p>
+</div></td><td>OncoFAIR MedicationAdministration Component</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-medicationadministration-element.html">OncoFAIRMedicationAdministrationElement</a></p>
+</div></td><td>OncoFAIR MedicationAdministration Element</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-medicationadministration-report.html">OncoFAIRMedicationAdministrationReport</a></p>
+</div></td><td>OncoFAIR MedicationAdministration Report</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-medicationrequest-component.html">OncoFAIRMedicationRequestComponent</a></p>
+</div></td><td>OncoFAIR MedicationRequest Component</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-medicationrequest-element.html">OncoFAIRMedicationRequestElement</a></p>
+</div></td><td>OncoFAIR MedicationRequest Element</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-medicationrequest-prescription.html">OncoFAIRMedicationRequestPrescription</a></p>
+</div></td><td>OncoFAIR MedicationRequest Prescription</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-mr-component-solute.html">OncoFAIRMRComponentSolute</a></p>
+</div></td><td>OncoFAIRMRComponentSolute</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-mr-element-go-nogo.html">OncoFAIRMRElementGoNogo</a></p>
+</div></td><td>OncoFAIRMRElementGoNogo</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-mr-element-link-type.html">OncoFAIRMRElementLinkType</a></p>
+</div></td><td>OncoFAIRMRElementLinkType</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-mr-element-rank.html">OncoFAIRMRElementRank</a></p>
+</div></td><td>OncoFAIRMRElementRank</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-mr-element-supply.html">OncoFAIRMRElementSupply</a></p>
+</div></td><td>OncoFAIRMRElementSupply</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-mr-exempt-ltc.html">OncoFAIRMRExemptLTC</a></p>
+</div></td><td>OncoFAIRMRExemptLTC</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-mr-is-dosage-referent.html">OncoFAIRMRIsDosageReferent</a></p>
+</div></td><td>OncoFAIRMRIsDosageReferent</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-mr-prescription-validation-date.html">OncoFAIRMRPrescriptionValidationDate</a></p>
+</div></td><td>OncoFAIRMRPrescriptionValidationDate</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-observation.html">OncoFAIRObservation</a></p>
+</div></td><td>OncoFAIR Observation</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-patient.html">OncoFAIRPatient</a></p>
+</div></td><td>OncoFAIR Patient</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-pharmacist-advice.html">OncoFAIRPharmacistAdvice</a></p>
+</div></td><td>OncoFAIRPharmacistAdvice</td></tr><tr><td><div><p><a href="StructureDefinition-oncology-healthcare-service.html">OncologyHealthcareService</a></p>
+</div></td><td>OncologyHealthcareService</td></tr><tr><td><div><p><a href="StructureDefinition-treatment-line.html">TreatmentLine</a></p>
+</div></td><td>Treatment Line Number</td></tr><tr><td><div><p><a href="StructureDefinition-tumor-pathology-event.html">TumorPathologyEvent</a></p>
+</div></td><td>Tumor Pathology Event</td></tr></table>
 
-<hr/>
 
-<p><a name="l821">​</a><a href="file:///D:/Home/bguilbert/Documents/fhir/oncofair/output/toc.html" title="Return to contents">Return to contents</a></p>
+---
+
+[Return to contents](file:///D:/Home/bguilbert/Documents/fhir/oncofair/output/toc.html "Return to contents") -->
 
 
 
 
 </div>
-        </div>    <!-- /inner-wrapper -->
-      </div>    <!-- /row -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-content -->
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
 
-  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
-  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
-    <div class="container">    <!-- container -->
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Jun 11, 2024 08:08+0000">2024-06-11</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Sep 12, 2024 14:01+0000">2024-09-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -474,27 +434,27 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                 
           </span>
         </p>
-      </div>    <!-- /inner-wrapper -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-footer -->
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
   
-  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
-    <div class="container">    <!-- container -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-post-footer -->
-  
-    <!-- JS and analytics only. -->
-    <!-- Bootstrap core JavaScript
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
   ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
-  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
-  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
-  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
-  
-    <!-- Analytics Below
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
   ================================================== -->
   </body>
 </html>
+

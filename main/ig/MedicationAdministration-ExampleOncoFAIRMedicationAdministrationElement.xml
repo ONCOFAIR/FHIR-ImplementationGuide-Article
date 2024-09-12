@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationAdministration xmlns="http://hl7.org/fhir">
+  <id value="ExampleOncoFAIRMedicationAdministrationElement"/>
+  <meta>
+    <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationadministration-element"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MedicationAdministration ExampleOncoFAIRMedicationAdministrationElement</b></p><a name="ExampleOncoFAIRMedicationAdministrationElement"> </a><a name="hcExampleOncoFAIRMedicationAdministrationElement"> </a><a name="ExampleOncoFAIRMedicationAdministrationElement-en-US"> </a><p><b>OncoFAIRMAElementUrgent</b>: true</p><p><b>OncoFAIRMAElementExpirationDate</b>: 2024-12-31 23:59:59+0000</p><blockquote><p><b>OncoFAIRMAElementTraceability</b></p><ul><li>batchNumber: BATCH12345</li><li>serialNumber: SN67890</li></ul></blockquote><p><b>OncoFAIRMAElementPlannedPeriod</b>: 2024-06-01 07:00:00+0000 --&gt; 2024-06-01 08:00:00+0000</p><p><b>OncoFAIRElementForm</b>: <span title="Codes:{http://snomed.info/sct 385055001}">Tablet</span></p><p><b>identifier</b>: ADM-123456</p><p><b>partOf</b>: <a href="MedicationAdministration-ExampleOncoFAIRMedicationAdministrationReport.html">MedicationAdministration: identifier = REP-123456; status = in-progress; occurence[x] = 2024-06-01 08:00:00+0000</a></p><p><b>status</b>: In Progress</p><h3>Medications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td><td><b>Reference</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem element}">element</span></td><td><a href="Medication-ExampleOncoFAIRMedication.html">Medication Ibuprofen</a></td></tr></table><p><b>subject</b>: <a href="Patient-ExampleOncoFAIRPatient.html">Anonymous Patient (no stated gender), DoB Unknown ( 123456789)</a></p><p><b>occurence</b>: 2024-06-01 08:00:00+0000 --&gt; 2024-06-01 09:00:00+0000</p><p><b>request</b>: Identifier: RX-123456</p><h3>Devices</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Reference</b></td></tr><tr><td style="display: none">*</td><td><a href="Device-ExampleOncoFAIRDevice.html">Device: identifier = D04</a></td></tr></table><p><b>note</b>: Paracetamol 500mg Tablet, Administered after meals</p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td><td><b>Site</b></td><td><b>Route</b></td><td><b>Method</b></td></tr><tr><td style="display: none">*</td><td>XXX</td><td><span title="Codes:{http://snomed.info/sct 49928004}">Throat</span></td><td><span title="Codes:{http://snomed.info/sct 26643006}">Oral route</span></td><td><span title="Codes:{http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem MED}">Médicament</span></td></tr></table></div>
+  </text>
+  <extension url="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-urgent">
+    <valueBoolean value="true"/>
+  </extension>
+  <extension url="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-expirationdate">
+    <valueDateTime value="2024-12-31T23:59:59Z"/>
+  </extension>
+  <extension url="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-traceability">
+    <extension url="batchNumber">
+      <valueString value="BATCH12345"/>
+    </extension>
+    <extension url="serialNumber">
+      <valueString value="SN67890"/>
+    </extension>
+  </extension>
+  <extension url="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-plannedperiod">
+    <valuePeriod>
+      <start value="2024-06-01T07:00:00Z"/>
+      <end value="2024-06-01T08:00:00Z"/>
+    </valuePeriod>
+  </extension>
+  <extension url="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-element-form">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="385055001"/>
+        <display value="Tablet"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <value value="ADM-123456"/>
+  </identifier>
+  <partOf>
+    <reference value="MedicationAdministration/ExampleOncoFAIRMedicationAdministrationReport"/>
+  </partOf>
+  <status value="in-progress"/>
+  <medication>
+    <concept>
+      <coding>
+        <system value="http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem"/>
+        <code value="element"/>
+        <display value="element"/>
+      </coding>
+    </concept>
+    <reference>
+      <reference value="Medication/ExampleOncoFAIRMedication"/>
+    </reference>
+  </medication>
+  <subject>
+    <reference value="Patient/ExampleOncoFAIRPatient"/>
+  </subject>
+  <occurencePeriod>
+    <start value="2024-06-01T08:00:00Z"/>
+    <end value="2024-06-01T09:00:00Z"/>
+  </occurencePeriod>
+  <request>
+    <identifier>
+      <value value="RX-123456"/>
+    </identifier>
+  </request>
+  <device>
+    <reference>
+      <reference value="Device/ExampleOncoFAIRDevice"/>
+    </reference>
+  </device>
+  <note id="wording">
+    <text value="Paracetamol 500mg Tablet"/>
+  </note>
+  <note id="comments">
+    <text value="Administered after meals"/>
+  </note>
+  <dosage>
+    <text value="XXX"/>
+    <site>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="49928004"/>
+        <display value="Throat"/>
+      </coding>
+    </site>
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="26643006"/>
+        <display value="Oral route"/>
+      </coding>
+    </route>
+    <method>
+      <coding>
+        <system value="http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem"/>
+        <code value="MED"/>
+        <display value="Médicament"/>
+      </coding>
+    </method>
+  </dosage>
+</MedicationAdministration>

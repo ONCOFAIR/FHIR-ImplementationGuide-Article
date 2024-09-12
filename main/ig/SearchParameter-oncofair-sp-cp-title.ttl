@@ -1,0 +1,36 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-cp-title> a fhir:SearchParameter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "oncofair-sp-cp-title"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter oncofair-sp-cp-title</b></p><a name=\"oncofair-sp-cp-title\"> </a><a name=\"hconcofair-sp-cp-title\"> </a><a name=\"oncofair-sp-cp-title-en-US\"> </a><h2>OncoFAIRSPCPTitle</h2><p>Parameter <code>cp-title</code>:<code>string</code></p><div><p>Search for the title of the prescribed protocol</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R5/careplan.html\">CarePlan</a></td></tr><tr><td>Expression</td><td><code>CarePlan.title</code></td></tr><tr><td>Processing Mode</td><td>Normal</td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: It's up to the server whether the parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: It's up to the server whether the parameter can have multiple values (separated by comma) where at least one must be true</li></ul></td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-cp-title"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "OncoFAIRSPCPTitle"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-09-12T14:01:50+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://ltsi.univ-rennes.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Search for the title of the prescribed protocol"] ; # 
+  fhir:code [ fhir:v "cp-title"] ; # 
+  fhir:base ( [ fhir:v "CarePlan"] ) ; # 
+  fhir:type [ fhir:v "string"] ; # 
+  fhir:expression [ fhir:v "CarePlan.title"] ; # 
+  fhir:processingMode [ fhir:v "normal"] . # 
+
+# -------------------------------------------------------------------------------------
+

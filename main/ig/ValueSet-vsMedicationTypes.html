@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Medication types - Onco-FAIR v0.1.0</title>
+    <title>Medication types - OncoFAIR v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -38,16 +38,17 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
-    <style type="text/css">h2{--heading-prefix:"2.37"}
-    h3,h4,h5,h6{--heading-prefix:"2.37"}</style>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4.90"}
+    h3,h4,h5,h6{--heading-prefix:"4.90"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Onco-FAIR</span>
+          <p><span style="font-size:12pt;font-weight:bold">OncoFAIR</span>
             <br/>
             <span style="display:inline-block;">0.1.0 - ci-build
 
@@ -77,10 +78,29 @@
 
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
-    <a href="index.html">Accueil</a>
+    <a href="index.html">Home</a>
   </li>
   <li>
-    <a href="artifacts.html">Artifacts</a>
+    <a href="mapping.html">Mapping</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Compliance resources</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Description of flows
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="feed_flow.html">Flow 01 - Using queries to populate an HDW with chemotherapy data</a>
+      </li>
+      <li>
+        <a href="feasibility_study_research_flow.html">Flow 02 - Request chemotherapy data for a feasibility study</a>
+      </li>
+      <li>
+        <a href="multicentric_study_research_flow.html">Flow 03 - Request chemotherapy data for a multicentric study</a>
+      </li>
+    </ul>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -107,7 +127,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Onco-FAIR - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://ltsi.univ-rennes.fr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">OncoFAIR - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://ltsi.univ-rennes.fr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -175,7 +195,7 @@
         
           Draft
           
-            as of 2024-06-11
+            as of 2024-09-12
           
         
       </td>
@@ -214,13 +234,14 @@
 
 <!-- Content Logical Definition heading in the fragment -->
   <h3>Logical Definition (CLD)</h3>
-<div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-CSMedicationTypes.html"><code>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</code></a></li></ul></div>
+<div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vsMedicationTypes</b></p><a name="vsMedicationTypes"> </a><a name="hcvsMedicationTypes"> </a><a name="vsMedicationTypes-en-US"> </a>
+<ul><li>Include all codes defined in <a href="CodeSystem-CSMedicationTypes.html"><code>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</code></a></li></ul></div>
 
   <p>&#160;</p>
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-CSMedicationTypes.html">codesystem Medication types v0.1.0 (CodeSystem)</a></p><p>This value set contains 14 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap"><a name="http---ltsi.univ-rennes.fr-CodeSystem-CSMedicationTypes-1"> </a>  <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-1">1</a></td><td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td><td>spécialité</td></tr><tr><td style="white-space:nowrap"><a name="http---ltsi.univ-rennes.fr-CodeSystem-CSMedicationTypes-2"> </a>  <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-2">2</a></td><td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td><td>ATU nominative</td></tr><tr><td style="white-space:nowrap"><a name="http---ltsi.univ-rennes.fr-CodeSystem-CSMedicationTypes-3"> </a>  <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-3">3</a></td><td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td><td>principe actif</td></tr><tr><td style="white-space:nowrap"><a name="http---ltsi.univ-rennes.fr-CodeSystem-CSMedicationTypes-4"> </a>  <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-4">4</a></td><td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td><td>préparation hospitalière</td></tr><tr><td style="white-space:nowrap"><a name="http---ltsi.univ-rennes.fr-CodeSystem-CSMedicationTypes-5"> </a>  <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-5">5</a></td><td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td><td>importation</td></tr><tr><td style="white-space:nowrap"><a name="http---ltsi.univ-rennes.fr-CodeSystem-CSMedicationTypes-6"> </a>  <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-6">6</a></td><td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td><td>ATU de cohorte</td></tr><tr><td style="white-space:nowrap"><a name="http---ltsi.univ-rennes.fr-CodeSystem-CSMedicationTypes-7"> </a>  <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-7">7</a></td><td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td><td>préparation magistrale</td></tr><tr><td style="white-space:nowrap"><a name="http---ltsi.univ-rennes.fr-CodeSystem-CSMedicationTypes-8"> </a>  <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-8">8</a></td><td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td><td>matière première</td></tr><tr><td style="white-space:nowrap"><a name="http---ltsi.univ-rennes.fr-CodeSystem-CSMedicationTypes-9"> </a>  <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-9">9</a></td><td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td><td>médicament virtuel THESORIMED</td></tr><tr><td style="white-space:nowrap"><a name="http---ltsi.univ-rennes.fr-CodeSystem-CSMedicationTypes-10"> </a>  <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-10">10</a></td><td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td><td>médicament virtuel THERIAQUE</td></tr><tr><td style="white-space:nowrap"><a name="http---ltsi.univ-rennes.fr-CodeSystem-CSMedicationTypes-11"> </a>  <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-11">11</a></td><td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td><td>médicament virtuel BCB DEXTER</td></tr><tr><td style="white-space:nowrap"><a name="http---ltsi.univ-rennes.fr-CodeSystem-CSMedicationTypes-12"> </a>  <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-12">12</a></td><td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td><td>médicament virtuel VIDAL</td></tr><tr><td style="white-space:nowrap"><a name="http---ltsi.univ-rennes.fr-CodeSystem-CSMedicationTypes-13"> </a>  <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-13">13</a></td><td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td><td>dénomination commune</td></tr><tr><td style="white-space:nowrap"><a name="http---ltsi.univ-rennes.fr-CodeSystem-CSMedicationTypes-14"> </a>  <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-14">14</a></td><td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td><td>médicament virtuel MedicaBase</td></tr></table></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet </b></p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-CSMedicationTypes.html">codesystem Medication types v0.1.0 (CodeSystem)</a></p><p>This value set contains 14 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap"><a name="x-http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes-1"> </a>  <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-1">1</a></td><td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td><td>spécialité</td></tr><tr><td style="white-space:nowrap"><a name="x-http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes-2"> </a>  <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-2">2</a></td><td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td><td>ATU nominative</td></tr><tr><td style="white-space:nowrap"><a name="x-http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes-3"> </a>  <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-3">3</a></td><td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td><td>principe actif</td></tr><tr><td style="white-space:nowrap"><a name="x-http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes-4"> </a>  <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-4">4</a></td><td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td><td>préparation hospitalière</td></tr><tr><td style="white-space:nowrap"><a name="x-http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes-5"> </a>  <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-5">5</a></td><td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td><td>importation</td></tr><tr><td style="white-space:nowrap"><a name="x-http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes-6"> </a>  <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-6">6</a></td><td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td><td>ATU de cohorte</td></tr><tr><td style="white-space:nowrap"><a name="x-http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes-7"> </a>  <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-7">7</a></td><td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td><td>préparation magistrale</td></tr><tr><td style="white-space:nowrap"><a name="x-http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes-8"> </a>  <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-8">8</a></td><td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td><td>matière première</td></tr><tr><td style="white-space:nowrap"><a name="x-http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes-9"> </a>  <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-9">9</a></td><td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td><td>médicament virtuel THESORIMED</td></tr><tr><td style="white-space:nowrap"><a name="x-http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes-10"> </a>  <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-10">10</a></td><td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td><td>médicament virtuel THERIAQUE</td></tr><tr><td style="white-space:nowrap"><a name="x-http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes-11"> </a>  <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-11">11</a></td><td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td><td>médicament virtuel BCB DEXTER</td></tr><tr><td style="white-space:nowrap"><a name="x-http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes-12"> </a>  <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-12">12</a></td><td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td><td>médicament virtuel VIDAL</td></tr><tr><td style="white-space:nowrap"><a name="x-http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes-13"> </a>  <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-13">13</a></td><td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td><td>dénomination commune</td></tr><tr><td style="white-space:nowrap"><a name="x-http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes-14"> </a>  <a href="CodeSystem-CSMedicationTypes.html#CSMedicationTypes-14">14</a></td><td>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes</td><td>médicament virtuel MedicaBase</td></tr></table></div>
 
   <hr/>
   <p>
@@ -279,7 +300,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Jun 11, 2024 08:08+0000">2024-06-11</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Sep 12, 2024 14:01+0000">2024-09-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -296,7 +317,7 @@
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -307,7 +328,6 @@
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>
