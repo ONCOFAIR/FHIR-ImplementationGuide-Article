@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Testing resources - OncoFAIR v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">OncoFAIR</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="mapping.html">Mapping</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Compliance resources</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Description of flows
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="feed_flow.html">Flow 01 - Using queries to populate an HDW with chemotherapy data</a>
+      </li>
+      <li>
+        <a href="feasibility_study_research_flow.html">Flow 02 - Request chemotherapy data for a feasibility study</a>
+      </li>
+      <li>
+        <a href="multicentric_study_research_flow.html">Flow 03 - Request chemotherapy data for a multicentric study</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="test.html">testing</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Testing resources</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">OncoFAIR - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://ltsi.univ-rennes.fr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Testing resources</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#validateurs-fhir" id="markdown-toc-validateurs-fhir">Validateurs FHIR</a></li>
+  <li><a href="#serveur-fhir" id="markdown-toc-serveur-fhir">Serveur FHIR</a></li>
+  <li><a href="#cas-de-test" id="markdown-toc-cas-de-test">Cas de test</a></li>
+</ul>
+
+</div>
+<h3 id="validateurs-fhir">Validateurs FHIR</h3>
+
+<p>Liste des validateurs FHIR présents sur la plateforme de test <a href="https://oncofair.kereval.cloud/evs">EVSClient</a> :</p>
+
+<table class="grid"><tr><td style="background-color: #eeeeee">Titre du profil</td><td style="background-color: #eeeeee">Title</td></tr><tr><td><div><p><a href="StructureDefinition-clinical-trial.html">ClinicalTrial</a></p>
+</div></td><td>Oncology Clinical Trial</td></tr><tr><td><div><p><a href="StructureDefinition-date-time-end.html">DateTimeEnd</a></p>
+</div></td><td>End date and time</td></tr><tr><td><div><p><a href="StructureDefinition-date-time-start.html">DateTimeStart</a></p>
+</div></td><td>Start date and time</td></tr><tr><td><div><p><a href="StructureDefinition-date-time.html">DateTime</a></p>
+</div></td><td>Date and time</td></tr><tr><td><div><p><a href="StructureDefinition-dueTo-tumor-pathology-event.html">DueToTumorPathologyEvent</a></p>
+</div></td><td>Tumor Pathology Event Parent</td></tr><tr><td><div><p><a href="StructureDefinition-eventTimeMax.html">EventTimeMax</a></p>
+</div></td><td>Event Time Max</td></tr><tr><td><div><p><a href="StructureDefinition-eventTimeMin.html">EventTimeMin</a></p>
+</div></td><td>Event Time Min</td></tr><tr><td><div><p><a href="StructureDefinition-eventTypeData.html">EventTypeData</a></p>
+</div></td><td>Event Type Data</td></tr><tr><td><div><p><a href="StructureDefinition-histologygrade.html">Histology_Grade</a></p>
+</div></td><td>Histology</td></tr><tr><td><div><p><a href="StructureDefinition-laterality.html">Laterality</a></p>
+</div></td><td>Laterality</td></tr><tr><td><div><p><a href="StructureDefinition-medication-administered-planned-quantity.html">MedicationPlannedQuantity</a></p>
+</div></td><td>Planned quantity of medication</td></tr><tr><td><div><p><a href="StructureDefinition-medication-administered-quantity.html">MedicationAdministeredQuantity</a></p>
+</div></td><td>Administered quantity of medication</td></tr><tr><td><div><p><a href="StructureDefinition-medication-comment.html">MedicationComment</a></p>
+</div></td><td>Medication comment</td></tr><tr><td><div><p><a href="StructureDefinition-medication-is-vehicle.html">MedicationIsVehicle</a></p>
+</div></td><td>Medication Is Vehicle</td></tr><tr><td><div><p><a href="StructureDefinition-medication-item-provenance.html">MedicationItemProvenance</a></p>
+</div></td><td>Medication item provenance</td></tr><tr><td><div><p><a href="StructureDefinition-medication-lti-exemption.html">MedicationLTIExemption</a></p>
+</div></td><td>Medication LTI exemption</td></tr><tr><td><div><p><a href="StructureDefinition-medication-status.html">MedicationStatus</a></p>
+</div></td><td>Medication status</td></tr><tr><td><div><p><a href="StructureDefinition-medication-type.html">MedicationType</a></p>
+</div></td><td>Medication type</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-careplan.html">OncoFAIRCarePlan</a></p>
+</div></td><td>OncoFAIR CarePlan</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-cp-treatment.html">OncoFAIRCPTreatment</a></p>
+</div></td><td>OncoFAIRCPTreatment</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-element-form.html">OncoFAIRElementForm</a></p>
+</div></td><td>OncoFAIRElementForm</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-encounter.html">OncoFAIREncounter</a></p>
+</div></td><td>OncoFAIR Encounter</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-ma-component-administration-status.html">OncoFAIRMAComponentAdministrationStatus</a></p>
+</div></td><td>OncoFAIRMAComponentAdministrationStatus</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-ma-component-origin.html">OncoFAIRMAComponentOrigin</a></p>
+</div></td><td>OncoFAIRMAComponentOrigin</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-ma-element-expirationdate.html">OncoFAIRMAElementExpirationDate</a></p>
+</div></td><td>OncoFAIRMAElementExpirationDate</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-ma-element-plannedperiod.html">OncoFAIRMAElementPlannedPeriod</a></p>
+</div></td><td>OncoFAIRMAElementPlannedPeriod</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-ma-element-traceability.html">OncoFAIRMAElementTraceability</a></p>
+</div></td><td>OncoFAIRMAElementTraceability</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-ma-element-urgent.html">OncoFAIRMAElementUrgent</a></p>
+</div></td><td>OncoFAIRMAElementUrgent</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-medication-type.html">OncoFAIRMedicationType</a></p>
+</div></td><td>OncoFAIRMedicationType</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-medication.html">OncoFAIRMedication</a></p>
+</div></td><td>OncoFAIR Medication</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-medicationadministration-component.html">OncoFAIRMedicationAdministrationComponent</a></p>
+</div></td><td>OncoFAIR MedicationAdministration Component</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-medicationadministration-element.html">OncoFAIRMedicationAdministrationElement</a></p>
+</div></td><td>OncoFAIR MedicationAdministration Element</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-medicationadministration-report.html">OncoFAIRMedicationAdministrationReport</a></p>
+</div></td><td>OncoFAIR MedicationAdministration Report</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-medicationrequest-component.html">OncoFAIRMedicationRequestComponent</a></p>
+</div></td><td>OncoFAIR MedicationRequest Component</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-medicationrequest-element.html">OncoFAIRMedicationRequestElement</a></p>
+</div></td><td>OncoFAIR MedicationRequest Element</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-medicationrequest-prescription.html">OncoFAIRMedicationRequestPrescription</a></p>
+</div></td><td>OncoFAIR MedicationRequest Prescription</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-mr-component-solute.html">OncoFAIRMRComponentSolute</a></p>
+</div></td><td>OncoFAIRMRComponentSolute</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-mr-element-go-nogo.html">OncoFAIRMRElementGoNogo</a></p>
+</div></td><td>OncoFAIRMRElementGoNogo</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-mr-element-link-type.html">OncoFAIRMRElementLinkType</a></p>
+</div></td><td>OncoFAIRMRElementLinkType</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-mr-element-rank.html">OncoFAIRMRElementRank</a></p>
+</div></td><td>OncoFAIRMRElementRank</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-mr-element-supply.html">OncoFAIRMRElementSupply</a></p>
+</div></td><td>OncoFAIRMRElementSupply</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-mr-exempt-ltc.html">OncoFAIRMRExemptLTC</a></p>
+</div></td><td>OncoFAIRMRExemptLTC</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-mr-is-dosage-referent.html">OncoFAIRMRIsDosageReferent</a></p>
+</div></td><td>OncoFAIRMRIsDosageReferent</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-mr-prescription-validation-date.html">OncoFAIRMRPrescriptionValidationDate</a></p>
+</div></td><td>OncoFAIRMRPrescriptionValidationDate</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-observation.html">OncoFAIRObservation</a></p>
+</div></td><td>OncoFAIR Observation</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-patient.html">OncoFAIRPatient</a></p>
+</div></td><td>OncoFAIR Patient</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-pharmacist-advice.html">OncoFAIRPharmacistAdvice</a></p>
+</div></td><td>OncoFAIRPharmacistAdvice</td></tr><tr><td><div><p><a href="StructureDefinition-oncology-healthcare-service.html">OncologyHealthcareService</a></p>
+</div></td><td>OncologyHealthcareService</td></tr><tr><td><div><p><a href="StructureDefinition-treatment-line.html">TreatmentLine</a></p>
+</div></td><td>Treatment Line Number</td></tr><tr><td><div><p><a href="StructureDefinition-tumor-pathology-event.html">TumorPathologyEvent</a></p>
+</div></td><td>Tumor Pathology Event</td></tr></table>
+
+<h3 id="serveur-fhir">Serveur FHIR</h3>
+
+<p>Un <a href="https://oncofair.kereval.cloud/cqf-ruler/fhir/">serveur FHIR</a> est disponible pour stocker les ressources FHIR échangées.
+Ce même serveur prend en compte les opérations issues de <a href="https://cql.hl7.org/">CQL</a></p>
+
+<h3 id="cas-de-test">Cas de test</h3>
+<p>Une liste des cas de test associés à la mise en place de cet IG est disponible sur la <a href="https://oncofair.kereval.cloud/">plateforme Gazelle</a></p>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, Sep 13, 2024 13:09+0000">2024-09-13</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
