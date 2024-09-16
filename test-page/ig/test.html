@@ -163,60 +163,100 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 <h3 id="validateurs-fhir">Validateurs FHIR</h3>
 
-<p>Here is the list of available FHIR validator available on <a href="https://oncofair.kereval.cloud/evs">EVSClient</a> :
-&lt;!– Liste en dur ou trouver une requête SQL pour uniquement les profils, car là on a aussi les valueset, code system</p>
-<table class="grid"><tr><td style="background-color: #eeeeee">Titre du profil</td><td style="background-color: #eeeeee">Title</td></tr><tr><td><div><p><a href="StructureDefinition-clinical-trial.html">ClinicalTrial</a></p>
-</div></td><td>Oncology Clinical Trial</td></tr><tr><td><div><p><a href="StructureDefinition-date-time-end.html">DateTimeEnd</a></p>
-</div></td><td>End date and time</td></tr><tr><td><div><p><a href="StructureDefinition-date-time-start.html">DateTimeStart</a></p>
-</div></td><td>Start date and time</td></tr><tr><td><div><p><a href="StructureDefinition-date-time.html">DateTime</a></p>
-</div></td><td>Date and time</td></tr><tr><td><div><p><a href="StructureDefinition-dueTo-tumor-pathology-event.html">DueToTumorPathologyEvent</a></p>
-</div></td><td>Tumor Pathology Event Parent</td></tr><tr><td><div><p><a href="StructureDefinition-eventTimeMax.html">EventTimeMax</a></p>
-</div></td><td>Event Time Max</td></tr><tr><td><div><p><a href="StructureDefinition-eventTimeMin.html">EventTimeMin</a></p>
-</div></td><td>Event Time Min</td></tr><tr><td><div><p><a href="StructureDefinition-eventTypeData.html">EventTypeData</a></p>
-</div></td><td>Event Type Data</td></tr><tr><td><div><p><a href="StructureDefinition-histologygrade.html">Histology_Grade</a></p>
-</div></td><td>Histology</td></tr><tr><td><div><p><a href="StructureDefinition-laterality.html">Laterality</a></p>
-</div></td><td>Laterality</td></tr><tr><td><div><p><a href="StructureDefinition-medication-administered-planned-quantity.html">MedicationPlannedQuantity</a></p>
-</div></td><td>Planned quantity of medication</td></tr><tr><td><div><p><a href="StructureDefinition-medication-administered-quantity.html">MedicationAdministeredQuantity</a></p>
-</div></td><td>Administered quantity of medication</td></tr><tr><td><div><p><a href="StructureDefinition-medication-comment.html">MedicationComment</a></p>
-</div></td><td>Medication comment</td></tr><tr><td><div><p><a href="StructureDefinition-medication-is-vehicle.html">MedicationIsVehicle</a></p>
-</div></td><td>Medication Is Vehicle</td></tr><tr><td><div><p><a href="StructureDefinition-medication-item-provenance.html">MedicationItemProvenance</a></p>
-</div></td><td>Medication item provenance</td></tr><tr><td><div><p><a href="StructureDefinition-medication-lti-exemption.html">MedicationLTIExemption</a></p>
-</div></td><td>Medication LTI exemption</td></tr><tr><td><div><p><a href="StructureDefinition-medication-status.html">MedicationStatus</a></p>
-</div></td><td>Medication status</td></tr><tr><td><div><p><a href="StructureDefinition-medication-type.html">MedicationType</a></p>
-</div></td><td>Medication type</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-careplan.html">OncoFAIRCarePlan</a></p>
-</div></td><td>OncoFAIR CarePlan</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-cp-treatment.html">OncoFAIRCPTreatment</a></p>
-</div></td><td>OncoFAIRCPTreatment</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-element-form.html">OncoFAIRElementForm</a></p>
-</div></td><td>OncoFAIRElementForm</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-encounter.html">OncoFAIREncounter</a></p>
-</div></td><td>OncoFAIR Encounter</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-ma-component-administration-status.html">OncoFAIRMAComponentAdministrationStatus</a></p>
-</div></td><td>OncoFAIRMAComponentAdministrationStatus</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-ma-component-origin.html">OncoFAIRMAComponentOrigin</a></p>
-</div></td><td>OncoFAIRMAComponentOrigin</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-ma-element-expirationdate.html">OncoFAIRMAElementExpirationDate</a></p>
-</div></td><td>OncoFAIRMAElementExpirationDate</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-ma-element-plannedperiod.html">OncoFAIRMAElementPlannedPeriod</a></p>
-</div></td><td>OncoFAIRMAElementPlannedPeriod</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-ma-element-traceability.html">OncoFAIRMAElementTraceability</a></p>
-</div></td><td>OncoFAIRMAElementTraceability</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-ma-element-urgent.html">OncoFAIRMAElementUrgent</a></p>
-</div></td><td>OncoFAIRMAElementUrgent</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-medication-type.html">OncoFAIRMedicationType</a></p>
-</div></td><td>OncoFAIRMedicationType</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-medication.html">OncoFAIRMedication</a></p>
-</div></td><td>OncoFAIR Medication</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-medicationadministration-component.html">OncoFAIRMedicationAdministrationComponent</a></p>
-</div></td><td>OncoFAIR MedicationAdministration Component</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-medicationadministration-element.html">OncoFAIRMedicationAdministrationElement</a></p>
-</div></td><td>OncoFAIR MedicationAdministration Element</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-medicationadministration-report.html">OncoFAIRMedicationAdministrationReport</a></p>
-</div></td><td>OncoFAIR MedicationAdministration Report</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-medicationrequest-component.html">OncoFAIRMedicationRequestComponent</a></p>
-</div></td><td>OncoFAIR MedicationRequest Component</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-medicationrequest-element.html">OncoFAIRMedicationRequestElement</a></p>
-</div></td><td>OncoFAIR MedicationRequest Element</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-medicationrequest-prescription.html">OncoFAIRMedicationRequestPrescription</a></p>
-</div></td><td>OncoFAIR MedicationRequest Prescription</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-mr-component-solute.html">OncoFAIRMRComponentSolute</a></p>
-</div></td><td>OncoFAIRMRComponentSolute</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-mr-element-go-nogo.html">OncoFAIRMRElementGoNogo</a></p>
-</div></td><td>OncoFAIRMRElementGoNogo</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-mr-element-link-type.html">OncoFAIRMRElementLinkType</a></p>
-</div></td><td>OncoFAIRMRElementLinkType</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-mr-element-rank.html">OncoFAIRMRElementRank</a></p>
-</div></td><td>OncoFAIRMRElementRank</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-mr-element-supply.html">OncoFAIRMRElementSupply</a></p>
-</div></td><td>OncoFAIRMRElementSupply</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-mr-exempt-ltc.html">OncoFAIRMRExemptLTC</a></p>
-</div></td><td>OncoFAIRMRExemptLTC</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-mr-is-dosage-referent.html">OncoFAIRMRIsDosageReferent</a></p>
-</div></td><td>OncoFAIRMRIsDosageReferent</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-mr-prescription-validation-date.html">OncoFAIRMRPrescriptionValidationDate</a></p>
-</div></td><td>OncoFAIRMRPrescriptionValidationDate</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-observation.html">OncoFAIRObservation</a></p>
-</div></td><td>OncoFAIR Observation</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-patient.html">OncoFAIRPatient</a></p>
-</div></td><td>OncoFAIR Patient</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-pharmacist-advice.html">OncoFAIRPharmacistAdvice</a></p>
-</div></td><td>OncoFAIRPharmacistAdvice</td></tr><tr><td><div><p><a href="StructureDefinition-oncology-healthcare-service.html">OncologyHealthcareService</a></p>
-</div></td><td>OncologyHealthcareService</td></tr><tr><td><div><p><a href="StructureDefinition-treatment-line.html">TreatmentLine</a></p>
-</div></td><td>Treatment Line Number</td></tr><tr><td><div><p><a href="StructureDefinition-tumor-pathology-event.html">TumorPathologyEvent</a></p>
-</div></td><td>Tumor Pathology Event</td></tr></table>
-<p>–&gt;</p>
+<p>Here is the list of available FHIR validator available on <a href="https://oncofair.kereval.cloud/evs">EVSClient</a> :</p>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tableau HL7</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <thead>
+        <tr>
+            <th>Resource</th>
+            <th>Profile</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="https://hl7.org/fhir/R5/careplan.html">CarePlan</a></td>
+            <td><a href="StructureDefinition-oncofair-careplan.html">OncoFAIRCarePlan</a></td>
+            <td>This object describes the chaining of prescription elements attached to the prescribed protocol. Its structure enables the chaining of nested sub-protocols.</td>
+        </tr>
+        <tr>
+            <td><a href="https://hl7.org/fhir/R5/encounter.html">Encounter</a></td>
+            <td><a href="StructureDefinition-oncofair-encounter.html">OncoFAIREncounter</a></td>
+            <td>Must be taken in the generic sense, i.e. it goes beyond hospital admissions, outpatient consultations, dialysis sessions, day hospitals, etc.</td>
+        </tr>
+        <tr>
+            <td><a href="https://hl7.org/fhir/R5/medication.html">Medication</a></td>
+            <td><a href="StructureDefinition-oncofair-medication.html">OncoFAIRMedication</a></td>
+            <td>TO DO</td>
+        </tr>
+        <tr>
+            <td><a href="https://hl7.org/fhir/R5/medicationadministration.html">MedicationAdministration</a></td>
+            <td><a href="StructureDefinition-oncofair-medicationadministration-component.html">OncoFAIRMedicationAdministrationComponent</a></td>
+            <td>This object corresponds to a product that belongs to the nomenclature of medicines used in the hospital.</td>
+        </tr>
+        <tr>
+            <td><a href="https://hl7.org/fhir/R5/medicationadministration.html">MedicationAdministration</a></td>
+            <td><a href="StructureDefinition-oncofair-medicationadministration-element.html">OncoFAIRMedicationAdministrationElement</a></td>
+            <td>Corresponds to the activity induced by a prescription item and its dosage (structured or unstructured), and carried out at a given moment.</td>
+        </tr>
+        <tr>
+            <td><a href="https://hl7.org/fhir/R5/medicationadministration.html">MedicationAdministration</a></td>
+            <td><a href="StructureDefinition-oncofair-medicationadministration-report.html">OncoFAIRMedicationAdministrationReport</a></td>
+            <td>Regroups all the prescription elements received on which the pharmacist expresses his validation. It also includes items suggested or resulting from a replacement proposed by the pharmacist.</td>
+        </tr>
+        <tr>
+            <td><a href="https://hl7.org/fhir/R5/medicationrequest.html">MedicationRequest</a></td>
+            <td><a href="StructureDefinition-oncofair-medicationrequest-component.html">OncoFAIRMedicationRequestComponent</a></td>
+            <td>Is a product that belongs to the nomenclature of medicines used. It may, for example, be a speciality, a product defined by its common name or a pharmacopoeial product.</td>
+        </tr>
+        <tr>
+            <td><a href="https://hl7.org/fhir/R5/medicationrequest.html">MedicationRequest</a></td>
+            <td><a href="StructureDefinition-oncofair-medicationrequest-element.html">OncoFAIRMedicationRequestElement</a></td>
+            <td>Corresponds to a prescription line on a prescription. Each item contains one or more components (in the case of a magistral preparation or an infusion).</td>
+        </tr>
+        <tr>
+            <td><a href="https://hl7.org/fhir/R5/medicationrequest.html">MedicationRequest</a></td>
+            <td><a href="StructureDefinition-oncofair-medicationrequest-prescription.html">OncoFAIRMedicationRequestPrescription</a></td>
+            <td>Groups together all the prescription elements validated simultaneously by the same prescriber.</td>
+        </tr>
+        <tr>
+            <td><a href="https://hl7.org/fhir/R5/observation.html">Observation</a></td>
+            <td><a href="StructureDefinition-oncofair-observation.html">OncoFAIRObservation</a></td>
+            <td>Allows you to enter information about the patient in addition to that described in the prescription elements.</td>
+        </tr>
+        <tr>
+            <td><a href="https://hl7.org/fhir/R5/patient.html">Patient</a></td>
+            <td><a href="StructureDefinition-oncofair-patient.html">OncoFAIRPatient</a></td>
+            <td>Contains the patient’s identity details needed to ensure that the prescription is properly taken into account.</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
+
 <h3 id="serveur-fhir">Serveur FHIR</h3>
 
 <p>Un <a href="https://oncofair.kereval.cloud/cqf-ruler/fhir/">serveur FHIR</a> est disponible pour stocker les ressources FHIR échangées.
@@ -243,7 +283,7 @@ Ce même serveur prend en compte les opérations issues de <a href="https://cql.
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Sep 16, 2024 07:30+0000">2024-09-16</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Sep 16, 2024 07:42+0000">2024-09-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
