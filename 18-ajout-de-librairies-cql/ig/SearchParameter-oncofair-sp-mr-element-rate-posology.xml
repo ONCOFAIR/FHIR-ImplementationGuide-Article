@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="oncofair-sp-mr-element-rate-posology"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: SearchParameter oncofair-sp-mr-element-rate-posology</b></p><a name="oncofair-sp-mr-element-rate-posology"> </a><a name="hconcofair-sp-mr-element-rate-posology"> </a><a name="oncofair-sp-mr-element-rate-posology-en-US"> </a><h2>OncoFAIRSPMRRatePosology</h2><p>Parameter <code>mr-element-rate-posology</code>:<code>quantity</code></p><div><p>Search for rate of administration in the case of injection</p>
+</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R5/medicationrequest.html">MedicationRequest</a></td></tr><tr><td>Expression</td><td><code>MedicationRequest.dosageInstruction.doseAndRate.rate.as(Quantity)</code></td></tr><tr><td>Processing Mode</td><td>Normal</td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: The parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: The parameter may have multiple values (separated by comma) where at least one must be true</li></ul></td></tr><tr><td>Comparators</td><td>Allowed: eq, ne, gt, lt, ge, le, sa, eb, ap</td></tr></table></div>
+  </text>
+  <url value="http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-element-rate-posology"/>
+  <version value="0.1.0"/>
+  <name value="OncoFAIRSPMRRatePosology"/>
+  <status value="active"/>
+  <date value="2024-09-16T08:05:19+00:00"/>
+  <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
+  <contact>
+    <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://ltsi.univ-rennes.fr"/>
+    </telecom>
+  </contact>
+  <description value="Search for rate of administration in the case of injection"/>
+  <code value="mr-element-rate-posology"/>
+  <base value="MedicationRequest"/>
+  <type value="quantity"/>
+  <expression value="MedicationRequest.dosageInstruction.doseAndRate.rate.as(Quantity)"/>
+  <processingMode value="normal"/>
+  <multipleOr value="true"/>
+  <multipleAnd value="true"/>
+  <comparator value="eq"/>
+  <comparator value="ne"/>
+  <comparator value="gt"/>
+  <comparator value="lt"/>
+  <comparator value="ge"/>
+  <comparator value="le"/>
+  <comparator value="sa"/>
+  <comparator value="eb"/>
+  <comparator value="ap"/>
+</SearchParameter>
