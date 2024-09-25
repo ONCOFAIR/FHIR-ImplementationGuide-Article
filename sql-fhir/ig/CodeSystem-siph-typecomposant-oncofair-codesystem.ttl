@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/CodeSystem/siph-typecomposant-oncofair-codesystem> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "siph-typecomposant-oncofair-codesystem"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem siph-typecomposant-oncofair-codesystem</b></p><a name=\"siph-typecomposant-oncofair-codesystem\"> </a><a name=\"hcsiph-typecomposant-oncofair-codesystem\"> </a><a name=\"siph-typecomposant-oncofair-codesystem-en-US\"> </a><p>This case-sensitive code system <code>http://ltsi.univ-rennes.fr/CodeSystem/siph-typecomposant-oncofair-codesystem</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">SPEC<a name=\"siph-typecomposant-oncofair-codesystem-SPEC\"> </a></td><td>spécialité</td></tr><tr><td style=\"white-space:nowrap\">ATUN<a name=\"siph-typecomposant-oncofair-codesystem-ATUN\"> </a></td><td>ATU nominative</td></tr><tr><td style=\"white-space:nowrap\">PRAC<a name=\"siph-typecomposant-oncofair-codesystem-PRAC\"> </a></td><td>principe actif</td></tr><tr><td style=\"white-space:nowrap\">PRHO<a name=\"siph-typecomposant-oncofair-codesystem-PRHO\"> </a></td><td>préparation hospitalière</td></tr><tr><td style=\"white-space:nowrap\">IMPO<a name=\"siph-typecomposant-oncofair-codesystem-IMPO\"> </a></td><td>importation</td></tr><tr><td style=\"white-space:nowrap\">ATUC<a name=\"siph-typecomposant-oncofair-codesystem-ATUC\"> </a></td><td>ATU de cohorte</td></tr><tr><td style=\"white-space:nowrap\">PRMA<a name=\"siph-typecomposant-oncofair-codesystem-PRMA\"> </a></td><td>préparation magistrale</td></tr><tr><td style=\"white-space:nowrap\">MAPR<a name=\"siph-typecomposant-oncofair-codesystem-MAPR\"> </a></td><td>matière première</td></tr><tr><td style=\"white-space:nowrap\">MVTS<a name=\"siph-typecomposant-oncofair-codesystem-MVTS\"> </a></td><td>médicament virtuel THESORIMED</td></tr><tr><td style=\"white-space:nowrap\">MVTR<a name=\"siph-typecomposant-oncofair-codesystem-MVTR\"> </a></td><td>médicament virtuel THERIAQUE</td></tr><tr><td style=\"white-space:nowrap\">MVBC<a name=\"siph-typecomposant-oncofair-codesystem-MVBC\"> </a></td><td>médicament virtuel BCB DEXTER</td></tr><tr><td style=\"white-space:nowrap\">MVVI<a name=\"siph-typecomposant-oncofair-codesystem-MVVI\"> </a></td><td>médicament virtuel VIDAL</td></tr><tr><td style=\"white-space:nowrap\">DC<a name=\"siph-typecomposant-oncofair-codesystem-DC\"> </a></td><td>dénomination commune</td></tr><tr><td style=\"white-space:nowrap\">MVMB<a name=\"siph-typecomposant-oncofair-codesystem-MVMB\"> </a></td><td>médicament virtuel MedicaBase</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/siph-typecomposant-oncofair-codesystem"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "SIPhTypeComposantOncoFAIRCodeSystem"] ; # 
+  fhir:title [ fhir:v "Type de composant Code System"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-09-25T13:48:16+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://ltsi.univ-rennes.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Code system pour l'attribut TypeComposant"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "14"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "SPEC" ] ;
+     fhir:display [ fhir:v "spécialité" ]
+  ] [
+     fhir:code [ fhir:v "ATUN" ] ;
+     fhir:display [ fhir:v "ATU nominative" ]
+  ] [
+     fhir:code [ fhir:v "PRAC" ] ;
+     fhir:display [ fhir:v "principe actif" ]
+  ] [
+     fhir:code [ fhir:v "PRHO" ] ;
+     fhir:display [ fhir:v "préparation hospitalière" ]
+  ] [
+     fhir:code [ fhir:v "IMPO" ] ;
+     fhir:display [ fhir:v "importation" ]
+  ] [
+     fhir:code [ fhir:v "ATUC" ] ;
+     fhir:display [ fhir:v "ATU de cohorte" ]
+  ] [
+     fhir:code [ fhir:v "PRMA" ] ;
+     fhir:display [ fhir:v "préparation magistrale" ]
+  ] [
+     fhir:code [ fhir:v "MAPR" ] ;
+     fhir:display [ fhir:v "matière première" ]
+  ] [
+     fhir:code [ fhir:v "MVTS" ] ;
+     fhir:display [ fhir:v "médicament virtuel THESORIMED" ]
+  ] [
+     fhir:code [ fhir:v "MVTR" ] ;
+     fhir:display [ fhir:v "médicament virtuel THERIAQUE" ]
+  ] [
+     fhir:code [ fhir:v "MVBC" ] ;
+     fhir:display [ fhir:v "médicament virtuel BCB DEXTER" ]
+  ] [
+     fhir:code [ fhir:v "MVVI" ] ;
+     fhir:display [ fhir:v "médicament virtuel VIDAL" ]
+  ] [
+     fhir:code [ fhir:v "DC" ] ;
+     fhir:display [ fhir:v "dénomination commune" ]
+  ] [
+     fhir:code [ fhir:v "MVMB" ] ;
+     fhir:display [ fhir:v "médicament virtuel MedicaBase" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
