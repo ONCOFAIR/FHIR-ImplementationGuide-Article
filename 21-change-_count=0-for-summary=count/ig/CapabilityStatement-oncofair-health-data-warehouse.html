@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>OncoFAIR Health Data Warehouse - OncoFAIR v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4.2"}
+    h3,h4,h5,h6{--heading-prefix:"4.2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">OncoFAIR</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="mapping.html">Mapping</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Compliance resources</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Description of flows
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="feed_flow.html">Flow 01 - Using queries to populate an HDW with chemotherapy data</a>
+      </li>
+      <li>
+        <a href="feasibility_study_research_flow.html">Flow 02 - Request chemotherapy data for a feasibility study</a>
+      </li>
+      <li>
+        <a href="multicentric_study_research_flow.html">Flow 03 - Request chemotherapy data for a multicentric study</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>OncoFAIR Health Data Warehouse</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">OncoFAIR - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://ltsi.univ-rennes.fr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CapabilityStatement-oncofair-health-data-warehouse.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CapabilityStatement-oncofair-health-data-warehouse.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CapabilityStatement-oncofair-health-data-warehouse.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+
+  <h2 id="root">CapabilityStatement: OncoFAIR Health Data Warehouse
+(Experimental)
+  </h2>
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://ltsi.univ-rennes.fr/CapabilityStatement/oncofair-health-data-warehouse<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://ltsi.univ-rennes.fr/CapabilityStatement/oncofair-health-data-warehouse"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://ltsi.univ-rennes.fr/CapabilityStatement/oncofair-health-data-warehouse|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2024-06-19
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">OncoFAIRHealthDataWarehouse</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+<p>
+<p>A database intended to be used for research, studies or evaluation in the field of health.</p>
+
+</p>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+<!--  <p>
+  Formats: <a href="CapabilityStatement-oncofair-health-data-warehouse.xml.html">XML</a>, <a href="CapabilityStatement-oncofair-health-data-warehouse.json.html">JSON</a>, <a href="CapabilityStatement-oncofair-health-data-warehouse.ttl.html">Turtle</a>
+  </p>-->
+
+  
+  <p>
+      <a href="oncofair-health-data-warehouse.openapi.json" no-download="true">Raw OpenAPI-Swagger Definition file</a> | <a href="oncofair-health-data-warehouse.openapi.json" download>Download</a>
+  </p>
+  
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CapabilityStatement oncofair-health-data-warehouse</b></p><a name="oncofair-health-data-warehouse"> </a><a name="hconcofair-health-data-warehouse"> </a><a name="oncofair-health-data-warehouse-en-US"> </a><h2 id="title">OncoFAIR Health Data Warehouse</h2><ul><li>Implementation Guide Version: 0.1.0 </li><li>FHIR Version: 5.0.0 </li><li>Supported Formats: <code>xml</code>, <code>json</code></li><li>Supported Patch Formats: </li><li>Published on: 2024-06-19 15:15:00+0100 </li><li>Published by: DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL </li></ul><blockquote class="impl-note"><p><strong>Note to Implementers: FHIR Capabilities</strong></p><p>Any FHIR capability may be 'allowed' by the system unless explicitly marked as 'SHALL NOT'. A few items are marked as MAY in the Implementation Guide to highlight their potential relevance to the use case.</p></blockquote><h2 id="rest">FHIR RESTful Capabilities</h2><h3 id="rest1">REST Configuration: 1 </h3><div class="panel panel-default"><div class="panel-heading"><h4 id="mode1" class="panel-title">Mode: <code>server</code></h4></div><div class="panel-body"><div><p>A database intended to be used for research, studies or evaluation in the field of health.</p>
+</div><div class="lead"><em>Security</em></div><div class="row"><div class="col-lg-6">Enable CORS: no</div><div class="col-lg-6">Security services supported: <code>OAuth</code></div></div><div class="lead"><em>Summary of System-wide Interactions</em></div></div></div><h4 id="resourcesCap1">Capabilities by Resource/Profile</h4><h5 id="resourcesSummary1">Summary</h5><p>The summary table lists the resources that are part of this configuration, and for each resource it lists:</p><ul><li>The relevant profiles (if any)</li><li>The interactions supported by each resource (<b><span class="bg-info">R</span></b>ead, <b><span class="bg-info">S</span></b>earch, <b><span class="bg-info">U</span></b>pdate, and <b><span class="bg-info">C</span></b>reate, are always shown, while <b><span class="bg-info">VR</span></b>ead, <b><span class="bg-info">P</span></b>atch, <b><span class="bg-info">D</span></b>elete, <b><span class="bg-info">H</span></b>istory on <b><span class="bg-info">I</span></b>nstance, or <b><span class="bg-info">H</span></b>istory on <b><span class="bg-info">T</span></b>ype are only present if at least one of the resources has support for them.</li><li><span>The required, recommended, and some optional search parameters (if any). </span></li><li>The linked resources enabled for <code>_include</code></li><li>The other resources enabled for <code>_revinclude</code></li><li>The operations on the resource (if any)</li></ul><div class="table-responsive"><table class="table table-condensed table-hover"><thead><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th class="text-center"><b title="GET a resource (read interaction)">R</b></th><th class="text-center"><b title="GET all set of resources of the type (search interaction)">S</b></th><th class="text-center"><b title="PUT a new resource version (update interaction)">U</b></th><th class="text-center"><b title="POST a new resource (create interaction)">C</b></th><th><b title="Required and recommended search parameters">Searches</b></th><th><code><b>_include</b></code></th><th><code><b>_revinclude</b></code></th><th><b>Operations</b></th></tr></thead><tbody><tr><td><a href="#Patient1-1">Patient</a></td><td><a href="StructureDefinition-oncofair-patient.html">http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-patient</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center"></td><td class="text-center">y</td><td>identifier</td><td/><td/><td/></tr><tr><td><a href="#Encounter1-2">Encounter</a></td><td><a href="StructureDefinition-oncofair-encounter.html">http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-encounter</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center"></td><td class="text-center">y</td><td>identifier</td><td/><td/><td/></tr><tr><td><a href="#Observation1-3">Observation</a></td><td><a href="StructureDefinition-oncofair-observation.html">http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-observation</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center"></td><td class="text-center"></td><td>clinical-code, clinical-date</td><td/><td/><td/></tr><tr><td><a href="#Medication1-4">Medication</a></td><td><a href="StructureDefinition-oncofair-medication.html">http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center"></td><td class="text-center">y</td><td>_filter, _has, _id, clinical-code, medication-type</td><td/><td/><td/></tr><tr><td><a href="#MedicationRequest1-5">MedicationRequest</a></td><td><a href="StructureDefinition-oncofair-medicationrequest-prescription.html">http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription</a><br/><em>Additional supported profiles:</em><br/>  <a href="StructureDefinition-oncofair-medicationrequest-component.html">OncoFAIR MedicationRequest Component</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center"></td><td class="text-center">y</td><td>identifier, wording, indication, mr-prescription-validation-date, mr-type-elementprescription, element-form, status, element-route, element-site, combo-date, mr-date-time-prescription-start, mr-date-time-prescription-end, mr-element-gonogo-status, mr-element-gonogo-reasonwaiting, group-identifier, mr-element-frequency-posology, mr-element-duration-posology, mr-element-rate-posology, mr-element-quantity-posology, mr-prescribed-component-quantity, mr-component-substitution, mr-is-dosage-referent, mr-exempt-ltc, mr-component-solute</td><td/><td/><td/></tr><tr><td><a href="#CarePlan1-6">CarePlan</a></td><td><a href="StructureDefinition-oncofair-careplan.html">http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-careplan</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center"></td><td class="text-center">y</td><td>identifier, cp-title, status, cp-date-time-reference, indication</td><td/><td/><td/></tr><tr><td><a href="#MedicationAdministration1-7">MedicationAdministration</a></td><td><a href="StructureDefinition-oncofair-medicationadministration-element.html">http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationadministration-element</a><br/><em>Additional supported profiles:</em><br/>  <a href="StructureDefinition-oncofair-medicationadministration-report.html">OncoFAIR MedicationAdministration Report</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center"></td><td class="text-center">y</td><td>ma-method, ma-category, element-form, element-route, element-site, date, ma-comments, ma-planned-quantity, ma-prescribed-quantity, identifier, wording, performer</td><td/><td/><td/></tr></tbody></table></div><hr/><div class="panel panel-default"><div class="panel-heading"><h5 id="Patient1-1" class="panel-title"><span style="float: right;">Resource Conformance: supported </span>Patient</h5></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-6"><span class="lead">Base System Profile</span><br/><a href="StructureDefinition-oncofair-patient.html">OncoFAIR Patient</a></div><div class="col-lg-3"><span class="lead">Profile Conformance</span><br/><b>SHALL</b></div><div class="col-lg-3"><span class="lead">Reference Policy</span><br/></div></div><p/><div class="row"><div class="col-lg-6"><span class="lead">Interaction summary</span><br/><ul><li>Supports <code>search-type</code>, <code>read</code>, <code>create</code>.</li></ul></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/patient.html#search">identifier</a></td><td><code>token</code></td><td><div><p>Identifier of the patient</p>
+</div></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h5 id="Encounter1-2" class="panel-title"><span style="float: right;">Resource Conformance: supported </span>Encounter</h5></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-6"><span class="lead">Base System Profile</span><br/><a href="StructureDefinition-oncofair-encounter.html">OncoFAIR Encounter</a></div><div class="col-lg-3"><span class="lead">Profile Conformance</span><br/><b>SHALL</b></div><div class="col-lg-3"><span class="lead">Reference Policy</span><br/></div></div><p/><div class="row"><div class="col-lg-6"><span class="lead">Interaction summary</span><br/><ul><li>Supports <code>search-type</code>, <code>read</code>, <code>create</code>.</li></ul></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/encounter.html#search">identifier</a></td><td><code>token</code></td><td><div><p>Identifier of the patient's stay</p>
+</div></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h5 id="Observation1-3" class="panel-title"><span style="float: right;">Resource Conformance: supported </span>Observation</h5></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-6"><span class="lead">Base System Profile</span><br/><a href="StructureDefinition-oncofair-observation.html">OncoFAIR Observation</a></div><div class="col-lg-3"><span class="lead">Profile Conformance</span><br/><b>SHALL</b></div><div class="col-lg-3"><span class="lead">Reference Policy</span><br/></div></div><p/><div class="row"><div class="col-lg-6"><span class="lead">Interaction summary</span><br/><ul><li>Supports <code>search-type</code>, <code>read</code>.</li></ul></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/observation.html#search">clinical-code</a></td><td><code>token</code></td><td><div><p>Nature of additional information representing by LOINC code</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/observation.html#search">clinical-date</a></td><td><code>date</code></td><td><div><p>Date and time of registration of the additional information</p>
+</div></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h5 id="Medication1-4" class="panel-title"><span style="float: right;">Resource Conformance: supported </span>Medication</h5></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-6"><span class="lead">Base System Profile</span><br/><a href="StructureDefinition-oncofair-medication.html">OncoFAIR Medication</a></div><div class="col-lg-3"><span class="lead">Profile Conformance</span><br/><b>SHALL</b></div><div class="col-lg-3"><span class="lead">Reference Policy</span><br/></div></div><p/><div class="row"><div class="col-lg-6"><span class="lead">Interaction summary</span><br/><ul><li>Supports <code>search-type</code>, <code>read</code>, <code>create</code>.</li></ul></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/resource.html#search">_filter</a></td><td><code>special</code></td><td><div><p>Filter search parameter that supports a more sophisticated search grammar. See <a href="https://hl7.org/fhir/search_filter.html">documentation</a> for more details.</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/resource.html#search">_has</a></td><td><code>special</code></td><td><div><p>Enables resources to be selected on the basis of the properties of the resources that refer to them (reverse chaining).</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/resource.html#search">_id</a></td><td><code>token</code></td><td><div><p>Logical resource identifier</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/medication.html#search">clinical-code</a></td><td><code>token</code></td><td><div><p>Identifies the prescribed component according to a nomenclature depending on the type</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-medication-type.html">medication-type</a></td><td><code>token</code></td><td><div><p>Specifies whether the component prescribed is a speciality, a common name or any other product (pharmacopoeia).</p>
+</div></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h5 id="MedicationRequest1-5" class="panel-title"><span style="float: right;">Resource Conformance: supported </span>MedicationRequest</h5></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-6"><span class="lead">Base System Profile</span><br/><a href="StructureDefinition-oncofair-medicationrequest-prescription.html">OncoFAIR MedicationRequest Prescription</a></div><div class="col-lg-3"><span class="lead">Profile Conformance</span><br/><b>SHALL</b></div><div class="col-lg-3"><span class="lead">Reference Policy</span><br/></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-oncofair-medicationrequest-component.html">OncoFAIR MedicationRequest Component</a></p></div><div class="col-lg-6"><span class="lead">Interaction summary</span><br/><ul><li>Supports <code>search-type</code>, <code>read</code>, <code>create</code>.</li></ul></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/medicationrequest.html#search">identifier</a></td><td><code>token</code></td><td><div><p>Identifier</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-wording.html">wording</a></td><td><code>string</code></td><td><div><p>Wording of element/component</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-indication.html">indication</a></td><td><code>string</code></td><td><div><p>Indications concerning the prescription item and the component prescribed</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-mr-prescription-validation-date.html">mr-prescription-validation-date</a></td><td><code>date</code></td><td><div><p>Date and time at which the prescriber considered the prescription validated</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-mr-type-elementprescrption.html">mr-type-elementprescription</a></td><td><code>token</code></td><td><div><p>Type of prescription element</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-element-form.html">element-form</a></td><td><code>token</code></td><td><div><p>Pharmaceutical form of the prescription item</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/medicationrequest.html#search">status</a></td><td><code>token</code></td><td><div><p>Indicates the status of the protocol from the prescriber's point of view</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-element-route.html">element-route</a></td><td><code>token</code></td><td><div><p>Specifies the route of administration of the product</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-element-site.html">element-site</a></td><td><code>token</code></td><td><div><p>Specifies, where appropriate, the exact point on the body where the product is to be applied to the patient</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/medicationrequest.html#search">combo-date</a></td><td><code>date</code></td><td><div><p>Returns medication request to be administered on a specific date or within a date range</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-mr-date-time-prescription-start.html">mr-date-time-prescription-start</a></td><td><code>date</code></td><td><div><p>Effective start date and time of product prescription</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-mr-date-time-prescription-end.html">mr-date-time-prescription-end</a></td><td><code>date</code></td><td><div><p>Effective end date and time of product prescription</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-mr-element-gonogo-status.html">mr-element-gonogo-status</a></td><td><code>token</code></td><td><div><p>Communicates the conditional state of implementation of the prescription element according to a list of coded values</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-mr-element-gonogo-reasonwaiting.html">mr-element-gonogo-reasonwaiting</a></td><td><code>token</code></td><td><div><p>Describes the reason for the goNogo implementation status of the prescription element if the management option via the goNogo attribute is enabled</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/medicationrequest.html#search">group-identifier</a></td><td><code>token</code></td><td><div><p>Identifier common to all components of the same prescription</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-mr-element-frequency-posology.html">mr-element-frequency-posology</a></td><td><code>number</code></td><td><div><p>Indicates the recurrence of the dosage. By default, every day</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-mr-element-duration-posology.html">mr-element-duration-posology</a></td><td><code>number</code></td><td><div><p>Duration of administration</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-mr-element-rate-posology.html">mr-element-rate-posology</a></td><td><code>quantity</code></td><td><div><p>Rate of administration in the case of injection</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-mr-element-quantity-posology.html">mr-element-quantity-posology</a></td><td><code>quantity</code></td><td><div><p>Quantity of the prescription element in the dosage</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-mr-prescribed-component-quantity.html">mr-prescribed-component-quantity</a></td><td><code>quantity</code></td><td><div><p>Quantity of the component prescribed in the prescription element</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-mr-component-substitution.html">mr-component-substitution</a></td><td><code>token</code></td><td><div><p>True if the component prescribed is declared non-substitutable in the prescription element</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-mr-is-dosage-referent.html">mr-is-dosage-referent</a></td><td><code>token</code></td><td><div><p>True if the component prescribed is the component that refers to the quantity or flow rate expressed in the dosage element when these are gravimetric (for example, mg or mg/h).</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-mr-exempt-ltc.html">mr-exempt-ltc</a></td><td><code>token</code></td><td><div><p>Identifier of the ALD for which the component prescribed is prescribed for one of the reasons for which the patient benefits from an exemption under article L324-1 of the CSS.</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-mr-component-solute.html">mr-component-solute</a></td><td><code>token</code></td><td><div><p>True if the component prescribed is solute in the prescription element</p>
+</div></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h5 id="CarePlan1-6" class="panel-title"><span style="float: right;">Resource Conformance: supported </span>CarePlan</h5></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-6"><span class="lead">Base System Profile</span><br/><a href="StructureDefinition-oncofair-careplan.html">OncoFAIR CarePlan</a></div><div class="col-lg-3"><span class="lead">Profile Conformance</span><br/><b>SHALL</b></div><div class="col-lg-3"><span class="lead">Reference Policy</span><br/></div></div><p/><div class="row"><div class="col-lg-6"><span class="lead">Interaction summary</span><br/><ul><li>Supports <code>search-type</code>, <code>read</code>, <code>create</code>.</li></ul></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/careplan.html#search">identifier</a></td><td><code>token</code></td><td><div><p>Prescribed protocol identifier</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-cp-title.html">cp-title</a></td><td><code>string</code></td><td><div><p>Wording of the prescribed protocol</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/careplan.html#search">status</a></td><td><code>token</code></td><td><div><p>Indicates the status of the protocol from the prescriber's point of view</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-cp-date-time-reference.html">cp-date-time-reference</a></td><td><code>date</code></td><td><div><p>Reference date and time of this prescribed protocol</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-indication.html">indication</a></td><td><code>string</code></td><td><div><p>Indication concerning the prescribed protocol</p>
+</div></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h5 id="MedicationAdministration1-7" class="panel-title"><span style="float: right;">Resource Conformance: supported </span>MedicationAdministration</h5></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-6"><span class="lead">Base System Profile</span><br/><a href="StructureDefinition-oncofair-medicationadministration-element.html">OncoFAIR MedicationAdministration Element</a></div><div class="col-lg-3"><span class="lead">Profile Conformance</span><br/><b>SHALL</b></div><div class="col-lg-3"><span class="lead">Reference Policy</span><br/></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-oncofair-medicationadministration-report.html">OncoFAIR MedicationAdministration Report</a></p></div><div class="col-lg-6"><span class="lead">Interaction summary</span><br/><ul><li>Supports <code>search-type</code>, <code>read</code>, <code>create</code>.</li></ul></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-ma-method.html">ma-method</a></td><td><code>token</code></td><td><div><p>Type of administration element</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-ma-category.html">ma-category</a></td><td><code>token</code></td><td><div><p>Code identifying the nature of the administration element</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-element-form.html">element-form</a></td><td><code>token</code></td><td><div><p>Pharmaceutical form of the administration item</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-element-route.html">element-route</a></td><td><code>token</code></td><td><div><p>Specifies the route of administration of the product</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-element-site.html">element-site</a></td><td><code>token</code></td><td><div><p>Specifies, where applicable, the exact point on the body where the product is to be applied to the patient. By default, the place of administration is that shown in the prescription element associated with the administration element</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/medicationadministration.html#search">date</a></td><td><code>date</code></td><td><div><p>Effective date and time for starting/ending administration of the administration element</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-ma-comments.html">ma-comments</a></td><td><code>string</code></td><td><div><p>Comments of component</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-ma-planned-quantity.html">ma-planned-quantity</a></td><td><code>quantity</code></td><td><div><p>Quantity of the component administered in the administration element that was intended to be administered to the patient</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-ma-prescribed-quantity.html">ma-prescribed-quantity</a></td><td><code>quantity</code></td><td><div><p>Quantity actually administered to the patient or planned to be administered</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/medicationadministration.html#search">identifier</a></td><td><code>token</code></td><td><div><p>Identifier</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-wording.html">wording</a></td><td><code>string</code></td><td><div><p>Wording of component/element of administration</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/medicationadministration.html#search">performer</a></td><td><code>reference</code></td><td><div><p>Identification of the person who planned, administered or monitored the administration of the medicines represented by the administration elements</p>
+</div></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><h3 id="rest2">REST Configuration: 2 </h3><div class="panel panel-default"><div class="panel-heading"><h4 id="mode2" class="panel-title">Mode: <code>client</code></h4></div><div class="panel-body"><div><p>Search for aggregated data on chemotherapy to feed the warehouse</p>
+</div><div class="lead"><em>Security</em></div><div class="row"><div class="col-lg-6">Enable CORS: no</div><div class="col-lg-6">Security services supported: <code>OAuth</code></div></div><div class="lead"><em>Summary of System-wide Interactions</em></div></div></div><h4 id="resourcesCap2">Capabilities by Resource/Profile</h4><h5 id="resourcesSummary2">Summary</h5><p>The summary table lists the resources that are part of this configuration, and for each resource it lists:</p><ul><li>The relevant profiles (if any)</li><li>The interactions supported by each resource (<b><span class="bg-info">R</span></b>ead, <b><span class="bg-info">S</span></b>earch, <b><span class="bg-info">U</span></b>pdate, and <b><span class="bg-info">C</span></b>reate, are always shown, while <b><span class="bg-info">VR</span></b>ead, <b><span class="bg-info">P</span></b>atch, <b><span class="bg-info">D</span></b>elete, <b><span class="bg-info">H</span></b>istory on <b><span class="bg-info">I</span></b>nstance, or <b><span class="bg-info">H</span></b>istory on <b><span class="bg-info">T</span></b>ype are only present if at least one of the resources has support for them.</li><li><span>The required, recommended, and some optional search parameters (if any). </span></li><li>The linked resources enabled for <code>_include</code></li><li>The other resources enabled for <code>_revinclude</code></li><li>The operations on the resource (if any)</li></ul><div class="table-responsive"><table class="table table-condensed table-hover"><thead><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th class="text-center"><b title="GET a resource (read interaction)">R</b></th><th class="text-center"><b title="GET all set of resources of the type (search interaction)">S</b></th><th class="text-center"><b title="PUT a new resource version (update interaction)">U</b></th><th class="text-center"><b title="POST a new resource (create interaction)">C</b></th><th><b title="Required and recommended search parameters">Searches</b></th><th><code><b>_include</b></code></th><th><code><b>_revinclude</b></code></th><th><b>Operations</b></th></tr></thead><tbody><tr><td><a href="#Patient2-1">Patient</a></td><td><a href="StructureDefinition-oncofair-patient.html">http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-patient</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center"></td><td class="text-center"></td><td>identifier</td><td/><td/><td/></tr><tr><td><a href="#Encounter2-2">Encounter</a></td><td><a href="StructureDefinition-oncofair-encounter.html">http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-encounter</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center"></td><td class="text-center"></td><td>identifier</td><td/><td/><td/></tr><tr><td><a href="#Medication2-3">Medication</a></td><td><a href="StructureDefinition-oncofair-medication.html">http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center"></td><td class="text-center"></td><td>_filter, _has, _id, clinical-code, medication-type</td><td/><td/><td/></tr><tr><td><a href="#MedicationRequest2-4">MedicationRequest</a></td><td><a href="StructureDefinition-oncofair-medicationrequest-prescription.html">http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription</a><br/><em>Additional supported profiles:</em><br/>  <a href="StructureDefinition-oncofair-medicationrequest-element.html">OncoFAIR MedicationRequest Element</a><br/>  <a href="StructureDefinition-oncofair-medicationrequest-component.html">OncoFAIR MedicationRequest Component</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center"></td><td class="text-center"></td><td>identifier, wording, indication, mr-prescription-validation-date, mr-type-elementprescription, element-form, status, element-route, element-site, combo-date, mr-date-time-prescription-start, mr-date-time-prescription-end, mr-element-gonogo-status, mr-element-gonogo-reasonwaiting, group-identifier, mr-element-frequency-posology, mr-element-duration-posology, mr-element-rate-posology, mr-element-quantity-posology, mr-prescribed-component-quantity, mr-component-substitution, mr-is-dosage-referent, mr-exempt-ltc, mr-component-solute</td><td/><td/><td/></tr><tr><td><a href="#CarePlan2-5">CarePlan</a></td><td><a href="StructureDefinition-oncofair-careplan.html">http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-careplan</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center"></td><td class="text-center"></td><td>identifier, cp-title, status, cp-date-time-reference, indication</td><td/><td/><td/></tr><tr><td><a href="#MedicationAdministration2-6">MedicationAdministration</a></td><td><a href="StructureDefinition-oncofair-medicationadministration-element.html">http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationadministration-element</a><br/><em>Additional supported profiles:</em><br/>  <a href="StructureDefinition-oncofair-medicationadministration-component.html">OncoFAIR MedicationAdministration Component</a><br/>  <a href="StructureDefinition-oncofair-medicationadministration-report.html">OncoFAIR MedicationAdministration Report</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center"></td><td class="text-center"></td><td>ma-method, ma-category, element-form, element-route, element-site, date, ma-comments, ma-planned-quantity, ma-prescribed-quantity, identifier, wording, performer</td><td/><td/><td/></tr><tr><td><a href="#Observation2-7">Observation</a></td><td><a href="StructureDefinition-oncofair-observation.html">http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-observation</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center"></td><td class="text-center"></td><td>clinical-code, clinical-date</td><td/><td/><td/></tr></tbody></table></div><hr/><div class="panel panel-default"><div class="panel-heading"><h5 id="Patient2-1" class="panel-title"><span style="float: right;">Resource Conformance: supported </span>Patient</h5></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-6"><span class="lead">Base System Profile</span><br/><a href="StructureDefinition-oncofair-patient.html">OncoFAIR Patient</a></div><div class="col-lg-3"><span class="lead">Profile Conformance</span><br/><b>SHALL</b></div><div class="col-lg-3"><span class="lead">Reference Policy</span><br/></div></div><p/><div class="row"><div class="col-lg-6"><span class="lead">Interaction summary</span><br/><ul><li>Supports <code>search-type</code>, <code>read</code>.</li></ul></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/patient.html#search">identifier</a></td><td><code>token</code></td><td><div><p>Identifier of the patient</p>
+</div></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h5 id="Encounter2-2" class="panel-title"><span style="float: right;">Resource Conformance: supported </span>Encounter</h5></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-6"><span class="lead">Base System Profile</span><br/><a href="StructureDefinition-oncofair-encounter.html">OncoFAIR Encounter</a></div><div class="col-lg-3"><span class="lead">Profile Conformance</span><br/><b>SHALL</b></div><div class="col-lg-3"><span class="lead">Reference Policy</span><br/></div></div><p/><div class="row"><div class="col-lg-6"><span class="lead">Interaction summary</span><br/><ul><li>Supports <code>search-type</code>, <code>read</code>.</li></ul></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/encounter.html#search">identifier</a></td><td><code>token</code></td><td><div><p>Identifier of the patient's stay</p>
+</div></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h5 id="Medication2-3" class="panel-title"><span style="float: right;">Resource Conformance: supported </span>Medication</h5></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-6"><span class="lead">Base System Profile</span><br/><a href="StructureDefinition-oncofair-medication.html">OncoFAIR Medication</a></div><div class="col-lg-3"><span class="lead">Profile Conformance</span><br/><b>SHALL</b></div><div class="col-lg-3"><span class="lead">Reference Policy</span><br/></div></div><p/><div class="row"><div class="col-lg-6"><span class="lead">Interaction summary</span><br/><ul><li>Supports <code>search-type</code>, <code>read</code>.</li></ul></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/resource.html#search">_filter</a></td><td><code>special</code></td><td><div><p>Filter search parameter that supports a more sophisticated search grammar. See <a href="https://hl7.org/fhir/search_filter.html">documentation</a> for more details.</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/resource.html#search">_has</a></td><td><code>special</code></td><td><div><p>Enables resources to be selected on the basis of the properties of the resources that refer to them (reverse chaining).</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/resource.html#search">_id</a></td><td><code>token</code></td><td><div><p>Logical resource identifier</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/medication.html#search">clinical-code</a></td><td><code>token</code></td><td><div><p>Identifies the prescribed component according to a nomenclature depending on the type</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-medication-type.html">medication-type</a></td><td><code>token</code></td><td><div><p>Specifies whether the component prescribed is a speciality, a common name or any other product (pharmacopoeia).</p>
+</div></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h5 id="MedicationRequest2-4" class="panel-title"><span style="float: right;">Resource Conformance: supported </span>MedicationRequest</h5></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-6"><span class="lead">Base System Profile</span><br/><a href="StructureDefinition-oncofair-medicationrequest-prescription.html">OncoFAIR MedicationRequest Prescription</a></div><div class="col-lg-3"><span class="lead">Profile Conformance</span><br/><b>SHALL</b></div><div class="col-lg-3"><span class="lead">Reference Policy</span><br/></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-oncofair-medicationrequest-element.html">OncoFAIR MedicationRequest Element</a><br/><a href="StructureDefinition-oncofair-medicationrequest-component.html">OncoFAIR MedicationRequest Component</a></p></div><div class="col-lg-6"><span class="lead">Interaction summary</span><br/><ul><li>Supports <code>search-type</code>, <code>read</code>.</li></ul></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/medicationrequest.html#search">identifier</a></td><td><code>token</code></td><td><div><p>Identifier</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-wording.html">wording</a></td><td><code>string</code></td><td><div><p>Wording of element/component</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-indication.html">indication</a></td><td><code>string</code></td><td><div><p>Indications concerning the prescription item and the component prescribed</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-mr-prescription-validation-date.html">mr-prescription-validation-date</a></td><td><code>date</code></td><td><div><p>Date and time at which the prescriber considered the prescription validated</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-mr-type-elementprescrption.html">mr-type-elementprescription</a></td><td><code>token</code></td><td><div><p>Type of prescription element</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-element-form.html">element-form</a></td><td><code>token</code></td><td><div><p>Pharmaceutical form of the prescription item</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/medicationrequest.html#search">status</a></td><td><code>token</code></td><td><div><p>Indicates the status of the protocol from the prescriber's point of view</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-element-route.html">element-route</a></td><td><code>token</code></td><td><div><p>Specifies the route of administration of the product</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-element-site.html">element-site</a></td><td><code>token</code></td><td><div><p>Specifies, where appropriate, the exact point on the body where the product is to be applied to the patient</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/medicationrequest.html#search">combo-date</a></td><td><code>date</code></td><td><div><p>Returns medication request to be administered on a specific date or within a date range</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-mr-date-time-prescription-start.html">mr-date-time-prescription-start</a></td><td><code>date</code></td><td><div><p>Effective start date and time of product prescription</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-mr-date-time-prescription-end.html">mr-date-time-prescription-end</a></td><td><code>date</code></td><td><div><p>Effective end date and time of product prescription</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-mr-element-gonogo-status.html">mr-element-gonogo-status</a></td><td><code>token</code></td><td><div><p>Communicates the conditional state of implementation of the prescription element according to a list of coded values</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-mr-element-gonogo-reasonwaiting.html">mr-element-gonogo-reasonwaiting</a></td><td><code>token</code></td><td><div><p>Describes the reason for the goNogo implementation status of the prescription element if the management option via the goNogo attribute is enabled</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/medicationrequest.html#search">group-identifier</a></td><td><code>token</code></td><td><div><p>Identifier common to all components of the same prescription</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-mr-element-frequency-posology.html">mr-element-frequency-posology</a></td><td><code>number</code></td><td><div><p>Indicates the recurrence of the dosage. By default, every day</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-mr-element-duration-posology.html">mr-element-duration-posology</a></td><td><code>number</code></td><td><div><p>Duration of administration</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-mr-element-rate-posology.html">mr-element-rate-posology</a></td><td><code>quantity</code></td><td><div><p>Rate of administration in the case of injection</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-mr-element-quantity-posology.html">mr-element-quantity-posology</a></td><td><code>quantity</code></td><td><div><p>Quantity of the prescription element in the dosage</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-mr-prescribed-component-quantity.html">mr-prescribed-component-quantity</a></td><td><code>quantity</code></td><td><div><p>Quantity of the component prescribed in the prescription element</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-mr-component-substitution.html">mr-component-substitution</a></td><td><code>token</code></td><td><div><p>True if the component prescribed is declared non-substitutable in the prescription element</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-mr-is-dosage-referent.html">mr-is-dosage-referent</a></td><td><code>token</code></td><td><div><p>True if the component prescribed is the component that refers to the quantity or flow rate expressed in the dosage element when these are gravimetric (for example, mg or mg/h).</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-mr-exempt-ltc.html">mr-exempt-ltc</a></td><td><code>token</code></td><td><div><p>Identifier of the ALD for which the component prescribed is prescribed for one of the reasons for which the patient benefits from an exemption under article L324-1 of the CSS.</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-mr-component-solute.html">mr-component-solute</a></td><td><code>token</code></td><td><div><p>True if the component prescribed is solute in the prescription element</p>
+</div></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h5 id="CarePlan2-5" class="panel-title"><span style="float: right;">Resource Conformance: supported </span>CarePlan</h5></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-6"><span class="lead">Base System Profile</span><br/><a href="StructureDefinition-oncofair-careplan.html">OncoFAIR CarePlan</a></div><div class="col-lg-3"><span class="lead">Profile Conformance</span><br/><b>SHALL</b></div><div class="col-lg-3"><span class="lead">Reference Policy</span><br/></div></div><p/><div class="row"><div class="col-lg-6"><span class="lead">Interaction summary</span><br/><ul><li>Supports <code>search-type</code>, <code>read</code>.</li></ul></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/careplan.html#search">identifier</a></td><td><code>token</code></td><td><div><p>Prescribed protocol identifier</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-cp-title.html">cp-title</a></td><td><code>string</code></td><td><div><p>Wording of the prescribed protocol</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/careplan.html#search">status</a></td><td><code>token</code></td><td><div><p>Indicates the status of the protocol from the prescriber's point of view</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-cp-date-time-reference.html">cp-date-time-reference</a></td><td><code>date</code></td><td><div><p>Reference date and time of this prescribed protocol</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-indication.html">indication</a></td><td><code>string</code></td><td><div><p>Indication concerning the prescribed protocol</p>
+</div></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h5 id="MedicationAdministration2-6" class="panel-title"><span style="float: right;">Resource Conformance: supported </span>MedicationAdministration</h5></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-6"><span class="lead">Base System Profile</span><br/><a href="StructureDefinition-oncofair-medicationadministration-element.html">OncoFAIR MedicationAdministration Element</a></div><div class="col-lg-3"><span class="lead">Profile Conformance</span><br/><b>SHALL</b></div><div class="col-lg-3"><span class="lead">Reference Policy</span><br/></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-oncofair-medicationadministration-component.html">OncoFAIR MedicationAdministration Component</a><br/><a href="StructureDefinition-oncofair-medicationadministration-report.html">OncoFAIR MedicationAdministration Report</a></p></div><div class="col-lg-6"><span class="lead">Interaction summary</span><br/><ul><li>Supports <code>search-type</code>, <code>read</code>.</li></ul></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-ma-method.html">ma-method</a></td><td><code>token</code></td><td><div><p>Type of administration element</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-ma-category.html">ma-category</a></td><td><code>token</code></td><td><div><p>Code identifying the nature of the administration element</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-element-form.html">element-form</a></td><td><code>token</code></td><td><div><p>Pharmaceutical form of the administration item</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-element-route.html">element-route</a></td><td><code>token</code></td><td><div><p>Specifies the route of administration of the product</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-element-site.html">element-site</a></td><td><code>token</code></td><td><div><p>Specifies, where applicable, the exact point on the body where the product is to be applied to the patient. By default, the place of administration is that shown in the prescription element associated with the administration element</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/medicationadministration.html#search">date</a></td><td><code>date</code></td><td><div><p>Effective date and time for starting/ending administration of the administration element</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-ma-comments.html">ma-comments</a></td><td><code>string</code></td><td><div><p>Comments of component</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-ma-planned-quantity.html">ma-planned-quantity</a></td><td><code>quantity</code></td><td><div><p>Quantity of the component administered in the administration element that was intended to be administered to the patient</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-ma-prescribed-quantity.html">ma-prescribed-quantity</a></td><td><code>quantity</code></td><td><div><p>Quantity actually administered to the patient or planned to be administered</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/medicationadministration.html#search">identifier</a></td><td><code>token</code></td><td><div><p>Identifier</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-oncofair-sp-wording.html">wording</a></td><td><code>string</code></td><td><div><p>Wording of component/element of administration</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/medicationadministration.html#search">performer</a></td><td><code>reference</code></td><td><div><p>Identification of the person who planned, administered or monitored the administration of the medicines represented by the administration elements</p>
+</div></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h5 id="Observation2-7" class="panel-title"><span style="float: right;">Resource Conformance: supported </span>Observation</h5></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-6"><span class="lead">Base System Profile</span><br/><a href="StructureDefinition-oncofair-observation.html">OncoFAIR Observation</a></div><div class="col-lg-3"><span class="lead">Profile Conformance</span><br/><b>SHALL</b></div><div class="col-lg-3"><span class="lead">Reference Policy</span><br/></div></div><p/><div class="row"><div class="col-lg-6"><span class="lead">Interaction summary</span><br/><ul><li>Supports <code>search-type</code>, <code>read</code>.</li></ul></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/observation.html#search">clinical-code</a></td><td><code>token</code></td><td><div><p>Nature of additional information representing by LOINC code</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/observation.html#search">clinical-date</a></td><td><code>date</code></td><td><div><p>Date and time of registration of the additional information</p>
+</div></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div></div>
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Sep 30, 2024 07:50+0000">2024-09-30</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
