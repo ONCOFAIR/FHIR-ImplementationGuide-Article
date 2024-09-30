@@ -5,3 +5,6 @@ Description: "An example instance of an OncoFAIR patient with a permanent patien
 Usage: #example
 
 * identifier.value = "123456789"
+
+* gender = #male
+* birthDate = "2024-09-30"

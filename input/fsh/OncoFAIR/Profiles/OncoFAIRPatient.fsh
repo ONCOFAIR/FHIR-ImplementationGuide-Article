@@ -1,5 +1,5 @@
 Profile: OncoFAIRPatient
-Parent: Patient
+Parent: OncoPatient
 Id: oncofair-patient
 Title: "OncoFAIR Patient"
 Description : "Contains the patient's identity details needed to ensure that the prescription is properly taken into account. \r\n
