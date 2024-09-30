@@ -16,11 +16,13 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient ExampleOncoFAIRPatient</b></p><a name=\"ExampleOncoFAIRPatient\"> </a><a name=\"hcExampleOncoFAIRPatient\"> </a><a name=\"ExampleOncoFAIRPatient-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient (no stated gender), DoB Unknown ( 123456789)</p><hr/></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient ExampleOncoFAIRPatient</b></p><a name=\"ExampleOncoFAIRPatient\"> </a><a name=\"hcExampleOncoFAIRPatient\"> </a><a name=\"ExampleOncoFAIRPatient-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient Male, DoB: 2024-09-30 ( 123456789)</p><hr/></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:value [ fhir:v "123456789" ]
-  ] ) . # 
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "2024-09-30"^^xsd:date] . # 
 
 # -------------------------------------------------------------------------------------
 

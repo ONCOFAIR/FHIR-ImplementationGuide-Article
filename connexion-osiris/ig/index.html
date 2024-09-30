@@ -349,17 +349,13 @@ This UML diagram provides an overview of the data structures, and is essential f
 </ul>
 
 <!--Finally, the body of HTTP requests is a FHIR resource that can be formatted in XML, JSON or RDF.
-<table class="grid"><tr><td style="background-color: #eeeeee">Titre du profil</td><td style="background-color: #eeeeee">Title</td></tr><tr><td><div><p><a href="StructureDefinition-clinical-trial.html">ClinicalTrial</a></p>
-</div></td><td>Oncology Clinical Trial</td></tr><tr><td><div><p><a href="StructureDefinition-date-time-end.html">DateTimeEnd</a></p>
+<table class="grid"><tr><td style="background-color: #eeeeee">Titre du profil</td><td style="background-color: #eeeeee">Title</td></tr><tr><td><div><p><a href="StructureDefinition-date-time-end.html">DateTimeEnd</a></p>
 </div></td><td>End date and time</td></tr><tr><td><div><p><a href="StructureDefinition-date-time-start.html">DateTimeStart</a></p>
 </div></td><td>Start date and time</td></tr><tr><td><div><p><a href="StructureDefinition-date-time.html">DateTime</a></p>
-</div></td><td>Date and time</td></tr><tr><td><div><p><a href="StructureDefinition-dueTo-tumor-pathology-event.html">DueToTumorPathologyEvent</a></p>
-</div></td><td>Tumor Pathology Event Parent</td></tr><tr><td><div><p><a href="StructureDefinition-eventTimeMax.html">EventTimeMax</a></p>
+</div></td><td>Date and time</td></tr><tr><td><div><p><a href="StructureDefinition-eventTimeMax.html">EventTimeMax</a></p>
 </div></td><td>Event Time Max</td></tr><tr><td><div><p><a href="StructureDefinition-eventTimeMin.html">EventTimeMin</a></p>
 </div></td><td>Event Time Min</td></tr><tr><td><div><p><a href="StructureDefinition-eventTypeData.html">EventTypeData</a></p>
-</div></td><td>Event Type Data</td></tr><tr><td><div><p><a href="StructureDefinition-histologygrade.html">Histology_Grade</a></p>
-</div></td><td>Histology</td></tr><tr><td><div><p><a href="StructureDefinition-laterality.html">Laterality</a></p>
-</div></td><td>Laterality</td></tr><tr><td><div><p><a href="StructureDefinition-medication-administered-planned-quantity.html">MedicationPlannedQuantity</a></p>
+</div></td><td>Event Type Data</td></tr><tr><td><div><p><a href="StructureDefinition-medication-administered-planned-quantity.html">MedicationPlannedQuantity</a></p>
 </div></td><td>Planned quantity of medication</td></tr><tr><td><div><p><a href="StructureDefinition-medication-administered-quantity.html">MedicationAdministeredQuantity</a></p>
 </div></td><td>Administered quantity of medication</td></tr><tr><td><div><p><a href="StructureDefinition-medication-comment.html">MedicationComment</a></p>
 </div></td><td>Medication comment</td></tr><tr><td><div><p><a href="StructureDefinition-medication-is-vehicle.html">MedicationIsVehicle</a></p>
@@ -367,7 +363,9 @@ This UML diagram provides an overview of the data structures, and is essential f
 </div></td><td>Medication item provenance</td></tr><tr><td><div><p><a href="StructureDefinition-medication-lti-exemption.html">MedicationLTIExemption</a></p>
 </div></td><td>Medication LTI exemption</td></tr><tr><td><div><p><a href="StructureDefinition-medication-status.html">MedicationStatus</a></p>
 </div></td><td>Medication status</td></tr><tr><td><div><p><a href="StructureDefinition-medication-type.html">MedicationType</a></p>
-</div></td><td>Medication type</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-careplan.html">OncoFAIRCarePlan</a></p>
+</div></td><td>Medication type</td></tr><tr><td><div><p><a href="StructureDefinition-onco-organization.html">OncoOrganization</a></p>
+</div></td><td>Cancer Organization</td></tr><tr><td><div><p><a href="StructureDefinition-onco-patient.html">OncoPatient</a></p>
+</div></td><td>Oncology Patient</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-careplan.html">OncoFAIRCarePlan</a></p>
 </div></td><td>OncoFAIR CarePlan</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-cp-treatment.html">OncoFAIRCPTreatment</a></p>
 </div></td><td>OncoFAIRCPTreatment</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-element-form.html">OncoFAIRElementForm</a></p>
 </div></td><td>OncoFAIRElementForm</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-encounter.html">OncoFAIREncounter</a></p>
@@ -396,10 +394,9 @@ This UML diagram provides an overview of the data structures, and is essential f
 </div></td><td>OncoFAIRMRPrescriptionValidationDate</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-observation.html">OncoFAIRObservation</a></p>
 </div></td><td>OncoFAIR Observation</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-patient.html">OncoFAIRPatient</a></p>
 </div></td><td>OncoFAIR Patient</td></tr><tr><td><div><p><a href="StructureDefinition-oncofair-pharmacist-advice.html">OncoFAIRPharmacistAdvice</a></p>
-</div></td><td>OncoFAIRPharmacistAdvice</td></tr><tr><td><div><p><a href="StructureDefinition-oncology-healthcare-service.html">OncologyHealthcareService</a></p>
-</div></td><td>OncologyHealthcareService</td></tr><tr><td><div><p><a href="StructureDefinition-treatment-line.html">TreatmentLine</a></p>
-</div></td><td>Treatment Line Number</td></tr><tr><td><div><p><a href="StructureDefinition-tumor-pathology-event.html">TumorPathologyEvent</a></p>
-</div></td><td>Tumor Pathology Event</td></tr></table>
+</div></td><td>OncoFAIRPharmacistAdvice</td></tr><tr><td><div><p><a href="StructureDefinition-origin-center.html">OriginCenter</a></p>
+</div></td><td>Patient Origin Center</td></tr><tr><td><div><p><a href="StructureDefinition-treatment-line.html">TreatmentLine</a></p>
+</div></td><td>Treatment Line Number</td></tr></table>
 
 
 ---
@@ -425,7 +422,7 @@ This UML diagram provides an overview of the data structures, and is essential f
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Sep 30, 2024 15:06+0000">2024-09-30</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Sep 30, 2024 15:08+0000">2024-09-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

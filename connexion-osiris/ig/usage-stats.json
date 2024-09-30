@@ -28,13 +28,6 @@
       ]
     },
     {
-      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/dueTo-tumor-pathology-event",
-      "title": "Tumor Pathology Event Parent",
-      "types": [
-        "Reference"
-      ]
-    },
-    {
       "url": "http://ltsi.univ-rennes.fr/StructureDefinition/eventTimeMax",
       "title": "Event Time Max",
       "types": [
@@ -53,75 +46,6 @@
     {
       "url": "http://ltsi.univ-rennes.fr/StructureDefinition/eventTypeData",
       "title": "Event Type Data",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/histologygrade",
-      "title": "Histology",
-      "types": [
-        "string",
-        "string",
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "integer64",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "CodeableReference",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "RatioRange",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Availability",
-        "ExtendedContactDetail",
-        "Dosage",
-        "Meta"
-      ]
-    },
-    {
-      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/laterality",
-      "title": "Laterality",
       "types": [
         "CodeableConcept"
       ]
@@ -534,6 +458,13 @@
       ]
     },
     {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/origin-center",
+      "title": "Patient Origin Center",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
       "url": "http://ltsi.univ-rennes.fr/StructureDefinition/treatment-line",
       "title": "Treatment Line Number",
       "types": [
@@ -543,10 +474,16 @@
     }
   ],
   "profiles": {
-    "ResearchStudy": [
+    "Organization": [
       {
-        "url": "http://ltsi.univ-rennes.fr/StructureDefinition/clinical-trial",
-        "title": "Oncology Clinical Trial"
+        "url": "http://ltsi.univ-rennes.fr/StructureDefinition/onco-organization",
+        "title": "Cancer Organization"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-patient",
+        "title": "OncoFAIR Patient"
       }
     ],
     "CarePlan": [
@@ -600,30 +537,9 @@
         "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-observation",
         "title": "OncoFAIR Observation"
       }
-    ],
-    "Patient": [
-      {
-        "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-patient",
-        "title": "OncoFAIR Patient"
-      }
-    ],
-    "HealthcareService": [
-      {
-        "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncology-healthcare-service",
-        "title": "OncologyHealthcareService"
-      }
-    ],
-    "Condition": [
-      {
-        "url": "http://ltsi.univ-rennes.fr/StructureDefinition/tumor-pathology-event",
-        "title": "Tumor Pathology Event"
-      }
     ]
   },
   "usage": {
-    "http://hl7.org/fhir/StructureDefinition/condition-dueTo": [
-      "Condition"
-    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -657,15 +573,6 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
-    ],
-    "http://ltsi.univ-rennes.fr/StructureDefinition/dueTo-tumor-pathology-event": [
-      "Condition"
-    ],
-    "http://ltsi.univ-rennes.fr/StructureDefinition/histologygrade": [
-      "Condition"
-    ],
-    "http://ltsi.univ-rennes.fr/StructureDefinition/laterality": [
-      "Condition"
     ],
     "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-cp-treatment": [
       "CarePlan"
@@ -722,6 +629,9 @@
     "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-pharmacist-advice": [
       "CarePlan",
       "MedicationRequest"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/origin-center": [
+      "Patient"
     ]
   }
 }

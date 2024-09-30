@@ -475,6 +475,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-onco-organization.html"
+                  title="StructureDefinition/onco-organization">Cancer Organization</a>
+            </td>
+            <td>
+<p>Cancer organization to describe the provider center or origin center of the onco-patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-oncofair-careplan.html"
                   title="StructureDefinition/oncofair-careplan">OncoFAIR CarePlan</a>
             </td>
@@ -597,29 +606,11 @@ preparation or an infusion). </p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-clinical-trial.html"
-                  title="StructureDefinition/clinical-trial">Oncology Clinical Trial</a>
+               <a href="StructureDefinition-onco-patient.html"
+                  title="StructureDefinition/onco-patient">Oncology Patient</a>
             </td>
             <td>
-<p>Oncology clinical trial used to associate a Onco Patient to a Clinical Trial</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-oncology-healthcare-service.html"
-                  title="StructureDefinition/oncology-healthcare-service">OncologyHealthcareService</a>
-            </td>
-            <td>
-<p>Healthcare service(s).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-tumor-pathology-event.html"
-                  title="StructureDefinition/tumor-pathology-event">Tumor Pathology Event</a>
-            </td>
-            <td>
-<p>Tumor Pathology Event (TPE) Condition describing a tumoral event: reference to the parent TPE, laterality, morphology.</p>
+<p>Oncology patient defined by Osiris.</p>
 </td>
          </tr>
       </tbody>
@@ -682,24 +673,6 @@ preparation or an infusion). </p>
             </td>
             <td>
 <p>Represents the type of logical data for an event.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-histologygrade.html"
-                  title="StructureDefinition/histologygrade">Histology</a>
-            </td>
-            <td>
-<p>Grade of Histology</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-laterality.html"
-                  title="StructureDefinition/laterality">Laterality</a>
-            </td>
-            <td>
-<p>Laterality of location (if it exists)</p>
 </td>
          </tr>
          <tr>
@@ -954,6 +927,15 @@ preparation or an infusion). </p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-origin-center.html"
+                  title="StructureDefinition/origin-center">Patient Origin Center</a>
+            </td>
+            <td>
+<p>The origin center organization of an Oncology Patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-medication-administered-planned-quantity.html"
                   title="StructureDefinition/medication-administered-planned-quantity">Planned quantity of medication</a>
             </td>
@@ -977,15 +959,6 @@ preparation or an infusion). </p>
             </td>
             <td>
 <p>The treatment line number</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-dueTo-tumor-pathology-event.html"
-                  title="StructureDefinition/dueTo-tumor-pathology-event">Tumor Pathology Event Parent</a>
-            </td>
-            <td>
-<p>Reference the Tumor Pathology Event from which the metastasis comes from.</p>
 </td>
          </tr>
       </tbody>
@@ -1547,33 +1520,6 @@ preparation or an infusion). </p>
 <p>An example instance of an OncoFAIR practitioner with an identifier.</p>
 </td>
          </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ResearchStudy-fhir-osiris-example-researchstudy.html"
-                  title="ResearchStudy/fhir-osiris-example-researchstudy">Unknown</a>
-            </td>
-            <td>
-<p>Example of ResearchStudy from OSIRIS_pivot_Treatment.csv</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Condition-fhir-osiris-example-TumorPathologyEvent-instance-1.html"
-                  title="Condition/fhir-osiris-example-TumorPathologyEvent-instance-1">fhir-osiris-example-TumorPathologyEvent-instance-1</a>
-            </td>
-            <td>
-<p>Example of TPE from OSIRIS_pivot_TumorPathologyEvent.csv</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Condition-fhir-osiris-example-TumorPathologyEvent-instance-2.html"
-                  title="Condition/fhir-osiris-example-TumorPathologyEvent-instance-2">fhir-osiris-example-TumorPathologyEvent-instance-2</a>
-            </td>
-            <td>
-<p>Example of TPE from OSIRIS_pivot_TumorPathologyEvent.csv</p>
-</td>
-         </tr>
       </tbody>
    </table>
 </div>
@@ -1594,7 +1540,7 @@ preparation or an infusion). </p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Sep 30, 2024 15:06+0000">2024-09-30</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Sep 30, 2024 15:08+0000">2024-09-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

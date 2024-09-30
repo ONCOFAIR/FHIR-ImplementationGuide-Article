@@ -7,16 +7,24 @@ package IG #DDDDDD{
 
      package Profiles #DDDDDD{
 
-        class ClinicalTrial{
+        class OncoOrganization{
 
-             ResearchStudy.identifier => [1..1]
-             ResearchStudy.title => [1..None]
+             Organization.identifier => [1..None]
+             Organization.identifier:finess => [1..1]
+             Organization.identifier:finess.system => [1..None]
+             Organization.identifier:finess.value => [None..None]
         } 
 
-        class DueToTumorPathologyEvent{
+        class OncoPatient{
 
-             Extension => [None..None]
-             Extension.value[x] => [None..None]
+             Patient.id => [1..None]
+             Patient.extension => [None..None]
+             Patient.extension:origin-center => <&plus>[0..1]
+             Patient.gender => [1..None]
+             Patient.birthDate => [1..None]
+             Patient.deceased[x] => [None..None]
+             Patient.deceased[x]:deceasedDateTime => [0..1]
+             Patient.managingOrganization => [None..None]
         } 
 
         class OncoFAIRCarePlan{
@@ -229,38 +237,15 @@ package IG #DDDDDD{
 
         class OncoFAIRPatient{
 
+             Patient => [None..None]
              Patient.identifier => [1..1]
              Patient.identifier.value => [None..None]
-        } 
-
-        class OncologyHealthcareService{
-
-             HealthcareService.name => [1..None]
-        } 
-
-        class TumorPathologyEvent{
-
-             Condition.extension => [None..None]
-             Condition.extension:due-to => <&plus>[0..1]
-             Condition.extension:laterality => <&plus>[0..1]
-             Condition.extension:histologygrade => <&plus>[0..1]
-             Condition.code => [1..None]
-             Condition.bodySite => [1..1]
-             Condition.subject => [None..None]
-             Condition.onset[x] => [1..None]
-             Condition.onset[x]:onsetDateTime => [1..1]
-             Condition.abatement[x] => [None..None]
-             Condition.abatement[x]:abatementDateTime => [0..1]
-             Condition.recordedDate => [1..None]
-             Condition.stage => [1..None]
-             Condition.stage:morphology => [1..1]
-             Condition.stage:morphology.summary => [1..None]
-             Condition.stage:morphology.type.coding.code => [1..None]
          }
 
      }
      package extension #paleturquoise {
 
+     OncoPatient -[#black,dashed,thickness=2]-> OriginCenter
      OncoFAIRCarePlan -[#black,dashed,thickness=2]-> OncoFAIRCPTreatment
      OncoFAIRCarePlan -[#black,dashed,thickness=2]-> OncoFAIRPharmacistAdvice
      OncoFAIRMedication -[#black,dashed,thickness=2]-> OncoFAIRMedicationType
@@ -283,9 +268,6 @@ package IG #DDDDDD{
      OncoFAIRMedicationRequestElement -[#black,dashed,thickness=2]-> OncoFAIRPharmacistAdvice
      OncoFAIRMedicationRequestElement -[#black,dashed,thickness=2]-> OncoFAIRMRElementLinkType
      OncoFAIRMedicationRequestPrescription -[#black,dashed,thickness=2]-> OncoFAIRMRPrescriptionValidationDate
-     TumorPathologyEvent -[#black,dashed,thickness=2]-> DueToTumorPathologyEvent
-     TumorPathologyEvent -[#black,dashed,thickness=2]-> Laterality
-     TumorPathologyEvent -[#black,dashed,thickness=2]-> Histology_Grade
 
         class DateTimeEnd{
 
@@ -323,25 +305,6 @@ package IG #DDDDDD{
           Extension.value[x]:valueTime => [1..1]
         } 
         class EventTypeData{
-
-          Extension.extension => [None..0]
-          Extension.url => [None..None]
-          Extension.value[x] => [None..None]
-        } 
-        class Histology_Grade{
-
-          Extension.extension:histologyGradeType => [0..1]
-          Extension.extension:histologyGradeType.extension => [None..0]
-          Extension.extension:histologyGradeType.url => [None..None]
-          Extension.extension:histologyGradeType.value[x] => [None..None]
-          Extension.extension:histologyGradeValue => [0..1]
-          Extension.extension:histologyGradeValue.extension => [None..0]
-          Extension.extension:histologyGradeValue.url => [None..None]
-          Extension.extension:histologyGradeValue.value[x] => [None..None]
-          Extension.url => [None..None]
-          Extension.value[x] => [None..0]
-        } 
-        class Laterality{
 
           Extension.extension => [None..0]
           Extension.url => [None..None]
@@ -538,6 +501,12 @@ package IG #DDDDDD{
           Extension.url => [None..None]
           Extension.value[x] => [None..0]
         } 
+        class OriginCenter{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [1..None]
+        } 
         class TreatmentLine{
 
           Extension.extension => [None..0]
@@ -551,10 +520,6 @@ package IG #DDDDDD{
         class VSEventTypeData  
 
      EventTypeData -[#black,dotted,thickness=2]-> VSEventTypeData
-
-        class Laterality  
-
-     Laterality -[#black,dotted,thickness=2]-> Laterality
 
         class VSMedicationItemProvenance  
 
@@ -631,29 +596,17 @@ package IG #DDDDDD{
         class SIPhNaturePropPharmOncoFAIRValueSet  
 
      OncoFAIRPharmacistAdvice -[#black,dotted,thickness=2]-> SIPhNaturePropPharmOncoFAIRValueSet
-
-        class TumorPathologyEventType  
-
-     TumorPathologyEvent -[#black,dotted,thickness=2]-> TumorPathologyEventType
-
-        class Topography  
-
-     TumorPathologyEvent -[#black,dotted,thickness=2]-> Topography
-
-        class Morphology  
-
-     TumorPathologyEvent -[#black,dotted,thickness=2]-> Morphology
        }
 
 package "Ressources de base" #palegreen {
 
- class "ResearchStudy" as  class9b1969036d5277c87c566c7a48c0e9dd 
+ class "Organization" as  classd6b258792ff06f82933c74eeb8aef591 
 
-    class9b1969036d5277c87c566c7a48c0e9dd --> ClinicalTrial
+    classd6b258792ff06f82933c74eeb8aef591 --> OncoOrganization
 
- class "condition-dueTo" as  class8000b081ad6fad98fb00e723d937227e 
+ class "Patient" as  class01122a97dca927210827560cb7d76af8 
 
-    class8000b081ad6fad98fb00e723d937227e --> DueToTumorPathologyEvent
+    class01122a97dca927210827560cb7d76af8 --> OncoPatient
 
  class "CarePlan" as  classc1c8e4b50c739ddc150dd233aa035d7a 
 
@@ -695,16 +648,8 @@ package "Ressources de base" #palegreen {
 
     classc680d437163cc6bab4f9bdb35c3073d0 --> OncoFAIRObservation
 
- class "Patient" as  class01122a97dca927210827560cb7d76af8 
+ class "http://ltsi.univ-rennes.fr/StructureDefinition/onco-patient" as  classf56b2add9550e7508c061a932ea07788 
 
-    class01122a97dca927210827560cb7d76af8 --> OncoFAIRPatient
-
- class "HealthcareService" as  classccfbac0a7f2dd501f3a20274066b28a3 
-
-    classccfbac0a7f2dd501f3a20274066b28a3 --> OncologyHealthcareService
-
- class "Condition" as  class9e2941b3c81256fac10392aaca4ccfde 
-
-    class9e2941b3c81256fac10392aaca4ccfde --> TumorPathologyEvent
+    classf56b2add9550e7508c061a932ea07788 --> OncoFAIRPatient
 }
 @enduml

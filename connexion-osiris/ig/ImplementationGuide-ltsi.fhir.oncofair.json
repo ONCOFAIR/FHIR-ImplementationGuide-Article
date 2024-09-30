@@ -10,7 +10,7 @@
   "name" : "OncoFAIR",
   "title" : "OncoFAIR",
   "status" : "draft",
-  "date" : "2024-09-30T15:06:03+00:00",
+  "date" : "2024-09-30T15:08:10+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -58,6 +58,18 @@
       },
       "name" : "Administered quantity of medication",
       "description" : "The administered quantity of medication.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/onco-organization"
+      },
+      "name" : "Cancer Organization",
+      "description" : "Cancer organization to describe the provider center or origin center of the onco-patient.",
       "isExample" : false
     },
     {
@@ -387,32 +399,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Condition"
-      }],
-      "reference" : {
-        "reference" : "Condition/fhir-osiris-example-TumorPathologyEvent-instance-1"
-      },
-      "name" : "fhir-osiris-example-TumorPathologyEvent-instance-1",
-      "description" : "Example of TPE from OSIRIS_pivot_TumorPathologyEvent.csv",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/tumor-pathology-event"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Condition"
-      }],
-      "reference" : {
-        "reference" : "Condition/fhir-osiris-example-TumorPathologyEvent-instance-2"
-      },
-      "name" : "fhir-osiris-example-TumorPathologyEvent-instance-2",
-      "description" : "Example of TPE from OSIRIS_pivot_TumorPathologyEvent.csv",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/tumor-pathology-event"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -432,30 +418,6 @@
       },
       "name" : "goNogo Value Set",
       "description" : "Value Set pour goNogo",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/histologygrade"
-      },
-      "name" : "Histology",
-      "description" : "Grade of Histology",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/laterality"
-      },
-      "name" : "Laterality",
-      "description" : "Laterality of location (if it exists)",
       "isExample" : false
     },
     {
@@ -1460,22 +1422,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/clinical-trial"
+        "reference" : "StructureDefinition/onco-patient"
       },
-      "name" : "Oncology Clinical Trial",
-      "description" : "Oncology clinical trial used to associate a Onco Patient to a Clinical Trial",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/oncology-healthcare-service"
-      },
-      "name" : "OncologyHealthcareService",
-      "description" : "Healthcare service(s).",
+      "name" : "Oncology Patient",
+      "description" : "Oncology patient defined by Osiris.",
       "isExample" : false
     },
     {
@@ -1500,6 +1450,18 @@
       },
       "name" : "Paremètres posologie conditionnelle Code System",
       "description" : "Code system pour l'attribut ParamPosoConditionnelle",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/origin-center"
+      },
+      "name" : "Patient Origin Center",
+      "description" : "The origin center organization of an Oncology Patient.",
       "isExample" : false
     },
     {
@@ -1649,30 +1611,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/tumor-pathology-event"
-      },
-      "name" : "Tumor Pathology Event",
-      "description" : "Tumor Pathology Event (TPE) Condition describing a tumoral event: reference to the parent TPE, laterality, morphology.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/dueTo-tumor-pathology-event"
-      },
-      "name" : "Tumor Pathology Event Parent",
-      "description" : "Reference the Tumor Pathology Event from which the metastasis comes from.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -1777,19 +1715,6 @@
       "name" : "Type évènement Code System",
       "description" : "Code system pour l'attribut TypeEvenement",
       "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ResearchStudy"
-      }],
-      "reference" : {
-        "reference" : "ResearchStudy/fhir-osiris-example-researchstudy"
-      },
-      "name" : "Unknown",
-      "description" : "Example of ResearchStudy from OSIRIS_pivot_Treatment.csv",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/clinical-trial"]
     }],
     "page" : {
       "sourceUrl" : "toc.html",
