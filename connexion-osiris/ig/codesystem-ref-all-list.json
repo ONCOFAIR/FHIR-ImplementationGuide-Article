@@ -802,9 +802,9 @@
       "oids" : ["2.16.840.1.113883.6.86"],
       "uses" : {
       },
+      "ValueSet-Laterality.html" : "Tumor Laterality Value Set",
       "ValueSet-TumorPathologyEventType.html" : "Tumor Pathology Event Type Value Set",
-      "ValueSet-TreatmentType.html" : "Treatment Type Value Set",
-      "ValueSet-Laterality.html" : "Tumor Laterality Value Set"
+      "ValueSet-TreatmentType.html" : "Treatment Type Value Set"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0092",
@@ -924,8 +924,8 @@
       "oids" : ["2.16.840.1.113883.5.1008"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R5/valueset-encounter-special-courtesy.html" : "Special Courtesy",
-      "http://hl7.org/fhir/R5/valueset-marital-status.html" : "Marital Status Codes"
+      "http://hl7.org/fhir/R5/valueset-marital-status.html" : "Marital Status Codes",
+      "http://hl7.org/fhir/R5/valueset-encounter-special-courtesy.html" : "Special Courtesy"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
@@ -950,6 +950,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R5/valueset-encounter-participant-type.html" : "Participant Type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-Race",
+      "version" : "4.0.0",
+      "status" : "active",
+      "name" : "Race",
+      "title" : "Race",
+      "description" : "**Deprecation Information:** Deprecated per UP-263. This code system is NOT the acknowledged source of truth for Race concepts and codes. It should no longer be used. https://terminology.hl7.org/CodeSystem-CDCREC.html should be used in its place. In the United States, federal standards for classifying data on race determine the categories used by federal agencies and exert a strong influence on categorization by state and local agencies and private sector organizations. The federal standards do not conceptually define race, and they recognize the absence of an anthropological or scientific basis for racial classification. Instead, the federal standards acknowledge that race is a social-political construct in which an individual's own identification with one more race categories is preferred to observer identification. The standards use a variety of features to define five minimum race categories. Among these features are descent from \"the original peoples\" of a specified region or nation. The minimum race categories are American Indian or Alaska Native, Asian, Black or African American, Native Hawaiian or Other Pacific Islander, and White. The federal standards stipulate that race data need not be limited to the five minimum categories, but any expansion must be collapsible to those categories.",
+      "oids" : ["2.16.840.1.113883.5.104"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/6.0.2/ValueSet-v3-Race.html" : "Race"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-TimingEvent",
@@ -997,8 +1009,8 @@
       "oids" : ["2.16.840.1.113883.6.121"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R5/valueset-languages.html" : "Common Languages",
-      "http://hl7.org/fhir/R5/valueset-all-languages.html" : "All Languages"
+      "http://hl7.org/fhir/R5/valueset-all-languages.html" : "All Languages",
+      "http://hl7.org/fhir/R5/valueset-languages.html" : "Common Languages"
     }
   ]
 }

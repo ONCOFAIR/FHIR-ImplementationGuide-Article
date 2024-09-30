@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIR"] ; # 
   fhir:title [ fhir:v "OncoFAIR"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-09-30T15:08:10+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-09-30T15:18:53+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -1499,6 +1499,18 @@
        ] ;
        fhir:name [ fhir:v "Paremètres posologie conditionnelle Code System" ] ;
        fhir:description [ fhir:v "Code system pour l'attribut ParamPosoConditionnelle" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/ethnicity> ;
+         fhir:reference [ fhir:v "StructureDefinition/ethnicity" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Ethnicity" ] ;
+       fhir:description [ fhir:v "The patient ethnicity" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

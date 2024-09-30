@@ -10,7 +10,7 @@
   "name" : "OncoFAIR",
   "title" : "OncoFAIR",
   "status" : "draft",
-  "date" : "2024-09-30T15:08:10+00:00",
+  "date" : "2024-09-30T15:18:53+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -1450,6 +1450,18 @@
       },
       "name" : "Paremètres posologie conditionnelle Code System",
       "description" : "Code system pour l'attribut ParamPosoConditionnelle",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ethnicity"
+      },
+      "name" : "Patient Ethnicity",
+      "description" : "The patient ethnicity",
       "isExample" : false
     },
     {

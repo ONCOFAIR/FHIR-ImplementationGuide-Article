@@ -70,10 +70,10 @@
       "uses" : {
       },
       "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element",
-      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
-      "StructureDefinition-oncofair-medicationadministration-report.html" : "OncoFAIR MedicationAdministration Report",
       "StructureDefinition-oncofair-medicationrequest-prescription.html" : "OncoFAIR MedicationRequest Prescription",
       "StructureDefinition-oncofair-medicationadministration-component.html" : "OncoFAIR MedicationAdministration Component",
+      "StructureDefinition-oncofair-medicationadministration-report.html" : "OncoFAIR MedicationAdministration Report",
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
       "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component"
     },
     {
@@ -295,6 +295,20 @@
       "uses" : {
       },
       "StructureDefinition-medication-type.html" : "Medication type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-Race",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "Race",
+      "title" : "Race",
+      "description" : "In the United States, federal standards for classifying data on race determine the categories used by federal agencies and exert a strong influence on categorization by state and local agencies and private sector organizations. The federal standards do not conceptually define race, and they recognize the absence of an anthropological or scientific basis for racial classification. Instead, the federal standards acknowledge that race is a social-political construct in which an individual's own identification with one more race categories is preferred to observer identification. The standards use a variety of features to define five minimum race categories. Among these features are descent from \"the original peoples\" of a specified region or nation. The minimum race categories are American Indian or Alaska Native, Asian, Black or African American, Native Hawaiian or Other Pacific Islander, and White. The federal standards stipulate that race data need not be limited to the five minimum categories, but any expansion must be collapsible to those categories.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-Race"],
+      "oids" : ["2.16.840.1.113883.1.11.14914"],
+      "sources" : ["2.16.840.1.113883.1.11.14914"],
+      "uses" : {
+      },
+      "StructureDefinition-ethnicity.html" : "Patient Ethnicity"
     }
   ]
 }
