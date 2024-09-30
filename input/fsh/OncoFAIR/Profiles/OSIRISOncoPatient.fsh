@@ -9,7 +9,7 @@ Description:    "Oncology patient defined by Osiris."
 * id ^short = "Local patient identifier"
 * id ^definition = "Anonymized local identifier of the patient in the hospital."
 
-* managingOrganization 0..1 MS
+* managingOrganization 0..1 MS // 1..1 dans OSIRIS actuellement
 * managingOrganization only Reference(OncoOrganization)
 * managingOrganization ^short = "Identifier of the center providing the data"
 * managingOrganization ^definition = "The FINESS identifier of the center providing the clinical data for the OSIRIS project."
@@ -28,13 +28,25 @@ Description:    "Oncology patient defined by Osiris."
 * birthDate ^definition = "The patient's date of birth as recorded on the birth certificate. Date (indicating the 15th day of the month of birth for anonymization)."
 
 // Extensions
+/*
+* extension contains ethnicity named ethnicity 0..1
+* extension[ethnicity] MS
+* extension[ethnicity] ^short = "Ethnicity"
+* extension[ethnicity] ^definition = "The patient's ethnicity."
+*/
 
-* extension contains origin-center named origin-center 0..1
+* extension contains origin-center named origin-center 0..1 // 1..1 dans OSIRIS actuellement
 * extension[origin-center] MS
 * extension[origin-center] ^short = "Identifier of the patient's origin center"
 * extension[origin-center] ^definition = "The identifier according to the Fichier National des Etablissements Sanitaires et Sociaux (FINESS) of the health center that took care of the patient."
 
 // Other
+Extension:  Ethnicity
+Id: ethnicity
+Title: "Patient Ethnicity"
+Description: "The patient ethnicity"
+* value[x] only CodeableConcept
+* valueCodeableConcept from http://terminology.hl7.org/ValueSet/v3-Race (extensible)
 
 Extension:  OriginCenter
 Id: origin-center
