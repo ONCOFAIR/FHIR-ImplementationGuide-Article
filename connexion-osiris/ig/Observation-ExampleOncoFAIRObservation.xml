@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ExampleOncoFAIRObservation"/>
+  <meta>
+    <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-observation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation ExampleOncoFAIRObservation</b></p><a name="ExampleOncoFAIRObservation"> </a><a name="hcExampleOncoFAIRObservation"> </a><a name="ExampleOncoFAIRObservation-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://ltsi.univ-rennes.fr/CodeSystem/siph-renscomplement-oncofair-codesystem POIDS}">Poids</span></p><p><b>subject</b>: <a href="Patient-ExampleOncoFAIRPatient.html">Anonymous Patient (no stated gender), DoB Unknown ( 123456789)</a></p><p><b>effective</b>: 2024-06-06 10:00:00+0000</p><p><b>issued</b>: 2024-06-06 10:15:00+0000</p><p><b>value</b>: 70 kg</p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://ltsi.univ-rennes.fr/CodeSystem/siph-renscomplement-oncofair-codesystem"/>
+      <code value="POIDS"/>
+      <display value="Poids"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ExampleOncoFAIRPatient"/>
+  </subject>
+  <effectiveDateTime value="2024-06-06T10:00:00Z"/>
+  <issued value="2024-06-06T10:15:00Z"/>
+  <valueQuantity>
+    <value value="70"/>
+    <unit value="kg"/>
+  </valueQuantity>
+</Observation>

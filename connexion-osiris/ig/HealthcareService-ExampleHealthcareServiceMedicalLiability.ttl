@@ -1,0 +1,20 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/HealthcareService/ExampleHealthcareServiceMedicalLiability> a fhir:HealthcareService ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleHealthcareServiceMedicalLiability"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: HealthcareService ExampleHealthcareServiceMedicalLiability</b></p><a name=\"ExampleHealthcareServiceMedicalLiability\"> </a><a name=\"hcExampleHealthcareServiceMedicalLiability\"> </a><a name=\"ExampleHealthcareServiceMedicalLiability-en-US\"> </a><p><b>identifier</b>: MD067</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "MD067" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
