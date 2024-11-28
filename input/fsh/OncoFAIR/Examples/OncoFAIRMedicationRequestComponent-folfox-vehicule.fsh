@@ -1,4 +1,4 @@
-Instance: Component
+Instance: OncoFAIRMedicationRequestComponent-Folfox-vehicule
 InstanceOf: OncoFAIRMedicationRequestComponent
 Title: "Example OncoFAIR MedicationRequest Component"
 Description: "Example instance of OncoFAIRMedicationRequestComponent"
@@ -6,18 +6,27 @@ Usage: #example
 * status = #active
 * intent = #order
 
-
 * medication.concept.coding[0].system = "http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem"
 * medication.concept.coding[0].display = "component"
 * medication.concept.coding[0].code = #component
+* medication.reference = Reference(OncoFAIRMedication-fluoro-vehicule)
 
-* medication.reference = Reference(ExampleOncoFAIRMedication)
+* groupIdentifier.value = "folfox-example"
 
 * subject = Reference(ExampleOncoFAIRPatient)
-* basedOn = Reference (Element)
 
-* dosageInstruction.doseAndRate.doseQuantity.value = 250
-* dosageInstruction.doseAndRate.doseQuantity.unit = "mg"
+* basedOn = Reference (OncoFAIRMedicationRequestElement-folfox)
+
+* performer = Reference (ExampleOncoFAIRPractitioner)
+
+* device.reference = Reference (ExampleOncoFAIRDeviceDefinition-perfusion)
+
+* dosageInstruction.site = #6894000
+* dosageInstruction.route = #47625008 "Intravenous route"
+* dosageInstruction.method = #738990001 "Administer (administration method)"
+
+* dosageInstruction.doseAndRate.doseQuantity.value = 100
+* dosageInstruction.doseAndRate.doseQuantity.unit = "ml"
 * dosageInstruction.doseAndRate.doseQuantity.system = "http://unitsofmeasure.org"
 
 * substitution.allowedBoolean = false
@@ -26,10 +35,5 @@ Usage: #example
 * note[comments].text = "Comments associated with the prescribed component"
 * note[indication].text = "Specifies the reasons for prescribing this component"
 
-* extension[oncofair-mr-exempt-ltc].valueCodeableConcept.coding[0].system = "http://ltsi.univ-rennes.fr/CodeSystem/siph-listeald-oncofair-codesystem"
-* extension[oncofair-mr-exempt-ltc].valueCodeableConcept.coding[0].code = #ALD1
-* extension[oncofair-mr-exempt-ltc].valueCodeableConcept.coding[0].display = "Accident vasculaire cérébral invalidant" 
-
 * extension[oncofair-mr-component-solute].valueBoolean = false
-
 * extension[oncofair-mr-is-dosage-referent].valueBoolean = true
