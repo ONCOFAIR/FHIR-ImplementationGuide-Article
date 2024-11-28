@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="OncoFAIRMedication-fluoro-uracile"/>
+  <meta>
+    <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Medication OncoFAIRMedication-fluoro-uracile</b></p><a name="OncoFAIRMedication-fluoro-uracile"> </a><a name="hcOncoFAIRMedication-fluoro-uracile"> </a><a name="OncoFAIRMedication-fluoro-uracile-en-US"> </a><p><b>OncoFAIRMedicationType</b>: <span title="Codes:{http://ltsi.univ-rennes.fr/CodeSystem/siph-typecomposant-oncofair-codesystem PRAC}">principe actif</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 387172005}">5-fluorouracil</span></p></div>
+  </text>
+  <extension url="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication-type">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://ltsi.univ-rennes.fr/CodeSystem/siph-typecomposant-oncofair-codesystem"/>
+        <code value="PRAC"/>
+        <display value="principe actif"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="387172005"/>
+      <display value="5-fluorouracil"/>
+    </coding>
+  </code>
+</Medication>

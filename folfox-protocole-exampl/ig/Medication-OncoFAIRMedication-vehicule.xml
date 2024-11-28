@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="OncoFAIRMedication-vehicule"/>
+  <meta>
+    <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Medication OncoFAIRMedication-vehicule</b></p><a name="OncoFAIRMedication-vehicule"> </a><a name="hcOncoFAIRMedication-vehicule"> </a><a name="OncoFAIRMedication-vehicule-en-US"> </a><p><b>OncoFAIRMedicationType</b>: <span title="Codes:{http://ltsi.univ-rennes.fr/CodeSystem/siph-typecomposant-oncofair-codesystem PRAC}">principe actif</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 5000411000001105}">Sodium chloride 0.9% solution for injection 2litre bags</span></p></div>
+  </text>
+  <extension url="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication-type">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://ltsi.univ-rennes.fr/CodeSystem/siph-typecomposant-oncofair-codesystem"/>
+        <code value="PRAC"/>
+        <display value="principe actif"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="5000411000001105"/>
+      <display value="Sodium chloride 0.9% solution for injection 2litre bags"/>
+    </coding>
+  </code>
+</Medication>

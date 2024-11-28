@@ -1,0 +1,36 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-type-elementprescrption> a fhir:SearchParameter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "oncofair-sp-mr-type-elementprescrption"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter oncofair-sp-mr-type-elementprescrption</b></p><a name=\"oncofair-sp-mr-type-elementprescrption\"> </a><a name=\"hconcofair-sp-mr-type-elementprescrption\"> </a><a name=\"oncofair-sp-mr-type-elementprescrption-en-US\"> </a><h2>OncoFAIRSPMRTypeElementPrescription</h2><p>Parameter <code>mr-type-elementprescrption</code>:<code>token</code></p><div><p>Search for the type of element prescription</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R5/medicationrequest.html\">MedicationRequest</a></td></tr><tr><td>Expression</td><td><code>MedicationRequest.dosageInstruction.where(id='element').method</code></td></tr><tr><td>Processing Mode</td><td>Normal</td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: It's up to the server whether the parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: It's up to the server whether the parameter can have multiple values (separated by comma) where at least one must be true</li></ul></td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-type-elementprescrption"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "OncoFAIRSPMRTypeElementPrescription"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-11-28T10:15:33+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://ltsi.univ-rennes.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Search for the type of element prescription"] ; # 
+  fhir:code [ fhir:v "mr-type-elementprescrption"] ; # 
+  fhir:base ( [ fhir:v "MedicationRequest"] ) ; # 
+  fhir:type [ fhir:v "token"] ; # 
+  fhir:expression [ fhir:v "MedicationRequest.dosageInstruction.where(id='element').method"] ; # 
+  fhir:processingMode [ fhir:v "normal"] . # 
+
+# -------------------------------------------------------------------------------------
+

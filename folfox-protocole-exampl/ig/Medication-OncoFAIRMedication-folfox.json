@@ -1,0 +1,95 @@
+{
+  "resourceType" : "Medication",
+  "id" : "OncoFAIRMedication-folfox",
+  "meta" : {
+    "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication OncoFAIRMedication-folfox</b></p><a name=\"OncoFAIRMedication-folfox\"> </a><a name=\"hcOncoFAIRMedication-folfox\"> </a><a name=\"OncoFAIRMedication-folfox-en-US\"> </a><p><b>OncoFAIRMedicationType</b>: <span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/siph-typecomposant-oncofair-codesystem PRAC}\">principe actif</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 395814003}\">Oxaliplatin</span></p><p><b>doseForm</b>: <span title=\"Codes:\">Solution for infusion and/or injection</span></p><p><b>totalVolume</b>: 200 ml</p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Medication-OncoFAIRMedication-fluoro-uracile.html\">Medication 5-fluorouracil</a></td></tr></table><p><b>isActive</b>: true</p><p><b>strength</b>: 5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/3 hours<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeh = 'h')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Medication-OncoFAIRMedication-oxaliplatine.html\">Medication Oxaliplatin</a></td></tr></table><p><b>isActive</b>: true</p><p><b>strength</b>: 20 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/3 hours<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeh = 'h')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"OncoFAIRMedication-NACL\">OncoFAIRMedication-NACL</a></td></tr></table><p><b>strength</b>: 200 ml</p></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication-type",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://ltsi.univ-rennes.fr/CodeSystem/siph-typecomposant-oncofair-codesystem",
+        "code" : "PRAC",
+        "display" : "principe actif"
+      }]
+    }
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "395814003",
+      "display" : "Oxaliplatin"
+    }]
+  },
+  "doseForm" : {
+    "coding" : [{
+      "code" : "1208958005",
+      "display" : "Solution for infusion and/or injection"
+    }]
+  },
+  "totalVolume" : {
+    "value" : 200,
+    "unit" : "ml",
+    "system" : "http://unitsofmeasure.org"
+  },
+  "ingredient" : [{
+    "item" : {
+      "reference" : {
+        "reference" : "Medication/OncoFAIRMedication-fluoro-uracile"
+      }
+    },
+    "isActive" : true,
+    "strengthRatio" : {
+      "numerator" : {
+        "value" : 5,
+        "unit" : "mg",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg"
+      },
+      "denominator" : {
+        "value" : 3,
+        "unit" : "hours",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "h"
+      }
+    }
+  },
+  {
+    "item" : {
+      "reference" : {
+        "reference" : "Medication/OncoFAIRMedication-oxaliplatine"
+      }
+    },
+    "isActive" : true,
+    "strengthRatio" : {
+      "numerator" : {
+        "value" : 20,
+        "unit" : "mg",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg"
+      },
+      "denominator" : {
+        "value" : 3,
+        "unit" : "hours",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "h"
+      }
+    }
+  },
+  {
+    "item" : {
+      "reference" : {
+        "reference" : "OncoFAIRMedication-NACL"
+      }
+    },
+    "strengthQuantity" : {
+      "value" : 200,
+      "unit" : "ml",
+      "system" : "http://unitsofmeasure.org"
+    }
+  }]
+}

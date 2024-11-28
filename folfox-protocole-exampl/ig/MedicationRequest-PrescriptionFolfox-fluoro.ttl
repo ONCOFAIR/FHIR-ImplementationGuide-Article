@@ -1,0 +1,78 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/MedicationRequest/PrescriptionFolfox-fluoro> a fhir:MedicationRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PrescriptionFolfox-fluoro"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription"^^xsd:anyURI ;
+       fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest PrescriptionFolfox-fluoro</b></p><a name=\"PrescriptionFolfox-fluoro\"> </a><a name=\"hcPrescriptionFolfox-fluoro\"> </a><a name=\"PrescriptionFolfox-fluoro-en-US\"> </a><p><b>OncoFAIRMRPrescriptionValidationDate</b>: 2024-06-01 08:00:00+0000</p><p><b>identifier</b>: prescription-folfox-oxaliplatine</p><p><b>basedOn</b>: <a href=\"CarePlan-OncoFAIRCarePlan-folfox.html\">CarePlan Folfox</a></p><p><b>groupIdentifier</b>: folfox-example</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem prescription}\">prescription</span></td><td><a href=\"Medication-OncoFAIRMedication-fluoro-uracile.html\">Medication 5-fluorouracil</a></td></tr></table><p><b>subject</b>: <a href=\"Patient-ExampleOncoFAIRPatient.html\">Anonymous Patient (no stated gender), DoB Unknown ( 123456789)</a></p><p><b>encounter</b>: <a href=\"Encounter-ExampleOncoFAIREncounter.html\">Encounter: identifier = EN-987654; status = in-progress</a></p><p><b>supportingInformation</b>: </p><ul><li><a href=\"HealthcareService-ExampleHealthcareServiceAccomodation.html\">HealthcareService: identifier = A065</a></li><li><a href=\"HealthcareService-ExampleHealthcareServiceMedicalLiability.html\">HealthcareService: identifier = MD067</a></li></ul><h3>Reasons</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Observation-ExampleOncoFAIRObservation.html\">Observation Poids</a></td></tr></table><p><b>note</b>: This is a default comment on the prescription by the prescribing doctor.</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-prescription-validation-date"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2024-06-01T08:00:00Z"^^xsd:dateTime ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "prescription-folfox-oxaliplatine" ]
+  ] ) ; # 
+  fhir:basedOn ( [
+     fhir:link <http://ltsi.univ-rennes.fr/CarePlan/OncoFAIRCarePlan-folfox> ;
+     fhir:reference [ fhir:v "CarePlan/OncoFAIRCarePlan-folfox" ]
+  ] ) ; # 
+  fhir:groupIdentifier [
+     fhir:value [ fhir:v "folfox-example" ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:medication [
+     fhir:concept [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "prescription" ] ;
+         fhir:display [ fhir:v "prescription" ]
+       ] )
+     ] ;
+     fhir:reference [
+       fhir:link <http://ltsi.univ-rennes.fr/Medication/OncoFAIRMedication-fluoro-uracile> ;
+       fhir:reference [ fhir:v "Medication/OncoFAIRMedication-fluoro-uracile" ]
+     ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://ltsi.univ-rennes.fr/Patient/ExampleOncoFAIRPatient> ;
+     fhir:reference [ fhir:v "Patient/ExampleOncoFAIRPatient" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://ltsi.univ-rennes.fr/Encounter/ExampleOncoFAIREncounter> ;
+     fhir:reference [ fhir:v "Encounter/ExampleOncoFAIREncounter" ]
+  ] ; # 
+  fhir:supportingInformation ( [
+     fhir:link <http://ltsi.univ-rennes.fr/HealthcareService/ExampleHealthcareServiceAccomodation> ;
+     fhir:id [ fhir:v "accomodationUnit" ] ;
+     fhir:reference [ fhir:v "HealthcareService/ExampleHealthcareServiceAccomodation" ]
+  ] [
+     fhir:link <http://ltsi.univ-rennes.fr/HealthcareService/ExampleHealthcareServiceMedicalLiability> ;
+     fhir:id [ fhir:v "medicalLiabiltyUnit" ] ;
+     fhir:reference [ fhir:v "HealthcareService/ExampleHealthcareServiceMedicalLiability" ]
+  ] ) ; # 
+  fhir:reason ( [
+     fhir:reference [
+       fhir:link <http://ltsi.univ-rennes.fr/Observation/ExampleOncoFAIRObservation> ;
+       fhir:reference [ fhir:v "Observation/ExampleOncoFAIRObservation" ]
+     ]
+  ] ) ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "This is a default comment on the prescription by the prescribing doctor." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/CodeSystem/medications-oncofair-codesystem> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "medications-oncofair-codesystem"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem medications-oncofair-codesystem</b></p><a name=\"medications-oncofair-codesystem\"> </a><a name=\"hcmedications-oncofair-codesystem\"> </a><a name=\"medications-oncofair-codesystem-en-US\"> </a><p>This case-sensitive code system <code>http://ltsi.univ-rennes.fr/CodeSystem/medications-oncofair-codesystem</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">9365536<a name=\"medications-oncofair-codesystem-9365536\"> </a></td><td>OXALIPLATINE 200 mg</td></tr><tr><td style=\"white-space:nowrap\">9334872<a name=\"medications-oncofair-codesystem-9334872\"> </a></td><td>5-FLUOROURACILE 5 g</td></tr><tr><td style=\"white-space:nowrap\">9314929<a name=\"medications-oncofair-codesystem-9314929\"> </a></td><td>LEVOFOLINATE DE CALCIUM</td></tr><tr><td style=\"white-space:nowrap\">9296278<a name=\"medications-oncofair-codesystem-9296278\"> </a></td><td>ONDANSETRON</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"medications-oncofair-codesystem-5\"> </a></td><td>METHYLPREDNISOLONE</td></tr><tr><td style=\"white-space:nowrap\">9279854<a name=\"medications-oncofair-codesystem-9279854\"> </a></td><td>G5% 100ML POCHE</td></tr><tr><td style=\"white-space:nowrap\">9403863<a name=\"medications-oncofair-codesystem-9403863\"> </a></td><td>OXYCODONE LP 10 MG VIATRIS, CPR À LIBÉRATION PROLONGÉE</td></tr><tr><td style=\"white-space:nowrap\">9009043<a name=\"medications-oncofair-codesystem-9009043\"> </a></td><td>BACTRIM FORTE 800MG/160MG CPR</td></tr><tr><td style=\"white-space:nowrap\">9137249<a name=\"medications-oncofair-codesystem-9137249\"> </a></td><td>PENTACARINAT 300MG PDR INJ</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/medications-oncofair-codesystem"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "MedicationsOncoFAIRCodeSystem"] ; # 
+  fhir:title [ fhir:v "Medications"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-11-28T10:15:33+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://ltsi.univ-rennes.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "CodeSystem for french medications."] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "9"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "9365536" ] ;
+     fhir:display [ fhir:v "OXALIPLATINE 200 mg" ]
+  ] [
+     fhir:code [ fhir:v "9334872" ] ;
+     fhir:display [ fhir:v "5-FLUOROURACILE 5 g" ]
+  ] [
+     fhir:code [ fhir:v "9314929" ] ;
+     fhir:display [ fhir:v "LEVOFOLINATE DE CALCIUM" ]
+  ] [
+     fhir:code [ fhir:v "9296278" ] ;
+     fhir:display [ fhir:v "ONDANSETRON" ]
+  ] [
+     fhir:code [ fhir:v "5" ] ;
+     fhir:display [ fhir:v "METHYLPREDNISOLONE" ]
+  ] [
+     fhir:code [ fhir:v "9279854" ] ;
+     fhir:display [ fhir:v "G5% 100ML POCHE" ]
+  ] [
+     fhir:code [ fhir:v "9403863" ] ;
+     fhir:display [ fhir:v "OXYCODONE LP 10 MG VIATRIS, CPR À LIBÉRATION PROLONGÉE" ]
+  ] [
+     fhir:code [ fhir:v "9009043" ] ;
+     fhir:display [ fhir:v "BACTRIM FORTE 800MG/160MG CPR" ]
+  ] [
+     fhir:code [ fhir:v "9137249" ] ;
+     fhir:display [ fhir:v "PENTACARINAT 300MG PDR INJ" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

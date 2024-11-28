@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/CodeSystem/siph-renscomplement-oncofair-codesystem> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "siph-renscomplement-oncofair-codesystem"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem siph-renscomplement-oncofair-codesystem</b></p><a name=\"siph-renscomplement-oncofair-codesystem\"> </a><a name=\"hcsiph-renscomplement-oncofair-codesystem\"> </a><a name=\"siph-renscomplement-oncofair-codesystem-en-US\"> </a><p>This case-sensitive code system <code>http://ltsi.univ-rennes.fr/CodeSystem/siph-renscomplement-oncofair-codesystem</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">ELT_DOSS<a name=\"siph-renscomplement-oncofair-codesystem-ELT_DOSS\"> </a></td><td>Elément du dossier médical</td></tr><tr><td style=\"white-space:nowrap\">POIDS<a name=\"siph-renscomplement-oncofair-codesystem-POIDS\"> </a></td><td>Poids</td></tr><tr><td style=\"white-space:nowrap\">TAILLE<a name=\"siph-renscomplement-oncofair-codesystem-TAILLE\"> </a></td><td>Taille</td></tr><tr><td style=\"white-space:nowrap\">S_CORP<a name=\"siph-renscomplement-oncofair-codesystem-S_CORP\"> </a></td><td>Surface corporelle</td></tr><tr><td style=\"white-space:nowrap\">DIAG<a name=\"siph-renscomplement-oncofair-codesystem-DIAG\"> </a></td><td>Diagnostic</td></tr><tr><td style=\"white-space:nowrap\">CL_CREAT<a name=\"siph-renscomplement-oncofair-codesystem-CL_CREAT\"> </a></td><td>Clairance de la créatinine</td></tr><tr><td style=\"white-space:nowrap\">REGIME<a name=\"siph-renscomplement-oncofair-codesystem-REGIME\"> </a></td><td>Régime</td></tr><tr><td style=\"white-space:nowrap\">ALLERGIE<a name=\"siph-renscomplement-oncofair-codesystem-ALLERGIE\"> </a></td><td>Allergie</td></tr><tr><td style=\"white-space:nowrap\">AGE<a name=\"siph-renscomplement-oncofair-codesystem-AGE\"> </a></td><td>Age</td></tr><tr><td style=\"white-space:nowrap\">SEXE<a name=\"siph-renscomplement-oncofair-codesystem-SEXE\"> </a></td><td>Sexe clinique</td></tr><tr><td style=\"white-space:nowrap\">EVT<a name=\"siph-renscomplement-oncofair-codesystem-EVT\"> </a></td><td>Evénment clinique</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/siph-renscomplement-oncofair-codesystem"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "SIPhRensComplementOncoFAIRCodeSystem"] ; # 
+  fhir:title [ fhir:v "Renseignement complémentaire Code System"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-11-28T10:15:33+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://ltsi.univ-rennes.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Code system pour l'attribut RensComplement"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "11"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "ELT_DOSS" ] ;
+     fhir:display [ fhir:v "Elément du dossier médical" ]
+  ] [
+     fhir:code [ fhir:v "POIDS" ] ;
+     fhir:display [ fhir:v "Poids" ]
+  ] [
+     fhir:code [ fhir:v "TAILLE" ] ;
+     fhir:display [ fhir:v "Taille" ]
+  ] [
+     fhir:code [ fhir:v "S_CORP" ] ;
+     fhir:display [ fhir:v "Surface corporelle" ]
+  ] [
+     fhir:code [ fhir:v "DIAG" ] ;
+     fhir:display [ fhir:v "Diagnostic" ]
+  ] [
+     fhir:code [ fhir:v "CL_CREAT" ] ;
+     fhir:display [ fhir:v "Clairance de la créatinine" ]
+  ] [
+     fhir:code [ fhir:v "REGIME" ] ;
+     fhir:display [ fhir:v "Régime" ]
+  ] [
+     fhir:code [ fhir:v "ALLERGIE" ] ;
+     fhir:display [ fhir:v "Allergie" ]
+  ] [
+     fhir:code [ fhir:v "AGE" ] ;
+     fhir:display [ fhir:v "Age" ]
+  ] [
+     fhir:code [ fhir:v "SEXE" ] ;
+     fhir:display [ fhir:v "Sexe clinique" ]
+  ] [
+     fhir:code [ fhir:v "EVT" ] ;
+     fhir:display [ fhir:v "Evénment clinique" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,60 @@
+{
+  "resourceType" : "MedicationRequest",
+  "id" : "PrescriptionFolfox-oxali-diff",
+  "meta" : {
+    "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest PrescriptionFolfox-oxali-diff</b></p><a name=\"PrescriptionFolfox-oxali-diff\"> </a><a name=\"hcPrescriptionFolfox-oxali-diff\"> </a><a name=\"PrescriptionFolfox-oxali-diff-en-US\"> </a><p><b>OncoFAIRMRPrescriptionValidationDate</b>: 2024-06-01 08:00:00+0000</p><p><b>identifier</b>: prescription-folfox-oxaliplatine</p><p><b>basedOn</b>: <a href=\"CarePlan-OncoFAIRCarePlan-folfox.html\">CarePlan Folfox</a></p><p><b>groupIdentifier</b>: folfox-example</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem prescription}\">prescription</span></td><td><a href=\"Medication-OncoFAIRMedication-oxaliplatine.html\">Medication Oxaliplatin</a></td></tr></table><p><b>subject</b>: <a href=\"Patient-ExampleOncoFAIRPatient.html\">Anonymous Patient (no stated gender), DoB Unknown ( 123456789)</a></p><p><b>encounter</b>: <a href=\"Encounter-ExampleOncoFAIREncounter.html\">Encounter: identifier = EN-987654; status = in-progress</a></p><p><b>supportingInformation</b>: </p><ul><li><a href=\"HealthcareService-ExampleHealthcareServiceAccomodation.html\">HealthcareService: identifier = A065</a></li><li><a href=\"HealthcareService-ExampleHealthcareServiceMedicalLiability.html\">HealthcareService: identifier = MD067</a></li></ul><h3>Reasons</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Observation-ExampleOncoFAIRObservation.html\">Observation Poids</a></td></tr></table><p><b>note</b>: This is a default comment on the prescription by the prescribing doctor.</p></div>"
+  },
+  "extension" : [{
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-prescription-validation-date",
+    "valueDateTime" : "2024-06-01T08:00:00Z"
+  }],
+  "identifier" : [{
+    "value" : "prescription-folfox-oxaliplatine"
+  }],
+  "basedOn" : [{
+    "reference" : "CarePlan/OncoFAIRCarePlan-folfox"
+  }],
+  "groupIdentifier" : {
+    "value" : "folfox-example"
+  },
+  "status" : "active",
+  "intent" : "order",
+  "medication" : {
+    "concept" : {
+      "coding" : [{
+        "system" : "http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem",
+        "code" : "prescription",
+        "display" : "prescription"
+      }]
+    },
+    "reference" : {
+      "reference" : "Medication/OncoFAIRMedication-oxaliplatine"
+    }
+  },
+  "subject" : {
+    "reference" : "Patient/ExampleOncoFAIRPatient"
+  },
+  "encounter" : {
+    "reference" : "Encounter/ExampleOncoFAIREncounter"
+  },
+  "supportingInformation" : [{
+    "id" : "accomodationUnit",
+    "reference" : "HealthcareService/ExampleHealthcareServiceAccomodation"
+  },
+  {
+    "id" : "medicalLiabiltyUnit",
+    "reference" : "HealthcareService/ExampleHealthcareServiceMedicalLiability"
+  }],
+  "reason" : [{
+    "reference" : {
+      "reference" : "Observation/ExampleOncoFAIRObservation"
+    }
+  }],
+  "note" : [{
+    "text" : "This is a default comment on the prescription by the prescribing doctor."
+  }]
+}

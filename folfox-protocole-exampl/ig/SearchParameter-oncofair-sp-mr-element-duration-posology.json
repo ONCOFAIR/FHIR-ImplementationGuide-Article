@@ -1,0 +1,38 @@
+{
+  "resourceType" : "SearchParameter",
+  "id" : "oncofair-sp-mr-element-duration-posology",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter oncofair-sp-mr-element-duration-posology</b></p><a name=\"oncofair-sp-mr-element-duration-posology\"> </a><a name=\"hconcofair-sp-mr-element-duration-posology\"> </a><a name=\"oncofair-sp-mr-element-duration-posology-en-US\"> </a><h2>OncoFAIRSPMRDurationPosology</h2><p>Parameter <code>mr-duration-posology</code>:<code>number</code></p><div><p>Search for duration of administration</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R5/medicationrequest.html\">MedicationRequest</a></td></tr><tr><td>Expression</td><td><code>MedicationRequest.dosageInstruction.timing.repeat.duration</code></td></tr><tr><td>Processing Mode</td><td>Normal</td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: The parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: The parameter may have multiple values (separated by comma) where at least one must be true</li></ul></td></tr><tr><td>Comparators</td><td>Allowed: eq, ne, gt, lt, ge, le, sa, eb, ap</td></tr></table></div>"
+  },
+  "url" : "http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-element-duration-posology",
+  "version" : "0.1.0",
+  "name" : "OncoFAIRSPMRDurationPosology",
+  "status" : "active",
+  "date" : "2024-11-28T10:15:33+00:00",
+  "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
+  "contact" : [{
+    "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://ltsi.univ-rennes.fr"
+    }]
+  }],
+  "description" : "Search for duration of administration ",
+  "code" : "mr-duration-posology",
+  "base" : ["MedicationRequest"],
+  "type" : "number",
+  "expression" : "MedicationRequest.dosageInstruction.timing.repeat.duration",
+  "processingMode" : "normal",
+  "multipleOr" : true,
+  "multipleAnd" : true,
+  "comparator" : ["eq",
+  "ne",
+  "gt",
+  "lt",
+  "ge",
+  "le",
+  "sa",
+  "eb",
+  "ap"]
+}

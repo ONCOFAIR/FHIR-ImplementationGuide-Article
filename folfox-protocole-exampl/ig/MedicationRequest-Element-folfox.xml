@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="Element-folfox"/>
+  <meta>
+    <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MedicationRequest Element-folfox</b></p><a name="Element-folfox"> </a><a name="hcElement-folfox"> </a><a name="Element-folfox-en-US"> </a><p><b>identifier</b>: 123456-folfox-1</p><p><b>basedOn</b>: </p><ul><li><a href="MedicationRequest-PrescriptionFolfox-vehicule.html">MedicationRequest: extension = 2024-06-01 08:00:00+0000; identifier = prescription-folfox-vehicule; groupIdentifier = folfox-example; status = active; intent = order; note = This is a default comment on the prescription by the prescribing doctor.</a></li><li><a href="PrescriptionFolfox-uracile">PrescriptionFolfox-uracile</a></li><li><a href="MedicationRequest-PrescriptionFolfox-oxaliplatine.html">MedicationRequest: extension = 2024-06-01 08:00:00+0000; identifier = prescription-folfox-oxaliplatine; groupIdentifier = folfox-example; status = active; intent = order; note = This is a default comment on the prescription by the prescribing doctor.</a></li><li><a href="MedicationRequest-OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine.html">MedicationRequest: extension = true; groupIdentifier = folfox-example; status = active; intent = order; note = Prescribed component wording,Comments associated with the prescribed component,Specifies the reasons for prescribing this component</a></li><li><a href="OncoFAIRMedicationRequestComponent-Folfox-fluoro">OncoFAIRMedicationRequestComponent-Folfox-fluoro</a></li><li><a href="MedicationRequest-OncoFAIRMedicationRequestComponent-Folfox-vehicule.html">MedicationRequest: extension = false,true; groupIdentifier = folfox-example; status = active; intent = order; note = Prescribed component wording,Comments associated with the prescribed component,Specifies the reasons for prescribing this component</a></li><li><a href="ExampleOncoFAIRCarePlan-folfox">ExampleOncoFAIRCarePlan-folfox</a></li></ul><p><b>groupIdentifier</b>: folfox-example</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><h3>Medications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td><td><b>Reference</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem element}">element</span></td><td><a href="Medication-OncoFAIRMedication-fluoro-uracile.html">Medication 5-fluorouracil</a></td></tr></table><p><b>subject</b>: <a href="Patient-ExampleOncoFAIRPatient.html">Anonymous Patient (no stated gender), DoB Unknown ( 123456789)</a></p><p><b>requester</b>: <a href="Practitioner-ExampleOncoFAIRPractitioner.html">Practitioner: identifier = 12345</a></p><h3>Devices</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Reference</b></td></tr><tr><td style="display: none">*</td><td><a href="ExampleOncoFAIRDeviceDefinition-Perfusion">ExampleOncoFAIRDeviceDefinition-Perfusion</a></td></tr></table><p><b>note</b>: 5-fluoro-uracile, Protocole folfox</p><p><b>effectiveDosePeriod</b>: 2024-11-01 08:00:00+0000 --&gt; 2024-11-30 09:00:00+0000</p><blockquote><p><b>dosageInstruction</b></p><blockquote><p><b>id</b></p>element</blockquote><p><b>patientInstruction</b>: Boire beaucoup d'eau</p><p><b>timing</b>: Once</p><p><b>route</b>: <span title="Codes:{http://snomed.info/sct 47625008}">Intravenous route</span></p><p><b>method</b>: <span title="Codes:{http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem PERF}">Perfusion</span></p></blockquote><blockquote><p><b>dosageInstruction</b></p><blockquote><p><b>id</b></p>posology</blockquote><p><b>timing</b>: Count 2  times, Duration 3days , 2 per 30 days</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td><td><b>Rate[x]</b></td></tr><tr><td style="display: none">*</td><td>1 dose</td><td>1/3 heure</td></tr></table></blockquote></div>
+  </text>
+  <identifier>
+    <value value="123456-folfox-1"/>
+  </identifier>
+  <basedOn>
+    <reference value="MedicationRequest/PrescriptionFolfox-vehicule"/>
+  </basedOn>
+  <basedOn>
+    <reference value="PrescriptionFolfox-uracile"/>
+  </basedOn>
+  <basedOn>
+    <reference value="MedicationRequest/PrescriptionFolfox-oxaliplatine"/>
+  </basedOn>
+  <basedOn>
+    <reference value="MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine"/>
+  </basedOn>
+  <basedOn>
+    <reference value="OncoFAIRMedicationRequestComponent-Folfox-fluoro"/>
+  </basedOn>
+  <basedOn>
+    <extension url="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-link-type">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://ltsi.univ-rennes.fr/CodeSystem/siph-type-liaison-oncofair-codesystem"/>
+          <code value="COMP"/>
+          <display value="Complément"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <reference value="MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-vehicule"/>
+  </basedOn>
+  <basedOn>
+    <reference value="ExampleOncoFAIRCarePlan-folfox"/>
+  </basedOn>
+  <groupIdentifier>
+    <value value="folfox-example"/>
+  </groupIdentifier>
+  <status value="active"/>
+  <intent value="proposal"/>
+  <medication>
+    <concept>
+      <coding>
+        <system value="http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem"/>
+        <code value="element"/>
+        <display value="element"/>
+      </coding>
+    </concept>
+    <reference>
+      <reference value="Medication/OncoFAIRMedication-fluoro-uracile"/>
+    </reference>
+  </medication>
+  <subject>
+    <reference value="Patient/ExampleOncoFAIRPatient"/>
+  </subject>
+  <requester>
+    <reference value="Practitioner/ExampleOncoFAIRPractitioner"/>
+  </requester>
+  <device>
+    <reference>
+      <reference value="ExampleOncoFAIRDeviceDefinition-Perfusion"/>
+    </reference>
+  </device>
+  <note id="wording">
+    <text value="5-fluoro-uracile"/>
+  </note>
+  <note id="indication">
+    <text value="Protocole folfox"/>
+  </note>
+  <effectiveDosePeriod>
+    <start value="2024-11-01T08:00:00Z"/>
+    <end value="2024-11-30T09:00:00Z"/>
+  </effectiveDosePeriod>
+  <dosageInstruction id="element">
+    <patientInstruction value="Boire beaucoup d'eau"/>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2024-11-01T08:00:00Z"/>
+          <end value="2024-11-30T11:00:00Z"/>
+        </boundsPeriod>
+      </repeat>
+    </timing>
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="47625008"/>
+        <display value="Intravenous route"/>
+      </coding>
+    </route>
+    <method>
+      <coding>
+        <system value="http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem"/>
+        <code value="PERF"/>
+        <display value="Perfusion"/>
+      </coding>
+    </method>
+  </dosageInstruction>
+  <dosageInstruction id="posology">
+    <timing>
+      <repeat>
+        <count value="2"/>
+        <duration value="3"/>
+        <durationUnit value="h"/>
+        <frequency value="2"/>
+        <period value="30"/>
+        <periodUnit value="d"/>
+      </repeat>
+    </timing>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="1"/>
+        <unit value="dose"/>
+      </doseQuantity>
+      <rateRatio>
+        <numerator>
+          <value value="1"/>
+        </numerator>
+        <denominator>
+          <value value="3"/>
+          <unit value="heure"/>
+        </denominator>
+      </rateRatio>
+    </doseAndRate>
+  </dosageInstruction>
+</MedicationRequest>

@@ -1,0 +1,105 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine-diffuseur> a fhir:MedicationRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine-diffuseur"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component"^^xsd:anyURI ;
+       fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine-diffuseur</b></p><a name=\"OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine-diffuseur\"> </a><a name=\"hcOncoFAIRMedicationRequestComponent-Folfox-oxaliplatine-diffuseur\"> </a><a name=\"OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine-diffuseur-en-US\"> </a><p><b>OncoFAIRMRComponentSolute</b>: true</p><p><b>OncoFAIRMRIsDosageReferent</b>: false</p><p><b>basedOn</b>: <a href=\"OncoFAIRMedicationRequestElement-uracile\">OncoFAIRMedicationRequestElement-uracile</a></p><p><b>groupIdentifier</b>: folfox-example</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem component}\">component</span></td><td><a href=\"Medication-OncoFAIRMedication-oxaliplatine.html\">Medication Oxaliplatin</a></td></tr></table><p><b>subject</b>: <a href=\"Patient-ExampleOncoFAIRPatient.html\">Anonymous Patient (no stated gender), DoB Unknown ( 123456789)</a></p><p><b>performer</b>: <a href=\"Practitioner-ExampleOncoFAIRPractitioner.html\">Practitioner: identifier = 12345</a></p><h3>Devices</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"DeviceDefinition-ExampleOncoFAIRDeviceDefinition-diffuseur.html\">DeviceDefinition: identifier = DD02</a></td></tr></table><p><b>note</b>: Prescribed component wording, Comments associated with the prescribed component, Specifies the reasons for prescribing this component</p><blockquote><p><b>dosageInstruction</b></p><p><b>site</b>: <span title=\"Codes:\">6894000</span></p><p><b>route</b>: <span title=\"Codes:\">Intravenous route</span></p><p><b>method</b>: <span title=\"Codes:\">Administer (administration method)</span></p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>20 mg</td></tr></table></blockquote><h3>Substitutions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Allowed[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>false</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-component-solute"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-is-dosage-referent"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] ) ; # 
+  fhir:basedOn ( [
+     fhir:reference [ fhir:v "OncoFAIRMedicationRequestElement-uracile" ]
+  ] ) ; # 
+  fhir:groupIdentifier [
+     fhir:value [ fhir:v "folfox-example" ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:medication [
+     fhir:concept [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "component" ] ;
+         fhir:display [ fhir:v "component" ]
+       ] )
+     ] ;
+     fhir:reference [
+       fhir:link <http://ltsi.univ-rennes.fr/Medication/OncoFAIRMedication-oxaliplatine> ;
+       fhir:reference [ fhir:v "Medication/OncoFAIRMedication-oxaliplatine" ]
+     ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://ltsi.univ-rennes.fr/Patient/ExampleOncoFAIRPatient> ;
+     fhir:reference [ fhir:v "Patient/ExampleOncoFAIRPatient" ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:link <http://ltsi.univ-rennes.fr/Practitioner/ExampleOncoFAIRPractitioner> ;
+     fhir:reference [ fhir:v "Practitioner/ExampleOncoFAIRPractitioner" ]
+  ] ) ; # 
+  fhir:device ( [
+     fhir:reference [
+       fhir:link <http://ltsi.univ-rennes.fr/DeviceDefinition/ExampleOncoFAIRDeviceDefinition-diffuseur> ;
+       fhir:reference [ fhir:v "DeviceDefinition/ExampleOncoFAIRDeviceDefinition-diffuseur" ]
+     ]
+  ] ) ; # 
+  fhir:note ( [
+     fhir:id [ fhir:v "wording" ] ;
+     fhir:text [ fhir:v "Prescribed component wording" ]
+  ] [
+     fhir:id [ fhir:v "comments" ] ;
+     fhir:text [ fhir:v "Comments associated with the prescribed component" ]
+  ] [
+     fhir:id [ fhir:v "indication" ] ;
+     fhir:text [ fhir:v "Specifies the reasons for prescribing this component" ]
+  ] ) ; # 
+  fhir:dosageInstruction ( [
+     fhir:site [
+       fhir:coding ( [
+         fhir:code [ fhir:v "6894000" ]
+       ] )
+     ] ;
+     fhir:route [
+       fhir:coding ( [
+         fhir:code [ fhir:v "47625008" ] ;
+         fhir:display [ fhir:v "Intravenous route" ]
+       ] )
+     ] ;
+     fhir:method [
+       fhir:coding ( [
+         fhir:code [ fhir:v "738990001" ] ;
+         fhir:display [ fhir:v "Administer (administration method)" ]
+       ] )
+     ] ;
+     fhir:doseAndRate ( [
+       fhir:dose [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "20"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "mg" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+       ]
+     ] )
+  ] ) ; # 
+  fhir:substitution [
+     fhir:allowed [ fhir:v "false"^^xsd:boolean ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

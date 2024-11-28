@@ -1,0 +1,28 @@
+{
+  "resourceType" : "Medication",
+  "id" : "OncoFAIRMedication-oxaliplatine",
+  "meta" : {
+    "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication OncoFAIRMedication-oxaliplatine</b></p><a name=\"OncoFAIRMedication-oxaliplatine\"> </a><a name=\"hcOncoFAIRMedication-oxaliplatine\"> </a><a name=\"OncoFAIRMedication-oxaliplatine-en-US\"> </a><p><b>OncoFAIRMedicationType</b>: <span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/siph-typecomposant-oncofair-codesystem PRAC}\">principe actif</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 395814003}\">Oxaliplatin</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication-type",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://ltsi.univ-rennes.fr/CodeSystem/siph-typecomposant-oncofair-codesystem",
+        "code" : "PRAC",
+        "display" : "principe actif"
+      }]
+    }
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "395814003",
+      "display" : "Oxaliplatin"
+    }]
+  }
+}

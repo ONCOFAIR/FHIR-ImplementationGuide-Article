@@ -1,0 +1,87 @@
+{
+  "resourceType" : "MedicationRequest",
+  "id" : "OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine",
+  "meta" : {
+    "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine</b></p><a name=\"OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine\"> </a><a name=\"hcOncoFAIRMedicationRequestComponent-Folfox-oxaliplatine\"> </a><a name=\"OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine-en-US\"> </a><p><b>OncoFAIRMRComponentSolute</b>: true</p><p><b>basedOn</b>: <a href=\"OncoFAIRMedicationRequestElement-folfox\">OncoFAIRMedicationRequestElement-folfox</a></p><p><b>groupIdentifier</b>: folfox-example</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem component}\">component</span></td><td><a href=\"Medication-OncoFAIRMedication-oxaliplatine.html\">Medication Oxaliplatin</a></td></tr></table><p><b>subject</b>: <a href=\"Patient-ExampleOncoFAIRPatient.html\">Anonymous Patient (no stated gender), DoB Unknown ( 123456789)</a></p><p><b>performer</b>: <a href=\"Practitioner-ExampleOncoFAIRPractitioner.html\">Practitioner: identifier = 12345</a></p><h3>Devices</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"DeviceDefinition-ExampleOncoFAIRDeviceDefinition-perfusion.html\">DeviceDefinition: identifier = DD02</a></td></tr></table><p><b>note</b>: Prescribed component wording, Comments associated with the prescribed component, Specifies the reasons for prescribing this component</p><blockquote><p><b>dosageInstruction</b></p><p><b>site</b>: <span title=\"Codes:\">6894000</span></p><p><b>route</b>: <span title=\"Codes:\">Intravenous route</span></p><p><b>method</b>: <span title=\"Codes:\">Administer (administration method)</span></p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>20 mg</td></tr></table></blockquote><h3>Substitutions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Allowed[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>false</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-component-solute",
+    "valueBoolean" : true
+  }],
+  "basedOn" : [{
+    "reference" : "OncoFAIRMedicationRequestElement-folfox"
+  }],
+  "groupIdentifier" : {
+    "value" : "folfox-example"
+  },
+  "status" : "active",
+  "intent" : "order",
+  "medication" : {
+    "concept" : {
+      "coding" : [{
+        "system" : "http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem",
+        "code" : "component",
+        "display" : "component"
+      }]
+    },
+    "reference" : {
+      "reference" : "Medication/OncoFAIRMedication-oxaliplatine"
+    }
+  },
+  "subject" : {
+    "reference" : "Patient/ExampleOncoFAIRPatient"
+  },
+  "performer" : [{
+    "reference" : "Practitioner/ExampleOncoFAIRPractitioner"
+  }],
+  "device" : [{
+    "reference" : {
+      "reference" : "DeviceDefinition/ExampleOncoFAIRDeviceDefinition-perfusion"
+    }
+  }],
+  "note" : [{
+    "id" : "wording",
+    "text" : "Prescribed component wording"
+  },
+  {
+    "id" : "comments",
+    "text" : "Comments associated with the prescribed component"
+  },
+  {
+    "id" : "indication",
+    "text" : "Specifies the reasons for prescribing this component"
+  }],
+  "dosageInstruction" : [{
+    "site" : {
+      "coding" : [{
+        "code" : "6894000"
+      }]
+    },
+    "route" : {
+      "coding" : [{
+        "code" : "47625008",
+        "display" : "Intravenous route"
+      }]
+    },
+    "method" : {
+      "coding" : [{
+        "code" : "738990001",
+        "display" : "Administer (administration method)"
+      }]
+    },
+    "doseAndRate" : [{
+      "doseQuantity" : {
+        "value" : 20,
+        "unit" : "mg",
+        "system" : "http://unitsofmeasure.org"
+      }
+    }]
+  }],
+  "substitution" : {
+    "allowedBoolean" : false
+  }
+}

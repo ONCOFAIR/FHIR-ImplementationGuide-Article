@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationStatus> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CSMedicationStatus"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem CSMedicationStatus</b></p><a name=\"CSMedicationStatus\"> </a><a name=\"hcCSMedicationStatus\"> </a><a name=\"CSMedicationStatus-en-US\"> </a><p>This case-sensitive code system <code>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationStatus</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"CSMedicationStatus-1\"> </a></td><td>à faire</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"CSMedicationStatus-2\"> </a></td><td>fait</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"CSMedicationStatus-3\"> </a></td><td>annulé</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"CSMedicationStatus-4\"> </a></td><td>perdu</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"CSMedicationStatus-5\"> </a></td><td>démarré</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"CSMedicationStatus-6\"> </a></td><td>fini</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"CSMedicationStatus-7\"> </a></td><td>arrêté</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"CSMedicationStatus-8\"> </a></td><td>suspendu</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"CSMedicationStatus-9\"> </a></td><td>suivi</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"CSMedicationStatus-10\"> </a></td><td>redémarré</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationStatus"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "CSMedicationStatus"] ; # 
+  fhir:title [ fhir:v "Medication status"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-11-28T10:15:33+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://ltsi.univ-rennes.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "CodeSystem for french medication status."] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "à faire" ]
+  ] [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "fait" ]
+  ] [
+     fhir:code [ fhir:v "3" ] ;
+     fhir:display [ fhir:v "annulé" ]
+  ] [
+     fhir:code [ fhir:v "4" ] ;
+     fhir:display [ fhir:v "perdu" ]
+  ] [
+     fhir:code [ fhir:v "5" ] ;
+     fhir:display [ fhir:v "démarré" ]
+  ] [
+     fhir:code [ fhir:v "6" ] ;
+     fhir:display [ fhir:v "fini" ]
+  ] [
+     fhir:code [ fhir:v "7" ] ;
+     fhir:display [ fhir:v "arrêté" ]
+  ] [
+     fhir:code [ fhir:v "8" ] ;
+     fhir:display [ fhir:v "suspendu" ]
+  ] [
+     fhir:code [ fhir:v "9" ] ;
+     fhir:display [ fhir:v "suivi" ]
+  ] [
+     fhir:code [ fhir:v "10" ] ;
+     fhir:display [ fhir:v "redémarré" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

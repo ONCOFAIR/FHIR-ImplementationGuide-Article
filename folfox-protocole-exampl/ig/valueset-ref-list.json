@@ -1,0 +1,312 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/Laterality",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "Laterality",
+      "title" : "Tumor Laterality Value Set",
+      "description" : "Tumor laterality",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/umls"],
+      "uses" : {
+      },
+      "StructureDefinition-laterality.html" : "Laterality"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/Morphology",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "Morphology",
+      "title" : "Morphology Value Set",
+      "description" : "Cancer morphology",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/icd-o-3"],
+      "uses" : {
+      },
+      "StructureDefinition-tumor-pathology-event.html" : "Tumor Pathology Event"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/Topography",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "Topography",
+      "title" : "Topography Value Set",
+      "description" : "Cancer topography",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/icd-o-3"],
+      "uses" : {
+      },
+      "StructureDefinition-tumor-pathology-event.html" : "Tumor Pathology Event"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/TreatmentType",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TreatmentType",
+      "title" : "Treatment Type Value Set",
+      "description" : "Treatment type",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/umls"]
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/TumorPathologyEventType",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TumorPathologyEventType",
+      "title" : "Tumor Pathology Event Type Value Set",
+      "description" : "Tumor pathology event type",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/umls"],
+      "uses" : {
+      },
+      "StructureDefinition-tumor-pathology-event.html" : "Tumor Pathology Event"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/VSEventTypeData",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSEventTypeData",
+      "title" : "Event Types Data",
+      "description" : "ValueSet for various event types used in French healthcare systems.",
+      "systems" : ["http://ltsi.univ-rennes.fr/CodeSystem/CSEventTypeData"],
+      "uses" : {
+      },
+      "StructureDefinition-eventTypeData.html" : "Event Type Data"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/concept-medication-oncofair-valueset",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ConceptMedicationOncoFAIRValueSet",
+      "title" : "Concepts Medication Value Set",
+      "description" : "Value Set pour différiencier les niveaux de MR/MA",
+      "systems" : [
+        "http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medicationadministration-report.html" : "OncoFAIR MedicationAdministration Report",
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
+      "StructureDefinition-oncofair-medicationrequest-component.html" : "OncoFAIR MedicationRequest Component",
+      "StructureDefinition-oncofair-medicationadministration-component.html" : "OncoFAIR MedicationAdministration Component",
+      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element",
+      "StructureDefinition-oncofair-medicationrequest-prescription.html" : "OncoFAIR MedicationRequest Prescription"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/medical-units-oncofair-valueset",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MedicalUnitsOncoFAIRValueSet",
+      "title" : "Medical units Value Set",
+      "description" : "ValueSet for medical units (accommodation, medical liability unit).",
+      "systems" : [
+        "http://ltsi.univ-rennes.fr/CodeSystem/medical-units-oncofair-codesystem"
+      ]
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/medications-oncofair-valueset",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MedicationsOncoFAIRValueSet",
+      "title" : "Medications Value Set",
+      "description" : "ValueSet for medications.",
+      "systems" : [
+        "http://ltsi.univ-rennes.fr/CodeSystem/medications-oncofair-codesystem"
+      ]
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/siph-gonogo-oncofair-valueset",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SIPhgoNogoOncoFAIRValueSet",
+      "title" : "goNogo Value Set",
+      "description" : "Value Set pour goNogo",
+      "systems" : [
+        "http://ltsi.univ-rennes.fr/CodeSystem/siph-gonogo-oncofair-codesystem"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-mr-element-go-nogo.html" : "OncoFAIRMRElementGoNogo"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/siph-listeald-oncofair-valueset",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SIPhListeALDOncoFAIRValueSet",
+      "title" : "Liste Affectation Longue Durée Value Set",
+      "description" : "Value Set pour ListeALD",
+      "systems" : [
+        "http://ltsi.univ-rennes.fr/CodeSystem/siph-listeald-oncofair-codesystem"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-mr-exempt-ltc.html" : "OncoFAIRMRExemptLTC"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/siph-natureproppharm-oncofair-valueset",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SIPhNaturePropPharmOncoFAIRValueSet",
+      "title" : "Nature proposition pharmaceutique Value Set",
+      "description" : "Value Set pour NaturePropPharm",
+      "systems" : [
+        "http://ltsi.univ-rennes.fr/CodeSystem/siph-natureproppharm-oncofair-codesystem"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-pharmacist-advice.html" : "OncoFAIRPharmacistAdvice"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/siph-paramposoconditionnelle-oncofair-valueset",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SIPhParamPosoConditionnelleOncoFAIRValueSet",
+      "title" : "Paramètres posologie conditionnelle",
+      "description" : "Value Set pour ParamPosoConditionnelle",
+      "systems" : [
+        "http://ltsi.univ-rennes.fr/CodeSystem/siph-paramposoconditionnelle-oncofair-codesystem"
+      ]
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/siph-renscomplement-oncofair-valueset",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SIPhRensComplementOncoFAIRValueSet",
+      "title" : "Renseignement complémentaire Value Set",
+      "description" : "Value Set pour RensComplement",
+      "systems" : [
+        "http://ltsi.univ-rennes.fr/CodeSystem/siph-renscomplement-oncofair-codesystem"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-observation.html" : "OncoFAIR Observation"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/siph-statutcomposantadm-oncofair-valueset",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SIPhStatutComposantAdmOncoFAIRValueSet",
+      "title" : "Statut composant administré Value Set",
+      "description" : "Value Set pour StatutComposantAdm",
+      "systems" : [
+        "http://ltsi.univ-rennes.fr/CodeSystem/siph-statutcomposantadm-oncofair-codesystem"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-ma-component-administration-status.html" : "OncoFAIRMAComponentAdministrationStatus"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/siph-statutvalidpharm-oncofair-valueset",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SIPhStatutValidPharmOncoFAIRValueSet",
+      "title" : "Statut validation pharmaceutique Value Set",
+      "description" : "Value Set pour StatutValidPharm",
+      "systems" : [
+        "http://ltsi.univ-rennes.fr/CodeSystem/siph-statutvalidpharm-oncofair-codesystem"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-pharmacist-advice.html" : "OncoFAIRPharmacistAdvice"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/siph-type-liasion-oncofair-valueset",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SIPhTypeLiasionOncoFAIRValueSet",
+      "title" : "Type de liaison Value Set",
+      "description" : "Value Set pour Type Liaison",
+      "systems" : [
+        "http://ltsi.univ-rennes.fr/CodeSystem/siph-type-liaison-oncofair-codesystem"
+      ]
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/siph-typecomposant-oncofair-valueset",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SIPhTypeComposantOncoFAIRValueSet",
+      "title" : "Type de composant Value Set",
+      "description" : "Value Set pour TypeComposant",
+      "systems" : [
+        "http://ltsi.univ-rennes.fr/CodeSystem/siph-typecomposant-oncofair-codesystem"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medication-type.html" : "OncoFAIRMedicationType"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/siph-typeeltpla-oncofair-valueset",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SIPhTypeEltPLAOncoFAIRValueSet",
+      "title" : "Type de l'élément d'administration Value Set",
+      "description" : "Value Set pour TypeEltPLA",
+      "systems" : [
+        "http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-oncofair-medicationrequest-element.html" : "OncoFAIR MedicationRequest Element",
+      "StructureDefinition-oncofair-medicationadministration-element.html" : "OncoFAIR MedicationAdministration Element"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/siph-typeevenement-oncofair-valueset",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SIPhTypeEvenementOncoFAIRValueSet",
+      "title" : "Type de l'évènement Value Set",
+      "description" : "Value Set pour TypeEvenement",
+      "systems" : [
+        "http://ltsi.univ-rennes.fr/CodeSystem/siph-typeevenement-oncofair-codesystem"
+      ]
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/vsMedicationItemProvenance",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSMedicationItemProvenance",
+      "title" : "Medication item provenance",
+      "description" : "ValueSet for medication item provenance.",
+      "systems" : [
+        "http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationItemProvenance"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-medication-item-provenance.html" : "Medication item provenance"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/vsMedicationLTIExemption",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSMedicationLTIExemption",
+      "title" : "Medication LTI Exemption",
+      "description" : "ValueSet for medication LTI exemption.",
+      "systems" : [
+        "http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-medication-lti-exemption.html" : "Medication LTI exemption"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/vsMedicationStatus",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSMedicationStatus",
+      "title" : "Medication status",
+      "description" : "ValueSet for medication status.",
+      "systems" : ["http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationStatus"],
+      "uses" : {
+      },
+      "StructureDefinition-medication-status.html" : "Medication status"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/ValueSet/vsMedicationTypes",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSMedicationTypes",
+      "title" : "Medication types",
+      "description" : "ValueSet for medication types.",
+      "systems" : ["http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes"],
+      "uses" : {
+      },
+      "StructureDefinition-medication-type.html" : "Medication type"
+    }
+  ]
+}
