@@ -1,7 +1,7 @@
 Instance: Element-folfox
 InstanceOf: OncoFAIRMedicationRequestElement
-Title: "Example OncoFAIR MedicationRequest Element"
-Description: "Example instance of OncoFAIRMedicationRequestElement"
+Title: "Folfox OncoFAIR MedicationRequest Element"
+Description: "Example instance of OncoFAIRMedicationRequestElement for folfox protocol"
 Usage: #example
 
 * basedOn[+] = Reference(PrescriptionFolfox-vehicule)
@@ -71,4 +71,4 @@ Usage: #example
 
 
 * note[wording].text = "5-fluoro-uracile"
-* note[indication].text = "Protocole folfox"
+* note[indication].text = "protocol folfox"

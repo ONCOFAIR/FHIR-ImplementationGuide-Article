@@ -1,7 +1,7 @@
 Instance: ExampleOncoFAIRDevice-perfusion
 InstanceOf: Device
-Title: "Example OncoFAIR Device"
-Description: "An example instance of an OncoFAIR Device"
+Title: "Perfusion OncoFAIR Device"
+Description: "An example instance of an OncoFAIR Device for folfox protocol"
 Usage: #example
 
 * identifier.value = "D04"

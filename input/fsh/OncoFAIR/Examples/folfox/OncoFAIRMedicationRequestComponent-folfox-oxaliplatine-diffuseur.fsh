@@ -1,7 +1,7 @@
 Instance: OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine-diffuseur
 InstanceOf: OncoFAIRMedicationRequestComponent
-Title: "Example OncoFAIR MedicationRequest Component"
-Description: "Example instance of OncoFAIRMedicationRequestComponent"
+Title: "Oxaliplatine with difuseur OncoFAIR MedicationRequest Component"
+Description: "Example instance of OncoFAIRMedicationRequestComponent for folfox protocol"
 Usage: #example
 * status = #active
 * intent = #order

@@ -1,7 +1,7 @@
-Instance: PrescriptionFolfox-fluoro
+Instance: PrescriptionFolfox-oxaliplatine
 InstanceOf: OncoFAIRMedicationRequestPrescription
-Title: "Example OncoFAIR MedicationRequest Prescription"
-Description: "An example instance of OncoFAIR MedicationRequest Prescription."
+Title: "Oxaliplatine OncoFAIR MedicationRequest Prescription"
+Description: "An example instance of OncoFAIR MedicationRequest Prescription for folfox protocol."
 Usage: #example
 
 * groupIdentifier.value = "folfox-example"
@@ -12,7 +12,7 @@ Usage: #example
 * medication.concept.coding[0].display = "prescription"
 * medication.concept.coding[0].code = #prescription
 
-* medication.reference = Reference(OncoFAIRMedication-fluoro-uracile)
+* medication.reference = Reference(OncoFAIRMedication-oxaliplatine)
 
 * subject = Reference (ExampleOncoFAIRPatient)
 * encounter = Reference (ExampleOncoFAIREncounter)

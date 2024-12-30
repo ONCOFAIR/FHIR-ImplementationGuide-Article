@@ -1,7 +1,7 @@
 Instance: OncoFAIRCarePlan-folfox
 InstanceOf: OncoFAIRCarePlan
-Title: "Example OncoFAIR CarePlan"
-Description: "An example instance of an OncoFAIR CarePlan with required fields populated."
+Title: "Folfox OncoFAIR CarePlan "
+Description: "An example instance of an OncoFAIR CarePlan with required fields populated for folfox protocol."
 Usage: #example
 
 

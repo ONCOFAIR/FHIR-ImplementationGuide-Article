@@ -1,12 +1,12 @@
-Instance: OncoFAIRMedication-fluoro-uracile
+Instance: OncoFAIRMedication-vehicule
 InstanceOf: OncoFAIRMedication
-Title: "Example OncoFAIR Medication"
+Title: "Perfusion  OncoFAIR Medication"
 Description: "An example instance of an OncoFAIR Medication with required fields populated."
 Usage: #example
 
 * code.coding[0].system = "http://snomed.info/sct"
-* code.coding[0].code = #387172005
-* code.coding[0].display = "5-fluorouracil"
+* code.coding[0].code = #5000411000001105
+* code.coding[0].display = "Sodium chloride 0.9% solution for injection 2litre bags"
 
 * extension[oncofair-medication-type].valueCodeableConcept.coding.system[0] = "http://ltsi.univ-rennes.fr/CodeSystem/siph-typecomposant-oncofair-codesystem"
 * extension[oncofair-medication-type].valueCodeableConcept.coding.code[0] = #PRAC 

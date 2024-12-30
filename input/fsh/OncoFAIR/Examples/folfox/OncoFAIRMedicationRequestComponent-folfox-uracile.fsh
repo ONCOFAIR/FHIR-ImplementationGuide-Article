@@ -1,7 +1,7 @@
-Instance: OncoFAIRMedicationRequestComponent-Folfox-uracile-diffuseur
+Instance: OncoFAIRMedicationRequestComponent-Folfox-uracile
 InstanceOf: OncoFAIRMedicationRequestComponent
-Title: "Example OncoFAIR MedicationRequest Component"
-Description: "Example instance of OncoFAIRMedicationRequestComponent"
+Title: "Fluoro-uracile OncoFAIR MedicationRequest Component"
+Description: "Example instance of OncoFAIRMedicationRequestComponent for folfox protocol"
 Usage: #example
 * status = #active
 * intent = #order
@@ -14,9 +14,9 @@ Usage: #example
 * groupIdentifier.value = "folfox-example"
 
 * subject = Reference(ExampleOncoFAIRPatient)
-* basedOn = Reference (OncoFAIRMedicationRequestElement-uracile)
+* basedOn = Reference (OncoFAIRMedicationRequestElement-folfox)
 * performer = Reference (ExampleOncoFAIRPractitioner)
-* device.reference = Reference (ExampleOncoFAIRDeviceDefinition-diffuseur)
+* device.reference = Reference (ExampleOncoFAIRDeviceDefinition-perfusion)
 
 * dosageInstruction.site = #6894000
 * dosageInstruction.route = #47625008 "Intravenous route"

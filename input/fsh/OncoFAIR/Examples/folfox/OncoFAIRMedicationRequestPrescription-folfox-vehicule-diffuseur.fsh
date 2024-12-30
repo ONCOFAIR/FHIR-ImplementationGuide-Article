@@ -1,7 +1,7 @@
-Instance: PrescriptionFolfox-vehicule
+Instance: PrescriptionFolfox-vehicule-diff
 InstanceOf: OncoFAIRMedicationRequestPrescription
-Title: "Example OncoFAIR MedicationRequest Prescription"
-Description: "An example instance of OncoFAIR MedicationRequest Prescription."
+Title: "Perfusion difuseur OncoFAIR MedicationRequest Prescription"
+Description: "An example instance of OncoFAIR MedicationRequest Prescription for folfox protocol."
 Usage: #example
 
 * groupIdentifier.value = "folfox-example"
