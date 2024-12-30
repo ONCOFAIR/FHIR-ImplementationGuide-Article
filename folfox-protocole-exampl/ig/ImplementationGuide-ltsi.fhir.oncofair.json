@@ -10,7 +10,7 @@
   "name" : "OncoFAIR",
   "title" : "OncoFAIR",
   "status" : "draft",
-  "date" : "2024-11-28T10:15:33+00:00",
+  "date" : "2024-12-30T08:25:45+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -95,6 +95,43 @@
       "name" : "Date and time",
       "description" : "Date and time.",
       "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Device"
+      }],
+      "reference" : {
+        "reference" : "Device/ExampleOncoFAIRDevice-diffuseur"
+      },
+      "name" : "Diffuser OncoFAIR Device",
+      "description" : "An example instance of an OncoFAIR Device for folfox protocol",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DeviceDefinition"
+      }],
+      "reference" : {
+        "reference" : "DeviceDefinition/ExampleOncoFAIRDeviceDefinition-diffuseur"
+      },
+      "name" : "Difuseur OncoFAIR Device Definition",
+      "description" : "An example instance of an OncoFAIR Device Definition for folfox protocol.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/Element-folfox-diffuseur"
+      },
+      "name" : "Difuseur OncoFAIR MedicationRequest Element",
+      "description" : "Example instance of OncoFAIRMedicationRequestElement for folfox protocol",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element"]
     },
     {
       "extension" : [{
@@ -208,31 +245,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CarePlan"
-      }],
-      "reference" : {
-        "reference" : "CarePlan/OncoFAIRCarePlan-folfox"
-      },
-      "name" : "Example OncoFAIR CarePlan",
-      "description" : "An example instance of an OncoFAIR CarePlan with required fields populated.",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-careplan"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Device"
-      }],
-      "reference" : {
-        "reference" : "Device/ExampleOncoFAIRDevice-diffuseur"
-      },
-      "name" : "Example OncoFAIR Device",
-      "description" : "An example instance of an OncoFAIR Device",
-      "isExample" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Device"
       }],
       "reference" : {
@@ -240,42 +252,6 @@
       },
       "name" : "Example OncoFAIR Device",
       "description" : "An example instance of an OncoFAIR Device",
-      "isExample" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Device"
-      }],
-      "reference" : {
-        "reference" : "Device/ExampleOncoFAIRDevice-perfusion"
-      },
-      "name" : "Example OncoFAIR Device",
-      "description" : "An example instance of an OncoFAIR Device",
-      "isExample" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "DeviceDefinition"
-      }],
-      "reference" : {
-        "reference" : "DeviceDefinition/ExampleOncoFAIRDeviceDefinition-diffuseur"
-      },
-      "name" : "Example OncoFAIR Device Definition",
-      "description" : "An example instance of an OncoFAIR Device Definition.",
-      "isExample" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "DeviceDefinition"
-      }],
-      "reference" : {
-        "reference" : "DeviceDefinition/ExampleOncoFAIRDeviceDefinition-perfusion"
-      },
-      "name" : "Example OncoFAIR Device Definition",
-      "description" : "An example instance of an OncoFAIR Device Definition.",
       "isExample" : true
     },
     {
@@ -290,58 +266,6 @@
       "description" : "An example instance of an OncoFAIR Encounter with required fields populated.",
       "isExample" : true,
       "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-encounter"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Medication"
-      }],
-      "reference" : {
-        "reference" : "Medication/OncoFAIRMedication-fluoro-uracile"
-      },
-      "name" : "Example OncoFAIR Medication",
-      "description" : "An example instance of an OncoFAIR Medication with required fields populated.",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Medication"
-      }],
-      "reference" : {
-        "reference" : "Medication/OncoFAIRMedication-folfox"
-      },
-      "name" : "Example OncoFAIR Medication",
-      "description" : "An example instance of an OncoFAIR Medication with required fields populated.",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Medication"
-      }],
-      "reference" : {
-        "reference" : "Medication/OncoFAIRMedication-oxaliplatine"
-      },
-      "name" : "Example OncoFAIR Medication",
-      "description" : "An example instance of an OncoFAIR Medication with required fields populated.",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Medication"
-      }],
-      "reference" : {
-        "reference" : "Medication/OncoFAIRMedication-vehicule"
-      },
-      "name" : "Example OncoFAIR Medication",
-      "description" : "An example instance of an OncoFAIR Medication with required fields populated.",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication"]
     },
     {
       "extension" : [{
@@ -414,98 +338,7 @@
         "valueString" : "MedicationRequest"
       }],
       "reference" : {
-        "reference" : "MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine-diffuseur"
-      },
-      "name" : "Example OncoFAIR MedicationRequest Component",
-      "description" : "Example instance of OncoFAIRMedicationRequestComponent",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationRequest"
-      }],
-      "reference" : {
-        "reference" : "MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine"
-      },
-      "name" : "Example OncoFAIR MedicationRequest Component",
-      "description" : "Example instance of OncoFAIRMedicationRequestComponent",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationRequest"
-      }],
-      "reference" : {
-        "reference" : "MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-uracile-diffuseur"
-      },
-      "name" : "Example OncoFAIR MedicationRequest Component",
-      "description" : "Example instance of OncoFAIRMedicationRequestComponent",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationRequest"
-      }],
-      "reference" : {
-        "reference" : "MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-uracile"
-      },
-      "name" : "Example OncoFAIR MedicationRequest Component",
-      "description" : "Example instance of OncoFAIRMedicationRequestComponent",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationRequest"
-      }],
-      "reference" : {
-        "reference" : "MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-vehicule"
-      },
-      "name" : "Example OncoFAIR MedicationRequest Component",
-      "description" : "Example instance of OncoFAIRMedicationRequestComponent",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationRequest"
-      }],
-      "reference" : {
         "reference" : "MedicationRequest/Element"
-      },
-      "name" : "Example OncoFAIR MedicationRequest Element",
-      "description" : "Example instance of OncoFAIRMedicationRequestElement",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationRequest"
-      }],
-      "reference" : {
-        "reference" : "MedicationRequest/Element-folfox-diffuseur"
-      },
-      "name" : "Example OncoFAIR MedicationRequest Element",
-      "description" : "Example instance of OncoFAIRMedicationRequestElement",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationRequest"
-      }],
-      "reference" : {
-        "reference" : "MedicationRequest/Element-folfox"
       },
       "name" : "Example OncoFAIR MedicationRequest Element",
       "description" : "Example instance of OncoFAIRMedicationRequestElement",
@@ -524,97 +357,6 @@
       "description" : "Example instance of OncoFAIRMedicationRequestElement",
       "isExample" : true,
       "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationRequest"
-      }],
-      "reference" : {
-        "reference" : "MedicationRequest/Prescription"
-      },
-      "name" : "Example OncoFAIR MedicationRequest Prescription",
-      "description" : "An example instance of OncoFAIR MedicationRequest Prescription.",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationRequest"
-      }],
-      "reference" : {
-        "reference" : "MedicationRequest/PrescriptionFolfox-fluoro-diff"
-      },
-      "name" : "Example OncoFAIR MedicationRequest Prescription",
-      "description" : "An example instance of OncoFAIR MedicationRequest Prescription.",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationRequest"
-      }],
-      "reference" : {
-        "reference" : "MedicationRequest/PrescriptionFolfox-fluoro"
-      },
-      "name" : "Example OncoFAIR MedicationRequest Prescription",
-      "description" : "An example instance of OncoFAIR MedicationRequest Prescription.",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationRequest"
-      }],
-      "reference" : {
-        "reference" : "MedicationRequest/PrescriptionFolfox-oxali-diff"
-      },
-      "name" : "Example OncoFAIR MedicationRequest Prescription",
-      "description" : "An example instance of OncoFAIR MedicationRequest Prescription.",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationRequest"
-      }],
-      "reference" : {
-        "reference" : "MedicationRequest/PrescriptionFolfox-oxaliplatine"
-      },
-      "name" : "Example OncoFAIR MedicationRequest Prescription",
-      "description" : "An example instance of OncoFAIR MedicationRequest Prescription.",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationRequest"
-      }],
-      "reference" : {
-        "reference" : "MedicationRequest/PrescriptionFolfox-vehicule-diff"
-      },
-      "name" : "Example OncoFAIR MedicationRequest Prescription",
-      "description" : "An example instance of OncoFAIR MedicationRequest Prescription.",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationRequest"
-      }],
-      "reference" : {
-        "reference" : "MedicationRequest/PrescriptionFolfox-vehicule"
-      },
-      "name" : "Example OncoFAIR MedicationRequest Prescription",
-      "description" : "An example instance of OncoFAIR MedicationRequest Prescription.",
-      "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription"]
     },
     {
       "extension" : [{
@@ -679,6 +421,84 @@
       "description" : "Example of TPE from OSIRIS_pivot_TumorPathologyEvent.csv",
       "isExample" : true,
       "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/tumor-pathology-event"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/OncoFAIRMedication-fluoro-uracile"
+      },
+      "name" : "Fluoro-uracile OncoFAIR Medication",
+      "description" : "An example instance of an OncoFAIR Medication with required fields populated.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-uracile-diffuseur"
+      },
+      "name" : "Fluoro-uracile OncoFAIR MedicationRequest Component",
+      "description" : "Example instance of OncoFAIRMedicationRequestComponent for folfox protocol",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-uracile"
+      },
+      "name" : "Fluoro-uracile OncoFAIR MedicationRequest Component",
+      "description" : "Example instance of OncoFAIRMedicationRequestComponent for folfox protocol",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/PrescriptionFolfox-fluoro"
+      },
+      "name" : "Fluoro-uracile OncoFAIR MedicationRequest Prescription",
+      "description" : "An example instance of OncoFAIR MedicationRequest Prescription for folfox protocol.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CarePlan"
+      }],
+      "reference" : {
+        "reference" : "CarePlan/OncoFAIRCarePlan-folfox"
+      },
+      "name" : "Folfox OncoFAIR CarePlan ",
+      "description" : "An example instance of an OncoFAIR CarePlan with required fields populated for folfox protocol.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-careplan"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/Element-folfox"
+      },
+      "name" : "Folfox OncoFAIR MedicationRequest Element",
+      "description" : "Example instance of OncoFAIRMedicationRequestElement for folfox protocol",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element"]
     },
     {
       "extension" : [{
@@ -1751,6 +1571,71 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine"
+      },
+      "name" : "Oxaiplatine OncoFAIR MedicationRequest Component",
+      "description" : "Example instance of OncoFAIRMedicationRequestComponent for folfox protocol",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/PrescriptionFolfox-oxali-diff"
+      },
+      "name" : "Oxaliplatine difuseur OncoFAIR MedicationRequest Prescription",
+      "description" : "An example instance of OncoFAIR MedicationRequest Prescription for folfox protocol.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/OncoFAIRMedication-oxaliplatine"
+      },
+      "name" : "Oxaliplatine OncoFAIR Medication",
+      "description" : "An example instance of an OncoFAIR Medication with required fields populated.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/PrescriptionFolfox-oxaliplatine"
+      },
+      "name" : "Oxaliplatine OncoFAIR MedicationRequest Prescription",
+      "description" : "An example instance of OncoFAIR MedicationRequest Prescription for folfox protocol.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine-diffuseur"
+      },
+      "name" : "Oxaliplatine with difuseur OncoFAIR MedicationRequest Component",
+      "description" : "Example instance of OncoFAIRMedicationRequestComponent for folfox protocol",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -1775,6 +1660,82 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/OncoFAIRMedication-vehicule"
+      },
+      "name" : "Perfusion  OncoFAIR Medication",
+      "description" : "An example instance of an OncoFAIR Medication with required fields populated.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/PrescriptionFolfox-vehicule-diff"
+      },
+      "name" : "Perfusion difuseur OncoFAIR MedicationRequest Prescription",
+      "description" : "An example instance of OncoFAIR MedicationRequest Prescription for folfox protocol.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Device"
+      }],
+      "reference" : {
+        "reference" : "Device/ExampleOncoFAIRDevice-perfusion"
+      },
+      "name" : "Perfusion OncoFAIR Device",
+      "description" : "An example instance of an OncoFAIR Device for folfox protocol",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DeviceDefinition"
+      }],
+      "reference" : {
+        "reference" : "DeviceDefinition/ExampleOncoFAIRDeviceDefinition-perfusion"
+      },
+      "name" : "Perfusion OncoFAIR Device Definition",
+      "description" : "An example instance of an OncoFAIR Device Definition for folfox protocol.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-vehicule"
+      },
+      "name" : "Perfusion OncoFAIR MedicationRequest Component",
+      "description" : "Example instance of OncoFAIRMedicationRequestComponent for folfox protocol",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/PrescriptionFolfox-vehicule"
+      },
+      "name" : "Perfusion OncoFAIR MedicationRequest Prescription",
+      "description" : "An example instance of OncoFAIR MedicationRequest Prescription for folfox protocol.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -1783,6 +1744,32 @@
       "name" : "Planned quantity of medication",
       "description" : "The planned quantity of medication administered.",
       "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/PrescriptionFolfox-fluoro-diff"
+      },
+      "name" : "Prescription difuseur OncoFAIR MedicationRequest Prescription",
+      "description" : "An example instance of OncoFAIR MedicationRequest Prescription for folfox protocol.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/Prescription"
+      },
+      "name" : "Prescription OncoFAIR MedicationRequest Prescription",
+      "description" : "An example instance of OncoFAIR MedicationRequest Prescription for folfox protocol.",
+      "isExample" : true,
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription"]
     },
     {
       "extension" : [{
