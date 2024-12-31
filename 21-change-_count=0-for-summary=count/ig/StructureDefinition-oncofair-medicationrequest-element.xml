@@ -73,7 +73,7 @@
   <name value="OncoFAIRMedicationRequestElement"/>
   <title value="OncoFAIR MedicationRequest Element"/>
   <status value="draft"/>
-  <date value="2024-09-30T07:50:34+00:00"/>
+  <date value="2024-12-31T13:02:34+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -7185,8 +7185,8 @@
       <path value="MedicationRequest.dosageInstruction.doseAndRate.dose[x]"/>
       <sliceName value="doseQuantity"/>
       <short value="Quantity of the prescription element in the dosage"/>
-      <definition value="The comparator is not used on a SimpleQuantity"/>
-      <comment value="The context of use may frequently define what kind of quantity this is and therefore what kind of units can be used. The context of use may also restrict the values for the comparator."/>
+      <definition value="Amount of medication per dose."/>
+      <comment value="Note that this specifies the quantity of the specified medication, not the quantity for each active ingredient(s). Each ingredient amount can be communicated in the Medication resource. For example, if one wants to communicate that a tablet was 375 mg, where the dose was one tablet, you can use the Medication resource to document that the tablet was comprised of 375 mg of drug XYZ. Alternatively if the dose was 375 mg, then you may only need to use the Medication resource to indicate this was a tablet. If the example were an IV such as dopamine and you wanted to communicate that 400mg of dopamine was mixed in 500 ml of some IV solution, then this would all be communicated in the Medication resource. If the administration is not intended to be instantaneous (rate is present or timing has a duration), this can be specified to convey the total amount to be administered over the period of time as indicated by the schedule e.g. 500 ml in dose, with timing used to convey that this should be done over 4 hours."/>
       <requirements value="The amount of therapeutic or other substance given at one administration event."/>
       <min value="0"/>
       <max value="1"/>
@@ -7206,32 +7206,19 @@
         <expression value="hasValue() or (children().count() &gt; id.count())"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <constraint>
-        <key value="qty-3"/>
-        <severity value="error"/>
-        <human value="If a code for the unit is present, the system SHALL also be present"/>
-        <expression value="code.empty() or system.exists()"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Quantity"/>
-      </constraint>
-      <constraint>
-        <key value="sqty-1"/>
-        <severity value="error"/>
-        <human value="The comparator is not used on a SimpleQuantity"/>
-        <expression value="comparator.empty()"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/MedicationRequest"/>
-      </constraint>
       <isModifier value="false"/>
+      <isSummary value="true"/>
       <mapping>
         <identity value="mapping-oncofair-medicationrequest-element-posologie"/>
         <map value="quantite"/>
       </mapping>
       <mapping>
-        <identity value="rim"/>
-        <map value="n/a,PQ, IVL&lt;PQ&gt;, MO, CO, depending on the values"/>
+        <identity value="v2"/>
+        <map value="RXO-2, RXE-3"/>
       </mapping>
       <mapping>
-        <identity value="v2"/>
-        <map value="SN (see also Range) or CQ"/>
+        <identity value="rim"/>
+        <map value=".doseQuantity"/>
       </mapping>
     </element>
     <element id="MedicationRequest.dosageInstruction:posology.doseAndRate.rate[x]">
@@ -7287,8 +7274,8 @@
       <path value="MedicationRequest.dosageInstruction.doseAndRate.rate[x]"/>
       <sliceName value="rateQuantity"/>
       <short value="Rate of administration in the case of injection"/>
-      <definition value="The comparator is not used on a SimpleQuantity"/>
-      <comment value="The context of use may frequently define what kind of quantity this is and therefore what kind of units can be used. The context of use may also restrict the values for the comparator."/>
+      <definition value="Amount of medication per unit of time."/>
+      <comment value="It is possible to supply both a rate and a doseQuantity to provide full details about how the medication is to be administered and supplied. If the rate is intended to change over time, depending on local rules/regulations, each change should be captured as a new version of the MedicationRequest with an updated rate, or captured with a new MedicationRequest with the new rate.&#xD;&#xD;It is possible to specify a rate over time (for example, 100 ml/hour) using either the rateRatio and rateQuantity.  The rateQuantity approach requires systems to have the capability to parse UCUM grammar where ml/hour is included rather than a specific ratio where the time is specified as the denominator.  Where a rate such as 500ml over 2 hours is specified, the use of rateRatio may be more semantically correct than specifying using a rateQuantity of 250 mg/hour."/>
       <requirements value="Identifies the speed with which the medication was or will be introduced into the patient. Typically the rate for an infusion e.g. 100 ml per 1 hour or 100 ml/hr.  May also be expressed as a rate per unit of time e.g. 500 ml per 2 hours.   Other examples: 200 mcg/min or 200 mcg/1 minute; 1 liter/8 hours.  Sometimes, a rate can imply duration when expressed as total volume / duration (e.g.  500mL/2 hours implies a duration of 2 hours).  However, when rate doesn't imply duration (e.g. 250mL/hour), then the timing.repeat.duration is needed to convey the infuse over time period."/>
       <min value="0"/>
       <max value="1"/>
@@ -7308,32 +7295,19 @@
         <expression value="hasValue() or (children().count() &gt; id.count())"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <constraint>
-        <key value="qty-3"/>
-        <severity value="error"/>
-        <human value="If a code for the unit is present, the system SHALL also be present"/>
-        <expression value="code.empty() or system.exists()"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Quantity"/>
-      </constraint>
-      <constraint>
-        <key value="sqty-1"/>
-        <severity value="error"/>
-        <human value="The comparator is not used on a SimpleQuantity"/>
-        <expression value="comparator.empty()"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/MedicationRequest"/>
-      </constraint>
       <isModifier value="false"/>
+      <isSummary value="true"/>
       <mapping>
         <identity value="mapping-oncofair-medicationrequest-element-posologie"/>
         <map value="debit"/>
       </mapping>
       <mapping>
-        <identity value="rim"/>
-        <map value="n/a,PQ, IVL&lt;PQ&gt;, MO, CO, depending on the values"/>
+        <identity value="v2"/>
+        <map value="RXE22, RXE23, RXE-24"/>
       </mapping>
       <mapping>
-        <identity value="v2"/>
-        <map value="SN (see also Range) or CQ"/>
+        <identity value="rim"/>
+        <map value=".rateQuantity"/>
       </mapping>
     </element>
     <element id="MedicationRequest.dosageInstruction:posology.maxDosePerPeriod">

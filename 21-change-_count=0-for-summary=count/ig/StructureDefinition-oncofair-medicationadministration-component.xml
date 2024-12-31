@@ -30,7 +30,7 @@
   <name value="OncoFAIRMedicationAdministrationComponent"/>
   <title value="OncoFAIR MedicationAdministration Component"/>
   <status value="draft"/>
-  <date value="2024-09-30T07:50:34+00:00"/>
+  <date value="2024-12-31T13:02:34+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -2418,8 +2418,8 @@
       <path value="MedicationAdministration.dosage.rate[x]"/>
       <sliceName value="rateQuantity"/>
       <short value="Quantity actually administered to the patient or planned to be administered"/>
-      <definition value="The comparator is not used on a SimpleQuantity"/>
-      <comment value="The context of use may frequently define what kind of quantity this is and therefore what kind of units can be used. The context of use may also restrict the values for the comparator."/>
+      <definition value="Identifies the speed with which the medication was or will be introduced into the patient.  Typically, the rate for an infusion e.g. 100 ml per 1 hour or 100 ml/hr.  May also be expressed as a rate per unit of time, e.g. 500 ml per 2 hours.  Other examples:  200 mcg/min or 200 mcg/1 minute; 1 liter/8 hours."/>
+      <comment value="If the rate changes over time, and you want to capture this in MedicationAdministration, then each change should be captured as a distinct MedicationAdministration, with a specific MedicationAdministration.dosage.rate, and the date time when the rate change occurred. Typically, the MedicationAdministration.dosage.rate element is not used to convey an average rate."/>
       <min value="1"/>
       <max value="1"/>
       <base>
@@ -2431,6 +2431,7 @@
         <code value="Quantity"/>
         <profile value="http://hl7.org/fhir/StructureDefinition/SimpleQuantity"/>
       </type>
+      <condition value="mad-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2438,33 +2439,20 @@
         <expression value="hasValue() or (children().count() &gt; id.count())"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <constraint>
-        <key value="qty-3"/>
-        <severity value="error"/>
-        <human value="If a code for the unit is present, the system SHALL also be present"/>
-        <expression value="code.empty() or system.exists()"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Quantity"/>
-      </constraint>
-      <constraint>
-        <key value="sqty-1"/>
-        <severity value="error"/>
-        <human value="The comparator is not used on a SimpleQuantity"/>
-        <expression value="comparator.empty()"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/MedicationAdministration"/>
-      </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="mapping-oncofair-medicationadministration-component"/>
         <map value="quantiteAdministree"/>
       </mapping>
       <mapping>
-        <identity value="rim"/>
-        <map value="n/a,PQ, IVL&lt;PQ&gt;, MO, CO, depending on the values"/>
+        <identity value="v2"/>
+        <map value="RXA-12 Administered Per (Time Unit)"/>
       </mapping>
       <mapping>
-        <identity value="v2"/>
-        <map value="SN (see also Range) or CQ"/>
+        <identity value="rim"/>
+        <map value=".rateQuantity"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.eventHistory">
