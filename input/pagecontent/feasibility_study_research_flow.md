@@ -6,7 +6,7 @@ The chemotherapy data request flow for a feasibility study and its response, is 
 
 This workflow enables chemotherapy data to be requested for a feasibility study using specific inclusion and exclusion criteria. A researcher or healthcare professional may, for example, be looking for patients meeting specific criteria such as age, gender, specific co-morbidities or particular chemotherapy treatments.
 
-The user initiates a query containing X parameters with the filter "_count"=0. The user interface transforms this query into a batch of individual queries contained in a bundle of batch type containing the X +1 queries, each of which contains just one of the X parameters, plus the initial query.
+The user initiates a query containing X parameters with the filter _summary=count. The user interface transforms this query into a batch of individual queries contained in a bundle of batch type containing the X +1 queries, each of which contains just one of the X parameters, plus the initial query.
 
 The search criteria may include elements such as the patient ID, the type of chemotherapy treatment administered, or even concomitant medical conditions. This query is constructed using the appropriate FHIR search parameters, which allow precise selection of the data required for the study.
 
