@@ -1,0 +1,224 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/MedicationRequest/ExampleOncoFAIRMedicationRequestElement2> a fhir:MedicationRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleOncoFAIRMedicationRequestElement2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element"^^xsd:anyURI ;
+       fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest ExampleOncoFAIRMedicationRequestElement2</b></p><a name=\"ExampleOncoFAIRMedicationRequestElement2\"> </a><a name=\"hcExampleOncoFAIRMedicationRequestElement2\"> </a><a name=\"ExampleOncoFAIRMedicationRequestElement2-en-US\"> </a><p><b>OncoFAIRElementForm</b>: <span title=\"Codes:{http://snomed.info/sct 385055001}\">Tablet</span></p><p><b>OncoFAIRMRElementSupply</b>: true</p><p><b>OncoFAIRMRElementRank</b>: 3</p><blockquote><p><b>OncoFAIRMRElementGoNogo</b></p><ul><li>GoNogoStatus: <span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/siph-gonogo-oncofair-codesystem ATT}\">En attente</span></li><li>GoNogoReasonWaiting: <span title=\"Codes:\">XXX</span></li></ul></blockquote><blockquote><p><b>OncoFAIRPharmacistAdvice</b></p><ul><li>pharmacistValidation: <span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/siph-statutvalidpharm-oncofair-codesystem VAL}\">validée</span></li><li>pharmacistProposal: <span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/siph-natureproppharm-oncofair-codesystem SUG}\">Suggestion</span></li></ul></blockquote><p><b>identifier</b>: 654321</p><p><b>basedOn</b>: </p><ul><li><a href=\"MedicationRequest-ExampleOncoFAIRMedicationRequestPrescription.html\">MedicationRequest: extension = 2024-06-01 08:00:00+0000; identifier = 12345; status = active; intent = order; note = This is a default comment on the prescription by the prescribing doctor.</a></li><li><a href=\"MedicationRequest-ExampleOncoFAIRMedicationRequestElement.html\">MedicationRequest: extension = Tablet,true,3,,; identifier = 123456; groupIdentifier = 303030; status = active; intent = proposal; priority = urgent; note = Paracetamol 500mg Tablet,Prescribed for headaches,Administered after meals; effectiveDosePeriod = 2024-06-01 08:00:00+0000 --&gt; 2024-06-01 09:00:00+0000</a></li><li><a href=\"CarePlan-ExampleOncoFAIRCarePlan.html\">CarePlan Example Prescribed Protocol</a></li></ul><p><b>groupIdentifier</b>: 121212</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>priority</b>: Urgent</p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem element}\">element</span></td><td><a href=\"Medication-ExampleOncoFAIRMedication.html\">Medication Ibuprofen</a></td></tr></table><p><b>subject</b>: <a href=\"Patient-ExampleOncoFAIRPatient.html\">Anonymous Patient (no stated gender), DoB Unknown ( 123456789)</a></p><p><b>requester</b>: <a href=\"Practitioner-ExampleOncoFAIRPractitioner.html\">Practitioner: identifier = 12345</a></p><h3>Devices</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"DeviceDefinition-ExampleOncoFAIRDeviceDefinition.html\">DeviceDefinition: identifier = DD02</a></td></tr></table><p><b>note</b>: Paracetamol 500mg Tablet, Prescribed for headaches, Administered after meals</p><p><b>effectiveDosePeriod</b>: 2024-06-01 08:00:00+0000 --&gt; 2024-06-01 09:00:00+0000</p><blockquote><p><b>dosageInstruction</b></p><blockquote><p><b>id</b></p>element</blockquote><p><b>text</b>: Description of the dosage</p><p><b>additionalInstruction</b>: <span title=\"Codes:{http://snomed.info/sct 311501008}\">Half to one hour before food</span></p><p><b>timing</b>: 10min , before breakfast, Once</p><p><b>site</b>: <span title=\"Codes:{http://snomed.info/sct 49928004}\">Throat</span></p><p><b>route</b>: <span title=\"Codes:{http://snomed.info/sct 26643006}\">Oral route</span></p><p><b>method</b>: <span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem MED}\">Médicament</span></p></blockquote><blockquote><p><b>dosageInstruction</b></p><blockquote><p><b>id</b></p>posology</blockquote><p><b>timing</b>: Duration 1?? , 2</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td><td><b>Rate[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>250 mg</td><td>50 mg/h</td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-element-form"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:385055001 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "385055001" ] ;
+         fhir:display [ fhir:v "Tablet" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-supply"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-rank"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "3"^^xsd:integer ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "GoNogoStatus"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/siph-gonogo-oncofair-codesystem"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "ATT" ] ;
+           fhir:display [ fhir:v "En attente" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "GoNogoReasonWaiting"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:text [ fhir:v "XXX" ]
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-go-nogo"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "pharmacistValidation"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/siph-statutvalidpharm-oncofair-codesystem"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "VAL" ] ;
+           fhir:display [ fhir:v "validée" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "pharmacistProposal"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/siph-natureproppharm-oncofair-codesystem"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "SUG" ] ;
+           fhir:display [ fhir:v "Suggestion" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-pharmacist-advice"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "654321" ]
+  ] ) ; # 
+  fhir:basedOn ( [
+     fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/ExampleOncoFAIRMedicationRequestPrescription> ;
+     fhir:reference [ fhir:v "MedicationRequest/ExampleOncoFAIRMedicationRequestPrescription" ]
+  ] [
+     fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/ExampleOncoFAIRMedicationRequestElement> ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-link-type"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/siph-type-liaison-oncofair-codesystem"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "COMP" ] ;
+           fhir:display [ fhir:v "Complément" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:reference [ fhir:v "MedicationRequest/ExampleOncoFAIRMedicationRequestElement" ]
+  ] [
+     fhir:link <http://ltsi.univ-rennes.fr/CarePlan/ExampleOncoFAIRCarePlan> ;
+     fhir:reference [ fhir:v "CarePlan/ExampleOncoFAIRCarePlan" ]
+  ] ) ; # 
+  fhir:groupIdentifier [
+     fhir:value [ fhir:v "121212" ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:priority [ fhir:v "urgent"] ; # 
+  fhir:medication [
+     fhir:concept [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "element" ] ;
+         fhir:display [ fhir:v "element" ]
+       ] )
+     ] ;
+     fhir:reference [
+       fhir:link <http://ltsi.univ-rennes.fr/Medication/ExampleOncoFAIRMedication> ;
+       fhir:reference [ fhir:v "Medication/ExampleOncoFAIRMedication" ]
+     ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://ltsi.univ-rennes.fr/Patient/ExampleOncoFAIRPatient> ;
+     fhir:reference [ fhir:v "Patient/ExampleOncoFAIRPatient" ]
+  ] ; # 
+  fhir:requester [
+     fhir:link <http://ltsi.univ-rennes.fr/Practitioner/ExampleOncoFAIRPractitioner> ;
+     fhir:reference [ fhir:v "Practitioner/ExampleOncoFAIRPractitioner" ]
+  ] ; # 
+  fhir:device ( [
+     fhir:reference [
+       fhir:link <http://ltsi.univ-rennes.fr/DeviceDefinition/ExampleOncoFAIRDeviceDefinition> ;
+       fhir:reference [ fhir:v "DeviceDefinition/ExampleOncoFAIRDeviceDefinition" ]
+     ]
+  ] ) ; # 
+  fhir:note ( [
+     fhir:id [ fhir:v "wording" ] ;
+     fhir:text [ fhir:v "Paracetamol 500mg Tablet" ]
+  ] [
+     fhir:id [ fhir:v "indication" ] ;
+     fhir:text [ fhir:v "Prescribed for headaches" ]
+  ] [
+     fhir:id [ fhir:v "comments" ] ;
+     fhir:text [ fhir:v "Administered after meals" ]
+  ] ) ; # 
+  fhir:effectiveDosePeriod [
+     fhir:start [ fhir:v "2024-06-01T08:00:00Z"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2024-06-01T09:00:00Z"^^xsd:dateTime ]
+  ] ; # 
+  fhir:dosageInstruction ( [
+     fhir:id [ fhir:v "element" ] ;
+     fhir:text [ fhir:v "Description of the dosage" ] ;
+     fhir:additionalInstruction ( [
+       fhir:coding ( [
+         a sct:311501008 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "311501008" ] ;
+         fhir:display [ fhir:v "Half to one hour before food" ]
+       ] )
+     ] ) ;
+     fhir:timing [
+       fhir:repeat [
+         fhir:bounds [
+           a fhir:Period ;
+           fhir:start [ fhir:v "2024-06-01T08:00:00Z"^^xsd:dateTime ] ;
+           fhir:end [ fhir:v "2024-06-01T09:00:00Z"^^xsd:dateTime ]
+         ] ;
+         fhir:when ( [ fhir:v "ACM" ] ) ;
+         fhir:offset [ fhir:v "10"^^xsd:nonNegativeInteger ]
+       ]
+     ] ;
+     fhir:site [
+       fhir:coding ( [
+         a sct:49928004 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "49928004" ] ;
+         fhir:display [ fhir:v "Throat" ]
+       ] )
+     ] ;
+     fhir:route [
+       fhir:coding ( [
+         a sct:26643006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "26643006" ] ;
+         fhir:display [ fhir:v "Oral route" ]
+       ] )
+     ] ;
+     fhir:method [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MED" ] ;
+         fhir:display [ fhir:v "Médicament" ]
+       ] )
+     ]
+  ] [
+     fhir:id [ fhir:v "posology" ] ;
+     fhir:timing [
+       fhir:repeat [
+         fhir:duration [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:durationUnit [ fhir:v "s" ] ;
+         fhir:frequency [ fhir:v "2"^^xsd:positiveInteger ]
+       ]
+     ] ;
+     fhir:doseAndRate ( [
+       fhir:dose [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "250"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "mg" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+       ] ;
+       fhir:rate [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "50"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "mg/h" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
