@@ -13,6 +13,8 @@ Usage: #definition
 * format[0] = #xml
 * format[+] = #json
 
+
+
 * rest.mode = #client
 * rest.documentation = "Search and consultation of aggregate data on chemotherapy"
 * rest.security.cors = false
@@ -20,34 +22,39 @@ Usage: #definition
 
 
 // Declaration for Patient
-
 * rest.resource[+].type = #Patient
 * rest.resource[=].profile = Canonical(oncofair-patient)
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].interaction[+].code = #read
+* rest.resource[=].searchRevInclude = "Encounter:subject"
 
 * rest.resource[=].searchParam[+].name = "identifier"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Patient-identifier"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Identifier of the patient"
 
-// Declaration for Encounter
 
+// Declaration for Encounter
 * rest.resource[+].type = #Encounter
 * rest.resource[=].profile = Canonical(oncofair-encounter)
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].interaction[+].code = #read
+* rest.resource[=].searchInclude = "Encounter:subject"
+* rest.resource[=].searchRevInclude[+] = "MedicationAdministration:encounter"
+* rest.resource[=].searchRevInclude[+] = "MedicationRequest:encounter"
 
 * rest.resource[=].searchParam[+].name = "identifier"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/clinical-identifier"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Identifier of the patient's stay"
 
+
 // Declaration for Observation
 * rest.resource[+].type = #Observation
 * rest.resource[=].profile = Canonical(oncofair-observation)
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].interaction[+].code = #read
+* rest.resource[=].searchRevInclude = "MedicationRequest:reason"
 
 * rest.resource[=].searchParam[+].name = "clinical-code"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/clinical-code"
@@ -60,13 +67,13 @@ Usage: #definition
 * rest.resource[=].searchParam[=].documentation = "Date and time of registration of the additional information"
 
 
-//Medication
+// Declaration for Medication
 * rest.resource[+].type = #Medication
 * rest.resource[=].profile = Canonical(oncofair-medication)
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].interaction[+].code = #read
-//* rest.resource[=].searchRevInclude = "XXX"*/
-
+* rest.resource[=].searchRevInclude[+] = "MedicationRequest:medication"
+* rest.resource[=].searchRevInclude[+] = "MedicationAdministration:medication"
 
 * rest.resource[=].searchParam[+].name = "_filter"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-filter"
@@ -101,9 +108,13 @@ Usage: #definition
 * rest.resource[=].supportedProfile[1] = Canonical(oncofair-medicationrequest-component)
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].interaction[+].code = #read
+* rest.resource[=].searchInclude[+] = "MedicationRequest:encounter"
+* rest.resource[=].searchInclude[+] = "MedicationRequest:reason"
+* rest.resource[=].searchInclude[+] = "MedicationRequest:basedOn"
+* rest.resource[=].searchInclude[+] = "MedicationRequest:medication"
+* rest.resource[=].searchRevInclude = "MedicationRequest:basedOn"
 
 // Paramètres de recherche communs à MR
-
 * rest.resource[=].searchParam[+].name = "identifier"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/clinical-identifier"
 * rest.resource[=].searchParam[=].type = #token
@@ -118,7 +129,6 @@ Usage: #definition
 * rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-indication)
 * rest.resource[=].searchParam[=].type = #string
 * rest.resource[=].searchParam[=].documentation = "Indications concerning the prescription item and the component prescribed"
-
 
 // MedicationRequestPrescription
 * rest.resource[=].searchParam[+].name = "mr-prescription-validation-date"
@@ -203,7 +213,6 @@ Usage: #definition
 * rest.resource[=].searchParam[=].documentation = "Quantity of the prescription element in the dosage"
 
 // MedicationRequest Component
-
 * rest.resource[=].searchParam[+].name = "mr-prescribed-component-quantity"
 * rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-mr-prescribed-component-quantity)
 * rest.resource[=].searchParam[=].type = #quantity
@@ -229,12 +238,14 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "True if the component prescribed is solute in the prescription element"
 
-// Declaration for CarePlan
 
+// Declaration for CarePlan
 * rest.resource[+].type = #CarePlan
 * rest.resource[=].profile = Canonical(oncofair-careplan)
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].interaction[+].code = #read
+* rest.resource[=].searchInclude = "CarePlan:basedOn"
+* rest.resource[=].searchInclude = "MedicationRequest:basedOn"
 
 * rest.resource[=].searchParam[+].name = "identifier"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/clinical-identifier"
@@ -263,17 +274,18 @@ Usage: #definition
 
 
 // Declaration for MedicationAdministration
-
 * rest.resource[+].type = #MedicationAdministration
 * rest.resource[=].profile = Canonical(oncofair-medicationadministration-element)
 * rest.resource[=].supportedProfile[0] = Canonical(oncofair-medicationadministration-component)
 * rest.resource[=].supportedProfile[1] = Canonical(oncofair-medicationadministration-report)
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].interaction[+].code = #read
- 
+* rest.resource[=].searchInclude[+] = "MedicationAdministration:encounter"
+* rest.resource[=].searchInclude[+] = "MedicationAdministration:partOf"
+* rest.resource[=].searchInclude[+] = "MedicationAdministration:medication"
+* rest.resource[=].searchRevInclude = "MedicationAdministration:partOf"
 
 // Medication Administration Element
-
 * rest.resource[=].searchParam[+].name = "ma-method"
 * rest.resource[=].searchParam[=].definition = Canonical(oncofair-sp-ma-method)
 * rest.resource[=].searchParam[=].type = #token
@@ -300,7 +312,6 @@ Usage: #definition
 * rest.resource[=].searchParam[=].documentation = "Specifies, where applicable, the exact point on the body where the product is to be applied to the patient. By default, the place of administration is that shown in the prescription element associated with the administration element"
 
 // Medication Administration Component
-
 * rest.resource[=].searchParam[+].name = "date"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/medications-date"
 * rest.resource[=].searchParam[=].type = #date
@@ -322,7 +333,6 @@ Usage: #definition
 * rest.resource[=].searchParam[=].documentation = "Quantity actually administered to the patient or planned to be administered"
 
 // Paramètres de recherche communs à MA
-
 * rest.resource[=].searchParam[+].name = "identifier"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/clinical-identifier"
 * rest.resource[=].searchParam[=].type = #token
@@ -334,20 +344,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].documentation = "Wording of component/element of administration"
 
 // Medication Administration Report
-
 * rest.resource[=].searchParam[+].name = "performer"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/MedicationAdministration-performer"
 * rest.resource[=].searchParam[=].type = #reference
 * rest.resource[=].searchParam[=].documentation = "Identification of the person who planned, administered or monitored the administration of the medicines represented by the administration elements"
-
-
-
-
-
-
-
-
-
-
-
-
