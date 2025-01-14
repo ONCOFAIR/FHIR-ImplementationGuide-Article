@@ -1,4 +1,4 @@
-### Validateurs FHIR
+### FHIR Validator
 
 Here is the list of available FHIR validator available on [EVSClient](https://oncofair.kereval.cloud/evs) :
 
@@ -46,7 +46,7 @@ Here is the list of available FHIR validator available on [EVSClient](https://on
         <tr>
             <td><a href="https://hl7.org/fhir/R5/medication.html">Medication</a></td>
             <td><a href="StructureDefinition-oncofair-medication.html">OncoFAIRMedication</a></td>
-            <td>TO DO</td>
+            <td>This object corresponds to the prescribed medication</td>
         </tr>
         <tr>
             <td><a href="https://hl7.org/fhir/R5/medicationadministration.html">MedicationAdministration</a></td>
@@ -95,10 +95,10 @@ Here is the list of available FHIR validator available on [EVSClient](https://on
 </html>
 
 
-### Serveur FHIR
+### FHIR server
 
-Un [serveur FHIR](https://oncofair.kereval.cloud/cqf-ruler/fhir/) est disponible pour stocker les ressources FHIR échangées.
-Ce même serveur prend en compte les opérations issues de [CQL](https://cql.hl7.org/)
+A [FHIR server](https://oncofair.kereval.cloud/cqf-ruler/fhir/) is available to store example and test data flow.
+This server also support [CQL operations](https://cql.hl7.org/)
 
-### Cas de test
-Une liste des cas de test associés à la mise en place de cet IG est disponible sur la [plateforme Gazelle](https://oncofair.kereval.cloud/)
+### Test cases
+A list of test cases available for this ig is avalaible on [Gazelle](https://oncofair.kereval.cloud/)
