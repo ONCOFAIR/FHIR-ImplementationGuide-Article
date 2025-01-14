@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIR"] ; # 
   fhir:title [ fhir:v "OncoFAIR"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-12-30T08:25:45+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-01-14T12:47:11+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -1854,22 +1854,6 @@
          fhir:reference [ fhir:v "MedicationRequest/PrescriptionFolfox-fluoro-diff" ]
        ] ;
        fhir:name [ fhir:v "Prescription difuseur OncoFAIR MedicationRequest Prescription" ] ;
-       fhir:description [ fhir:v "An example instance of OncoFAIR MedicationRequest Prescription for folfox protocol." ] ;
-       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:profile ( [
-         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription"^^xsd:anyURI ;
-         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription>
-       ] )
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "MedicationRequest" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/Prescription> ;
-         fhir:reference [ fhir:v "MedicationRequest/Prescription" ]
-       ] ;
-       fhir:name [ fhir:v "Prescription OncoFAIR MedicationRequest Prescription" ] ;
        fhir:description [ fhir:v "An example instance of OncoFAIR MedicationRequest Prescription for folfox protocol." ] ;
        fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
        fhir:profile ( [
