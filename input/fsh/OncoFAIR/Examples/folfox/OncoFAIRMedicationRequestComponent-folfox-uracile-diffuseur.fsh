@@ -22,7 +22,7 @@ Usage: #example
 * dosageInstruction.route = #47625008 "Intravenous route"
 * dosageInstruction.method = #738990001 "Administer (administration method)"
 
-* dosageInstruction.doseAndRate.doseQuantity.value = 5
+* dosageInstruction.doseAndRate.doseQuantity.value = 50
 * dosageInstruction.doseAndRate.doseQuantity.unit = "mg"
 * dosageInstruction.doseAndRate.doseQuantity.system = "http://unitsofmeasure.org"
 
