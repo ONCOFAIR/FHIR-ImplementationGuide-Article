@@ -17,7 +17,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication OncoFAIRMedication-oxaliplatine</b></p><a name=\"OncoFAIRMedication-oxaliplatine\"> </a><a name=\"hcOncoFAIRMedication-oxaliplatine\"> </a><a name=\"OncoFAIRMedication-oxaliplatine-en-US\"> </a><p><b>OncoFAIRMedicationType</b>: <span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/siph-typecomposant-oncofair-codesystem PRAC}\">principe actif</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 395814003}\">Oxaliplatin</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication OncoFAIRMedication-oxaliplatine</b></p><a name=\"OncoFAIRMedication-oxaliplatine\"> </a><a name=\"hcOncoFAIRMedication-oxaliplatine\"> </a><a name=\"OncoFAIRMedication-oxaliplatine-en-US\"> </a><p><b>OncoFAIRMedicationType</b>: <span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/siph-typecomposant-oncofair-codesystem PRAC}\">principe actif</span></p><p><b>identifier</b>: medication-folfox-oxaliplatine</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 395814003}\">Oxaliplatin</span></p></div>"
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication-type"^^xsd:anyURI ] ;
@@ -29,6 +29,9 @@
          fhir:display [ fhir:v "principe actif" ]
        ] )
      ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "medication-folfox-oxaliplatine" ]
   ] ) ; # 
   fhir:code [
      fhir:coding ( [

@@ -17,22 +17,13 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest Element-folfox-diffuseur</b></p><a name=\"Element-folfox-diffuseur\"> </a><a name=\"hcElement-folfox-diffuseur\"> </a><a name=\"Element-folfox-diffuseur-en-US\"> </a><p><b>identifier</b>: 123456-folfox-1</p><p><b>basedOn</b>: </p><ul><li><a href=\"MedicationRequest-PrescriptionFolfox-vehicule-diff.html\">MedicationRequest: extension = 2024-06-01 08:00:00+0000; identifier = prescription-folfox-vehicule; groupIdentifier = folfox-example; status = active; intent = order; note = This is a default comment on the prescription by the prescribing doctor.</a></li><li><code>PrescriptionFolfox-uracile-diff</code></li><li><code>PrescriptionFolfox-oxa-diff</code></li><li><a href=\"MedicationRequest-OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine-diffuseur.html\">MedicationRequest: extension = true,false; groupIdentifier = folfox-example; status = active; intent = order; note = Prescribed component wording,Comments associated with the prescribed component,Specifies the reasons for prescribing this component</a></li><li><code>OncoFAIRMedicationRequestComponent-Folfox-fluoro-diffuseur</code></li><li><code>ExampleOncoFAIRCarePlan-folfox</code></li></ul><p><b>groupIdentifier</b>: folfox-example</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem element}\">element</span></td><td><a href=\"Medication-OncoFAIRMedication-fluoro-uracile.html\">Medication 5-fluorouracil</a></td></tr></table><p><b>subject</b>: <a href=\"Patient-ExampleOncoFAIRPatient.html\">Anonymous Patient (no stated gender), DoB Unknown ( 123456789)</a></p><p><b>requester</b>: <a href=\"Practitioner-ExampleOncoFAIRPractitioner.html\">Practitioner: identifier = 12345</a></p><h3>Devices</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><code>ExampleOncoFAIRDeviceDefinition-Perfusion</code></td></tr></table><p><b>note</b>: 5-fluoro-uracile, protocol folfox</p><p><b>effectiveDosePeriod</b>: 2024-11-01 08:00:00+0000 --&gt; 2024-11-30 09:00:00+0000</p><blockquote><p><b>dosageInstruction</b></p><blockquote><p><b>id</b></p>element</blockquote><p><b>patientInstruction</b>: Boire beaucoup d'eau</p><p><b>timing</b>: Once</p><p><b>route</b>: <span title=\"Codes:{http://snomed.info/sct 47625008}\">Intravenous route</span></p><p><b>method</b>: <span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem PERF}\">Perfusion</span></p></blockquote><blockquote><p><b>dosageInstruction</b></p><blockquote><p><b>id</b></p>posology</blockquote><p><b>timing</b>: Count 2  times, Duration 48days , 2 per 30 days</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td><td><b>Rate[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1 dose</td><td>1/48 heure</td></tr></table></blockquote></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest Element-folfox-diffuseur</b></p><a name=\"Element-folfox-diffuseur\"> </a><a name=\"hcElement-folfox-diffuseur\"> </a><a name=\"Element-folfox-diffuseur-en-US\"> </a><p><b>identifier</b>: prescription-element-folfox-difuseur</p><p><b>basedOn</b>: </p><ul><li><a href=\"MedicationRequest-PrescriptionFolfox-difuseur.html\">MedicationRequest: extension = 2024-06-01 08:00:00+0000; identifier = prescription-folfox-difuseur; groupIdentifier = folfox-example; status = active; intent = order; note = This is a default comment on the prescription by the prescribing doctor.</a></li><li><a href=\"CarePlan-OncoFAIRCarePlan-folfox.html\">CarePlan Folfox</a></li></ul><p><b>groupIdentifier</b>: folfox-example</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem element}\">element</span></td></tr></table><p><b>subject</b>: <a href=\"Patient-ExampleOncoFAIRPatient.html\">Anonymous Patient (no stated gender), DoB Unknown ( 123456789)</a></p><p><b>requester</b>: <a href=\"Practitioner-ExampleOncoFAIRPractitioner.html\">Practitioner: identifier = 12345</a></p><h3>Devices</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"DeviceDefinition-ExampleOncoFAIRDeviceDefinition-diffuseur.html\">DeviceDefinition: identifier = Difuseur</a></td></tr></table><p><b>note</b>: 5-fluoro-uracile, protocol folfox</p><p><b>effectiveDosePeriod</b>: 2024-11-01 08:00:00+0000 --&gt; 2024-11-30 09:00:00+0000</p><blockquote><p><b>dosageInstruction</b></p><blockquote><p><b>id</b></p>element</blockquote><p><b>patientInstruction</b>: Boire beaucoup d'eau</p><p><b>timing</b>: Once</p><p><b>route</b>: <span title=\"Codes:{http://snomed.info/sct 47625008}\">Intravenous route</span></p><p><b>method</b>: <span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem PERF}\">Perfusion</span></p></blockquote><blockquote><p><b>dosageInstruction</b></p><blockquote><p><b>id</b></p>posology</blockquote><p><b>timing</b>: Count 2  times, Duration 48days , 2 per 30 days</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td><td><b>Rate[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1 dose</td><td>1/48 heure</td></tr></table></blockquote></div>"
   ] ; # 
   fhir:identifier ( [
-     fhir:value [ fhir:v "123456-folfox-1" ]
+     fhir:value [ fhir:v "prescription-element-folfox-difuseur" ]
   ] ) ; # 
   fhir:basedOn ( [
-     fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/PrescriptionFolfox-vehicule-diff> ;
-     fhir:reference [ fhir:v "MedicationRequest/PrescriptionFolfox-vehicule-diff" ]
-  ] [
-     fhir:reference [ fhir:v "PrescriptionFolfox-uracile-diff" ]
-  ] [
-     fhir:reference [ fhir:v "PrescriptionFolfox-oxa-diff" ]
-  ] [
-     fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine-diffuseur> ;
-     fhir:reference [ fhir:v "MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine-diffuseur" ]
-  ] [
+     fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/PrescriptionFolfox-difuseur> ;
      fhir:extension ( [
        fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-link-type"^^xsd:anyURI ] ;
        fhir:value [
@@ -44,9 +35,10 @@
          ] )
        ]
      ] ) ;
-     fhir:reference [ fhir:v "OncoFAIRMedicationRequestComponent-Folfox-fluoro-diffuseur" ]
+     fhir:reference [ fhir:v "MedicationRequest/PrescriptionFolfox-difuseur" ]
   ] [
-     fhir:reference [ fhir:v "ExampleOncoFAIRCarePlan-folfox" ]
+     fhir:link <http://ltsi.univ-rennes.fr/CarePlan/OncoFAIRCarePlan-folfox> ;
+     fhir:reference [ fhir:v "CarePlan/OncoFAIRCarePlan-folfox" ]
   ] ) ; # 
   fhir:groupIdentifier [
      fhir:value [ fhir:v "folfox-example" ]
@@ -60,10 +52,6 @@
          fhir:code [ fhir:v "element" ] ;
          fhir:display [ fhir:v "element" ]
        ] )
-     ] ;
-     fhir:reference [
-       fhir:link <http://ltsi.univ-rennes.fr/Medication/OncoFAIRMedication-fluoro-uracile> ;
-       fhir:reference [ fhir:v "Medication/OncoFAIRMedication-fluoro-uracile" ]
      ]
   ] ; # 
   fhir:subject [
@@ -76,7 +64,8 @@
   ] ; # 
   fhir:device ( [
      fhir:reference [
-       fhir:reference [ fhir:v "ExampleOncoFAIRDeviceDefinition-Perfusion" ]
+       fhir:link <http://ltsi.univ-rennes.fr/DeviceDefinition/ExampleOncoFAIRDeviceDefinition-diffuseur> ;
+       fhir:reference [ fhir:v "DeviceDefinition/ExampleOncoFAIRDeviceDefinition-diffuseur" ]
      ]
   ] ) ; # 
   fhir:note ( [
