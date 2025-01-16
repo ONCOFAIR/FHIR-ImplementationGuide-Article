@@ -1,8 +1,10 @@
 Instance: OncoFAIRMedication-vehicule
 InstanceOf: OncoFAIRMedication
-Title: "Perfusion  OncoFAIR Medication"
+Title: "Vehicle  OncoFAIR Medication"
 Description: "An example instance of an OncoFAIR Medication with required fields populated."
 Usage: #example
+
+* identifier.value = "medication-folfox-vehicle"
 
 * code.coding[0].system = "http://snomed.info/sct"
 * code.coding[0].code = #5000411000001105

@@ -11,10 +11,12 @@ Usage: #example
 * medication.concept.coding[0].code = #component
 * medication.reference = Reference(OncoFAIRMedication-fluoro-uracile)
 
+* identifier.value = "prescription-component-folfox-uracile-difuseur"
+
 * groupIdentifier.value = "folfox-example"
 
 * subject = Reference(ExampleOncoFAIRPatient)
-* basedOn = Reference (OncoFAIRMedicationRequestElement-uracile)
+* basedOn = Reference (Element-folfox-diffuseur)
 * performer = Reference (ExampleOncoFAIRPractitioner)
 * device.reference = Reference (ExampleOncoFAIRDeviceDefinition-diffuseur)
 

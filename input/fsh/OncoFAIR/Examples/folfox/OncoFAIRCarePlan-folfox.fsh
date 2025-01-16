@@ -5,7 +5,7 @@ Description: "An example instance of an OncoFAIR CarePlan with required fields p
 Usage: #example
 
 
-* identifier.value = "Folfox"
+* identifier.value = "folfox-example"
 * title = "Folfox"
 * status = #active
 * intent = #order

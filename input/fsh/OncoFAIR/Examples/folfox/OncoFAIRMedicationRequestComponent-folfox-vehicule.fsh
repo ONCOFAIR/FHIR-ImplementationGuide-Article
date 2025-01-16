@@ -1,6 +1,6 @@
 Instance: OncoFAIRMedicationRequestComponent-Folfox-vehicule
 InstanceOf: OncoFAIRMedicationRequestComponent
-Title: "Perfusion OncoFAIR MedicationRequest Component"
+Title: "Vehicle OncoFAIR MedicationRequest Component"
 Description: "Example instance of OncoFAIRMedicationRequestComponent for folfox protocol"
 Usage: #example
 * status = #active
@@ -9,13 +9,15 @@ Usage: #example
 * medication.concept.coding[0].system = "http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem"
 * medication.concept.coding[0].display = "component"
 * medication.concept.coding[0].code = #component
-* medication.reference = Reference(OncoFAIRMedication-fluoro-vehicule)
+* medication.reference = Reference(OncoFAIRMedication-vehicule)
+
+* identifier.value = "prescription-component-folfox-vehicle"
 
 * groupIdentifier.value = "folfox-example"
 
 * subject = Reference(ExampleOncoFAIRPatient)
 
-* basedOn = Reference (OncoFAIRMedicationRequestElement-folfox)
+* basedOn = Reference (Element-folfox)
 
 * performer = Reference (ExampleOncoFAIRPractitioner)
 

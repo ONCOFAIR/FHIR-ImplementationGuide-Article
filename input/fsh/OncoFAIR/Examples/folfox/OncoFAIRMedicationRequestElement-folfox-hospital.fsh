@@ -4,22 +4,20 @@ Title: "Folfox OncoFAIR MedicationRequest Element"
 Description: "Example instance of OncoFAIRMedicationRequestElement for folfox protocol"
 Usage: #example
 
-* basedOn[+] = Reference(PrescriptionFolfox-vehicule)
-* basedOn[+] = Reference(PrescriptionFolfox-uracile)
-* basedOn[+] = Reference(PrescriptionFolfox-oxaliplatine)
+* basedOn[+] = Reference(PrescriptionFolfox)
 
-* basedOn[+] = Reference(OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine)
-* basedOn[+] = Reference(OncoFAIRMedicationRequestComponent-Folfox-fluoro)
-* basedOn[+] = Reference(OncoFAIRMedicationRequestComponent-Folfox-vehicule)
+//* basedOn[+] = Reference(OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine)
+//* basedOn[+] = Reference(OncoFAIRMedicationRequestComponent-Folfox-uracile)
+//* basedOn[+] = Reference(OncoFAIRMedicationRequestComponent-Folfox-vehicule)
 
 
 * basedOn[=].extension[oncofair-mr-element-link-type].valueCodeableConcept.coding[0].system = "http://ltsi.univ-rennes.fr/CodeSystem/siph-type-liaison-oncofair-codesystem"
 * basedOn[=].extension[oncofair-mr-element-link-type].valueCodeableConcept.coding[0].code = #COMP 
 * basedOn[=].extension[oncofair-mr-element-link-type].valueCodeableConcept.coding[0].display = "Complément"
 
-* basedOn[+] = Reference(ExampleOncoFAIRCarePlan-folfox)
+* basedOn[+] = Reference(OncoFAIRCarePlan-folfox)
 
-* device.reference = Reference(ExampleOncoFAIRDeviceDefinition-Perfusion)
+* device.reference = Reference(ExampleOncoFAIRDeviceDefinition-perfusion)
 
 * requester = Reference(ExampleOncoFAIRPractitioner)
 
@@ -27,7 +25,7 @@ Usage: #example
 
 * intent = #proposal
 
-* identifier.value = "123456-folfox-1"
+* identifier.value = "prescription-element-folfox-hospital"
 
 * groupIdentifier.value = "folfox-example"
 
@@ -35,7 +33,6 @@ Usage: #example
 * medication.concept.coding[0].display = "element"
 * medication.concept.coding[0].code = #element
 
-* medication.reference = Reference(OncoFAIRMedication-fluoro-uracile)
 
 * status = #active
 

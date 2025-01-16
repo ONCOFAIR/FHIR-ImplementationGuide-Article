@@ -1,10 +1,12 @@
-Instance: PrescriptionFolfox-oxaliplatine
+Instance: PrescriptionFolfox-difuseur
 InstanceOf: OncoFAIRMedicationRequestPrescription
-Title: "Oxaliplatine OncoFAIR MedicationRequest Prescription"
-Description: "An example instance of OncoFAIR MedicationRequest Prescription for folfox protocol."
+Title: "Vehicle OncoFAIR MedicationRequest Prescription"
+Description: "An example instance of OncoFAIR MedicationRequest Prescription for folfox protocol at hospitals."
 Usage: #example
 
 * groupIdentifier.value = "folfox-example"
+* identifier.value = "prescription-folfox-difuseur"
+
 * status = #active
 * intent = #order
 
@@ -12,17 +14,16 @@ Usage: #example
 * medication.concept.coding[0].display = "prescription"
 * medication.concept.coding[0].code = #prescription
 
-* medication.reference = Reference(OncoFAIRMedication-oxaliplatine)
-
 * subject = Reference (ExampleOncoFAIRPatient)
 * encounter = Reference (ExampleOncoFAIREncounter)
+
+* device.reference = Reference (ExampleOncoFAIRDeviceDefinition-diffuseur)
 
 * reason = Reference (ExampleOncoFAIRObservation)
 * basedOn = Reference (OncoFAIRCarePlan-folfox)
 
 * supportingInformation[accomodationUnit] = Reference (ExampleHealthcareServiceAccomodation)
 * supportingInformation[medicalLiabiltyUnit] = Reference (ExampleHealthcareServiceMedicalLiability) 
-* identifier.value = "prescription-folfox-oxaliplatine"
 * note.text = "This is a default comment on the prescription by the prescribing doctor."
 
 * extension[oncofair-mr-prescription-validation-date].valueDateTime = "2024-06-01T08:00:00Z"

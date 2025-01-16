@@ -4,6 +4,8 @@ Title: "Fluoro-uracile OncoFAIR Medication"
 Description: "An example instance of an OncoFAIR Medication with required fields populated."
 Usage: #example
 
+* identifier.value = "medication-folfox-fluoro"
+
 * code.coding[0].system = "http://snomed.info/sct"
 * code.coding[0].code = #387172005
 * code.coding[0].display = "5-fluorouracil"
