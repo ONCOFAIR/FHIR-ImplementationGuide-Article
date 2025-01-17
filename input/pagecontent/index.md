@@ -1,3 +1,9 @@
+<p style="padding: 5px; border-radius: 5px; border: 2px solid maroon; background: #ffffe6; width: 65%">
+<b>Description de ce guide d'implémentation</b><br>
+Le projet OncoFAIR vise à améliorer l'interopérabilité autour des Entrepôts de Données de Santé sur les données de chimiothérapie pour une réutilisation secondaire des données.
+OncoFAIR est un projet collaboratif entre l’équipe DOMASIA (DOnnées MAssives et Système d’Information Apprenant en santé) du LTSI (Laboratoire Traitement du Signal et de l'Image) et Kereval, laboratoire d'ingénierie de tests. Ce projet est financé par la Région Bretagne dans le cadre de l’appel à projets « Transfert de technologies des filières santé et biotechnologies 2022 » et reçoit le soutien de Biotech Santé Bretagne. 
+</p>
+
 ### Introduction
 
 The OncoFAIR project is designed to improve the interoperability and reuse of healthcare data in oncology, focusing on chemotherapy. This guide details the use of FHIR standards to optimize prescribing and medication administration for oncology patients.
