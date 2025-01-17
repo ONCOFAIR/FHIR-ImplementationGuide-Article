@@ -1,17 +1,17 @@
-Instance: ExampleOncoFAIRMedicationRequestElement
+Instance: Element
 InstanceOf: OncoFAIRMedicationRequestElement
 Title: "Example OncoFAIR MedicationRequest Element"
 Description: "Example instance of OncoFAIRMedicationRequestElement"
 Usage: #example
 
-* basedOn[+] = Reference(ExampleOncoFAIRMedicationRequestPrescription)
-* basedOn[+] = Reference(ExampleOncoFAIRMedicationRequestElement)
+* basedOn[+] = Reference(Prescription)
+* basedOn[+] = Reference(Element)
 * basedOn[=].extension[oncofair-mr-element-link-type].valueCodeableConcept.coding[0].system = "http://ltsi.univ-rennes.fr/CodeSystem/siph-type-liaison-oncofair-codesystem"
 * basedOn[=].extension[oncofair-mr-element-link-type].valueCodeableConcept.coding[0].code = #COMP 
 * basedOn[=].extension[oncofair-mr-element-link-type].valueCodeableConcept.coding[0].display = "Complément"
 * basedOn[+] = Reference(ExampleOncoFAIRCarePlan)
 
-* device = Reference(ExampleOncoFAIRDeviceDefinition)
+* device.reference = Reference(ExampleOncoFAIRDeviceDefinition)
 
 * requester = Reference(ExampleOncoFAIRPractitioner)
 

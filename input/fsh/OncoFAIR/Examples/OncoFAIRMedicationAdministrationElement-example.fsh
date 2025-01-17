@@ -15,7 +15,7 @@ Usage: #example
 
 * subject = Reference(ExampleOncoFAIRPatient)
 * status = #in-progress
-* device = Reference(ExampleOncoFAIRDevice)
+* device.reference = Reference(ExampleOncoFAIRDevice)
 
 * request.identifier.value = "RX-123456"
 
