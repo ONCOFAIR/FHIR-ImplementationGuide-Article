@@ -54,7 +54,7 @@ Usage: #definition
 * rest.resource[=].profile = Canonical(oncofair-observation)
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].interaction[+].code = #read
-* rest.resource[=].searchRevInclude = "MedicationRequest:reason"
+//* rest.resource[=].searchRevInclude = "MedicationRequest:reason"
 
 * rest.resource[=].searchParam[+].name = "clinical-code"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/clinical-code"
@@ -109,10 +109,10 @@ Usage: #definition
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].interaction[+].code = #read
 * rest.resource[=].searchInclude[+] = "MedicationRequest:encounter"
-* rest.resource[=].searchInclude[+] = "MedicationRequest:reason"
-* rest.resource[=].searchInclude[+] = "MedicationRequest:basedOn"
+//* rest.resource[=].searchInclude[+] = "MedicationRequest:reason"
+//* rest.resource[=].searchInclude[+] = "MedicationRequest:basedOn"
 * rest.resource[=].searchInclude[+] = "MedicationRequest:medication"
-* rest.resource[=].searchRevInclude = "MedicationRequest:basedOn"
+//* rest.resource[=].searchRevInclude = "MedicationRequest:basedOn"
 
 // Paramètres de recherche communs à MR
 * rest.resource[=].searchParam[+].name = "identifier"
@@ -281,9 +281,9 @@ Usage: #definition
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].interaction[+].code = #read
 * rest.resource[=].searchInclude[+] = "MedicationAdministration:encounter"
-* rest.resource[=].searchInclude[+] = "MedicationAdministration:partOf"
+//* rest.resource[=].searchInclude[+] = "MedicationAdministration:partOf"
 * rest.resource[=].searchInclude[+] = "MedicationAdministration:medication"
-* rest.resource[=].searchRevInclude = "MedicationAdministration:partOf"
+//* rest.resource[=].searchRevInclude = "MedicationAdministration:partOf"
 
 // Medication Administration Element
 * rest.resource[=].searchParam[+].name = "ma-method"

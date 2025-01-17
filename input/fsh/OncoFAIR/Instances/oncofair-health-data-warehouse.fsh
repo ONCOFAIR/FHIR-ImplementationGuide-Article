@@ -56,7 +56,7 @@ Usage: #definition
 * rest[0].resource[=].profile = Canonical(oncofair-observation)
 * rest[0].resource[=].interaction[+].code = #search-type
 * rest[0].resource[=].interaction[+].code = #read
-* rest[0].resource[=].searchRevInclude = "MedicationRequest:reason"
+//* rest[0].resource[=].searchRevInclude = "MedicationRequest:reason"
 
 * rest[0].resource[=].searchParam[+].name = "clinical-code"
 * rest[0].resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/clinical-code"
@@ -113,10 +113,10 @@ Usage: #definition
 * rest[0].resource[=].interaction[+].code = #read
 * rest[0].resource[=].interaction[+].code = #create
 * rest[0].resource[=].searchInclude[+] = "MedicationRequest:encounter"
-* rest[0].resource[=].searchInclude[+] = "MedicationRequest:reason"
-* rest[0].resource[=].searchInclude[+] = "MedicationRequest:basedOn"
+//* rest[0].resource[=].searchInclude[+] = "MedicationRequest:reason"
+//* rest[0].resource[=].searchInclude[+] = "MedicationRequest:basedOn"
 * rest[0].resource[=].searchInclude[+] = "MedicationRequest:medication"
-* rest[0].resource[=].searchRevInclude = "MedicationRequest:basedOn"
+//* rest[0].resource[=].searchRevInclude = "MedicationRequest:basedOn"
 
 // Paramètres de recherche communs à MR
 * rest[0].resource[=].searchParam[+].name = "identifier"
@@ -250,7 +250,7 @@ Usage: #definition
 * rest[0].resource[=].interaction[+].code = #read
 * rest[0].resource[=].interaction[+].code = #create
 * rest[0].resource[=].searchInclude = "CarePlan:basedOn"
-* rest[0].resource[=].searchInclude = "MedicationRequest:basedOn"
+//* rest[0].resource[=].searchInclude = "MedicationRequest:basedOn"
 
 * rest[0].resource[=].searchParam[+].name = "identifier"
 * rest[0].resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/clinical-identifier"
@@ -287,9 +287,9 @@ Usage: #definition
 * rest[0].resource[=].interaction[+].code = #read
 * rest[0].resource[=].interaction[+].code = #create
 * rest[0].resource[=].searchInclude[+] = "MedicationAdministration:encounter"
-* rest[0].resource[=].searchInclude[+] = "MedicationAdministration:partOf"
+//* rest[0].resource[=].searchInclude[+] = "MedicationAdministration:partOf"
 * rest[0].resource[=].searchInclude[+] = "MedicationAdministration:medication"
-* rest[0].resource[=].searchRevInclude = "MedicationAdministration:partOf"
+//* rest[0].resource[=].searchRevInclude = "MedicationAdministration:partOf"
 
 // Medication Administration Element
 * rest[0].resource[=].searchParam[+].name = "ma-method"
@@ -413,10 +413,10 @@ Usage: #definition
 * rest[1].resource[=].interaction[+].code = #search-type
 * rest[1].resource[=].interaction[+].code = #read
 * rest[1].resource[=].searchInclude[+] = "MedicationRequest:encounter"
-* rest[1].resource[=].searchInclude[+] = "MedicationRequest:reason"
-* rest[1].resource[=].searchInclude[+] = "MedicationRequest:basedOn"
+//* rest[1].resource[=].searchInclude[+] = "MedicationRequest:reason"
+//* rest[1].resource[=].searchInclude[+] = "MedicationRequest:basedOn"
 * rest[1].resource[=].searchInclude[+] = "MedicationRequest:medication"
-* rest[1].resource[=].searchRevInclude = "MedicationRequest:basedOn"
+//* rest[1].resource[=].searchRevInclude = "MedicationRequest:basedOn"
 
 * rest[1].resource[=].searchParam[+].name = "_lastUpdated"
 * rest[1].resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"
@@ -430,7 +430,7 @@ Usage: #definition
 * rest[1].resource[=].interaction[+].code = #search-type
 * rest[1].resource[=].interaction[+].code = #read
 * rest[1].resource[=].searchInclude = "CarePlan:basedOn"
-* rest[1].resource[=].searchInclude = "MedicationRequest:basedOn"
+//* rest[1].resource[=].searchInclude = "MedicationRequest:basedOn"
 
 * rest[1].resource[=].searchParam[+].name = "_lastUpdated"
 * rest[1].resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"
@@ -446,9 +446,9 @@ Usage: #definition
 * rest[1].resource[=].interaction[+].code = #search-type
 * rest[1].resource[=].interaction[+].code = #read
 * rest[1].resource[=].searchInclude[+] = "MedicationAdministration:encounter"
-* rest[1].resource[=].searchInclude[+] = "MedicationAdministration:partOf"
+//* rest[1].resource[=].searchInclude[+] = "MedicationAdministration:partOf"
 * rest[1].resource[=].searchInclude[+] = "MedicationAdministration:medication"
-* rest[1].resource[=].searchRevInclude = "MedicationAdministration:partOf"
+//* rest[1].resource[=].searchRevInclude = "MedicationAdministration:partOf"
 
  
 * rest[1].resource[=].searchParam[+].name = "_lastUpdated"
@@ -462,7 +462,7 @@ Usage: #definition
 * rest[1].resource[=].profile = Canonical(oncofair-observation)
 * rest[1].resource[=].interaction[+].code = #search-type
 * rest[1].resource[=].interaction[+].code = #read
-* rest[1].resource[=].searchRevInclude = "MedicationRequest:reason"
+//* rest[1].resource[=].searchRevInclude = "MedicationRequest:reason"
 
 * rest[1].resource[=].searchParam[+].name = "_lastUpdated"
 * rest[1].resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"

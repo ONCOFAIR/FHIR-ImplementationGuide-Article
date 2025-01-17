@@ -52,7 +52,7 @@ Usage: #definition
 * rest.resource[=].profile = Canonical(oncofair-observation)
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].interaction[+].code = #read
-* rest.resource[=].searchRevInclude = "MedicationRequest:reason"
+//* rest.resource[=].searchRevInclude = "MedicationRequest:reason"
 
 * rest.resource[=].searchParam[+].name = "_lastUpdated"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"
@@ -82,10 +82,10 @@ Usage: #definition
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].interaction[+].code = #read
 * rest.resource[=].searchInclude[+] = "MedicationRequest:encounter"
-* rest.resource[=].searchInclude[+] = "MedicationRequest:reason"
-* rest.resource[=].searchInclude[+] = "MedicationRequest:basedOn"
+//* rest.resource[=].searchInclude[+] = "MedicationRequest:reason"
+//* rest.resource[=].searchInclude[+] = "MedicationRequest:basedOn"
 * rest.resource[=].searchInclude[+] = "MedicationRequest:medication"
-* rest.resource[=].searchRevInclude = "MedicationRequest:basedOn"
+//* rest.resource[=].searchRevInclude = "MedicationRequest:basedOn"
 
 * rest.resource[=].searchParam[+].name = "_lastUpdated"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"
@@ -99,7 +99,7 @@ Usage: #definition
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].interaction[+].code = #read
 * rest.resource[=].searchInclude = "CarePlan:basedOn"
-* rest.resource[=].searchInclude = "MedicationRequest:basedOn"
+//* rest.resource[=].searchInclude = "MedicationRequest:basedOn"
 
 * rest.resource[=].searchParam[+].name = "_lastUpdated"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"
@@ -115,9 +115,9 @@ Usage: #definition
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].interaction[+].code = #read
 * rest.resource[=].searchInclude[+] = "MedicationAdministration:encounter"
-* rest.resource[=].searchInclude[+] = "MedicationAdministration:partOf"
+//* rest.resource[=].searchInclude[+] = "MedicationAdministration:partOf"
 * rest.resource[=].searchInclude[+] = "MedicationAdministration:medication"
-* rest.resource[=].searchRevInclude = "MedicationAdministration:partOf"
+//* rest.resource[=].searchRevInclude = "MedicationAdministration:partOf"
 
 
 * rest.resource[=].searchParam[+].name = "_lastUpdated"
