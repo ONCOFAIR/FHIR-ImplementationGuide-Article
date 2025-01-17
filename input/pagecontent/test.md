@@ -98,7 +98,7 @@ Here is the list of available FHIR validator available on [EVSClient](https://on
 ### FHIR server
 
 A [FHIR server](https://oncofair.kereval.cloud/cqf-ruler/fhir/) is available to store example and test data flow.
-This server also support [CQL operations](https://cql.hl7.org/)
+This server also support [CQL operations](https://cql.hl7.org/).
 
 ### Test cases
-A list of test cases available for this ig is avalaible on [Gazelle](https://oncofair.kereval.cloud/gazelle/testing/testsDefinition/testsList.seam?testType=2&testStatus=1)
+A list of test cases available for this ig is avalaible on [Gazelle](https://oncofair.kereval.cloud/gazelle/testing/testsDefinition/testsList.seam?testType=2&testStatus=1).
