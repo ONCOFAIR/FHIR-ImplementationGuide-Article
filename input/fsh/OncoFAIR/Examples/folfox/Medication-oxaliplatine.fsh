@@ -1,6 +1,6 @@
 Instance: OncoFAIRMedication-oxaliplatine
 InstanceOf: OncoFAIRMedication
-Title: "Oxaliplatine OncoFAIR Medication"
+Title: "Folfox Oxaliplatine OncoFAIR Medication"
 Description: "An example instance of an OncoFAIR Medication with required fields populated."
 Usage: #example
 

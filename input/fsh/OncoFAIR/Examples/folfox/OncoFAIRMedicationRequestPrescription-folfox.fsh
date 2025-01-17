@@ -1,6 +1,6 @@
 Instance: PrescriptionFolfox
 InstanceOf: OncoFAIRMedicationRequestPrescription
-Title: "Vehicle OncoFAIR MedicationRequest Prescription"
+Title: "Folfox Vehicle OncoFAIR MedicationRequest Prescription"
 Description: "An example instance of OncoFAIR MedicationRequest Prescription for folfox protocol at hospitals."
 Usage: #example
 

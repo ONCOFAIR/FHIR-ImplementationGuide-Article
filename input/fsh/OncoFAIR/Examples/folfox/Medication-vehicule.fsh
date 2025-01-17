@@ -1,6 +1,6 @@
 Instance: OncoFAIRMedication-vehicule
 InstanceOf: OncoFAIRMedication
-Title: "Vehicle  OncoFAIR Medication"
+Title: "Folfox Vehicle  OncoFAIR Medication"
 Description: "An example instance of an OncoFAIR Medication with required fields populated."
 Usage: #example
 

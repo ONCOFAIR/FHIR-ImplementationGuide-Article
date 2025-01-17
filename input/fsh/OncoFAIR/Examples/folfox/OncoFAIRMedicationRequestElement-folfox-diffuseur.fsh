@@ -1,6 +1,6 @@
 Instance: Element-folfox-diffuseur
 InstanceOf: OncoFAIRMedicationRequestElement
-Title: "Difuseur OncoFAIR MedicationRequest Element"
+Title: "Folfox Difuseur OncoFAIR MedicationRequest Element"
 Description: "Example instance of OncoFAIRMedicationRequestElement for folfox protocol"
 Usage: #example
 

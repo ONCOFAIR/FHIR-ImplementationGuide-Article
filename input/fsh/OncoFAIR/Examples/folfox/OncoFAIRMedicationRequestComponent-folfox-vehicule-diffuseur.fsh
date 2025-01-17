@@ -1,6 +1,6 @@
 Instance: OncoFAIRMedicationRequestComponent-Folfox-vehicule-diffuseur
 InstanceOf: OncoFAIRMedicationRequestComponent
-Title: "Vehicle OncoFAIR MedicationRequest Component"
+Title: "Folfox Vehicle OncoFAIR MedicationRequest Component"
 Description: "Example instance of OncoFAIRMedicationRequestComponent for folfox protocol"
 Usage: #example
 * status = #active

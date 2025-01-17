@@ -1,6 +1,6 @@
 Instance: OncoFAIRMedicationRequestComponent-Folfox-uracile
 InstanceOf: OncoFAIRMedicationRequestComponent
-Title: "Fluoro-uracile OncoFAIR MedicationRequest Component"
+Title: "Folfox Fluoro-uracile OncoFAIR MedicationRequest Component"
 Description: "Example instance of OncoFAIRMedicationRequestComponent for folfox protocol"
 Usage: #example
 * status = #active
