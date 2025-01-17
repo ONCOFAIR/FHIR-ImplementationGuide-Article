@@ -101,4 +101,4 @@ A [FHIR server](https://oncofair.kereval.cloud/cqf-ruler/fhir/) is available to 
 This server also support [CQL operations](https://cql.hl7.org/)
 
 ### Test cases
-A list of test cases available for this ig is avalaible on [Gazelle](https://oncofair.kereval.cloud/)
+A list of test cases available for this ig is avalaible on [Gazelle](https://oncofair.kereval.cloud/gazelle/testing/testsDefinition/testsList.seam?testType=2&testStatus=1)
