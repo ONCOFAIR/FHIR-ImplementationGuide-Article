@@ -1,9 +1,9 @@
 OncoFAIR : Validation Results
 =========================================
 
-err = 1, warn = 168, info = 31
+err = 0, warn = 168, info = 31
 IG Publisher Version: 1.8.8
-Generated Fri Jan 17 14:01:09 UTC 2025. FHIR version 5.0.0 for ltsi.fhir.oncofair#0.1.0 (canonical = http://ltsi.univ-rennes.fr)
+Generated Fri Jan 17 15:22:02 UTC 2025. FHIR version 5.0.0 for ltsi.fhir.oncofair#0.1.0 (canonical = http://ltsi.univ-rennes.fr)
  Build Errors : 0 / 3 / 0
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/CapabilityStatement-oncofair-consumer-secondary-chemotherapy-data : 0 / 1 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/CapabilityStatement-oncofair-health-data-warehouse : 0 / 2 / 1
@@ -107,7 +107,7 @@ Generated Fri Jan 17 14:01:09 UTC 2025. FHIR version 5.0.0 for ltsi.fhir.oncofai
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medication : 0 / 1 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medication-type : 0 / 2 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-component : 0 / 4 / 1
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-element : 1 / 7 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-element : 0 / 7 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-report : 0 / 4 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-component : 0 / 5 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-element : 0 / 8 / 1
@@ -371,7 +371,6 @@ WARNING: StructureDefinition/oncofair-medicationadministration-element: Structur
 WARNING: StructureDefinition/oncofair-medicationadministration-element: StructureDefinition.differential.element[13].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 WARNING: StructureDefinition/oncofair-medicationadministration-element: StructureDefinition.differential.element[12].binding: The definition for the element 'MedicationAdministration.medication' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/concept-medication-oncofair-valueset' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/oncofair-medicationadministration-element: StructureDefinition.differential.element[29].binding: The definition for the element 'MedicationAdministration.dosage.method' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/siph-typeeltpla-oncofair-valueset' which is experimental, but this structure is not labeled as experimental
-ERROR: StructureDefinition/oncofair-medicationadministration-element: StructureDefinition.snapshot.element[19].slicing.discriminator[0]: The discriminator path 'system' does not appear to be valid for the element that is being sliced 'MedicationAdministration.category'
 WARNING: StructureDefinition/oncofair-medicationadministration-element: StructureDefinition.snapshot.element[22].binding: The definition for the element 'MedicationAdministration.medication' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/concept-medication-oncofair-valueset' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/oncofair-medicationadministration-element: StructureDefinition.snapshot.element[50].binding: The definition for the element 'MedicationAdministration.request.type' binds to the value set 'http://hl7.org/fhir/ValueSet/resource-types' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/oncofair-medicationadministration-element: StructureDefinition.snapshot.element[74].binding: The definition for the element 'MedicationAdministration.dosage.method' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/siph-typeeltpla-oncofair-valueset' which is experimental, but this structure is not labeled as experimental

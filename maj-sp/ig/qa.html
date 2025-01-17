@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 0, errors = 1, warn = 168, info = 31-->
+<!-- broken links = 0, errors = 0, warn = 168, info = 31-->
 <head>
   <title>OncoFAIR : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -46,7 +46,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for OncoFAIR</h1>
- <p>Generated Fri Jan 17 14:01:09 UTC 2025, FHIR version 5.0.0 for ltsi.fhir.oncofair#0.1.0 (canonical = <a href="http://ltsi.univ-rennes.fr">http://ltsi.univ-rennes.fr</a> (<a href="http://ltsi.univ-rennes.fr/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+ <p>Generated Fri Jan 17 15:22:02 UTC 2025, FHIR version 5.0.0 for ltsi.fhir.oncofair#0.1.0 (canonical = <a href="http://ltsi.univ-rennes.fr">http://ltsi.univ-rennes.fr</a> (<a href="http://ltsi.univ-rennes.fr/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.8.8</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ltsi.fhir.oncofair, Canonical = http://ltsi.univ-rennes.fr</td></tr>
@@ -244,7 +244,7 @@ hl7.terminology.r5#6.1.0:     <a href="http://terminology.hl7.org/6.1.0/ValueSet
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
  <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
- <tr><td>Summary:</td><td> errors = 1, warn = 168, info = 31, broken links = 0.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
+ <tr><td>Summary:</td><td> errors = 0, warn = 168, info = 31, broken links = 0.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -559,8 +559,8 @@ hl7.terminology.r5#6.1.0:     <a href="http://terminology.hl7.org/6.1.0/ValueSet
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_StructureDefinition-oncofair-medicationadministration-component"><b>/home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-component</b></a></td><td><b>0</b></td><td><b>4</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_StructureDefinition-oncofair-medicationadministration-element"><b>/home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-element</b></a></td><td><b>1</b></td><td><b>7</b></td><td><b>0</b></td>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_StructureDefinition-oncofair-medicationadministration-element"><b>/home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-element</b></a></td><td><b>0</b></td><td><b>7</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_FHIR-ImplementationGuide-Article_FHIR-ImplementationGuide-Article_igSource_fsh-generated_resources_StructureDefinition-oncofair-medicationadministration-report"><b>/home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-report</b></a></td><td><b>0</b></td><td><b>4</b></td><td><b>0</b></td>
@@ -2061,19 +2061,16 @@ hl7.terminology.r5#6.1.0:     <a href="http://terminology.hl7.org/6.1.0/ValueSet
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0] (l1&#8203;/c103657)</b></td><td><b>warning</b></td><td><b>Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0] (l1&#8203;/c103671)</b></td><td><b>warning</b></td><td><b>Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[13]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0] (l1&#8203;/c171159)</b></td><td><b>warning</b></td><td><b>Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[13]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0] (l1&#8203;/c171180)</b></td><td><b>warning</b></td><td><b>Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[12]&#8203;.binding</b></td><td><b>warning</b></td><td><b>The definition for the element 'MedicationAdministration.medication' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/concept-medication-oncofair-valueset' which is experimental, but this structure is not labeled as experimental</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_EXPERIMENTAL_BINDING</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[29]&#8203;.binding</b></td><td><b>warning</b></td><td><b>The definition for the element 'MedicationAdministration.dosage.method' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/siph-typeeltpla-oncofair-valueset' which is experimental, but this structure is not labeled as experimental</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_EXPERIMENTAL_BINDING</span></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[19]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c95604)</b></td><td><b>error</b></td><td><b>The discriminator path 'system' does not appear to be valid for the element that is being sliced 'MedicationAdministration.category'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_NOT_VALID</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[22]&#8203;.binding</b></td><td><b>warning</b></td><td><b>The definition for the element 'MedicationAdministration.medication' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/concept-medication-oncofair-valueset' which is experimental, but this structure is not labeled as experimental</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_EXPERIMENTAL_BINDING</span></td>
@@ -3092,14 +3089,6 @@ hl7.terminology.r5#6.1.0:     <a href="http://terminology.hl7.org/6.1.0/ValueSet
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="StructureDefinition-tumor-pathology-event.html">fsh-generated/resources/StructureDefinition-tumor-pathology-event.json</a></td><td><b>The definition for the element 'Condition.participant.function' binds to the value set 'http://hl7.org/fhir/ValueSet/participation-role-type' which is experimental, but this structure is not labeled as experimental</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="SD_PATH_NOT_VALID"> </a>
-<h2>SD_PATH_NOT_VALID</h2>
- <table class="grid">
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-oncofair-medicationadministration-element.html">fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-element.json</a></td><td><b>The discriminator path 'system' does not appear to be valid for the element that is being sliced 'MedicationAdministration.category'</b></td>
    </tr>
 </table>
 <hr/>
