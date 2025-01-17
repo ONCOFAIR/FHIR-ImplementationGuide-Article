@@ -12,5 +12,4 @@ Once the data producer receives the GET request, it gathers the requested struct
 
 ### Search criteria
 
-{% sql SELECT '[' || Name ||'](SearchParameter-' || id || '.html)' as "Search criteria", Description FROM Resources WHERE Type = 'SearchParameter'%}
-
+The list of applicable search criteria is available in the capability statement [OncoFAIR Health Data Warehouse (client mode)](CapabilityStatement-oncofair-health-data-warehouse.html#rest2).
