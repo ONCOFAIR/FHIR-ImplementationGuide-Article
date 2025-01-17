@@ -1,0 +1,202 @@
+{
+  "resourceType" : "MedicationRequest",
+  "id" : "Element",
+  "meta" : {
+    "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest Element</b></p><a name=\"Element\"> </a><a name=\"hcElement\"> </a><a name=\"Element-en-US\"> </a><p><b>OncoFAIRElementForm</b>: <span title=\"Codes:{http://snomed.info/sct 385055001}\">Tablet</span></p><p><b>OncoFAIRMRElementSupply</b>: true</p><p><b>OncoFAIRMRElementRank</b>: 3</p><blockquote><p><b>OncoFAIRMRElementGoNogo</b></p><ul><li>GoNogoStatus: <span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/siph-gonogo-oncofair-codesystem ATT}\">En attente</span></li><li>GoNogoReasonWaiting: <span title=\"Codes:\">XXX</span></li></ul></blockquote><blockquote><p><b>OncoFAIRPharmacistAdvice</b></p><ul><li>pharmacistValidation: <span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/siph-statutvalidpharm-oncofair-codesystem VAL}\">validée</span></li><li>pharmacistProposal: <span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/siph-natureproppharm-oncofair-codesystem SUG}\">Suggestion</span></li></ul></blockquote><p><b>identifier</b>: 123456</p><p><b>basedOn</b>: </p><ul><li><code>Prescription</code></li><li><a href=\"MedicationRequest-Element.html\">MedicationRequest: extension = Tablet,true,3,,; identifier = 123456; groupIdentifier = 303030; status = active; intent = proposal; priority = urgent; note = Paracetamol 500mg Tablet,Prescribed for headaches,Administered after meals; effectiveDosePeriod = 2024-06-01 08:00:00+0000 --&gt; 2024-06-01 09:00:00+0000</a></li><li><a href=\"CarePlan-ExampleOncoFAIRCarePlan.html\">CarePlan Example Prescribed Protocol</a></li></ul><p><b>groupIdentifier</b>: 303030</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>priority</b>: Urgent</p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem element}\">element</span></td><td><a href=\"Medication-ExampleOncoFAIRMedication.html\">Medication Ibuprofen</a></td></tr></table><p><b>subject</b>: <a href=\"Patient-ExampleOncoFAIRPatient.html\">Anonymous Patient (no stated gender), DoB Unknown ( 123456789)</a></p><p><b>requester</b>: <a href=\"Practitioner-ExampleOncoFAIRPractitioner.html\">Practitioner: identifier = 12345</a></p><h3>Devices</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><code>ExampleOncoFAIRDeviceDefinition</code></td></tr></table><p><b>note</b>: Paracetamol 500mg Tablet, Prescribed for headaches, Administered after meals</p><p><b>effectiveDosePeriod</b>: 2024-06-01 08:00:00+0000 --&gt; 2024-06-01 09:00:00+0000</p><blockquote><p><b>dosageInstruction</b></p><blockquote><p><b>id</b></p>element</blockquote><p><b>text</b>: Description of the dosage</p><p><b>additionalInstruction</b>: <span title=\"Codes:{http://snomed.info/sct 311501008}\">Half to one hour before food</span></p><p><b>timing</b>: 10min , before breakfast, Once</p><p><b>site</b>: <span title=\"Codes:{http://snomed.info/sct 49928004}\">Throat</span></p><p><b>route</b>: <span title=\"Codes:{http://snomed.info/sct 26643006}\">Oral route</span></p><p><b>method</b>: <span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem MED}\">Médicament</span></p></blockquote><blockquote><p><b>dosageInstruction</b></p><blockquote><p><b>id</b></p>posology</blockquote><p><b>timing</b>: Duration 1?? , 2</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td><td><b>Rate[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>250 mg</td><td>50 mg/h</td></tr></table></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-element-form",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "385055001",
+        "display" : "Tablet"
+      }]
+    }
+  },
+  {
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-supply",
+    "valueBoolean" : true
+  },
+  {
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-rank",
+    "valueInteger" : 3
+  },
+  {
+    "extension" : [{
+      "url" : "GoNogoStatus",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://ltsi.univ-rennes.fr/CodeSystem/siph-gonogo-oncofair-codesystem",
+          "code" : "ATT",
+          "display" : "En attente"
+        }]
+      }
+    },
+    {
+      "url" : "GoNogoReasonWaiting",
+      "valueCodeableConcept" : {
+        "text" : "XXX"
+      }
+    }],
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-go-nogo"
+  },
+  {
+    "extension" : [{
+      "url" : "pharmacistValidation",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://ltsi.univ-rennes.fr/CodeSystem/siph-statutvalidpharm-oncofair-codesystem",
+          "code" : "VAL",
+          "display" : "validée"
+        }]
+      }
+    },
+    {
+      "url" : "pharmacistProposal",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://ltsi.univ-rennes.fr/CodeSystem/siph-natureproppharm-oncofair-codesystem",
+          "code" : "SUG",
+          "display" : "Suggestion"
+        }]
+      }
+    }],
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-pharmacist-advice"
+  }],
+  "identifier" : [{
+    "value" : "123456"
+  }],
+  "basedOn" : [{
+    "reference" : "Prescription"
+  },
+  {
+    "extension" : [{
+      "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-link-type",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://ltsi.univ-rennes.fr/CodeSystem/siph-type-liaison-oncofair-codesystem",
+          "code" : "COMP",
+          "display" : "Complément"
+        }]
+      }
+    }],
+    "reference" : "MedicationRequest/Element"
+  },
+  {
+    "reference" : "CarePlan/ExampleOncoFAIRCarePlan"
+  }],
+  "groupIdentifier" : {
+    "value" : "303030"
+  },
+  "status" : "active",
+  "intent" : "proposal",
+  "priority" : "urgent",
+  "medication" : {
+    "concept" : {
+      "coding" : [{
+        "system" : "http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem",
+        "code" : "element",
+        "display" : "element"
+      }]
+    },
+    "reference" : {
+      "reference" : "Medication/ExampleOncoFAIRMedication"
+    }
+  },
+  "subject" : {
+    "reference" : "Patient/ExampleOncoFAIRPatient"
+  },
+  "requester" : {
+    "reference" : "Practitioner/ExampleOncoFAIRPractitioner"
+  },
+  "device" : [{
+    "reference" : {
+      "reference" : "ExampleOncoFAIRDeviceDefinition"
+    }
+  }],
+  "note" : [{
+    "id" : "wording",
+    "text" : "Paracetamol 500mg Tablet"
+  },
+  {
+    "id" : "indication",
+    "text" : "Prescribed for headaches"
+  },
+  {
+    "id" : "comments",
+    "text" : "Administered after meals"
+  }],
+  "effectiveDosePeriod" : {
+    "start" : "2024-06-01T08:00:00Z",
+    "end" : "2024-06-01T09:00:00Z"
+  },
+  "dosageInstruction" : [{
+    "id" : "element",
+    "text" : "Description of the dosage",
+    "additionalInstruction" : [{
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "311501008",
+        "display" : "Half to one hour before food"
+      }]
+    }],
+    "timing" : {
+      "repeat" : {
+        "boundsPeriod" : {
+          "start" : "2024-06-01T08:00:00Z",
+          "end" : "2024-06-01T09:00:00Z"
+        },
+        "when" : ["ACM"],
+        "offset" : 10
+      }
+    },
+    "site" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "49928004",
+        "display" : "Throat"
+      }]
+    },
+    "route" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "26643006",
+        "display" : "Oral route"
+      }]
+    },
+    "method" : {
+      "coding" : [{
+        "system" : "http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem",
+        "code" : "MED",
+        "display" : "Médicament"
+      }]
+    }
+  },
+  {
+    "id" : "posology",
+    "timing" : {
+      "repeat" : {
+        "duration" : 1,
+        "durationUnit" : "s",
+        "frequency" : 2
+      }
+    },
+    "doseAndRate" : [{
+      "doseQuantity" : {
+        "value" : 250,
+        "unit" : "mg",
+        "system" : "http://unitsofmeasure.org"
+      },
+      "rateQuantity" : {
+        "value" : 50,
+        "unit" : "mg/h",
+        "system" : "http://unitsofmeasure.org"
+      }
+    }]
+  }]
+}

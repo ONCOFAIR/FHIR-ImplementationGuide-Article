@@ -1,14 +1,15 @@
 OncoFAIR : Validation Results
 =========================================
 
-err = 0, warn = 99, info = 32
+err = 8, warn = 187, info = 54
 $--
 Generated $--. FHIR version $-- for ltsi.fhir.oncofair#$-- (canonical = http://ltsi.univ-rennes.fr)
- Build Errors : 0 / 2 / 0
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/CapabilityStatement-oncofair-consumer-secondary-chemotherapy-data : 0 / 0 / 1
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/CapabilityStatement-oncofair-health-data-warehouse : 0 / 0 / 1
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/CapabilityStatement-oncofair-producer-chemotherapy-data : 0 / 0 / 1
+ Build Errors : 0 / 3 / 0
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/CapabilityStatement-oncofair-consumer-secondary-chemotherapy-data : 0 / 1 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/CapabilityStatement-oncofair-health-data-warehouse : 0 / 2 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/CapabilityStatement-oncofair-producer-chemotherapy-data : 0 / 1 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/CarePlan-ExampleOncoFAIRCarePlan : 0 / 0 / 4
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/CarePlan-OncoFAIRCarePlan-folfox : 0 / 0 / 3
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/CodeSystem-CSEventTypeData : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/CodeSystem-CSMedicationItemProvenance : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/CodeSystem-CSMedicationStatus : 0 / 0 / 1
@@ -31,19 +32,34 @@ Generated $--. FHIR version $-- for ltsi.fhir.oncofair#$-- (canonical = http://l
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/Condition-fhir-osiris-example-TumorPathologyEvent-instance-1 : 0 / 9 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/Condition-fhir-osiris-example-TumorPathologyEvent-instance-2 : 0 / 9 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/Device-ExampleOncoFAIRDevice : 0 / 0 / 1
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/DeviceDefinition-ExampleOncoFAIRDeviceDefinition : 0 / 0 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/Device-ExampleOncoFAIRDevice-diffuseur : 0 / 0 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/Device-ExampleOncoFAIRDevice-perfusion : 0 / 0 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/DeviceDefinition-ExampleOncoFAIRDeviceDefinition-diffuseur : 0 / 0 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/DeviceDefinition-ExampleOncoFAIRDeviceDefinition-perfusion : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/Encounter-ExampleOncoFAIREncounter : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/HealthcareService-ExampleHealthcareServiceAccomodation : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/HealthcareService-ExampleHealthcareServiceMedicalLiability : 0 / 0 / 1
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/ImplementationGuide-ltsi.fhir.oncofair : 0 / 0 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/ImplementationGuide-ltsi.fhir.oncofair : 0 / 1 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/Medication-ExampleOncoFAIRMedication : 0 / 0 / 2
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/Medication-OncoFAIRMedication-fluoro-uracile : 0 / 0 / 2
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/Medication-OncoFAIRMedication-oxaliplatine : 0 / 0 / 2
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/Medication-OncoFAIRMedication-vehicule : 1 / 0 / 2
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationAdministration-ExampleOncoFAIRMedicationAdministrationComponent : 0 / 0 / 3
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationAdministration-ExampleOncoFAIRMedicationAdministrationElement : 0 / 0 / 2
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationAdministration-ExampleOncoFAIRMedicationAdministrationReport : 0 / 0 / 2
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationRequest-ExampleOncoFAIRMedicationRequestComponent : 0 / 0 / 3
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationRequest-ExampleOncoFAIRMedicationRequestElement : 0 / 0 / 7
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationRequest-ExampleOncoFAIRMedicationRequestElement2 : 0 / 0 / 7
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationRequest-ExampleOncoFAIRMedicationRequestPrescription : 0 / 0 / 2
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationRequest-Component : 0 / 0 / 3
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationRequest-Element : 3 / 0 / 8
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationRequest-Element-folfox : 0 / 0 / 5
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationRequest-Element-folfox-diffuseur : 0 / 0 / 5
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationRequest-Element2 : 3 / 0 / 9
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationRequest-OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine : 0 / 3 / 2
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationRequest-OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine-diffuseur : 0 / 3 / 2
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationRequest-OncoFAIRMedicationRequestComponent-Folfox-uracile : 0 / 3 / 2
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationRequest-OncoFAIRMedicationRequestComponent-Folfox-uracile-diffuseur : 0 / 3 / 2
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationRequest-OncoFAIRMedicationRequestComponent-Folfox-vehicule : 0 / 3 / 2
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationRequest-OncoFAIRMedicationRequestComponent-Folfox-vehicule-diffuseur : 0 / 3 / 2
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationRequest-PrescriptionFolfox : 0 / 0 / 2
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationRequest-PrescriptionFolfox-difuseur : 0 / 0 / 2
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/Observation-ExampleOncoFAIRObservation : 0 / 1 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/Patient-ExampleOncoFAIRPatient : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/Practitioner-ExampleOncoFAIRPractitioner : 0 / 0 / 1
@@ -76,58 +92,58 @@ Generated $--. FHIR version $-- for ltsi.fhir.oncofair#$-- (canonical = http://l
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/SearchParameter-oncofair-sp-mr-prescription-validation-date : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/SearchParameter-oncofair-sp-mr-type-elementprescrption : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/SearchParameter-oncofair-sp-wording : 0 / 0 / 1
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-clinical-trial : 0 / 0 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-clinical-trial : 0 / 7 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-date-time : 0 / 2 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-date-time-end : 0 / 2 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-date-time-start : 0 / 2 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-dueTo-tumor-pathology-event : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-eventTimeMax : 0 / 2 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-eventTimeMin : 0 / 2 / 1
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-eventTypeData : 0 / 2 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-eventTypeData : 0 / 4 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-histologygrade : 0 / 2 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-laterality : 0 / 1 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-medication-administered-planned-quantity : 0 / 2 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-medication-administered-quantity : 0 / 2 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-medication-comment : 0 / 2 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-medication-is-vehicle : 0 / 2 / 1
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-medication-item-provenance : 0 / 2 / 1
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-medication-lti-exemption : 0 / 2 / 1
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-medication-status : 0 / 2 / 1
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-medication-type : 0 / 2 / 1
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-careplan : 0 / 0 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-medication-item-provenance : 0 / 4 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-medication-lti-exemption : 0 / 4 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-medication-status : 0 / 4 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-medication-type : 0 / 4 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-careplan : 0 / 1 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-cp-treatment : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-element-form : 0 / 0 / 1
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-encounter : 0 / 0 / 1
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-ma-component-administration-status : 0 / 0 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-encounter : 0 / 2 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-ma-component-administration-status : 0 / 2 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-ma-component-origin : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-ma-element-expirationdate : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-ma-element-plannedperiod : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-ma-element-traceability : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-ma-element-urgent : 0 / 0 / 1
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medication : 0 / 0 / 1
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medication-type : 0 / 0 / 1
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-component : 0 / 2 / 1
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-element : 0 / 2 / 1
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-report : 0 / 2 / 1
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-component : 0 / 2 / 1
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-element : 0 / 2 / 1
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-prescription : 0 / 2 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medication : 0 / 1 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medication-type : 0 / 2 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-component : 0 / 4 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-element : 1 / 7 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-report : 0 / 4 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-component : 0 / 5 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-element : 0 / 8 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-prescription : 0 / 7 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-mr-component-solute : 0 / 0 / 1
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-mr-element-go-nogo : 0 / 0 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-mr-element-go-nogo : 0 / 2 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-mr-element-link-type : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-mr-element-rank : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-mr-element-supply : 0 / 0 / 1
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-mr-exempt-ltc : 0 / 0 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-mr-exempt-ltc : 0 / 2 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-mr-is-dosage-referent : 0 / 0 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-mr-prescription-validation-date : 0 / 0 / 1
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-observation : 0 / 0 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-observation : 0 / 4 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-patient : 0 / 0 / 1
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-pharmacist-advice : 0 / 0 / 1
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncology-healthcare-service : 0 / 1 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncofair-pharmacist-advice : 0 / 4 / 1
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-oncology-healthcare-service : 0 / 2 / 1
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-treatment-line : 0 / 2 / 1
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-tumor-pathology-event : 0 / 0 / 3
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/StructureDefinition-tumor-pathology-event : 0 / 3 / 3
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/ValueSet-Laterality : 0 / 8 / 2
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/ValueSet-Morphology : 0 / 1 / 3
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/ValueSet-Morphology : 0 / 1 / 2
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/ValueSet-Topography : 0 / 2 / 2
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/ValueSet-TreatmentType : 0 / 12 / 2
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/ValueSet-TumorPathologyEventType : 0 / 7 / 2
@@ -154,13 +170,21 @@ Generated $--. FHIR version $-- for ltsi.fhir.oncofair#$-- (canonical = http://l
 == n/a ==
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
 == fsh-generated/resources/CapabilityStatement-oncofair-consumer-secondary-chemotherapy-data.json ==
+WARNING: CapabilityStatement/oncofair-consumer-secondary-chemotherapy-data: CapabilityStatement.rest[0].security.service[0].coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/restful-security-service' could not be found, so the code cannot be validated
 == fsh-generated/resources/CapabilityStatement-oncofair-health-data-warehouse.json ==
+WARNING: CapabilityStatement/oncofair-health-data-warehouse: CapabilityStatement.rest[0].security.service[0].coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/restful-security-service' could not be found, so the code cannot be validated
+WARNING: CapabilityStatement/oncofair-health-data-warehouse: CapabilityStatement.rest[1].security.service[0].coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/restful-security-service' could not be found, so the code cannot be validated
 == fsh-generated/resources/CapabilityStatement-oncofair-producer-chemotherapy-data.json ==
+WARNING: CapabilityStatement/oncofair-producer-chemotherapy-data: CapabilityStatement.rest[0].security.service[0].coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/restful-security-service' could not be found, so the code cannot be validated
 == fsh-generated/resources/CarePlan-ExampleOncoFAIRCarePlan.json ==
 INFORMATION: CarePlan/ExampleOncoFAIRCarePlan: CarePlan.extension[1].extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-statutvalidpharm-oncofair-codesystem|0.1.0
 INFORMATION: CarePlan/ExampleOncoFAIRCarePlan: CarePlan.extension[1].extension[1].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-natureproppharm-oncofair-codesystem|0.1.0
 INFORMATION: CarePlan/ExampleOncoFAIRCarePlan: CarePlan.intent: Reference to experimental CodeSystem http://hl7.org/fhir/request-intent|5.0.0
+== fsh-generated/resources/CarePlan-OncoFAIRCarePlan-folfox.json ==
+INFORMATION: CarePlan/OncoFAIRCarePlan-folfox: CarePlan.extension[1].extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-statutvalidpharm-oncofair-codesystem|0.1.0
+INFORMATION: CarePlan/OncoFAIRCarePlan-folfox: CarePlan.intent: Reference to experimental CodeSystem http://hl7.org/fhir/request-intent|5.0.0
 == fsh-generated/resources/CodeSystem-CSEventTypeData.json ==
 == fsh-generated/resources/CodeSystem-CSMedicationItemProvenance.json ==
 == fsh-generated/resources/CodeSystem-CSMedicationStatus.json ==
@@ -191,7 +215,7 @@ WARNING: Condition/fhir-osiris-example-TumorPathologyEvent-instance-1: Condition
 WARNING: Condition/fhir-osiris-example-TumorPathologyEvent-instance-1: Condition.code: Unable to check whether the code is in the value set 'http://ltsi.univ-rennes.fr/ValueSet/TumorPathologyEventType|0.1.0' because the code system http://terminology.hl7.org/CodeSystem/umls was not found
 WARNING: Condition/fhir-osiris-example-TumorPathologyEvent-instance-1: Condition.code: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/umls' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'http://ltsi.univ-rennes.fr/ValueSet/TumorPathologyEventType|0.1.0' because the code system http://terminology.hl7.org/CodeSystem/umls was not found
 WARNING: Condition/fhir-osiris-example-TumorPathologyEvent-instance-1: Condition.bodySite[0].coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
-WARNING: Condition/fhir-osiris-example-TumorPathologyEvent-instance-1: Condition.stage[0].summary.coding[0].code: Unknown Code '8002/3' in the system 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+WARNING: Condition/fhir-osiris-example-TumorPathologyEvent-instance-1: Condition.stage[0].summary.coding[0].code: Unknown Code '8002/3' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
 WARNING: Condition/fhir-osiris-example-TumorPathologyEvent-instance-1: Condition.stage[0].type.coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/umls' could not be found, so the code cannot be validated
 == fsh-generated/resources/Condition-fhir-osiris-example-TumorPathologyEvent-instance-2.json ==
 WARNING: Condition/fhir-osiris-example-TumorPathologyEvent-instance-2: Condition.extension[1].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/umls' could not be found, so the code cannot be validated
@@ -201,16 +225,27 @@ WARNING: Condition/fhir-osiris-example-TumorPathologyEvent-instance-2: Condition
 WARNING: Condition/fhir-osiris-example-TumorPathologyEvent-instance-2: Condition.code: Unable to check whether the code is in the value set 'http://ltsi.univ-rennes.fr/ValueSet/TumorPathologyEventType|0.1.0' because the code system http://terminology.hl7.org/CodeSystem/umls was not found
 WARNING: Condition/fhir-osiris-example-TumorPathologyEvent-instance-2: Condition.code: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/umls' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'http://ltsi.univ-rennes.fr/ValueSet/TumorPathologyEventType|0.1.0' because the code system http://terminology.hl7.org/CodeSystem/umls was not found
 WARNING: Condition/fhir-osiris-example-TumorPathologyEvent-instance-2: Condition.bodySite[0].coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
-WARNING: Condition/fhir-osiris-example-TumorPathologyEvent-instance-2: Condition.stage[0].summary.coding[0].code: Unknown Code '8000-1' in the system 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+WARNING: Condition/fhir-osiris-example-TumorPathologyEvent-instance-2: Condition.stage[0].summary.coding[0].code: Unknown Code '8000-1' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
 WARNING: Condition/fhir-osiris-example-TumorPathologyEvent-instance-2: Condition.stage[0].type.coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/umls' could not be found, so the code cannot be validated
 == fsh-generated/resources/Device-ExampleOncoFAIRDevice.json ==
-== fsh-generated/resources/DeviceDefinition-ExampleOncoFAIRDeviceDefinition.json ==
+== fsh-generated/resources/Device-ExampleOncoFAIRDevice-diffuseur.json ==
+== fsh-generated/resources/Device-ExampleOncoFAIRDevice-perfusion.json ==
+== fsh-generated/resources/DeviceDefinition-ExampleOncoFAIRDeviceDefinition-diffuseur.json ==
+== fsh-generated/resources/DeviceDefinition-ExampleOncoFAIRDeviceDefinition-perfusion.json ==
 == fsh-generated/resources/Encounter-ExampleOncoFAIREncounter.json ==
 == fsh-generated/resources/HealthcareService-ExampleHealthcareServiceAccomodation.json ==
 == fsh-generated/resources/HealthcareService-ExampleHealthcareServiceMedicalLiability.json ==
 == fsh-generated/resources/ImplementationGuide-ltsi.fhir.oncofair.json ==
+WARNING: ImplementationGuide/ltsi.fhir.oncofair: ImplementationGuide.definition.resource[33].name: value should not start or finish with whitespace 'Folfox OncoFAIR CarePlan '
 == fsh-generated/resources/Medication-ExampleOncoFAIRMedication.json ==
 INFORMATION: Medication/ExampleOncoFAIRMedication: Medication.extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-typecomposant-oncofair-codesystem|0.1.0
+== fsh-generated/resources/Medication-OncoFAIRMedication-fluoro-uracile.json ==
+INFORMATION: Medication/OncoFAIRMedication-fluoro-uracile: Medication.extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-typecomposant-oncofair-codesystem|0.1.0
+== fsh-generated/resources/Medication-OncoFAIRMedication-oxaliplatine.json ==
+INFORMATION: Medication/OncoFAIRMedication-oxaliplatine: Medication.extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-typecomposant-oncofair-codesystem|0.1.0
+== fsh-generated/resources/Medication-OncoFAIRMedication-vehicule.json ==
+INFORMATION: Medication/OncoFAIRMedication-vehicule: Medication.extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-typecomposant-oncofair-codesystem|0.1.0
+ERROR: Medication/OncoFAIRMedication-vehicule: Medication.code.coding[0].code: Unknown code '5000411000001105' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20240801'
 == fsh-generated/resources/MedicationAdministration-ExampleOncoFAIRMedicationAdministrationComponent.json ==
 INFORMATION: MedicationAdministration/ExampleOncoFAIRMedicationAdministrationComponent: MedicationAdministration.extension[3].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-statutcomposantadm-oncofair-codesystem|0.1.0
 INFORMATION: MedicationAdministration/ExampleOncoFAIRMedicationAdministrationComponent: MedicationAdministration.medication.concept: Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem|0.1.0
@@ -218,25 +253,76 @@ INFORMATION: MedicationAdministration/ExampleOncoFAIRMedicationAdministrationCom
 INFORMATION: MedicationAdministration/ExampleOncoFAIRMedicationAdministrationElement: MedicationAdministration.medication.concept: Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem|0.1.0
 == fsh-generated/resources/MedicationAdministration-ExampleOncoFAIRMedicationAdministrationReport.json ==
 INFORMATION: MedicationAdministration/ExampleOncoFAIRMedicationAdministrationReport: MedicationAdministration.medication.concept: Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem|0.1.0
-== fsh-generated/resources/MedicationRequest-ExampleOncoFAIRMedicationRequestComponent.json ==
-INFORMATION: MedicationRequest/ExampleOncoFAIRMedicationRequestComponent: MedicationRequest.extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-listeald-oncofair-codesystem|0.1.0
-INFORMATION: MedicationRequest/ExampleOncoFAIRMedicationRequestComponent: MedicationRequest.medication.concept: Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem|0.1.0
-== fsh-generated/resources/MedicationRequest-ExampleOncoFAIRMedicationRequestElement.json ==
-INFORMATION: MedicationRequest/ExampleOncoFAIRMedicationRequestElement: MedicationRequest.extension[3].extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-gonogo-oncofair-codesystem|0.1.0
-INFORMATION: MedicationRequest/ExampleOncoFAIRMedicationRequestElement: MedicationRequest.extension[4].extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-statutvalidpharm-oncofair-codesystem|0.1.0
-INFORMATION: MedicationRequest/ExampleOncoFAIRMedicationRequestElement: MedicationRequest.extension[4].extension[1].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-natureproppharm-oncofair-codesystem|0.1.0
-INFORMATION: MedicationRequest/ExampleOncoFAIRMedicationRequestElement: MedicationRequest.basedOn[1].extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-type-liaison-oncofair-codesystem|0.1.0
-INFORMATION: MedicationRequest/ExampleOncoFAIRMedicationRequestElement: MedicationRequest.medication.concept: Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem|0.1.0
-INFORMATION: MedicationRequest/ExampleOncoFAIRMedicationRequestElement: MedicationRequest.dosageInstruction[0].method: Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem|0.1.0
-== fsh-generated/resources/MedicationRequest-ExampleOncoFAIRMedicationRequestElement2.json ==
-INFORMATION: MedicationRequest/ExampleOncoFAIRMedicationRequestElement2: MedicationRequest.extension[3].extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-gonogo-oncofair-codesystem|0.1.0
-INFORMATION: MedicationRequest/ExampleOncoFAIRMedicationRequestElement2: MedicationRequest.extension[4].extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-statutvalidpharm-oncofair-codesystem|0.1.0
-INFORMATION: MedicationRequest/ExampleOncoFAIRMedicationRequestElement2: MedicationRequest.extension[4].extension[1].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-natureproppharm-oncofair-codesystem|0.1.0
-INFORMATION: MedicationRequest/ExampleOncoFAIRMedicationRequestElement2: MedicationRequest.basedOn[1].extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-type-liaison-oncofair-codesystem|0.1.0
-INFORMATION: MedicationRequest/ExampleOncoFAIRMedicationRequestElement2: MedicationRequest.medication.concept: Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem|0.1.0
-INFORMATION: MedicationRequest/ExampleOncoFAIRMedicationRequestElement2: MedicationRequest.dosageInstruction[0].method: Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem|0.1.0
-== fsh-generated/resources/MedicationRequest-ExampleOncoFAIRMedicationRequestPrescription.json ==
-INFORMATION: MedicationRequest/ExampleOncoFAIRMedicationRequestPrescription: MedicationRequest.medication.concept: Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem|0.1.0
+== fsh-generated/resources/MedicationRequest-Component.json ==
+INFORMATION: MedicationRequest/Component: MedicationRequest.extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-listeald-oncofair-codesystem|0.1.0
+INFORMATION: MedicationRequest/Component: MedicationRequest.medication.concept: Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem|0.1.0
+== fsh-generated/resources/MedicationRequest-Element.json ==
+INFORMATION: MedicationRequest/Element: MedicationRequest.basedOn[0]: This element does not match any known slice defined in the profile http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: MedicationRequest/Element: MedicationRequest: Slice 'MedicationRequest.basedOn:prescription': a matching slice is required, but not found (from http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element|0.1.0). Note that other slices are allowed in addition to this required slice
+INFORMATION: MedicationRequest/Element: MedicationRequest.extension[3].extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-gonogo-oncofair-codesystem|0.1.0
+INFORMATION: MedicationRequest/Element: MedicationRequest.extension[4].extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-statutvalidpharm-oncofair-codesystem|0.1.0
+INFORMATION: MedicationRequest/Element: MedicationRequest.extension[4].extension[1].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-natureproppharm-oncofair-codesystem|0.1.0
+ERROR: MedicationRequest/Element: MedicationRequest.basedOn[0]: Unable to resolve resource with reference 'Prescription'
+INFORMATION: MedicationRequest/Element: MedicationRequest.basedOn[1].extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-type-liaison-oncofair-codesystem|0.1.0
+INFORMATION: MedicationRequest/Element: MedicationRequest.medication.concept: Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem|0.1.0
+ERROR: MedicationRequest/Element: MedicationRequest.device[0].reference: Unable to resolve resource with reference 'ExampleOncoFAIRDeviceDefinition'
+INFORMATION: MedicationRequest/Element: MedicationRequest.dosageInstruction[0].method: Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem|0.1.0
+== fsh-generated/resources/MedicationRequest-Element-folfox.json ==
+INFORMATION: MedicationRequest/Element-folfox: MedicationRequest.basedOn[0].extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-type-liaison-oncofair-codesystem|0.1.0
+INFORMATION: MedicationRequest/Element-folfox: MedicationRequest.medication.concept: Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem|0.1.0
+INFORMATION: MedicationRequest/Element-folfox: MedicationRequest.dosageInstruction[0].method: Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem|0.1.0
+INFORMATION: MedicationRequest/Element-folfox: MedicationRequest.dosageInstruction[1].doseAndRate[0].rate.ofType(Ratio): This element does not match any known slice defined in the profile http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+== fsh-generated/resources/MedicationRequest-Element-folfox-diffuseur.json ==
+INFORMATION: MedicationRequest/Element-folfox-diffuseur: MedicationRequest.basedOn[0].extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-type-liaison-oncofair-codesystem|0.1.0
+INFORMATION: MedicationRequest/Element-folfox-diffuseur: MedicationRequest.medication.concept: Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem|0.1.0
+INFORMATION: MedicationRequest/Element-folfox-diffuseur: MedicationRequest.dosageInstruction[0].method: Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem|0.1.0
+INFORMATION: MedicationRequest/Element-folfox-diffuseur: MedicationRequest.dosageInstruction[1].doseAndRate[0].rate.ofType(Ratio): This element does not match any known slice defined in the profile http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+== fsh-generated/resources/MedicationRequest-Element2.json ==
+INFORMATION: MedicationRequest/Element2: MedicationRequest.basedOn[0]: This element does not match any known slice defined in the profile http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: MedicationRequest/Element2: MedicationRequest.basedOn[1]: This element does not match any known slice defined in the profile http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: MedicationRequest/Element2: MedicationRequest: Slice 'MedicationRequest.basedOn:prescription': a matching slice is required, but not found (from http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element|0.1.0). Note that other slices are allowed in addition to this required slice
+INFORMATION: MedicationRequest/Element2: MedicationRequest.extension[3].extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-gonogo-oncofair-codesystem|0.1.0
+INFORMATION: MedicationRequest/Element2: MedicationRequest.extension[4].extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-statutvalidpharm-oncofair-codesystem|0.1.0
+INFORMATION: MedicationRequest/Element2: MedicationRequest.extension[4].extension[1].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-natureproppharm-oncofair-codesystem|0.1.0
+ERROR: MedicationRequest/Element2: MedicationRequest.basedOn[0]: Unable to resolve resource with reference 'Prescription'
+INFORMATION: MedicationRequest/Element2: MedicationRequest.basedOn[1].extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-type-liaison-oncofair-codesystem|0.1.0
+INFORMATION: MedicationRequest/Element2: MedicationRequest.medication.concept: Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem|0.1.0
+ERROR: MedicationRequest/Element2: MedicationRequest.device[0].reference: Unable to resolve resource with reference 'ExampleOncoFAIRDeviceDefinition'
+INFORMATION: MedicationRequest/Element2: MedicationRequest.dosageInstruction[0].method: Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem|0.1.0
+== fsh-generated/resources/MedicationRequest-OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine.json ==
+INFORMATION: MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine: MedicationRequest.medication.concept: Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem|0.1.0
+WARNING: MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine: MedicationRequest.dosageInstruction[0].site.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine: MedicationRequest.dosageInstruction[0].route.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine: MedicationRequest.dosageInstruction[0].method.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+== fsh-generated/resources/MedicationRequest-OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine-diffuseur.json ==
+INFORMATION: MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine-diffuseur: MedicationRequest.medication.concept: Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem|0.1.0
+WARNING: MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine-diffuseur: MedicationRequest.dosageInstruction[0].site.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine-diffuseur: MedicationRequest.dosageInstruction[0].route.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine-diffuseur: MedicationRequest.dosageInstruction[0].method.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+== fsh-generated/resources/MedicationRequest-OncoFAIRMedicationRequestComponent-Folfox-uracile.json ==
+INFORMATION: MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-uracile: MedicationRequest.medication.concept: Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem|0.1.0
+WARNING: MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-uracile: MedicationRequest.dosageInstruction[0].site.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-uracile: MedicationRequest.dosageInstruction[0].route.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-uracile: MedicationRequest.dosageInstruction[0].method.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+== fsh-generated/resources/MedicationRequest-OncoFAIRMedicationRequestComponent-Folfox-uracile-diffuseur.json ==
+INFORMATION: MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-uracile-diffuseur: MedicationRequest.medication.concept: Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem|0.1.0
+WARNING: MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-uracile-diffuseur: MedicationRequest.dosageInstruction[0].site.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-uracile-diffuseur: MedicationRequest.dosageInstruction[0].route.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-uracile-diffuseur: MedicationRequest.dosageInstruction[0].method.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+== fsh-generated/resources/MedicationRequest-OncoFAIRMedicationRequestComponent-Folfox-vehicule.json ==
+INFORMATION: MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-vehicule: MedicationRequest.medication.concept: Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem|0.1.0
+WARNING: MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-vehicule: MedicationRequest.dosageInstruction[0].site.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-vehicule: MedicationRequest.dosageInstruction[0].route.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-vehicule: MedicationRequest.dosageInstruction[0].method.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+== fsh-generated/resources/MedicationRequest-OncoFAIRMedicationRequestComponent-Folfox-vehicule-diffuseur.json ==
+INFORMATION: MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-vehicule-diffuseur: MedicationRequest.medication.concept: Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem|0.1.0
+WARNING: MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-vehicule-diffuseur: MedicationRequest.dosageInstruction[0].site.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-vehicule-diffuseur: MedicationRequest.dosageInstruction[0].route.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-vehicule-diffuseur: MedicationRequest.dosageInstruction[0].method.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+== fsh-generated/resources/MedicationRequest-PrescriptionFolfox.json ==
+INFORMATION: MedicationRequest/PrescriptionFolfox: MedicationRequest.medication.concept: Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem|0.1.0
+== fsh-generated/resources/MedicationRequest-PrescriptionFolfox-difuseur.json ==
+INFORMATION: MedicationRequest/PrescriptionFolfox-difuseur: MedicationRequest.medication.concept: Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem|0.1.0
 == fsh-generated/resources/Observation-ExampleOncoFAIRObservation.json ==
 WARNING: Observation/ExampleOncoFAIRObservation: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Patient-ExampleOncoFAIRPatient.json ==
@@ -271,6 +357,13 @@ WARNING: Observation/ExampleOncoFAIRObservation: Observation: Best Practice Reco
 == fsh-generated/resources/SearchParameter-oncofair-sp-mr-type-elementprescrption.json ==
 == fsh-generated/resources/SearchParameter-oncofair-sp-wording.json ==
 == fsh-generated/resources/StructureDefinition-clinical-trial.json ==
+WARNING: StructureDefinition/clinical-trial: StructureDefinition: The definition builds on 'http://hl7.org/fhir/StructureDefinition/ResearchStudy' which is experimental, but this definition is not labeled as experimental
+WARNING: StructureDefinition/clinical-trial: StructureDefinition.snapshot.element[18].binding: The definition for the element 'ResearchStudy.label.type' binds to the value set 'http://hl7.org/fhir/ValueSet/title-type' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/clinical-trial: StructureDefinition.snapshot.element[27].binding: The definition for the element 'ResearchStudy.studyDesign' binds to the value set 'http://hl7.org/fhir/ValueSet/study-design' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/clinical-trial: StructureDefinition.snapshot.element[31].binding: The definition for the element 'ResearchStudy.region' binds to the value set 'http://hl7.org/fhir/ValueSet/jurisdiction' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/clinical-trial: StructureDefinition.snapshot.element[43].binding: The definition for the element 'ResearchStudy.associatedParty.role' binds to the value set 'http://hl7.org/fhir/ValueSet/research-study-party-role' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/clinical-trial: StructureDefinition.snapshot.element[51].binding: The definition for the element 'ResearchStudy.progressStatus.state' binds to the value set 'http://hl7.org/fhir/ValueSet/research-study-status' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/clinical-trial: StructureDefinition.snapshot.element[69].binding: The definition for the element 'ResearchStudy.comparisonGroup.type' binds to the value set 'http://hl7.org/fhir/ValueSet/research-study-arm-type' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-date-time.json ==
 WARNING: StructureDefinition/date-time: StructureDefinition.context[0]: Review the extension type for date-time: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 WARNING: StructureDefinition.where(url = 'http://ltsi.univ-rennes.fr/StructureDefinition/date-time'): The Implementation Guide contains no examples for this extension
@@ -289,6 +382,8 @@ WARNING: StructureDefinition/eventTimeMin: StructureDefinition.context[0]: Revie
 WARNING: StructureDefinition.where(url = 'http://ltsi.univ-rennes.fr/StructureDefinition/eventTimeMin'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-eventTypeData.json ==
 WARNING: StructureDefinition/eventTypeData: StructureDefinition.context[0]: Review the extension type for eventTypeData: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition/eventTypeData: StructureDefinition.differential.element[3].binding: The definition for the element 'Extension.value[x]' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/VSEventTypeData' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/eventTypeData: StructureDefinition.snapshot.element[4].binding: The definition for the element 'Extension.value[x]' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/VSEventTypeData' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition.where(url = 'http://ltsi.univ-rennes.fr/StructureDefinition/eventTypeData'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-histologygrade.json ==
 WARNING: StructureDefinition/histologygrade: StructureDefinition.context[0]: Review the extension type for histologygrade: extensions should not have a context of Element unless it's really intended that they can be used anywhere
@@ -309,58 +404,111 @@ WARNING: StructureDefinition/medication-is-vehicle: StructureDefinition.context[
 WARNING: StructureDefinition.where(url = 'http://ltsi.univ-rennes.fr/StructureDefinition/medication-is-vehicle'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-medication-item-provenance.json ==
 WARNING: StructureDefinition/medication-item-provenance: StructureDefinition.context[0]: Review the extension type for medication-item-provenance: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition/medication-item-provenance: StructureDefinition.differential.element[3].binding: The definition for the element 'Extension.value[x]' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/vsMedicationItemProvenance' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/medication-item-provenance: StructureDefinition.snapshot.element[4].binding: The definition for the element 'Extension.value[x]' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/vsMedicationItemProvenance' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition.where(url = 'http://ltsi.univ-rennes.fr/StructureDefinition/medication-item-provenance'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-medication-lti-exemption.json ==
 WARNING: StructureDefinition/medication-lti-exemption: StructureDefinition.context[0]: Review the extension type for medication-lti-exemption: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition/medication-lti-exemption: StructureDefinition.differential.element[3].binding: The definition for the element 'Extension.value[x]' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/vsMedicationLTIExemption' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/medication-lti-exemption: StructureDefinition.snapshot.element[4].binding: The definition for the element 'Extension.value[x]' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/vsMedicationLTIExemption' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition.where(url = 'http://ltsi.univ-rennes.fr/StructureDefinition/medication-lti-exemption'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-medication-status.json ==
 WARNING: StructureDefinition/medication-status: StructureDefinition.context[0]: Review the extension type for medication-status: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition/medication-status: StructureDefinition.differential.element[3].binding: The definition for the element 'Extension.value[x]' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/vsMedicationStatus' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/medication-status: StructureDefinition.snapshot.element[4].binding: The definition for the element 'Extension.value[x]' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/vsMedicationStatus' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition.where(url = 'http://ltsi.univ-rennes.fr/StructureDefinition/medication-status'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-medication-type.json ==
 WARNING: StructureDefinition/medication-type: StructureDefinition.context[0]: Review the extension type for medication-type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition/medication-type: StructureDefinition.differential.element[3].binding: The definition for the element 'Extension.value[x]' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/vsMedicationTypes' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/medication-type: StructureDefinition.snapshot.element[4].binding: The definition for the element 'Extension.value[x]' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/vsMedicationTypes' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition.where(url = 'http://ltsi.univ-rennes.fr/StructureDefinition/medication-type'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-oncofair-careplan.json ==
+WARNING: StructureDefinition/oncofair-careplan: StructureDefinition.snapshot.element[25].binding: The definition for the element 'CarePlan.status' binds to the value set 'http://hl7.org/fhir/ValueSet/request-status|5.0.0' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-oncofair-cp-treatment.json ==
 == fsh-generated/resources/StructureDefinition-oncofair-element-form.json ==
 == fsh-generated/resources/StructureDefinition-oncofair-encounter.json ==
+WARNING: StructureDefinition/oncofair-encounter: StructureDefinition.snapshot.element[18].binding: The definition for the element 'Encounter.status' binds to the value set 'http://hl7.org/fhir/ValueSet/encounter-status|5.0.0' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/oncofair-encounter: StructureDefinition.snapshot.element[48].binding: The definition for the element 'Encounter.reason.value' binds to the value set 'http://hl7.org/fhir/ValueSet/encounter-reason' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-oncofair-ma-component-administration-status.json ==
+WARNING: StructureDefinition/oncofair-ma-component-administration-status: StructureDefinition.differential.element[3].binding: The definition for the element 'Extension.value[x]' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/siph-statutcomposantadm-oncofair-valueset' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/oncofair-ma-component-administration-status: StructureDefinition.snapshot.element[4].binding: The definition for the element 'Extension.value[x]' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/siph-statutcomposantadm-oncofair-valueset' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-oncofair-ma-component-origin.json ==
 == fsh-generated/resources/StructureDefinition-oncofair-ma-element-expirationdate.json ==
 == fsh-generated/resources/StructureDefinition-oncofair-ma-element-plannedperiod.json ==
 == fsh-generated/resources/StructureDefinition-oncofair-ma-element-traceability.json ==
 == fsh-generated/resources/StructureDefinition-oncofair-ma-element-urgent.json ==
 == fsh-generated/resources/StructureDefinition-oncofair-medication.json ==
+WARNING: StructureDefinition/oncofair-medication: StructureDefinition.snapshot.element[22].binding: The definition for the element 'Medication.ingredient.strength[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/medication-ingredientstrength' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-oncofair-medication-type.json ==
+WARNING: StructureDefinition/oncofair-medication-type: StructureDefinition.differential.element[3].binding: The definition for the element 'Extension.value[x]' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/siph-typecomposant-oncofair-valueset' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/oncofair-medication-type: StructureDefinition.snapshot.element[4].binding: The definition for the element 'Extension.value[x]' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/siph-typecomposant-oncofair-valueset' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-component.json ==
 WARNING: StructureDefinition/oncofair-medicationadministration-component: StructureDefinition.snapshot.element[22].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 WARNING: StructureDefinition/oncofair-medicationadministration-component: StructureDefinition.differential.element[8].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/oncofair-medicationadministration-component: StructureDefinition.differential.element[7].binding: The definition for the element 'MedicationAdministration.medication' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/concept-medication-oncofair-valueset' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/oncofair-medicationadministration-component: StructureDefinition.snapshot.element[19].binding: The definition for the element 'MedicationAdministration.medication' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/concept-medication-oncofair-valueset' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-element.json ==
 WARNING: StructureDefinition/oncofair-medicationadministration-element: StructureDefinition.snapshot.element[25].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 WARNING: StructureDefinition/oncofair-medicationadministration-element: StructureDefinition.differential.element[13].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/oncofair-medicationadministration-element: StructureDefinition.differential.element[12].binding: The definition for the element 'MedicationAdministration.medication' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/concept-medication-oncofair-valueset' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/oncofair-medicationadministration-element: StructureDefinition.differential.element[29].binding: The definition for the element 'MedicationAdministration.dosage.method' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/siph-typeeltpla-oncofair-valueset' which is experimental, but this structure is not labeled as experimental
+ERROR: StructureDefinition/oncofair-medicationadministration-element: StructureDefinition.snapshot.element[19].slicing.discriminator[0]: The discriminator path 'system' does not appear to be valid for the element that is being sliced 'MedicationAdministration.category'
+WARNING: StructureDefinition/oncofair-medicationadministration-element: StructureDefinition.snapshot.element[22].binding: The definition for the element 'MedicationAdministration.medication' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/concept-medication-oncofair-valueset' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/oncofair-medicationadministration-element: StructureDefinition.snapshot.element[50].binding: The definition for the element 'MedicationAdministration.request.type' binds to the value set 'http://hl7.org/fhir/ValueSet/resource-types' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/oncofair-medicationadministration-element: StructureDefinition.snapshot.element[74].binding: The definition for the element 'MedicationAdministration.dosage.method' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/siph-typeeltpla-oncofair-valueset' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-oncofair-medicationadministration-report.json ==
 WARNING: StructureDefinition/oncofair-medicationadministration-report: StructureDefinition.snapshot.element[18].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 WARNING: StructureDefinition/oncofair-medicationadministration-report: StructureDefinition.differential.element[3].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/oncofair-medicationadministration-report: StructureDefinition.differential.element[2].binding: The definition for the element 'MedicationAdministration.medication' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/concept-medication-oncofair-valueset' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/oncofair-medicationadministration-report: StructureDefinition.snapshot.element[15].binding: The definition for the element 'MedicationAdministration.medication' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/concept-medication-oncofair-valueset' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-component.json ==
 WARNING: StructureDefinition/oncofair-medicationrequest-component: StructureDefinition.snapshot.element[26].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 WARNING: StructureDefinition/oncofair-medicationrequest-component: StructureDefinition.differential.element[7].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/oncofair-medicationrequest-component: StructureDefinition.differential.element[6].binding: The definition for the element 'MedicationRequest.medication' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/concept-medication-oncofair-valueset' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/oncofair-medicationrequest-component: StructureDefinition.snapshot.element[21].binding: The definition for the element 'MedicationRequest.priority' binds to the value set 'http://hl7.org/fhir/ValueSet/request-priority|5.0.0' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/oncofair-medicationrequest-component: StructureDefinition.snapshot.element[23].binding: The definition for the element 'MedicationRequest.medication' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/concept-medication-oncofair-valueset' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-element.json ==
 WARNING: StructureDefinition/oncofair-medicationrequest-element: StructureDefinition.snapshot.element[54].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 WARNING: StructureDefinition/oncofair-medicationrequest-element: StructureDefinition.differential.element[20].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/oncofair-medicationrequest-element: StructureDefinition.differential.element[19].binding: The definition for the element 'MedicationRequest.medication' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/concept-medication-oncofair-valueset' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/oncofair-medicationrequest-element: StructureDefinition.differential.element[45].binding: The definition for the element 'MedicationRequest.dosageInstruction.method' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/siph-typeeltpla-oncofair-valueset' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/oncofair-medicationrequest-element: StructureDefinition.snapshot.element[30].binding: The definition for the element 'MedicationRequest.basedOn.type' binds to the value set 'http://hl7.org/fhir/ValueSet/resource-types' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/oncofair-medicationrequest-element: StructureDefinition.snapshot.element[49].binding: The definition for the element 'MedicationRequest.priority' binds to the value set 'http://hl7.org/fhir/ValueSet/request-priority|5.0.0' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/oncofair-medicationrequest-element: StructureDefinition.snapshot.element[51].binding: The definition for the element 'MedicationRequest.medication' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/concept-medication-oncofair-valueset' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/oncofair-medicationrequest-element: StructureDefinition.snapshot.element[137].binding: The definition for the element 'MedicationRequest.dosageInstruction.method' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/siph-typeeltpla-oncofair-valueset' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-oncofair-medicationrequest-prescription.json ==
 WARNING: StructureDefinition/oncofair-medicationrequest-prescription: StructureDefinition.snapshot.element[32].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 WARNING: StructureDefinition/oncofair-medicationrequest-prescription: StructureDefinition.differential.element[7].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/oncofair-medicationrequest-prescription: StructureDefinition.differential.element[6].binding: The definition for the element 'MedicationRequest.medication' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/concept-medication-oncofair-valueset' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/oncofair-medicationrequest-prescription: StructureDefinition.snapshot.element[27].binding: The definition for the element 'MedicationRequest.priority' binds to the value set 'http://hl7.org/fhir/ValueSet/request-priority|5.0.0' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/oncofair-medicationrequest-prescription: StructureDefinition.snapshot.element[29].binding: The definition for the element 'MedicationRequest.medication' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/concept-medication-oncofair-valueset' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/oncofair-medicationrequest-prescription: StructureDefinition.snapshot.element[42].binding: The definition for the element 'MedicationRequest.supportingInformation.type' binds to the value set 'http://hl7.org/fhir/ValueSet/resource-types' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/oncofair-medicationrequest-prescription: StructureDefinition.snapshot.element[49].binding: The definition for the element 'MedicationRequest.supportingInformation.type' binds to the value set 'http://hl7.org/fhir/ValueSet/resource-types' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-oncofair-mr-component-solute.json ==
 == fsh-generated/resources/StructureDefinition-oncofair-mr-element-go-nogo.json ==
+WARNING: StructureDefinition/oncofair-mr-element-go-nogo: StructureDefinition.differential.element[4].binding: The definition for the element 'Extension.extension.value[x]' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/siph-gonogo-oncofair-valueset' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/oncofair-mr-element-go-nogo: StructureDefinition.snapshot.element[7].binding: The definition for the element 'Extension.extension.value[x]' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/siph-gonogo-oncofair-valueset' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-oncofair-mr-element-link-type.json ==
 == fsh-generated/resources/StructureDefinition-oncofair-mr-element-rank.json ==
 == fsh-generated/resources/StructureDefinition-oncofair-mr-element-supply.json ==
 == fsh-generated/resources/StructureDefinition-oncofair-mr-exempt-ltc.json ==
+WARNING: StructureDefinition/oncofair-mr-exempt-ltc: StructureDefinition.differential.element[3].binding: The definition for the element 'Extension.value[x]' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/siph-listeald-oncofair-valueset' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/oncofair-mr-exempt-ltc: StructureDefinition.snapshot.element[4].binding: The definition for the element 'Extension.value[x]' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/siph-listeald-oncofair-valueset' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-oncofair-mr-is-dosage-referent.json ==
 == fsh-generated/resources/StructureDefinition-oncofair-mr-prescription-validation-date.json ==
 == fsh-generated/resources/StructureDefinition-oncofair-observation.json ==
+WARNING: StructureDefinition/oncofair-observation: StructureDefinition.differential.element[1].binding: The definition for the element 'Observation.code' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/siph-renscomplement-oncofair-valueset' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/oncofair-observation: StructureDefinition.snapshot.element[21].binding: The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/oncofair-observation: StructureDefinition.snapshot.element[22].binding: The definition for the element 'Observation.code' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/siph-renscomplement-oncofair-valueset' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/oncofair-observation: StructureDefinition.snapshot.element[46].binding: The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-oncofair-patient.json ==
 == fsh-generated/resources/StructureDefinition-oncofair-pharmacist-advice.json ==
+WARNING: StructureDefinition/oncofair-pharmacist-advice: StructureDefinition.differential.element[4].binding: The definition for the element 'Extension.extension.value[x]' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/siph-statutvalidpharm-oncofair-valueset' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/oncofair-pharmacist-advice: StructureDefinition.differential.element[8].binding: The definition for the element 'Extension.extension.value[x]' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/siph-natureproppharm-oncofair-valueset' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/oncofair-pharmacist-advice: StructureDefinition.snapshot.element[7].binding: The definition for the element 'Extension.extension.value[x]' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/siph-statutvalidpharm-oncofair-valueset' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/oncofair-pharmacist-advice: StructureDefinition.snapshot.element[12].binding: The definition for the element 'Extension.extension.value[x]' binds to the value set 'http://ltsi.univ-rennes.fr/ValueSet/siph-natureproppharm-oncofair-valueset' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-oncology-healthcare-service.json ==
+WARNING: StructureDefinition/oncology-healthcare-service: StructureDefinition.snapshot.element[15].binding: The definition for the element 'HealthcareService.specialty' binds to the value set 'http://hl7.org/fhir/ValueSet/c80-practice-codes' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition.where(url = 'http://ltsi.univ-rennes.fr/StructureDefinition/oncology-healthcare-service'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-treatment-line.json ==
 WARNING: StructureDefinition/treatment-line: StructureDefinition.context[0]: Review the extension type for treatment-line: extensions should not have a context of Element unless it's really intended that they can be used anywhere
@@ -368,6 +516,9 @@ WARNING: StructureDefinition.where(url = 'http://ltsi.univ-rennes.fr/StructureDe
 == fsh-generated/resources/StructureDefinition-tumor-pathology-event.json ==
 INFORMATION: StructureDefinition/tumor-pathology-event: StructureDefinition.snapshot.element[32].slicing.discriminator[0].type: The code 'pattern' is valid but is deprecated
 INFORMATION: StructureDefinition/tumor-pathology-event: StructureDefinition.differential.element[12].slicing.discriminator[0].type: The code 'pattern' is valid but is deprecated
+WARNING: StructureDefinition/tumor-pathology-event: StructureDefinition.differential.element[12].slicing.discriminator[0]: The discriminator type 'pattern' has been deprecated. Use type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition/tumor-pathology-event: StructureDefinition.snapshot.element[30].binding: The definition for the element 'Condition.participant.function' binds to the value set 'http://hl7.org/fhir/ValueSet/participation-role-type' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/tumor-pathology-event: StructureDefinition.snapshot.element[32].slicing.discriminator[0]: The discriminator type 'pattern' has been deprecated. Use type=value with a pattern[x] instead (if this is not an inherited slicing)
 == fsh-generated/resources/ValueSet-Laterality.json ==
 WARNING: ValueSet/Laterality: ValueSet.compose.include[0].concept[0]: The code 'C0238767' is not valid in the system http://terminology.hl7.org/CodeSystem/umls (Unable to evaluate based on code system with status = not-present)
 INFORMATION: ValueSet/Laterality: ValueSet.compose.include[0].concept[0]: Unable to evaluate based on code system with status = not-present
@@ -377,14 +528,13 @@ WARNING: ValueSet/Laterality: ValueSet.compose.include[0].concept[3]: The code '
 WARNING: ValueSet/Laterality: ValueSet.compose.include[0].concept[4]: The code 'C0205090' is not valid in the system http://terminology.hl7.org/CodeSystem/umls (A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/umls' could not be found, so the code cannot be validated)
 WARNING: ValueSet/Laterality: ValueSet.compose.include[0].concept[5]: The code 'C0439673' is not valid in the system http://terminology.hl7.org/CodeSystem/umls (A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/umls' could not be found, so the code cannot be validated)
 WARNING: ValueSet/Laterality: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet.where(id = 'Laterality'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/umls
+WARNING: ValueSet.where(id = 'Laterality'): Error from http://tx.fhir.org/r5: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/umls
 == fsh-generated/resources/ValueSet-Morphology.json ==
-INFORMATION: ValueSet/Morphology: ValueSet.compose.include[0].concept[0]: Unknown Code '8000/0' in the system 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
-INFORMATION: ValueSet/Morphology: ValueSet.compose.include[0]: The value set include has too many codes to validate (1,031), so each individual code has not been checked
+INFORMATION: ValueSet/Morphology: ValueSet.compose.include[0]: The value set include has too many codes to validate (1,032), so each individual code has not been checked
 WARNING: ValueSet/Morphology: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-Topography.json ==
 WARNING: ValueSet/Topography: ValueSet.compose.include[0].concept[129].display: value should not start or finish with whitespace '   GALLBLADDER'
-INFORMATION: ValueSet/Topography: ValueSet.compose.include[0].concept[0]: Unknown Code 'C00' in the system 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+INFORMATION: ValueSet/Topography: ValueSet.compose.include[0].concept[0]: Unknown Code 'C00' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
 WARNING: ValueSet/Topography: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-TreatmentType.json ==
 WARNING: ValueSet/TreatmentType: ValueSet.compose.include[0].concept[0]: The code 'C3665472' is not valid in the system http://terminology.hl7.org/CodeSystem/umls (Unable to evaluate based on code system with status = not-present)
@@ -399,7 +549,7 @@ WARNING: ValueSet/TreatmentType: ValueSet.compose.include[0].concept[7]: The cod
 WARNING: ValueSet/TreatmentType: ValueSet.compose.include[0].concept[8]: The code 'C93352' is not valid in the system http://terminology.hl7.org/CodeSystem/umls (A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/umls' could not be found, so the code cannot be validated)
 WARNING: ValueSet/TreatmentType: ValueSet.compose.include[0].concept[9]: The code 'C0439673' is not valid in the system http://terminology.hl7.org/CodeSystem/umls (A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/umls' could not be found, so the code cannot be validated)
 WARNING: ValueSet/TreatmentType: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet.where(id = 'TreatmentType'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/umls
+WARNING: ValueSet.where(id = 'TreatmentType'): Error from http://tx.fhir.org/r5: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/umls
 == fsh-generated/resources/ValueSet-TumorPathologyEventType.json ==
 WARNING: ValueSet/TumorPathologyEventType: ValueSet.compose.include[0].concept[0]: The code 'C1882062' is not valid in the system http://terminology.hl7.org/CodeSystem/umls (Unable to evaluate based on code system with status = not-present)
 INFORMATION: ValueSet/TumorPathologyEventType: ValueSet.compose.include[0].concept[0]: Unable to evaluate based on code system with status = not-present
@@ -408,7 +558,7 @@ WARNING: ValueSet/TumorPathologyEventType: ValueSet.compose.include[0].concept[2
 WARNING: ValueSet/TumorPathologyEventType: ValueSet.compose.include[0].concept[3]: The code 'C0677930' is not valid in the system http://terminology.hl7.org/CodeSystem/umls (A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/umls' could not be found, so the code cannot be validated)
 WARNING: ValueSet/TumorPathologyEventType: ValueSet.compose.include[0].concept[4]: The code 'C0439673' is not valid in the system http://terminology.hl7.org/CodeSystem/umls (A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/umls' could not be found, so the code cannot be validated)
 WARNING: ValueSet/TumorPathologyEventType: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet.where(id = 'TumorPathologyEventType'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/umls
+WARNING: ValueSet.where(id = 'TumorPathologyEventType'): Error from http://tx.fhir.org/r5: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/umls
 == fsh-generated/resources/ValueSet-VSEventTypeData.json ==
 == fsh-generated/resources/ValueSet-concept-medication-oncofair-valueset.json ==
 == fsh-generated/resources/ValueSet-medical-units-oncofair-valueset.json ==

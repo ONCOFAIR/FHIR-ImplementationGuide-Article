@@ -11,7 +11,7 @@
   <name value="OncoFAIR"/>
   <title value="OncoFAIR"/>
   <status value="draft"/>
-  <date value="2024-09-12T14:01:50+00:00"/>
+  <date value="2025-01-17T14:38:13+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -30,7 +30,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r5"/>
-    <version value="6.0.2"/>
+    <version value="6.1.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -42,7 +42,7 @@
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools#0.2.0"/>
+      <valueCode value="hl7.fhir.uv.tools.r5#0.3.0"/>
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -201,17 +201,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="DeviceDefinition"/>
-      </extension>
-      <reference>
-        <reference value="DeviceDefinition/ExampleOncoFAIRDeviceDefinition"/>
-      </reference>
-      <name value="Example OncoFAIR Device Definition"/>
-      <description value="An example instance of an OncoFAIR Device Definition."/>
-      <isExample value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Encounter"/>
       </extension>
       <reference>
@@ -275,7 +264,7 @@
         <valueString value="MedicationRequest"/>
       </extension>
       <reference>
-        <reference value="MedicationRequest/ExampleOncoFAIRMedicationRequestComponent"/>
+        <reference value="MedicationRequest/Component"/>
       </reference>
       <name value="Example OncoFAIR MedicationRequest Component"/>
       <description value="Example instance of OncoFAIRMedicationRequestComponent"/>
@@ -287,7 +276,7 @@
         <valueString value="MedicationRequest"/>
       </extension>
       <reference>
-        <reference value="MedicationRequest/ExampleOncoFAIRMedicationRequestElement"/>
+        <reference value="MedicationRequest/Element"/>
       </reference>
       <name value="Example OncoFAIR MedicationRequest Element"/>
       <description value="Example instance of OncoFAIRMedicationRequestElement"/>
@@ -299,24 +288,12 @@
         <valueString value="MedicationRequest"/>
       </extension>
       <reference>
-        <reference value="MedicationRequest/ExampleOncoFAIRMedicationRequestElement2"/>
+        <reference value="MedicationRequest/Element2"/>
       </reference>
       <name value="Example OncoFAIR MedicationRequest Element"/>
       <description value="Example instance of OncoFAIRMedicationRequestElement"/>
       <isExample value="true"/>
       <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MedicationRequest"/>
-      </extension>
-      <reference>
-        <reference value="MedicationRequest/ExampleOncoFAIRMedicationRequestPrescription"/>
-      </reference>
-      <name value="Example OncoFAIR MedicationRequest Prescription"/>
-      <description value="An example instance of OncoFAIR MedicationRequest Prescription."/>
-      <isExample value="true"/>
-      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -376,6 +353,206 @@
       <description value="Example of TPE from OSIRIS_pivot_TumorPathologyEvent.csv"/>
       <isExample value="true"/>
       <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/tumor-pathology-event"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/ExampleOncoFAIRDevice-diffuseur"/>
+      </reference>
+      <name value="Folfox Difuser OncoFAIR Device"/>
+      <description value="An example instance of an OncoFAIR Device for folfox protocol"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DeviceDefinition"/>
+      </extension>
+      <reference>
+        <reference value="DeviceDefinition/ExampleOncoFAIRDeviceDefinition-diffuseur"/>
+      </reference>
+      <name value="Folfox Difuseur OncoFAIR Device Definition"/>
+      <description value="An example instance of an OncoFAIR Device Definition for folfox protocol."/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/Element-folfox-diffuseur"/>
+      </reference>
+      <name value="Folfox Difuseur OncoFAIR MedicationRequest Element"/>
+      <description value="Example instance of OncoFAIRMedicationRequestElement for folfox protocol"/>
+      <isExample value="true"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/OncoFAIRMedication-fluoro-uracile"/>
+      </reference>
+      <name value="Folfox Fluoro-uracile OncoFAIR Medication"/>
+      <description value="An example instance of an OncoFAIR Medication with required fields populated."/>
+      <isExample value="true"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-uracile-diffuseur"/>
+      </reference>
+      <name value="Folfox Fluoro-uracile OncoFAIR MedicationRequest Component"/>
+      <description value="Example instance of OncoFAIRMedicationRequestComponent for folfox protocol"/>
+      <isExample value="true"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-uracile"/>
+      </reference>
+      <name value="Folfox Fluoro-uracile OncoFAIR MedicationRequest Component"/>
+      <description value="Example instance of OncoFAIRMedicationRequestComponent for folfox protocol"/>
+      <isExample value="true"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/OncoFAIRCarePlan-folfox"/>
+      </reference>
+      <name value="Folfox OncoFAIR CarePlan "/>
+      <description value="An example instance of an OncoFAIR CarePlan with required fields populated for folfox protocol."/>
+      <isExample value="true"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-careplan"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/Element-folfox"/>
+      </reference>
+      <name value="Folfox OncoFAIR MedicationRequest Element"/>
+      <description value="Example instance of OncoFAIRMedicationRequestElement for folfox protocol"/>
+      <isExample value="true"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/OncoFAIRMedication-oxaliplatine"/>
+      </reference>
+      <name value="Folfox Oxaliplatine OncoFAIR Medication"/>
+      <description value="An example instance of an OncoFAIR Medication with required fields populated."/>
+      <isExample value="true"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine"/>
+      </reference>
+      <name value="Folfox Oxaliplatine OncoFAIR MedicationRequest Component"/>
+      <description value="Example instance of OncoFAIRMedicationRequestComponent for folfox protocol"/>
+      <isExample value="true"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/ExampleOncoFAIRDevice-perfusion"/>
+      </reference>
+      <name value="Folfox Perfusion OncoFAIR Device"/>
+      <description value="An example instance of an OncoFAIR Device for folfox protocol"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DeviceDefinition"/>
+      </extension>
+      <reference>
+        <reference value="DeviceDefinition/ExampleOncoFAIRDeviceDefinition-perfusion"/>
+      </reference>
+      <name value="Folfox Perfusion OncoFAIR Device Definition"/>
+      <description value="An example instance of an OncoFAIR Device Definition for folfox protocol."/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/OncoFAIRMedication-vehicule"/>
+      </reference>
+      <name value="Folfox Vehicle  OncoFAIR Medication"/>
+      <description value="An example instance of an OncoFAIR Medication with required fields populated."/>
+      <isExample value="true"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-vehicule-diffuseur"/>
+      </reference>
+      <name value="Folfox Vehicle OncoFAIR MedicationRequest Component"/>
+      <description value="Example instance of OncoFAIRMedicationRequestComponent for folfox protocol"/>
+      <isExample value="true"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-vehicule"/>
+      </reference>
+      <name value="Folfox Vehicle OncoFAIR MedicationRequest Component"/>
+      <description value="Example instance of OncoFAIRMedicationRequestComponent for folfox protocol"/>
+      <isExample value="true"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/PrescriptionFolfox-difuseur"/>
+      </reference>
+      <name value="Folfox Vehicle OncoFAIR MedicationRequest Prescription"/>
+      <description value="An example instance of OncoFAIR MedicationRequest Prescription for folfox protocol at hospitals."/>
+      <isExample value="true"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/PrescriptionFolfox"/>
+      </reference>
+      <name value="Folfox Vehicle OncoFAIR MedicationRequest Prescription"/>
+      <description value="An example instance of OncoFAIR MedicationRequest Prescription for folfox protocol at hospitals."/>
+      <isExample value="true"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1355,6 +1532,18 @@
       <name value="OncologyHealthcareService"/>
       <description value="Healthcare service(s)."/>
       <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine-diffuseur"/>
+      </reference>
+      <name value="Oxaliplatine with difuseur OncoFAIR MedicationRequest Component"/>
+      <description value="Example instance of OncoFAIRMedicationRequestComponent for folfox protocol"/>
+      <isExample value="true"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

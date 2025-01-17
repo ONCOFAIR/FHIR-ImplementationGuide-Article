@@ -1,0 +1,141 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/MedicationRequest/Element-folfox> a fhir:MedicationRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Element-folfox"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element"^^xsd:anyURI ;
+       fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest Element-folfox</b></p><a name=\"Element-folfox\"> </a><a name=\"hcElement-folfox\"> </a><a name=\"Element-folfox-en-US\"> </a><p><b>identifier</b>: prescription-element-folfox-hospital</p><p><b>basedOn</b>: </p><ul><li><a href=\"MedicationRequest-PrescriptionFolfox.html\">MedicationRequest: extension = 2024-06-01 08:00:00+0000; identifier = prescription-folfox-hospitals; groupIdentifier = folfox-example; status = active; intent = order; note = This is a default comment on the prescription by the prescribing doctor.</a></li><li><a href=\"CarePlan-OncoFAIRCarePlan-folfox.html\">CarePlan Folfox</a></li></ul><p><b>groupIdentifier</b>: folfox-example</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem element}\">element</span></td></tr></table><p><b>subject</b>: <a href=\"Patient-ExampleOncoFAIRPatient.html\">Anonymous Patient (no stated gender), DoB Unknown ( 123456789)</a></p><p><b>requester</b>: <a href=\"Practitioner-ExampleOncoFAIRPractitioner.html\">Practitioner: identifier = 12345</a></p><h3>Devices</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"DeviceDefinition-ExampleOncoFAIRDeviceDefinition-perfusion.html\">DeviceDefinition: identifier = Perfusion</a></td></tr></table><p><b>note</b>: 5-fluoro-uracile, protocol folfox</p><p><b>effectiveDosePeriod</b>: 2024-11-01 08:00:00+0000 --&gt; 2024-11-30 09:00:00+0000</p><blockquote><p><b>dosageInstruction</b></p><blockquote><p><b>id</b></p>element</blockquote><p><b>patientInstruction</b>: Boire beaucoup d'eau</p><p><b>timing</b>: Once</p><p><b>route</b>: <span title=\"Codes:{http://snomed.info/sct 47625008}\">Intravenous route</span></p><p><b>method</b>: <span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem PERF}\">Perfusion</span></p></blockquote><blockquote><p><b>dosageInstruction</b></p><blockquote><p><b>id</b></p>posology</blockquote><p><b>timing</b>: Count 2  times, Duration 3days , 2 per 30 days</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td><td><b>Rate[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1 dose</td><td>1/3 heure</td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "prescription-element-folfox-hospital" ]
+  ] ) ; # 
+  fhir:basedOn ( [
+     fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/PrescriptionFolfox> ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-link-type"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/siph-type-liaison-oncofair-codesystem"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "COMP" ] ;
+           fhir:display [ fhir:v "Complément" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:reference [ fhir:v "MedicationRequest/PrescriptionFolfox" ]
+  ] [
+     fhir:link <http://ltsi.univ-rennes.fr/CarePlan/OncoFAIRCarePlan-folfox> ;
+     fhir:reference [ fhir:v "CarePlan/OncoFAIRCarePlan-folfox" ]
+  ] ) ; # 
+  fhir:groupIdentifier [
+     fhir:value [ fhir:v "folfox-example" ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:medication [
+     fhir:concept [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "element" ] ;
+         fhir:display [ fhir:v "element" ]
+       ] )
+     ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://ltsi.univ-rennes.fr/Patient/ExampleOncoFAIRPatient> ;
+     fhir:reference [ fhir:v "Patient/ExampleOncoFAIRPatient" ]
+  ] ; # 
+  fhir:requester [
+     fhir:link <http://ltsi.univ-rennes.fr/Practitioner/ExampleOncoFAIRPractitioner> ;
+     fhir:reference [ fhir:v "Practitioner/ExampleOncoFAIRPractitioner" ]
+  ] ; # 
+  fhir:device ( [
+     fhir:reference [
+       fhir:link <http://ltsi.univ-rennes.fr/DeviceDefinition/ExampleOncoFAIRDeviceDefinition-perfusion> ;
+       fhir:reference [ fhir:v "DeviceDefinition/ExampleOncoFAIRDeviceDefinition-perfusion" ]
+     ]
+  ] ) ; # 
+  fhir:note ( [
+     fhir:id [ fhir:v "wording" ] ;
+     fhir:text [ fhir:v "5-fluoro-uracile" ]
+  ] [
+     fhir:id [ fhir:v "indication" ] ;
+     fhir:text [ fhir:v "protocol folfox" ]
+  ] ) ; # 
+  fhir:effectiveDosePeriod [
+     fhir:start [ fhir:v "2024-11-01T08:00:00Z"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2024-11-30T09:00:00Z"^^xsd:dateTime ]
+  ] ; # 
+  fhir:dosageInstruction ( [
+     fhir:id [ fhir:v "element" ] ;
+     fhir:patientInstruction [ fhir:v "Boire beaucoup d'eau" ] ;
+     fhir:timing [
+       fhir:repeat [
+         fhir:bounds [
+           a fhir:Period ;
+           fhir:start [ fhir:v "2024-11-01T08:00:00Z"^^xsd:dateTime ] ;
+           fhir:end [ fhir:v "2024-11-30T11:00:00Z"^^xsd:dateTime ]
+         ]
+       ]
+     ] ;
+     fhir:route [
+       fhir:coding ( [
+         a sct:47625008 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "47625008" ] ;
+         fhir:display [ fhir:v "Intravenous route" ]
+       ] )
+     ] ;
+     fhir:method [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "PERF" ] ;
+         fhir:display [ fhir:v "Perfusion" ]
+       ] )
+     ]
+  ] [
+     fhir:id [ fhir:v "posology" ] ;
+     fhir:timing [
+       fhir:repeat [
+         fhir:count [ fhir:v "2"^^xsd:positiveInteger ] ;
+         fhir:duration [ fhir:v "3"^^xsd:decimal ] ;
+         fhir:durationUnit [ fhir:v "h" ] ;
+         fhir:frequency [ fhir:v "2"^^xsd:positiveInteger ] ;
+         fhir:period [ fhir:v "30"^^xsd:decimal ] ;
+         fhir:periodUnit [ fhir:v "d" ]
+       ]
+     ] ;
+     fhir:doseAndRate ( [
+       fhir:dose [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "dose" ]
+       ] ;
+       fhir:rate [
+         a fhir:Ratio ;
+         fhir:numerator [
+           fhir:value [ fhir:v "1"^^xsd:decimal ]
+         ] ;
+         fhir:denominator [
+           fhir:value [ fhir:v "3"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "heure" ]
+         ]
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

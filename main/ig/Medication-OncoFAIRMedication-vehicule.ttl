@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/Medication/OncoFAIRMedication-vehicule> a fhir:Medication ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "OncoFAIRMedication-vehicule"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication"^^xsd:anyURI ;
+       fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication OncoFAIRMedication-vehicule</b></p><a name=\"OncoFAIRMedication-vehicule\"> </a><a name=\"hcOncoFAIRMedication-vehicule\"> </a><a name=\"OncoFAIRMedication-vehicule-en-US\"> </a><p><b>OncoFAIRMedicationType</b>: <span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/siph-typecomposant-oncofair-codesystem PRAC}\">principe actif</span></p><p><b>identifier</b>: medication-folfox-vehicle</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 5000411000001105}\">Sodium chloride 0.9% solution for injection 2litre bags</span></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication-type"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/siph-typecomposant-oncofair-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "PRAC" ] ;
+         fhir:display [ fhir:v "principe actif" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "medication-folfox-vehicle" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:5000411000001105 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "5000411000001105" ] ;
+       fhir:display [ fhir:v "Sodium chloride 0.9% solution for injection 2litre bags" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

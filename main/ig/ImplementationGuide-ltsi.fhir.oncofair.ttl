@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OncoFAIR"] ; # 
   fhir:title [ fhir:v "OncoFAIR"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-09-12T14:01:50+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-01-17T14:38:13+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -41,7 +41,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r5" ] ;
-     fhir:version [ fhir:v "6.0.2" ]
+     fhir:version [ fhir:v "6.1.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -58,7 +58,7 @@
   fhir:definition [
      fhir:extension ( [
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "hl7.fhir.uv.tools#0.2.0" ]
+       fhir:value [ fhir:v "hl7.fhir.uv.tools.r5#0.3.0" ]
      ] ) ;
      fhir:resource ( [
        fhir:extension ( [
@@ -235,18 +235,6 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "DeviceDefinition" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/DeviceDefinition/ExampleOncoFAIRDeviceDefinition> ;
-         fhir:reference [ fhir:v "DeviceDefinition/ExampleOncoFAIRDeviceDefinition" ]
-       ] ;
-       fhir:name [ fhir:v "Example OncoFAIR Device Definition" ] ;
-       fhir:description [ fhir:v "An example instance of an OncoFAIR Device Definition." ] ;
-       fhir:isExample [ fhir:v "true"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Encounter" ]
        ] ) ;
        fhir:reference [
@@ -330,8 +318,8 @@
          fhir:value [ fhir:v "MedicationRequest" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/ExampleOncoFAIRMedicationRequestComponent> ;
-         fhir:reference [ fhir:v "MedicationRequest/ExampleOncoFAIRMedicationRequestComponent" ]
+         fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/Component> ;
+         fhir:reference [ fhir:v "MedicationRequest/Component" ]
        ] ;
        fhir:name [ fhir:v "Example OncoFAIR MedicationRequest Component" ] ;
        fhir:description [ fhir:v "Example instance of OncoFAIRMedicationRequestComponent" ] ;
@@ -346,8 +334,8 @@
          fhir:value [ fhir:v "MedicationRequest" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/ExampleOncoFAIRMedicationRequestElement> ;
-         fhir:reference [ fhir:v "MedicationRequest/ExampleOncoFAIRMedicationRequestElement" ]
+         fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/Element> ;
+         fhir:reference [ fhir:v "MedicationRequest/Element" ]
        ] ;
        fhir:name [ fhir:v "Example OncoFAIR MedicationRequest Element" ] ;
        fhir:description [ fhir:v "Example instance of OncoFAIRMedicationRequestElement" ] ;
@@ -362,8 +350,8 @@
          fhir:value [ fhir:v "MedicationRequest" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/ExampleOncoFAIRMedicationRequestElement2> ;
-         fhir:reference [ fhir:v "MedicationRequest/ExampleOncoFAIRMedicationRequestElement2" ]
+         fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/Element2> ;
+         fhir:reference [ fhir:v "MedicationRequest/Element2" ]
        ] ;
        fhir:name [ fhir:v "Example OncoFAIR MedicationRequest Element" ] ;
        fhir:description [ fhir:v "Example instance of OncoFAIRMedicationRequestElement" ] ;
@@ -371,22 +359,6 @@
        fhir:profile ( [
          fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element"^^xsd:anyURI ;
          fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element>
-       ] )
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "MedicationRequest" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/ExampleOncoFAIRMedicationRequestPrescription> ;
-         fhir:reference [ fhir:v "MedicationRequest/ExampleOncoFAIRMedicationRequestPrescription" ]
-       ] ;
-       fhir:name [ fhir:v "Example OncoFAIR MedicationRequest Prescription" ] ;
-       fhir:description [ fhir:v "An example instance of OncoFAIR MedicationRequest Prescription." ] ;
-       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:profile ( [
-         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription"^^xsd:anyURI ;
-         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription>
        ] )
      ] [
        fhir:extension ( [
@@ -463,6 +435,262 @@
        fhir:profile ( [
          fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/tumor-pathology-event"^^xsd:anyURI ;
          fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/tumor-pathology-event>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Device" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/Device/ExampleOncoFAIRDevice-diffuseur> ;
+         fhir:reference [ fhir:v "Device/ExampleOncoFAIRDevice-diffuseur" ]
+       ] ;
+       fhir:name [ fhir:v "Folfox Difuser OncoFAIR Device" ] ;
+       fhir:description [ fhir:v "An example instance of an OncoFAIR Device for folfox protocol" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "DeviceDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/DeviceDefinition/ExampleOncoFAIRDeviceDefinition-diffuseur> ;
+         fhir:reference [ fhir:v "DeviceDefinition/ExampleOncoFAIRDeviceDefinition-diffuseur" ]
+       ] ;
+       fhir:name [ fhir:v "Folfox Difuseur OncoFAIR Device Definition" ] ;
+       fhir:description [ fhir:v "An example instance of an OncoFAIR Device Definition for folfox protocol." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/Element-folfox-diffuseur> ;
+         fhir:reference [ fhir:v "MedicationRequest/Element-folfox-diffuseur" ]
+       ] ;
+       fhir:name [ fhir:v "Folfox Difuseur OncoFAIR MedicationRequest Element" ] ;
+       fhir:description [ fhir:v "Example instance of OncoFAIRMedicationRequestElement for folfox protocol" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Medication" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/Medication/OncoFAIRMedication-fluoro-uracile> ;
+         fhir:reference [ fhir:v "Medication/OncoFAIRMedication-fluoro-uracile" ]
+       ] ;
+       fhir:name [ fhir:v "Folfox Fluoro-uracile OncoFAIR Medication" ] ;
+       fhir:description [ fhir:v "An example instance of an OncoFAIR Medication with required fields populated." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-uracile-diffuseur> ;
+         fhir:reference [ fhir:v "MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-uracile-diffuseur" ]
+       ] ;
+       fhir:name [ fhir:v "Folfox Fluoro-uracile OncoFAIR MedicationRequest Component" ] ;
+       fhir:description [ fhir:v "Example instance of OncoFAIRMedicationRequestComponent for folfox protocol" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-uracile> ;
+         fhir:reference [ fhir:v "MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-uracile" ]
+       ] ;
+       fhir:name [ fhir:v "Folfox Fluoro-uracile OncoFAIR MedicationRequest Component" ] ;
+       fhir:description [ fhir:v "Example instance of OncoFAIRMedicationRequestComponent for folfox protocol" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CarePlan" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/CarePlan/OncoFAIRCarePlan-folfox> ;
+         fhir:reference [ fhir:v "CarePlan/OncoFAIRCarePlan-folfox" ]
+       ] ;
+       fhir:name [ fhir:v "Folfox OncoFAIR CarePlan " ] ;
+       fhir:description [ fhir:v "An example instance of an OncoFAIR CarePlan with required fields populated for folfox protocol." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-careplan"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-careplan>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/Element-folfox> ;
+         fhir:reference [ fhir:v "MedicationRequest/Element-folfox" ]
+       ] ;
+       fhir:name [ fhir:v "Folfox OncoFAIR MedicationRequest Element" ] ;
+       fhir:description [ fhir:v "Example instance of OncoFAIRMedicationRequestElement for folfox protocol" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Medication" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/Medication/OncoFAIRMedication-oxaliplatine> ;
+         fhir:reference [ fhir:v "Medication/OncoFAIRMedication-oxaliplatine" ]
+       ] ;
+       fhir:name [ fhir:v "Folfox Oxaliplatine OncoFAIR Medication" ] ;
+       fhir:description [ fhir:v "An example instance of an OncoFAIR Medication with required fields populated." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine> ;
+         fhir:reference [ fhir:v "MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine" ]
+       ] ;
+       fhir:name [ fhir:v "Folfox Oxaliplatine OncoFAIR MedicationRequest Component" ] ;
+       fhir:description [ fhir:v "Example instance of OncoFAIRMedicationRequestComponent for folfox protocol" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Device" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/Device/ExampleOncoFAIRDevice-perfusion> ;
+         fhir:reference [ fhir:v "Device/ExampleOncoFAIRDevice-perfusion" ]
+       ] ;
+       fhir:name [ fhir:v "Folfox Perfusion OncoFAIR Device" ] ;
+       fhir:description [ fhir:v "An example instance of an OncoFAIR Device for folfox protocol" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "DeviceDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/DeviceDefinition/ExampleOncoFAIRDeviceDefinition-perfusion> ;
+         fhir:reference [ fhir:v "DeviceDefinition/ExampleOncoFAIRDeviceDefinition-perfusion" ]
+       ] ;
+       fhir:name [ fhir:v "Folfox Perfusion OncoFAIR Device Definition" ] ;
+       fhir:description [ fhir:v "An example instance of an OncoFAIR Device Definition for folfox protocol." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Medication" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/Medication/OncoFAIRMedication-vehicule> ;
+         fhir:reference [ fhir:v "Medication/OncoFAIRMedication-vehicule" ]
+       ] ;
+       fhir:name [ fhir:v "Folfox Vehicle  OncoFAIR Medication" ] ;
+       fhir:description [ fhir:v "An example instance of an OncoFAIR Medication with required fields populated." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-vehicule-diffuseur> ;
+         fhir:reference [ fhir:v "MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-vehicule-diffuseur" ]
+       ] ;
+       fhir:name [ fhir:v "Folfox Vehicle OncoFAIR MedicationRequest Component" ] ;
+       fhir:description [ fhir:v "Example instance of OncoFAIRMedicationRequestComponent for folfox protocol" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-vehicule> ;
+         fhir:reference [ fhir:v "MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-vehicule" ]
+       ] ;
+       fhir:name [ fhir:v "Folfox Vehicle OncoFAIR MedicationRequest Component" ] ;
+       fhir:description [ fhir:v "Example instance of OncoFAIRMedicationRequestComponent for folfox protocol" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/PrescriptionFolfox-difuseur> ;
+         fhir:reference [ fhir:v "MedicationRequest/PrescriptionFolfox-difuseur" ]
+       ] ;
+       fhir:name [ fhir:v "Folfox Vehicle OncoFAIR MedicationRequest Prescription" ] ;
+       fhir:description [ fhir:v "An example instance of OncoFAIR MedicationRequest Prescription for folfox protocol at hospitals." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/PrescriptionFolfox> ;
+         fhir:reference [ fhir:v "MedicationRequest/PrescriptionFolfox" ]
+       ] ;
+       fhir:name [ fhir:v "Folfox Vehicle OncoFAIR MedicationRequest Prescription" ] ;
+       fhir:description [ fhir:v "An example instance of OncoFAIR MedicationRequest Prescription for folfox protocol at hospitals." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription>
        ] )
      ] [
        fhir:extension ( [
@@ -1532,6 +1760,22 @@
        fhir:name [ fhir:v "OncologyHealthcareService" ] ;
        fhir:description [ fhir:v "Healthcare service(s)." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine-diffuseur> ;
+         fhir:reference [ fhir:v "MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-oxaliplatine-diffuseur" ]
+       ] ;
+       fhir:name [ fhir:v "Oxaliplatine with difuseur OncoFAIR MedicationRequest Component" ] ;
+       fhir:description [ fhir:v "Example instance of OncoFAIRMedicationRequestComponent for folfox protocol" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component"^^xsd:anyURI ;
+         fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component>
+       ] )
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

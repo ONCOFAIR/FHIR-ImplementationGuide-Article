@@ -1,0 +1,26 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/Device/ExampleOncoFAIRDevice-diffuseur> a fhir:Device ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleOncoFAIRDevice-diffuseur"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device ExampleOncoFAIRDevice-diffuseur</b></p><a name=\"ExampleOncoFAIRDevice-diffuseur\"> </a><a name=\"hcExampleOncoFAIRDevice-diffuseur\"> </a><a name=\"ExampleOncoFAIRDevice-diffuseur-en-US\"> </a><p><b>identifier</b>: Difuseur</p><h3>Definitions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"DeviceDefinition-ExampleOncoFAIRDeviceDefinition-diffuseur.html\">DeviceDefinition: identifier = Difuseur</a></td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "Difuseur" ]
+  ] ) ; # 
+  fhir:definition [
+     fhir:reference [
+       fhir:link <http://ltsi.univ-rennes.fr/DeviceDefinition/ExampleOncoFAIRDeviceDefinition-diffuseur> ;
+       fhir:reference [ fhir:v "DeviceDefinition/ExampleOncoFAIRDeviceDefinition-diffuseur" ]
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
