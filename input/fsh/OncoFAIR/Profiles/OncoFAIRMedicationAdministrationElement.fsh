@@ -36,7 +36,7 @@ Correspond à l’activité induite par un élément de prescription et sa posol
 
 * category MS
 * category ^slicing.discriminator.type = #value
-* category ^slicing.discriminator.path = "system"
+* category ^slicing.discriminator.path = "coding.system"
 * category ^slicing.rules = #open
 * category contains
     code 0..1 and 

@@ -20,7 +20,7 @@ Once the data has been collected, the warehouse sends the results to the consume
 
 ### Search criteria
 
-The list of applicable search criteria is available in the [capability statement](https://oncofair.github.io/FHIR-ImplementationGuide-Article/update-mapping-pn13/ig/artifacts.html#behavior-capability-statements).
+The list of applicable search criteria is available in the [OncoFAIR Consumer secondary chemotherapy data](CapabilityStatement-oncofair-consumer-secondary-chemotherapy-data.html).
 
 
 ### Examples of queries
