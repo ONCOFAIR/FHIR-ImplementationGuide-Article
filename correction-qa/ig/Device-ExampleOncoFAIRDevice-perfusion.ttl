@@ -1,0 +1,26 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/Device/ExampleOncoFAIRDevice-perfusion> a fhir:Device ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleOncoFAIRDevice-perfusion"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device ExampleOncoFAIRDevice-perfusion</b></p><a name=\"ExampleOncoFAIRDevice-perfusion\"> </a><a name=\"hcExampleOncoFAIRDevice-perfusion\"> </a><a name=\"ExampleOncoFAIRDevice-perfusion-en-US\"> </a><p><b>identifier</b>: Perfusion</p><h3>Definitions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"DeviceDefinition-ExampleOncoFAIRDeviceDefinition-perfusion.html\">DeviceDefinition: identifier = Perfusion</a></td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "Perfusion" ]
+  ] ) ; # 
+  fhir:definition [
+     fhir:reference [
+       fhir:link <http://ltsi.univ-rennes.fr/DeviceDefinition/ExampleOncoFAIRDeviceDefinition-perfusion> ;
+       fhir:reference [ fhir:v "DeviceDefinition/ExampleOncoFAIRDeviceDefinition-perfusion" ]
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

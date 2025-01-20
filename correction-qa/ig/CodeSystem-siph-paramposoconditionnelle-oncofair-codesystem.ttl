@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/CodeSystem/siph-paramposoconditionnelle-oncofair-codesystem> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "siph-paramposoconditionnelle-oncofair-codesystem"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem siph-paramposoconditionnelle-oncofair-codesystem</b></p><a name=\"siph-paramposoconditionnelle-oncofair-codesystem\"> </a><a name=\"hcsiph-paramposoconditionnelle-oncofair-codesystem\"> </a><a name=\"siph-paramposoconditionnelle-oncofair-codesystem-en-US\"> </a><p>This case-sensitive code system <code>http://ltsi.univ-rennes.fr/CodeSystem/siph-paramposoconditionnelle-oncofair-codesystem</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">DELAIMIN<a name=\"siph-paramposoconditionnelle-oncofair-codesystem-DELAIMIN\"> </a></td><td>Délai minimal entre deux prises ou injections</td></tr><tr><td style=\"white-space:nowrap\">DOSEMAXP<a name=\"siph-paramposoconditionnelle-oncofair-codesystem-DOSEMAXP\"> </a></td><td>Dose maximale par prise</td></tr><tr><td style=\"white-space:nowrap\">DOSEMAXJ<a name=\"siph-paramposoconditionnelle-oncofair-codesystem-DOSEMAXJ\"> </a></td><td>Dose maximale par 24h</td></tr><tr><td style=\"white-space:nowrap\">DEBITMAX<a name=\"siph-paramposoconditionnelle-oncofair-codesystem-DEBITMAX\"> </a></td><td>Débit maximal</td></tr><tr><td style=\"white-space:nowrap\">DUREEMIN<a name=\"siph-paramposoconditionnelle-oncofair-codesystem-DUREEMIN\"> </a></td><td>Durée d'injection minimale</td></tr><tr><td style=\"white-space:nowrap\">DUREEMAX<a name=\"siph-paramposoconditionnelle-oncofair-codesystem-DUREEMAX\"> </a></td><td>Durée d'injection maximale</td></tr><tr><td style=\"white-space:nowrap\">DOSEMAXC<a name=\"siph-paramposoconditionnelle-oncofair-codesystem-DOSEMAXC\"> </a></td><td>Dose maximale cumulée</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/siph-paramposoconditionnelle-oncofair-codesystem"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "SIPhParamPosoConditionnelleOncoFAIRCodeSystem"] ; # 
+  fhir:title [ fhir:v "Paremètres posologie conditionnelle Code System"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2025-01-20T17:43:54+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://ltsi.univ-rennes.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Code system pour l'attribut ParamPosoConditionnelle"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "DELAIMIN" ] ;
+     fhir:display [ fhir:v "Délai minimal entre deux prises ou injections" ]
+  ] [
+     fhir:code [ fhir:v "DOSEMAXP" ] ;
+     fhir:display [ fhir:v "Dose maximale par prise" ]
+  ] [
+     fhir:code [ fhir:v "DOSEMAXJ" ] ;
+     fhir:display [ fhir:v "Dose maximale par 24h" ]
+  ] [
+     fhir:code [ fhir:v "DEBITMAX" ] ;
+     fhir:display [ fhir:v "Débit maximal" ]
+  ] [
+     fhir:code [ fhir:v "DUREEMIN" ] ;
+     fhir:display [ fhir:v "Durée d'injection minimale" ]
+  ] [
+     fhir:code [ fhir:v "DUREEMAX" ] ;
+     fhir:display [ fhir:v "Durée d'injection maximale" ]
+  ] [
+     fhir:code [ fhir:v "DOSEMAXC" ] ;
+     fhir:display [ fhir:v "Dose maximale cumulée" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

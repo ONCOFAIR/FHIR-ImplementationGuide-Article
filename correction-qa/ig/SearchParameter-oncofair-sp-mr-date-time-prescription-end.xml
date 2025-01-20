@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="oncofair-sp-mr-date-time-prescription-end"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: SearchParameter oncofair-sp-mr-date-time-prescription-end</b></p><a name="oncofair-sp-mr-date-time-prescription-end"> </a><a name="hconcofair-sp-mr-date-time-prescription-end"> </a><a name="oncofair-sp-mr-date-time-prescription-end-en-US"> </a><h2>OncoFAIRSPMRDateTimePrescriptionEnd</h2><p>Parameter <code>mr-date-time-prescription-end</code>:<code>date</code></p><div><p>Search for the the date/time prescription end</p>
+</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R5/medicationrequest.html">MedicationRequest</a></td></tr><tr><td>Expression</td><td><code>MedicationRequest.effectiveDosePeriod.end</code></td></tr><tr><td>Processing Mode</td><td>Normal</td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: The parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: The parameter may have multiple values (separated by comma) where at least one must be true</li></ul></td></tr><tr><td>Comparators</td><td>Allowed: eq, ne, gt, lt, ge, le, sa, eb, ap</td></tr></table></div>
+  </text>
+  <url value="http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-date-time-prescription-end"/>
+  <version value="0.1.0"/>
+  <name value="OncoFAIRSPMRDateTimePrescriptionEnd"/>
+  <status value="active"/>
+  <date value="2025-01-20T17:43:54+00:00"/>
+  <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
+  <contact>
+    <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://ltsi.univ-rennes.fr"/>
+    </telecom>
+  </contact>
+  <description value="Search for the the date/time prescription end"/>
+  <code value="mr-date-time-prescription-end"/>
+  <base value="MedicationRequest"/>
+  <type value="date"/>
+  <expression value="MedicationRequest.effectiveDosePeriod.end"/>
+  <processingMode value="normal"/>
+  <multipleOr value="true"/>
+  <multipleAnd value="true"/>
+  <comparator value="eq"/>
+  <comparator value="ne"/>
+  <comparator value="gt"/>
+  <comparator value="lt"/>
+  <comparator value="ge"/>
+  <comparator value="le"/>
+  <comparator value="sa"/>
+  <comparator value="eb"/>
+  <comparator value="ap"/>
+</SearchParameter>
