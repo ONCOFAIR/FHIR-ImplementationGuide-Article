@@ -1,7 +1,7 @@
 OncoFAIR : Validation Results
 =========================================
 
-err = 7, warn = 187, info = 54
+err = 6, warn = 187, info = 54
 $--
 Generated $--. FHIR version $-- for ltsi.fhir.oncofair#$-- (canonical = http://ltsi.univ-rennes.fr)
  Build Errors : 0 / 3 / 0
@@ -43,7 +43,7 @@ Generated $--. FHIR version $-- for ltsi.fhir.oncofair#$-- (canonical = http://l
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/Medication-ExampleOncoFAIRMedication : 0 / 0 / 2
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/Medication-OncoFAIRMedication-fluoro-uracile : 0 / 0 / 2
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/Medication-OncoFAIRMedication-oxaliplatine : 0 / 0 / 2
- /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/Medication-OncoFAIRMedication-vehicule : 1 / 0 / 2
+ /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/Medication-OncoFAIRMedication-vehicule : 0 / 0 / 2
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationAdministration-ExampleOncoFAIRMedicationAdministrationComponent : 0 / 0 / 3
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationAdministration-ExampleOncoFAIRMedicationAdministrationElement : 0 / 0 / 2
  /home/runner/work/FHIR-ImplementationGuide-Article/FHIR-ImplementationGuide-Article/igSource/fsh-generated/resources/MedicationAdministration-ExampleOncoFAIRMedicationAdministrationReport : 0 / 0 / 2
@@ -245,7 +245,6 @@ INFORMATION: Medication/OncoFAIRMedication-fluoro-uracile: Medication.extension[
 INFORMATION: Medication/OncoFAIRMedication-oxaliplatine: Medication.extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-typecomposant-oncofair-codesystem|0.1.0
 == fsh-generated/resources/Medication-OncoFAIRMedication-vehicule.json ==
 INFORMATION: Medication/OncoFAIRMedication-vehicule: Medication.extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-typecomposant-oncofair-codesystem|0.1.0
-ERROR: Medication/OncoFAIRMedication-vehicule: Medication.code.coding[0].code: Unknown code '5000411000001105' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20240801'
 == fsh-generated/resources/MedicationAdministration-ExampleOncoFAIRMedicationAdministrationComponent.json ==
 INFORMATION: MedicationAdministration/ExampleOncoFAIRMedicationAdministrationComponent: MedicationAdministration.extension[3].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/siph-statutcomposantadm-oncofair-codesystem|0.1.0
 INFORMATION: MedicationAdministration/ExampleOncoFAIRMedicationAdministrationComponent: MedicationAdministration.medication.concept: Reference to experimental CodeSystem http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem|0.1.0

@@ -17,7 +17,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication OncoFAIRMedication-vehicule</b></p><a name=\"OncoFAIRMedication-vehicule\"> </a><a name=\"hcOncoFAIRMedication-vehicule\"> </a><a name=\"OncoFAIRMedication-vehicule-en-US\"> </a><p><b>OncoFAIRMedicationType</b>: <span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/siph-typecomposant-oncofair-codesystem PRAC}\">principe actif</span></p><p><b>identifier</b>: medication-folfox-vehicle</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 5000411000001105}\">Sodium chloride 0.9% solution for injection 2litre bags</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication OncoFAIRMedication-vehicule</b></p><a name=\"OncoFAIRMedication-vehicule\"> </a><a name=\"hcOncoFAIRMedication-vehicule\"> </a><a name=\"OncoFAIRMedication-vehicule-en-US\"> </a><p><b>OncoFAIRMedicationType</b>: <span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/siph-typecomposant-oncofair-codesystem PRAC}\">principe actif</span></p><p><b>identifier</b>: medication-folfox-vehicle</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 387390002}\">Sodium chloride</span></p></div>"
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication-type"^^xsd:anyURI ] ;
@@ -35,10 +35,10 @@
   ] ) ; # 
   fhir:code [
      fhir:coding ( [
-       a sct:5000411000001105 ;
+       a sct:387390002 ;
        fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "5000411000001105" ] ;
-       fhir:display [ fhir:v "Sodium chloride 0.9% solution for injection 2litre bags" ]
+       fhir:code [ fhir:v "387390002" ] ;
+       fhir:display [ fhir:v "Sodium chloride" ]
      ] )
   ] . # 
 
