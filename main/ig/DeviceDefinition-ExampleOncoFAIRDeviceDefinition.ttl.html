@@ -1,9 +1,11 @@
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Example OncoFAIR MedicationRequest Element - OncoFAIR v0.1.0</title>
+    <title>Example OncoFAIR Device Definiton - TTL Representation - OncoFAIR v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +43,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"5.136"}
-    h3,h4,h5,h6{--heading-prefix:"5.136"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.129"}
+    h3,h4,h5,h6{--heading-prefix:"5.129"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -119,7 +121,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Example OncoFAIR MedicationRequest Element</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Example OncoFAIR Device Definiton</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -131,10 +133,9 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">OncoFAIR - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://ltsi.univ-rennes.fr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<div style="counter-reset: section 9" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">OncoFAIR - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://ltsi.univ-rennes.fr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
-  
 
 
 
@@ -145,29 +146,29 @@
 
 <ul class="nav nav-tabs">
 
-  <li class="active">
-    <a href="#">Narrative Content</a>
+  <li>
+    <a href="DeviceDefinition-ExampleOncoFAIRDeviceDefinition.html">Narrative Content</a>
   </li>
 
 
 
   
     <li>
-      <a href="MedicationRequest-Element2.xml.html">XML</a>
+      <a href="DeviceDefinition-ExampleOncoFAIRDeviceDefinition.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="MedicationRequest-Element2.json.html">JSON</a>
+      <a href="DeviceDefinition-ExampleOncoFAIRDeviceDefinition.json.html">JSON</a>
     </li>
   
 
 
   
-    <li>
-      <a href="MedicationRequest-Element2.ttl.html">TTL</a>
+    <li class="active">
+      <a href="#">TTL</a>
     </li>
   
 
@@ -176,22 +177,41 @@
 </ul>
 
 
-  <a name="root"> </a>
+<a name="root"> </a>
 
 
-  <h2 id="root">Example MedicationRequest: Example OncoFAIR MedicationRequest Element</h2>
+<h2 id="root">: Example OncoFAIR Device Definiton - TTL Representation</h2>
 
 
-
+<p><a href="DeviceDefinition-ExampleOncoFAIRDeviceDefinition.ttl" no-download="true">Raw ttl</a> | <a href="DeviceDefinition-ExampleOncoFAIRDeviceDefinition.ttl" download>Download</a></p>
 
   <!-- insert intro if present -->
   
 
 
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MedicationRequest Element2</b></p><a name="Element2"> </a><a name="hcElement2"> </a><a name="Element2-en-US"> </a><p><b>OncoFAIRElementForm</b>: <span title="Codes:{http://snomed.info/sct 385055001}">Tablet</span></p><p><b>OncoFAIRMRElementSupply</b>: true</p><p><b>OncoFAIRMRElementRank</b>: 3</p><blockquote><p><b>OncoFAIRMRElementGoNogo</b></p><ul><li>GoNogoStatus: <span title="Codes:{http://ltsi.univ-rennes.fr/CodeSystem/siph-gonogo-oncofair-codesystem ATT}">En attente</span></li><li>GoNogoReasonWaiting: <span title="Codes:">XXX</span></li></ul></blockquote><blockquote><p><b>OncoFAIRPharmacistAdvice</b></p><ul><li>pharmacistValidation: <span title="Codes:{http://ltsi.univ-rennes.fr/CodeSystem/siph-statutvalidpharm-oncofair-codesystem VAL}">validée</span></li><li>pharmacistProposal: <span title="Codes:{http://ltsi.univ-rennes.fr/CodeSystem/siph-natureproppharm-oncofair-codesystem SUG}">Suggestion</span></li></ul></blockquote><p><b>identifier</b>: 654321</p><p><b>basedOn</b>: </p><ul><li><code>Prescription</code></li><li><a href="MedicationRequest-Element.html">MedicationRequest: extension = Tablet,true,3,,; identifier = 123456; groupIdentifier = 303030; status = active; intent = proposal; priority = urgent; note = Paracetamol 500mg Tablet,Prescribed for headaches,Administered after meals; effectiveDosePeriod = 2024-06-01 08:00:00+0000 --&gt; 2024-06-01 09:00:00+0000</a></li><li><a href="CarePlan-ExampleOncoFAIRCarePlan.html">CarePlan Example Prescribed Protocol</a></li></ul><p><b>groupIdentifier</b>: 121212</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>priority</b>: Urgent</p><h3>Medications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td><td><b>Reference</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem element}">element</span></td><td><a href="Medication-ExampleOncoFAIRMedication.html">Medication Ibuprofen</a></td></tr></table><p><b>subject</b>: <a href="Patient-ExampleOncoFAIRPatient.html">Anonymous Patient (no stated gender), DoB Unknown ( 123456789)</a></p><p><b>requester</b>: <a href="Practitioner-ExampleOncoFAIRPractitioner.html">Practitioner: identifier = 12345</a></p><h3>Devices</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Reference</b></td></tr><tr><td style="display: none">*</td><td><code>ExampleOncoFAIRDeviceDefinition</code></td></tr></table><p><b>note</b>: Paracetamol 500mg Tablet, Prescribed for headaches, Administered after meals</p><p><b>effectiveDosePeriod</b>: 2024-06-01 08:00:00+0000 --&gt; 2024-06-01 09:00:00+0000</p><blockquote><p><b>dosageInstruction</b></p><blockquote><p><b>id</b></p>element</blockquote><p><b>text</b>: Description of the dosage</p><p><b>additionalInstruction</b>: <span title="Codes:{http://snomed.info/sct 311501008}">Half to one hour before food</span></p><p><b>timing</b>: 10min , before breakfast, Once</p><p><b>site</b>: <span title="Codes:{http://snomed.info/sct 49928004}">Throat</span></p><p><b>route</b>: <span title="Codes:{http://snomed.info/sct 26643006}">Oral route</span></p><p><b>method</b>: <span title="Codes:{http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem MED}">Médicament</span></p></blockquote><blockquote><p><b>dosageInstruction</b></p><blockquote><p><b>id</b></p>posology</blockquote><p><b>timing</b>: Duration 1?? , 2</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td><td><b>Rate[x]</b></td></tr><tr><td style="display: none">*</td><td>250 mg</td><td>50 mg/h</td></tr></table></blockquote></div>
+  <pre class="rdf" style="white-space: pre; overflow: hidden"><code class="language-turtle">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
-  
+# - resource -------------------------------------------------------------------
+
+ a fhir:DeviceDefinition ;
+  <a href="http://hl7.org/fhir/R5/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R5/devicedefinition.html#DeviceDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ExampleOncoFAIRDeviceDefinition&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/devicedefinition.html#DeviceDefinition.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: DeviceDefinition ExampleOncoFAIRDeviceDefinition&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ExampleOncoFAIRDeviceDefinition\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcExampleOncoFAIRDeviceDefinition\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;ExampleOncoFAIRDeviceDefinition-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: D05&lt;/p&gt;&lt;/div&gt;&quot;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R5/devicedefinition.html#DeviceDefinition.identifier">fhir:identifier</a> ( [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;D05&quot; ]
+  ] ) . # 
+
+</code></pre>
+
+
 
   <!-- insert notes if present -->
   
@@ -214,7 +234,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Jan 21, 2025 09:48+0000">2025-01-21</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Jan 21, 2025 10:26+0000">2025-01-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

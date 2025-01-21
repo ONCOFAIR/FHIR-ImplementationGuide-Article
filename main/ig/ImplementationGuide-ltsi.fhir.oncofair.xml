@@ -11,7 +11,7 @@
   <name value="OncoFAIR"/>
   <title value="OncoFAIR"/>
   <status value="draft"/>
-  <date value="2025-01-21T09:48:34+00:00"/>
+  <date value="2025-01-21T10:26:00+00:00"/>
   <publisher value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
   <contact>
     <name value="DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"/>
@@ -201,6 +201,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DeviceDefinition"/>
+      </extension>
+      <reference>
+        <reference value="DeviceDefinition/ExampleOncoFAIRDeviceDefinition"/>
+      </reference>
+      <name value="Example OncoFAIR Device Definiton"/>
+      <description value="An example instance of an OncoFAIR Device Definition"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Encounter"/>
       </extension>
       <reference>
@@ -288,12 +299,12 @@
         <valueString value="MedicationRequest"/>
       </extension>
       <reference>
-        <reference value="MedicationRequest/Element2"/>
+        <reference value="MedicationRequest/Prescription"/>
       </reference>
-      <name value="Example OncoFAIR MedicationRequest Element"/>
-      <description value="Example instance of OncoFAIRMedicationRequestElement"/>
+      <name value="Example OncoFAIR MedicationRequest Prescription"/>
+      <description value="Example instance of OncoFAIRMedicationRequestPrescription"/>
       <isExample value="true"/>
-      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element"/>
+      <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

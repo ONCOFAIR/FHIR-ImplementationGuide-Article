@@ -10,7 +10,7 @@
   "name" : "OncoFAIR",
   "title" : "OncoFAIR",
   "status" : "draft",
-  "date" : "2025-01-21T09:48:34+00:00",
+  "date" : "2025-01-21T10:26:00+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -220,6 +220,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DeviceDefinition"
+      }],
+      "reference" : {
+        "reference" : "DeviceDefinition/ExampleOncoFAIRDeviceDefinition"
+      },
+      "name" : "Example OncoFAIR Device Definiton",
+      "description" : "An example instance of an OncoFAIR Device Definition",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Encounter"
       }],
       "reference" : {
@@ -314,12 +326,12 @@
         "valueString" : "MedicationRequest"
       }],
       "reference" : {
-        "reference" : "MedicationRequest/Element2"
+        "reference" : "MedicationRequest/Prescription"
       },
-      "name" : "Example OncoFAIR MedicationRequest Element",
-      "description" : "Example instance of OncoFAIRMedicationRequestElement",
+      "name" : "Example OncoFAIR MedicationRequest Prescription",
+      "description" : "Example instance of OncoFAIRMedicationRequestPrescription",
       "isExample" : true,
-      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element"]
+      "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription"]
     },
     {
       "extension" : [{
