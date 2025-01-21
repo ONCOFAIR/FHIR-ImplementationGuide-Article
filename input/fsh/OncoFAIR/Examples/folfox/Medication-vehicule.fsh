@@ -7,8 +7,8 @@ Usage: #example
 * identifier.value = "medication-folfox-vehicle"
 
 * code.coding[0].system = "http://snomed.info/sct"
-* code.coding[0].code = #5000411000001105
-* code.coding[0].display = "Sodium chloride 0.9% solution for injection 2litre bags"
+* code.coding[0].code = #387390002  
+* code.coding[0].display = "Sodium chloride"
 
 * extension[oncofair-medication-type].valueCodeableConcept.coding.system[0] = "http://ltsi.univ-rennes.fr/CodeSystem/siph-typecomposant-oncofair-codesystem"
 * extension[oncofair-medication-type].valueCodeableConcept.coding.code[0] = #PRAC 
