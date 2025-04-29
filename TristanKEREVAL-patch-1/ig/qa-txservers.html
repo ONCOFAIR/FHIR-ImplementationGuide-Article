@@ -11,7 +11,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for OncoFAIR</h1>
- <p>Generated Wed Mar 27 10:50:16 UTC 2024, FHIR version 5.0.0 for ltsi.fhir.oncofair#0.1.0 (canonical = <a href="http://ltsi.univ-rennes.fr">http://ltsi.univ-rennes.fr</a> (<a href="http://ltsi.univ-rennes.fr/history.html">history</a>))</p>
+ <p>Generated Tue Apr 29 08:34:45 UTC 2025, FHIR version 5.0.0 for ltsi.fhir.oncofair#0.1.0 (canonical = <a href="http://ltsi.univ-rennes.fr">http://ltsi.univ-rennes.fr</a> (<a href="http://ltsi.univ-rennes.fr/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -19,16 +19,751 @@
     <b>x-system-cache-id</b>
 :     <code>dc8fd4bc-091a-424a-8a3b-6198ef146891</code>
   </li>
+  <li>
+    <b>displayLanguage</b>
+:     <code>en-US</code>
+  </li>
 </ul>
 <h2>Tx Manager report for 'http://tx.fhir.org/tx-reg'</h2>
-<ul>
-  <li>http://hl7.org/fhir/ValueSet/units-of-time|5.0.0 uses the system [http://unitsofmeasure.org] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
-  <li>http://hl7.org/fhir/ValueSet/units-of-time|5.0.0 uses the system [http://unitsofmeasure.org] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
-  <li>null uses the system [http://hl7.org/fhir/ValueSet/plan-definition-type] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
-  <li>http://ltsi.univ-rennes.fr/ValueSet/vsPrescriptionCategory|0.1.0 includes multiple systems [http://hl7.org/fhir/ValueSet/plan-definition-type, http://ltsi.univ-rennes.fr/CodeSystem/CSPrescriptionCategory] best handled by multiple servers: [auth = , candidates=, auth = , candidates=]. Using master @ 'http://tx.fhir.org/r4'</li>
-</ul>
-<h2>Primary Server: http://tx.fhir.org/r4</h2>
-<p>Use Count: 4. Code Systems used: </p>
+<p>
+  <b>Decisions</b>
+</p>
+<table class="grid">
+  <tr>
+    <td>
+      <b>Message</b>
+    </td>
+    <td>
+      <b>Server</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Systems</b>
+    </td>
+    <td>
+      <b>Choices</b>
+    </td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/icd-o-3</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/icd-o-3</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/icd-o-3</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/icd-o-3</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td></td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>http://ltsi.univ-rennes.fr/ValueSet/Laterality-inc-0</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td></td>
+    <td>http://terminology.hl7.org/CodeSystem/icd-o-3</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>http://ltsi.univ-rennes.fr/ValueSet/Morphology-inc-0</td>
+    <td>http://terminology.hl7.org/CodeSystem/icd-o-3</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td></td>
+    <td>http://terminology.hl7.org/CodeSystem/icd-o-3</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>http://ltsi.univ-rennes.fr/ValueSet/Topography-inc-0</td>
+    <td>http://terminology.hl7.org/CodeSystem/icd-o-3</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td></td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>http://ltsi.univ-rennes.fr/ValueSet/TreatmentType-inc-0</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td></td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>http://ltsi.univ-rennes.fr/ValueSet/TumorPathologyEventType-inc-0</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/icd-o-3</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/icd-o-3</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/icd-o-3</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/icd-o-3</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/icd-o-3</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/icd-o-3</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/restful-security-service</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/restful-security-service</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>http://ltsi.univ-rennes.fr/ValueSet/Laterality--0|0.1.0</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>http://ltsi.univ-rennes.fr/ValueSet/TumorPathologyEventType--0|0.1.0</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/icd-o-3</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/icd-o-3</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>http://ltsi.univ-rennes.fr/ValueSet/Morphology--0|0.1.0</td>
+    <td>http://terminology.hl7.org/CodeSystem/icd-o-3</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>http://ltsi.univ-rennes.fr/ValueSet/Laterality--0|0.1.0</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>http://ltsi.univ-rennes.fr/ValueSet/TumorPathologyEventType--0|0.1.0</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/icd-o-3</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/icd-o-3</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>http://ltsi.univ-rennes.fr/ValueSet/Morphology--0|0.1.0</td>
+    <td>http://terminology.hl7.org/CodeSystem/icd-o-3</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://unitsofmeasure.org</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>http://hl7.org/fhir/ValueSet/units-of-time|5.0.0</td>
+    <td>http://unitsofmeasure.org</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://unitsofmeasure.org</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>http://hl7.org/fhir/ValueSet/units-of-time|5.0.0</td>
+    <td>http://unitsofmeasure.org</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://unitsofmeasure.org</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>http://hl7.org/fhir/ValueSet/units-of-time|5.0.0</td>
+    <td>http://unitsofmeasure.org</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td></td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>http://ltsi.univ-rennes.fr/ValueSet/TumorPathologyEventType|0.1.0</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td></td>
+    <td>http://terminology.hl7.org/CodeSystem/icd-o-3</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>http://ltsi.univ-rennes.fr/ValueSet/Topography|0.1.0</td>
+    <td>http://terminology.hl7.org/CodeSystem/icd-o-3</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>http://ltsi.univ-rennes.fr/ValueSet/Morphology|0.1.0</td>
+    <td>http://terminology.hl7.org/CodeSystem/icd-o-3</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td></td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td></td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td></td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td></td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>http://ltsi.univ-rennes.fr/ValueSet/Laterality|0.1.0</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td></td>
+    <td>http://terminology.hl7.org/CodeSystem/icd-o-3</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>http://ltsi.univ-rennes.fr/ValueSet/Morphology|0.1.0</td>
+    <td>http://terminology.hl7.org/CodeSystem/icd-o-3</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td></td>
+    <td>http://terminology.hl7.org/CodeSystem/icd-o-3</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>http://ltsi.univ-rennes.fr/ValueSet/Topography|0.1.0</td>
+    <td>http://terminology.hl7.org/CodeSystem/icd-o-3</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td></td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>http://ltsi.univ-rennes.fr/ValueSet/TreatmentType|0.1.0</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td></td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>http://ltsi.univ-rennes.fr/ValueSet/TumorPathologyEventType|0.1.0</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>auth = , candidates=</td>
+  </tr>
+</table>
+<h2>Primary Server: http://tx.fhir.org/r5</h2>
+<a href="http://tx.fhir.org/r5"></a>
+<p>Use Count: 77. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -45,27 +780,33 @@
     </th>
   </tr>
   <tr>
-    <td>http://hl7.org/fhir/ValueSet/plan-definition-type</td>
-    <td>2</td>
+    <td>http://terminology.hl7.org/CodeSystem/icd-o-3</td>
+    <td>11</td>
+    <td>9</td>
+    <td>
+      <a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd-o-3.html">International Classification of Diseases for Oncology, version 3.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>http://terminology.hl7.org/CodeSystem/restful-security-service</td>
     <td>0</td>
+    <td>1</td>
     <td></td>
   </tr>
   <tr>
-    <td>http://ltsi.univ-rennes.fr/CodeSystem/CSPrescriptionCategory</td>
-    <td>1</td>
-    <td>0</td>
+    <td>http://terminology.hl7.org/CodeSystem/umls</td>
+    <td>14</td>
+    <td>24</td>
     <td>
-      <a href="CodeSystem-CSPrescriptionCategory.html">Prescription category</a>
-    </td>
-  </tr>
-  <tr>
-    <td>http://unitsofmeasure.org</td>
-    <td>0</td>
-    <td>2</td>
-    <td>
-      <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ucum.html">Unified Code for Units of Measure (UCUM)</a>
+      <a href="http://terminology.hl7.org/6.2.0/CodeSystem-umls.html">Unified Medical Language System</a>
     </td>
   </tr>
 </table>
+<p>ValueSets fetched:</p>
+<ul>
+  <li>
+    <a href="http://tx.fhir.org/r5/ValueSet/dicom-cid-402-AuditActiveParticipantRoleIDCode">http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_402.html</a>
+  </li>
+</ul>
 </body>
 </html>

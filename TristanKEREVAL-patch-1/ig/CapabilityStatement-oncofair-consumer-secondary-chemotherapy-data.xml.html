@@ -1,0 +1,841 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>OncoFAIR Consumer secondary chemotherapy data - XML Representation - OncoFAIR v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"5.1"}
+    h3,h4,h5,h6{--heading-prefix:"5.1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">OncoFAIR</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="mapping.html">Mapping</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Compliance resources</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Description of flows
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="feed_flow.html">Flow 01 - Using queries to populate an HDW with chemotherapy data</a>
+      </li>
+      <li>
+        <a href="feasibility_study_research_flow.html">Flow 02 - Request chemotherapy data for a feasibility study</a>
+      </li>
+      <li>
+        <a href="multicentric_study_research_flow.html">Flow 03 - Request chemotherapy data for a multicentric study</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="test.html">Testing</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>OncoFAIR Consumer secondary chemotherapy data</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 7" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">OncoFAIR - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://ltsi.univ-rennes.fr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CapabilityStatement-oncofair-consumer-secondary-chemotherapy-data.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CapabilityStatement-oncofair-consumer-secondary-chemotherapy-data.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CapabilityStatement-oncofair-consumer-secondary-chemotherapy-data.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: OncoFAIR Consumer secondary chemotherapy data - XML Representation</h2>
+
+  <table class="colsd">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+            as of 2024-06-19
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CapabilityStatement-oncofair-consumer-secondary-chemotherapy-data.xml" no-download="true">Raw xml</a> | <a href="CapabilityStatement-oncofair-consumer-secondary-chemotherapy-data.xml" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="xml" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">
+&lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement">CapabilityStatement</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;oncofair-consumer-secondary-chemotherapy-data&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;extensions&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: CapabilityStatement oncofair-consumer-secondary-chemotherapy-data&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;oncofair-consumer-secondary-chemotherapy-data&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hconcofair-consumer-secondary-chemotherapy-data&quot;&gt; &lt;/a&gt;&lt;a name=&quot;oncofair-consumer-secondary-chemotherapy-data-en-US&quot;&gt; &lt;/a&gt;&lt;h2 id=&quot;title&quot;&gt;OncoFAIR Consumer secondary chemotherapy data&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Implementation Guide Version: 0.1.0 &lt;/li&gt;&lt;li&gt;FHIR Version: 5.0.0 &lt;/li&gt;&lt;li&gt;Supported Formats: &lt;code&gt;xml&lt;/code&gt;, &lt;code&gt;json&lt;/code&gt;&lt;/li&gt;&lt;li&gt;Supported Patch Formats: &lt;/li&gt;&lt;li&gt;Published on: 2024-06-19 15:15:00+0100 &lt;/li&gt;&lt;li&gt;Published by: DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL &lt;/li&gt;&lt;/ul&gt;&lt;blockquote class=&quot;impl-note&quot;&gt;&lt;p&gt;&lt;strong&gt;Note to Implementers: FHIR Capabilities&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Any FHIR capability may be 'allowed' by the system unless explicitly marked as 'SHALL NOT'. A few items are marked as MAY in the Implementation Guide to highlight their potential relevance to the use case.&lt;/p&gt;&lt;/blockquote&gt;&lt;h2 id=&quot;rest&quot;&gt;FHIR RESTful Capabilities&lt;/h2&gt;&lt;div class=&quot;panel panel-default&quot;&gt;&lt;div class=&quot;panel-heading&quot;&gt;&lt;h3 id=&quot;mode1&quot; class=&quot;panel-title&quot;&gt;Mode: &lt;code&gt;client&lt;/code&gt;&lt;/h3&gt;&lt;/div&gt;&lt;div class=&quot;panel-body&quot;&gt;&lt;div&gt;&lt;p&gt;Search and consultation of aggregate data on chemotherapy&lt;/p&gt;
+&lt;/div&gt;&lt;div class=&quot;lead&quot;&gt;&lt;em&gt;Security&lt;/em&gt;&lt;/div&gt;&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;col-lg-6&quot;&gt;Enable CORS: no&lt;/div&gt;&lt;div class=&quot;col-lg-6&quot;&gt;Security services supported: &lt;code&gt;OAuth&lt;/code&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;lead&quot;&gt;&lt;em&gt;Summary of System-wide Interactions&lt;/em&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;h3 id=&quot;resourcesCap1&quot;&gt;Capabilities by Resource/Profile&lt;/h3&gt;&lt;h4 id=&quot;resourcesSummary1&quot;&gt;Summary&lt;/h4&gt;&lt;p&gt;The summary table lists the resources that are part of this configuration, and for each resource it lists:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The relevant profiles (if any)&lt;/li&gt;&lt;li&gt;The interactions supported by each resource (&lt;b&gt;&lt;span class=&quot;bg-info&quot;&gt;R&lt;/span&gt;&lt;/b&gt;ead, &lt;b&gt;&lt;span class=&quot;bg-info&quot;&gt;S&lt;/span&gt;&lt;/b&gt;earch, &lt;b&gt;&lt;span class=&quot;bg-info&quot;&gt;U&lt;/span&gt;&lt;/b&gt;pdate, and &lt;b&gt;&lt;span class=&quot;bg-info&quot;&gt;C&lt;/span&gt;&lt;/b&gt;reate, are always shown, while &lt;b&gt;&lt;span class=&quot;bg-info&quot;&gt;VR&lt;/span&gt;&lt;/b&gt;ead, &lt;b&gt;&lt;span class=&quot;bg-info&quot;&gt;P&lt;/span&gt;&lt;/b&gt;atch, &lt;b&gt;&lt;span class=&quot;bg-info&quot;&gt;D&lt;/span&gt;&lt;/b&gt;elete, &lt;b&gt;&lt;span class=&quot;bg-info&quot;&gt;H&lt;/span&gt;&lt;/b&gt;istory on &lt;b&gt;&lt;span class=&quot;bg-info&quot;&gt;I&lt;/span&gt;&lt;/b&gt;nstance, or &lt;b&gt;&lt;span class=&quot;bg-info&quot;&gt;H&lt;/span&gt;&lt;/b&gt;istory on &lt;b&gt;&lt;span class=&quot;bg-info&quot;&gt;T&lt;/span&gt;&lt;/b&gt;ype are only present if at least one of the resources has support for them.&lt;/li&gt;&lt;li&gt;&lt;span&gt;The required, recommended, and some optional search parameters (if any). &lt;/span&gt;&lt;/li&gt;&lt;li&gt;The linked resources enabled for &lt;code&gt;_include&lt;/code&gt;&lt;/li&gt;&lt;li&gt;The other resources enabled for &lt;code&gt;_revinclude&lt;/code&gt;&lt;/li&gt;&lt;li&gt;The operations on the resource (if any)&lt;/li&gt;&lt;/ul&gt;&lt;div class=&quot;table-responsive&quot;&gt;&lt;table class=&quot;table table-condensed table-hover&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;b&gt;Resource Type&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/th&gt;&lt;th class=&quot;text-center&quot;&gt;&lt;b title=&quot;GET a resource (read interaction)&quot;&gt;R&lt;/b&gt;&lt;/th&gt;&lt;th class=&quot;text-center&quot;&gt;&lt;b title=&quot;GET all set of resources of the type (search interaction)&quot;&gt;S&lt;/b&gt;&lt;/th&gt;&lt;th class=&quot;text-center&quot;&gt;&lt;b title=&quot;PUT a new resource version (update interaction)&quot;&gt;U&lt;/b&gt;&lt;/th&gt;&lt;th class=&quot;text-center&quot;&gt;&lt;b title=&quot;POST a new resource (create interaction)&quot;&gt;C&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=&quot;Required and recommended search parameters&quot;&gt;Searches&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;code&gt;&lt;b&gt;_include&lt;/b&gt;&lt;/code&gt;&lt;/th&gt;&lt;th&gt;&lt;code&gt;&lt;b&gt;_revinclude&lt;/b&gt;&lt;/code&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Operations&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;#Patient1-1&quot;&gt;Patient&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;StructureDefinition-oncofair-patient.html&quot;&gt;http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-patient&lt;/a&gt;&lt;/td&gt;&lt;td class=&quot;text-center&quot;&gt;y&lt;/td&gt;&lt;td class=&quot;text-center&quot;&gt;y&lt;/td&gt;&lt;td class=&quot;text-center&quot;&gt;&lt;/td&gt;&lt;td class=&quot;text-center&quot;&gt;&lt;/td&gt;&lt;td&gt;identifier&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;code&gt;Encounter:subject&lt;/code&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;#Encounter1-2&quot;&gt;Encounter&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;StructureDefinition-oncofair-encounter.html&quot;&gt;http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-encounter&lt;/a&gt;&lt;/td&gt;&lt;td class=&quot;text-center&quot;&gt;y&lt;/td&gt;&lt;td class=&quot;text-center&quot;&gt;y&lt;/td&gt;&lt;td class=&quot;text-center&quot;&gt;&lt;/td&gt;&lt;td class=&quot;text-center&quot;&gt;&lt;/td&gt;&lt;td&gt;identifier&lt;/td&gt;&lt;td&gt;&lt;code&gt;Encounter:subject&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;MedicationAdministration:encounter&lt;/code&gt;, &lt;code&gt;MedicationRequest:encounter&lt;/code&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;#Observation1-3&quot;&gt;Observation&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;StructureDefinition-oncofair-observation.html&quot;&gt;http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-observation&lt;/a&gt;&lt;/td&gt;&lt;td class=&quot;text-center&quot;&gt;y&lt;/td&gt;&lt;td class=&quot;text-center&quot;&gt;y&lt;/td&gt;&lt;td class=&quot;text-center&quot;&gt;&lt;/td&gt;&lt;td class=&quot;text-center&quot;&gt;&lt;/td&gt;&lt;td&gt;clinical-code, clinical-date&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;#Medication1-4&quot;&gt;Medication&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;StructureDefinition-oncofair-medication.html&quot;&gt;http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication&lt;/a&gt;&lt;/td&gt;&lt;td class=&quot;text-center&quot;&gt;y&lt;/td&gt;&lt;td class=&quot;text-center&quot;&gt;y&lt;/td&gt;&lt;td class=&quot;text-center&quot;&gt;&lt;/td&gt;&lt;td class=&quot;text-center&quot;&gt;&lt;/td&gt;&lt;td&gt;_filter, _has, _id, clinical-code, medication-type&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;code&gt;MedicationRequest:medication&lt;/code&gt;, &lt;code&gt;MedicationAdministration:medication&lt;/code&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;#MedicationRequest1-5&quot;&gt;MedicationRequest&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;StructureDefinition-oncofair-medicationrequest-prescription.html&quot;&gt;http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription&lt;/a&gt;&lt;br/&gt;&lt;em&gt;Additional supported profiles:&lt;/em&gt;&lt;br/&gt;  &lt;a href=&quot;StructureDefinition-oncofair-medicationrequest-element.html&quot;&gt;OncoFAIR MedicationRequest Element&lt;/a&gt;&lt;br/&gt;  &lt;a href=&quot;StructureDefinition-oncofair-medicationrequest-component.html&quot;&gt;OncoFAIR MedicationRequest Component&lt;/a&gt;&lt;/td&gt;&lt;td class=&quot;text-center&quot;&gt;y&lt;/td&gt;&lt;td class=&quot;text-center&quot;&gt;y&lt;/td&gt;&lt;td class=&quot;text-center&quot;&gt;&lt;/td&gt;&lt;td class=&quot;text-center&quot;&gt;&lt;/td&gt;&lt;td&gt;identifier, wording, indication, mr-prescription-validation-date, mr-type-elementprescription, element-form, status, element-route, element-site, combo-date, mr-date-time-prescription-start, mr-date-time-prescription-end, mr-element-gonogo-status, mr-element-gonogo-reasonwaiting, group-identifier, mr-element-frequency-posology, mr-element-duration-posology, mr-element-rate-posology, mr-element-quantity-posology, mr-prescribed-component-quantity, mr-component-substitution, mr-is-dosage-referent, mr-exempt-ltc, mr-component-solute&lt;/td&gt;&lt;td&gt;&lt;code&gt;MedicationRequest:encounter&lt;/code&gt;, &lt;code&gt;MedicationRequest:medication&lt;/code&gt;&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;#CarePlan1-6&quot;&gt;CarePlan&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;StructureDefinition-oncofair-careplan.html&quot;&gt;http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-careplan&lt;/a&gt;&lt;/td&gt;&lt;td class=&quot;text-center&quot;&gt;y&lt;/td&gt;&lt;td class=&quot;text-center&quot;&gt;y&lt;/td&gt;&lt;td class=&quot;text-center&quot;&gt;&lt;/td&gt;&lt;td class=&quot;text-center&quot;&gt;&lt;/td&gt;&lt;td&gt;identifier, cp-title, status, cp-date-time-reference, indication&lt;/td&gt;&lt;td&gt;&lt;code&gt;MedicationRequest:basedOn&lt;/code&gt;&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;#MedicationAdministration1-7&quot;&gt;MedicationAdministration&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;StructureDefinition-oncofair-medicationadministration-element.html&quot;&gt;http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationadministration-element&lt;/a&gt;&lt;br/&gt;&lt;em&gt;Additional supported profiles:&lt;/em&gt;&lt;br/&gt;  &lt;a href=&quot;StructureDefinition-oncofair-medicationadministration-component.html&quot;&gt;OncoFAIR MedicationAdministration Component&lt;/a&gt;&lt;br/&gt;  &lt;a href=&quot;StructureDefinition-oncofair-medicationadministration-report.html&quot;&gt;OncoFAIR MedicationAdministration Report&lt;/a&gt;&lt;/td&gt;&lt;td class=&quot;text-center&quot;&gt;y&lt;/td&gt;&lt;td class=&quot;text-center&quot;&gt;y&lt;/td&gt;&lt;td class=&quot;text-center&quot;&gt;&lt;/td&gt;&lt;td class=&quot;text-center&quot;&gt;&lt;/td&gt;&lt;td&gt;ma-method, ma-category, element-form, element-route, element-site, date, ma-comments, ma-planned-quantity, ma-prescribed-quantity, identifier, wording, performer&lt;/td&gt;&lt;td&gt;&lt;code&gt;MedicationAdministration:encounter&lt;/code&gt;, &lt;code&gt;MedicationAdministration:medication&lt;/code&gt;&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;hr/&gt;&lt;div class=&quot;panel panel-default&quot;&gt;&lt;div class=&quot;panel-heading&quot;&gt;&lt;h4 id=&quot;Patient1-1&quot; class=&quot;panel-title&quot;&gt;&lt;span style=&quot;float: right;&quot;&gt;Resource Conformance: supported &lt;/span&gt;Patient&lt;/h4&gt;&lt;/div&gt;&lt;div class=&quot;panel-body&quot;&gt;&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;col-lg-6&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Base System Profile&lt;/span&gt;&lt;br/&gt;&lt;a href=&quot;StructureDefinition-oncofair-patient.html&quot;&gt;OncoFAIR Patient&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;col-lg-3&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Profile Conformance&lt;/span&gt;&lt;br/&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;col-lg-3&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Reference Policy&lt;/span&gt;&lt;br/&gt;&lt;/div&gt;&lt;/div&gt;&lt;p/&gt;&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;col-lg-6&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Interaction summary&lt;/span&gt;&lt;br/&gt;&lt;ul&gt;&lt;li&gt;Supports &lt;code&gt;search-type&lt;/code&gt;, &lt;code&gt;read&lt;/code&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;p/&gt;&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;col-lg-7&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Search Parameters&lt;/span&gt;&lt;table class=&quot;table table-condensed table-hover&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter&lt;/th&gt;&lt;th&gt;Type&lt;/th&gt;&lt;th&gt;Documentation&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/patient.html#search&quot;&gt;identifier&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;token&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Identifier of the patient&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;div class=&quot;col-lg-5&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;panel panel-default&quot;&gt;&lt;div class=&quot;panel-heading&quot;&gt;&lt;h4 id=&quot;Encounter1-2&quot; class=&quot;panel-title&quot;&gt;&lt;span style=&quot;float: right;&quot;&gt;Resource Conformance: supported &lt;/span&gt;Encounter&lt;/h4&gt;&lt;/div&gt;&lt;div class=&quot;panel-body&quot;&gt;&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;col-lg-6&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Base System Profile&lt;/span&gt;&lt;br/&gt;&lt;a href=&quot;StructureDefinition-oncofair-encounter.html&quot;&gt;OncoFAIR Encounter&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;col-lg-3&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Profile Conformance&lt;/span&gt;&lt;br/&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;col-lg-3&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Reference Policy&lt;/span&gt;&lt;br/&gt;&lt;/div&gt;&lt;/div&gt;&lt;p/&gt;&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;col-lg-6&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Interaction summary&lt;/span&gt;&lt;br/&gt;&lt;ul&gt;&lt;li&gt;Supports &lt;code&gt;search-type&lt;/code&gt;, &lt;code&gt;read&lt;/code&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;p/&gt;&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;col-lg-7&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Search Parameters&lt;/span&gt;&lt;table class=&quot;table table-condensed table-hover&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter&lt;/th&gt;&lt;th&gt;Type&lt;/th&gt;&lt;th&gt;Documentation&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/encounter.html#search&quot;&gt;identifier&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;token&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Identifier of the patient's stay&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;div class=&quot;col-lg-5&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;panel panel-default&quot;&gt;&lt;div class=&quot;panel-heading&quot;&gt;&lt;h4 id=&quot;Observation1-3&quot; class=&quot;panel-title&quot;&gt;&lt;span style=&quot;float: right;&quot;&gt;Resource Conformance: supported &lt;/span&gt;Observation&lt;/h4&gt;&lt;/div&gt;&lt;div class=&quot;panel-body&quot;&gt;&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;col-lg-6&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Base System Profile&lt;/span&gt;&lt;br/&gt;&lt;a href=&quot;StructureDefinition-oncofair-observation.html&quot;&gt;OncoFAIR Observation&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;col-lg-3&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Profile Conformance&lt;/span&gt;&lt;br/&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;col-lg-3&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Reference Policy&lt;/span&gt;&lt;br/&gt;&lt;/div&gt;&lt;/div&gt;&lt;p/&gt;&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;col-lg-6&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Interaction summary&lt;/span&gt;&lt;br/&gt;&lt;ul&gt;&lt;li&gt;Supports &lt;code&gt;search-type&lt;/code&gt;, &lt;code&gt;read&lt;/code&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;p/&gt;&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;col-lg-7&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Search Parameters&lt;/span&gt;&lt;table class=&quot;table table-condensed table-hover&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter&lt;/th&gt;&lt;th&gt;Type&lt;/th&gt;&lt;th&gt;Documentation&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/observation.html#search&quot;&gt;clinical-code&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;token&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Nature of additional information representing by LOINC code&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/observation.html#search&quot;&gt;clinical-date&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;date&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Date and time of registration of the additional information&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;div class=&quot;col-lg-5&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;panel panel-default&quot;&gt;&lt;div class=&quot;panel-heading&quot;&gt;&lt;h4 id=&quot;Medication1-4&quot; class=&quot;panel-title&quot;&gt;&lt;span style=&quot;float: right;&quot;&gt;Resource Conformance: supported &lt;/span&gt;Medication&lt;/h4&gt;&lt;/div&gt;&lt;div class=&quot;panel-body&quot;&gt;&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;col-lg-6&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Base System Profile&lt;/span&gt;&lt;br/&gt;&lt;a href=&quot;StructureDefinition-oncofair-medication.html&quot;&gt;OncoFAIR Medication&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;col-lg-3&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Profile Conformance&lt;/span&gt;&lt;br/&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;col-lg-3&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Reference Policy&lt;/span&gt;&lt;br/&gt;&lt;/div&gt;&lt;/div&gt;&lt;p/&gt;&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;col-lg-6&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Interaction summary&lt;/span&gt;&lt;br/&gt;&lt;ul&gt;&lt;li&gt;Supports &lt;code&gt;search-type&lt;/code&gt;, &lt;code&gt;read&lt;/code&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;p/&gt;&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;col-lg-7&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Search Parameters&lt;/span&gt;&lt;table class=&quot;table table-condensed table-hover&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter&lt;/th&gt;&lt;th&gt;Type&lt;/th&gt;&lt;th&gt;Documentation&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/resource.html#search&quot;&gt;_filter&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;special&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Filter search parameter that supports a more sophisticated search grammar. See &lt;a href=&quot;https://hl7.org/fhir/search_filter.html&quot;&gt;documentation&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/resource.html#search&quot;&gt;_has&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;special&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Enables resources to be selected on the basis of the properties of the resources that refer to them (reverse chaining).&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/resource.html#search&quot;&gt;_id&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;token&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Logical resource identifier&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/medication.html#search&quot;&gt;clinical-code&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;token&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Identifies the prescribed component according to a nomenclature depending on the type&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-oncofair-sp-medication-type.html&quot;&gt;medication-type&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;token&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Specifies whether the component prescribed is a speciality, a common name or any other product (pharmacopoeia).&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;div class=&quot;col-lg-5&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;panel panel-default&quot;&gt;&lt;div class=&quot;panel-heading&quot;&gt;&lt;h4 id=&quot;MedicationRequest1-5&quot; class=&quot;panel-title&quot;&gt;&lt;span style=&quot;float: right;&quot;&gt;Resource Conformance: supported &lt;/span&gt;MedicationRequest&lt;/h4&gt;&lt;/div&gt;&lt;div class=&quot;panel-body&quot;&gt;&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;col-lg-6&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Base System Profile&lt;/span&gt;&lt;br/&gt;&lt;a href=&quot;StructureDefinition-oncofair-medicationrequest-prescription.html&quot;&gt;OncoFAIR MedicationRequest Prescription&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;col-lg-3&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Profile Conformance&lt;/span&gt;&lt;br/&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;col-lg-3&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Reference Policy&lt;/span&gt;&lt;br/&gt;&lt;/div&gt;&lt;/div&gt;&lt;p/&gt;&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;col-6&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Supported Profiles&lt;/span&gt;&lt;p&gt;&lt;a href=&quot;StructureDefinition-oncofair-medicationrequest-element.html&quot;&gt;OncoFAIR MedicationRequest Element&lt;/a&gt;&lt;br/&gt;&lt;a href=&quot;StructureDefinition-oncofair-medicationrequest-component.html&quot;&gt;OncoFAIR MedicationRequest Component&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;col-lg-6&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Interaction summary&lt;/span&gt;&lt;br/&gt;&lt;ul&gt;&lt;li&gt;Supports &lt;code&gt;search-type&lt;/code&gt;, &lt;code&gt;read&lt;/code&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;p/&gt;&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;col-lg-7&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Search Parameters&lt;/span&gt;&lt;table class=&quot;table table-condensed table-hover&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter&lt;/th&gt;&lt;th&gt;Type&lt;/th&gt;&lt;th&gt;Documentation&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/medicationrequest.html#search&quot;&gt;identifier&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;token&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Identifier&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-oncofair-sp-wording.html&quot;&gt;wording&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;string&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Wording of element/component&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-oncofair-sp-indication.html&quot;&gt;indication&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;string&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Indications concerning the prescription item and the component prescribed&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-oncofair-sp-mr-prescription-validation-date.html&quot;&gt;mr-prescription-validation-date&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;date&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Date and time at which the prescriber considered the prescription validated&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-oncofair-sp-mr-type-elementprescrption.html&quot;&gt;mr-type-elementprescription&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;token&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Type of prescription element&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-oncofair-sp-element-form.html&quot;&gt;element-form&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;token&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Pharmaceutical form of the prescription item&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/medicationrequest.html#search&quot;&gt;status&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;token&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Indicates the status of the protocol from the prescriber's point of view&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-oncofair-sp-element-route.html&quot;&gt;element-route&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;token&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Specifies the route of administration of the product&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-oncofair-sp-element-site.html&quot;&gt;element-site&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;token&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Specifies, where appropriate, the exact point on the body where the product is to be applied to the patient&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/medicationrequest.html#search&quot;&gt;combo-date&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;date&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Returns medication request to be administered on a specific date or within a date range&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-oncofair-sp-mr-date-time-prescription-start.html&quot;&gt;mr-date-time-prescription-start&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;date&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Effective start date and time of product prescription&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-oncofair-sp-mr-date-time-prescription-end.html&quot;&gt;mr-date-time-prescription-end&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;date&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Effective end date and time of product prescription&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-oncofair-sp-mr-element-gonogo-status.html&quot;&gt;mr-element-gonogo-status&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;token&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Communicates the conditional state of implementation of the prescription element according to a list of coded values&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-oncofair-sp-mr-element-gonogo-reasonwaiting.html&quot;&gt;mr-element-gonogo-reasonwaiting&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;token&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Describes the reason for the goNogo implementation status of the prescription element if the management option via the goNogo attribute is enabled&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/medicationrequest.html#search&quot;&gt;group-identifier&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;token&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Identifier common to all components of the same prescription&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-oncofair-sp-mr-element-frequency-posology.html&quot;&gt;mr-element-frequency-posology&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;number&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Indicates the recurrence of the dosage. By default, every day&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-oncofair-sp-mr-element-duration-posology.html&quot;&gt;mr-element-duration-posology&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;number&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Duration of administration&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-oncofair-sp-mr-element-rate-posology.html&quot;&gt;mr-element-rate-posology&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;quantity&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Rate of administration in the case of injection&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-oncofair-sp-mr-element-quantity-posology.html&quot;&gt;mr-element-quantity-posology&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;quantity&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Quantity of the prescription element in the dosage&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-oncofair-sp-mr-prescribed-component-quantity.html&quot;&gt;mr-prescribed-component-quantity&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;quantity&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Quantity of the component prescribed in the prescription element&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-oncofair-sp-mr-component-substitution.html&quot;&gt;mr-component-substitution&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;token&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;True if the component prescribed is declared non-substitutable in the prescription element&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-oncofair-sp-mr-is-dosage-referent.html&quot;&gt;mr-is-dosage-referent&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;token&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;True if the component prescribed is the component that refers to the quantity or flow rate expressed in the dosage element when these are gravimetric (for example, mg or mg/h).&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-oncofair-sp-mr-exempt-ltc.html&quot;&gt;mr-exempt-ltc&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;token&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Identifier of the ALD for which the component prescribed is prescribed for one of the reasons for which the patient benefits from an exemption under article L324-1 of the CSS.&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-oncofair-sp-mr-component-solute.html&quot;&gt;mr-component-solute&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;token&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;True if the component prescribed is solute in the prescription element&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;div class=&quot;col-lg-5&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;panel panel-default&quot;&gt;&lt;div class=&quot;panel-heading&quot;&gt;&lt;h4 id=&quot;CarePlan1-6&quot; class=&quot;panel-title&quot;&gt;&lt;span style=&quot;float: right;&quot;&gt;Resource Conformance: supported &lt;/span&gt;CarePlan&lt;/h4&gt;&lt;/div&gt;&lt;div class=&quot;panel-body&quot;&gt;&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;col-lg-6&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Base System Profile&lt;/span&gt;&lt;br/&gt;&lt;a href=&quot;StructureDefinition-oncofair-careplan.html&quot;&gt;OncoFAIR CarePlan&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;col-lg-3&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Profile Conformance&lt;/span&gt;&lt;br/&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;col-lg-3&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Reference Policy&lt;/span&gt;&lt;br/&gt;&lt;/div&gt;&lt;/div&gt;&lt;p/&gt;&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;col-lg-6&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Interaction summary&lt;/span&gt;&lt;br/&gt;&lt;ul&gt;&lt;li&gt;Supports &lt;code&gt;search-type&lt;/code&gt;, &lt;code&gt;read&lt;/code&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;p/&gt;&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;col-lg-7&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Search Parameters&lt;/span&gt;&lt;table class=&quot;table table-condensed table-hover&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter&lt;/th&gt;&lt;th&gt;Type&lt;/th&gt;&lt;th&gt;Documentation&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/careplan.html#search&quot;&gt;identifier&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;token&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Prescribed protocol identifier&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-oncofair-sp-cp-title.html&quot;&gt;cp-title&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;string&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Wording of the prescribed protocol&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/careplan.html#search&quot;&gt;status&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;token&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Indicates the status of the protocol from the prescriber's point of view&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-oncofair-sp-cp-date-time-reference.html&quot;&gt;cp-date-time-reference&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;date&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Reference date and time of this prescribed protocol&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-oncofair-sp-indication.html&quot;&gt;indication&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;string&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Indication concerning the prescribed protocol&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;div class=&quot;col-lg-5&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;panel panel-default&quot;&gt;&lt;div class=&quot;panel-heading&quot;&gt;&lt;h4 id=&quot;MedicationAdministration1-7&quot; class=&quot;panel-title&quot;&gt;&lt;span style=&quot;float: right;&quot;&gt;Resource Conformance: supported &lt;/span&gt;MedicationAdministration&lt;/h4&gt;&lt;/div&gt;&lt;div class=&quot;panel-body&quot;&gt;&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;col-lg-6&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Base System Profile&lt;/span&gt;&lt;br/&gt;&lt;a href=&quot;StructureDefinition-oncofair-medicationadministration-element.html&quot;&gt;OncoFAIR MedicationAdministration Element&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;col-lg-3&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Profile Conformance&lt;/span&gt;&lt;br/&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;col-lg-3&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Reference Policy&lt;/span&gt;&lt;br/&gt;&lt;/div&gt;&lt;/div&gt;&lt;p/&gt;&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;col-6&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Supported Profiles&lt;/span&gt;&lt;p&gt;&lt;a href=&quot;StructureDefinition-oncofair-medicationadministration-component.html&quot;&gt;OncoFAIR MedicationAdministration Component&lt;/a&gt;&lt;br/&gt;&lt;a href=&quot;StructureDefinition-oncofair-medicationadministration-report.html&quot;&gt;OncoFAIR MedicationAdministration Report&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;col-lg-6&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Interaction summary&lt;/span&gt;&lt;br/&gt;&lt;ul&gt;&lt;li&gt;Supports &lt;code&gt;search-type&lt;/code&gt;, &lt;code&gt;read&lt;/code&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;p/&gt;&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;col-lg-7&quot;&gt;&lt;span class=&quot;lead&quot;&gt;Search Parameters&lt;/span&gt;&lt;table class=&quot;table table-condensed table-hover&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter&lt;/th&gt;&lt;th&gt;Type&lt;/th&gt;&lt;th&gt;Documentation&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-oncofair-sp-ma-method.html&quot;&gt;ma-method&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;token&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Type of administration element&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-oncofair-sp-ma-category.html&quot;&gt;ma-category&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;token&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Code identifying the nature of the administration element&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-oncofair-sp-element-form.html&quot;&gt;element-form&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;token&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Pharmaceutical form of the administration item&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-oncofair-sp-element-route.html&quot;&gt;element-route&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;token&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Specifies the route of administration of the product&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-oncofair-sp-element-site.html&quot;&gt;element-site&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;token&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Specifies, where applicable, the exact point on the body where the product is to be applied to the patient. By default, the place of administration is that shown in the prescription element associated with the administration element&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/medicationadministration.html#search&quot;&gt;date&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;date&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Effective date and time for starting/ending administration of the administration element&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-oncofair-sp-ma-comments.html&quot;&gt;ma-comments&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;string&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Comments of component&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-oncofair-sp-ma-planned-quantity.html&quot;&gt;ma-planned-quantity&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;quantity&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Quantity of the component administered in the administration element that was intended to be administered to the patient&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-oncofair-sp-ma-prescribed-quantity.html&quot;&gt;ma-prescribed-quantity&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;quantity&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Quantity actually administered to the patient or planned to be administered&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/medicationadministration.html#search&quot;&gt;identifier&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;token&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Identifier&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-oncofair-sp-wording.html&quot;&gt;wording&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;string&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Wording of component/element of administration&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/medicationadministration.html#search&quot;&gt;performer&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;reference&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Identification of the person who planned, administered or monitored the administration of the medicines represented by the administration elements&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;div class=&quot;col-lg-5&quot;&gt; &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/text&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.url">url</a>
+       <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://ltsi.univ-rennes.fr/CapabilityStatement/oncofair-consumer-secondary-chemotherapy-data&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.version">version</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;0.1.0&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;OncoFAIRConsumerOfSecondaryChemotherapyData&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.title">title</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;OncoFAIR Consumer secondary chemotherapy data&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.experimental">experimental</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.date">date</a> <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">value</a>=&quot;2024-06-19T15:15:00+01:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.publisher">publisher</a>
+             <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.contact">contact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>
+          <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;https://ltsi.univ-rennes.fr&quot;/&gt;
+    &lt;/telecom&gt;
+  &lt;/contact&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.description">description</a>
+               <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;A structure or professional using chemotherapy data (complete or aggregated). These data may be used for a variety of purposes (pharmacovigilance, clinical studies, etc.). &quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.kind">kind</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;requirements&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.fhirVersion">fhirVersion</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;5.0.0&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.format">format</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;xml&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.format">format</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;json&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest">rest</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.mode">mode</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;client&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.documentation">documentation</a>
+                   <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Search and consultation of aggregate data on chemotherapy&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.security">security</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.security.cors">cors</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.security.service">service</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                  <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/restful-security-service&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;OAuth&quot;/&gt;
+        &lt;/coding&gt;
+      &lt;/service&gt;
+    &lt;/security&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;Patient&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.profile">profile</a>
+               <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-patient&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;search-type&quot;/&gt;
+      &lt;/interaction&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;read&quot;/&gt;
+      &lt;/interaction&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchRevInclude">searchRevInclude</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Encounter:subject&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;identifier&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/SearchParameter/Patient-identifier&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a> <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Identifier of the patient&quot;/&gt;
+      &lt;/searchParam&gt;
+    &lt;/resource&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;Encounter&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.profile">profile</a>
+               <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-encounter&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;search-type&quot;/&gt;
+      &lt;/interaction&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;read&quot;/&gt;
+      &lt;/interaction&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchInclude">searchInclude</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Encounter:subject&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchRevInclude">searchRevInclude</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;MedicationAdministration:encounter&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchRevInclude">searchRevInclude</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;MedicationRequest:encounter&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;identifier&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/SearchParameter/clinical-identifier&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a> <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Identifier of the patient's stay&quot;/&gt;
+      &lt;/searchParam&gt;
+    &lt;/resource&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;Observation&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.profile">profile</a>
+               <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-observation&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;search-type&quot;/&gt;
+      &lt;/interaction&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;read&quot;/&gt;
+      &lt;/interaction&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;clinical-code&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/SearchParameter/clinical-code&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Nature of additional information representing by LOINC code&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;clinical-date&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/SearchParameter/clinical-date&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;date&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Date and time of registration of the additional information&quot;/&gt;
+      &lt;/searchParam&gt;
+    &lt;/resource&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;Medication&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.profile">profile</a>
+               <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;search-type&quot;/&gt;
+      &lt;/interaction&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;read&quot;/&gt;
+      &lt;/interaction&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchRevInclude">searchRevInclude</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;MedicationRequest:medication&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchRevInclude">searchRevInclude</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;MedicationAdministration:medication&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;_filter&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/SearchParameter/Resource-filter&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;special&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Filter search parameter that supports a more sophisticated search grammar. See [documentation](https://hl7.org/fhir/search_filter.html) for more details.&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;_has&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/SearchParameter/Resource-has&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;special&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Enables resources to be selected on the basis of the properties of the resources that refer to them (reverse chaining).&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;_id&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a> <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/SearchParameter/Resource-id&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a> <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Logical resource identifier&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;clinical-code&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/SearchParameter/clinical-code&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Identifies the prescribed component according to a nomenclature depending on the type&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;medication-type&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-medication-type&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Specifies whether the component prescribed is a speciality, a common name or any other product (pharmacopoeia).&quot;/&gt;
+      &lt;/searchParam&gt;
+    &lt;/resource&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;MedicationRequest&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.profile">profile</a>
+               <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.supportedProfile">supportedProfile</a>
+                        <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.supportedProfile">supportedProfile</a>
+                        <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;search-type&quot;/&gt;
+      &lt;/interaction&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;read&quot;/&gt;
+      &lt;/interaction&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchInclude">searchInclude</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;MedicationRequest:encounter&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchInclude">searchInclude</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;MedicationRequest:medication&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;identifier&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/SearchParameter/clinical-identifier&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a> <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Identifier&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;wording&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-wording&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;string&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a> <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Wording of element/component&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;indication&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-indication&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;string&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Indications concerning the prescription item and the component prescribed&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;mr-prescription-validation-date&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-prescription-validation-date&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;date&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Date and time at which the prescriber considered the prescription validated&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;mr-type-elementprescription&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-type-elementprescrption&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a> <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Type of prescription element&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;element-form&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-element-form&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a> <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Pharmaceutical form of the prescription item&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;status&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/SearchParameter/medications-status&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Indicates the status of the protocol from the prescriber's point of view&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;element-route&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-element-route&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Specifies the route of administration of the product&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;element-site&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-element-site&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Specifies, where appropriate, the exact point on the body where the product is to be applied to the patient&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;combo-date&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/SearchParameter/MedicationRequest-combo-date&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;date&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Returns medication request to be administered on a specific date or within a date range&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;mr-date-time-prescription-start&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-date-time-prescription-start&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;date&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Effective start date and time of product prescription&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;mr-date-time-prescription-end&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-date-time-prescription-end&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;date&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Effective end date and time of product prescription&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;mr-element-gonogo-status&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-element-gonogo-status&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Communicates the conditional state of implementation of the prescription element according to a list of coded values&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;mr-element-gonogo-reasonwaiting&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-element-gonogo-reasonwaiting&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Describes the reason for the goNogo implementation status of the prescription element if the management option via the goNogo attribute is enabled&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;group-identifier&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/SearchParameter/MedicationRequest-group-identifier&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Identifier common to all components of the same prescription&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;mr-element-frequency-posology&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-element-frequency-posology&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;number&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Indicates the recurrence of the dosage. By default, every day&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;mr-element-duration-posology&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-element-duration-posology&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;number&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a> <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Duration of administration&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;mr-element-rate-posology&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-element-rate-posology&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;quantity&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Rate of administration in the case of injection&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;mr-element-quantity-posology&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-element-quantity-posology&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;quantity&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Quantity of the prescription element in the dosage&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;mr-prescribed-component-quantity&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-prescribed-component-quantity&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;quantity&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Quantity of the component prescribed in the prescription element&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;mr-component-substitution&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-component-substitution&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;True if the component prescribed is declared non-substitutable in the prescription element&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;mr-is-dosage-referent&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-is-dosage-referent&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;True if the component prescribed is the component that refers to the quantity or flow rate expressed in the dosage element when these are gravimetric (for example, mg or mg/h).&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;mr-exempt-ltc&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-exempt-ltc&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Identifier of the ALD for which the component prescribed is prescribed for one of the reasons for which the patient benefits from an exemption under article L324-1 of the CSS.&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;mr-component-solute&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-component-solute&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;True if the component prescribed is solute in the prescription element&quot;/&gt;
+      &lt;/searchParam&gt;
+    &lt;/resource&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;CarePlan&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.profile">profile</a>
+               <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-careplan&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;search-type&quot;/&gt;
+      &lt;/interaction&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;read&quot;/&gt;
+      &lt;/interaction&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchInclude">searchInclude</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;MedicationRequest:basedOn&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;identifier&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/SearchParameter/clinical-identifier&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a> <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Prescribed protocol identifier&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;cp-title&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-cp-title&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;string&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a> <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Wording of the prescribed protocol&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;status&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/SearchParameter/CarePlan-status&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Indicates the status of the protocol from the prescriber's point of view&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;cp-date-time-reference&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-cp-date-time-reference&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;date&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Reference date and time of this prescribed protocol&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;indication&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-indication&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;string&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a> <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Indication concerning the prescribed protocol&quot;/&gt;
+      &lt;/searchParam&gt;
+    &lt;/resource&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;MedicationAdministration&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.profile">profile</a>
+               <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationadministration-element&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.supportedProfile">supportedProfile</a>
+                        <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationadministration-component&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.supportedProfile">supportedProfile</a>
+                        <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationadministration-report&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;search-type&quot;/&gt;
+      &lt;/interaction&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;read&quot;/&gt;
+      &lt;/interaction&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchInclude">searchInclude</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;MedicationAdministration:encounter&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchInclude">searchInclude</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;MedicationAdministration:medication&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ma-method&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-ma-method&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a> <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Type of administration element&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ma-category&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-ma-category&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Code identifying the nature of the administration element&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;element-form&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-element-form&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Pharmaceutical form of the administration item&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;element-route&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-element-route&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Specifies the route of administration of the product&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;element-site&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-element-site&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Specifies, where applicable, the exact point on the body where the product is to be applied to the patient. By default, the place of administration is that shown in the prescription element associated with the administration element&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;date&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/SearchParameter/medications-date&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;date&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Effective date and time for starting/ending administration of the administration element&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ma-comments&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-ma-comments&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;string&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a> <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Comments of component&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ma-planned-quantity&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-ma-planned-quantity&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;quantity&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Quantity of the component administered in the administration element that was intended to be administered to the patient&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ma-prescribed-quantity&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-ma-prescribed-quantity&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;quantity&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Quantity actually administered to the patient or planned to be administered&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;identifier&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/SearchParameter/clinical-identifier&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a> <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Identifier&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;wording&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-wording&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;string&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Wording of component/element of administration&quot;/&gt;
+      &lt;/searchParam&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;performer&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/SearchParameter/MedicationAdministration-performer&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;reference&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Identification of the person who planned, administered or monitored the administration of the medicines represented by the administration elements&quot;/&gt;
+      &lt;/searchParam&gt;
+    &lt;/resource&gt;
+  &lt;/rest&gt;
+&lt;/CapabilityStatement&gt;</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://ltsi.univ-rennes.fr">DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Apr 29, 2025 08:33+0000">2025-04-29</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

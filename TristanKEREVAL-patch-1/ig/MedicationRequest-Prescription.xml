@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="Prescription"/>
+  <meta>
+    <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MedicationRequest Prescription</b></p><a name="Prescription"> </a><a name="hcPrescription"> </a><a name="Prescription-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-oncofair-medicationrequest-prescription.html">OncoFAIR MedicationRequest Prescription</a></p></div><p><b>OncoFAIRMRPrescriptionValidationDate</b>: 2024-06-01 08:00:00+0000</p><p><b>identifier</b>: example</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><h3>Medications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem prescription}">prescription</span></td></tr></table><p><b>subject</b>: <a href="Patient-ExampleOncoFAIRPatient.html">Anonymous Patient (no stated gender), DoB Unknown ( 123456789)</a></p><p><b>encounter</b>: <a href="Encounter-ExampleOncoFAIREncounter.html">Encounter: identifier = EN-987654; status = in-progress</a></p></div>
+  </text>
+  <extension url="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-prescription-validation-date">
+    <valueDateTime value="2024-06-01T08:00:00Z"/>
+  </extension>
+  <identifier>
+    <value value="example"/>
+  </identifier>
+  <status value="active"/>
+  <intent value="order"/>
+  <medication>
+    <concept>
+      <coding>
+        <system value="http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem"/>
+        <code value="prescription"/>
+        <display value="prescription"/>
+      </coding>
+    </concept>
+  </medication>
+  <subject>
+    <reference value="Patient/ExampleOncoFAIRPatient"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/ExampleOncoFAIREncounter"/>
+  </encounter>
+</MedicationRequest>

@@ -1,28 +1,28 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://ltsi.univ-rennes.fr/CodeSystem/CSCommunicationModes",
+      "url" : "http://ltsi.univ-rennes.fr/CodeSystem/CSEventTypeData",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "CSCommunicationModes",
-      "title" : "Communication modes",
-      "description" : "CodeSystem for french communication modes (incremental, summary)."
+      "name" : "CSEventTypeData",
+      "title" : "Event Types",
+      "description" : "CodeSystem for various event types used in French healthcare systems, identified by number, abbreviation, and full name."
     },
     {
-      "url" : "http://ltsi.univ-rennes.fr/CodeSystem/CSLOINC",
+      "url" : "http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationItemProvenance",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "CSLOINC",
-      "title" : "LOINC codes",
-      "description" : "LOINC CodeSystem."
+      "name" : "CSMedicationItemProvenance",
+      "title" : "Medication item provenance",
+      "description" : "CodeSystem for french medication item provenance."
     },
     {
-      "url" : "http://ltsi.univ-rennes.fr/CodeSystem/CSMedicalUnits",
+      "url" : "http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationStatus",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "CSMedicalUnits",
-      "title" : "Medical units",
-      "description" : "CodeSystem for french medical units (accommodation, medical liability unit)."
+      "name" : "CSMedicationStatus",
+      "title" : "Medication status",
+      "description" : "CodeSystem for french medication status."
     },
     {
       "url" : "http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationTypes",
@@ -33,28 +33,124 @@
       "description" : "CodeSystem for french medication types."
     },
     {
-      "url" : "http://ltsi.univ-rennes.fr/CodeSystem/CSMedications",
+      "url" : "http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "CSMedications",
+      "name" : "ConceptMedicationOncoFAIRCodeSystem",
+      "title" : "Concepts Medication Code System",
+      "description" : "Code system pour différiencier les niveaux de MR/MA"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/CodeSystem/medical-units-oncofair-codesystem",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MedicalUnitsOncoFAIRCodeSystem",
+      "title" : "Medical units",
+      "description" : "CodeSystem for french medical units (accommodation, medical liability unit)."
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/CodeSystem/medication-lti-exemption",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CSMedicationLTIExemption",
+      "title" : "LTI Detailed Descriptions",
+      "description" : "Detailed list of long-term illness (LTI)."
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/CodeSystem/medications-oncofair-codesystem",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MedicationsOncoFAIRCodeSystem",
       "title" : "Medications",
       "description" : "CodeSystem for french medications."
     },
     {
-      "url" : "http://ltsi.univ-rennes.fr/CodeSystem/CSPrescriptionCategory",
+      "url" : "http://ltsi.univ-rennes.fr/CodeSystem/siph-gonogo-oncofair-codesystem",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "CSPrescriptionCategory",
-      "title" : "Prescription category",
-      "description" : "CodeSystem for french prescription category (creation, stop, modification, validation)."
+      "name" : "SIPhgoNogoOncoFAIRCodeSystem",
+      "title" : "goNogo Code System",
+      "description" : "Code system pour l'attribut goNogo"
     },
     {
-      "url" : "http://ltsi.univ-rennes.fr/CodeSystem/CSSCT",
+      "url" : "http://ltsi.univ-rennes.fr/CodeSystem/siph-listeald-oncofair-codesystem",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "CSSCT",
-      "title" : "SNOMED CT Codes",
-      "description" : "SNOMED CT code system."
+      "name" : "SIPhListeALDOncoFAIRCodeSystem",
+      "title" : "Liste ALD Code System",
+      "description" : "Code system pour l'attribut ListeALD"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/CodeSystem/siph-natureproppharm-oncofair-codesystem",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SIPhNaturePropPharmOncoFAIRCodeSystem",
+      "title" : "Nature proposition pharmaceutique Code System",
+      "description" : "Code system pour l'attribut NaturePropPharm"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/CodeSystem/siph-paramposoconditionnelle-oncofair-codesystem",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SIPhParamPosoConditionnelleOncoFAIRCodeSystem",
+      "title" : "Paremètres posologie conditionnelle Code System",
+      "description" : "Code system pour l'attribut ParamPosoConditionnelle"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/CodeSystem/siph-renscomplement-oncofair-codesystem",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SIPhRensComplementOncoFAIRCodeSystem",
+      "title" : "Renseignement complémentaire Code System",
+      "description" : "Code system pour l'attribut RensComplement"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/CodeSystem/siph-statutcomposantadm-oncofair-codesystem",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SIPhStatutComposantAdmOncoFAIRCodeSystem",
+      "title" : "Statut composant administré Code System",
+      "description" : "Code system pour l'attribut StatutComposantAdm"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/CodeSystem/siph-statutvalidpharm-oncofair-codesystem",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SIPhStatutValidPharmOncoFAIRCodeSystem",
+      "title" : "Statut validation pharmaceutique Code System",
+      "description" : "Code system pour l'attribut StatutValidPharm"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/CodeSystem/siph-type-liaison-oncofair-codesystem",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SIPhTypeLiaisonOncoFAIRCodeSystem",
+      "title" : "Type de liaison Code System",
+      "description" : "Code system pour l'attribut TypeLiaison"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/CodeSystem/siph-typecomposant-oncofair-codesystem",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SIPhTypeComposantOncoFAIRCodeSystem",
+      "title" : "Type de composant Code System",
+      "description" : "Code system pour l'attribut TypeComposant"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SIPhTypeEltPLAOncoFAIRCodeSystem",
+      "title" : "Type de l'élément d'administration Code System",
+      "description" : "Code system pour l'attribut TypeEltPLA"
+    },
+    {
+      "url" : "http://ltsi.univ-rennes.fr/CodeSystem/siph-typeevenement-oncofair-codesystem",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SIPhTypeEvenementOncoFAIRCodeSystem",
+      "title" : "Type évènement Code System",
+      "description" : "Code system pour l'attribut TypeEvenement"
     }
   ]
 }
