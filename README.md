@@ -36,4 +36,6 @@ Un commentaire ? Une remarque ? Utilisez les GitHub [issues](https://docs.github
 * FAIR : Findable Accessible Interoperable Reusable
 
 # Contacts
-Si vous souhaitez contacter les équipes ayant travaillé sur ce projet : Pour les questions techniques : alain.ribault@kereval.com et pour les questions métier : denis.delamarre@chu-rennes.fr
+Si vous souhaitez contacter les équipes ayant travaillé sur ce projet :
+* Pour les questions techniques : alain.ribault@kereval.com
+* Pour les questions métier : denis.delamarre@chu-rennes.fr
