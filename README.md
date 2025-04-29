@@ -34,3 +34,6 @@ Un commentaire ? Une remarque ? Utilisez les GitHub [issues](https://docs.github
 * FHIR : Fast Healthcare Interoperability Resources
 * HL7 : Health Level Seven
 * FAIR : Findable Accessible Interoperable Reusable
+
+# Contacts
+Si vous souhaitez contacter les équipes ayant travaillé sur ce projet : Pour les questions techniques : alain.ribault@kereval.com et pour les questions métier : denis.delamarre@chu-rennes.fr
