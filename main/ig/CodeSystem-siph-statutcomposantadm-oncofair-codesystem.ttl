@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -10,15 +11,15 @@
   fhir:id [ fhir:v "siph-statutcomposantadm-oncofair-codesystem"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem siph-statutcomposantadm-oncofair-codesystem</b></p><a name=\"siph-statutcomposantadm-oncofair-codesystem\"> </a><a name=\"hcsiph-statutcomposantadm-oncofair-codesystem\"> </a><a name=\"siph-statutcomposantadm-oncofair-codesystem-en-US\"> </a><p>This case-sensitive code system <code>http://ltsi.univ-rennes.fr/CodeSystem/siph-statutcomposantadm-oncofair-codesystem</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">AF<a name=\"siph-statutcomposantadm-oncofair-codesystem-AF\"> </a></td><td>à faire</td></tr><tr><td style=\"white-space:nowrap\">FA<a name=\"siph-statutcomposantadm-oncofair-codesystem-FA\"> </a></td><td>fait</td></tr><tr><td style=\"white-space:nowrap\">AN<a name=\"siph-statutcomposantadm-oncofair-codesystem-AN\"> </a></td><td>annulé</td></tr><tr><td style=\"white-space:nowrap\">PE<a name=\"siph-statutcomposantadm-oncofair-codesystem-PE\"> </a></td><td>perdu</td></tr><tr><td style=\"white-space:nowrap\">DE<a name=\"siph-statutcomposantadm-oncofair-codesystem-DE\"> </a></td><td>démarré</td></tr><tr><td style=\"white-space:nowrap\">FI<a name=\"siph-statutcomposantadm-oncofair-codesystem-FI\"> </a></td><td>fini</td></tr><tr><td style=\"white-space:nowrap\">AR<a name=\"siph-statutcomposantadm-oncofair-codesystem-AR\"> </a></td><td>arrêté</td></tr><tr><td style=\"white-space:nowrap\">SS<a name=\"siph-statutcomposantadm-oncofair-codesystem-SS\"> </a></td><td>suspendu</td></tr><tr><td style=\"white-space:nowrap\">SU<a name=\"siph-statutcomposantadm-oncofair-codesystem-SU\"> </a></td><td>suivi</td></tr><tr><td style=\"white-space:nowrap\">RD<a name=\"siph-statutcomposantadm-oncofair-codesystem-RD\"> </a></td><td>redémarré</td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem siph-statutcomposantadm-oncofair-codesystem</b></p><a name=\"siph-statutcomposantadm-oncofair-codesystem\"> </a><a name=\"hcsiph-statutcomposantadm-oncofair-codesystem\"> </a><a name=\"siph-statutcomposantadm-oncofair-codesystem-en-US\"> </a><p>This case-sensitive code system <code>http://ltsi.univ-rennes.fr/CodeSystem/siph-statutcomposantadm-oncofair-codesystem</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">AF<a name=\"siph-statutcomposantadm-oncofair-codesystem-AF\"> </a></td><td>à faire</td></tr><tr><td style=\"white-space:nowrap\">FA<a name=\"siph-statutcomposantadm-oncofair-codesystem-FA\"> </a></td><td>fait</td></tr><tr><td style=\"white-space:nowrap\">AN<a name=\"siph-statutcomposantadm-oncofair-codesystem-AN\"> </a></td><td>annulé</td></tr><tr><td style=\"white-space:nowrap\">PE<a name=\"siph-statutcomposantadm-oncofair-codesystem-PE\"> </a></td><td>perdu</td></tr><tr><td style=\"white-space:nowrap\">DE<a name=\"siph-statutcomposantadm-oncofair-codesystem-DE\"> </a></td><td>démarré</td></tr><tr><td style=\"white-space:nowrap\">FI<a name=\"siph-statutcomposantadm-oncofair-codesystem-FI\"> </a></td><td>fini</td></tr><tr><td style=\"white-space:nowrap\">AR<a name=\"siph-statutcomposantadm-oncofair-codesystem-AR\"> </a></td><td>arrêté</td></tr><tr><td style=\"white-space:nowrap\">SS<a name=\"siph-statutcomposantadm-oncofair-codesystem-SS\"> </a></td><td>suspendu</td></tr><tr><td style=\"white-space:nowrap\">SU<a name=\"siph-statutcomposantadm-oncofair-codesystem-SU\"> </a></td><td>suivi</td></tr><tr><td style=\"white-space:nowrap\">RD<a name=\"siph-statutcomposantadm-oncofair-codesystem-RD\"> </a></td><td>redémarré</td></tr></table></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/siph-statutcomposantadm-oncofair-codesystem"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "SIPhStatutComposantAdmOncoFAIRCodeSystem"] ; # 
   fhir:title [ fhir:v "Statut composant administré Code System"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2025-01-21T10:26:00+00:00"^^xsd:dateTime] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-05-09T14:19:04+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -28,7 +29,7 @@
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "Code system pour l'attribut StatutComposantAdm"] ; # 
-  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
   fhir:content [ fhir:v "complete"] ; # 
   fhir:count [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
   fhir:concept ( [

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="b6a56c6d-1eec-4dc2-ad1a-e393c20028e0"/>
+  <id value="a2da3659-659b-444e-b77a-9ecf4a565a9d"/>
   <meta>
-    <lastUpdated value="2025-01-21T10:26:00.062+00:00"/>
+    <lastUpdated value="2025-05-09T14:19:37.429+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -14,11 +14,11 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
             <p style="border: black 1px dotted; background-color: #ffcccc; padding: 8px; margin-bottom: 8px">Expansion based on code system fragment http://terminology.hl7.org/CodeSystem/icd-o-3 International Classification of Diseases for Oncology, version 3. version2000</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on codesystem International Classification of Diseases for Oncology, version 3. version2000</p>
-            <p>This value set contains at least 1 concepts</p>
+            <p>This value set contains at least 3 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -28,8 +28,22 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.hl7.org/CodeSystem/icd-o-3-8046/3"> </a>  8046/3
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/icd-o-3</td>
+                <td>Non-small cell carcinoma</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.hl7.org/CodeSystem/icd-o-3-8140/3"> </a>  8140/3
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/icd-o-3</td>
+                <td>Adenocarcinoma, NOS</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -46,15 +60,19 @@
         <name value="Morphology"/>
         <title value="Morphology Value Set"/>
         <status value="draft"/>
-        <date value="2025-01-21T10:26:00+00:00"/>
+        <date value="2025-05-09T14:19:04+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:cf0c0398-c9f2-4232-9897-1778d31540da"/>
-          <timestamp value="2025-01-21T10:26:48.848Z"/>
-          <total value="1"/>
+          <identifier value="urn:uuid:377d557f-23d0-4ce2-906e-336cadb23e45"/>
+          <timestamp value="2025-05-09T14:20:31.105Z"/>
+          <total value="3"/>
           <offset value="0"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
           </parameter>
           <parameter>
             <name value="excludeNested"/>
@@ -82,6 +100,16 @@
           </parameter>
           <contains>
             <system value="http://terminology.hl7.org/CodeSystem/icd-o-3"/>
+            <code value="8046/3"/>
+            <display value="Non-small cell carcinoma"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/icd-o-3"/>
+            <code value="8140/3"/>
+            <display value="Adenocarcinoma, NOS"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/icd-o-3"/>
             <code value="8500/3"/>
             <display value="Infiltrating duct carcinoma, NOS"/>
           </contains>
@@ -97,7 +125,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
             <p style="border: black 1px dotted; background-color: #ffcccc; padding: 8px; margin-bottom: 8px">Expansion based on code system fragment http://terminology.hl7.org/CodeSystem/icd-o-3 International Classification of Diseases for Oncology, version 3. version2000</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on codesystem International Classification of Diseases for Oncology, version 3. version2000</p>
@@ -111,7 +139,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
             </table>
@@ -122,15 +150,19 @@
         <name value="Topography"/>
         <title value="Topography Value Set"/>
         <status value="draft"/>
-        <date value="2025-01-21T10:26:00+00:00"/>
+        <date value="2025-05-09T14:19:04+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:61deedd4-fb16-4501-8f19-79b2af51650c"/>
-          <timestamp value="2025-01-21T10:26:49.273Z"/>
+          <identifier value="urn:uuid:42c149a5-8d97-4203-a140-29e55643640a"/>
+          <timestamp value="2025-05-09T14:20:31.731Z"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
           </parameter>
           <parameter>
             <name value="excludeNested"/>
@@ -168,9 +200,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-CSEventTypeData.html">codesystem Event Types v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 6 concepts</p>
@@ -183,7 +215,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -243,12 +275,16 @@
         <title value="Event Types Data"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-01-21T10:26:00+00:00"/>
+        <date value="2025-05-09T14:19:04+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:18ca122a-1cce-4647-9414-2174d814a5b1"/>
-          <timestamp value="2025-01-21T10:26:49+00:00"/>
+          <identifier value="urn:uuid:ccc415db-9912-4409-8ee5-8a09ea712637"/>
+          <timestamp value="2025-05-09T14:20:32+00:00"/>
           <total value="6"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -307,9 +343,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-concept-medication-oncofair-codesystem.html">codesystem Concepts Medication Code System v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 4 concepts</p>
@@ -322,7 +358,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -366,12 +402,16 @@
         <title value="Concepts Medication Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-01-21T10:26:00+00:00"/>
+        <date value="2025-05-09T14:19:04+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:20e25cba-cf2c-43ac-93ea-bfa340a965e0"/>
-          <timestamp value="2025-01-21T10:26:49+00:00"/>
+          <identifier value="urn:uuid:c5cc13a0-7806-4a95-b3cb-2af94ad187e2"/>
+          <timestamp value="2025-05-09T14:20:32+00:00"/>
           <total value="4"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -420,9 +460,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-medical-units-oncofair-codesystem.html">codesystem Medical units v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 368 concepts</p>
@@ -435,7 +475,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -3391,12 +3431,16 @@
         <title value="Medical units Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-01-21T10:26:00+00:00"/>
+        <date value="2025-05-09T14:19:04+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:2eccaa6a-b562-4158-93e4-ba8c9f570e7d"/>
-          <timestamp value="2025-01-21T10:26:49+00:00"/>
+          <identifier value="urn:uuid:4be386fe-788c-48b3-8db2-8101570cc415"/>
+          <timestamp value="2025-05-09T14:20:32+00:00"/>
           <total value="368"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -5265,9 +5309,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-medications-oncofair-codesystem.html">codesystem Medications v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 9 concepts</p>
@@ -5280,7 +5324,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -5364,12 +5408,16 @@
         <title value="Medications Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-01-21T10:26:00+00:00"/>
+        <date value="2025-05-09T14:19:04+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:7d8d89c5-f82c-4060-9a58-b0cd0a173b92"/>
-          <timestamp value="2025-01-21T10:26:50+00:00"/>
+          <identifier value="urn:uuid:e9529456-dd29-4b91-90c6-bce0d2fd8fef"/>
+          <timestamp value="2025-05-09T14:20:33+00:00"/>
           <total value="9"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -5443,9 +5491,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-siph-gonogo-oncofair-codesystem.html">codesystem goNogo Code System v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 5 concepts</p>
@@ -5458,7 +5506,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -5510,12 +5558,16 @@
         <title value="goNogo Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-01-21T10:26:00+00:00"/>
+        <date value="2025-05-09T14:19:04+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:ead71300-ea06-4d7d-9954-9072e402cfbf"/>
-          <timestamp value="2025-01-21T10:26:50+00:00"/>
+          <identifier value="urn:uuid:51560c27-a294-48f1-b387-1c6cad955af9"/>
+          <timestamp value="2025-05-09T14:20:33+00:00"/>
           <total value="5"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -5569,9 +5621,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-siph-listeald-oncofair-codesystem.html">codesystem Liste ALD Code System v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 32 concepts</p>
@@ -5584,7 +5636,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -5852,12 +5904,16 @@
         <title value="Liste Affectation Longue Durée Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-01-21T10:26:00+00:00"/>
+        <date value="2025-05-09T14:19:04+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:9690481e-d9ac-4fd1-9829-2e387684e943"/>
-          <timestamp value="2025-01-21T10:26:50+00:00"/>
+          <identifier value="urn:uuid:2de811dd-24d8-428c-ba03-dcc2d60a4a2a"/>
+          <timestamp value="2025-05-09T14:20:33+00:00"/>
           <total value="32"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -6046,9 +6102,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-siph-natureproppharm-oncofair-codesystem.html">codesystem Nature proposition pharmaceutique Code System v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 4 concepts</p>
@@ -6061,7 +6117,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -6105,12 +6161,16 @@
         <title value="Nature proposition pharmaceutique Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-01-21T10:26:00+00:00"/>
+        <date value="2025-05-09T14:19:04+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:fcd9bec9-7a5e-4c0e-8ca9-a8c50a78099b"/>
-          <timestamp value="2025-01-21T10:26:50+00:00"/>
+          <identifier value="urn:uuid:fdc2a456-cc5f-4635-ac93-76f457fad93b"/>
+          <timestamp value="2025-05-09T14:20:33+00:00"/>
           <total value="4"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -6159,9 +6219,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-siph-paramposoconditionnelle-oncofair-codesystem.html">codesystem Paremètres posologie conditionnelle Code System v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 7 concepts</p>
@@ -6174,7 +6234,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -6242,12 +6302,16 @@
         <title value="Paramètres posologie conditionnelle"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-01-21T10:26:00+00:00"/>
+        <date value="2025-05-09T14:19:04+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:0dade7f2-ec9d-4188-bfa6-5ed327bedf0c"/>
-          <timestamp value="2025-01-21T10:26:50+00:00"/>
+          <identifier value="urn:uuid:2d34728e-9453-4b02-ab6f-258392aca475"/>
+          <timestamp value="2025-05-09T14:20:33+00:00"/>
           <total value="7"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -6311,9 +6375,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-siph-renscomplement-oncofair-codesystem.html">codesystem Renseignement complémentaire Code System v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 11 concepts</p>
@@ -6326,7 +6390,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -6426,12 +6490,16 @@
         <title value="Renseignement complémentaire Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-01-21T10:26:00+00:00"/>
+        <date value="2025-05-09T14:19:04+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:5e1c72e8-df04-4b91-b221-8e4396b10744"/>
-          <timestamp value="2025-01-21T10:26:50+00:00"/>
+          <identifier value="urn:uuid:128a044b-a75f-48a6-b6ed-a80f70a6fcb6"/>
+          <timestamp value="2025-05-09T14:20:33+00:00"/>
           <total value="11"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -6515,9 +6583,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-siph-statutcomposantadm-oncofair-codesystem.html">codesystem Statut composant administré Code System v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 10 concepts</p>
@@ -6530,7 +6598,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -6622,12 +6690,16 @@
         <title value="Statut composant administré Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-01-21T10:26:00+00:00"/>
+        <date value="2025-05-09T14:19:04+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:eaf44da8-4aa3-4c8c-a44c-0c9e5923b3b2"/>
-          <timestamp value="2025-01-21T10:26:50+00:00"/>
+          <identifier value="urn:uuid:fa95ccaf-e100-4e96-8022-2f42c49cea94"/>
+          <timestamp value="2025-05-09T14:20:33+00:00"/>
           <total value="10"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -6706,9 +6778,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-siph-statutvalidpharm-oncofair-codesystem.html">codesystem Statut validation pharmaceutique Code System v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 2 concepts</p>
@@ -6721,7 +6793,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -6749,12 +6821,16 @@
         <title value="Statut validation pharmaceutique Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-01-21T10:26:00+00:00"/>
+        <date value="2025-05-09T14:19:04+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:8fcd3a7e-32fa-4537-a54a-238cf2d84497"/>
-          <timestamp value="2025-01-21T10:26:50+00:00"/>
+          <identifier value="urn:uuid:3ce269b0-efa2-4cd7-a925-1cc6d28fa39e"/>
+          <timestamp value="2025-05-09T14:20:33+00:00"/>
           <total value="2"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -6793,9 +6869,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-siph-type-liaison-oncofair-codesystem.html">codesystem Type de liaison Code System v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 7 concepts</p>
@@ -6808,7 +6884,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -6876,12 +6952,16 @@
         <title value="Type de liaison Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-01-21T10:26:00+00:00"/>
+        <date value="2025-05-09T14:19:04+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:7c4043b8-336d-40e4-aefc-f6291305869d"/>
-          <timestamp value="2025-01-21T10:26:50+00:00"/>
+          <identifier value="urn:uuid:2c78a77a-e630-4868-a120-fbdc03474fba"/>
+          <timestamp value="2025-05-09T14:20:33+00:00"/>
           <total value="7"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -6945,9 +7025,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-siph-typecomposant-oncofair-codesystem.html">codesystem Type de composant Code System v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 14 concepts</p>
@@ -6960,7 +7040,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -7084,12 +7164,16 @@
         <title value="Type de composant Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-01-21T10:26:00+00:00"/>
+        <date value="2025-05-09T14:19:04+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:3a14831f-ed94-42ba-af08-ba8bdd5647a6"/>
-          <timestamp value="2025-01-21T10:26:50+00:00"/>
+          <identifier value="urn:uuid:fe092337-379e-4a09-a6fe-a7926bbdc24f"/>
+          <timestamp value="2025-05-09T14:20:33+00:00"/>
           <total value="14"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -7188,9 +7272,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-siph-typeeltpla-oncofair-codesystem.html">codesystem Type de l'élément d'administration Code System v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 9 concepts</p>
@@ -7203,7 +7287,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -7287,12 +7371,16 @@
         <title value="Type de l'élément d'administration Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-01-21T10:26:00+00:00"/>
+        <date value="2025-05-09T14:19:04+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:3be74421-ccd8-43d3-81b3-5f797b8afaba"/>
-          <timestamp value="2025-01-21T10:26:50+00:00"/>
+          <identifier value="urn:uuid:ebeb0eb7-dde0-4330-9959-41ae77342eda"/>
+          <timestamp value="2025-05-09T14:20:33+00:00"/>
           <total value="9"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -7366,9 +7454,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-siph-typeevenement-oncofair-codesystem.html">codesystem Type évènement Code System v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 4 concepts</p>
@@ -7381,7 +7469,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -7425,12 +7513,16 @@
         <title value="Type de l'évènement Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-01-21T10:26:00+00:00"/>
+        <date value="2025-05-09T14:19:04+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:174b0969-3f42-4806-bd0a-77dbbd6a305e"/>
-          <timestamp value="2025-01-21T10:26:50+00:00"/>
+          <identifier value="urn:uuid:f9f0c372-1368-44e4-bade-9a7cf6721a3e"/>
+          <timestamp value="2025-05-09T14:20:33+00:00"/>
           <total value="4"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -7479,9 +7571,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-CSMedicationItemProvenance.html">codesystem Medication item provenance v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 4 concepts</p>
@@ -7494,7 +7586,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -7538,12 +7630,16 @@
         <title value="Medication item provenance"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-01-21T10:26:00+00:00"/>
+        <date value="2025-05-09T14:19:04+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:b48ddfd2-c5fd-4c6d-b0fb-6a341c9dcf35"/>
-          <timestamp value="2025-01-21T10:26:50+00:00"/>
+          <identifier value="urn:uuid:0335ec18-2339-4a94-87aa-d50638a2a4b3"/>
+          <timestamp value="2025-05-09T14:20:33+00:00"/>
           <total value="4"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -7592,9 +7688,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-medication-lti-exemption.html">codesystem LTI Detailed Descriptions v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 32 concepts</p>
@@ -7607,7 +7703,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -7875,12 +7971,16 @@
         <title value="Medication LTI Exemption"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-01-21T10:26:00+00:00"/>
+        <date value="2025-05-09T14:19:04+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:ce01baf3-fb20-4b85-9065-d3be469c1b29"/>
-          <timestamp value="2025-01-21T10:26:51+00:00"/>
+          <identifier value="urn:uuid:b7c10063-121b-4566-8e40-facc85bdcf8e"/>
+          <timestamp value="2025-05-09T14:20:33+00:00"/>
           <total value="32"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -8069,9 +8169,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-CSMedicationStatus.html">codesystem Medication status v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 10 concepts</p>
@@ -8084,7 +8184,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -8176,12 +8276,16 @@
         <title value="Medication status"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-01-21T10:26:00+00:00"/>
+        <date value="2025-05-09T14:19:04+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:c3cc328d-aee0-48fe-b7d8-4ab18646dc03"/>
-          <timestamp value="2025-01-21T10:26:51+00:00"/>
+          <identifier value="urn:uuid:8bb19940-4c0d-4a67-80a8-748428d20a31"/>
+          <timestamp value="2025-05-09T14:20:34+00:00"/>
           <total value="10"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -8260,9 +8364,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-CSMedicationTypes.html">codesystem Medication types v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 14 concepts</p>
@@ -8275,7 +8379,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -8399,12 +8503,16 @@
         <title value="Medication types"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-01-21T10:26:00+00:00"/>
+        <date value="2025-05-09T14:19:04+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:79dd89b7-ea51-4ee7-b1e9-d793aaf91ef8"/>
-          <timestamp value="2025-01-21T10:26:51+00:00"/>
+          <identifier value="urn:uuid:d0cb2e57-1206-4e62-94a7-478ec74b5703"/>
+          <timestamp value="2025-05-09T14:20:34+00:00"/>
           <total value="14"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>

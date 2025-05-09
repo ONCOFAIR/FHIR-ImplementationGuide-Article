@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -10,15 +11,15 @@
   fhir:id [ fhir:v "CSMedicationStatus"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem CSMedicationStatus</b></p><a name=\"CSMedicationStatus\"> </a><a name=\"hcCSMedicationStatus\"> </a><a name=\"CSMedicationStatus-en-US\"> </a><p>This case-sensitive code system <code>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationStatus</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"CSMedicationStatus-1\"> </a></td><td>à faire</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"CSMedicationStatus-2\"> </a></td><td>fait</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"CSMedicationStatus-3\"> </a></td><td>annulé</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"CSMedicationStatus-4\"> </a></td><td>perdu</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"CSMedicationStatus-5\"> </a></td><td>démarré</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"CSMedicationStatus-6\"> </a></td><td>fini</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"CSMedicationStatus-7\"> </a></td><td>arrêté</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"CSMedicationStatus-8\"> </a></td><td>suspendu</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"CSMedicationStatus-9\"> </a></td><td>suivi</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"CSMedicationStatus-10\"> </a></td><td>redémarré</td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem CSMedicationStatus</b></p><a name=\"CSMedicationStatus\"> </a><a name=\"hcCSMedicationStatus\"> </a><a name=\"CSMedicationStatus-en-US\"> </a><p>This case-sensitive code system <code>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationStatus</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"CSMedicationStatus-1\"> </a></td><td>à faire</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"CSMedicationStatus-2\"> </a></td><td>fait</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"CSMedicationStatus-3\"> </a></td><td>annulé</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"CSMedicationStatus-4\"> </a></td><td>perdu</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"CSMedicationStatus-5\"> </a></td><td>démarré</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"CSMedicationStatus-6\"> </a></td><td>fini</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"CSMedicationStatus-7\"> </a></td><td>arrêté</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"CSMedicationStatus-8\"> </a></td><td>suspendu</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"CSMedicationStatus-9\"> </a></td><td>suivi</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"CSMedicationStatus-10\"> </a></td><td>redémarré</td></tr></table></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationStatus"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "CSMedicationStatus"] ; # 
   fhir:title [ fhir:v "Medication status"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2025-01-21T10:26:00+00:00"^^xsd:dateTime] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-05-09T14:19:04+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL" ] ;
@@ -28,7 +29,7 @@
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "CodeSystem for french medication status."] ; # 
-  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
   fhir:content [ fhir:v "complete"] ; # 
   fhir:count [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
   fhir:concept ( [

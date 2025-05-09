@@ -10,7 +10,7 @@
   "name" : "ClinicalTrial",
   "title" : "Oncology Clinical Trial",
   "status" : "draft",
-  "date" : "2025-01-21T10:26:00+00:00",
+  "date" : "2025-05-09T14:19:04+00:00",
   "publisher" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
   "contact" : [{
     "name" : "DOMASIA team of the Signal and Image Processing Laboratory (LTSI) and KEREVAL",
@@ -52,6 +52,10 @@
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/ResearchStudy",
   "derivation" : "constraint",
   "snapshot" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString" : "5.0.0"
+    }],
     "element" : [{
       "id" : "ResearchStudy",
       "path" : "ResearchStudy",

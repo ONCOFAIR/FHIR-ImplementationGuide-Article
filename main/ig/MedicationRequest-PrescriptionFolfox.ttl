@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -16,11 +17,14 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest PrescriptionFolfox</b></p><a name=\"PrescriptionFolfox\"> </a><a name=\"hcPrescriptionFolfox\"> </a><a name=\"PrescriptionFolfox-en-US\"> </a><p><b>OncoFAIRMRPrescriptionValidationDate</b>: 2024-06-01 08:00:00+0000</p><p><b>identifier</b>: prescription-folfox-hospitals</p><p><b>basedOn</b>: <a href=\"CarePlan-OncoFAIRCarePlan-folfox.html\">CarePlan Folfox</a></p><p><b>groupIdentifier</b>: folfox-example</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem prescription}\">prescription</span></td></tr></table><p><b>subject</b>: <a href=\"Patient-ExampleOncoFAIRPatient.html\">Anonymous Patient (no stated gender), DoB Unknown ( 123456789)</a></p><p><b>encounter</b>: <a href=\"Encounter-ExampleOncoFAIREncounter.html\">Encounter: identifier = EN-987654; status = in-progress</a></p><p><b>supportingInformation</b>: </p><ul><li><a href=\"HealthcareService-ExampleHealthcareServiceAccomodation.html\">HealthcareService: identifier = A065</a></li><li><a href=\"HealthcareService-ExampleHealthcareServiceMedicalLiability.html\">HealthcareService: identifier = MD067</a></li></ul><h3>Reasons</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Observation-ExampleOncoFAIRObservation.html\">Observation Poids</a></td></tr></table><p><b>note</b>: This is a default comment on the prescription by the prescribing doctor.</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest PrescriptionFolfox</b></p><a name=\"PrescriptionFolfox\"> </a><a name=\"hcPrescriptionFolfox\"> </a><a name=\"PrescriptionFolfox-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-oncofair-medicationrequest-prescription.html\">OncoFAIR MedicationRequest Prescription</a></p></div><p><b>OncoFAIRMRPrescriptionValidationDate</b>: 2024-06-01 08:00:00+0000</p><p><b>identifier</b>: prescription-folfox-hospitals</p><p><b>basedOn</b>: <a href=\"CarePlan-OncoFAIRCarePlan-folfox.html\">CarePlan Folfox</a></p><p><b>groupIdentifier</b>: folfox-example</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem prescription}\">prescription</span></td></tr></table><p><b>subject</b>: <a href=\"Patient-ExampleOncoFAIRPatient.html\">Anonymous Patient (no stated gender), DoB Unknown ( 123456789)</a></p><p><b>encounter</b>: <a href=\"Encounter-ExampleOncoFAIREncounter.html\">Encounter: identifier = EN-987654; status = in-progress</a></p><p><b>supportingInformation</b>: </p><ul><li><a href=\"HealthcareService-ExampleHealthcareServiceAccomodation.html\">HealthcareService: identifier = A065</a></li><li><a href=\"HealthcareService-ExampleHealthcareServiceMedicalLiability.html\">HealthcareService: identifier = MD067</a></li></ul><h3>Reasons</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Observation-ExampleOncoFAIRObservation.html\">Observation Poids</a></td></tr></table><p><b>note</b>: This is a default comment on the prescription by the prescribing doctor.</p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-prescription-validation-date"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "2024-06-01T08:00:00Z"^^xsd:dateTime ]
+     fhir:value [
+       a fhir:dateTime ;
+       fhir:v "2024-06-01T08:00:00Z"^^xsd:dateTime
+     ]
   ] ) ; # 
   fhir:identifier ( [
      fhir:value [ fhir:v "prescription-folfox-hospitals" ]
