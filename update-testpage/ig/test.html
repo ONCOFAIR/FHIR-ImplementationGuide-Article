@@ -157,34 +157,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
+  <li><a href="#fhir-server" id="markdown-toc-fhir-server">FHIR server</a></li>
+  <li><a href="#test-cases" id="markdown-toc-test-cases">Test cases</a></li>
   <li><a href="#fhir-validator" id="markdown-toc-fhir-validator">FHIR Validator</a></li>
 </ul>
 
 </div>
+<h3 id="fhir-server">FHIR server</h3>
+
+<p>A <a href="https://oncofair.kereval.cloud/cqf-ruler/fhir/">FHIR server</a> is available to store example and test data flow.
+This server also support <a href="https://cql.hl7.org/">CQL operations</a>.</p>
+
+<h3 id="test-cases">Test cases</h3>
+<p>A list of test cases available for this ig is avalaible on <a href="https://interop.esante.gouv.fr/gazelle/testing/testsDefinition/testsList.seam?testStatus=1">Gazelle</a>.</p>
+
 <h3 id="fhir-validator">FHIR Validator</h3>
 
-<p>Here is the list of available FHIR validator available on <a href="https://interop.esante.gouv.fr/evs">EVSClient</a> :</p>
+<p>Here is the list of available FHIR validator available on <a href="https://interop.esante.gouv.fr/evs/fhir/validator.seam?standard=58">EVSClient</a> :</p>
 
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tableau HL7</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-        }
-        th {
-            background-color: #f2f2f2;
-            text-align: left;
-        }
-    </style>
-</head>
 <body>
 
 <table>
@@ -247,16 +238,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <td>Allows you to enter information about the patient in addition to that described in the prescription elements.</td>
         </tr>
         <tr>
-            <td><a href="http://hl7.org/fhir/R5/researchstudy.html"></a>Clinical Trial</td>
-            <td><a href="StructureDefinition-clinical-trial.html">Oncology Clinical Trial</a></td>
-            <td>Oncology clinical trial used to associate a Onco Patient to a Clinical Trial.</td>
-        </tr>
-        <tr>
-            <td><a href="http://hl7.org/fhir/R5/healthcareservice.html"></a>Healthcare Service</td>
-            <td><a href="StructureDefinition-oncology-healthcare-service.html">Oncology Healthcare Service</a></td>
-            <td>Contains the Healthcare Service information/td&gt;
-        &lt;/tr&gt;
-        <tr>
             <td><a href="https://hl7.org/fhir/R5/patient.html">Patient</a></td>
             <td><a href="StructureDefinition-oncofair-patient.html">OncoFAIRPatient</a></td>
             <td>Contains the patient’s identity details needed to ensure that the prescription is properly taken into account.</td>
@@ -266,22 +247,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <td><a href="StructureDefinition-dueTo-tumor-pathology-event.html">Tumor Pathology Event</a></td>
             <td>Tumor Pathology Event (TPE) Condition describing a tumoral event: reference to the parent TPE, laterality, morphology.</td>
         </tr>
-    &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-
-
-### FHIR server
-
-A [FHIR server](https://oncofair.kereval.cloud/cqf-ruler/fhir/) is available to store example and test data flow.
-This server also support [CQL operations](https://cql.hl7.org/).
-
-### Test cases
-A list of test cases available for this ig is avalaible on [Gazelle](https://interop.esante.gouv.fr/gazelle/testing/testsDefinition/testsList.seam?testStatus=1).
-
-</td></tr></tbody></table></body></html>
+         <tr>
+            <td><a href="http://hl7.org/fhir/R5/researchstudy.html">Clinical Trial</a></td>
+            <td><a href="StructureDefinition-clinical-trial.html">Oncology Clinical Trial</a></td>
+            <td>Oncology clinical trial used to associate a Onco Patient to a Clinical Trial.</td>
+        </tr>
+        <tr>
+            <td><a href="https://hl7.org/fhir/R5/condition.html">Condition</a></td>
+            <td><a href="StructureDefinition-dueTo-tumor-pathology-event.html">Tumor Pathology Event</a></td>
+            <td>Tumor Pathology Event (TPE) Condition describing a tumoral event: reference to the parent TPE, laterality, morphology.</td>
+        </tr>
+        <tr>
+            <td><a href="http://hl7.org/fhir/R5/healthcareservice.html">Healthcare Service</a></td>
+            <td><a href="StructureDefinition-oncology-healthcare-service.html">Oncology Healthcare Service</a></td>
+            <td>Contains the Healthcare Service information.</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
 
 
 
@@ -301,7 +285,7 @@ A list of test cases available for this ig is avalaible on [Gazelle](https://int
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/ONCOFAIR">KEREVAL and DOMASIA team of the Signal and Image Processing Laboratory (LTSI)</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, May 15, 2025 08:04+0000">2025-05-15</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/ONCOFAIR">KEREVAL and DOMASIA team of the Signal and Image Processing Laboratory (LTSI)</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, May 15, 2025 10:05+0000">2025-05-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
