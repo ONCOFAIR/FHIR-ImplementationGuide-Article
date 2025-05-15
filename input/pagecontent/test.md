@@ -1,6 +1,6 @@
 ### FHIR Validator
 
-Here is the list of available FHIR validator available on [EVSClient](https://oncofair.kereval.cloud/evs) :
+Here is the list of available FHIR validator available on [EVSClient](https://interop.esante.gouv.fr/evs) :
 
 <html lang="en">
 <head>
@@ -84,9 +84,24 @@ Here is the list of available FHIR validator available on [EVSClient](https://on
             <td>Allows you to enter information about the patient in addition to that described in the prescription elements.</td>
         </tr>
         <tr>
+            <td><a href="http://hl7.org/fhir/R5/researchstudy.html"></a>Clinical Trial</td>
+            <td><a href="StructureDefinition-clinical-trial.html">Oncology Clinical Trial</a></td>
+            <td>Oncology clinical trial used to associate a Onco Patient to a Clinical Trial.</td>
+        </tr>
+        <tr>
+            <td><a href="http://hl7.org/fhir/R5/healthcareservice.html"></a>Healthcare Service</td>
+            <td><a href="StructureDefinition-oncology-healthcare-service.html">Oncology Healthcare Service</a></td>
+            <td>Contains the Healthcare Service information/td>
+        </tr>
+        <tr>
             <td><a href="https://hl7.org/fhir/R5/patient.html">Patient</a></td>
             <td><a href="StructureDefinition-oncofair-patient.html">OncoFAIRPatient</a></td>
             <td>Contains the patient’s identity details needed to ensure that the prescription is properly taken into account.</td>
+        </tr>
+        <tr>
+            <td><a href="https://hl7.org/fhir/R5/condition.html">Condition</a></td>
+            <td><a href="StructureDefinition-dueTo-tumor-pathology-event.html">Tumor Pathology Event</a></td>
+            <td>Tumor Pathology Event (TPE) Condition describing a tumoral event: reference to the parent TPE, laterality, morphology.</td>
         </tr>
     </tbody>
 </table>
@@ -101,4 +116,4 @@ A [FHIR server](https://oncofair.kereval.cloud/cqf-ruler/fhir/) is available to 
 This server also support [CQL operations](https://cql.hl7.org/).
 
 ### Test cases
-A list of test cases available for this ig is avalaible on [Gazelle](https://oncofair.kereval.cloud/gazelle/testing/testsDefinition/testsList.seam?testType=2&testStatus=1).
+A list of test cases available for this ig is avalaible on [Gazelle](https://interop.esante.gouv.fr/gazelle/testing/testsDefinition/testsList.seam?testStatus=1).
