@@ -1,0 +1,50 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/CodeSystem/siph-natureproppharm-oncofair-codesystem> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "siph-natureproppharm-oncofair-codesystem"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem siph-natureproppharm-oncofair-codesystem</b></p><a name=\"siph-natureproppharm-oncofair-codesystem\"> </a><a name=\"hcsiph-natureproppharm-oncofair-codesystem\"> </a><a name=\"siph-natureproppharm-oncofair-codesystem-en-US\"> </a><p>This case-sensitive code system <code>http://ltsi.univ-rennes.fr/CodeSystem/siph-natureproppharm-oncofair-codesystem</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">NON<a name=\"siph-natureproppharm-oncofair-codesystem-NON\"> </a></td><td>Aucune</td></tr><tr><td style=\"white-space:nowrap\">SUG<a name=\"siph-natureproppharm-oncofair-codesystem-SUG\"> </a></td><td>Suggestion</td></tr><tr><td style=\"white-space:nowrap\">SUB<a name=\"siph-natureproppharm-oncofair-codesystem-SUB\"> </a></td><td>Substitution</td></tr><tr><td style=\"white-space:nowrap\">DDC<a name=\"siph-natureproppharm-oncofair-codesystem-DDC\"> </a></td><td>Dispensation DC</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/siph-natureproppharm-oncofair-codesystem"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "SIPhNaturePropPharmOncoFAIRCodeSystem"] ; # 
+  fhir:title [ fhir:v "Nature proposition pharmaceutique Code System"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-05-15T07:38:21+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "KEREVAL and DOMASIA team of the Signal and Image Processing Laboratory (LTSI)"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KEREVAL and DOMASIA team of the Signal and Image Processing Laboratory (LTSI)" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/ONCOFAIR" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Code system pour l'attribut NaturePropPharm"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "NON" ] ;
+     fhir:display [ fhir:v "Aucune" ]
+  ] [
+     fhir:code [ fhir:v "SUG" ] ;
+     fhir:display [ fhir:v "Suggestion" ]
+  ] [
+     fhir:code [ fhir:v "SUB" ] ;
+     fhir:display [ fhir:v "Substitution" ]
+  ] [
+     fhir:code [ fhir:v "DDC" ] ;
+     fhir:display [ fhir:v "Dispensation DC" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vsMedicationStatus",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vsMedicationStatus</b></p><a name=\"vsMedicationStatus\"> </a><a name=\"hcvsMedicationStatus\"> </a><a name=\"vsMedicationStatus-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-CSMedicationStatus.html\"><code>http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationStatus</code></a></li></ul></div>"
+  },
+  "url" : "http://ltsi.univ-rennes.fr/ValueSet/vsMedicationStatus",
+  "version" : "0.1.0",
+  "name" : "VSMedicationStatus",
+  "title" : "Medication status",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-05-15T07:38:21+00:00",
+  "publisher" : "KEREVAL and DOMASIA team of the Signal and Image Processing Laboratory (LTSI)",
+  "contact" : [{
+    "name" : "KEREVAL and DOMASIA team of the Signal and Image Processing Laboratory (LTSI)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/ONCOFAIR"
+    }]
+  }],
+  "description" : "ValueSet for medication status.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://ltsi.univ-rennes.fr/CodeSystem/CSMedicationStatus"
+    }]
+  }
+}
