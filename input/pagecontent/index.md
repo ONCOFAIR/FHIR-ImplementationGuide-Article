@@ -125,6 +125,21 @@ The following is a list of generic profiles :
             <td><a href="StructureDefinition-oncofair-patient.html">OncoFAIRPatient</a></td>
             <td>Contains the patient’s identity details needed to ensure that the prescription is properly taken into account.</td>
         </tr>
+        <tr>
+            <td><a href="http://hl7.org/fhir/R5/researchstudy.html">Clinical Trial</a></td>
+            <td><a href="StructureDefinition-clinical-trial.html">Oncology Clinical Trial</a></td>
+            <td>Oncology clinical trial used to associate a Onco Patient to a Clinical Trial.</td>
+        </tr>
+        <tr>
+            <td><a href="https://hl7.org/fhir/R5/condition.html">Condition</a></td>
+            <td><a href="StructureDefinition-dueTo-tumor-pathology-event.html">Tumor Pathology Event</a></td>
+            <td>Tumor Pathology Event (TPE) Condition describing a tumoral event: reference to the parent TPE, laterality, morphology.</td>
+        </tr>
+        <tr>
+            <td><a href="http://hl7.org/fhir/R5/healthcareservice.html">Healthcare Service</a></td>
+            <td><a href="StructureDefinition-oncology-healthcare-service.html">Oncology Healthcare Service</a></td>
+            <td>Contains the Healthcare Service information.</td>
+        </tr>
     </tbody>
 </table>
 
