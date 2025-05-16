@@ -38,4 +38,4 @@ Un commentaire ? Une remarque ? Utilisez les GitHub [issues](https://docs.github
 # Contacts
 Si vous souhaitez contacter les équipes ayant travaillé sur ce projet :
 * Pour les questions techniques : alain.ribault@kereval.com
-* Pour les questions métier : denis.delamarre@chu-rennes.fr
+* Pour les questions métier : marc.Cuggia@chu-rennes.fr
