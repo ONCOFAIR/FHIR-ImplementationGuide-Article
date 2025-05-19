@@ -4,7 +4,7 @@ A [FHIR server](https://oncofair.kereval.cloud/cqf-ruler/fhir/) is available to 
 This server also support [CQL operations](https://cql.hl7.org/).
 
 ### Test cases
-A list of test cases available for this ig is avalaible on [Gazelle](https://interop.esante.gouv.fr/gazelle/testing/testsDefinition/testsList.seam?testStatus=1).
+A list of test cases available for this ig is avalaible on [Gazelle](https://interop.esante.gouv.fr/gazelle/testing/testsDefinition/testsList.seam?testStatus=1) with the "Test Type" set to "preparatory".
 
 ### FHIR Validator
 
