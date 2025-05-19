@@ -10,7 +10,7 @@ The OncoFAIR project is designed to improve the interoperability and reuse of he
 
 The production of this implementation guide is based on :
 - [Functional specifications](KER3-NOT-BIOTECH_SB_ONCOFAIR-Specs_fonctionnelles-0.11.pdf)
-- [Study of norms and standards](KER3-NOT-BIOTECH_SB_ONCOFAIR-Normes_Standards-0.04.pdf)
+- [Study of norms and standards in the ANS  format, justifying the choice of FHIR R5](KER3-NOT-BIOTECH_SB_ONCOFAIR-Normes_Standards-0.04.pdf)
 
 #### Objectives
 
