@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="oncofair-sp-mr-prescription-validation-date"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: SearchParameter oncofair-sp-mr-prescription-validation-date</b></p><a name="oncofair-sp-mr-prescription-validation-date"> </a><a name="hconcofair-sp-mr-prescription-validation-date"> </a><a name="oncofair-sp-mr-prescription-validation-date-en-US"> </a><h2>OncoFAIRSPMRPrescriptionValidationDate</h2><p>Parameter <code>mr-prescription-validation-date</code>:<code>date</code></p><div><p>Search for the prescription validation date of the prescription</p>
+</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R5/medicationrequest.html">MedicationRequest</a></td></tr><tr><td>Expression</td><td><code>MedicationRequest.extension.where(url='http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-prescription-validation-date').value</code></td></tr><tr><td>Processing Mode</td><td>Normal</td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: The parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: The parameter may have multiple values (separated by comma) where at least one must be true</li></ul></td></tr><tr><td>Comparators</td><td>Allowed: eq, ne, gt, lt, ge, le, sa, eb, ap</td></tr></table></div>
+  </text>
+  <url value="http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-prescription-validation-date"/>
+  <version value="0.1.0"/>
+  <name value="OncoFAIRSPMRPrescriptionValidationDate"/>
+  <status value="active"/>
+  <date value="2025-05-19T07:46:46+00:00"/>
+  <publisher value="KEREVAL and DOMASIA team of the Signal and Image Processing Laboratory (LTSI)"/>
+  <contact>
+    <name value="KEREVAL and DOMASIA team of the Signal and Image Processing Laboratory (LTSI)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/ONCOFAIR"/>
+    </telecom>
+  </contact>
+  <description value="Search for the prescription validation date of the prescription"/>
+  <code value="mr-prescription-validation-date"/>
+  <base value="MedicationRequest"/>
+  <type value="date"/>
+  <expression value="MedicationRequest.extension.where(url='http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-prescription-validation-date').value"/>
+  <processingMode value="normal"/>
+  <multipleOr value="true"/>
+  <multipleAnd value="true"/>
+  <comparator value="eq"/>
+  <comparator value="ne"/>
+  <comparator value="gt"/>
+  <comparator value="lt"/>
+  <comparator value="ge"/>
+  <comparator value="le"/>
+  <comparator value="sa"/>
+  <comparator value="eb"/>
+  <comparator value="ap"/>
+</SearchParameter>

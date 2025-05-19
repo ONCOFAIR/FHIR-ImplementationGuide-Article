@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="ExampleOncoFAIRMedication"/>
+  <meta>
+    <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Medication ExampleOncoFAIRMedication</b></p><a name="ExampleOncoFAIRMedication"> </a><a name="hcExampleOncoFAIRMedication"> </a><a name="ExampleOncoFAIRMedication-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-oncofair-medication.html">OncoFAIR Medication</a></p></div><p><b>OncoFAIRMedicationType</b>: <span title="Codes:{http://ltsi.univ-rennes.fr/CodeSystem/siph-typecomposant-oncofair-codesystem PRAC}">principe actif</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 387207008}">Ibuprofen</span></p></div>
+  </text>
+  <extension url="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication-type">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://ltsi.univ-rennes.fr/CodeSystem/siph-typecomposant-oncofair-codesystem"/>
+        <code value="PRAC"/>
+        <display value="principe actif"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="387207008"/>
+      <display value="Ibuprofen"/>
+    </coding>
+  </code>
+</Medication>

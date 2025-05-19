@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="OncoFAIRMedicationRequestComponent-Folfox-vehicule-diffuseur"/>
+  <meta>
+    <profile value="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MedicationRequest OncoFAIRMedicationRequestComponent-Folfox-vehicule-diffuseur</b></p><a name="OncoFAIRMedicationRequestComponent-Folfox-vehicule-diffuseur"> </a><a name="hcOncoFAIRMedicationRequestComponent-Folfox-vehicule-diffuseur"> </a><a name="OncoFAIRMedicationRequestComponent-Folfox-vehicule-diffuseur-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-oncofair-medicationrequest-component.html">OncoFAIR MedicationRequest Component</a></p></div><p><b>OncoFAIRMRComponentSolute</b>: false</p><p><b>OncoFAIRMRIsDosageReferent</b>: true</p><p><b>identifier</b>: prescription-component-folfox-vehicle-difuseur</p><p><b>basedOn</b>: <a href="MedicationRequest-Element-folfox-diffuseur.html">MedicationRequest: identifier = prescription-element-folfox-difuseur; groupIdentifier = folfox-example; status = active; intent = proposal; note = 5-fluoro-uracile,protocol folfox; effectiveDosePeriod = 2024-11-01 08:00:00+0000 --&gt; 2024-11-30 09:00:00+0000</a></p><p><b>groupIdentifier</b>: folfox-example</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><h3>Medications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td><td><b>Reference</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem component}">component</span></td><td><a href="Medication-OncoFAIRMedication-vehicule.html">Medication Sodium chloride</a></td></tr></table><p><b>subject</b>: <a href="Patient-ExampleOncoFAIRPatient.html">Anonymous Patient (no stated gender), DoB Unknown ( 123456789)</a></p><p><b>performer</b>: <a href="Practitioner-ExampleOncoFAIRPractitioner.html">Practitioner: identifier = 12345</a></p><h3>Devices</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Reference</b></td></tr><tr><td style="display: none">*</td><td><a href="DeviceDefinition-ExampleOncoFAIRDeviceDefinition-diffuseur.html">DeviceDefinition: identifier = Difuseur</a></td></tr></table><p><b>note</b>: Prescribed component wording, Comments associated with the prescribed component, Specifies the reasons for prescribing this component</p><blockquote><p><b>dosageInstruction</b></p><p><b>site</b>: <span title="Codes:">6894000</span></p><p><b>route</b>: <span title="Codes:">Intravenous route</span></p><p><b>method</b>: <span title="Codes:">Administer (administration method)</span></p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>1000 ml</td></tr></table></blockquote><h3>Substitutions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Allowed[x]</b></td></tr><tr><td style="display: none">*</td><td>false</td></tr></table></div>
+  </text>
+  <extension url="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-component-solute">
+    <valueBoolean value="false"/>
+  </extension>
+  <extension url="http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-is-dosage-referent">
+    <valueBoolean value="true"/>
+  </extension>
+  <identifier>
+    <value value="prescription-component-folfox-vehicle-difuseur"/>
+  </identifier>
+  <basedOn>
+    <reference value="MedicationRequest/Element-folfox-diffuseur"/>
+  </basedOn>
+  <groupIdentifier>
+    <value value="folfox-example"/>
+  </groupIdentifier>
+  <status value="active"/>
+  <intent value="order"/>
+  <medication>
+    <concept>
+      <coding>
+        <system value="http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem"/>
+        <code value="component"/>
+        <display value="component"/>
+      </coding>
+    </concept>
+    <reference>
+      <reference value="Medication/OncoFAIRMedication-vehicule"/>
+    </reference>
+  </medication>
+  <subject>
+    <reference value="Patient/ExampleOncoFAIRPatient"/>
+  </subject>
+  <performer>
+    <reference value="Practitioner/ExampleOncoFAIRPractitioner"/>
+  </performer>
+  <device>
+    <reference>
+      <reference value="DeviceDefinition/ExampleOncoFAIRDeviceDefinition-diffuseur"/>
+    </reference>
+  </device>
+  <note id="wording">
+    <text value="Prescribed component wording"/>
+  </note>
+  <note id="comments">
+    <text value="Comments associated with the prescribed component"/>
+  </note>
+  <note id="indication">
+    <text value="Specifies the reasons for prescribing this component"/>
+  </note>
+  <dosageInstruction>
+    <site>
+      <coding>
+        <code value="6894000"/>
+      </coding>
+    </site>
+    <route>
+      <coding>
+        <code value="47625008"/>
+        <display value="Intravenous route"/>
+      </coding>
+    </route>
+    <method>
+      <coding>
+        <code value="738990001"/>
+        <display value="Administer (administration method)"/>
+      </coding>
+    </method>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="1000"/>
+        <unit value="ml"/>
+        <system value="http://unitsofmeasure.org"/>
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+  <substitution>
+    <allowedBoolean value="false"/>
+  </substitution>
+</MedicationRequest>

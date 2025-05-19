@@ -1,0 +1,730 @@
+{
+  "package": "ltsi.fhir.oncofair",
+  "version": "0.1.0",
+  "fhirVersion": "5.0.0",
+  "extensions": [
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/date-time",
+      "title": "Date and time",
+      "types": [
+        "dateTime",
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/date-time-end",
+      "title": "End date and time",
+      "types": [
+        "dateTime",
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/date-time-start",
+      "title": "Start date and time",
+      "types": [
+        "dateTime",
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/dueTo-tumor-pathology-event",
+      "title": "Tumor Pathology Event Parent",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/eventTimeMax",
+      "title": "Event Time Max",
+      "types": [
+        "time",
+        "time"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/eventTimeMin",
+      "title": "Event Time Min",
+      "types": [
+        "time",
+        "time"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/eventTypeData",
+      "title": "Event Type Data",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/histologygrade",
+      "title": "Histology",
+      "types": [
+        "string",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "integer64",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "CodeableReference",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "RatioRange",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Availability",
+        "ExtendedContactDetail",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/laterality",
+      "title": "Laterality",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/medication-administered-planned-quantity",
+      "title": "Planned quantity of medication",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/medication-administered-quantity",
+      "title": "Administered quantity of medication",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/medication-comment",
+      "title": "Medication comment",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/medication-is-vehicle",
+      "title": "Medication Is Vehicle",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/medication-item-provenance",
+      "title": "Medication item provenance",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/medication-lti-exemption",
+      "title": "Medication LTI exemption",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/medication-status",
+      "title": "Medication status",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/medication-type",
+      "title": "Medication type",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-cp-treatment",
+      "title": "OncoFAIRCPTreatment",
+      "types": [
+        "integer",
+        "integer",
+        "dateTime",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "integer64",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "CodeableReference",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "RatioRange",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Availability",
+        "ExtendedContactDetail",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-element-form",
+      "title": "OncoFAIRElementForm",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-component-administration-status",
+      "title": "OncoFAIRMAComponentAdministrationStatus",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-component-origin",
+      "title": "OncoFAIRMAComponentOrigin",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-expirationdate",
+      "title": "OncoFAIRMAElementExpirationDate",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-plannedperiod",
+      "title": "OncoFAIRMAElementPlannedPeriod",
+      "types": [
+        "Period",
+        "id",
+        "Extension",
+        "dateTime",
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-traceability",
+      "title": "OncoFAIRMAElementTraceability",
+      "types": [
+        "string",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "integer64",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "CodeableReference",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "RatioRange",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Availability",
+        "ExtendedContactDetail",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-urgent",
+      "title": "OncoFAIRMAElementUrgent",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication-type",
+      "title": "OncoFAIRMedicationType",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-component-solute",
+      "title": "OncoFAIRMRComponentSolute",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-go-nogo",
+      "title": "OncoFAIRMRElementGoNogo",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "integer64",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "CodeableReference",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "RatioRange",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Availability",
+        "ExtendedContactDetail",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-link-type",
+      "title": "OncoFAIRMRElementLinkType",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-rank",
+      "title": "OncoFAIRMRElementRank",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-supply",
+      "title": "OncoFAIRMRElementSupply",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-exempt-ltc",
+      "title": "OncoFAIRMRExemptLTC",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-is-dosage-referent",
+      "title": "OncoFAIRMRIsDosageReferent",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-prescription-validation-date",
+      "title": "OncoFAIRMRPrescriptionValidationDate",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-pharmacist-advice",
+      "title": "OncoFAIRPharmacistAdvice",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "integer64",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "CodeableReference",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "RatioRange",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Availability",
+        "ExtendedContactDetail",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://ltsi.univ-rennes.fr/StructureDefinition/treatment-line",
+      "title": "Treatment Line Number",
+      "types": [
+        "integer",
+        "integer"
+      ]
+    }
+  ],
+  "profiles": {
+    "ResearchStudy": [
+      {
+        "url": "http://ltsi.univ-rennes.fr/StructureDefinition/clinical-trial",
+        "title": "Oncology Clinical Trial"
+      }
+    ],
+    "CarePlan": [
+      {
+        "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-careplan",
+        "title": "OncoFAIR CarePlan"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-encounter",
+        "title": "OncoFAIR Encounter"
+      }
+    ],
+    "Medication": [
+      {
+        "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication",
+        "title": "OncoFAIR Medication"
+      }
+    ],
+    "MedicationAdministration": [
+      {
+        "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationadministration-component",
+        "title": "OncoFAIR MedicationAdministration Component"
+      },
+      {
+        "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationadministration-element",
+        "title": "OncoFAIR MedicationAdministration Element"
+      },
+      {
+        "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationadministration-report",
+        "title": "OncoFAIR MedicationAdministration Report"
+      }
+    ],
+    "MedicationRequest": [
+      {
+        "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component",
+        "title": "OncoFAIR MedicationRequest Component"
+      },
+      {
+        "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-element",
+        "title": "OncoFAIR MedicationRequest Element"
+      },
+      {
+        "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-prescription",
+        "title": "OncoFAIR MedicationRequest Prescription"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-observation",
+        "title": "OncoFAIR Observation"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-patient",
+        "title": "OncoFAIR Patient"
+      }
+    ],
+    "HealthcareService": [
+      {
+        "url": "http://ltsi.univ-rennes.fr/StructureDefinition/oncology-healthcare-service",
+        "title": "OncologyHealthcareService"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "http://ltsi.univ-rennes.fr/StructureDefinition/tumor-pathology-event",
+        "title": "Tumor Pathology Event"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/condition-dueTo": [
+      "Condition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.differential.element.type",
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/dueTo-tumor-pathology-event": [
+      "Condition"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/histologygrade": [
+      "Condition"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/laterality": [
+      "Condition"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-cp-treatment": [
+      "CarePlan"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-element-form": [
+      "MedicationAdministration",
+      "MedicationRequest"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-component-administration-status": [
+      "MedicationAdministration"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-component-origin": [
+      "MedicationAdministration"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-expirationdate": [
+      "MedicationAdministration"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-plannedperiod": [
+      "MedicationAdministration"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-traceability": [
+      "MedicationAdministration"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-urgent": [
+      "MedicationAdministration"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication-type": [
+      "Medication"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-component-solute": [
+      "MedicationRequest"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-go-nogo": [
+      "MedicationRequest"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-link-type": [
+      "MedicationRequest.basedOn"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-rank": [
+      "MedicationRequest"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-element-supply": [
+      "MedicationRequest"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-exempt-ltc": [
+      "MedicationRequest"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-is-dosage-referent": [
+      "MedicationRequest"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-prescription-validation-date": [
+      "MedicationRequest"
+    ],
+    "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-pharmacist-advice": [
+      "CarePlan",
+      "MedicationRequest"
+    ]
+  }
+}

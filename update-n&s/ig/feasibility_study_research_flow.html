@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Flow 02 - Request chemotherapy data for a feasibility study - OncoFAIR v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3.2"}
+    h3,h4,h5,h6{--heading-prefix:"3.2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">OncoFAIR</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="mapping.html">Mapping</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Compliance resources</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Description of flows
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="feed_flow.html">Flow 01 - Using queries to populate an HDW with chemotherapy data</a>
+      </li>
+      <li>
+        <a href="feasibility_study_research_flow.html">Flow 02 - Request chemotherapy data for a feasibility study</a>
+      </li>
+      <li>
+        <a href="multicentric_study_research_flow.html">Flow 03 - Request chemotherapy data for a multicentric study</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="test.html">Testing</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='technical_specifications.html'><b>Technical Specifications</b></a></li><li><b>Flow 02 - Request chemotherapy data for a feasibility study</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">OncoFAIR - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://ltsi.univ-rennes.fr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Flow 02 - Request chemotherapy data for a feasibility study</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#flow-21" id="markdown-toc-flow-21">Flow 2.1</a></li>
+  <li><a href="#flow-22" id="markdown-toc-flow-22">Flow 2.2</a></li>
+  <li><a href="#search-criteria" id="markdown-toc-search-criteria">Search criteria</a></li>
+  <li><a href="#examples-of-queries" id="markdown-toc-examples-of-queries">Examples of queries</a></li>
+</ul>
+
+</div>
+<div><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="SEQUENCE" height="240px" preserveAspectRatio="none" style="width:421px;height:240px;background:#FFFFFF;" version="1.1" viewBox="0 0 421 240" width="421px" zoomAndPan="magnify"><defs /><g><g><title>Consumer</title><rect fill="#000000" fill-opacity="0.00000" height="78.2656" width="8" x="39.6938" y="81.2969" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="43" x2="43" y1="81.2969" y2="159.5625" /></g><g><title>Health data warehouse</title><rect fill="#000000" fill-opacity="0.00000" height="78.2656" width="8" x="332.2886" y="81.2969" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="335.7769" x2="335.7769" y1="81.2969" y2="159.5625" /></g><g class="participant participant-head" data-participant="C"><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="71.3877" x="5" y="77.9951">Consumer</text><ellipse cx="43.6938" cy="13.5" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M43.6938,21.5 L43.6938,48.5 M30.6938,29.5 L56.6938,29.5 M43.6938,48.5 L30.6938,63.5 M43.6938,48.5 L56.6938,63.5" fill="none" style="stroke:#181818;stroke-width:0.5;" /></g><g class="participant participant-tail" data-participant="C"><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="71.3877" x="5" y="171.5576">Consumer</text><ellipse cx="43.6938" cy="183.3594" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M43.6938,191.3594 L43.6938,218.3594 M30.6938,199.3594 L56.6938,199.3594 M43.6938,218.3594 L30.6938,233.3594 M43.6938,218.3594 L56.6938,233.3594" fill="none" style="stroke:#181818;stroke-width:0.5;" /></g><g class="participant participant-head" data-participant="EDS"><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="163.0234" x="251.7769" y="77.9951">Health data warehouse</text><ellipse cx="336.2886" cy="13.5" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M336.2886,21.5 L336.2886,48.5 M323.2886,29.5 L349.2886,29.5 M336.2886,48.5 L323.2886,63.5 M336.2886,48.5 L349.2886,63.5" fill="none" style="stroke:#181818;stroke-width:0.5;" /></g><g class="participant participant-tail" data-participant="EDS"><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="163.0234" x="251.7769" y="171.5576">Health data warehouse</text><ellipse cx="336.2886" cy="183.3594" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M336.2886,191.3594 L336.2886,218.3594 M323.2886,199.3594 L349.2886,199.3594 M336.2886,218.3594 L323.2886,233.3594 M336.2886,218.3594 L349.2886,233.3594" fill="none" style="stroke:#181818;stroke-width:0.5;" /></g><g class="message" data-participant-1="C" data-participant-2="EDS"><polygon fill="#181818" points="324.2886,108.4297,334.2886,112.4297,324.2886,116.4297,328.2886,112.4297" style="stroke:#181818;stroke-width:1;" /><line style="stroke:#181818;stroke-width:1;" x1="43.6938" x2="330.2886" y1="112.4297" y2="112.4297" /><text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="54.4819" x="50.6938" y="107.3638">Flow 2.1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="209.9805" x="109.3081" y="107.3638">GET [base]/Resource/?_count=0</text></g><g class="message" data-participant-1="EDS" data-participant-2="C"><polygon fill="#181818" points="54.6938,137.5625,44.6938,141.5625,54.6938,145.5625,50.6938,141.5625" style="stroke:#181818;stroke-width:1;" /><line style="stroke:#181818;stroke-width:1;stroke-dasharray:2.0,2.0;" x1="48.6938" x2="335.2886" y1="141.5625" y2="141.5625" /><text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="54.4819" x="60.6938" y="136.4966">Flow 2.2</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="166.042" x="119.3081" y="136.4966">200 OK Bundle Searchset</text></g></g></svg></div>
+
+<p>The chemotherapy data request flow for a feasibility study and its response, is operated by the HTTP GET request on resources Patient or Encounter.</p>
+
+<h3 id="flow-21">Flow 2.1</h3>
+
+<p>This workflow enables chemotherapy data to be requested for a feasibility study using specific inclusion and exclusion criteria. A researcher or healthcare professional may, for example, be looking for patients meeting specific criteria such as age, gender, specific co-morbidities or particular chemotherapy treatments.</p>
+
+<p>The user initiates a query containing X parameters with the filter "_count"=0. The user interface transforms this query into a batch of individual queries contained in a bundle of batch type containing the X +1 queries, each of which contains just one of the X parameters, plus the initial query.</p>
+
+<p>The search criteria may include elements such as the patient ID, the type of chemotherapy treatment administered, or even concomitant medical conditions. This query is constructed using the appropriate FHIR search parameters, which allow precise selection of the data required for the study.</p>
+
+<h3 id="flow-22">Flow 2.2</h3>
+
+<p>The health data warehouse receives the request and searches for data corresponding to the criteria provided.</p>
+
+<p>Once the relevant data has been extracted, the warehouse sends the aggregated results to the consumer in the form of an FHIR bundle = searchset with a 200 OK code which indicates the total number of resources that match in Bundle.total, but without entries or previous/next/last links. It means that, the health data warehouse will return a number of stays or patients corresponding to the request. The response includes information on the impact of each criterion on results. If necessary, the consumer can then send a new query with modified criteria to further refine the results of the feasibility study.</p>
+
+<h3 id="search-criteria">Search criteria</h3>
+
+<p>The list of applicable search criteria is available in the capability statement <a href="CapabilityStatement-oncofair-consumer-secondary-chemotherapy-data.html">OncoFAIR Consumer secondary chemotherapy data</a>.</p>
+
+<h3 id="examples-of-queries">Examples of queries</h3>
+
+<h4 id="scenario-1">Scenario 1</h4>
+
+<p><strong>Scenario description</strong> : A researcher wants to identify patients who have received a specific chemotherapy treatment for a feasibility study.</p>
+
+<p><strong>Example</strong> : Search for patients who have received a specific chemotherapy drug (identified by the code 387207008)</p>
+
+<p><strong>Request</strong> : coming soon</p>
+
+<h4 id="scenario-2">Scenario 2</h4>
+
+<p><strong>Scenario description</strong> : A researcher wants to identify patients who have particular comorbidities for a feasibility study.</p>
+
+<p><strong>Example</strong> : Search for patients who are on a diet (identified by the code REGIME).</p>
+
+<p><strong>Request</strong> : coming soon</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/ONCOFAIR">KEREVAL and DOMASIA team of the Signal and Image Processing Laboratory (LTSI)</a>.  Package ltsi.fhir.oncofair#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, May 19, 2025 07:47+0000">2025-05-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
