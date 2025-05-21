@@ -28,6 +28,9 @@ Ce repository "IG-ONCOFAIR" a été créé à partir du repository [sample-ig](h
 
 Un commentaire ? Une remarque ? Utilisez les GitHub [issues](https://docs.github.com/fr/issues) pour indiquer vos propositions d'amélioration et de correction.
 
+Lien vers la version en intégration continue : [https://oncofair.github.io/FHIR-ImplementationGuide-Article/main/ig/](https://oncofair.github.io/FHIR-ImplementationGuide-Article/main/ig/).
+Pour prévisualiser une autre branche vous pouvez utiliser la syntaxe suivante : https://oncofair.github.io/FHIR-ImplementationGuide-Article/[NOM DE LA BRANCHE]/ig
+
 ## Acronymes
 
 * IG : Implementation Guide
