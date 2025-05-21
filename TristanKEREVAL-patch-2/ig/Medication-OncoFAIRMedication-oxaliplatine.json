@@ -1,0 +1,31 @@
+{
+  "resourceType" : "Medication",
+  "id" : "OncoFAIRMedication-oxaliplatine",
+  "meta" : {
+    "profile" : ["http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication OncoFAIRMedication-oxaliplatine</b></p><a name=\"OncoFAIRMedication-oxaliplatine\"> </a><a name=\"hcOncoFAIRMedication-oxaliplatine\"> </a><a name=\"OncoFAIRMedication-oxaliplatine-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-oncofair-medication.html\">OncoFAIR Medication</a></p></div><p><b>OncoFAIRMedicationType</b>: <span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/siph-typecomposant-oncofair-codesystem PRAC}\">principe actif</span></p><p><b>identifier</b>: medication-folfox-oxaliplatine</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 395814003}\">Oxaliplatin</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medication-type",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://ltsi.univ-rennes.fr/CodeSystem/siph-typecomposant-oncofair-codesystem",
+        "code" : "PRAC",
+        "display" : "principe actif"
+      }]
+    }
+  }],
+  "identifier" : [{
+    "value" : "medication-folfox-oxaliplatine"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "395814003",
+      "display" : "Oxaliplatin"
+    }]
+  }
+}

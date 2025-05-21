@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "siph-typeeltpla-oncofair-codesystem"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem siph-typeeltpla-oncofair-codesystem</b></p><a name=\"siph-typeeltpla-oncofair-codesystem\"> </a><a name=\"hcsiph-typeeltpla-oncofair-codesystem\"> </a><a name=\"siph-typeeltpla-oncofair-codesystem-en-US\"> </a><p>This case-sensitive code system <code>http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">MED<a name=\"siph-typeeltpla-oncofair-codesystem-MED\"> </a></td><td>Médicament</td></tr><tr><td style=\"white-space:nowrap\">ID<a name=\"siph-typeeltpla-oncofair-codesystem-ID\"> </a></td><td>Injection directe</td></tr><tr><td style=\"white-space:nowrap\">PERF<a name=\"siph-typeeltpla-oncofair-codesystem-PERF\"> </a></td><td>Perfusion</td></tr><tr><td style=\"white-space:nowrap\">PSE<a name=\"siph-typeeltpla-oncofair-codesystem-PSE\"> </a></td><td>Pousse-seringue électrique</td></tr><tr><td style=\"white-space:nowrap\">PCA<a name=\"siph-typeeltpla-oncofair-codesystem-PCA\"> </a></td><td>Patient Controled Analgesiae</td></tr><tr><td style=\"white-space:nowrap\">GAZ<a name=\"siph-typeeltpla-oncofair-codesystem-GAZ\"> </a></td><td>Gaz médical</td></tr><tr><td style=\"white-space:nowrap\">AER<a name=\"siph-typeeltpla-oncofair-codesystem-AER\"> </a></td><td>Aérosol</td></tr><tr><td style=\"white-space:nowrap\">PATCH<a name=\"siph-typeeltpla-oncofair-codesystem-PATCH\"> </a></td><td>Patch</td></tr><tr><td style=\"white-space:nowrap\">NE<a name=\"siph-typeeltpla-oncofair-codesystem-NE\"> </a></td><td>Nutrition entérale</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "SIPhTypeEltPLAOncoFAIRCodeSystem"] ; # 
+  fhir:title [ fhir:v "Type de l'élément d'administration Code System"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-05-21T15:03:13+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "KEREVAL and DOMASIA team of the Signal and Image Processing Laboratory (LTSI)"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KEREVAL and DOMASIA team of the Signal and Image Processing Laboratory (LTSI)" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/ONCOFAIR" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Code system pour l'attribut TypeEltPLA"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "9"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "MED" ] ;
+     fhir:display [ fhir:v "Médicament" ]
+  ] [
+     fhir:code [ fhir:v "ID" ] ;
+     fhir:display [ fhir:v "Injection directe" ]
+  ] [
+     fhir:code [ fhir:v "PERF" ] ;
+     fhir:display [ fhir:v "Perfusion" ]
+  ] [
+     fhir:code [ fhir:v "PSE" ] ;
+     fhir:display [ fhir:v "Pousse-seringue électrique" ]
+  ] [
+     fhir:code [ fhir:v "PCA" ] ;
+     fhir:display [ fhir:v "Patient Controled Analgesiae" ]
+  ] [
+     fhir:code [ fhir:v "GAZ" ] ;
+     fhir:display [ fhir:v "Gaz médical" ]
+  ] [
+     fhir:code [ fhir:v "AER" ] ;
+     fhir:display [ fhir:v "Aérosol" ]
+  ] [
+     fhir:code [ fhir:v "PATCH" ] ;
+     fhir:display [ fhir:v "Patch" ]
+  ] [
+     fhir:code [ fhir:v "NE" ] ;
+     fhir:display [ fhir:v "Nutrition entérale" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
