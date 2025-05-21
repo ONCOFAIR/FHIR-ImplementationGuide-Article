@@ -1,0 +1,119 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/MedicationRequest/OncoFAIRMedicationRequestComponent-Folfox-vehicule> a fhir:MedicationRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "OncoFAIRMedicationRequestComponent-Folfox-vehicule"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component"^^xsd:anyURI ;
+       fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationrequest-component>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest OncoFAIRMedicationRequestComponent-Folfox-vehicule</b></p><a name=\"OncoFAIRMedicationRequestComponent-Folfox-vehicule\"> </a><a name=\"hcOncoFAIRMedicationRequestComponent-Folfox-vehicule\"> </a><a name=\"OncoFAIRMedicationRequestComponent-Folfox-vehicule-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-oncofair-medicationrequest-component.html\">OncoFAIR MedicationRequest Component</a></p></div><p><b>OncoFAIRMRComponentSolute</b>: false</p><p><b>OncoFAIRMRIsDosageReferent</b>: true</p><p><b>identifier</b>: prescription-component-folfox-vehicle</p><p><b>basedOn</b>: <a href=\"MedicationRequest-Element-folfox.html\">MedicationRequest: identifier = prescription-element-folfox-hospital; groupIdentifier = folfox-example; status = active; intent = proposal; note = 5-fluoro-uracile,protocol folfox; effectiveDosePeriod = 2024-11-01 08:00:00+0000 --&gt; 2024-11-30 09:00:00+0000</a></p><p><b>groupIdentifier</b>: folfox-example</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem component}\">component</span></td><td><a href=\"Medication-OncoFAIRMedication-vehicule.html\">Medication Sodium chloride</a></td></tr></table><p><b>subject</b>: <a href=\"Patient-ExampleOncoFAIRPatient.html\">Anonymous Patient (no stated gender), DoB Unknown ( 123456789)</a></p><p><b>performer</b>: <a href=\"Practitioner-ExampleOncoFAIRPractitioner.html\">Practitioner: identifier = 12345</a></p><h3>Devices</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"DeviceDefinition-ExampleOncoFAIRDeviceDefinition-perfusion.html\">DeviceDefinition: identifier = Perfusion</a></td></tr></table><p><b>note</b>: Prescribed component wording, Comments associated with the prescribed component, Specifies the reasons for prescribing this component</p><blockquote><p><b>dosageInstruction</b></p><p><b>site</b>: <span title=\"Codes:\">6894000</span></p><p><b>route</b>: <span title=\"Codes:\">Intravenous route</span></p><p><b>method</b>: <span title=\"Codes:\">Administer (administration method)</span></p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>100 ml</td></tr></table></blockquote><h3>Substitutions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Allowed[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>false</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-component-solute"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:boolean ;
+       fhir:v false
+     ]
+  ] [
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-mr-is-dosage-referent"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:boolean ;
+       fhir:v true
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "prescription-component-folfox-vehicle" ]
+  ] ) ; # 
+  fhir:basedOn ( [
+     fhir:link <http://ltsi.univ-rennes.fr/MedicationRequest/Element-folfox> ;
+     fhir:reference [ fhir:v "MedicationRequest/Element-folfox" ]
+  ] ) ; # 
+  fhir:groupIdentifier [
+     fhir:value [ fhir:v "folfox-example" ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:medication [
+     fhir:concept [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "component" ] ;
+         fhir:display [ fhir:v "component" ]
+       ] )
+     ] ;
+     fhir:reference [
+       fhir:link <http://ltsi.univ-rennes.fr/Medication/OncoFAIRMedication-vehicule> ;
+       fhir:reference [ fhir:v "Medication/OncoFAIRMedication-vehicule" ]
+     ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://ltsi.univ-rennes.fr/Patient/ExampleOncoFAIRPatient> ;
+     fhir:reference [ fhir:v "Patient/ExampleOncoFAIRPatient" ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:link <http://ltsi.univ-rennes.fr/Practitioner/ExampleOncoFAIRPractitioner> ;
+     fhir:reference [ fhir:v "Practitioner/ExampleOncoFAIRPractitioner" ]
+  ] ) ; # 
+  fhir:device ( [
+     fhir:reference [
+       fhir:link <http://ltsi.univ-rennes.fr/DeviceDefinition/ExampleOncoFAIRDeviceDefinition-perfusion> ;
+       fhir:reference [ fhir:v "DeviceDefinition/ExampleOncoFAIRDeviceDefinition-perfusion" ]
+     ]
+  ] ) ; # 
+  fhir:note ( [
+     fhir:id [ fhir:v "wording" ] ;
+     fhir:text [ fhir:v "Prescribed component wording" ]
+  ] [
+     fhir:id [ fhir:v "comments" ] ;
+     fhir:text [ fhir:v "Comments associated with the prescribed component" ]
+  ] [
+     fhir:id [ fhir:v "indication" ] ;
+     fhir:text [ fhir:v "Specifies the reasons for prescribing this component" ]
+  ] ) ; # 
+  fhir:dosageInstruction ( [
+     fhir:site [
+       fhir:coding ( [
+         fhir:code [ fhir:v "6894000" ]
+       ] )
+     ] ;
+     fhir:route [
+       fhir:coding ( [
+         fhir:code [ fhir:v "47625008" ] ;
+         fhir:display [ fhir:v "Intravenous route" ]
+       ] )
+     ] ;
+     fhir:method [
+       fhir:coding ( [
+         fhir:code [ fhir:v "738990001" ] ;
+         fhir:display [ fhir:v "Administer (administration method)" ]
+       ] )
+     ] ;
+     fhir:doseAndRate ( [
+       fhir:dose [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "100"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "ml" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+       ]
+     ] )
+  ] ) ; # 
+  fhir:substitution [
+     fhir:allowed [
+       a fhir:boolean ;
+       fhir:v false
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

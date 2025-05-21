@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="oncofair-sp-mr-type-elementprescrption"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: SearchParameter oncofair-sp-mr-type-elementprescrption</b></p><a name="oncofair-sp-mr-type-elementprescrption"> </a><a name="hconcofair-sp-mr-type-elementprescrption"> </a><a name="oncofair-sp-mr-type-elementprescrption-en-US"> </a><h2>OncoFAIRSPMRTypeElementPrescription</h2><p>Parameter <code>mr-type-elementprescrption</code>:<code>token</code></p><div><p>Search for the type of element prescription</p>
+</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R5/medicationrequest.html">MedicationRequest</a></td></tr><tr><td>Expression</td><td><code>MedicationRequest.dosageInstruction.where(id='element').method</code></td></tr><tr><td>Processing Mode</td><td>Normal</td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: It's up to the server whether the parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: It's up to the server whether the parameter can have multiple values (separated by comma) where at least one must be true</li></ul></td></tr></table></div>
+  </text>
+  <url value="http://ltsi.univ-rennes.fr/SearchParameter/oncofair-sp-mr-type-elementprescrption"/>
+  <version value="0.1.0"/>
+  <name value="OncoFAIRSPMRTypeElementPrescription"/>
+  <status value="active"/>
+  <date value="2025-05-21T15:07:15+00:00"/>
+  <publisher value="KEREVAL and DOMASIA team of the Signal and Image Processing Laboratory (LTSI)"/>
+  <contact>
+    <name value="KEREVAL and DOMASIA team of the Signal and Image Processing Laboratory (LTSI)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/ONCOFAIR"/>
+    </telecom>
+  </contact>
+  <description value="Search for the type of element prescription"/>
+  <code value="mr-type-elementprescrption"/>
+  <base value="MedicationRequest"/>
+  <type value="token"/>
+  <expression value="MedicationRequest.dosageInstruction.where(id='element').method"/>
+  <processingMode value="normal"/>
+</SearchParameter>

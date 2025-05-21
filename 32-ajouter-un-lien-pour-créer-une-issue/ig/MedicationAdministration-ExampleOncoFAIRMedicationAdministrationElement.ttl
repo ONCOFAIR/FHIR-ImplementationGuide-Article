@@ -1,0 +1,145 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ltsi.univ-rennes.fr/MedicationAdministration/ExampleOncoFAIRMedicationAdministrationElement> a fhir:MedicationAdministration ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleOncoFAIRMedicationAdministrationElement"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationadministration-element"^^xsd:anyURI ;
+       fhir:link <http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-medicationadministration-element>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationAdministration ExampleOncoFAIRMedicationAdministrationElement</b></p><a name=\"ExampleOncoFAIRMedicationAdministrationElement\"> </a><a name=\"hcExampleOncoFAIRMedicationAdministrationElement\"> </a><a name=\"ExampleOncoFAIRMedicationAdministrationElement-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-oncofair-medicationadministration-element.html\">OncoFAIR MedicationAdministration Element</a></p></div><p><b>OncoFAIRMAElementUrgent</b>: true</p><p><b>OncoFAIRMAElementExpirationDate</b>: 2024-12-31 23:59:59+0000</p><blockquote><p><b>OncoFAIRMAElementTraceability</b></p><ul><li>batchNumber: BATCH12345</li><li>serialNumber: SN67890</li></ul></blockquote><p><b>OncoFAIRMAElementPlannedPeriod</b>: 2024-06-01 07:00:00+0000 --&gt; 2024-06-01 08:00:00+0000</p><p><b>OncoFAIRElementForm</b>: <span title=\"Codes:{http://snomed.info/sct 385055001}\">Tablet</span></p><p><b>identifier</b>: ADM-123456</p><p><b>partOf</b>: <a href=\"MedicationAdministration-ExampleOncoFAIRMedicationAdministrationReport.html\">MedicationAdministration: identifier = REP-123456; status = in-progress; occurence[x] = 2024-06-01 08:00:00+0000</a></p><p><b>status</b>: In Progress</p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem element}\">element</span></td><td><a href=\"Medication-ExampleOncoFAIRMedication.html\">Medication Ibuprofen</a></td></tr></table><p><b>subject</b>: <a href=\"Patient-ExampleOncoFAIRPatient.html\">Anonymous Patient (no stated gender), DoB Unknown ( 123456789)</a></p><p><b>occurence</b>: 2024-06-01 08:00:00+0000 --&gt; 2024-06-01 09:00:00+0000</p><p><b>request</b>: Identifier: RX-123456</p><h3>Devices</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Device-ExampleOncoFAIRDevice.html\">Device: identifier = D04</a></td></tr></table><p><b>note</b>: Paracetamol 500mg Tablet, Administered after meals</p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Site</b></td><td><b>Route</b></td><td><b>Method</b></td></tr><tr><td style=\"display: none\">*</td><td>XXX</td><td><span title=\"Codes:{http://snomed.info/sct 49928004}\">Throat</span></td><td><span title=\"Codes:{http://snomed.info/sct 26643006}\">Oral route</span></td><td><span title=\"Codes:{http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem MED}\">Médicament</span></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-urgent"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:boolean ;
+       fhir:v true
+     ]
+  ] [
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-expirationdate"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:dateTime ;
+       fhir:v "2024-12-31T23:59:59Z"^^xsd:dateTime
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "batchNumber"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "BATCH12345"
+       ]
+     ] [
+       fhir:url [ fhir:v "serialNumber"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "SN67890"
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-traceability"^^xsd:anyURI ]
+  ] [
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-ma-element-plannedperiod"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Period ;
+       fhir:start [ fhir:v "2024-06-01T07:00:00Z"^^xsd:dateTime ] ;
+       fhir:end [ fhir:v "2024-06-01T08:00:00Z"^^xsd:dateTime ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://ltsi.univ-rennes.fr/StructureDefinition/oncofair-element-form"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:385055001 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "385055001" ] ;
+         fhir:display [ fhir:v "Tablet" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "ADM-123456" ]
+  ] ) ; # 
+  fhir:partOf ( [
+     fhir:link <http://ltsi.univ-rennes.fr/MedicationAdministration/ExampleOncoFAIRMedicationAdministrationReport> ;
+     fhir:reference [ fhir:v "MedicationAdministration/ExampleOncoFAIRMedicationAdministrationReport" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "in-progress"] ; # 
+  fhir:medication [
+     fhir:concept [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/concept-medication-oncofair-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "element" ] ;
+         fhir:display [ fhir:v "element" ]
+       ] )
+     ] ;
+     fhir:reference [
+       fhir:link <http://ltsi.univ-rennes.fr/Medication/ExampleOncoFAIRMedication> ;
+       fhir:reference [ fhir:v "Medication/ExampleOncoFAIRMedication" ]
+     ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://ltsi.univ-rennes.fr/Patient/ExampleOncoFAIRPatient> ;
+     fhir:reference [ fhir:v "Patient/ExampleOncoFAIRPatient" ]
+  ] ; # 
+  fhir:occurence [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2024-06-01T08:00:00Z"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2024-06-01T09:00:00Z"^^xsd:dateTime ]
+  ] ; # 
+  fhir:request [
+     fhir:identifier [
+       fhir:value [ fhir:v "RX-123456" ]
+     ]
+  ] ; # 
+  fhir:device ( [
+     fhir:reference [
+       fhir:link <http://ltsi.univ-rennes.fr/Device/ExampleOncoFAIRDevice> ;
+       fhir:reference [ fhir:v "Device/ExampleOncoFAIRDevice" ]
+     ]
+  ] ) ; # 
+  fhir:note ( [
+     fhir:id [ fhir:v "wording" ] ;
+     fhir:text [ fhir:v "Paracetamol 500mg Tablet" ]
+  ] [
+     fhir:id [ fhir:v "comments" ] ;
+     fhir:text [ fhir:v "Administered after meals" ]
+  ] ) ; # 
+  fhir:dosage [
+     fhir:text [ fhir:v "XXX" ] ;
+     fhir:site [
+       fhir:coding ( [
+         a sct:49928004 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "49928004" ] ;
+         fhir:display [ fhir:v "Throat" ]
+       ] )
+     ] ;
+     fhir:route [
+       fhir:coding ( [
+         a sct:26643006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "26643006" ] ;
+         fhir:display [ fhir:v "Oral route" ]
+       ] )
+     ] ;
+     fhir:method [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://ltsi.univ-rennes.fr/CodeSystem/siph-typeeltpla-oncofair-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MED" ] ;
+         fhir:display [ fhir:v "Médicament" ]
+       ] )
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
