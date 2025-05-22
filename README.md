@@ -41,4 +41,4 @@ Pour prévisualiser une autre branche vous pouvez utiliser la syntaxe suivante :
 # Contacts
 Si vous souhaitez contacter les équipes ayant travaillé sur ce projet :
 * Pour les questions techniques : alain.ribault@kereval.com
-* Pour les questions métier : marc.Cuggia@chu-rennes.fr
+* Pour les questions métier : marc.cuggia@chu-rennes.fr
