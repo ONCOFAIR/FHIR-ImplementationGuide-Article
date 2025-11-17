@@ -9,8 +9,8 @@ OncoFAIR est un projet collaboratif entre l’équipe DOMASIA (DOnnées MAssives
 The OncoFAIR project is designed to improve the interoperability and reuse of healthcare data in oncology, focusing on chemotherapy. This guide details the use of FHIR standards to optimize prescribing and medication administration for oncology patients.
 
 The production of this implementation guide is based on :
-- [Functional specifications](KER3-NOT-BIOTECH_SB_ONCOFAIR-Spécifications-fonctionnelles-1_02-Validé.pdf)
-- [Study of norms and standards in the ANS  format, justifying the choice of FHIR R5](KER3-NOT-BIOTECH_SB_ONCOFAIR-NormesStandards-1_02-Validé.pdf)
+- [Functional specifications](KER3-NOT-BIOTECH_SB_ONCOFAIR-SF-1_02.pdf)
+- [Study of norms and standards in the ANS  format, justifying the choice of FHIR R5](KER3-NOT-BIOTECH_SB_ONCOFAIR-NS-1_02.pdf)
 
 #### Objectives
 
