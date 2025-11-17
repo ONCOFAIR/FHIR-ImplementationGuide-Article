@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="163.8767px" preserveAspectRatio="none" style="width:200px;height:163px;background:#FFFFFF;" version="1.1" viewBox="0 0 200 163" width="200.8811px" zoomAndPan="magnify"><defs/><g><g id="elem_OncoFAIRPatient"><rect fill="#A9A9A9" height="41.6024" style="stroke:#181818;stroke-width:0.4405286343612335;" width="116.2996" x="42.2907" y="6.1674"/><text fill="#000000" font-family="sans-serif" font-size="12.3348" font-weight="bold" lengthAdjust="spacing" textLength="103.9648" x="48.4581" y="20.7341">OncoFAIRPatient</text><line style="stroke:#181818;stroke-width:0.4405286343612335;" x1="43.1718" x2="157.7093" y1="25.2065" y2="25.2065"/><text fill="#000000" font-family="sans-serif" font-size="12.3348" lengthAdjust="spacing" textLength="38.7665" x="47.5771" y="41.5353">Patient</text></g><g id="elem_Sejour"><rect fill="#778899" height="38.0782" style="stroke:#181818;stroke-width:0.4405286343612335;" width="188.5463" x="6.1674" y="119.8238"/><rect fill="#708090" height="19.0391" style="stroke:#181818;stroke-width:0.4405286343612335;" width="188.5463" x="6.1674" y="119.8238"/><text fill="#000000" font-family="sans-serif" font-size="12.3348" font-weight="bold" lengthAdjust="spacing" textLength="176.2115" x="12.3348" y="134.3905">Sejour : OncoFAIREncounter</text><line style="stroke:#181818;stroke-width:0.881057268722467;" x1="6.1674" x2="194.7137" y1="138.8629" y2="138.8629"/><text fill="#000000" font-family="sans-serif" font-size="12.3348" lengthAdjust="spacing" textLength="45.815" x="10.5727" y="153.4296">idSejour</text><text fill="#000000" font-family="sans-serif" font-size="12.3348" lengthAdjust="spacing" textLength="47.5771" x="65.1982" y="153.4296">identifier</text><line style="stroke:#181818;stroke-width:0.881057268722467;" x1="60.793" x2="60.793" y1="138.8629" y2="157.902"/></g><!--MD5=[d9894ae36dfb66f6fc5c67c89b059866]
+reverse link OncoFAIRPatient to Sejour--><g id="link_OncoFAIRPatient_Sejour"><path codeLine="12" d="M100.4405,52.0881 C100.4405,71.3128 100.4405,97.8678 100.4405,116.2291 " fill="none" id="OncoFAIRPatient-backto-Sejour" style="stroke:#181818;stroke-width:0.881057268722467;"/><polygon fill="#181818" points="100.4405,47.6211,96.9163,55.5507,100.4405,52.0264,103.9648,55.5507,100.4405,47.6211" style="stroke:#181818;stroke-width:0.881057268722467;"/><text fill="#000000" font-family="sans-serif" font-size="11.4537" lengthAdjust="spacing" textLength="37.0044" x="101.3216" y="86.7798">subject</text></g><!--MD5=[e390f173a7be9eb6bf29d4dd9bd921c4]
+@startuml
+
+scale 200 width
+
+object "**OncoFAIRPatient**" as OncoFAIRPatient #DarkGray {
+    Patient
+}
+
+map "**Sejour : OncoFAIREncounter**" as Sejour #back:LightSlateGray;header:SlateGray {
+    idSejour => identifier
+}
+
+Sejour -u-> OncoFAIRPatient : subject
+
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: fr
+Country: FR
+--></g></svg>

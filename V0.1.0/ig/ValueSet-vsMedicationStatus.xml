@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vsMedicationStatus"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vsMedicationStatus</b></p><a name="vsMedicationStatus"> </a><a name="hcvsMedicationStatus"> </a><ul><li>Include all codes defined in <a href="CodeSystem-CSMedicationStatus.html"><code>http://oncofair-ig.kereval.cloud/CodeSystem/CSMedicationStatus</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.0</span></li></ul></div>
+  </text>
+  <url value="http://oncofair-ig.kereval.cloud/ValueSet/vsMedicationStatus"/>
+  <version value="0.1.0"/>
+  <name value="VSMedicationStatus"/>
+  <title value="Medication status"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2025-11-17T09:12:37+00:00"/>
+  <publisher value="KEREVAL and DOMASIA team of the Signal and Image Processing Laboratory (LTSI)"/>
+  <contact>
+    <name value="KEREVAL and DOMASIA team of the Signal and Image Processing Laboratory (LTSI)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/ONCOFAIR"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet for medication status."/>
+  <compose>
+    <include>
+      <system value="http://oncofair-ig.kereval.cloud/CodeSystem/CSMedicationStatus"/>
+    </include>
+  </compose>
+</ValueSet>
